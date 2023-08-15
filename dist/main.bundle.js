@@ -23,7 +23,34 @@ var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBP
 // Module
 ___CSS_LOADER_EXPORT___.push([module.id, `main a {
   color: red;
-}`, "",{"version":3,"sources":["webpack://./src/style.scss"],"names":[],"mappings":"AACE;EACE,UAAA;AAAJ","sourcesContent":["main {\n  a {\n    color: red;\n  }\n}\n"],"sourceRoot":""}]);
+}
+
+/* footer start */
+footer {
+  height: 8rem;
+  background-color: #4d4d4d;
+  color: #f5f6fa;
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  height: 1rem;
+  width: 1rem;
+  margin-bottom: -0.1rem;
+}
+
+.j {
+  font-family: "Roboto Condensed", sans-seri;
+}
+
+.e {
+  font-family: "Roboto Condensed", sans-seri;
+}
+
+/* footer end */`, "",{"version":3,"sources":["webpack://./src/style.scss"],"names":[],"mappings":"AACE;EACE,UAAA;AAAJ;;AAIA,iBAAA;AACA;EACE,YAAA;EACA,yBAAA;EACA,cAAA;EACA,iBAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;AADF;;AAIA;EACE,YAAA;EACA,WAAA;EACA,sBAAA;AADF;;AAIA;EACE,0CAAA;AADF;;AAIA;EACE,0CAAA;AADF;;AAGA,eAAA","sourcesContent":["main {\n  a {\n    color: red;\n  }\n}\n\n/* footer start */\nfooter {\n  height: 8rem;\n  background-color: #4d4d4d;\n  color: #f5f6fa;\n  font-size: 0.7rem;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\nimg {\n  height: 1rem;\n  width: 1rem;\n  margin-bottom: -0.1rem;\n}\n\n.j {\n  font-family: \"Roboto Condensed\", sans-seri;\n}\n\n.e {\n  font-family: \"Roboto Condensed\", sans-seri;\n}\n/* footer end */\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
