@@ -80,7 +80,7 @@ a {
   --light: #f5f6fa;
   --medium: #2d98da;
   --dark: #333;
-  --success: #05c46b;
+  --success: #06ad3e;
   --danger: #ea2027;
   --info: #3867d6;
   --warning: #fbc531;
@@ -91,7 +91,66 @@ a {
   --logo: "Roboto Condensed", sans-serif;
   --shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),
     0 1px 3px 1px rgba(60, 64, 67, 0.15);
-}`, "",{"version":3,"sources":["webpack://./src/assets/sass/_base.scss","webpack://./src/assets/sass/styles.scss","webpack://./src/assets/sass/_reset.scss","webpack://./src/assets/sass/_variables.scss"],"names":[],"mappings":"AAAA;EACE,gBAAA;ACCF;;ADEA;EACE,iBAAA;EACA,kBAAA;EACA,yBAAA;ACCF;;ADEA;;;;EAIE,mBAAA;ACCF;;ADEA;EACE,iBAAA;ACCF;;ADEA;EACE,eAAA;ACCF;;ADEA;EACE,iBAAA;ACCF;;ADEA;EACE,eAAA;ACCF;;ADEA;EACE,aAAA;ACCF;;ADEA;EACE,eAAA;ACCF;;ADEA;EACE,kBAAA;EACA,qBAAA;ACCF;;AC5CA;EACE,SAAA;EACA,UAAA;EACA,sBAAA;AD+CF;;AElDA;EAEE,kBAAA;EACA,oBAAA;EACA,mBAAA;EAGA,gBAAA;EACA,iBAAA;EACA,YAAA;EAGA,kBAAA;EACA,iBAAA;EACA,eAAA;EACA,kBAAA;EAGA,iBAAA;EACA,kBAAA;EAGA,6BAAA;EACA,+BAAA;EACA,sCAAA;EAGA;wCAAA;AF2CF","sourcesContent":[":root {\n  font-size: 62.5%; // font-size = 10px\n}\n\nbody {\n  font-size: 1.6rem; // 1rem = 10px\n  color: var(--dark);\n  font-family: var(--basic);\n}\n\nh1,\nh2,\nh3,\nh4 {\n  margin-bottom: 2rem;\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: 0;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: var(--dark);\n  text-decoration: none;\n}\n",":root {\n  font-size: 62.5%;\n}\n\nbody {\n  font-size: 1.6rem;\n  color: var(--dark);\n  font-family: var(--basic);\n}\n\nh1,\nh2,\nh3,\nh4 {\n  margin-bottom: 2rem;\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: 0;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: var(--dark);\n  text-decoration: none;\n}\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n:root {\n  --primary: #2e86de;\n  --secondary: #54a0ff;\n  --tertiary: #48dbfb;\n  --light: #f5f6fa;\n  --medium: #2d98da;\n  --dark: #333;\n  --success: #05c46b;\n  --danger: #ea2027;\n  --info: #3867d6;\n  --warning: #fbc531;\n  --accent: #3c40c6;\n  --divider: #ecf0f1;\n  --basic: \"Mulish\", sans-serif;\n  --default: \"Roboto\", sans-serif;\n  --logo: \"Roboto Condensed\", sans-serif;\n  --shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),\n    0 1px 3px 1px rgba(60, 64, 67, 0.15);\n}","* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n",":root {\n  // main color\n  --primary: #2e86de;\n  --secondary: #54a0ff;\n  --tertiary: #48dbfb;\n\n  // text color\n  --light: #f5f6fa;\n  --medium: #2d98da;\n  --dark: #333;\n\n  // utils => button, border, words etc\n  --success: #05c46b;\n  --danger: #ea2027;\n  --info: #3867d6;\n  --warning: #fbc531;\n\n  // utils => border, words etc\n  --accent: #3c40c6;\n  --divider: #ecf0f1;\n\n  // font-family\n  --basic: \"Mulish\", sans-serif;\n  --default: \"Roboto\", sans-serif;\n  --logo: \"Roboto Condensed\", sans-serif;\n\n  // shadow\n  --shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),\n    0 1px 3px 1px rgba(60, 64, 67, 0.15);\n}\n"],"sourceRoot":""}]);
+}
+
+.container {
+  min-height: 100vh;
+  display: grid;
+  grid: "header" auto "content" 1fr "footer" auto/auto;
+}
+
+header {
+  grid-area: header;
+  background: var(--success);
+  padding: 2rem;
+  color: var(--light);
+  font-weight: bold;
+}
+
+main {
+  grid-area: content;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--danger);
+  color: var(--light);
+}
+main a {
+  color: var(--light);
+}
+
+/* footer start */
+footer {
+  grid-area: footer;
+  padding: 2rem;
+  height: 8rem;
+  background-color: var(--primary);
+  color: var(--light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+img {
+  height: 2rem;
+  width: 2rem;
+  margin-bottom: -0.1rem;
+}
+
+.j {
+  font-family: var(--logo);
+  color: var(--danger);
+}
+
+.e {
+  font-family: var(--logo);
+  color: var(--danger);
+}
+
+/* footer end */`, "",{"version":3,"sources":["webpack://./src/assets/sass/_base.scss","webpack://./src/assets/sass/styles.scss","webpack://./src/assets/sass/_reset.scss","webpack://./src/assets/sass/_variables.scss"],"names":[],"mappings":"AAAA;EACE,gBAAA;ACCF;;ADEA;EACE,iBAAA;EACA,kBAAA;EACA,yBAAA;ACCF;;ADEA;;;;EAIE,mBAAA;ACCF;;ADEA;EACE,iBAAA;ACCF;;ADEA;EACE,eAAA;ACCF;;ADEA;EACE,iBAAA;ACCF;;ADEA;EACE,eAAA;ACCF;;ADEA;EACE,aAAA;ACCF;;ADEA;EACE,eAAA;ACCF;;ADEA;EACE,kBAAA;EACA,qBAAA;ACCF;;AC5CA;EACE,SAAA;EACA,UAAA;EACA,sBAAA;AD+CF;;AElDA;EAEE,kBAAA;EACA,oBAAA;EACA,mBAAA;EAGA,gBAAA;EACA,iBAAA;EACA,YAAA;EAGA,kBAAA;EACA,iBAAA;EACA,eAAA;EACA,kBAAA;EAGA,iBAAA;EACA,kBAAA;EAGA,6BAAA;EACA,+BAAA;EACA,sCAAA;EAGA;wCAAA;AF2CF;;AA/DA;EACE,iBAAA;EACA,aAAA;EACA,oDACE;AAiEJ;;AA3DA;EACE,iBAAA;EACA,0BAAA;EACA,aAAA;EACA,mBAAA;EACA,iBAAA;AA8DF;;AA3DA;EACE,kBAAA;EACA,aAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,uBAAA;EACA,yBAAA;EACA,mBAAA;AA8DF;AA7DE;EACE,mBAAA;AA+DJ;;AA3DA,iBAAA;AACA;EACE,iBAAA;EACA,aAAA;EACA,YAAA;EACA,gCAAA;EACA,mBAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,iBAAA;AA8DF;;AA3DA;EACE,YAAA;EACA,WAAA;EACA,sBAAA;AA8DF;;AA3DA;EACE,wBAAA;EACA,oBAAA;AA8DF;;AA3DA;EACE,wBAAA;EACA,oBAAA;AA8DF;;AA5DA,eAAA","sourcesContent":[":root {\n  font-size: 62.5%; // font-size = 10px\n}\n\nbody {\n  font-size: 1.6rem; // 1rem = 10px\n  color: var(--dark);\n  font-family: var(--basic);\n}\n\nh1,\nh2,\nh3,\nh4 {\n  margin-bottom: 2rem;\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: 0;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: var(--dark);\n  text-decoration: none;\n}\n","@use \"base\" as *;\n@use \"classes\" as *;\n@use \"media-queries\" as *;\n@use \"reset\" as *;\n@use \"utils\" as *;\n@use \"variables\" as *;\n\n.container {\n  min-height: 100vh;\n  display: grid;\n  grid:\n    \"header\" auto\n    \"content\" 1fr\n    \"footer\" auto /\n    auto;\n}\n\nheader {\n  grid-area: header;\n  background: var(--success);\n  padding: 2rem;\n  color: var(--light);\n  font-weight: bold;\n}\n\nmain {\n  grid-area: content;\n  padding: 2rem;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  background: var(--danger);\n  color: var(--light);\n  a {\n    color: var(--light);\n  }\n}\n\n/* footer start */\nfooter {\n  grid-area: footer;\n  padding: 2rem;\n  height: 8rem;\n  background-color: var(--primary);\n  color: var(--light);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: bold;\n}\n\nimg {\n  height: 2rem;\n  width: 2rem;\n  margin-bottom: -0.1rem;\n}\n\n.j {\n  font-family: var(--logo);\n  color: var(--danger);\n}\n\n.e {\n  font-family: var(--logo);\n  color: var(--danger);\n}\n/* footer end */\n","* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n",":root {\n  // main color\n  --primary: #2e86de;\n  --secondary: #54a0ff;\n  --tertiary: #48dbfb;\n\n  // text color\n  --light: #f5f6fa;\n  --medium: #2d98da;\n  --dark: #333;\n\n  // utils => button, border, words etc\n  --success: #06ad3e;\n  --danger: #ea2027;\n  --info: #3867d6;\n  --warning: #fbc531;\n\n  // utils => border, words etc\n  --accent: #3c40c6;\n  --divider: #ecf0f1;\n\n  // font-family\n  --basic: \"Mulish\", sans-serif;\n  --default: \"Roboto\", sans-serif;\n  --logo: \"Roboto Condensed\", sans-serif;\n\n  // shadow\n  --shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),\n    0 1px 3px 1px rgba(60, 64, 67, 0.15);\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -117,36 +176,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `/* footer start */
-footer {
-  height: 8rem;
-  background-color: var(--primary);
-  color: var(--light);
-  font-size: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-img {
-  height: 2rem;
-  width: 2rem;
-  margin-bottom: -0.1rem;
-}
-
-.j {
-  font-family: var(--logo);
-  font-size: 2rem;
-  color: var(--danger);
-}
-
-.e {
-  font-family: var(--logo);
-  font-size: 2rem;
-  color: var(--danger);
-}
-
-/* footer end */`, "",{"version":3,"sources":["webpack://./src/form/form.scss"],"names":[],"mappings":"AAAA,iBAAA;AACA;EACE,YAAA;EACA,gCAAA;EACA,mBAAA;EACA,eAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;AACF;;AAEA;EACE,YAAA;EACA,WAAA;EACA,sBAAA;AACF;;AAEA;EACE,wBAAA;EACA,eAAA;EACA,oBAAA;AACF;;AAEA;EACE,wBAAA;EACA,eAAA;EACA,oBAAA;AACF;;AACA,eAAA","sourcesContent":["/* footer start */\nfooter {\n  height: 8rem;\n  background-color: var(--primary);\n  color: var(--light);\n  font-size: 2rem;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\nimg {\n  height: 2rem;\n  width: 2rem;\n  margin-bottom: -0.1rem;\n}\n\n.j {\n  font-family: var(--logo);\n  font-size: 2rem;\n  color: var(--danger);\n}\n\n.e {\n  font-family: var(--logo);\n  font-size: 2rem;\n  color: var(--danger);\n}\n/* footer end */\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ``, "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
