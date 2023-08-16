@@ -101,10 +101,55 @@ a {
 
 header {
   grid-area: header;
-  background: var(--success);
   padding: 2rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--primary);
+}
+header a {
   color: var(--light);
-  font-weight: bold;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+header .header-brand {
+  font-size: 3rem;
+  font-weight: 700;
+}
+header .header-brand:hover {
+  color: var(--tertiary);
+}
+header ul {
+  display: flex;
+  margin-right: -0.5rem;
+}
+header ul li {
+  padding: 1rem;
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+header ul li:hover {
+  transition: all 0.2s;
+  cursor: pointer;
+  background-color: var(--secondary);
+  border-radius: 0.2rem;
+  padding: 1rem;
+}
+header ul li:hover a {
+  color: var(--light);
+}
+header ul li .header-brand {
+  font-size: 1.8rem;
+  padding: 0 0.1rem;
+}
+header ul .active {
+  background-color: var(--light);
+  padding: 1rem;
+  border-radius: 0.2rem;
+}
+header ul .active a {
+  color: var(--secondary);
 }
 
 main {
@@ -150,7 +195,7 @@ img {
   color: var(--danger);
 }
 
-/* footer end */`, "",{"version":3,"sources":["webpack://./src/assets/sass/partials/_base.scss","webpack://./src/assets/sass/styles.scss","webpack://./src/assets/sass/partials/_reset.scss","webpack://./src/assets/sass/partials/_variables.scss","webpack://./src/assets/sass/layouts/_body.scss"],"names":[],"mappings":"AAAA;EACE,gBAAA;ACCF;;ADEA;EACE,iBAAA;EACA,kBAAA;EACA,yBAAA;ACCF;;ADEA;;;;EAIE,mBAAA;ACCF;;ADEA;EACE,iBAAA;ACCF;;ADEA;EACE,eAAA;ACCF;;ADEA;EACE,iBAAA;ACCF;;ADEA;EACE,eAAA;ACCF;;ADEA;EACE,gBAAA;ACCF;;ADEA;EACE,eAAA;ACCF;;ADEA;EACE,kBAAA;EACA,qBAAA;ACCF;;AC5CA;EACE,SAAA;EACA,UAAA;EACA,sBAAA;AD+CF;;AElDA;EAEE,kBAAA;EACA,oBAAA;EACA,mBAAA;EAGA,gBAAA;EACA,iBAAA;EACA,YAAA;EAGA,kBAAA;EACA,iBAAA;EACA,eAAA;EACA,kBAAA;EAGA,iBAAA;EACA,kBAAA;EAGA,6BAAA;EACA,+BAAA;EACA,sCAAA;EAGA;wCAAA;AF2CF;;AGtEA;EACE,iBAAA;EACA,aAAA;EACA,oDACE;AHwEJ;;AAjEA;EACE,iBAAA;EACA,0BAAA;EACA,aAAA;EACA,mBAAA;EACA,iBAAA;AAoEF;;AAjEA;EACE,kBAAA;EACA,aAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,uBAAA;EACA,yBAAA;EACA,mBAAA;AAoEF;AAnEE;EACE,mBAAA;AAqEJ;;AAjEA,iBAAA;AACA;EACE,iBAAA;EACA,aAAA;EACA,YAAA;EACA,gCAAA;EACA,mBAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,iBAAA;AAoEF;;AAjEA;EACE,YAAA;EACA,WAAA;EACA,sBAAA;AAoEF;;AAjEA;EACE,wBAAA;EACA,oBAAA;AAoEF;;AAjEA;EACE,wBAAA;EACA,oBAAA;AAoEF;;AAlEA,eAAA","sourcesContent":[":root {\n  font-size: 62.5%; // font-size = 10px\n}\n\nbody {\n  font-size: 1.6rem; // 1rem = 10px\n  color: var(--dark);\n  font-family: var(--basic);\n}\n\nh1,\nh2,\nh3,\nh4 {\n  margin-bottom: 2rem;\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: var(--dark);\n  text-decoration: none;\n}\n","// partials\n@use \"./partials/base\" as *;\n@use \"./partials/classes\" as *;\n@use \"./partials/media-queries\" as *;\n@use \"./partials/reset\" as *;\n@use \"./partials/utils\" as *;\n@use \"./partials/variables\" as *;\n\n// layouts\n@use \"./layouts/body\" as *;\n\nheader {\n  grid-area: header;\n  background: var(--success);\n  padding: 2rem;\n  color: var(--light);\n  font-weight: bold;\n}\n\nmain {\n  grid-area: content;\n  padding: 2rem;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  background: var(--danger);\n  color: var(--light);\n  a {\n    color: var(--light);\n  }\n}\n\n/* footer start */\nfooter {\n  grid-area: footer;\n  padding: 2rem;\n  height: 8rem;\n  background-color: var(--primary);\n  color: var(--light);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: bold;\n}\n\nimg {\n  height: 2rem;\n  width: 2rem;\n  margin-bottom: -0.1rem;\n}\n\n.j {\n  font-family: var(--logo);\n  color: var(--danger);\n}\n\n.e {\n  font-family: var(--logo);\n  color: var(--danger);\n}\n/* footer end */\n","* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n",":root {\n  // main color\n  --primary: #2e86de;\n  --secondary: #54a0ff;\n  --tertiary: #48dbfb;\n\n  // text color\n  --light: #f5f6fa;\n  --medium: #2d98da;\n  --dark: #333;\n\n  // utils => button, border, words etc\n  --success: #06ad3e;\n  --danger: #ea2027;\n  --info: #3867d6;\n  --warning: #fbc531;\n\n  // utils => border, words etc\n  --accent: #3c40c6;\n  --divider: #ecf0f1;\n\n  // font-family\n  --basic: \"Mulish\", sans-serif;\n  --default: \"Roboto\", sans-serif;\n  --logo: \"Roboto Condensed\", sans-serif;\n\n  // shadow\n  --shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),\n    0 1px 3px 1px rgba(60, 64, 67, 0.15);\n}\n",".container {\n  min-height: 100vh;\n  display: grid;\n  grid:\n    \"header\" auto\n    \"content\" 1fr\n    \"footer\" auto /\n    auto;\n}\n"],"sourceRoot":""}]);
+/* footer end */`, "",{"version":3,"sources":["webpack://./src/assets/sass/partials/_base.scss","webpack://./src/assets/sass/styles.scss","webpack://./src/assets/sass/partials/_reset.scss","webpack://./src/assets/sass/partials/_variables.scss","webpack://./src/assets/sass/layouts/_body.scss","webpack://./src/assets/sass/layouts/_header.scss"],"names":[],"mappings":"AAAA;EACE,gBAAA;ACCF;;ADEA;EACE,iBAAA;EACA,kBAAA;EACA,yBAAA;ACCF;;ADEA;;;;EAIE,mBAAA;ACCF;;ADEA;EACE,iBAAA;ACCF;;ADEA;EACE,eAAA;ACCF;;ADEA;EACE,iBAAA;ACCF;;ADEA;EACE,eAAA;ACCF;;ADEA;EACE,gBAAA;ACCF;;ADEA;EACE,eAAA;ACCF;;ADEA;EACE,kBAAA;EACA,qBAAA;ACCF;;AC5CA;EACE,SAAA;EACA,UAAA;EACA,sBAAA;AD+CF;;AElDA;EAEE,kBAAA;EACA,oBAAA;EACA,mBAAA;EAGA,gBAAA;EACA,iBAAA;EACA,YAAA;EAGA,kBAAA;EACA,iBAAA;EACA,eAAA;EACA,kBAAA;EAGA,iBAAA;EACA,kBAAA;EAGA,6BAAA;EACA,+BAAA;EACA,sCAAA;EAGA;wCAAA;AF2CF;;AGtEA;EACE,iBAAA;EACA,aAAA;EACA,oDACE;AHwEJ;;AI5EA;EACE,iBAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,8BAAA;EACA,mBAAA;EACA,0BAAA;AJ+EF;AI9EE;EACE,mBAAA;EACA,gBAAA;EACA,sBAAA;AJgFJ;AI9EE;EACE,eAAA;EACA,gBAAA;AJgFJ;AI/EI;EACE,sBAAA;AJiFN;AI7EE;EACE,aAAA;EACA,qBAAA;AJ+EJ;AI9EI;EACE,aAAA;EACA,kBAAA;EACA,iBAAA;AJgFN;AI/EM;EACE,oBAAA;EACA,eAAA;EACA,kCAAA;EACA,qBAAA;EACA,aAAA;AJiFR;AIhFQ;EACE,mBAAA;AJkFV;AI/EM;EACE,iBAAA;EACA,iBAAA;AJiFR;AI9EI;EACE,8BAAA;EACA,aAAA;EACA,qBAAA;AJgFN;AI/EM;EACE,uBAAA;AJiFR;;AArHA;EACE,kBAAA;EACA,aAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,uBAAA;EACA,yBAAA;EACA,mBAAA;AAwHF;AAvHE;EACE,mBAAA;AAyHJ;;AArHA,iBAAA;AACA;EACE,iBAAA;EACA,aAAA;EACA,YAAA;EACA,gCAAA;EACA,mBAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,iBAAA;AAwHF;;AArHA;EACE,YAAA;EACA,WAAA;EACA,sBAAA;AAwHF;;AArHA;EACE,wBAAA;EACA,oBAAA;AAwHF;;AArHA;EACE,wBAAA;EACA,oBAAA;AAwHF;;AAtHA,eAAA","sourcesContent":[":root {\n  font-size: 62.5%; // font-size = 10px\n}\n\nbody {\n  font-size: 1.6rem; // 1rem = 10px\n  color: var(--dark);\n  font-family: var(--basic);\n}\n\nh1,\nh2,\nh3,\nh4 {\n  margin-bottom: 2rem;\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: var(--dark);\n  text-decoration: none;\n}\n","// partials\n@use \"./partials/base\" as *;\n@use \"./partials/classes\" as *;\n@use \"./partials/media-queries\" as *;\n@use \"./partials/reset\" as *;\n@use \"./partials/utils\" as *;\n@use \"./partials/variables\" as *;\n\n// layouts\n@use \"./layouts/body\" as *;\n@use \"./layouts/header\" as *;\n\nmain {\n  grid-area: content;\n  padding: 2rem;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  background: var(--danger);\n  color: var(--light);\n  a {\n    color: var(--light);\n  }\n}\n\n/* footer start */\nfooter {\n  grid-area: footer;\n  padding: 2rem;\n  height: 8rem;\n  background-color: var(--primary);\n  color: var(--light);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: bold;\n}\n\nimg {\n  height: 2rem;\n  width: 2rem;\n  margin-bottom: -0.1rem;\n}\n\n.j {\n  font-family: var(--logo);\n  color: var(--danger);\n}\n\n.e {\n  font-family: var(--logo);\n  color: var(--danger);\n}\n/* footer end */\n","* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n",":root {\n  // main color\n  --primary: #2e86de;\n  --secondary: #54a0ff;\n  --tertiary: #48dbfb;\n\n  // text color\n  --light: #f5f6fa;\n  --medium: #2d98da;\n  --dark: #333;\n\n  // utils => button, border, words etc\n  --success: #06ad3e;\n  --danger: #ea2027;\n  --info: #3867d6;\n  --warning: #fbc531;\n\n  // utils => border, words etc\n  --accent: #3c40c6;\n  --divider: #ecf0f1;\n\n  // font-family\n  --basic: \"Mulish\", sans-serif;\n  --default: \"Roboto\", sans-serif;\n  --logo: \"Roboto Condensed\", sans-serif;\n\n  // shadow\n  --shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),\n    0 1px 3px 1px rgba(60, 64, 67, 0.15);\n}\n",".container {\n  min-height: 100vh;\n  display: grid;\n  grid:\n    \"header\" auto\n    \"content\" 1fr\n    \"footer\" auto /\n    auto;\n}\n","header {\n  grid-area: header;\n  padding: 2rem;\n  display: flex;\n  flex-flow: row nowrap;\n  justify-content: space-between;\n  align-items: center;\n  background: var(--primary);\n  a {\n    color: var(--light);\n    font-weight: 700;\n    letter-spacing: 0.1rem;\n  }\n  .header-brand {\n    font-size: 3rem;\n    font-weight: 700;\n    &:hover {\n      color: var(--tertiary);\n    }\n  }\n\n  ul {\n    display: flex;\n    margin-right: -0.5rem;\n    li {\n      padding: 1rem;\n      margin-right: 1rem;\n      font-size: 1.5rem;\n      &:hover {\n        transition: all 0.2s;\n        cursor: pointer;\n        background-color: var(--secondary);\n        border-radius: 0.2rem;\n        padding: 1rem;\n        a {\n          color: var(--light);\n        }\n      }\n      .header-brand {\n        font-size: 1.8rem;\n        padding: 0 0.1rem;\n      }\n    }\n    .active {\n      background-color: var(--light);\n      padding: 1rem;\n      border-radius: 0.2rem;\n      a {\n        color: var(--secondary);\n      }\n    }\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
