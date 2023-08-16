@@ -67,6 +67,33 @@ a {
   text-decoration: none;
 }
 
+.title-underline {
+  padding-bottom: 2rem;
+  border-bottom: 0.1rem solid var(--divider);
+}
+
+.button {
+  border: 0;
+  border-radius: 0.3rem;
+  padding: 1rem 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: box-shadow 0.2s;
+}
+.button:hover {
+  box-shadow: var(--shadow);
+  opacity: 89%;
+  transition: box-shadow 0.2s;
+}
+.button-primary {
+  background: var(--success);
+  color: var(--light);
+}
+.button-secondary {
+  background: var(--danger);
+  color: var(--light);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -85,7 +112,7 @@ a {
   --info: #3867d6;
   --warning: #fbc531;
   --accent: #3c40c6;
-  --divider: #ecf0f1;
+  --divider: #bdc3c7;
   --basic: "Mulish", sans-serif;
   --default: "Roboto", sans-serif;
   --logo: "Roboto Condensed", sans-serif;
@@ -178,7 +205,7 @@ img {
 .e {
   font-family: var(--logo);
   color: var(--danger);
-}`, "",{"version":3,"sources":["webpack://./src/assets/sass/partials/_base.scss","webpack://./src/assets/sass/styles.scss","webpack://./src/assets/sass/partials/_reset.scss","webpack://./src/assets/sass/partials/_variables.scss","webpack://./src/assets/sass/layouts/_body.scss","webpack://./src/assets/sass/layouts/_header.scss","webpack://./src/assets/sass/layouts/_footer.scss"],"names":[],"mappings":"AAAA;EACE,gBAAA;ACCF;;ADEA;EACE,iBAAA;EACA,kBAAA;EACA,yBAAA;ACCF;;ADEA;;;;EAIE,mBAAA;ACCF;;ADEA;EACE,iBAAA;ACCF;;ADEA;EACE,eAAA;ACCF;;ADEA;EACE,iBAAA;ACCF;;ADEA;EACE,eAAA;ACCF;;ADEA;EACE,gBAAA;ACCF;;ADEA;EACE,eAAA;ACCF;;ADEA;EACE,kBAAA;EACA,qBAAA;ACCF;;AC5CA;EACE,SAAA;EACA,UAAA;EACA,sBAAA;AD+CF;;AElDA;EAEE,kBAAA;EACA,oBAAA;EACA,mBAAA;EAGA,gBAAA;EACA,iBAAA;EACA,YAAA;EAGA,kBAAA;EACA,iBAAA;EACA,eAAA;EACA,kBAAA;EAGA,iBAAA;EACA,kBAAA;EAGA,6BAAA;EACA,+BAAA;EACA,sCAAA;EAGA;wCAAA;AF2CF;;AGtEA;EACE,iBAAA;EACA,aAAA;EACA,oDACE;AHwEJ;;AI5EA;EACE,iBAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,8BAAA;EACA,mBAAA;EACA,0BAAA;AJ+EF;AI9EE;EACE,mBAAA;EACA,gBAAA;EACA,sBAAA;AJgFJ;AI9EE;EACE,eAAA;EACA,gBAAA;AJgFJ;AI/EI;EACE,sBAAA;AJiFN;AI7EE;EACE,aAAA;EACA,qBAAA;AJ+EJ;AI9EI;EACE,aAAA;EACA,kBAAA;EACA,iBAAA;AJgFN;AI/EM;EACE,oBAAA;EACA,eAAA;EACA,kCAAA;EACA,qBAAA;EACA,aAAA;AJiFR;AIhFQ;EACE,mBAAA;AJkFV;AI/EM;EACE,iBAAA;EACA,iBAAA;AJiFR;AI9EI;EACE,8BAAA;EACA,aAAA;EACA,qBAAA;AJgFN;AI/EM;EACE,uBAAA;AJiFR;;AKjIA;EACE,iBAAA;EACA,aAAA;EACA,YAAA;EACA,6BAAA;EACA,mBAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,iBAAA;ALoIF;;AKjIA;EACE,YAAA;EACA,WAAA;EACA,sBAAA;ALoIF;;AKjIA;EACE,wBAAA;EACA,oBAAA;ALoIF;;AKjIA;EACE,wBAAA;EACA,oBAAA;ALoIF","sourcesContent":[":root {\n  font-size: 62.5%; // font-size = 10px\n}\n\nbody {\n  font-size: 1.6rem; // 1rem = 10px\n  color: var(--dark);\n  font-family: var(--basic);\n}\n\nh1,\nh2,\nh3,\nh4 {\n  margin-bottom: 2rem;\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: var(--dark);\n  text-decoration: none;\n}\n",":root {\n  font-size: 62.5%;\n}\n\nbody {\n  font-size: 1.6rem;\n  color: var(--dark);\n  font-family: var(--basic);\n}\n\nh1,\nh2,\nh3,\nh4 {\n  margin-bottom: 2rem;\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: var(--dark);\n  text-decoration: none;\n}\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n:root {\n  --primary: #2e86de;\n  --secondary: #54a0ff;\n  --tertiary: #48dbfb;\n  --light: #f5f6fa;\n  --medium: #2d98da;\n  --dark: #333;\n  --success: #06ad3e;\n  --danger: #ea2027;\n  --info: #3867d6;\n  --warning: #fbc531;\n  --accent: #3c40c6;\n  --divider: #ecf0f1;\n  --basic: \"Mulish\", sans-serif;\n  --default: \"Roboto\", sans-serif;\n  --logo: \"Roboto Condensed\", sans-serif;\n  --shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),\n    0 1px 3px 1px rgba(60, 64, 67, 0.15);\n}\n\n.container {\n  min-height: 100vh;\n  display: grid;\n  grid: \"header\" auto \"content\" 1fr \"footer\" auto/auto;\n}\n\nheader {\n  grid-area: header;\n  padding: 2rem;\n  display: flex;\n  flex-flow: row nowrap;\n  justify-content: space-between;\n  align-items: center;\n  background: var(--primary);\n}\nheader a {\n  color: var(--light);\n  font-weight: 700;\n  letter-spacing: 0.1rem;\n}\nheader .header-brand {\n  font-size: 3rem;\n  font-weight: 700;\n}\nheader .header-brand:hover {\n  color: var(--tertiary);\n}\nheader ul {\n  display: flex;\n  margin-right: -0.5rem;\n}\nheader ul li {\n  padding: 1rem;\n  margin-right: 1rem;\n  font-size: 1.5rem;\n}\nheader ul li:hover {\n  transition: all 0.2s;\n  cursor: pointer;\n  background-color: var(--secondary);\n  border-radius: 0.2rem;\n  padding: 1rem;\n}\nheader ul li:hover a {\n  color: var(--light);\n}\nheader ul li .header-brand {\n  font-size: 1.8rem;\n  padding: 0 0.1rem;\n}\nheader ul .active {\n  background-color: var(--light);\n  padding: 1rem;\n  border-radius: 0.2rem;\n}\nheader ul .active a {\n  color: var(--secondary);\n}\n\nfooter {\n  grid-area: footer;\n  padding: 2rem;\n  height: 8rem;\n  background-color: var(--dark);\n  color: var(--light);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: bold;\n}\n\nimg {\n  height: 2rem;\n  width: 2rem;\n  margin-bottom: -0.1rem;\n}\n\n.j {\n  font-family: var(--logo);\n  color: var(--danger);\n}\n\n.e {\n  font-family: var(--logo);\n  color: var(--danger);\n}","* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n",":root {\n  // main color\n  --primary: #2e86de;\n  --secondary: #54a0ff;\n  --tertiary: #48dbfb;\n\n  // text color\n  --light: #f5f6fa;\n  --medium: #2d98da;\n  --dark: #333;\n\n  // utils => button, border, words etc\n  --success: #06ad3e;\n  --danger: #ea2027;\n  --info: #3867d6;\n  --warning: #fbc531;\n\n  // utils => border, words etc\n  --accent: #3c40c6;\n  --divider: #ecf0f1;\n\n  // font-family\n  --basic: \"Mulish\", sans-serif;\n  --default: \"Roboto\", sans-serif;\n  --logo: \"Roboto Condensed\", sans-serif;\n\n  // shadow\n  --shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),\n    0 1px 3px 1px rgba(60, 64, 67, 0.15);\n}\n",".container {\n  min-height: 100vh;\n  display: grid;\n  grid:\n    \"header\" auto\n    \"content\" 1fr\n    \"footer\" auto /\n    auto;\n}\n","header {\n  grid-area: header;\n  padding: 2rem;\n  display: flex;\n  flex-flow: row nowrap;\n  justify-content: space-between;\n  align-items: center;\n  background: var(--primary);\n  a {\n    color: var(--light);\n    font-weight: 700;\n    letter-spacing: 0.1rem;\n  }\n  .header-brand {\n    font-size: 3rem;\n    font-weight: 700;\n    &:hover {\n      color: var(--tertiary);\n    }\n  }\n\n  ul {\n    display: flex;\n    margin-right: -0.5rem;\n    li {\n      padding: 1rem;\n      margin-right: 1rem;\n      font-size: 1.5rem;\n      &:hover {\n        transition: all 0.2s;\n        cursor: pointer;\n        background-color: var(--secondary);\n        border-radius: 0.2rem;\n        padding: 1rem;\n        a {\n          color: var(--light);\n        }\n      }\n      .header-brand {\n        font-size: 1.8rem;\n        padding: 0 0.1rem;\n      }\n    }\n    .active {\n      background-color: var(--light);\n      padding: 1rem;\n      border-radius: 0.2rem;\n      a {\n        color: var(--secondary);\n      }\n    }\n  }\n}\n","footer {\n  grid-area: footer;\n  padding: 2rem;\n  height: 8rem;\n  background-color: var(--dark);\n  color: var(--light);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: bold;\n}\n\nimg {\n  height: 2rem;\n  width: 2rem;\n  margin-bottom: -0.1rem;\n}\n\n.j {\n  font-family: var(--logo);\n  color: var(--danger);\n}\n\n.e {\n  font-family: var(--logo);\n  color: var(--danger);\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/assets/sass/partials/_base.scss","webpack://./src/assets/sass/styles.scss","webpack://./src/assets/sass/partials/_classes.scss","webpack://./src/assets/sass/partials/_reset.scss","webpack://./src/assets/sass/partials/_variables.scss","webpack://./src/assets/sass/layouts/_body.scss","webpack://./src/assets/sass/layouts/_header.scss","webpack://./src/assets/sass/layouts/_footer.scss"],"names":[],"mappings":"AAAA;EACE,gBAAA;ACCF;;ADEA;EACE,iBAAA;EACA,kBAAA;EACA,yBAAA;ACCF;;ADEA;;;;EAIE,mBAAA;ACCF;;ADEA;EACE,iBAAA;ACCF;;ADEA;EACE,eAAA;ACCF;;ADEA;EACE,iBAAA;ACCF;;ADEA;EACE,eAAA;ACCF;;ADEA;EACE,gBAAA;ACCF;;ADEA;EACE,eAAA;ACCF;;ADEA;EACE,kBAAA;EACA,qBAAA;ACCF;;AC3CE;EACE,oBAAA;EACA,0CAAA;AD8CJ;;AC1CA;EACE,SAAA;EACA,qBAAA;EACA,kBAAA;EACA,gBAAA;EACA,eAAA;EACA,2BAAA;AD6CF;AC5CE;EACE,yBAAA;EACA,YAAA;EACA,2BAAA;AD8CJ;AC5CE;EACE,0BAAA;EACA,mBAAA;AD8CJ;AC5CE;EACE,yBAAA;EACA,mBAAA;AD8CJ;;AEvEA;EACE,SAAA;EACA,UAAA;EACA,sBAAA;AF0EF;;AG7EA;EAEE,kBAAA;EACA,oBAAA;EACA,mBAAA;EAGA,gBAAA;EACA,iBAAA;EACA,YAAA;EAGA,kBAAA;EACA,iBAAA;EACA,eAAA;EACA,kBAAA;EAGA,iBAAA;EACA,kBAAA;EAGA,6BAAA;EACA,+BAAA;EACA,sCAAA;EAGA;wCAAA;AHsEF;;AIjGA;EACE,iBAAA;EACA,aAAA;EACA,oDACE;AJmGJ;;AKvGA;EACE,iBAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,8BAAA;EACA,mBAAA;EACA,0BAAA;AL0GF;AKzGE;EACE,mBAAA;EACA,gBAAA;EACA,sBAAA;AL2GJ;AKzGE;EACE,eAAA;EACA,gBAAA;AL2GJ;AK1GI;EACE,sBAAA;AL4GN;AKxGE;EACE,aAAA;EACA,qBAAA;AL0GJ;AKzGI;EACE,aAAA;EACA,kBAAA;EACA,iBAAA;AL2GN;AK1GM;EACE,oBAAA;EACA,eAAA;EACA,kCAAA;EACA,qBAAA;EACA,aAAA;AL4GR;AK3GQ;EACE,mBAAA;AL6GV;AK1GM;EACE,iBAAA;EACA,iBAAA;AL4GR;AKzGI;EACE,8BAAA;EACA,aAAA;EACA,qBAAA;AL2GN;AK1GM;EACE,uBAAA;AL4GR;;AM5JA;EACE,iBAAA;EACA,aAAA;EACA,YAAA;EACA,6BAAA;EACA,mBAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,iBAAA;AN+JF;;AM5JA;EACE,YAAA;EACA,WAAA;EACA,sBAAA;AN+JF;;AM5JA;EACE,wBAAA;EACA,oBAAA;AN+JF;;AM5JA;EACE,wBAAA;EACA,oBAAA;AN+JF","sourcesContent":[":root {\n  font-size: 62.5%; // font-size = 10px\n}\n\nbody {\n  font-size: 1.6rem; // 1rem = 10px\n  color: var(--dark);\n  font-family: var(--basic);\n}\n\nh1,\nh2,\nh3,\nh4 {\n  margin-bottom: 2rem;\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: var(--dark);\n  text-decoration: none;\n}\n",":root {\n  font-size: 62.5%;\n}\n\nbody {\n  font-size: 1.6rem;\n  color: var(--dark);\n  font-family: var(--basic);\n}\n\nh1,\nh2,\nh3,\nh4 {\n  margin-bottom: 2rem;\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: var(--dark);\n  text-decoration: none;\n}\n\n.title-underline {\n  padding-bottom: 2rem;\n  border-bottom: 0.1rem solid var(--divider);\n}\n\n.button {\n  border: 0;\n  border-radius: 0.3rem;\n  padding: 1rem 2rem;\n  font-weight: 700;\n  cursor: pointer;\n  transition: box-shadow 0.2s;\n}\n.button:hover {\n  box-shadow: var(--shadow);\n  opacity: 89%;\n  transition: box-shadow 0.2s;\n}\n.button-primary {\n  background: var(--success);\n  color: var(--light);\n}\n.button-secondary {\n  background: var(--danger);\n  color: var(--light);\n}\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n:root {\n  --primary: #2e86de;\n  --secondary: #54a0ff;\n  --tertiary: #48dbfb;\n  --light: #f5f6fa;\n  --medium: #2d98da;\n  --dark: #333;\n  --success: #06ad3e;\n  --danger: #ea2027;\n  --info: #3867d6;\n  --warning: #fbc531;\n  --accent: #3c40c6;\n  --divider: #bdc3c7;\n  --basic: \"Mulish\", sans-serif;\n  --default: \"Roboto\", sans-serif;\n  --logo: \"Roboto Condensed\", sans-serif;\n  --shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),\n    0 1px 3px 1px rgba(60, 64, 67, 0.15);\n}\n\n.container {\n  min-height: 100vh;\n  display: grid;\n  grid: \"header\" auto \"content\" 1fr \"footer\" auto/auto;\n}\n\nheader {\n  grid-area: header;\n  padding: 2rem;\n  display: flex;\n  flex-flow: row nowrap;\n  justify-content: space-between;\n  align-items: center;\n  background: var(--primary);\n}\nheader a {\n  color: var(--light);\n  font-weight: 700;\n  letter-spacing: 0.1rem;\n}\nheader .header-brand {\n  font-size: 3rem;\n  font-weight: 700;\n}\nheader .header-brand:hover {\n  color: var(--tertiary);\n}\nheader ul {\n  display: flex;\n  margin-right: -0.5rem;\n}\nheader ul li {\n  padding: 1rem;\n  margin-right: 1rem;\n  font-size: 1.5rem;\n}\nheader ul li:hover {\n  transition: all 0.2s;\n  cursor: pointer;\n  background-color: var(--secondary);\n  border-radius: 0.2rem;\n  padding: 1rem;\n}\nheader ul li:hover a {\n  color: var(--light);\n}\nheader ul li .header-brand {\n  font-size: 1.8rem;\n  padding: 0 0.1rem;\n}\nheader ul .active {\n  background-color: var(--light);\n  padding: 1rem;\n  border-radius: 0.2rem;\n}\nheader ul .active a {\n  color: var(--secondary);\n}\n\nfooter {\n  grid-area: footer;\n  padding: 2rem;\n  height: 8rem;\n  background-color: var(--dark);\n  color: var(--light);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: bold;\n}\n\nimg {\n  height: 2rem;\n  width: 2rem;\n  margin-bottom: -0.1rem;\n}\n\n.j {\n  font-family: var(--logo);\n  color: var(--danger);\n}\n\n.e {\n  font-family: var(--logo);\n  color: var(--danger);\n}",".title {\n  &-underline {\n    padding-bottom: 2rem;\n    border-bottom: 0.1rem solid var(--divider);\n  }\n}\n\n.button {\n  border: 0;\n  border-radius: 0.3rem;\n  padding: 1rem 2rem;\n  font-weight: 700;\n  cursor: pointer;\n  transition: box-shadow 0.2s;\n  &:hover {\n    box-shadow: var(--shadow);\n    opacity: 89%;\n    transition: box-shadow 0.2s;\n  }\n  &-primary {\n    background: var(--success);\n    color: var(--light);\n  }\n  &-secondary {\n    background: var(--danger);\n    color: var(--light);\n  }\n}\n","* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n",":root {\n  // main color\n  --primary: #2e86de;\n  --secondary: #54a0ff;\n  --tertiary: #48dbfb;\n\n  // text color\n  --light: #f5f6fa;\n  --medium: #2d98da;\n  --dark: #333;\n\n  // utils => button, border, words etc\n  --success: #06ad3e;\n  --danger: #ea2027;\n  --info: #3867d6;\n  --warning: #fbc531;\n\n  // utils => border, words etc\n  --accent: #3c40c6;\n  --divider: #bdc3c7;\n\n  // font-family\n  --basic: \"Mulish\", sans-serif;\n  --default: \"Roboto\", sans-serif;\n  --logo: \"Roboto Condensed\", sans-serif;\n\n  // shadow\n  --shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),\n    0 1px 3px 1px rgba(60, 64, 67, 0.15);\n}\n",".container {\n  min-height: 100vh;\n  display: grid;\n  grid:\n    \"header\" auto\n    \"content\" 1fr\n    \"footer\" auto /\n    auto;\n}\n","header {\n  grid-area: header;\n  padding: 2rem;\n  display: flex;\n  flex-flow: row nowrap;\n  justify-content: space-between;\n  align-items: center;\n  background: var(--primary);\n  a {\n    color: var(--light);\n    font-weight: 700;\n    letter-spacing: 0.1rem;\n  }\n  .header-brand {\n    font-size: 3rem;\n    font-weight: 700;\n    &:hover {\n      color: var(--tertiary);\n    }\n  }\n\n  ul {\n    display: flex;\n    margin-right: -0.5rem;\n    li {\n      padding: 1rem;\n      margin-right: 1rem;\n      font-size: 1.5rem;\n      &:hover {\n        transition: all 0.2s;\n        cursor: pointer;\n        background-color: var(--secondary);\n        border-radius: 0.2rem;\n        padding: 1rem;\n        a {\n          color: var(--light);\n        }\n      }\n      .header-brand {\n        font-size: 1.8rem;\n        padding: 0 0.1rem;\n      }\n    }\n    .active {\n      background-color: var(--light);\n      padding: 1rem;\n      border-radius: 0.2rem;\n      a {\n        color: var(--secondary);\n      }\n    }\n  }\n}\n","footer {\n  grid-area: footer;\n  padding: 2rem;\n  height: 8rem;\n  background-color: var(--dark);\n  color: var(--light);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: bold;\n}\n\nimg {\n  height: 2rem;\n  width: 2rem;\n  margin-bottom: -0.1rem;\n}\n\n.j {\n  font-family: var(--logo);\n  color: var(--danger);\n}\n\n.e {\n  font-family: var(--logo);\n  color: var(--danger);\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -204,7 +231,53 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ``, "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, `main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main form {
+  width: 700px;
+  padding: 4rem;
+  box-shadow: var(--shadow);
+  border-radius: 0.3rem;
+  display: flex;
+  flex-direction: column;
+}
+main form .form-group {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+main form .form-group label {
+  font-size: 1.8rem;
+  color: var(--dark);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+main form .form-group input,
+main form .form-group textarea {
+  border: 0.1rem solid var(--divider);
+  padding: 1rem;
+  outline: none;
+  resize: none;
+  border-radius: 0.3rem;
+}
+main form .form-group input:focus,
+main form .form-group textarea:focus {
+  border-color: var(--primary);
+}
+main form .form-group textarea {
+  min-height: 20rem;
+}
+main form .form-button-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+main form .form-button-container .button {
+  margin-left: 0.5rem;
+}`, "",{"version":3,"sources":["webpack://./src/form/form.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;AACF;AAAE;EACE,YAAA;EACA,aAAA;EACA,yBAAA;EACA,qBAAA;EACA,aAAA;EACA,sBAAA;AAEJ;AADI;EACE,mBAAA;EACA,aAAA;EACA,sBAAA;AAGN;AAFM;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AAIR;AAFM;;EAEE,mCAAA;EACA,aAAA;EACA,aAAA;EACA,YAAA;EACA,qBAAA;AAIR;AAHQ;;EACE,4BAAA;AAMV;AAHM;EACE,iBAAA;AAKR;AAFI;EACE,aAAA;EACA,yBAAA;EACA,mBAAA;AAIN;AAHM;EACE,mBAAA;AAKR","sourcesContent":["main {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  form {\n    width: 700px;\n    padding: 4rem;\n    box-shadow: var(--shadow);\n    border-radius: 0.3rem;\n    display: flex;\n    flex-direction: column;\n    .form-group {\n      margin-bottom: 2rem;\n      display: flex;\n      flex-direction: column;\n      label {\n        font-size: 1.8rem;\n        color: var(--dark);\n        font-weight: 700;\n        margin-bottom: 1rem;\n      }\n      input,\n      textarea {\n        border: 0.1rem solid var(--divider);\n        padding: 1rem;\n        outline: none;\n        resize: none;\n        border-radius: 0.3rem;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n      textarea {\n        min-height: 20rem;\n      }\n    }\n    .form-button-container {\n      display: flex;\n      justify-content: flex-end;\n      align-items: center;\n      .button {\n        margin-left: 0.5rem;\n      }\n    }\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
