@@ -1,8 +1,6 @@
 .DS_Store
 .vscode
-dist/main.bundle.js.map
-dist/form.bundle.js.map
-dist/header.bundle.js.map
+dist/*.map
 node_modules
 src
 babel.config.js
