@@ -237,12 +237,18 @@ ___CSS_LOADER_EXPORT___.push([module.id, `main {
   align-items: center;
 }
 main form {
-  width: 700px;
+  margin-top: 20rem;
+  margin-bottom: 20rem;
+  width: 70rem;
   padding: 4rem;
   box-shadow: var(--shadow);
   border-radius: 0.3rem;
   display: flex;
   flex-direction: column;
+}
+main form h2 {
+  text-align: center;
+  margin-bottom: 5rem;
 }
 main form .form-group {
   margin-bottom: 2rem;
@@ -255,7 +261,11 @@ main form .form-group label {
   font-weight: 700;
   margin-bottom: 1rem;
 }
+main form .form-group select {
+  height: 4rem;
+}
 main form .form-group input,
+main form .form-group select,
 main form .form-group textarea {
   border: 0.1rem solid var(--divider);
   padding: 1rem;
@@ -264,6 +274,7 @@ main form .form-group textarea {
   border-radius: 0.3rem;
 }
 main form .form-group input:focus,
+main form .form-group select:focus,
 main form .form-group textarea:focus {
   border-color: var(--primary);
 }
@@ -277,7 +288,7 @@ main form .form-button-container {
 }
 main form .form-button-container .button {
   margin-left: 0.5rem;
-}`, "",{"version":3,"sources":["webpack://./src/form/form.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;AACF;AAAE;EACE,YAAA;EACA,aAAA;EACA,yBAAA;EACA,qBAAA;EACA,aAAA;EACA,sBAAA;AAEJ;AADI;EACE,mBAAA;EACA,aAAA;EACA,sBAAA;AAGN;AAFM;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AAIR;AAFM;;EAEE,mCAAA;EACA,aAAA;EACA,aAAA;EACA,YAAA;EACA,qBAAA;AAIR;AAHQ;;EACE,4BAAA;AAMV;AAHM;EACE,iBAAA;AAKR;AAFI;EACE,aAAA;EACA,yBAAA;EACA,mBAAA;AAIN;AAHM;EACE,mBAAA;AAKR","sourcesContent":["main {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  form {\n    width: 700px;\n    padding: 4rem;\n    box-shadow: var(--shadow);\n    border-radius: 0.3rem;\n    display: flex;\n    flex-direction: column;\n    .form-group {\n      margin-bottom: 2rem;\n      display: flex;\n      flex-direction: column;\n      label {\n        font-size: 1.8rem;\n        color: var(--dark);\n        font-weight: 700;\n        margin-bottom: 1rem;\n      }\n      input,\n      textarea {\n        border: 0.1rem solid var(--divider);\n        padding: 1rem;\n        outline: none;\n        resize: none;\n        border-radius: 0.3rem;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n      textarea {\n        min-height: 20rem;\n      }\n    }\n    .form-button-container {\n      display: flex;\n      justify-content: flex-end;\n      align-items: center;\n      .button {\n        margin-left: 0.5rem;\n      }\n    }\n  }\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/form/form.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;AACF;AAAE;EACE,iBAAA;EACA,oBAAA;EACA,YAAA;EACA,aAAA;EACA,yBAAA;EACA,qBAAA;EACA,aAAA;EACA,sBAAA;AAEJ;AADI;EACE,kBAAA;EACA,mBAAA;AAGN;AADI;EACE,mBAAA;EACA,aAAA;EACA,sBAAA;AAGN;AAFM;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AAIR;AAFM;EACE,YAAA;AAIR;AAFM;;;EAGE,mCAAA;EACA,aAAA;EACA,aAAA;EACA,YAAA;EACA,qBAAA;AAIR;AAHQ;;;EACE,4BAAA;AAOV;AAJM;EACE,iBAAA;AAMR;AAHI;EACE,aAAA;EACA,yBAAA;EACA,mBAAA;AAKN;AAJM;EACE,mBAAA;AAMR","sourcesContent":["main {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  form {\n    margin-top: 20rem;\n    margin-bottom: 20rem;\n    width: 70rem;\n    padding: 4rem;\n    box-shadow: var(--shadow);\n    border-radius: 0.3rem;\n    display: flex;\n    flex-direction: column;\n    h2 {\n      text-align: center;\n      margin-bottom: 5rem;\n    }\n    .form-group {\n      margin-bottom: 2rem;\n      display: flex;\n      flex-direction: column;\n      label {\n        font-size: 1.8rem;\n        color: var(--dark);\n        font-weight: 700;\n        margin-bottom: 1rem;\n      }\n      select {\n        height: 4rem;\n      }\n      input,\n      select,\n      textarea {\n        border: 0.1rem solid var(--divider);\n        padding: 1rem;\n        outline: none;\n        resize: none;\n        border-radius: 0.3rem;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n      textarea {\n        min-height: 20rem;\n      }\n    }\n    .form-button-container {\n      display: flex;\n      justify-content: flex-end;\n      align-items: center;\n      .button {\n        margin-left: 0.5rem;\n      }\n    }\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
