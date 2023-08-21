@@ -5481,6 +5481,7 @@ a {
   --danger: #ea2027;
   --info: #3867d6;
   --warning: #fbc531;
+  --hint: #95a5a6;
   --accent: #3c40c6;
   --divider: #bdc3c7;
   --basic: "Mulish", sans-serif;
@@ -5575,7 +5576,7 @@ img {
 .e {
   font-family: var(--logo);
   color: var(--danger);
-}`, "",{"version":3,"sources":["webpack://./src/assets/sass/partials/_base.scss","webpack://./src/assets/sass/styles.scss","webpack://./src/assets/sass/partials/_classes.scss","webpack://./src/assets/sass/partials/_reset.scss","webpack://./src/assets/sass/partials/_variables.scss","webpack://./src/assets/sass/layouts/_body.scss","webpack://./src/assets/sass/layouts/_header.scss","webpack://./src/assets/sass/layouts/_footer.scss"],"names":[],"mappings":"AAAA;EACE,gBAAA;ACCF;;ADEA;EACE,iBAAA;EACA,kBAAA;EACA,yBAAA;ACCF;;ADEA;;;;EAIE,mBAAA;ACCF;;ADEA;EACE,iBAAA;ACCF;;ADEA;EACE,eAAA;ACCF;;ADEA;EACE,iBAAA;ACCF;;ADEA;EACE,eAAA;ACCF;;ADEA;EACE,gBAAA;ACCF;;ADEA;EACE,eAAA;ACCF;;ADEA;EACE,kBAAA;EACA,qBAAA;ACCF;;AC3CE;EACE,oBAAA;EACA,0CAAA;AD8CJ;;AC1CA;EACE,SAAA;EACA,qBAAA;EACA,kBAAA;EACA,gBAAA;EACA,eAAA;EACA,2BAAA;AD6CF;AC5CE;EACE,yBAAA;EACA,YAAA;EACA,2BAAA;AD8CJ;AC5CE;EACE,0BAAA;EACA,mCAAA;EACA,mBAAA;AD8CJ;AC5CE;EACE,wBAAA;EACA,mCAAA;EACA,qBAAA;AD8CJ;;ACzCE;EACE,qBAAA;EACA,iBAAA;AD4CJ;AC1CE;EACE,oBAAA;EACA,iBAAA;AD4CJ;AC1CE;EACE,kBAAA;EACA,iBAAA;AD4CJ;;AEtFA;EACE,SAAA;EACA,UAAA;EACA,sBAAA;AFyFF;;AG5FA;EAEE,kBAAA;EACA,oBAAA;EACA,mBAAA;EAGA,gBAAA;EACA,iBAAA;EACA,YAAA;EAGA,kBAAA;EACA,iBAAA;EACA,eAAA;EACA,kBAAA;EAGA,iBAAA;EACA,kBAAA;EAGA,6BAAA;EACA,+BAAA;EACA,sCAAA;EAGA;wCAAA;AHqFF;;AIhHA;EACE,iBAAA;EACA,aAAA;EACA,oDACE;AJkHJ;;AKtHA;EACE,iBAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,8BAAA;EACA,mBAAA;EACA,0BAAA;ALyHF;AKxHE;EACE,mBAAA;EACA,gBAAA;EACA,sBAAA;AL0HJ;AKxHE;EACE,eAAA;EACA,gBAAA;AL0HJ;AKzHI;EACE,sBAAA;AL2HN;AKvHE;EACE,aAAA;EACA,qBAAA;ALyHJ;AKxHI;EACE,aAAA;EACA,kBAAA;EACA,iBAAA;AL0HN;AKzHM;EACE,oBAAA;EACA,eAAA;EACA,kCAAA;EACA,qBAAA;EACA,aAAA;AL2HR;AK1HQ;EACE,mBAAA;AL4HV;AKzHM;EACE,iBAAA;EACA,iBAAA;AL2HR;AKxHI;EACE,8BAAA;EACA,aAAA;EACA,qBAAA;AL0HN;AKzHM;EACE,uBAAA;AL2HR;;AM3KA;EACE,iBAAA;EACA,aAAA;EACA,YAAA;EACA,6BAAA;EACA,mBAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,iBAAA;AN8KF;;AM3KA;EACE,YAAA;EACA,WAAA;EACA,sBAAA;AN8KF;;AM3KA;EACE,wBAAA;EACA,oBAAA;AN8KF;;AM3KA;EACE,wBAAA;EACA,oBAAA;AN8KF","sourcesContent":[":root {\n  font-size: 62.5%; // font-size = 10px\n}\n\nbody {\n  font-size: 1.6rem; // 1rem = 10px\n  color: var(--dark);\n  font-family: var(--basic);\n}\n\nh1,\nh2,\nh3,\nh4 {\n  margin-bottom: 2rem;\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: var(--dark);\n  text-decoration: none;\n}\n",":root {\n  font-size: 62.5%;\n}\n\nbody {\n  font-size: 1.6rem;\n  color: var(--dark);\n  font-family: var(--basic);\n}\n\nh1,\nh2,\nh3,\nh4 {\n  margin-bottom: 2rem;\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: var(--dark);\n  text-decoration: none;\n}\n\n.title-underline {\n  padding-bottom: 2rem;\n  border-bottom: 0.1rem solid var(--divider);\n}\n\n.button {\n  border: 0;\n  border-radius: 0.3rem;\n  padding: 1rem 2rem;\n  font-weight: 700;\n  cursor: pointer;\n  transition: box-shadow 0.2s;\n}\n.button:hover {\n  box-shadow: var(--shadow);\n  opacity: 89%;\n  transition: box-shadow 0.2s;\n}\n.button-primary {\n  background: var(--primary);\n  border: 0.2rem solid var(--primary);\n  color: var(--light);\n}\n.button-secondary {\n  background: var(--light);\n  border: 0.2rem solid var(--primary);\n  color: var(--primary);\n}\n\n.text-valid {\n  color: var(--success);\n  font-weight: bold;\n}\n.text-error {\n  color: var(--danger);\n  font-weight: bold;\n}\n.text-detail {\n  color: var(--info);\n  font-weight: bold;\n}\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n:root {\n  --primary: #2e86de;\n  --secondary: #54a0ff;\n  --tertiary: #48dbfb;\n  --light: #f5f6fa;\n  --medium: #2d98da;\n  --dark: #333;\n  --success: #06ad3e;\n  --danger: #ea2027;\n  --info: #3867d6;\n  --warning: #fbc531;\n  --accent: #3c40c6;\n  --divider: #bdc3c7;\n  --basic: \"Mulish\", sans-serif;\n  --default: \"Roboto\", sans-serif;\n  --logo: \"Roboto Condensed\", sans-serif;\n  --shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),\n    0 1px 3px 1px rgba(60, 64, 67, 0.15);\n}\n\n.container {\n  min-height: 100vh;\n  display: grid;\n  grid: \"header\" auto \"content\" 1fr \"footer\" auto/auto;\n}\n\nheader {\n  grid-area: header;\n  padding: 2rem;\n  display: flex;\n  flex-flow: row nowrap;\n  justify-content: space-between;\n  align-items: center;\n  background: var(--primary);\n}\nheader a {\n  color: var(--light);\n  font-weight: 700;\n  letter-spacing: 0.1rem;\n}\nheader .header-brand {\n  font-size: 3rem;\n  font-weight: 700;\n}\nheader .header-brand:hover {\n  color: var(--tertiary);\n}\nheader ul {\n  display: flex;\n  margin-right: -0.5rem;\n}\nheader ul li {\n  padding: 1rem;\n  margin-right: 1rem;\n  font-size: 1.5rem;\n}\nheader ul li:hover {\n  transition: all 0.2s;\n  cursor: pointer;\n  background-color: var(--secondary);\n  border-radius: 0.2rem;\n  padding: 1rem;\n}\nheader ul li:hover a {\n  color: var(--light);\n}\nheader ul li .header-brand {\n  font-size: 1.8rem;\n  padding: 0 0.1rem;\n}\nheader ul .active {\n  background-color: var(--light);\n  padding: 1rem;\n  border-radius: 0.2rem;\n}\nheader ul .active a {\n  color: var(--secondary);\n}\n\nfooter {\n  grid-area: footer;\n  padding: 2rem;\n  height: 8rem;\n  background-color: var(--dark);\n  color: var(--light);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: bold;\n}\n\nimg {\n  height: 2rem;\n  width: 2rem;\n  margin-bottom: -0.1rem;\n}\n\n.j {\n  font-family: var(--logo);\n  color: var(--danger);\n}\n\n.e {\n  font-family: var(--logo);\n  color: var(--danger);\n}",".title {\n  &-underline {\n    padding-bottom: 2rem;\n    border-bottom: 0.1rem solid var(--divider);\n  }\n}\n\n.button {\n  border: 0;\n  border-radius: 0.3rem;\n  padding: 1rem 2rem;\n  font-weight: 700;\n  cursor: pointer;\n  transition: box-shadow 0.2s;\n  &:hover {\n    box-shadow: var(--shadow);\n    opacity: 89%;\n    transition: box-shadow 0.2s;\n  }\n  &-primary {\n    background: var(--primary);\n    border: 0.2rem solid var(--primary);\n    color: var(--light);\n  }\n  &-secondary {\n    background: var(--light);\n    border: 0.2rem solid var(--primary);\n    color: var(--primary);\n  }\n}\n\n.text {\n  &-valid {\n    color: var(--success);\n    font-weight: bold;\n  }\n  &-error {\n    color: var(--danger);\n    font-weight: bold;\n  }\n  &-detail {\n    color: var(--info);\n    font-weight: bold;\n  }\n}\n","* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n",":root {\n  // main color\n  --primary: #2e86de;\n  --secondary: #54a0ff;\n  --tertiary: #48dbfb;\n\n  // text color\n  --light: #f5f6fa;\n  --medium: #2d98da;\n  --dark: #333;\n\n  // utils => button, border, words etc\n  --success: #06ad3e;\n  --danger: #ea2027;\n  --info: #3867d6;\n  --warning: #fbc531;\n\n  // utils => border, words etc\n  --accent: #3c40c6;\n  --divider: #bdc3c7;\n\n  // font-family\n  --basic: \"Mulish\", sans-serif;\n  --default: \"Roboto\", sans-serif;\n  --logo: \"Roboto Condensed\", sans-serif;\n\n  // shadow\n  --shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),\n    0 1px 3px 1px rgba(60, 64, 67, 0.15);\n}\n",".container {\n  min-height: 100vh;\n  display: grid;\n  grid:\n    \"header\" auto\n    \"content\" 1fr\n    \"footer\" auto /\n    auto;\n}\n","header {\n  grid-area: header;\n  padding: 2rem;\n  display: flex;\n  flex-flow: row nowrap;\n  justify-content: space-between;\n  align-items: center;\n  background: var(--primary);\n  a {\n    color: var(--light);\n    font-weight: 700;\n    letter-spacing: 0.1rem;\n  }\n  .header-brand {\n    font-size: 3rem;\n    font-weight: 700;\n    &:hover {\n      color: var(--tertiary);\n    }\n  }\n\n  ul {\n    display: flex;\n    margin-right: -0.5rem;\n    li {\n      padding: 1rem;\n      margin-right: 1rem;\n      font-size: 1.5rem;\n      &:hover {\n        transition: all 0.2s;\n        cursor: pointer;\n        background-color: var(--secondary);\n        border-radius: 0.2rem;\n        padding: 1rem;\n        a {\n          color: var(--light);\n        }\n      }\n      .header-brand {\n        font-size: 1.8rem;\n        padding: 0 0.1rem;\n      }\n    }\n    .active {\n      background-color: var(--light);\n      padding: 1rem;\n      border-radius: 0.2rem;\n      a {\n        color: var(--secondary);\n      }\n    }\n  }\n}\n","footer {\n  grid-area: footer;\n  padding: 2rem;\n  height: 8rem;\n  background-color: var(--dark);\n  color: var(--light);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: bold;\n}\n\nimg {\n  height: 2rem;\n  width: 2rem;\n  margin-bottom: -0.1rem;\n}\n\n.j {\n  font-family: var(--logo);\n  color: var(--danger);\n}\n\n.e {\n  font-family: var(--logo);\n  color: var(--danger);\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/assets/sass/partials/_base.scss","webpack://./src/assets/sass/styles.scss","webpack://./src/assets/sass/partials/_classes.scss","webpack://./src/assets/sass/partials/_reset.scss","webpack://./src/assets/sass/partials/_variables.scss","webpack://./src/assets/sass/layouts/_body.scss","webpack://./src/assets/sass/layouts/_header.scss","webpack://./src/assets/sass/layouts/_footer.scss"],"names":[],"mappings":"AAAA;EACE,gBAAA;ACCF;;ADEA;EACE,iBAAA;EACA,kBAAA;EACA,yBAAA;ACCF;;ADEA;;;;EAIE,mBAAA;ACCF;;ADEA;EACE,iBAAA;ACCF;;ADEA;EACE,eAAA;ACCF;;ADEA;EACE,iBAAA;ACCF;;ADEA;EACE,eAAA;ACCF;;ADEA;EACE,gBAAA;ACCF;;ADEA;EACE,eAAA;ACCF;;ADEA;EACE,kBAAA;EACA,qBAAA;ACCF;;AC3CE;EACE,oBAAA;EACA,0CAAA;AD8CJ;;AC1CA;EACE,SAAA;EACA,qBAAA;EACA,kBAAA;EACA,gBAAA;EACA,eAAA;EACA,2BAAA;AD6CF;AC5CE;EACE,yBAAA;EACA,YAAA;EACA,2BAAA;AD8CJ;AC5CE;EACE,0BAAA;EACA,mCAAA;EACA,mBAAA;AD8CJ;AC5CE;EACE,wBAAA;EACA,mCAAA;EACA,qBAAA;AD8CJ;;ACzCE;EACE,qBAAA;EACA,iBAAA;AD4CJ;AC1CE;EACE,oBAAA;EACA,iBAAA;AD4CJ;AC1CE;EACE,kBAAA;EACA,iBAAA;AD4CJ;;AEtFA;EACE,SAAA;EACA,UAAA;EACA,sBAAA;AFyFF;;AG5FA;EAEE,kBAAA;EACA,oBAAA;EACA,mBAAA;EAGA,gBAAA;EACA,iBAAA;EACA,YAAA;EAGA,kBAAA;EACA,iBAAA;EACA,eAAA;EACA,kBAAA;EACA,eAAA;EAGA,iBAAA;EACA,kBAAA;EAGA,6BAAA;EACA,+BAAA;EACA,sCAAA;EAGA;wCAAA;AHqFF;;AIjHA;EACE,iBAAA;EACA,aAAA;EACA,oDACE;AJmHJ;;AKvHA;EACE,iBAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,8BAAA;EACA,mBAAA;EACA,0BAAA;AL0HF;AKzHE;EACE,mBAAA;EACA,gBAAA;EACA,sBAAA;AL2HJ;AKzHE;EACE,eAAA;EACA,gBAAA;AL2HJ;AK1HI;EACE,sBAAA;AL4HN;AKxHE;EACE,aAAA;EACA,qBAAA;AL0HJ;AKzHI;EACE,aAAA;EACA,kBAAA;EACA,iBAAA;AL2HN;AK1HM;EACE,oBAAA;EACA,eAAA;EACA,kCAAA;EACA,qBAAA;EACA,aAAA;AL4HR;AK3HQ;EACE,mBAAA;AL6HV;AK1HM;EACE,iBAAA;EACA,iBAAA;AL4HR;AKzHI;EACE,8BAAA;EACA,aAAA;EACA,qBAAA;AL2HN;AK1HM;EACE,uBAAA;AL4HR;;AM5KA;EACE,iBAAA;EACA,aAAA;EACA,YAAA;EACA,6BAAA;EACA,mBAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,iBAAA;AN+KF;;AM5KA;EACE,YAAA;EACA,WAAA;EACA,sBAAA;AN+KF;;AM5KA;EACE,wBAAA;EACA,oBAAA;AN+KF;;AM5KA;EACE,wBAAA;EACA,oBAAA;AN+KF","sourcesContent":[":root {\n  font-size: 62.5%; // font-size = 10px\n}\n\nbody {\n  font-size: 1.6rem; // 1rem = 10px\n  color: var(--dark);\n  font-family: var(--basic);\n}\n\nh1,\nh2,\nh3,\nh4 {\n  margin-bottom: 2rem;\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: var(--dark);\n  text-decoration: none;\n}\n",":root {\n  font-size: 62.5%;\n}\n\nbody {\n  font-size: 1.6rem;\n  color: var(--dark);\n  font-family: var(--basic);\n}\n\nh1,\nh2,\nh3,\nh4 {\n  margin-bottom: 2rem;\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: var(--dark);\n  text-decoration: none;\n}\n\n.title-underline {\n  padding-bottom: 2rem;\n  border-bottom: 0.1rem solid var(--divider);\n}\n\n.button {\n  border: 0;\n  border-radius: 0.3rem;\n  padding: 1rem 2rem;\n  font-weight: 700;\n  cursor: pointer;\n  transition: box-shadow 0.2s;\n}\n.button:hover {\n  box-shadow: var(--shadow);\n  opacity: 89%;\n  transition: box-shadow 0.2s;\n}\n.button-primary {\n  background: var(--primary);\n  border: 0.2rem solid var(--primary);\n  color: var(--light);\n}\n.button-secondary {\n  background: var(--light);\n  border: 0.2rem solid var(--primary);\n  color: var(--primary);\n}\n\n.text-valid {\n  color: var(--success);\n  font-weight: bold;\n}\n.text-error {\n  color: var(--danger);\n  font-weight: bold;\n}\n.text-detail {\n  color: var(--info);\n  font-weight: bold;\n}\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n:root {\n  --primary: #2e86de;\n  --secondary: #54a0ff;\n  --tertiary: #48dbfb;\n  --light: #f5f6fa;\n  --medium: #2d98da;\n  --dark: #333;\n  --success: #06ad3e;\n  --danger: #ea2027;\n  --info: #3867d6;\n  --warning: #fbc531;\n  --hint: #95a5a6;\n  --accent: #3c40c6;\n  --divider: #bdc3c7;\n  --basic: \"Mulish\", sans-serif;\n  --default: \"Roboto\", sans-serif;\n  --logo: \"Roboto Condensed\", sans-serif;\n  --shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),\n    0 1px 3px 1px rgba(60, 64, 67, 0.15);\n}\n\n.container {\n  min-height: 100vh;\n  display: grid;\n  grid: \"header\" auto \"content\" 1fr \"footer\" auto/auto;\n}\n\nheader {\n  grid-area: header;\n  padding: 2rem;\n  display: flex;\n  flex-flow: row nowrap;\n  justify-content: space-between;\n  align-items: center;\n  background: var(--primary);\n}\nheader a {\n  color: var(--light);\n  font-weight: 700;\n  letter-spacing: 0.1rem;\n}\nheader .header-brand {\n  font-size: 3rem;\n  font-weight: 700;\n}\nheader .header-brand:hover {\n  color: var(--tertiary);\n}\nheader ul {\n  display: flex;\n  margin-right: -0.5rem;\n}\nheader ul li {\n  padding: 1rem;\n  margin-right: 1rem;\n  font-size: 1.5rem;\n}\nheader ul li:hover {\n  transition: all 0.2s;\n  cursor: pointer;\n  background-color: var(--secondary);\n  border-radius: 0.2rem;\n  padding: 1rem;\n}\nheader ul li:hover a {\n  color: var(--light);\n}\nheader ul li .header-brand {\n  font-size: 1.8rem;\n  padding: 0 0.1rem;\n}\nheader ul .active {\n  background-color: var(--light);\n  padding: 1rem;\n  border-radius: 0.2rem;\n}\nheader ul .active a {\n  color: var(--secondary);\n}\n\nfooter {\n  grid-area: footer;\n  padding: 2rem;\n  height: 8rem;\n  background-color: var(--dark);\n  color: var(--light);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: bold;\n}\n\nimg {\n  height: 2rem;\n  width: 2rem;\n  margin-bottom: -0.1rem;\n}\n\n.j {\n  font-family: var(--logo);\n  color: var(--danger);\n}\n\n.e {\n  font-family: var(--logo);\n  color: var(--danger);\n}",".title {\n  &-underline {\n    padding-bottom: 2rem;\n    border-bottom: 0.1rem solid var(--divider);\n  }\n}\n\n.button {\n  border: 0;\n  border-radius: 0.3rem;\n  padding: 1rem 2rem;\n  font-weight: 700;\n  cursor: pointer;\n  transition: box-shadow 0.2s;\n  &:hover {\n    box-shadow: var(--shadow);\n    opacity: 89%;\n    transition: box-shadow 0.2s;\n  }\n  &-primary {\n    background: var(--primary);\n    border: 0.2rem solid var(--primary);\n    color: var(--light);\n  }\n  &-secondary {\n    background: var(--light);\n    border: 0.2rem solid var(--primary);\n    color: var(--primary);\n  }\n}\n\n.text {\n  &-valid {\n    color: var(--success);\n    font-weight: bold;\n  }\n  &-error {\n    color: var(--danger);\n    font-weight: bold;\n  }\n  &-detail {\n    color: var(--info);\n    font-weight: bold;\n  }\n}\n","* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n",":root {\n  // main color\n  --primary: #2e86de;\n  --secondary: #54a0ff;\n  --tertiary: #48dbfb;\n\n  // text color\n  --light: #f5f6fa;\n  --medium: #2d98da;\n  --dark: #333;\n\n  // utils => button, border, words etc\n  --success: #06ad3e;\n  --danger: #ea2027;\n  --info: #3867d6;\n  --warning: #fbc531;\n  --hint: #95a5a6;\n\n  // utils => border, words etc\n  --accent: #3c40c6;\n  --divider: #bdc3c7;\n\n  // font-family\n  --basic: \"Mulish\", sans-serif;\n  --default: \"Roboto\", sans-serif;\n  --logo: \"Roboto Condensed\", sans-serif;\n\n  // shadow\n  --shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),\n    0 1px 3px 1px rgba(60, 64, 67, 0.15);\n}\n",".container {\n  min-height: 100vh;\n  display: grid;\n  grid:\n    \"header\" auto\n    \"content\" 1fr\n    \"footer\" auto /\n    auto;\n}\n","header {\n  grid-area: header;\n  padding: 2rem;\n  display: flex;\n  flex-flow: row nowrap;\n  justify-content: space-between;\n  align-items: center;\n  background: var(--primary);\n  a {\n    color: var(--light);\n    font-weight: 700;\n    letter-spacing: 0.1rem;\n  }\n  .header-brand {\n    font-size: 3rem;\n    font-weight: 700;\n    &:hover {\n      color: var(--tertiary);\n    }\n  }\n\n  ul {\n    display: flex;\n    margin-right: -0.5rem;\n    li {\n      padding: 1rem;\n      margin-right: 1rem;\n      font-size: 1.5rem;\n      &:hover {\n        transition: all 0.2s;\n        cursor: pointer;\n        background-color: var(--secondary);\n        border-radius: 0.2rem;\n        padding: 1rem;\n        a {\n          color: var(--light);\n        }\n      }\n      .header-brand {\n        font-size: 1.8rem;\n        padding: 0 0.1rem;\n      }\n    }\n    .active {\n      background-color: var(--light);\n      padding: 1rem;\n      border-radius: 0.2rem;\n      a {\n        color: var(--secondary);\n      }\n    }\n  }\n}\n","footer {\n  grid-area: footer;\n  padding: 2rem;\n  height: 8rem;\n  background-color: var(--dark);\n  color: var(--light);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: bold;\n}\n\nimg {\n  height: 2rem;\n  width: 2rem;\n  margin-bottom: -0.1rem;\n}\n\n.j {\n  font-family: var(--logo);\n  color: var(--danger);\n}\n\n.e {\n  font-family: var(--logo);\n  color: var(--danger);\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -5620,38 +5621,6 @@ main form h2 {
   text-align: center;
   margin-bottom: 5rem;
 }
-main form .form-picture {
-  margin-bottom: 2.5rem;
-  display: flex;
-  flex-direction: column;
-}
-main form .form-picture p {
-  font-size: 1.8rem;
-  color: var(--dark);
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-main form .form-picture label {
-  border: 0.1rem solid var(--divider);
-  border-radius: 0.3rem;
-  font-size: 1.2rem;
-  height: 4rem;
-  display: inline-block;
-}
-main form .form-picture input[type=file] {
-  margin-top: -3rem;
-}
-main form .form-picture #input-picture {
-  opacity: 0%;
-}
-main form .form-picture #name-picture {
-  position: absolute;
-  bottom: 45.5rem;
-  margin-left: 1rem;
-  font-size: 1.2rem;
-  color: var(--info);
-  font-weight: bold;
-}
 main form .form-group {
   margin-bottom: 2rem;
   display: flex;
@@ -5695,13 +5664,32 @@ main form .form-group select {
   outline: none;
   border-radius: 0.3rem;
   font-family: var(--basic);
-  font-weight: bold;
 }
 main form .form-group select:focus {
   border-color: var(--primary);
 }
 main form .form-group textarea {
   min-height: 20rem;
+}
+main form .form-category {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+main form .form-category .container-name-category {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.4rem;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+  border: 0.1rem solid var(--divider);
+  padding: 1rem;
+  outline: none;
+  border-radius: 0.3rem;
+  cursor: default;
+}
+main form .form-category .container-name-category:focus {
+  border-color: var(--primary);
 }
 main form .form-button-container {
   display: flex;
@@ -5719,19 +5707,20 @@ main form .form-button-container .button {
   margin-top: 0.5rem;
 }
 
+.form-title-category {
+  font-size: 1.8rem;
+  color: var(--dark);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
 #text-info-picture {
   color: var(--danger);
   font-weight: 700;
   margin-top: 1.5rem;
 }
 
-#text-info-country {
-  color: var(--danger);
-  font-weight: 700;
-  margin-top: 0.5rem;
-}
-
-#text-info-place {
+#text-info-photographer {
   color: var(--danger);
   font-weight: 700;
   margin-top: 0.5rem;
@@ -5752,7 +5741,7 @@ main form .form-button-container .button {
 
 .text-danger {
   color: var(--danger);
-}`, "",{"version":3,"sources":["webpack://./src/form/form.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;AACF;AAAE;EACE,iBAAA;EACA,oBAAA;EACA,YAAA;EACA,aAAA;EACA,yBAAA;EACA,qBAAA;EACA,aAAA;EACA,sBAAA;AAEJ;AADI;EACE,kBAAA;EACA,mBAAA;AAGN;AADI;EACE,qBAAA;EACA,aAAA;EACA,sBAAA;AAGN;AAFM;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AAIR;AAFM;EACE,mCAAA;EACA,qBAAA;EACA,iBAAA;EACA,YAAA;EACA,qBAAA;AAIR;AAFM;EACE,iBAAA;AAIR;AAFM;EACE,WAAA;AAIR;AAFM;EACE,kBAAA;EACA,eAAA;EACA,iBAAA;EACA,iBAAA;EACA,kBAAA;EACA,iBAAA;AAIR;AADI;EACE,mBAAA;EACA,aAAA;EACA,sBAAA;AAGN;AAFM;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AAIR;AAFM;EACE,YAAA;AAIR;AAFM;EACE,mCAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,eAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AAFM;EACE,mCAAA;EACA,aAAA;EACA,aAAA;EACA,YAAA;EACA,qBAAA;EACA,eAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AAFM;EACE,cAAA;EACA,iBAAA;EACA,mCAAA;EACA,eAAA;EACA,aAAA;EACA,qBAAA;EACA,yBAAA;EACA,iBAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AAFM;EACE,iBAAA;AAIR;AADI;EACE,aAAA;EACA,yBAAA;EACA,mBAAA;AAGN;AAFM;EACE,iBAAA;EACA,oBAAA;AAIR;;AAEA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AACF;;AACA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AAEF;;AAAA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AAGF;;AADA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AAIF;;AAFA;EACE,oBAAA;EACA,gBAAA;EACA,gBAAA;AAKF;;AAHA;EACE,oBAAA;EACA,gBAAA;EACA,iBAAA;EACA,mBAAA;AAMF;;AAHA;EACE,oBAAA;AAMF","sourcesContent":["main {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  form {\n    margin-top: 20rem;\n    margin-bottom: 20rem;\n    width: 70rem;\n    padding: 4rem;\n    box-shadow: var(--shadow);\n    border-radius: 0.3rem;\n    display: flex;\n    flex-direction: column;\n    h2 {\n      text-align: center;\n      margin-bottom: 5rem;\n    }\n    .form-picture {\n      margin-bottom: 2.5rem;\n      display: flex;\n      flex-direction: column;\n      p {\n        font-size: 1.8rem;\n        color: var(--dark);\n        font-weight: 700;\n        margin-bottom: 1rem;\n      }\n      label {\n        border: 0.1rem solid var(--divider);\n        border-radius: 0.3rem;\n        font-size: 1.2rem;\n        height: 4rem;\n        display: inline-block;\n      }\n      input[type=\"file\"] {\n        margin-top: -3rem;\n      }\n      #input-picture {\n        opacity: 0%;\n      }\n      #name-picture {\n        position: absolute;\n        bottom: 45.5rem;\n        margin-left: 1rem;\n        font-size: 1.2rem;\n        color: var(--info);\n        font-weight: bold;\n      }\n    }\n    .form-group {\n      margin-bottom: 2rem;\n      display: flex;\n      flex-direction: column;\n      label {\n        font-size: 1.8rem;\n        color: var(--dark);\n        font-weight: 700;\n        margin-bottom: 1rem;\n      }\n      select {\n        height: 4rem;\n      }\n      input {\n        border: 0.1rem solid var(--divider);\n        padding: 1rem;\n        outline: none;\n        border-radius: 0.3rem;\n        cursor: default;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n      textarea {\n        border: 0.1rem solid var(--divider);\n        padding: 1rem;\n        outline: none;\n        resize: none;\n        border-radius: 0.3rem;\n        cursor: default;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n      select {\n        height: 4.5rem;\n        font-size: 1.4rem;\n        border: 0.1rem solid var(--divider);\n        padding: 0.5rem;\n        outline: none;\n        border-radius: 0.3rem;\n        font-family: var(--basic);\n        font-weight: bold;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n      textarea {\n        min-height: 20rem;\n      }\n    }\n    .form-button-container {\n      display: flex;\n      justify-content: flex-end;\n      align-items: center;\n      .button {\n        margin-left: 1rem;\n        margin-right: 0.2rem;\n      }\n    }\n  }\n}\n\n#text-info-category {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 0.5rem;\n}\n#text-info-picture {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 1.5rem;\n}\n#text-info-country {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 0.5rem;\n}\n#text-info-place {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 0.5rem;\n}\n#text-info-content {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 1rem;\n}\n#text-info {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: -2rem;\n  margin-bottom: 2rem;\n}\n\n.text-danger {\n  color: var(--danger);\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/form/form.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;AACF;AAAE;EACE,iBAAA;EACA,oBAAA;EACA,YAAA;EACA,aAAA;EACA,yBAAA;EACA,qBAAA;EACA,aAAA;EACA,sBAAA;AAEJ;AADI;EACE,kBAAA;EACA,mBAAA;AAGN;AADI;EACE,mBAAA;EACA,aAAA;EACA,sBAAA;AAGN;AAFM;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AAIR;AAFM;EACE,YAAA;AAIR;AAFM;EACE,mCAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,eAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AAFM;EACE,mCAAA;EACA,aAAA;EACA,aAAA;EACA,YAAA;EACA,qBAAA;EACA,eAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AAFM;EACE,cAAA;EACA,iBAAA;EACA,mCAAA;EACA,eAAA;EACA,aAAA;EACA,qBAAA;EACA,yBAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AAFM;EACE,iBAAA;AAIR;AADI;EACE,mBAAA;EACA,aAAA;EACA,sBAAA;AAGN;AAFM;EACE,aAAA;EACA,mBAAA;EACA,iBAAA;EACA,6BAAA;EACA,gBAAA;EACA,mCAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,eAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AADI;EACE,aAAA;EACA,yBAAA;EACA,mBAAA;AAGN;AAFM;EACE,iBAAA;EACA,oBAAA;AAIR;;AAEA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AACF;;AAEA;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AACF;;AAEA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AACF;;AAEA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AACF;;AAEA;EACE,oBAAA;EACA,gBAAA;EACA,gBAAA;AACF;;AACA;EACE,oBAAA;EACA,gBAAA;EACA,iBAAA;EACA,mBAAA;AAEF;;AACA;EACE,oBAAA;AAEF","sourcesContent":["main {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  form {\n    margin-top: 20rem;\n    margin-bottom: 20rem;\n    width: 70rem;\n    padding: 4rem;\n    box-shadow: var(--shadow);\n    border-radius: 0.3rem;\n    display: flex;\n    flex-direction: column;\n    h2 {\n      text-align: center;\n      margin-bottom: 5rem;\n    }\n    .form-group {\n      margin-bottom: 2rem;\n      display: flex;\n      flex-direction: column;\n      label {\n        font-size: 1.8rem;\n        color: var(--dark);\n        font-weight: 700;\n        margin-bottom: 1rem;\n      }\n      select {\n        height: 4rem;\n      }\n      input {\n        border: 0.1rem solid var(--divider);\n        padding: 1rem;\n        outline: none;\n        border-radius: 0.3rem;\n        cursor: default;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n      textarea {\n        border: 0.1rem solid var(--divider);\n        padding: 1rem;\n        outline: none;\n        resize: none;\n        border-radius: 0.3rem;\n        cursor: default;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n      select {\n        height: 4.5rem;\n        font-size: 1.4rem;\n        border: 0.1rem solid var(--divider);\n        padding: 0.5rem;\n        outline: none;\n        border-radius: 0.3rem;\n        font-family: var(--basic);\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n      textarea {\n        min-height: 20rem;\n      }\n    }\n    .form-category {\n      margin-bottom: 2rem;\n      display: flex;\n      flex-direction: column;\n      .container-name-category {\n        display: flex;\n        flex-direction: row;\n        font-size: 1.4rem;\n        justify-content: space-evenly;\n        margin-top: 1rem;\n        border: 0.1rem solid var(--divider);\n        padding: 1rem;\n        outline: none;\n        border-radius: 0.3rem;\n        cursor: default;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n    }\n    .form-button-container {\n      display: flex;\n      justify-content: flex-end;\n      align-items: center;\n      .button {\n        margin-left: 1rem;\n        margin-right: 0.2rem;\n      }\n    }\n  }\n}\n\n#text-info-category {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 0.5rem;\n}\n\n.form-title-category {\n  font-size: 1.8rem;\n  color: var(--dark);\n  font-weight: 700;\n  margin-bottom: 1rem;\n}\n\n#text-info-picture {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 1.5rem;\n}\n\n#text-info-photographer {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 0.5rem;\n}\n\n#text-info-content {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 1rem;\n}\n#text-info {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: -2rem;\n  margin-bottom: 2rem;\n}\n\n.text-danger {\n  color: var(--danger);\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -6408,7 +6397,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 
 var form = document.querySelector("form");
-var inputPicture = document.querySelector("#input-picture");
 form.addEventListener("submit", /*#__PURE__*/function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(event) {
     var formData, photo, json, response, body;
@@ -6455,19 +6443,13 @@ form.addEventListener("submit", /*#__PURE__*/function () {
     return _ref.apply(this, arguments);
   };
 }());
-inputPicture.addEventListener("change", function (event) {
-  var filePicture = event.target.files[0];
-  var namePicture = document.querySelector("#name-picture");
-  namePicture.innerHTML = "".concat(filePicture.name);
-});
 var formIsValid = function formIsValid(photo) {
   var textInfoPicture = document.querySelector("#text-info-picture");
   var textInfoCategory = document.querySelector("#text-info-category");
-  var textInfoCountry = document.querySelector("#text-info-country");
-  var textInfoPlace = document.querySelector("#text-info-place");
+  var textInfoPhotographer = document.querySelector("#text-info-photographer");
   var textInfoContent = document.querySelector("#text-info-content");
   var textInfo = document.querySelector("#text-info");
-  if (!photo.picture.name && (photo.category || photo.country || photo.place || photo.content)) {
+  if (!photo.picture && (photo.category || photo.photographer || photo.content)) {
     textInfoPicture.innerHTML = "Veuillez selectionner une photo.";
     setTimeout(function () {
       textInfoPicture.innerHTML = "";
@@ -6475,31 +6457,23 @@ var formIsValid = function formIsValid(photo) {
   } else {
     textInfoPicture.innerHTML = "";
   }
-  if (!photo.category && (photo.picture.name || photo.country || photo.place || photo.content)) {
-    textInfoCategory.innerHTML = "Veuillez renseigner une categorie.";
+  if (!photo.category && (photo.picture || photo.photographer || photo.content)) {
+    textInfoCategory.innerHTML = "Veuillez renseigner choisir categorie.";
     setTimeout(function () {
       textInfoCategory.innerHTML = "";
     }, 5000);
   } else {
     textInfoCategory.innerHTML = "";
   }
-  if (!photo.country && (photo.picture.name || photo.category || photo.place || photo.content)) {
-    textInfoCountry.innerHTML = "Veuillez selectionner dans quel pays a été prise la photo.";
+  if (!photo.photographer && (photo.picture || photo.category || photo.content)) {
+    textInfoPhotographer.innerHTML = "Veuillez indiquer le nom du Photographe.";
     setTimeout(function () {
-      textInfoCountry.innerHTML = "";
+      textInfoPhotographer.innerHTML = "";
     }, 5000);
   } else {
-    textInfoCountry.innerHTML = "";
+    textInfoPhotographer.innerHTML = "";
   }
-  if (!photo.place && (photo.picture.name || photo.category || photo.country || photo.content)) {
-    textInfoPlace.innerHTML = "Veuillez indiquer le lieu où la photo a été prise.";
-    setTimeout(function () {
-      textInfoPlace.innerHTML = "";
-    }, 5000);
-  } else {
-    textInfoPlace.innerHTML = "";
-  }
-  if (!photo.content && (photo.picture.name || photo.category || photo.country || photo.place)) {
+  if (!photo.content && (photo.picture || photo.category || photo.photographer)) {
     textInfoContent.innerHTML = "Veuillez partager votre avis.";
     setTimeout(function () {
       textInfoContent.innerHTML = "";
@@ -6507,48 +6481,40 @@ var formIsValid = function formIsValid(photo) {
   } else {
     textInfoContent.innerHTML = "";
   }
-  var textPhotoColor = document.querySelector("#text-photo-color");
-  var textPhotoStar = document.querySelector("#text-photo-star");
+  var textPictureColor = document.querySelector("#text-picture-color");
+  var textPictureStar = document.querySelector("#text-picture-star");
   var textCategoryColor = document.querySelector("#text-category-color");
   var textCategoryStar = document.querySelector("#text-category-star");
-  var textCountryColor = document.querySelector("#text-country-color");
-  var textCountryStar = document.querySelector("#text-country-star");
-  var textPlaceColor = document.querySelector("#text-place-color");
-  var textPlaceStar = document.querySelector("#text-place-star");
+  var textPhotographerColor = document.querySelector("#text-photographer-color");
+  var textPhotographerStar = document.querySelector("#text-photographer-star");
   var textContentColor = document.querySelector("#text-content-color");
   var textContentStar = document.querySelector("#text-content-star");
-  if (!photo.picture.name && !photo.category && !photo.country && !photo.place && !photo.content) {
+  if (!photo.picture && !photo.category && !photo.photographer && !photo.content) {
     textInfo.innerHTML = "* Vous devez renseigner tous les champs.";
-    textPhotoColor.classList.add("text-danger");
+    textPictureColor.classList.add("text-danger");
     textCategoryColor.classList.add("text-danger");
-    textCountryColor.classList.add("text-danger");
-    textPlaceColor.classList.add("text-danger");
+    textPhotographerColor.classList.add("text-danger");
     textContentColor.classList.add("text-danger");
-    textPhotoStar.innerHTML = "*";
-    textPhotoStar.classList.add("text-danger");
+    textPictureStar.innerHTML = "*";
+    textPictureStar.classList.add("text-danger");
     textCategoryStar.innerHTML = "*";
     textCategoryStar.classList.add("text-danger");
-    textCountryStar.innerHTML = "*";
-    textCountryStar.classList.add("text-danger");
-    textPlaceStar.innerHTML = "*";
-    textPlaceStar.classList.add("text-danger");
+    textPhotographerStar.innerHTML = "*";
+    textPhotographerStar.classList.add("text-danger");
     textContentStar.innerHTML = "*";
     textContentStar.classList.add("text-danger");
     setTimeout(function () {
       textInfo.innerHTML = "";
-      textPhotoColor.classList.remove("text-danger");
+      textPictureColor.classList.remove("text-danger");
       textCategoryColor.classList.remove("text-danger");
-      textCountryColor.classList.remove("text-danger");
-      textPlaceColor.classList.remove("text-danger");
+      textPhotographerColor.classList.remove("text-danger");
       textContentColor.classList.remove("text-danger");
-      textPhotoStar.innerHTML = "";
-      textPhotoStar.classList.remove("text-danger");
+      textPictureStar.innerHTML = "";
+      textPictureStar.classList.remove("text-danger");
       textCategoryStar.innerHTML = "";
       textCategoryStar.classList.remove("text-danger");
-      textCountryStar.innerHTML = "";
-      textCountryStar.classList.remove("text-danger");
-      textPlaceStar.innerHTML = "";
-      textPlaceStar.classList.remove("text-danger");
+      textPhotographerStar.innerHTML = "";
+      textPhotographerStar.classList.remove("text-danger");
       textContentStar.innerHTML = "";
       textContentStar.classList.remove("text-danger");
     }, 5000);
