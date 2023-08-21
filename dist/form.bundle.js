@@ -5618,39 +5618,8 @@ main form h2 {
   text-align: center;
   margin-bottom: 5rem;
 }
-main form .form-group {
-  margin-bottom: 2rem;
-  display: flex;
-  flex-direction: column;
-}
-main form .form-group label {
-  font-size: 1.8rem;
-  color: var(--dark);
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-main form .form-group select {
-  height: 4rem;
-}
-main form .form-group input,
-main form .form-group select,
-main form .form-group textarea {
-  border: 0.1rem solid var(--divider);
-  padding: 1rem;
-  outline: none;
-  resize: none;
-  border-radius: 0.3rem;
-}
-main form .form-group input:focus,
-main form .form-group select:focus,
-main form .form-group textarea:focus {
-  border-color: var(--primary);
-}
-main form .form-group textarea {
-  min-height: 20rem;
-}
 main form .form-picture {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   display: flex;
   flex-direction: column;
 }
@@ -5666,12 +5635,71 @@ main form .form-picture label {
   font-size: 1.2rem;
   height: 4rem;
   display: inline-block;
-  padding: 1rem 1rem;
-  cursor: pointer;
 }
 main form .form-picture input[type=file] {
   margin-top: -3rem;
+}
+main form .form-picture #input-picture {
+  opacity: 0%;
+}
+main form .form-picture #name-picture {
+  position: absolute;
+  bottom: 45.5rem;
   margin-left: 1rem;
+  font-size: 1.2rem;
+  color: var(--info);
+  font-weight: bold;
+}
+main form .form-group {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+main form .form-group label {
+  font-size: 1.8rem;
+  color: var(--dark);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+main form .form-group select {
+  height: 4rem;
+}
+main form .form-group input {
+  border: 0.1rem solid var(--divider);
+  padding: 1rem;
+  outline: none;
+  border-radius: 0.3rem;
+  cursor: default;
+}
+main form .form-group input:focus {
+  border-color: var(--primary);
+}
+main form .form-group textarea {
+  border: 0.1rem solid var(--divider);
+  padding: 1rem;
+  outline: none;
+  resize: none;
+  border-radius: 0.3rem;
+  cursor: default;
+}
+main form .form-group textarea:focus {
+  border-color: var(--primary);
+}
+main form .form-group select {
+  height: 4.5rem;
+  font-size: 1.4rem;
+  border: 0.1rem solid var(--divider);
+  padding: 0.5rem;
+  outline: none;
+  border-radius: 0.3rem;
+  font-family: var(--basic);
+  font-weight: bold;
+}
+main form .form-group select:focus {
+  border-color: var(--primary);
+}
+main form .form-group textarea {
+  min-height: 20rem;
 }
 main form .form-button-container {
   display: flex;
@@ -5680,7 +5708,48 @@ main form .form-button-container {
 }
 main form .form-button-container .button {
   margin-left: 0.5rem;
-}`, "",{"version":3,"sources":["webpack://./src/form/form.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;AACF;AAAE;EACE,iBAAA;EACA,oBAAA;EACA,YAAA;EACA,aAAA;EACA,yBAAA;EACA,qBAAA;EACA,aAAA;EACA,sBAAA;AAEJ;AADI;EACE,kBAAA;EACA,mBAAA;AAGN;AADI;EACE,mBAAA;EACA,aAAA;EACA,sBAAA;AAGN;AAFM;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AAIR;AAFM;EACE,YAAA;AAIR;AAFM;;;EAGE,mCAAA;EACA,aAAA;EACA,aAAA;EACA,YAAA;EACA,qBAAA;AAIR;AAHQ;;;EACE,4BAAA;AAOV;AAJM;EACE,iBAAA;AAMR;AAHI;EACE,mBAAA;EACA,aAAA;EACA,sBAAA;AAKN;AAJM;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AAMR;AAJM;EACE,mCAAA;EACA,qBAAA;EACA,iBAAA;EACA,YAAA;EACA,qBAAA;EACA,kBAAA;EACA,eAAA;AAMR;AAJM;EACE,iBAAA;EACA,iBAAA;AAMR;AAHI;EACE,aAAA;EACA,yBAAA;EACA,mBAAA;AAKN;AAJM;EACE,mBAAA;AAMR","sourcesContent":["main {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  form {\n    margin-top: 20rem;\n    margin-bottom: 20rem;\n    width: 70rem;\n    padding: 4rem;\n    box-shadow: var(--shadow);\n    border-radius: 0.3rem;\n    display: flex;\n    flex-direction: column;\n    h2 {\n      text-align: center;\n      margin-bottom: 5rem;\n    }\n    .form-group {\n      margin-bottom: 2rem;\n      display: flex;\n      flex-direction: column;\n      label {\n        font-size: 1.8rem;\n        color: var(--dark);\n        font-weight: 700;\n        margin-bottom: 1rem;\n      }\n      select {\n        height: 4rem;\n      }\n      input,\n      select,\n      textarea {\n        border: 0.1rem solid var(--divider);\n        padding: 1rem;\n        outline: none;\n        resize: none;\n        border-radius: 0.3rem;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n      textarea {\n        min-height: 20rem;\n      }\n    }\n    .form-picture {\n      margin-bottom: 2rem;\n      display: flex;\n      flex-direction: column;\n      p {\n        font-size: 1.8rem;\n        color: var(--dark);\n        font-weight: 700;\n        margin-bottom: 1rem;\n      }\n      label {\n        border: 0.1rem solid var(--divider);\n        border-radius: 0.3rem;\n        font-size: 1.2rem;\n        height: 4rem;\n        display: inline-block;\n        padding: 1rem 1rem;\n        cursor: pointer;\n      }\n      input[type=\"file\"] {\n        margin-top: -3rem;\n        margin-left: 1rem;\n      }\n    }\n    .form-button-container {\n      display: flex;\n      justify-content: flex-end;\n      align-items: center;\n      .button {\n        margin-left: 0.5rem;\n      }\n    }\n  }\n}\n"],"sourceRoot":""}]);
+}
+
+#text-info-category {
+  color: var(--danger);
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+#text-info-picture {
+  color: var(--danger);
+  font-weight: 700;
+  margin-top: 1.5rem;
+}
+
+#text-info-country {
+  color: var(--danger);
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+#text-info-place {
+  color: var(--danger);
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+#text-info-content {
+  color: var(--danger);
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+#text-info {
+  color: var(--danger);
+  font-weight: 700;
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+}
+
+.text-danger {
+  color: var(--danger);
+}`, "",{"version":3,"sources":["webpack://./src/form/form.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;AACF;AAAE;EACE,iBAAA;EACA,oBAAA;EACA,YAAA;EACA,aAAA;EACA,yBAAA;EACA,qBAAA;EACA,aAAA;EACA,sBAAA;AAEJ;AADI;EACE,kBAAA;EACA,mBAAA;AAGN;AADI;EACE,qBAAA;EACA,aAAA;EACA,sBAAA;AAGN;AAFM;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AAIR;AAFM;EACE,mCAAA;EACA,qBAAA;EACA,iBAAA;EACA,YAAA;EACA,qBAAA;AAIR;AAFM;EACE,iBAAA;AAIR;AAFM;EACE,WAAA;AAIR;AAFM;EACE,kBAAA;EACA,eAAA;EACA,iBAAA;EACA,iBAAA;EACA,kBAAA;EACA,iBAAA;AAIR;AADI;EACE,mBAAA;EACA,aAAA;EACA,sBAAA;AAGN;AAFM;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AAIR;AAFM;EACE,YAAA;AAIR;AAFM;EACE,mCAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,eAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AAFM;EACE,mCAAA;EACA,aAAA;EACA,aAAA;EACA,YAAA;EACA,qBAAA;EACA,eAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AAFM;EACE,cAAA;EACA,iBAAA;EACA,mCAAA;EACA,eAAA;EACA,aAAA;EACA,qBAAA;EACA,yBAAA;EACA,iBAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AAFM;EACE,iBAAA;AAIR;AADI;EACE,aAAA;EACA,yBAAA;EACA,mBAAA;AAGN;AAFM;EACE,mBAAA;AAIR;;AAEA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AACF;;AACA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AAEF;;AAAA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AAGF;;AADA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AAIF;;AAFA;EACE,oBAAA;EACA,gBAAA;EACA,gBAAA;AAKF;;AAHA;EACE,oBAAA;EACA,gBAAA;EACA,iBAAA;EACA,mBAAA;AAMF;;AAHA;EACE,oBAAA;AAMF","sourcesContent":["main {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  form {\n    margin-top: 20rem;\n    margin-bottom: 20rem;\n    width: 70rem;\n    padding: 4rem;\n    box-shadow: var(--shadow);\n    border-radius: 0.3rem;\n    display: flex;\n    flex-direction: column;\n    h2 {\n      text-align: center;\n      margin-bottom: 5rem;\n    }\n    .form-picture {\n      margin-bottom: 2.5rem;\n      display: flex;\n      flex-direction: column;\n      p {\n        font-size: 1.8rem;\n        color: var(--dark);\n        font-weight: 700;\n        margin-bottom: 1rem;\n      }\n      label {\n        border: 0.1rem solid var(--divider);\n        border-radius: 0.3rem;\n        font-size: 1.2rem;\n        height: 4rem;\n        display: inline-block;\n      }\n      input[type=\"file\"] {\n        margin-top: -3rem;\n      }\n      #input-picture {\n        opacity: 0%;\n      }\n      #name-picture {\n        position: absolute;\n        bottom: 45.5rem;\n        margin-left: 1rem;\n        font-size: 1.2rem;\n        color: var(--info);\n        font-weight: bold;\n      }\n    }\n    .form-group {\n      margin-bottom: 2rem;\n      display: flex;\n      flex-direction: column;\n      label {\n        font-size: 1.8rem;\n        color: var(--dark);\n        font-weight: 700;\n        margin-bottom: 1rem;\n      }\n      select {\n        height: 4rem;\n      }\n      input {\n        border: 0.1rem solid var(--divider);\n        padding: 1rem;\n        outline: none;\n        border-radius: 0.3rem;\n        cursor: default;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n      textarea {\n        border: 0.1rem solid var(--divider);\n        padding: 1rem;\n        outline: none;\n        resize: none;\n        border-radius: 0.3rem;\n        cursor: default;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n      select {\n        height: 4.5rem;\n        font-size: 1.4rem;\n        border: 0.1rem solid var(--divider);\n        padding: 0.5rem;\n        outline: none;\n        border-radius: 0.3rem;\n        font-family: var(--basic);\n        font-weight: bold;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n      textarea {\n        min-height: 20rem;\n      }\n    }\n    .form-button-container {\n      display: flex;\n      justify-content: flex-end;\n      align-items: center;\n      .button {\n        margin-left: 0.5rem;\n      }\n    }\n  }\n}\n\n#text-info-category {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 0.5rem;\n}\n#text-info-picture {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 1.5rem;\n}\n#text-info-country {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 0.5rem;\n}\n#text-info-place {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 0.5rem;\n}\n#text-info-content {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 1rem;\n}\n#text-info {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: -2rem;\n  margin-bottom: 2rem;\n}\n\n.text-danger {\n  color: var(--danger);\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -6281,30 +6350,30 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! core-js/modules/web.dom-collections.iterator.js */ "./node_modules/core-js/modules/web.dom-collections.iterator.js");
 /* harmony import */ var core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_iterator_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! core-js/modules/web.dom-collections.for-each.js */ "./node_modules/core-js/modules/web.dom-collections.for-each.js");
-/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! core-js/modules/es.promise.js */ "./node_modules/core-js/modules/es.promise.js");
-/* harmony import */ var core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! core-js/modules/es.object.define-property.js */ "./node_modules/core-js/modules/es.object.define-property.js");
-/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! core-js/modules/es.symbol.js */ "./node_modules/core-js/modules/es.symbol.js");
-/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! core-js/modules/es.symbol.description.js */ "./node_modules/core-js/modules/es.symbol.description.js");
-/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! core-js/modules/es.symbol.iterator.js */ "./node_modules/core-js/modules/es.symbol.iterator.js");
-/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! core-js/modules/es.string.iterator.js */ "./node_modules/core-js/modules/es.string.iterator.js");
-/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var core_js_modules_es_symbol_async_iterator_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! core-js/modules/es.symbol.async-iterator.js */ "./node_modules/core-js/modules/es.symbol.async-iterator.js");
-/* harmony import */ var core_js_modules_es_symbol_async_iterator_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_async_iterator_js__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var core_js_modules_es_symbol_to_string_tag_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! core-js/modules/es.symbol.to-string-tag.js */ "./node_modules/core-js/modules/es.symbol.to-string-tag.js");
-/* harmony import */ var core_js_modules_es_symbol_to_string_tag_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_to_string_tag_js__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var core_js_modules_es_json_to_string_tag_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! core-js/modules/es.json.to-string-tag.js */ "./node_modules/core-js/modules/es.json.to-string-tag.js");
-/* harmony import */ var core_js_modules_es_json_to_string_tag_js__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_json_to_string_tag_js__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var core_js_modules_es_math_to_string_tag_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! core-js/modules/es.math.to-string-tag.js */ "./node_modules/core-js/modules/es.math.to-string-tag.js");
-/* harmony import */ var core_js_modules_es_math_to_string_tag_js__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_math_to_string_tag_js__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var core_js_modules_es_object_get_prototype_of_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! core-js/modules/es.object.get-prototype-of.js */ "./node_modules/core-js/modules/es.object.get-prototype-of.js");
-/* harmony import */ var core_js_modules_es_object_get_prototype_of_js__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_get_prototype_of_js__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! core-js/modules/es.promise.js */ "./node_modules/core-js/modules/es.promise.js");
+/* harmony import */ var core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! core-js/modules/es.object.define-property.js */ "./node_modules/core-js/modules/es.object.define-property.js");
+/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! core-js/modules/es.symbol.js */ "./node_modules/core-js/modules/es.symbol.js");
+/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! core-js/modules/es.symbol.description.js */ "./node_modules/core-js/modules/es.symbol.description.js");
+/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! core-js/modules/es.symbol.iterator.js */ "./node_modules/core-js/modules/es.symbol.iterator.js");
+/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! core-js/modules/es.string.iterator.js */ "./node_modules/core-js/modules/es.string.iterator.js");
+/* harmony import */ var core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_iterator_js__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var core_js_modules_es_symbol_async_iterator_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! core-js/modules/es.symbol.async-iterator.js */ "./node_modules/core-js/modules/es.symbol.async-iterator.js");
+/* harmony import */ var core_js_modules_es_symbol_async_iterator_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_async_iterator_js__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var core_js_modules_es_symbol_to_string_tag_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! core-js/modules/es.symbol.to-string-tag.js */ "./node_modules/core-js/modules/es.symbol.to-string-tag.js");
+/* harmony import */ var core_js_modules_es_symbol_to_string_tag_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_to_string_tag_js__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var core_js_modules_es_json_to_string_tag_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! core-js/modules/es.json.to-string-tag.js */ "./node_modules/core-js/modules/es.json.to-string-tag.js");
+/* harmony import */ var core_js_modules_es_json_to_string_tag_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_json_to_string_tag_js__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var core_js_modules_es_math_to_string_tag_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! core-js/modules/es.math.to-string-tag.js */ "./node_modules/core-js/modules/es.math.to-string-tag.js");
+/* harmony import */ var core_js_modules_es_math_to_string_tag_js__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_math_to_string_tag_js__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var core_js_modules_es_object_get_prototype_of_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! core-js/modules/es.object.get-prototype-of.js */ "./node_modules/core-js/modules/es.object.get-prototype-of.js");
+/* harmony import */ var core_js_modules_es_object_get_prototype_of_js__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_get_prototype_of_js__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! core-js/modules/web.dom-collections.for-each.js */ "./node_modules/core-js/modules/web.dom-collections.for-each.js");
+/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_15__);
 /* harmony import */ var core_js_modules_es_object_set_prototype_of_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! core-js/modules/es.object.set-prototype-of.js */ "./node_modules/core-js/modules/es.object.set-prototype-of.js");
 /* harmony import */ var core_js_modules_es_object_set_prototype_of_js__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_set_prototype_of_js__WEBPACK_IMPORTED_MODULE_16__);
 /* harmony import */ var core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! core-js/modules/es.array.slice.js */ "./node_modules/core-js/modules/es.array.slice.js");
@@ -6336,8 +6405,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 
 var form = document.querySelector("form");
-var errorElement = document.querySelector("#errors");
-var errors = [];
+var inputPicture = document.querySelector("#input-picture");
 form.addEventListener("submit", /*#__PURE__*/function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(event) {
     var formData, photo, json;
@@ -6361,22 +6429,93 @@ form.addEventListener("submit", /*#__PURE__*/function () {
     return _ref.apply(this, arguments);
   };
 }());
+inputPicture.addEventListener("change", function (event) {
+  var filePicture = event.target.files[0];
+  var namePicture = document.querySelector("#name-picture");
+  namePicture.innerHTML = "".concat(filePicture.name);
+});
 var formIsValid = function formIsValid(photo) {
-  if (!photo.category || !photo.picture.name || !photo.country || !photo.place || !photo.content) {
-    errors.push("Vous devez renseigner tous les champs");
-  } else {
-    errors = [];
+  var textInfoPicture = document.querySelector("#text-info-picture");
+  var textInfoCategory = document.querySelector("#text-info-category");
+  var textInfoCountry = document.querySelector("#text-info-country");
+  var textInfoPlace = document.querySelector("#text-info-place");
+  var textInfoContent = document.querySelector("#text-info-content");
+  var textInfo = document.querySelector("#text-info");
+  if (!photo.picture.name && (photo.category || photo.country || photo.place || photo.content)) {
+    textInfoPicture.innerHTML = "Veuillez selectionner une photo.";
+    setTimeout(function () {
+      textInfoPicture.innerHTML = "";
+    }, 5000);
   }
-  if (errors.length) {
-    var errorHTML = "";
-    errors.forEach(function (e) {
-      errorHTML += "<li>".concat(e, "</li>");
-    });
-    errorElement.innerHTML = errorHTML;
-    return false;
-  } else {
-    errorElement.innerHTML = "";
-    return true;
+  if (!photo.category && (photo.picture.name || photo.country || photo.place || photo.content)) {
+    textInfoCategory.innerHTML = "Veuillez renseigner une categorie.";
+    setTimeout(function () {
+      textInfoCategory.innerHTML = "";
+    }, 5000);
+  }
+  if (!photo.country && (photo.picture.name || photo.category || photo.place || photo.content)) {
+    textInfoCountry.innerHTML = "Veuillez selectionner dans quel pays a été prise la photo.";
+    setTimeout(function () {
+      textInfoCountry.innerHTML = "";
+    }, 5000);
+  }
+  if (!photo.place && (photo.picture.name || photo.category || photo.country || photo.content)) {
+    textInfoPlace.innerHTML = "Veuillez indiquer le lieu où la photo a été prise.";
+    setTimeout(function () {
+      textInfoPlace.innerHTML = "";
+    }, 5000);
+  }
+  if (!photo.content && (photo.picture.name || photo.category || photo.country || photo.place)) {
+    textInfoContent.innerHTML = "Veuillez partager votre avis.";
+    setTimeout(function () {
+      textInfoContent.innerHTML = "";
+    }, 5000);
+  }
+  var textPhotoColor = document.querySelector("#text-photo-color");
+  var textPhotoStar = document.querySelector("#text-photo-star");
+  var textCategoryColor = document.querySelector("#text-category-color");
+  var textCategoryStar = document.querySelector("#text-category-star");
+  var textCountryColor = document.querySelector("#text-country-color");
+  var textCountryStar = document.querySelector("#text-country-star");
+  var textPlaceColor = document.querySelector("#text-place-color");
+  var textPlaceStar = document.querySelector("#text-place-star");
+  var textContentColor = document.querySelector("#text-content-color");
+  var textContentStar = document.querySelector("#text-content-star");
+  if (!photo.picture.name && !photo.category && !photo.country && !photo.place && !photo.content) {
+    textInfo.innerHTML = "* Vous devez renseigner tous les champs.";
+    textPhotoColor.classList.add("text-danger");
+    textCategoryColor.classList.add("text-danger");
+    textCountryColor.classList.add("text-danger");
+    textPlaceColor.classList.add("text-danger");
+    textContentColor.classList.add("text-danger");
+    textPhotoStar.innerHTML = "*";
+    textPhotoStar.classList.add("text-danger");
+    textCategoryStar.innerHTML = "*";
+    textCategoryStar.classList.add("text-danger");
+    textCountryStar.innerHTML = "*";
+    textCountryStar.classList.add("text-danger");
+    textPlaceStar.innerHTML = "*";
+    textPlaceStar.classList.add("text-danger");
+    textContentStar.innerHTML = "*";
+    textContentStar.classList.add("text-danger");
+    setTimeout(function () {
+      textInfo.innerHTML = "";
+      textPhotoColor.classList.remove("text-danger");
+      textCategoryColor.classList.remove("text-danger");
+      textCountryColor.classList.remove("text-danger");
+      textPlaceColor.classList.remove("text-danger");
+      textContentColor.classList.remove("text-danger");
+      textPhotoStar.innerHTML = "";
+      textPhotoStar.classList.remove("text-danger");
+      textCategoryStar.innerHTML = "";
+      textCategoryStar.classList.remove("text-danger");
+      textCountryStar.innerHTML = "";
+      textCountryStar.classList.remove("text-danger");
+      textPlaceStar.innerHTML = "";
+      textPlaceStar.classList.remove("text-danger");
+      textContentStar.innerHTML = "";
+      textContentStar.classList.remove("text-danger");
+    }, 2000);
   }
 };
 })();
