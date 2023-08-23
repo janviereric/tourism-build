@@ -6300,7 +6300,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `main {
 }
 
 .home-photo-container,
-.form-photp-container {
+.form-photo-container {
   margin: 1rem;
   display: flex;
   flex-direction: column;
@@ -6313,12 +6313,12 @@ ___CSS_LOADER_EXPORT___.push([module.id, `main {
   position: relative;
 }
 .home-photo-container img,
-.form-photp-container img {
+.form-photo-container img {
   position: relative;
   width: 100%;
 }
 .home-photo-container h2,
-.form-photp-container h2 {
+.form-photo-container h2 {
   color: var(--light);
   font-weight: 700;
   font-size: 1.5rem;
@@ -6331,11 +6331,11 @@ ___CSS_LOADER_EXPORT___.push([module.id, `main {
   width: 100%;
 }
 .home-photo-container:hover h2,
-.form-photp-container:hover h2 {
+.form-photo-container:hover h2 {
   transition: all 0.2s;
   opacity: 100%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
-}`, "",{"version":3,"sources":["webpack://./src/index.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;AACF;;AAEA;EACE,aAAA;EACA,iBAAA;EACA,oBAAA;EACA,iBAAA;EACA,aAAA;EACA,mBAAA;EACA,6BAAA;EACA,mBAAA;AACF;;AAEA;;EAEE,YAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,yBAAA;EACA,UAAA;EACA,yBAAA;EACA,eAAA;EACA,oBAAA;EACA,kBAAA;AACF;AAAE;;EACE,kBAAA;EACA,WAAA;AAGJ;AADE;;EACE,mBAAA;EACA,gBAAA;EACA,iBAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,YAAA;EACA,kBAAA;EACA,UAAA;EACA,WAAA;AAIJ;AAFE;;EACE,oBAAA;EACA,aAAA;EACA,0DAAA;AAKJ","sourcesContent":["main {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n#photos-container {\n  padding: 2rem;\n  margin-top: 10rem;\n  margin-bottom: 20rem;\n  max-width: 140rem;\n  display: flex;\n  flex-flow: row wrap;\n  justify-content: space-evenly;\n  align-items: center;\n}\n\n.home-photo-container,\n.form-photp-container {\n  margin: 1rem;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: flex-end;\n  flex: auto;\n  box-shadow: var(--shadow);\n  cursor: pointer;\n  transition: all 0.2s;\n  position: relative;\n  img {\n    position: relative;\n    width: 100%;\n  }\n  h2 {\n    color: var(--light);\n    font-weight: 700;\n    font-size: 1.5rem;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 5rem;\n    position: absolute;\n    opacity: 0;\n    width: 100%;\n  }\n  &:hover h2 {\n    transition: all 0.2s;\n    opacity: 100%;\n    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;\n  }\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/index.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;AACF;;AAEA;EACE,aAAA;EACA,iBAAA;EACA,oBAAA;EACA,iBAAA;EACA,aAAA;EACA,mBAAA;EACA,6BAAA;EACA,mBAAA;AACF;;AAEA;;EAEE,YAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,yBAAA;EACA,UAAA;EACA,yBAAA;EACA,eAAA;EACA,oBAAA;EACA,kBAAA;AACF;AAAE;;EACE,kBAAA;EACA,WAAA;AAGJ;AADE;;EACE,mBAAA;EACA,gBAAA;EACA,iBAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,YAAA;EACA,kBAAA;EACA,UAAA;EACA,WAAA;AAIJ;AAFE;;EACE,oBAAA;EACA,aAAA;EACA,0DAAA;AAKJ","sourcesContent":["main {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n#photos-container {\n  padding: 2rem;\n  margin-top: 10rem;\n  margin-bottom: 20rem;\n  max-width: 140rem;\n  display: flex;\n  flex-flow: row wrap;\n  justify-content: space-evenly;\n  align-items: center;\n}\n\n.home-photo-container,\n.form-photo-container {\n  margin: 1rem;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: flex-end;\n  flex: auto;\n  box-shadow: var(--shadow);\n  cursor: pointer;\n  transition: all 0.2s;\n  position: relative;\n  img {\n    position: relative;\n    width: 100%;\n  }\n  h2 {\n    color: var(--light);\n    font-weight: 700;\n    font-size: 1.5rem;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 5rem;\n    position: absolute;\n    opacity: 0;\n    width: 100%;\n  }\n  &:hover h2 {\n    transition: all 0.2s;\n    opacity: 100%;\n    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -7799,8 +7799,6 @@ var homePhotosArray = [{
   _id: 1,
   src: "./assets/images/home-photos/home-animaux/home-animal_1.jpg",
   alt: "animal",
-  width: 300,
-  height: 200,
   category: "Guide",
   photographer: "JE - L'Administrateur",
   photographerImg: "./assets/images/janviereric.jpg",
@@ -7809,8 +7807,6 @@ var homePhotosArray = [{
   _id: 2,
   src: "./assets/images/home-photos/home-iles/home-ile_1.jpg",
   alt: "île",
-  width: 300,
-  height: 200,
   category: "Quête",
   photographer: "JE - L'Administrateur",
   photographerImg: "./assets/images/janviereric.jpg",
@@ -7819,8 +7815,6 @@ var homePhotosArray = [{
   _id: 3,
   src: "./assets/images/home-photos/home-natures/home-nature_1.jpg",
   alt: "nature",
-  width: 300,
-  height: 200,
   category: "Collection",
   photographer: "JE - L'Administrateur",
   photographerImg: "./assets/images/janviereric.jpg",
@@ -7829,8 +7823,6 @@ var homePhotosArray = [{
   _id: 4,
   src: "./assets/images/home-photos/home-neutres/home-neutre_1.jpg",
   alt: "neutre",
-  width: 200,
-  height: 200,
   category: "Partage",
   photographer: "JE - L'Administrateur",
   photographerImg: "./assets/images/janviereric.jpg",
@@ -7839,8 +7831,6 @@ var homePhotosArray = [{
   _id: 5,
   src: "./assets/images/home-photos/home-animaux/home-animal_2.jpg",
   alt: "animal",
-  width: 300,
-  height: 200,
   category: "Quête",
   photographer: "JE - L'Administrateur",
   photographerImg: "./assets/images/janviereric.jpg",
@@ -7849,8 +7839,6 @@ var homePhotosArray = [{
   _id: 6,
   src: "./assets/images/home-photos/home-iles/home-ile_2.jpg",
   alt: "île",
-  width: 300,
-  height: 200,
   category: "Collection",
   photographer: "JE - L'Administrateur",
   photographerImg: "./assets/images/janviereric.jpg",
@@ -7859,8 +7847,6 @@ var homePhotosArray = [{
   _id: 7,
   src: "./assets/images/home-photos/home-natures/home-nature_2.jpg",
   alt: "nature",
-  width: 300,
-  height: 200,
   category: "Partage",
   photographer: "JE - L'Administrateur",
   photographerImg: "./assets/images/janviereric.jpg",
@@ -7869,8 +7855,6 @@ var homePhotosArray = [{
   _id: 8,
   src: "./assets/images/home-photos/home-neutres/home-neutre_2.jpg",
   alt: "neutre",
-  width: 200,
-  height: 200,
   category: "Guide",
   photographer: "JE - L'Administrateur",
   photographerImg: "./assets/images/janviereric.jpg",
@@ -7879,8 +7863,6 @@ var homePhotosArray = [{
   _id: 9,
   src: "./assets/images/home-photos/home-animaux/home-animal_3.jpg",
   alt: "animal",
-  width: 300,
-  height: 200,
   category: "Collection",
   photographer: "JE - L'Administrateur",
   photographerImg: "./assets/images/janviereric.jpg",
@@ -7889,8 +7871,6 @@ var homePhotosArray = [{
   _id: 10,
   src: "./assets/images/home-photos/home-iles/home-ile_3.jpg",
   alt: "île",
-  width: 300,
-  height: 200,
   category: "Partage",
   photographer: "JE - L'Administrateur",
   photographerImg: "./assets/images/janviereric.jpg",
@@ -7899,8 +7879,6 @@ var homePhotosArray = [{
   _id: 11,
   src: "./assets/images/home-photos/home-natures/home-nature_3.jpg",
   alt: "nature",
-  width: 200,
-  height: 200,
   category: "Guide",
   photographer: "JE - L'Administrateur",
   photographerImg: "./assets/images/janviereric.jpg",
@@ -7909,8 +7887,6 @@ var homePhotosArray = [{
   _id: 12,
   src: "./assets/images/home-photos/home-neutres/home-neutre_3.jpg",
   alt: "neutre",
-  width: 200,
-  height: 200,
   category: "Quête",
   photographer: "JE - L'Administrateur",
   photographerImg: "./assets/images/janviereric.jpg",
@@ -7919,8 +7895,6 @@ var homePhotosArray = [{
   _id: 13,
   src: "./assets/images/home-photos/home-animaux/home-animal_4.jpg",
   alt: "animal",
-  width: 300,
-  height: 200,
   category: "Partage",
   photographer: "JE - L'Administrateur",
   photographerImg: "./assets/images/janviereric.jpg",
@@ -7929,8 +7903,6 @@ var homePhotosArray = [{
   _id: 14,
   src: "./assets/images/home-photos/home-iles/home-ile_4.jpg",
   alt: "île",
-  width: 400,
-  height: 200,
   category: "Guide",
   photographer: "JE - L'Administrateur",
   photographerImg: "./assets/images/janviereric.jpg",
@@ -7939,8 +7911,6 @@ var homePhotosArray = [{
   _id: 15,
   src: "./assets/images/home-photos/home-natures/home-nature_4.jpg",
   alt: "nature",
-  width: 300,
-  height: 200,
   category: "Quête",
   photographer: "JE - L'Administrateur",
   photographerImg: "./assets/images/janviereric.jpg",
@@ -7949,8 +7919,6 @@ var homePhotosArray = [{
   _id: 16,
   src: "./assets/images/home-photos/home-neutres/home-neutre_4.jpg",
   alt: "neutre",
-  width: 300,
-  height: 200,
   category: "Collection",
   photographer: "JE - L'Administrateur",
   photographerImg: "./assets/images/janviereric.jpg",
@@ -7959,8 +7927,6 @@ var homePhotosArray = [{
   _id: 17,
   src: "./assets/images/home-photos/home-animaux/home-animal_5.jpg",
   alt: "animal",
-  width: 400,
-  height: 200,
   category: "Guide",
   photographer: "JE - L'Administrateur",
   photographerImg: "./assets/images/janviereric.jpg",
@@ -7969,8 +7935,6 @@ var homePhotosArray = [{
   _id: 18,
   src: "./assets/images/home-photos/home-iles/home-ile_5.jpg",
   alt: "île",
-  width: 300,
-  height: 200,
   category: "Quête",
   photographer: "JE - L'Administrateur",
   photographerImg: "./assets/images/janviereric.jpg",
@@ -7979,8 +7943,6 @@ var homePhotosArray = [{
   _id: 19,
   src: "./assets/images/home-photos/home-natures/home-nature_5.jpg",
   alt: "nature",
-  width: 200,
-  height: 200,
   category: "Collection",
   photographer: "JE - L'Administrateur",
   photographerImg: "./assets/images/janviereric.jpg",
@@ -7989,8 +7951,6 @@ var homePhotosArray = [{
   _id: 20,
   src: "./assets/images/home-photos/home-neutres/home-neutre_5.jpg",
   alt: "neutre",
-  width: 200,
-  height: 200,
   category: "Partage",
   photographer: "JE - L'Administrateur",
   photographerImg: "./assets/images/janviereric.jpg",
@@ -7999,8 +7959,6 @@ var homePhotosArray = [{
   _id: 21,
   src: "./assets/images/home-photos/home-animaux/home-animal_6.jpg",
   alt: "animal",
-  width: 300,
-  height: 200,
   category: "Quête",
   photographer: "JE - L'Administrateur",
   photographerImg: "./assets/images/janviereric.jpg",
@@ -8009,8 +7967,6 @@ var homePhotosArray = [{
   _id: 22,
   src: "./assets/images/home-photos/home-iles/home-ile_6.jpg",
   alt: "île",
-  width: 300,
-  height: 200,
   category: "Collection",
   photographer: "JE - L'Administrateur",
   photographerImg: "./assets/images/janviereric.jpg",
@@ -8019,8 +7975,6 @@ var homePhotosArray = [{
   _id: 23,
   src: "./assets/images/home-photos/home-natures/home-nature_6.jpg",
   alt: "nature",
-  width: 200,
-  height: 200,
   category: "Partage",
   photographer: "JE - L'Administrateur",
   photographerImg: "./assets/images/janviereric.jpg",
@@ -8029,8 +7983,6 @@ var homePhotosArray = [{
   _id: 24,
   src: "./assets/images/home-photos/home-neutres/home-neutre_6.jpg",
   alt: "neutre",
-  width: 200,
-  height: 200,
   category: "Guide",
   photographer: "JE - L'Administrateur",
   photographerImg: "./assets/images/janviereric.jpg",
@@ -8039,8 +7991,6 @@ var homePhotosArray = [{
   _id: 25,
   src: "./assets/images/home-photos/home-animaux/home-animal_7.jpg",
   alt: "animal",
-  width: 300,
-  height: 200,
   category: "Collection",
   photographer: "JE - L'Administrateur",
   photographerImg: "./assets/images/janviereric.jpg",
@@ -8049,8 +7999,6 @@ var homePhotosArray = [{
   _id: 26,
   src: "./assets/images/home-photos/home-iles/home-ile_7.jpg",
   alt: "île",
-  width: 200,
-  height: 200,
   category: "Paratge",
   photographer: "JE - L'Administrateur",
   photographerImg: "./assets/images/janviereric.jpg",
@@ -8059,8 +8007,6 @@ var homePhotosArray = [{
   _id: 27,
   src: "./assets/images/home-photos/home-natures/home-nature_7.jpg",
   alt: "nature",
-  width: 200,
-  height: 200,
   category: "Guide",
   photographer: "JE - L'Administrateur",
   photographerImg: "./assets/images/janviereric.jpg",
@@ -8069,8 +8015,6 @@ var homePhotosArray = [{
   _id: 28,
   src: "./assets/images/home-photos/home-neutres/home-neutre_7.jpg",
   alt: "neutre",
-  width: 300,
-  height: 200,
   category: "Quête",
   photographer: "JE - L'Administrateur",
   photographerImg: "./assets/images/janviereric.jpg",
@@ -8079,8 +8023,6 @@ var homePhotosArray = [{
   _id: 29,
   src: "./assets/images/home-photos/home-animaux/home-animal_8.jpg",
   alt: "animal",
-  width: 400,
-  height: 200,
   category: "Partage",
   photographer: "JE - L'Administrateur",
   photographerImg: "./assets/images/janviereric.jpg",
@@ -8089,8 +8031,6 @@ var homePhotosArray = [{
   _id: 30,
   src: "./assets/images/home-photos/home-iles/home-ile_8.jpg",
   alt: "île",
-  width: 200,
-  height: 200,
   category: "Guide",
   photographer: "JE - L'Administrateur",
   photographerImg: "./assets/images/janviereric.jpg",
@@ -8099,8 +8039,6 @@ var homePhotosArray = [{
   _id: 31,
   src: "./assets/images/home-photos/home-natures/home-nature_8.jpg",
   alt: "nature",
-  width: 300,
-  height: 200,
   category: "Quête",
   photographer: "JE - L'Administrateur",
   photographerImg: "./assets/images/janviereric.jpg",
@@ -8109,8 +8047,6 @@ var homePhotosArray = [{
   _id: 32,
   src: "./assets/images/home-photos/home-neutres/home-neutre_8.jpg",
   alt: "neutre",
-  width: 300,
-  height: 200,
   category: "Collection",
   photographer: "JE - L'Administrateur",
   photographerImg: "./assets/images/janviereric.jpg",
@@ -8119,8 +8055,6 @@ var homePhotosArray = [{
   _id: 33,
   src: "./assets/images/home-photos/home-animaux/home-animal_9.jpg",
   alt: "animal",
-  width: 300,
-  height: 200,
   category: "Guide",
   photographer: "JE - L'Administrateur",
   photographerImg: "./assets/images/janviereric.jpg",
@@ -8129,8 +8063,6 @@ var homePhotosArray = [{
   _id: 34,
   src: "./assets/images/home-photos/home-iles/home-ile_9.jpg",
   alt: "île",
-  width: 300,
-  height: 200,
   category: "Quête",
   photographer: "JE - L'Administrateur",
   photographerImg: "./assets/images/janviereric.jpg",
@@ -8139,8 +8071,6 @@ var homePhotosArray = [{
   _id: 35,
   src: "./assets/images/home-photos/home-natures/home-nature_9.jpg",
   alt: "nature",
-  width: 200,
-  height: 200,
   category: "Collection",
   photographer: "JE - L'Administrateur",
   photographerImg: "./assets/images/janviereric.jpg",
@@ -8149,8 +8079,6 @@ var homePhotosArray = [{
   _id: 36,
   src: "./assets/images/home-photos/home-neutres/home-neutre_9.jpg",
   alt: "neutre",
-  width: 300,
-  height: 200,
   category: "Partage",
   photographer: "JE - L'Administrateur",
   photographerImg: "./assets/images/janviereric.jpg",
@@ -8159,8 +8087,6 @@ var homePhotosArray = [{
   _id: 37,
   src: "./assets/images/home-photos/home-animaux/home-animal_10.jpg",
   alt: "animal",
-  width: 300,
-  height: 200,
   category: "Quête",
   photographer: "JE - L'Administrateur",
   photographerImg: "./assets/images/janviereric.jpg",
@@ -8169,8 +8095,6 @@ var homePhotosArray = [{
   _id: 38,
   src: "./assets/images/home-photos/home-iles/home-ile_10.jpg",
   alt: "île",
-  width: 200,
-  height: 200,
   category: "Collection",
   photographer: "JE - L'Administrateur",
   photographerImg: "./assets/images/janviereric.jpg",
@@ -8179,8 +8103,6 @@ var homePhotosArray = [{
   _id: 39,
   src: "./assets/images/home-photos/home-natures/home-nature_10.jpg",
   alt: "nature",
-  width: 300,
-  height: 200,
   category: "Partage",
   photographer: "JE - L'Administrateur",
   photographerImg: "./assets/images/janviereric.jpg",
@@ -8189,8 +8111,6 @@ var homePhotosArray = [{
   _id: 40,
   src: "./assets/images/home-photos/home-neutres/home-neutre_10.jpg",
   alt: "neutre",
-  width: 300,
-  height: 200,
   category: "Guide",
   photographer: "JE - L'Administrateur",
   photographerImg: "./assets/images/janviereric.jpg",
@@ -8205,7 +8125,7 @@ var DisplayHomePhotos = function DisplayHomePhotos() {
 var createHomePhotosElement = function createHomePhotosElement(homePhoto, index) {
   var homePhotoContainer = document.createElement("div");
   homePhotoContainer.classList.add("home-photo-container");
-  homePhotoContainer.innerHTML = "\n  <img src=\"".concat(homePhoto.src, "\" alt=\"").concat(homePhoto.alt, "\" width=\"").concat(homePhoto.width, "\" height=\"").concat(homePhoto.height, "\" />\n    <h2>").concat(homePhoto.category, "</h2>\n  ");
+  homePhotoContainer.innerHTML = "\n  <img src=\"".concat(homePhoto.src, "\" alt=\"").concat(homePhoto.alt, "\" />\n    <h2>").concat(homePhoto.category, "</h2>\n  ");
   console.log(homePhoto);
   return homePhotoContainer;
 };
