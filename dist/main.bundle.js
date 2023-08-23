@@ -6299,9 +6299,9 @@ ___CSS_LOADER_EXPORT___.push([module.id, `main {
   align-items: center;
 }
 
-.photo {
+.home-photo-container,
+.form-photp-container {
   margin: 1rem;
-  background-color: red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6312,11 +6312,13 @@ ___CSS_LOADER_EXPORT___.push([module.id, `main {
   transition: all 0.2s;
   position: relative;
 }
-.photo img {
+.home-photo-container img,
+.form-photp-container img {
   position: relative;
   width: 100%;
 }
-.photo h2 {
+.home-photo-container h2,
+.form-photp-container h2 {
   color: var(--light);
   font-weight: 700;
   font-size: 1.5rem;
@@ -6328,11 +6330,12 @@ ___CSS_LOADER_EXPORT___.push([module.id, `main {
   opacity: 0;
   width: 100%;
 }
-.photo:hover h2 {
+.home-photo-container:hover h2,
+.form-photp-container:hover h2 {
   transition: all 0.2s;
   opacity: 100%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
-}`, "",{"version":3,"sources":["webpack://./src/index.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;AACF;;AAEA;EACE,aAAA;EACA,iBAAA;EACA,oBAAA;EACA,iBAAA;EACA,aAAA;EACA,mBAAA;EACA,6BAAA;EACA,mBAAA;AACF;;AAEA;EACE,YAAA;EACA,qBAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,yBAAA;EACA,UAAA;EACA,yBAAA;EACA,eAAA;EACA,oBAAA;EACA,kBAAA;AACF;AAAE;EACE,kBAAA;EACA,WAAA;AAEJ;AAAE;EACE,mBAAA;EACA,gBAAA;EACA,iBAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,YAAA;EACA,kBAAA;EACA,UAAA;EACA,WAAA;AAEJ;AAAE;EACE,oBAAA;EACA,aAAA;EACA,0DAAA;AAEJ","sourcesContent":["main {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n#photos-container {\n  padding: 2rem;\n  margin-top: 10rem;\n  margin-bottom: 20rem;\n  max-width: 140rem;\n  display: flex;\n  flex-flow: row wrap;\n  justify-content: space-evenly;\n  align-items: center;\n}\n\n.photo {\n  margin: 1rem;\n  background-color: red;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: flex-end;\n  flex: auto;\n  box-shadow: var(--shadow);\n  cursor: pointer;\n  transition: all 0.2s;\n  position: relative;\n  img {\n    position: relative;\n    width: 100%;\n  }\n  h2 {\n    color: var(--light);\n    font-weight: 700;\n    font-size: 1.5rem;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 5rem;\n    position: absolute;\n    opacity: 0;\n    width: 100%;\n  }\n  &:hover h2 {\n    transition: all 0.2s;\n    opacity: 100%;\n    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;\n  }\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/index.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;AACF;;AAEA;EACE,aAAA;EACA,iBAAA;EACA,oBAAA;EACA,iBAAA;EACA,aAAA;EACA,mBAAA;EACA,6BAAA;EACA,mBAAA;AACF;;AAEA;;EAEE,YAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,yBAAA;EACA,UAAA;EACA,yBAAA;EACA,eAAA;EACA,oBAAA;EACA,kBAAA;AACF;AAAE;;EACE,kBAAA;EACA,WAAA;AAGJ;AADE;;EACE,mBAAA;EACA,gBAAA;EACA,iBAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,YAAA;EACA,kBAAA;EACA,UAAA;EACA,WAAA;AAIJ;AAFE;;EACE,oBAAA;EACA,aAAA;EACA,0DAAA;AAKJ","sourcesContent":["main {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n#photos-container {\n  padding: 2rem;\n  margin-top: 10rem;\n  margin-bottom: 20rem;\n  max-width: 140rem;\n  display: flex;\n  flex-flow: row wrap;\n  justify-content: space-evenly;\n  align-items: center;\n}\n\n.home-photo-container,\n.form-photp-container {\n  margin: 1rem;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: flex-end;\n  flex: auto;\n  box-shadow: var(--shadow);\n  cursor: pointer;\n  transition: all 0.2s;\n  position: relative;\n  img {\n    position: relative;\n    width: 100%;\n  }\n  h2 {\n    color: var(--light);\n    font-weight: 700;\n    font-size: 1.5rem;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 5rem;\n    position: absolute;\n    opacity: 0;\n    width: 100%;\n  }\n  &:hover h2 {\n    transition: all 0.2s;\n    opacity: 100%;\n    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -7756,6 +7759,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index_scss__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./index.scss */ "./src/index.scss");
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return exports; }; var exports = {}, Op = Object.prototype, hasOwn = Op.hasOwnProperty, defineProperty = Object.defineProperty || function (obj, key, desc) { obj[key] = desc.value; }, $Symbol = "function" == typeof Symbol ? Symbol : {}, iteratorSymbol = $Symbol.iterator || "@@iterator", asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator", toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag"; function define(obj, key, value) { return Object.defineProperty(obj, key, { value: value, enumerable: !0, configurable: !0, writable: !0 }), obj[key]; } try { define({}, ""); } catch (err) { define = function define(obj, key, value) { return obj[key] = value; }; } function wrap(innerFn, outerFn, self, tryLocsList) { var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator, generator = Object.create(protoGenerator.prototype), context = new Context(tryLocsList || []); return defineProperty(generator, "_invoke", { value: makeInvokeMethod(innerFn, self, context) }), generator; } function tryCatch(fn, obj, arg) { try { return { type: "normal", arg: fn.call(obj, arg) }; } catch (err) { return { type: "throw", arg: err }; } } exports.wrap = wrap; var ContinueSentinel = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var IteratorPrototype = {}; define(IteratorPrototype, iteratorSymbol, function () { return this; }); var getProto = Object.getPrototypeOf, NativeIteratorPrototype = getProto && getProto(getProto(values([]))); NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol) && (IteratorPrototype = NativeIteratorPrototype); var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype); function defineIteratorMethods(prototype) { ["next", "throw", "return"].forEach(function (method) { define(prototype, method, function (arg) { return this._invoke(method, arg); }); }); } function AsyncIterator(generator, PromiseImpl) { function invoke(method, arg, resolve, reject) { var record = tryCatch(generator[method], generator, arg); if ("throw" !== record.type) { var result = record.arg, value = result.value; return value && "object" == _typeof(value) && hasOwn.call(value, "__await") ? PromiseImpl.resolve(value.__await).then(function (value) { invoke("next", value, resolve, reject); }, function (err) { invoke("throw", err, resolve, reject); }) : PromiseImpl.resolve(value).then(function (unwrapped) { result.value = unwrapped, resolve(result); }, function (error) { return invoke("throw", error, resolve, reject); }); } reject(record.arg); } var previousPromise; defineProperty(this, "_invoke", { value: function value(method, arg) { function callInvokeWithMethodAndArg() { return new PromiseImpl(function (resolve, reject) { invoke(method, arg, resolve, reject); }); } return previousPromise = previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(innerFn, self, context) { var state = "suspendedStart"; return function (method, arg) { if ("executing" === state) throw new Error("Generator is already running"); if ("completed" === state) { if ("throw" === method) throw arg; return { value: void 0, done: !0 }; } for (context.method = method, context.arg = arg;;) { var delegate = context.delegate; if (delegate) { var delegateResult = maybeInvokeDelegate(delegate, context); if (delegateResult) { if (delegateResult === ContinueSentinel) continue; return delegateResult; } } if ("next" === context.method) context.sent = context._sent = context.arg;else if ("throw" === context.method) { if ("suspendedStart" === state) throw state = "completed", context.arg; context.dispatchException(context.arg); } else "return" === context.method && context.abrupt("return", context.arg); state = "executing"; var record = tryCatch(innerFn, self, context); if ("normal" === record.type) { if (state = context.done ? "completed" : "suspendedYield", record.arg === ContinueSentinel) continue; return { value: record.arg, done: context.done }; } "throw" === record.type && (state = "completed", context.method = "throw", context.arg = record.arg); } }; } function maybeInvokeDelegate(delegate, context) { var methodName = context.method, method = delegate.iterator[methodName]; if (undefined === method) return context.delegate = null, "throw" === methodName && delegate.iterator.return && (context.method = "return", context.arg = undefined, maybeInvokeDelegate(delegate, context), "throw" === context.method) || "return" !== methodName && (context.method = "throw", context.arg = new TypeError("The iterator does not provide a '" + methodName + "' method")), ContinueSentinel; var record = tryCatch(method, delegate.iterator, context.arg); if ("throw" === record.type) return context.method = "throw", context.arg = record.arg, context.delegate = null, ContinueSentinel; var info = record.arg; return info ? info.done ? (context[delegate.resultName] = info.value, context.next = delegate.nextLoc, "return" !== context.method && (context.method = "next", context.arg = undefined), context.delegate = null, ContinueSentinel) : info : (context.method = "throw", context.arg = new TypeError("iterator result is not an object"), context.delegate = null, ContinueSentinel); } function pushTryEntry(locs) { var entry = { tryLoc: locs[0] }; 1 in locs && (entry.catchLoc = locs[1]), 2 in locs && (entry.finallyLoc = locs[2], entry.afterLoc = locs[3]), this.tryEntries.push(entry); } function resetTryEntry(entry) { var record = entry.completion || {}; record.type = "normal", delete record.arg, entry.completion = record; } function Context(tryLocsList) { this.tryEntries = [{ tryLoc: "root" }], tryLocsList.forEach(pushTryEntry, this), this.reset(!0); } function values(iterable) { if (iterable || "" === iterable) { var iteratorMethod = iterable[iteratorSymbol]; if (iteratorMethod) return iteratorMethod.call(iterable); if ("function" == typeof iterable.next) return iterable; if (!isNaN(iterable.length)) { var i = -1, next = function next() { for (; ++i < iterable.length;) if (hasOwn.call(iterable, i)) return next.value = iterable[i], next.done = !1, next; return next.value = undefined, next.done = !0, next; }; return next.next = next; } } throw new TypeError(_typeof(iterable) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, defineProperty(Gp, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), defineProperty(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction"), exports.isGeneratorFunction = function (genFun) { var ctor = "function" == typeof genFun && genFun.constructor; return !!ctor && (ctor === GeneratorFunction || "GeneratorFunction" === (ctor.displayName || ctor.name)); }, exports.mark = function (genFun) { return Object.setPrototypeOf ? Object.setPrototypeOf(genFun, GeneratorFunctionPrototype) : (genFun.__proto__ = GeneratorFunctionPrototype, define(genFun, toStringTagSymbol, "GeneratorFunction")), genFun.prototype = Object.create(Gp), genFun; }, exports.awrap = function (arg) { return { __await: arg }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, asyncIteratorSymbol, function () { return this; }), exports.AsyncIterator = AsyncIterator, exports.async = function (innerFn, outerFn, self, tryLocsList, PromiseImpl) { void 0 === PromiseImpl && (PromiseImpl = Promise); var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList), PromiseImpl); return exports.isGeneratorFunction(outerFn) ? iter : iter.next().then(function (result) { return result.done ? result.value : iter.next(); }); }, defineIteratorMethods(Gp), define(Gp, toStringTagSymbol, "Generator"), define(Gp, iteratorSymbol, function () { return this; }), define(Gp, "toString", function () { return "[object Generator]"; }), exports.keys = function (val) { var object = Object(val), keys = []; for (var key in object) keys.push(key); return keys.reverse(), function next() { for (; keys.length;) { var key = keys.pop(); if (key in object) return next.value = key, next.done = !1, next; } return next.done = !0, next; }; }, exports.values = values, Context.prototype = { constructor: Context, reset: function reset(skipTempReset) { if (this.prev = 0, this.next = 0, this.sent = this._sent = undefined, this.done = !1, this.delegate = null, this.method = "next", this.arg = undefined, this.tryEntries.forEach(resetTryEntry), !skipTempReset) for (var name in this) "t" === name.charAt(0) && hasOwn.call(this, name) && !isNaN(+name.slice(1)) && (this[name] = undefined); }, stop: function stop() { this.done = !0; var rootRecord = this.tryEntries[0].completion; if ("throw" === rootRecord.type) throw rootRecord.arg; return this.rval; }, dispatchException: function dispatchException(exception) { if (this.done) throw exception; var context = this; function handle(loc, caught) { return record.type = "throw", record.arg = exception, context.next = loc, caught && (context.method = "next", context.arg = undefined), !!caught; } for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i], record = entry.completion; if ("root" === entry.tryLoc) return handle("end"); if (entry.tryLoc <= this.prev) { var hasCatch = hasOwn.call(entry, "catchLoc"), hasFinally = hasOwn.call(entry, "finallyLoc"); if (hasCatch && hasFinally) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } else if (hasCatch) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); } else { if (!hasFinally) throw new Error("try statement without catch or finally"); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } } } }, abrupt: function abrupt(type, arg) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) { var finallyEntry = entry; break; } } finallyEntry && ("break" === type || "continue" === type) && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc && (finallyEntry = null); var record = finallyEntry ? finallyEntry.completion : {}; return record.type = type, record.arg = arg, finallyEntry ? (this.method = "next", this.next = finallyEntry.finallyLoc, ContinueSentinel) : this.complete(record); }, complete: function complete(record, afterLoc) { if ("throw" === record.type) throw record.arg; return "break" === record.type || "continue" === record.type ? this.next = record.arg : "return" === record.type ? (this.rval = this.arg = record.arg, this.method = "return", this.next = "end") : "normal" === record.type && afterLoc && (this.next = afterLoc), ContinueSentinel; }, finish: function finish(finallyLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.finallyLoc === finallyLoc) return this.complete(entry.completion, entry.afterLoc), resetTryEntry(entry), ContinueSentinel; } }, catch: function _catch(tryLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc === tryLoc) { var record = entry.completion; if ("throw" === record.type) { var thrown = record.arg; resetTryEntry(entry); } return thrown; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(iterable, resultName, nextLoc) { return this.delegate = { iterator: values(iterable), resultName: resultName, nextLoc: nextLoc }, "next" === this.method && (this.arg = undefined), ContinueSentinel; } }, exports; }
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
@@ -7784,39 +7789,457 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 
 
 
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
 
 
 var photosContainer = document.querySelector("#photos-container");
-var createPhotos = /*#__PURE__*/function () {
-  var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(photos) {
-    var photosElement;
+
+////////////////////////////// home start //////////////////////////////
+var homePhotosArray = [{
+  _id: 1,
+  src: "./assets/images/home-photos/home-animaux/home-animal_1.jpg",
+  alt: "animal",
+  width: 300,
+  height: 200,
+  category: "Guide",
+  photographer: "JE - L'Administrateur",
+  photographerImg: "./assets/images/janviereric.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+}, {
+  _id: 2,
+  src: "./assets/images/home-photos/home-iles/home-ile_1.jpg",
+  alt: "île",
+  width: 300,
+  height: 200,
+  category: "Quête",
+  photographer: "JE - L'Administrateur",
+  photographerImg: "./assets/images/janviereric.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+}, {
+  _id: 3,
+  src: "./assets/images/home-photos/home-natures/home-nature_1.jpg",
+  alt: "nature",
+  width: 300,
+  height: 200,
+  category: "Collection",
+  photographer: "JE - L'Administrateur",
+  photographerImg: "./assets/images/janviereric.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+}, {
+  _id: 4,
+  src: "./assets/images/home-photos/home-neutres/home-neutre_1.jpg",
+  alt: "neutre",
+  width: 200,
+  height: 200,
+  category: "Partage",
+  photographer: "JE - L'Administrateur",
+  photographerImg: "./assets/images/janviereric.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+}, {
+  _id: 5,
+  src: "./assets/images/home-photos/home-animaux/home-animal_2.jpg",
+  alt: "animal",
+  width: 300,
+  height: 200,
+  category: "Quête",
+  photographer: "JE - L'Administrateur",
+  photographerImg: "./assets/images/janviereric.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+}, {
+  _id: 6,
+  src: "./assets/images/home-photos/home-iles/home-ile_2.jpg",
+  alt: "île",
+  width: 300,
+  height: 200,
+  category: "Collection",
+  photographer: "JE - L'Administrateur",
+  photographerImg: "./assets/images/janviereric.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+}, {
+  _id: 7,
+  src: "./assets/images/home-photos/home-natures/home-nature_2.jpg",
+  alt: "nature",
+  width: 300,
+  height: 200,
+  category: "Partage",
+  photographer: "JE - L'Administrateur",
+  photographerImg: "./assets/images/janviereric.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+}, {
+  _id: 8,
+  src: "./assets/images/home-photos/home-neutres/home-neutre_2.jpg",
+  alt: "neutre",
+  width: 200,
+  height: 200,
+  category: "Guide",
+  photographer: "JE - L'Administrateur",
+  photographerImg: "./assets/images/janviereric.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+}, {
+  _id: 9,
+  src: "./assets/images/home-photos/home-animaux/home-animal_3.jpg",
+  alt: "animal",
+  width: 300,
+  height: 200,
+  category: "Collection",
+  photographer: "JE - L'Administrateur",
+  photographerImg: "./assets/images/janviereric.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+}, {
+  _id: 10,
+  src: "./assets/images/home-photos/home-iles/home-ile_3.jpg",
+  alt: "île",
+  width: 300,
+  height: 200,
+  category: "Partage",
+  photographer: "JE - L'Administrateur",
+  photographerImg: "./assets/images/janviereric.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+}, {
+  _id: 11,
+  src: "./assets/images/home-photos/home-natures/home-nature_3.jpg",
+  alt: "nature",
+  width: 200,
+  height: 200,
+  category: "Guide",
+  photographer: "JE - L'Administrateur",
+  photographerImg: "./assets/images/janviereric.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+}, {
+  _id: 12,
+  src: "./assets/images/home-photos/home-neutres/home-neutre_3.jpg",
+  alt: "neutre",
+  width: 200,
+  height: 200,
+  category: "Quête",
+  photographer: "JE - L'Administrateur",
+  photographerImg: "./assets/images/janviereric.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+}, {
+  _id: 13,
+  src: "./assets/images/home-photos/home-animaux/home-animal_4.jpg",
+  alt: "animal",
+  width: 300,
+  height: 200,
+  category: "Partage",
+  photographer: "JE - L'Administrateur",
+  photographerImg: "./assets/images/janviereric.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+}, {
+  _id: 14,
+  src: "./assets/images/home-photos/home-iles/home-ile_4.jpg",
+  alt: "île",
+  width: 400,
+  height: 200,
+  category: "Guide",
+  photographer: "JE - L'Administrateur",
+  photographerImg: "./assets/images/janviereric.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+}, {
+  _id: 15,
+  src: "./assets/images/home-photos/home-natures/home-nature_4.jpg",
+  alt: "nature",
+  width: 300,
+  height: 200,
+  category: "Quête",
+  photographer: "JE - L'Administrateur",
+  photographerImg: "./assets/images/janviereric.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+}, {
+  _id: 16,
+  src: "./assets/images/home-photos/home-neutres/home-neutre_4.jpg",
+  alt: "neutre",
+  width: 300,
+  height: 200,
+  category: "Collection",
+  photographer: "JE - L'Administrateur",
+  photographerImg: "./assets/images/janviereric.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+}, {
+  _id: 17,
+  src: "./assets/images/home-photos/home-animaux/home-animal_5.jpg",
+  alt: "animal",
+  width: 400,
+  height: 200,
+  category: "Guide",
+  photographer: "JE - L'Administrateur",
+  photographerImg: "./assets/images/janviereric.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+}, {
+  _id: 18,
+  src: "./assets/images/home-photos/home-iles/home-ile_5.jpg",
+  alt: "île",
+  width: 300,
+  height: 200,
+  category: "Quête",
+  photographer: "JE - L'Administrateur",
+  photographerImg: "./assets/images/janviereric.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+}, {
+  _id: 19,
+  src: "./assets/images/home-photos/home-natures/home-nature_5.jpg",
+  alt: "nature",
+  width: 200,
+  height: 200,
+  category: "Collection",
+  photographer: "JE - L'Administrateur",
+  photographerImg: "./assets/images/janviereric.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+}, {
+  _id: 20,
+  src: "./assets/images/home-photos/home-neutres/home-neutre_5.jpg",
+  alt: "neutre",
+  width: 200,
+  height: 200,
+  category: "Partage",
+  photographer: "JE - L'Administrateur",
+  photographerImg: "./assets/images/janviereric.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+}, {
+  _id: 21,
+  src: "./assets/images/home-photos/home-animaux/home-animal_6.jpg",
+  alt: "animal",
+  width: 300,
+  height: 200,
+  category: "Quête",
+  photographer: "JE - L'Administrateur",
+  photographerImg: "./assets/images/janviereric.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+}, {
+  _id: 22,
+  src: "./assets/images/home-photos/home-iles/home-ile_6.jpg",
+  alt: "île",
+  width: 300,
+  height: 200,
+  category: "Collection",
+  photographer: "JE - L'Administrateur",
+  photographerImg: "./assets/images/janviereric.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+}, {
+  _id: 23,
+  src: "./assets/images/home-photos/home-natures/home-nature_6.jpg",
+  alt: "nature",
+  width: 200,
+  height: 200,
+  category: "Partage",
+  photographer: "JE - L'Administrateur",
+  photographerImg: "./assets/images/janviereric.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+}, {
+  _id: 24,
+  src: "./assets/images/home-photos/home-neutres/home-neutre_6.jpg",
+  alt: "neutre",
+  width: 200,
+  height: 200,
+  category: "Guide",
+  photographer: "JE - L'Administrateur",
+  photographerImg: "./assets/images/janviereric.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+}, {
+  _id: 25,
+  src: "./assets/images/home-photos/home-animaux/home-animal_7.jpg",
+  alt: "animal",
+  width: 300,
+  height: 200,
+  category: "Collection",
+  photographer: "JE - L'Administrateur",
+  photographerImg: "./assets/images/janviereric.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+}, {
+  _id: 26,
+  src: "./assets/images/home-photos/home-iles/home-ile_7.jpg",
+  alt: "île",
+  width: 200,
+  height: 200,
+  category: "Paratge",
+  photographer: "JE - L'Administrateur",
+  photographerImg: "./assets/images/janviereric.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+}, {
+  _id: 27,
+  src: "./assets/images/home-photos/home-natures/home-nature_7.jpg",
+  alt: "nature",
+  width: 200,
+  height: 200,
+  category: "Guide",
+  photographer: "JE - L'Administrateur",
+  photographerImg: "./assets/images/janviereric.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+}, {
+  _id: 28,
+  src: "./assets/images/home-photos/home-neutres/home-neutre_7.jpg",
+  alt: "neutre",
+  width: 300,
+  height: 200,
+  category: "Quête",
+  photographer: "JE - L'Administrateur",
+  photographerImg: "./assets/images/janviereric.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+}, {
+  _id: 29,
+  src: "./assets/images/home-photos/home-animaux/home-animal_8.jpg",
+  alt: "animal",
+  width: 400,
+  height: 200,
+  category: "Partage",
+  photographer: "JE - L'Administrateur",
+  photographerImg: "./assets/images/janviereric.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+}, {
+  _id: 30,
+  src: "./assets/images/home-photos/home-iles/home-ile_8.jpg",
+  alt: "île",
+  width: 200,
+  height: 200,
+  category: "Guide",
+  photographer: "JE - L'Administrateur",
+  photographerImg: "./assets/images/janviereric.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+}, {
+  _id: 31,
+  src: "./assets/images/home-photos/home-natures/home-nature_8.jpg",
+  alt: "nature",
+  width: 300,
+  height: 200,
+  category: "Quête",
+  photographer: "JE - L'Administrateur",
+  photographerImg: "./assets/images/janviereric.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+}, {
+  _id: 32,
+  src: "./assets/images/home-photos/home-neutres/home-neutre_8.jpg",
+  alt: "neutre",
+  width: 300,
+  height: 200,
+  category: "Collection",
+  photographer: "JE - L'Administrateur",
+  photographerImg: "./assets/images/janviereric.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+}, {
+  _id: 33,
+  src: "./assets/images/home-photos/home-animaux/home-animal_9.jpg",
+  alt: "animal",
+  width: 300,
+  height: 200,
+  category: "Guide",
+  photographer: "JE - L'Administrateur",
+  photographerImg: "./assets/images/janviereric.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+}, {
+  _id: 34,
+  src: "./assets/images/home-photos/home-iles/home-ile_9.jpg",
+  alt: "île",
+  width: 300,
+  height: 200,
+  category: "Quête",
+  photographer: "JE - L'Administrateur",
+  photographerImg: "./assets/images/janviereric.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+}, {
+  _id: 35,
+  src: "./assets/images/home-photos/home-natures/home-nature_9.jpg",
+  alt: "nature",
+  width: 200,
+  height: 200,
+  category: "Collection",
+  photographer: "JE - L'Administrateur",
+  photographerImg: "./assets/images/janviereric.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+}, {
+  _id: 36,
+  src: "./assets/images/home-photos/home-neutres/home-neutre_9.jpg",
+  alt: "neutre",
+  width: 300,
+  height: 200,
+  category: "Partage",
+  photographer: "JE - L'Administrateur",
+  photographerImg: "./assets/images/janviereric.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+}, {
+  _id: 37,
+  src: "./assets/images/home-photos/home-animaux/home-animal_10.jpg",
+  alt: "animal",
+  width: 300,
+  height: 200,
+  category: "Quête",
+  photographer: "JE - L'Administrateur",
+  photographerImg: "./assets/images/janviereric.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+}, {
+  _id: 38,
+  src: "./assets/images/home-photos/home-iles/home-ile_10.jpg",
+  alt: "île",
+  width: 200,
+  height: 200,
+  category: "Collection",
+  photographer: "JE - L'Administrateur",
+  photographerImg: "./assets/images/janviereric.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+}, {
+  _id: 39,
+  src: "./assets/images/home-photos/home-natures/home-nature_10.jpg",
+  alt: "nature",
+  width: 300,
+  height: 200,
+  category: "Partage",
+  photographer: "JE - L'Administrateur",
+  photographerImg: "./assets/images/janviereric.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+}, {
+  _id: 40,
+  src: "./assets/images/home-photos/home-neutres/home-neutre_10.jpg",
+  alt: "neutre",
+  width: 300,
+  height: 200,
+  category: "Guide",
+  photographer: "JE - L'Administrateur",
+  photographerImg: "./assets/images/janviereric.jpg",
+  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+}];
+var DisplayHomePhotos = function DisplayHomePhotos() {
+  var homePhotosElement = homePhotosArray.map(function (homePhoto, index) {
+    return createHomePhotosElement(homePhoto, index);
+  });
+  photosContainer.append.apply(photosContainer, _toConsumableArray(homePhotosElement));
+};
+var createHomePhotosElement = function createHomePhotosElement(homePhoto, index) {
+  var homePhotoContainer = document.createElement("div");
+  homePhotoContainer.classList.add("home-photo-container");
+  homePhotoContainer.innerHTML = "\n  <img src=\"".concat(homePhoto.src, "\" alt=\"").concat(homePhoto.alt, "\" width=\"").concat(homePhoto.width, "\" height=\"").concat(homePhoto.height, "\" />\n    <h2>").concat(homePhoto.category, "</h2>\n  ");
+  console.log(homePhoto);
+  return homePhotoContainer;
+};
+////////////////////////////// home start //////////////////////////////
+
+////////////////////////////// form start //////////////////////////////
+var createFormPhotosElement = /*#__PURE__*/function () {
+  var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(formPhotosArray) {
+    var formPhotosElement;
     return _regeneratorRuntime().wrap(function _callee$(_context) {
       while (1) switch (_context.prev = _context.next) {
         case 0:
-          photosElement = photos.map(function (photo) {
-            var photoElement = document.createElement("div");
-            photoElement.classList.add("photo");
-            photoElement.innerHTML = "   \n    <img src=\"".concat(photo.picture, "\" alt=\"\" />\n    <h2>").concat(photo.category, "</h2>");
-            return photoElement;
+          formPhotosElement = formPhotosArray.map(function (formPhoto) {
+            var formPhotoContainer = document.createElement("div");
+            formPhotoContainer.classList.add("form-photo-container");
+            formPhotoContainer.innerHTML = "   \n    <img src=\"".concat(formPhoto.picture, "\" alt=\"\" />\n    <h2>").concat(formPhoto.category, "</h2>");
+            return formPhotoContainer;
           });
           photosContainer.innerHTML = "";
-          photosContainer.append.apply(photosContainer, _toConsumableArray(photosElement));
-        case 3:
+          photosContainer.append.apply(photosContainer, _toConsumableArray(formPhotosElement));
+          DisplayHomePhotos();
+        case 4:
         case "end":
           return _context.stop();
       }
     }, _callee);
   }));
-  return function createPhotos(_x) {
+  return function createFormPhotosElement(_x) {
     return _ref.apply(this, arguments);
   };
 }();
-var fetchPhotos = /*#__PURE__*/function () {
+var fetchFormPhotos = /*#__PURE__*/function () {
   var _ref2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
-    var response, photos;
+    var response, formPhotos;
     return _regeneratorRuntime().wrap(function _callee2$(_context2) {
       while (1) switch (_context2.prev = _context2.next) {
         case 0:
@@ -7828,26 +8251,27 @@ var fetchPhotos = /*#__PURE__*/function () {
           _context2.next = 6;
           return response.json();
         case 6:
-          photos = _context2.sent;
-          console.log(photos);
-          createPhotos(photos);
+          formPhotos = _context2.sent;
+          console.log(formPhotos);
+          createFormPhotosElement(formPhotos);
           _context2.next = 14;
           break;
         case 11:
           _context2.prev = 11;
           _context2.t0 = _context2["catch"](0);
-          console.log(("error : ", e));
+          console.log(("error : ", _context2.t0));
         case 14:
         case "end":
           return _context2.stop();
       }
     }, _callee2, null, [[0, 11]]);
   }));
-  return function fetchPhotos() {
+  return function fetchFormPhotos() {
     return _ref2.apply(this, arguments);
   };
 }();
-fetchPhotos();
+fetchFormPhotos();
+////////////////////////////// form end //////////////////////////////
 })();
 
 /******/ })()
