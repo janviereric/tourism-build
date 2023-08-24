@@ -8145,9 +8145,10 @@ var createFormPhotosElement = /*#__PURE__*/function () {
             return formPhotoContainer;
           });
           photosContainer.innerHTML = "";
+          formPhotosElement.reverse();
           photosContainer.append.apply(photosContainer, _toConsumableArray(formPhotosElement));
           DisplayHomePhotos();
-        case 4:
+        case 5:
         case "end":
           return _context.stop();
       }
