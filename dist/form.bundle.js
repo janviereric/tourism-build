@@ -6377,6 +6377,16 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 
 var form = document.querySelector("form");
+var textPictureColor = document.querySelector("#text-picture-color");
+var textPictureStar = document.querySelector("#text-picture-star");
+var textCategoryColor = document.querySelector("#text-category-color");
+var textCategoryStar = document.querySelector("#text-category-star");
+var textPhotographerColor = document.querySelector("#text-photographer-color");
+var textPhotographerStar = document.querySelector("#text-photographer-star");
+var textContentColor = document.querySelector("#text-content-color");
+var textContentStar = document.querySelector("#text-content-star");
+var textInfoContent = document.querySelector("#text-info-content");
+var textInfo = document.querySelector("#text-info");
 form.addEventListener("submit", /*#__PURE__*/function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(event) {
     var formData, photo, json, response, body;
@@ -6427,78 +6437,62 @@ var formIsValid = function formIsValid(photo) {
   var textInfoPicture = document.querySelector("#text-info-picture");
   var textInfoCategory = document.querySelector("#text-info-category");
   var textInfoPhotographer = document.querySelector("#text-info-photographer");
-  var textInfoContent = document.querySelector("#text-info-content");
-  var textInfo = document.querySelector("#text-info");
-  if (!photo.picture && (photo.category || photo.photographer || photo.content)) {
-    console.log(photo.picture);
-    textInfoPicture.innerHTML = "Veuillez selectionner une photo.";
-    setTimeout(function () {
-      textInfoPicture.innerHTML = "";
-    }, 5000);
-  } else {
-    textInfoPicture.innerHTML = "";
-  }
-  if (!photo.category && (photo.picture || photo.photographer || photo.content)) {
-    textInfoCategory.innerHTML = "Veuillez renseigner choisir categorie.";
-    setTimeout(function () {
-      textInfoCategory.innerHTML = "";
-    }, 5000);
-  } else {
-    textInfoCategory.innerHTML = "";
-  }
-  if (!photo.photographer && (photo.picture || photo.category || photo.content)) {
-    textInfoPhotographer.innerHTML = "Veuillez indiquer le nom du Photographe.";
-    setTimeout(function () {
-      textInfoPhotographer.innerHTML = "";
-    }, 5000);
-  } else {
-    textInfoPhotographer.innerHTML = "";
-  }
-  if (!photo.content && (photo.picture || photo.category || photo.photographer)) {
-    textInfoContent.innerHTML = "Veuillez partager votre avis.";
-    setTimeout(function () {
-      textInfoContent.innerHTML = "";
-    }, 5000);
-  } else {
-    textInfoContent.innerHTML = "";
-  }
-  var textPictureColor = document.querySelector("#text-picture-color");
-  var textPictureStar = document.querySelector("#text-picture-star");
-  var textCategoryColor = document.querySelector("#text-category-color");
-  var textCategoryStar = document.querySelector("#text-category-star");
-  var textPhotographerColor = document.querySelector("#text-photographer-color");
-  var textPhotographerStar = document.querySelector("#text-photographer-star");
-  var textContentColor = document.querySelector("#text-content-color");
-  var textContentStar = document.querySelector("#text-content-star");
-  if (!photo.picture && !photo.category && !photo.photographer && !photo.content) {
-    textInfo.innerHTML = "* Vous devez renseigner tous les champs.";
-    textPictureColor.classList.add("text-danger");
-    textCategoryColor.classList.add("text-danger");
-    textPhotographerColor.classList.add("text-danger");
-    textContentColor.classList.add("text-danger");
-    textPictureStar.innerHTML = "*";
-    textPictureStar.classList.add("text-danger");
-    textCategoryStar.innerHTML = "*";
-    textCategoryStar.classList.add("text-danger");
-    textPhotographerStar.innerHTML = "*";
-    textPhotographerStar.classList.add("text-danger");
-    textContentStar.innerHTML = "*";
-    textContentStar.classList.add("text-danger");
-    setTimeout(function () {
-      textInfo.innerHTML = "";
-      textPictureColor.classList.remove("text-danger");
-      textCategoryColor.classList.remove("text-danger");
-      textPhotographerColor.classList.remove("text-danger");
-      textContentColor.classList.remove("text-danger");
-      textPictureStar.innerHTML = "";
-      textPictureStar.classList.remove("text-danger");
-      textCategoryStar.innerHTML = "";
-      textCategoryStar.classList.remove("text-danger");
-      textPhotographerStar.innerHTML = "";
-      textPhotographerStar.classList.remove("text-danger");
-      textContentStar.innerHTML = "";
-      textContentStar.classList.remove("text-danger");
-    }, 5000);
+  if (!photo.picture || !photo.category || !photo.photographer || !photo.content) {
+    if (!photo.picture && (photo.category || photo.photographer || photo.content)) {
+      console.log(photo.picture);
+      textInfoPicture.innerHTML = "Veuillez selectionner une photo.";
+      setTimeout(function () {
+        textInfoPicture.innerHTML = "";
+      }, 5000);
+    }
+    if (!photo.category && (photo.picture || photo.photographer || photo.content)) {
+      textInfoCategory.innerHTML = "Veuillez choisir categorie.";
+      setTimeout(function () {
+        textInfoCategory.innerHTML = "";
+      }, 5000);
+    }
+    if (!photo.photographer && (photo.picture || photo.category || photo.content)) {
+      textInfoPhotographer.innerHTML = "Veuillez indiquer le nom du Photographe.";
+      setTimeout(function () {
+        textInfoPhotographer.innerHTML = "";
+      }, 5000);
+    }
+    if (!photo.content && (photo.picture || photo.category || photo.photographer)) {
+      textInfoContent.innerHTML = "Veuillez partager votre avis.";
+      setTimeout(function () {
+        textInfoContent.innerHTML = "";
+      }, 5000);
+    }
+    if (!photo.picture && !photo.category && !photo.photographer && !photo.content) {
+      textInfo.innerHTML = "* Vous devez renseigner tous les champs.";
+      textPictureColor.classList.add("text-danger");
+      textCategoryColor.classList.add("text-danger");
+      textPhotographerColor.classList.add("text-danger");
+      textContentColor.classList.add("text-danger");
+      textPictureStar.innerHTML = "*";
+      textPictureStar.classList.add("text-danger");
+      textCategoryStar.innerHTML = "*";
+      textCategoryStar.classList.add("text-danger");
+      textPhotographerStar.innerHTML = "*";
+      textPhotographerStar.classList.add("text-danger");
+      textContentStar.innerHTML = "*";
+      textContentStar.classList.add("text-danger");
+      setTimeout(function () {
+        textInfo.innerHTML = "";
+        textPictureColor.classList.remove("text-danger");
+        textCategoryColor.classList.remove("text-danger");
+        textPhotographerColor.classList.remove("text-danger");
+        textContentColor.classList.remove("text-danger");
+        textPictureStar.innerHTML = "";
+        textPictureStar.classList.remove("text-danger");
+        textCategoryStar.innerHTML = "";
+        textCategoryStar.classList.remove("text-danger");
+        textPhotographerStar.innerHTML = "";
+        textPhotographerStar.classList.remove("text-danger");
+        textContentStar.innerHTML = "";
+        textContentStar.classList.remove("text-danger");
+      }, 5000);
+    }
     return false;
   } else {
     textInfo.innerHTML = "";
