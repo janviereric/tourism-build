@@ -8092,9 +8092,6 @@ var __webpack_exports__ = {};
   !*** ./src/index.js ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   createHomePhotosElement: () => (/* binding */ createHomePhotosElement)
-/* harmony export */ });
 /* harmony import */ var core_js_modules_es_array_map_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.map.js */ "./node_modules/core-js/modules/es.array.map.js");
 /* harmony import */ var core_js_modules_es_array_map_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_map_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es.array.concat.js */ "./node_modules/core-js/modules/es.array.concat.js");
@@ -8193,277 +8190,279 @@ var createHomePhotosElement = function createHomePhotosElement(homePhoto, index)
   var homePhotoContainer = document.createElement("div");
   homePhotoContainer.classList.add("home-photo-container");
   homePhotoContainer.innerHTML = "\n  <img src=\"".concat(homePhoto.src, "\" alt=\"").concat(homePhoto.picture, "\" />\n    <h2>").concat(homePhoto.picture, "</h2>\n  ");
+  var homePhotoImg = homePhotoContainer.querySelector("img");
+  homePhotoImg.setAttribute("data-id", "".concat(homePhoto._id));
+  homePhotoContainer.addEventListener("click", function (event) {
+    var target = event.target;
+    var homePhotoId = target.dataset.id;
+    window.location.assign("./detail.html?number=".concat(homePhotoId));
+  });
   return homePhotoContainer;
 };
 ////////////////////////////// home start //////////////////////////////
 
 ////////////////////////////// form start //////////////////////////////
-var createFormPhotosElement = /*#__PURE__*/function () {
-  var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(formPhotosArray) {
-    var formPhotosElement;
+var createFormPhotosElement = function createFormPhotosElement(formPhotosArray) {
+  var formPhotosElement = formPhotosArray.map(function (formPhoto) {
+    var formPhotoContainer = document.createElement("div");
+    formPhotoContainer.classList.add("form-photo-container");
+    formPhotoContainer.innerHTML = "\n    <img alt=\"".concat(formPhoto.picture, "\" />\n    <h2>").concat(formPhoto.picture, "</h2>");
+    var formPhotoImg = formPhotoContainer.querySelector("img");
+    formPhotoImg.setAttribute("data-id", "".concat(formPhoto._id));
+    formPhotoContainer.addEventListener("click", function (event) {
+      var target = event.target;
+      var formPhotoId = target.dataset.id;
+      window.location.assign("./detail.html?id=".concat(formPhotoId));
+    });
+    switch (formPhoto.picture) {
+      case "Un Désert en Cisjordanie":
+        {
+          formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-cj.jpg";
+          break;
+        }
+      case "Un Désert en Jordanie":
+        {
+          formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-jo.jpg";
+          break;
+        }
+      case "Un Désert au Maroc":
+        {
+          formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-ma.jpg";
+          break;
+        }
+      case "Un Désert en Namibie (Océan Atlantique)":
+        {
+          formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-oa-na.jpg";
+          break;
+        }
+      case "Un Désert en Oman":
+        {
+          formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-om.jpg";
+          break;
+        }
+      case "Un Désert au Pérou":
+        {
+          formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-pe.jpg";
+          break;
+        }
+      case "Un Désert en Arabie Saoudite":
+        {
+          formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-sa.jpg";
+          break;
+        }
+      case "Un Désert en Namibie (Sud-Ouest)":
+        {
+          formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-so-na.jpg";
+          break;
+        }
+      case "Le Désert du Sahara (Soir)":
+        {
+          formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-soir-eh.jpg";
+          break;
+        }
+      case "Sable Blanc du Nouveau-Mexique (USA)":
+        {
+          formPhotoImg.src = "./assets/images/form-photos/form-deserts/sable-blanc-nmex-us.jpg";
+          break;
+        }
+    }
+    switch (formPhoto.picture) {
+      case "Une Forêt en Australie":
+        {
+          formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-au.jpg";
+          break;
+        }
+      case "Une Forêt au Canada":
+        {
+          formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-ca.jpg";
+          break;
+        }
+      case "Une Forêt en Finlande":
+        {
+          formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-fi.jpg";
+          break;
+        }
+      case "Une Forêt en Croatie":
+        {
+          formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-hr.jpg";
+          break;
+        }
+      case "Une Forêt en Inde":
+        {
+          formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-in.jpg";
+          break;
+        }
+      case "Une Forêt en Italie":
+        {
+          formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-it.jpg";
+          break;
+        }
+      case "Une Forêt au Japon":
+        {
+          formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-jp.jpg";
+          break;
+        }
+      case "La Forêt des Loups":
+        {
+          formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-loups.jpg";
+          break;
+        }
+      case "Une Forêt au Nouvelle-Zélande":
+        {
+          formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-nz.jpg";
+          break;
+        }
+      case "Une Forêt en Washington (USA)":
+        {
+          formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-wash-us.jpg";
+          break;
+        }
+    }
+    switch (formPhoto.picture) {
+      case "Une Plage en Australie":
+        {
+          formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-au.jpg";
+          break;
+        }
+      case "Une Plage au Brésil":
+        {
+          formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-br.jpg";
+          break;
+        }
+      case "Une Plage en Grande-Bretagne":
+        {
+          formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-gb.jpg";
+          break;
+        }
+      case "Une Plage en Italie":
+        {
+          formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-it.jpg";
+          break;
+        }
+      case "Une Plage en Madagascar":
+        {
+          formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-mg.jpg";
+          break;
+        }
+      case "Une Plage au Mexique":
+        {
+          formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-mx.jpg";
+          break;
+        }
+      case "Une Plage en Nouvelle-Calédonie":
+        {
+          formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-nc.jpg";
+          break;
+        }
+      case "Une Plage en Polynésie Française":
+        {
+          formPhotoImgo.src = "./assets/images/form-photos/form-plages/plage-pf.jpg";
+          break;
+        }
+      case "Une Plage aux Sychelles":
+        {
+          formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-sc.jpg";
+          break;
+        }
+      case "Une Plage en Thaïlande":
+        {
+          formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-th.jpg";
+          break;
+        }
+    }
+    switch (formPhoto.picture) {
+      case "Une Ville au Chili":
+        {
+          formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-cl.jpg";
+          break;
+        }
+      case "Une Ville en Chine":
+        {
+          formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-cn.jpg";
+          break;
+        }
+      case "Une Ville en Colombie":
+        {
+          formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-co.jpg";
+          break;
+        }
+      case "Une Ville en France":
+        {
+          formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-fr.jpg";
+          break;
+        }
+      case "Une Ville en Grande-Bretagne":
+        {
+          formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-gb.jpg";
+          break;
+        }
+      case "Une Ville au Japon (Jour)":
+        {
+          formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-jour-jp.jpg";
+          break;
+        }
+      case "Une Ville en Koweït":
+        {
+          formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-kw.jpg";
+          break;
+        }
+      case "Une Ville en Norvège":
+        {
+          formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-no.jpg";
+          break;
+        }
+      case "Une Ville Rural d'Allemagne":
+        {
+          formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-rural-ge.jpg";
+          break;
+        }
+      case "Une Ville d'Italie (Soir)":
+        {
+          formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-soir-it.jpg";
+          break;
+        }
+    }
+    return formPhotoContainer;
+  });
+  photosContainer.innerHTML = "";
+  formPhotosElement.reverse();
+  photosContainer.append.apply(photosContainer, _toConsumableArray(formPhotosElement));
+  displayHomePhotos();
+};
+displayHomePhotos();
+var fetchFormPhotos = /*#__PURE__*/function () {
+  var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
+    var response, formPhotos;
     return _regeneratorRuntime().wrap(function _callee$(_context) {
       while (1) switch (_context.prev = _context.next) {
         case 0:
-          formPhotosElement = formPhotosArray.map(function (formPhoto) {
-            var formPhotoContainer = document.createElement("div");
-            formPhotoContainer.classList.add("form-photo-container");
-            formPhotoContainer.innerHTML = "\n    <img alt=\"".concat(formPhoto.picture, "\" />\n    <h2>").concat(formPhoto.picture, "</h2>");
-            var imgPhoto = formPhotoContainer.querySelector("img");
-            switch (formPhoto.picture) {
-              case "Un Désert en Cisjordanie":
-                {
-                  imgPhoto.src = "./assets/images/form-photos/form-deserts/desert-cj.jpg";
-                  break;
-                }
-              case "Un Désert en Jordanie":
-                {
-                  imgPhoto.src = "./assets/images/form-photos/form-deserts/desert-jo.jpg";
-                  break;
-                }
-              case "Un Désert au Maroc":
-                {
-                  imgPhoto.src = "./assets/images/form-photos/form-deserts/desert-ma.jpg";
-                  break;
-                }
-              case "Un Désert en Namibie (Océan Atlantique)":
-                {
-                  imgPhoto.src = "./assets/images/form-photos/form-deserts/desert-oa-na.jpg";
-                  break;
-                }
-              case "Un Désert en Oman":
-                {
-                  imgPhoto.src = "./assets/images/form-photos/form-deserts/desert-om.jpg";
-                  break;
-                }
-              case "Un Désert au Pérou":
-                {
-                  imgPhoto.src = "./assets/images/form-photos/form-deserts/desert-pe.jpg";
-                  break;
-                }
-              case "Un Désert en Arabie Saoudite":
-                {
-                  imgPhoto.src = "./assets/images/form-photos/form-deserts/desert-sa.jpg";
-                  break;
-                }
-              case "Un Désert en Namibie (Sud-Ouest)":
-                {
-                  imgPhoto.src = "./assets/images/form-photos/form-deserts/desert-so-na.jpg";
-                  break;
-                }
-              case "Le Désert du Sahara (Soir)":
-                {
-                  imgPhoto.src = "./assets/images/form-photos/form-deserts/desert-soir-eh.jpg";
-                  break;
-                }
-              case "Sable Blanc du Nouveau-Mexique (USA)":
-                {
-                  imgPhoto.src = "./assets/images/form-photos/form-deserts/sable-blanc-nmex-us.jpg";
-                  break;
-                }
-            }
-            switch (formPhoto.picture) {
-              case "Une Forêt en Australie":
-                {
-                  imgPhoto.src = "./assets/images/form-photos/form-forets/foret-au.jpg";
-                  break;
-                }
-              case "Une Forêt au Canada":
-                {
-                  imgPhoto.src = "./assets/images/form-photos/form-forets/foret-ca.jpg";
-                  break;
-                }
-              case "Une Forêt en Finlande":
-                {
-                  imgPhoto.src = "./assets/images/form-photos/form-forets/foret-fi.jpg";
-                  break;
-                }
-              case "Une Forêt en Croatie":
-                {
-                  imgPhoto.src = "./assets/images/form-photos/form-forets/foret-hr.jpg";
-                  break;
-                }
-              case "Une Forêt en Inde":
-                {
-                  imgPhoto.src = "./assets/images/form-photos/form-forets/foret-in.jpg";
-                  break;
-                }
-              case "Une Forêt en Italie":
-                {
-                  imgPhoto.src = "./assets/images/form-photos/form-forets/foret-it.jpg";
-                  break;
-                }
-              case "Une Forêt au Japon":
-                {
-                  imgPhoto.src = "./assets/images/form-photos/form-forets/foret-jp.jpg";
-                  break;
-                }
-              case "La Forêt des Loups":
-                {
-                  imgPhoto.src = "./assets/images/form-photos/form-forets/foret-loups.jpg";
-                  break;
-                }
-              case "Une Forêt au Nouvelle-Zélande":
-                {
-                  imgPhoto.src = "./assets/images/form-photos/form-forets/foret-nz.jpg";
-                  break;
-                }
-              case "Une Forêt en Washington (USA)":
-                {
-                  imgPhoto.src = "./assets/images/form-photos/form-forets/foret-wash-us.jpg";
-                  break;
-                }
-            }
-            switch (formPhoto.picture) {
-              case "Une Plage en Australie":
-                {
-                  imgPhoto.src = "./assets/images/form-photos/form-plages/plage-au.jpg";
-                  break;
-                }
-              case "Une Plage au Brésil":
-                {
-                  imgPhoto.src = "./assets/images/form-photos/form-plages/plage-br.jpg";
-                  break;
-                }
-              case "Une Plage en Grande-Bretagne":
-                {
-                  imgPhoto.src = "./assets/images/form-photos/form-plages/plage-gb.jpg";
-                  break;
-                }
-              case "Une Plage en Italie":
-                {
-                  imgPhoto.src = "./assets/images/form-photos/form-plages/plage-it.jpg";
-                  break;
-                }
-              case "Une Plage en Madagascar":
-                {
-                  imgPhoto.src = "./assets/images/form-photos/form-plages/plage-mg.jpg";
-                  break;
-                }
-              case "Une Plage au Mexique":
-                {
-                  imgPhoto.src = "./assets/images/form-photos/form-plages/plage-mx.jpg";
-                  break;
-                }
-              case "Une Plage en Nouvelle-Calédonie":
-                {
-                  imgPhoto.src = "./assets/images/form-photos/form-plages/plage-nc.jpg";
-                  break;
-                }
-              case "Une Plage en Polynésie Française":
-                {
-                  imgPhoto.src = "./assets/images/form-photos/form-plages/plage-pf.jpg";
-                  break;
-                }
-              case "Une Plage aux Sychelles":
-                {
-                  imgPhoto.src = "./assets/images/form-photos/form-plages/plage-sc.jpg";
-                  break;
-                }
-              case "Une Plage en Thaïlande":
-                {
-                  imgPhoto.src = "./assets/images/form-photos/form-plages/plage-th.jpg";
-                  break;
-                }
-            }
-            switch (formPhoto.picture) {
-              case "Une Ville au Chili":
-                {
-                  imgPhoto.src = "./assets/images/form-photos/form-villes/ville-cl.jpg";
-                  break;
-                }
-              case "Une Ville en Chine":
-                {
-                  imgPhoto.src = "./assets/images/form-photos/form-villes/ville-cn.jpg";
-                  break;
-                }
-              case "Une Ville en Colombie":
-                {
-                  imgPhoto.src = "./assets/images/form-photos/form-villes/ville-co.jpg";
-                  break;
-                }
-              case "Une Ville en France":
-                {
-                  imgPhoto.src = "./assets/images/form-photos/form-villes/ville-fr.jpg";
-                  break;
-                }
-              case "Une Ville en Grande-Bretagne":
-                {
-                  imgPhoto.src = "./assets/images/form-photos/form-villes/ville-gb.jpg";
-                  break;
-                }
-              case "Une Ville au Japon (Jour)":
-                {
-                  imgPhoto.src = "./assets/images/form-photos/form-villes/ville-jour-jp.jpg";
-                  break;
-                }
-              case "Une Ville en Koweït":
-                {
-                  imgPhoto.src = "./assets/images/form-photos/form-villes/ville-kw.jpg";
-                  break;
-                }
-              case "Une Ville en Norvège":
-                {
-                  imgPhoto.src = "./assets/images/form-photos/form-villes/ville-no.jpg";
-                  break;
-                }
-              case "Une Ville Rural d'Allemagne":
-                {
-                  imgPhoto.src = "./assets/images/form-photos/form-villes/ville-rural-ge.jpg";
-                  break;
-                }
-              case "Une Ville d'Italie (Soir)":
-                {
-                  imgPhoto.src = "./assets/images/form-photos/form-villes/ville-soir-it.jpg";
-                  break;
-                }
-            }
-            return formPhotoContainer;
-          });
-          photosContainer.innerHTML = "";
-          formPhotosElement.reverse();
-          photosContainer.append.apply(photosContainer, _toConsumableArray(formPhotosElement));
-          displayHomePhotos();
-        case 5:
+          _context.prev = 0;
+          _context.next = 3;
+          return fetch("https://restapi.fr/api/photos");
+        case 3:
+          response = _context.sent;
+          _context.next = 6;
+          return response.json();
+        case 6:
+          formPhotos = _context.sent;
+          createFormPhotosElement(formPhotos);
+          if (!Array.isArray(formPhotos)) {
+            formPhotos = [formPhotos];
+          }
+          _context.next = 14;
+          break;
+        case 11:
+          _context.prev = 11;
+          _context.t0 = _context["catch"](0);
+          console.log(("error : ", _context.t0));
+        case 14:
         case "end":
           return _context.stop();
       }
-    }, _callee);
-  }));
-  return function createFormPhotosElement(_x) {
-    return _ref.apply(this, arguments);
-  };
-}();
-var fetchFormPhotos = /*#__PURE__*/function () {
-  var _ref2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
-    var response, formPhotos;
-    return _regeneratorRuntime().wrap(function _callee2$(_context2) {
-      while (1) switch (_context2.prev = _context2.next) {
-        case 0:
-          _context2.prev = 0;
-          _context2.next = 3;
-          return fetch("https://restapi.fr/api/photos");
-        case 3:
-          response = _context2.sent;
-          _context2.next = 6;
-          return response.json();
-        case 6:
-          formPhotos = _context2.sent;
-          console.log(formPhotos);
-          createFormPhotosElement(formPhotos);
-          _context2.next = 14;
-          break;
-        case 11:
-          _context2.prev = 11;
-          _context2.t0 = _context2["catch"](0);
-          console.log(("error : ", _context2.t0));
-        case 14:
-        case "end":
-          return _context2.stop();
-      }
-    }, _callee2, null, [[0, 11]]);
+    }, _callee, null, [[0, 11]]);
   }));
   return function fetchFormPhotos() {
-    return _ref2.apply(this, arguments);
+    return _ref.apply(this, arguments);
   };
 }();
 fetchFormPhotos();
