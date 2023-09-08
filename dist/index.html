@@ -16,6 +16,7 @@
       type="image/x-icon"
       href="./assets/images/janviereric.jpg"
     />
+
     <!-- fontawesome -->
     <script
       src="https://kit.fontawesome.com/5a38324862.js"
@@ -29,10 +30,10 @@
         <a href="./index.html" class="header-brand">Tourism</a>
         <div class="header-menu">
           <ul>
-            <li class="active">
+            <li>
               <a href="./index.html" class="header-nav">Accueil</a>
             </li>
-            <li>
+            <li class="active">
               <a href="./form.html" class="header-nav">Formulaire</a>
             </li>
           </ul>
@@ -42,7 +43,253 @@
         </div>
       </header>
       <main>
-        <div id="photos-container"></div>
+        <form>
+          <h2 class="title-underline">Ajouter une Photo</h2>
+          <div class="form-group form-picture">
+            <label for="picture"
+              ><span id="text-picture-color">Nom de la Photo</span
+              ><span id="text-picture-star"></span
+            ></label>
+            <select name="picture" id="picture">
+              <option value="">Selectionner une photo</option>
+              <optgroup label="Les Déserts">
+                <option value="Un Désert en Cisjordanie">
+                  Un Désert en Cisjordanie
+                </option>
+                <option value="Un Désert en Jordanie">
+                  Un Désert en Jordanie
+                </option>
+                <option value="Un Désert au Maroc">Un Désert au Maroc</option>
+                <option value="Un Désert en Namibie (Océan Atlantique)">
+                  Un Désert en Namibie (Océan Atlantique)
+                </option>
+                <option value="Un Désert en Oman">Un Désert en Oman</option>
+                <option value="Un Désert au Pérou">Un Désert au Pérou</option>
+                <option value="Un Désert en Arabie Saoudite">
+                  Un Désert en Arabie Saoudite
+                </option>
+                <option value="Un Désert en Namibie (Sud-Ouest)">
+                  Un Désert en Namibie (Sud-Ouest)
+                </option>
+                <option value="Le Désert du Sahara (Soir)">
+                  Le Désert du Sahara (Soir)
+                </option>
+                <option value="Sable Blanc du Nouveau-Mexique (USA)">
+                  Sable Blanc du Nouveau-Mexique (USA)
+                </option>
+              </optgroup>
+              <optgroup label="Les Forêts">
+                <option value="Une Forêt en Australie">
+                  Une Forêt en Australie
+                </option>
+                <option value="Une Forêt au Canada">Une Forêt au Canada</option>
+                <option value="Une Forêt en Finlande">
+                  Une Forêt en Finlande
+                </option>
+                <option value="Une Forêt en Croatie">
+                  Une Forêt en Croatie
+                </option>
+                <option value="Une Forêt en Inde">Une Forêt en Inde</option>
+                <option value="Une Forêt en Italie">Une Forêt en Italie</option>
+                <option value="Une Forêt au Japon">Une Forêt au Japon</option>
+                <option value="La Forêt des Loups">La Forêt des Loups</option>
+                <option value="Une Forêt au Nouvelle-Zélande">
+                  Une Forêt au Nouvelle-Zélande
+                </option>
+                <option value="Une Forêt en Washington (USA)">
+                  Une Forêt en Washington (USA)
+                </option>
+              </optgroup>
+              <optgroup label="Les Plages">
+                <option value="Une Plage en Australie">
+                  Une Plage en Australie
+                </option>
+                <option value="Une Plage au Brésil">Une Plage au Brésil</option>
+                <option value="Une Plage en Grande-Bretagne">
+                  Une Plage en Grande-Bretagne
+                </option>
+                <option value="Une Plage en Italie">Une Plage en Italie</option>
+                <option value="Une Plage en Madagascar">
+                  Une Plage en Madagascar
+                </option>
+                <option value="Une Plage au Mexique">
+                  Une Plage au Mexique
+                </option>
+                <option value="Une Plage en Nouvelle-Calédonie">
+                  Une Plage en Nouvelle-Calédoniee
+                </option>
+                <option value="Une Plage en Polynésie Française">
+                  Une Plage en Polynésie Française
+                </option>
+                <option value="Une Plage aux Sychelles">
+                  Une Plage aux Sychelles
+                </option>
+                <option value="Une Plage en Thaïlande">
+                  Une Plage en Thaïlande
+                </option>
+              </optgroup>
+              <optgroup label="Les Villes">
+                <option value="Une Ville au Chili">Une Ville au Chili</option>
+                <option value="Une Ville en Chine">Une Ville en Chine</option>
+                <option value="Une Ville en Colombie">
+                  Une Ville en Colombie
+                </option>
+                <option value="Une Ville en France">Une Ville en France</option>
+                <option value="Une Ville en Grande-Bretagne">
+                  Une Ville en Grande-Bretagne
+                </option>
+                <option value="Une Ville au Japon (Jour)">
+                  Une Ville au Japon (Jour)
+                </option>
+                <option value="Une Ville en Koweït">Une Ville en Koweït</option>
+                <option value="Une Ville en Norvège">
+                  Une Ville en Norvège
+                </option>
+                <option value="Une Ville Rural d'Allemagne">
+                  Une Ville Rural d'Allemagne
+                </option>
+                <option value="Une Ville d'Italie (Soir)">
+                  Une Ville d'Italie (Soir)
+                </option>
+              </optgroup>
+            </select>
+            <small id="text-info-picture"></small>
+          </div>
+          <div class="form-category">
+            <label
+              ><span id="text-category-color" class="form-title-category"
+                >Categorie de la Photo</span
+              ><span id="text-category-star"></span
+            ></label>
+            <div class="container-name-category">
+              <div>
+                <input type="radio" id="Guide" name="category" value="Guide" />
+                <label for="Guide">Guide</label>
+              </div>
+              <div>
+                <input type="radio" id="Quête" name="category" value="Quête" />
+                <label for="Quête">Quête</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="Collection"
+                  name="category"
+                  value="Collection"
+                />
+                <label for="Collection">Collection</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="Partage"
+                  name="category"
+                  value="Partage"
+                />
+                <label for="Partage">Partage</label>
+              </div>
+            </div>
+            <small id="text-info-category"></small>
+          </div>
+
+          <div class="form-group form-photographer">
+            <label for="photographer"
+              ><span id="text-photographer-color">Profil du Photographe</span
+              ><span id="text-photographer-star"></span
+            ></label>
+            <select name="photographer" id="photographer">
+              <option value="">Selectionner un Profil</option>
+              <optgroup label="Exploration">
+                <option value="Dora - L'Exploratrice">
+                  Dora - L'Exploratrice
+                </option>
+                <option value="Tad - L'Explorateur">Tad - L'Explorateur</option>
+                <option value="Polo - L'Explorateur">
+                  Polo - L'Explorateur
+                </option>
+              </optgroup>
+              <optgroup label="Voyage">
+                <option value="Chihiro - La Voyageuse">
+                  Chihiro - La Voyageuse
+                </option>
+                <option value="Robinson - Le Voyageur">
+                  Robinson - Le Voyageur
+                </option>
+                <option value="Phileas - Le Voyageur">
+                  Phileas - Le Voyageur
+                </option>
+              </optgroup>
+              <optgroup label="Archéologie">
+                <option value="Jones - L'Archéologue">
+                  Jones - L'Archéologue
+                </option>
+                <option value="Lara - L'Archéologue">
+                  Lara - L'Archéologue
+                </option>
+                <option value="Milo - L'Archéologue">
+                  Milo - L'Archéologue
+                </option>
+              </optgroup>
+              <optgroup label="Aventure">
+                <option value="Tom - L'Aventurier">Tom - L'Aventurier</option>
+                <option value="Gamba - L'Aventurier">
+                  Gamba - L'Aventurier
+                </option>
+                <option value="Sophie - L'Aventurière">
+                  Sophie - L'Aventurière
+                </option>
+              </optgroup>
+            </select>
+            <small id="text-info-photographer"></small>
+          </div>
+          <div class="form-group form-content">
+            <label for="content"
+              ><span id="text-content-color">Description de la Photo</span
+              ><span id="text-content-star"></span
+            ></label>
+            <select name="content" id="content">
+              <option value="">Selectionner une Description</option>
+              <option
+                value="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+              >
+                Lorem de 1 Paragraphe
+              </option>
+              <option
+                value="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas accumsan lacus vel facilisis volutpat est velit egestas dui. Pulvinar etiam non quam lacus. Tellus at urna condimentum mattis pellentesque id nibh tortor id. Est ultricies integer quis auctor. Enim nec dui nunc mattis enim ut tellus elementum. Blandit libero volutpat sed cras. In massa tempor nec feugiat nisl pretium. Id interdum velit laoreet id donec ultrices tincidunt arcu. Iaculis at erat pellentesque adipiscing. Viverra accumsan in nisl nisi scelerisque eu ultrices vitae auctor. Gravida cum sociis natoque penatibus et magnis dis. Tincidunt eget nullam non nisi est sit amet facilisis magna. Blandit massa enim nec dui nunc mattis. Quisque sagittis purus sit amet volutpat. Libero nunc consequat interdum varius. Sed vulputate mi sit amet mauris commodo quis imperdiet massa. Mauris ultrices eros in cursus. Netus et malesuada fames ac turpis egestas.
+
+              Suspendisse faucibus interdum posuere lorem ipsum. Malesuada fames ac turpis egestas maecenas pharetra convallis posuere. Semper auctor neque vitae tempus quam pellentesque. Auctor augue mauris augue neque gravida in fermentum. A erat nam at lectus urna. Varius duis at consectetur lorem donec massa sapien faucibus et. Aenean euismod elementum nisi quis eleifend quam adipiscing vitae proin. Nunc scelerisque viverra mauris in aliquam sem fringilla ut. Nisl tincidunt eget nullam non nisi est. Netus et malesuada fames ac turpis egestas integer eget. Non diam phasellus vestibulum lorem sed risus ultricies tristique nulla. Malesuada fames ac turpis egestas sed tempus urna et. Urna porttitor rhoncus dolor purus non enim praesent. Sed libero enim sed faucibus turpis in. Tellus integer feugiat scelerisque varius morbi enim nunc. Lectus sit amet est placerat in."
+              >
+                Lorem de 2 Paragraphe
+              </option>
+              <option
+                value="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa tincidunt dui ut ornare lectus sit amet est. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Suspendisse in est ante in nibh mauris cursus mattis. Dignissim convallis aenean et tortor at risus viverra adipiscing at. Eget arcu dictum varius duis at. Sapien faucibus et molestie ac feugiat sed lectus. Viverra nibh cras pulvinar mattis nunc sed. Pulvinar etiam non quam lacus. Nulla facilisi etiam dignissim diam quis enim lobortis scelerisque. Aliquet nibh praesent tristique magna sit amet purus. Aliquet nec ullamcorper sit amet risus nullam eget felis eget. Tempus quam pellentesque nec nam aliquam.
+
+              Molestie at elementum eu facilisis sed odio morbi quis. Pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Sem viverra aliquet eget sit amet tellus cras. Nam aliquam sem et tortor. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque. Vitae ultricies leo integer malesuada nunc vel. Varius sit amet mattis vulputate enim nulla aliquet. Placerat duis ultricies lacus sed turpis. Consectetur purus ut faucibus pulvinar elementum integer. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus et. Cras pulvinar mattis nunc sed blandit libero volutpat sed cras. Dolor magna eget est lorem ipsum dolor sit amet.
+              
+              Est ullamcorper eget nulla facilisi etiam dignissim. Urna nec tincidunt praesent semper feugiat nibh. Turpis tincidunt id aliquet risus feugiat in ante. Feugiat in fermentum posuere urna nec tincidunt praesent. Hendrerit dolor magna eget est lorem ipsum dolor sit. Eleifend donec pretium vulputate sapien nec sagittis. Consequat ac felis donec et odio pellentesque diam volutpat. Aliquam etiam erat velit scelerisque in dictum non consectetur. Consequat ac felis donec et. Amet consectetur adipiscing elit ut aliquam purus sit amet. Sagittis vitae et leo duis ut diam quam nulla. At auctor urna nunc id cursus metus aliquam."
+              >
+                Lorem de 3 Paragraphe
+              </option>
+              <option
+                value="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed vulputate mi sit amet mauris commodo quis. Fames ac turpis egestas sed tempus urna et pharetra pharetra. Tortor aliquam nulla facilisi cras fermentum odio eu feugiat. Sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque. Ultricies mi quis hendrerit dolor. Odio euismod lacinia at quis risus sed. Cursus mattis molestie a iaculis at erat. Est ultricies integer quis auctor elit. Nibh venenatis cras sed felis eget velit aliquet sagittis. Varius duis at consectetur lorem donec massa.
+
+              Fermentum iaculis eu non diam. Eu facilisis sed odio morbi. Enim ut sem viverra aliquet eget sit amet tellus cras. Adipiscing bibendum est ultricies integer quis auctor. At erat pellentesque adipiscing commodo elit at imperdiet dui accumsan. Justo laoreet sit amet cursus sit amet dictum sit amet. Massa eget egestas purus viverra. Vitae tortor condimentum lacinia quis vel eros donec. Libero justo laoreet sit amet cursus sit amet dictum. Non enim praesent elementum facilisis leo vel fringilla est.
+              
+              Posuere morbi leo urna molestie at elementum. In hac habitasse platea dictumst quisque sagittis purus. Pellentesque habitant morbi tristique senectus et. Maecenas pharetra convallis posuere morbi. At in tellus integer feugiat scelerisque varius. Interdum varius sit amet mattis vulputate. Neque laoreet suspendisse interdum consectetur libero id faucibus. Eget aliquet nibh praesent tristique magna. Enim diam vulputate ut pharetra sit amet aliquam id diam. Tristique nulla aliquet enim tortor at auctor urna. Adipiscing elit pellentesque habitant morbi tristique senectus et netus et. Enim sed faucibus turpis in eu mi. Sit amet justo donec enim. Dictum at tempor commodo ullamcorper a lacus. Felis donec et odio pellentesque. Fermentum dui faucibus in ornare quam viverra orci sagittis. Commodo odio aenean sed adipiscing diam donec adipiscing.
+              
+              Enim ut sem viverra aliquet eget. Dignissim sodales ut eu sem integer vitae justo. Posuere morbi leo urna molestie at elementum eu facilisis. Facilisi nullam vehicula ipsum a arcu. In vitae turpis massa sed elementum tempus egestas sed sed. Aenean euismod elementum nisi quis eleifend quam adipiscing. Lectus proin nibh nisl condimentum id venenatis. Risus feugiat in ante metus. Vestibulum lorem sed risus ultricies. Eu non diam phasellus vestibulum lorem sed. Aliquet eget sit amet tellus cras adipiscing enim eu."
+              >
+                Lorem de 4 Paragraphe
+              </option>
+            </select>
+            <small id="text-info-content"></small>
+          </div>
+          <small id="text-info"></small>
+          <div class="form-button-container">
+            <button class="button button-secondary">Annuler</button>
+            <button class="button button-primary">Ajouter</button>
+          </div>
+        </form>
       </main>
       <footer>
         <p>
