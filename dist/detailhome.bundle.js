@@ -28,7 +28,7 @@ var homePhotosArray = [{
   src: "./assets/images/home-photos/home-forets/foret-automne.jpg",
   picture: "Une Forêt (Automne)",
   category: "Quête",
-  photographer: "Sophie - L'Administratrice",
+  photographer: "Marie - L'Administratrice",
   photographerImg: "./assets/images/home-photos/home-villes/ville-urbain-ge.jpg",
   createdAt: "le mercredi 02 août 2023",
   content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
@@ -68,7 +68,7 @@ var homePhotosArray = [{
   src: "./assets/images/home-photos/home-forets/foret-calif-us.jpg",
   picture: "Une Forêt en Californie (USA)",
   category: "Collection",
-  photographer: "Sophie - L'Administratrice",
+  photographer: "Marie - L'Administratrice",
   photographerImg: "./assets/images/home-photos/home-villes/ville-urbain-ge.jpg",
   createdAt: "le mardi 08 août 2023",
   content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
@@ -108,7 +108,7 @@ var homePhotosArray = [{
   src: "./assets/images/home-photos/home-forets/foret-de.jpg",
   picture: "Une Forêts en Allemagne",
   category: "Partage",
-  photographer: "Sophie - L'Administratrice",
+  photographer: "Marie - L'Administratrice",
   photographerImg: "./assets/images/home-photos/home-villes/ville-urbain-ge.jpg",
   createdAt: "le lundi 14 août 2023",
   content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
@@ -148,7 +148,7 @@ var homePhotosArray = [{
   src: "./assets/images/home-photos/home-forets/foret-ee.jpg",
   picture: "Une Forêt en Estonie",
   category: "Guide",
-  photographer: "Sophie - L'Administratrice",
+  photographer: "Marie - L'Administratrice",
   photographerImg: "./assets/images/home-photos/home-villes/ville-urbain-ge.jpg",
   createdAt: "le vendredi 18 août 2023",
   content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
@@ -188,7 +188,7 @@ var homePhotosArray = [{
   src: "./assets/images/home-photos/home-forets/foret-ete.jpg",
   picture: "Une Forêt (Été)",
   category: "Quête",
-  photographer: "Sophie - L'Administratrice",
+  photographer: "Marie - L'Administratrice",
   photographerImg: "./assets/images/home-photos/home-villes/ville-urbain-ge.jpg",
   createdAt: "le jeudi 24 août 2023",
   content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
@@ -228,7 +228,7 @@ var homePhotosArray = [{
   src: "./assets/images/home-photos/home-forets/foret-gb.jpg",
   picture: "Une Forêt en Grande-Bretagne",
   category: "Collection",
-  photographer: "Sophie - L'Administratrice",
+  photographer: "Marie - L'Administratrice",
   photographerImg: "./assets/images/home-photos/home-villes/ville-urbain-ge.jpg",
   createdAt: "le mercredi 30 août 2023",
   content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
@@ -268,7 +268,7 @@ var homePhotosArray = [{
   src: "./assets/images/home-photos/home-forets/foret-hiver.jpg",
   picture: "Une Forêt (Hiver)",
   category: "Paratge",
-  photographer: "Sophie - L'Administratrice",
+  photographer: "Marie - L'Administratrice",
   photographerImg: "./assets/images/home-photos/home-villes/ville-urbain-ge.jpg",
   createdAt: "le mardi 05 septembre 2023",
   content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
@@ -308,7 +308,7 @@ var homePhotosArray = [{
   src: "./assets/images/home-photos/home-forets/foret-id.jpg",
   picture: "Une Forêt en Inde",
   category: "Guide",
-  photographer: "Sophie - L'Administratrice",
+  photographer: "Marie - L'Administratrice",
   photographerImg: "./assets/images/home-photos/home-villes/ville-urbain-ge.jpg",
   createdAt: "le lundi 11 septembre 2023",
   content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
@@ -348,7 +348,7 @@ var homePhotosArray = [{
   src: "./assets/images/home-photos/home-forets/foret-printemps.jpg",
   picture: "Une Forêt (Printemps)",
   category: "Quête",
-  photographer: "Sophie - L'Administratrice",
+  photographer: "Marie - L'Administratrice",
   photographerImg: "./assets/images/home-photos/home-villes/ville-urbain-ge.jpg",
   createdAt: "le vendredi 15 septembre 2023",
   content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
@@ -388,7 +388,7 @@ var homePhotosArray = [{
   src: "./assets/images/home-photos/home-forets/foret-se.jpg",
   picture: "Une Forêt en Suède",
   category: "Collection",
-  photographer: "Sophie - L'Administratrice",
+  photographer: "Marie - L'Administratrice",
   photographerImg: "./assets/images/home-photos/home-villes/ville-urbain-ge.jpg",
   createdAt: "le jeudi 21 septembre 2023",
   content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
@@ -8812,34 +8812,37 @@ var diplayDetailHomePhoto = /*#__PURE__*/function () {
     return _regeneratorRuntime().wrap(function _callee$(_context) {
       while (1) switch (_context.prev = _context.next) {
         case 0:
+          _context.prev = 0;
           params = new URL(location.href);
           photoId = params.searchParams.get("id");
           if (!photoId) {
-            _context.next = 16;
+            _context.next = 15;
             break;
           }
           containerPhotoName.innerHTML = "<h1>".concat(_assets_javascripts_home_photos_js__WEBPACK_IMPORTED_MODULE_22__.homePhotosArray[photoId].picture, "</h1>");
           containerPhotoImg.innerHTML = "<img src=\"".concat(_assets_javascripts_home_photos_js__WEBPACK_IMPORTED_MODULE_22__.homePhotosArray[photoId].src, "\" alt=\"").concat(_assets_javascripts_home_photos_js__WEBPACK_IMPORTED_MODULE_22__.homePhotosArray[photoId].picture, "\" />");
-          containerUser.innerHTML = "\n          <div class=\"container-user-img\">\n          <img src=\"".concat(_assets_javascripts_home_photos_js__WEBPACK_IMPORTED_MODULE_22__.homePhotosArray[photoId].photographerImg, "\" /> \n          </div>\n          <div class=\"container-user-name\">\n              <p> ").concat(_assets_javascripts_home_photos_js__WEBPACK_IMPORTED_MODULE_22__.homePhotosArray[photoId].photographer, " </p>\n          </div>");
+          containerUser.innerHTML = "\n            <div class=\"container-user-img\">\n            <img src=\"".concat(_assets_javascripts_home_photos_js__WEBPACK_IMPORTED_MODULE_22__.homePhotosArray[photoId].photographerImg, "\" /> \n            </div>\n            <div class=\"container-user-name\">\n                <p> ").concat(_assets_javascripts_home_photos_js__WEBPACK_IMPORTED_MODULE_22__.homePhotosArray[photoId].photographer, " </p>\n            </div>");
           containerDate.innerHTML = "Post\xE9 ".concat(_assets_javascripts_home_photos_js__WEBPACK_IMPORTED_MODULE_22__.homePhotosArray[photoId].createdAt);
           containerContent.innerHTML = "<p>".concat(_assets_javascripts_home_photos_js__WEBPACK_IMPORTED_MODULE_22__.homePhotosArray[photoId].content, "</p>");
           homePhotoImg = containerPhotoImg.querySelector("img");
           _context.t0 = _assets_javascripts_home_photos_js__WEBPACK_IMPORTED_MODULE_22__.homePhotosArray[photoId].picture;
-          _context.next = _context.t0 === "Un Désert en Cisjordanie" ? 12 : 14;
+          _context.next = _context.t0 === "Un Désert en Cisjordanie" ? 13 : 15;
           break;
-        case 12:
+        case 13:
           homePhotoImg.src = "./assets/images/form-photos/form-deserts/desert-cj.jpg";
-          return _context.abrupt("break", 14);
-        case 14:
-          _context.next = 17;
+          return _context.abrupt("break", 15);
+        case 15:
+          _context.next = 20;
           break;
-        case 16:
-          window.location.assign("./index.html");
         case 17:
+          _context.prev = 17;
+          _context.t1 = _context["catch"](0);
+          window.location.assign("./index.html");
+        case 20:
         case "end":
           return _context.stop();
       }
-    }, _callee);
+    }, _callee, null, [[0, 17]]);
   }));
   return function diplayDetailHomePhoto() {
     return _ref.apply(this, arguments);

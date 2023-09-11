@@ -8403,27 +8403,28 @@ var displayDetailFormPhoto = /*#__PURE__*/function () {
     return _regeneratorRuntime().wrap(function _callee$(_context) {
       while (1) switch (_context.prev = _context.next) {
         case 0:
+          _context.prev = 0;
           params = new URL(location.href);
           photoId = params.searchParams.get("id");
           if (!photoId) {
+            _context.next = 150;
+            break;
+          }
+          _context.next = 6;
+          return fetch("https://restapi.fr/api/photos/".concat(photoId));
+        case 6:
+          response = _context.sent;
+          if (!(response.status < 300)) {
             _context.next = 149;
             break;
           }
-          _context.next = 5;
-          return fetch("https://restapi.fr/api/photos/".concat(photoId));
-        case 5:
-          response = _context.sent;
-          if (!(response.status < 300)) {
-            _context.next = 148;
-            break;
-          }
-          _context.next = 9;
+          _context.next = 10;
           return response.json();
-        case 9:
+        case 10:
           formPhoto = _context.sent;
           containerPhotoName.innerHTML = "<h1>".concat(formPhoto.picture, "</h1>");
           containerPhotoImg.innerHTML = "<img src=\"".concat(formPhoto.picture, "\" alt=\"").concat(formPhoto.picture, "\" />");
-          containerUser.innerHTML = "\n        <div class=\"container-user-img\">\n        <img src=\"".concat(formPhoto.photographer, "\" /> \n        </div>\n        <div class=\"container-user-name\">\n            <p> ").concat(formPhoto.photographer, " </p>\n        </div>");
+          containerUser.innerHTML = "\n          <div class=\"container-user-img\">\n          <img src=\"".concat(formPhoto.photographer, "\" /> \n          </div>\n          <div class=\"container-user-name\">\n              <p> ").concat(formPhoto.photographer, " </p>\n          </div>");
           containerDate.innerHTML = "Post\xE9 le ".concat(new Date(formPhoto.createdAt).toLocaleDateString("fr-FR", {
             weekday: "long",
             day: "2-digit",
@@ -8431,206 +8432,213 @@ var displayDetailFormPhoto = /*#__PURE__*/function () {
             year: "numeric"
           }));
           containerContent.innerHTML = "<p>".concat(formPhoto.content, "</p>");
-          containerButton.innerHTML = "\n        <button class=\"button edit-button\">\xC9diter</button>\n        <button class=\"button delete-button\">Supprimer</button>";
+          containerButton.innerHTML = "\n          <button class=\"button edit-button\">\xC9diter</button>\n          <button class=\"button delete-button\">Supprimer</button>";
           formPhotoImg = containerPhotoImg.querySelector("img");
           _context.t0 = formPhoto.picture;
-          _context.next = _context.t0 === "Un Désert en Cisjordanie" ? 20 : _context.t0 === "Un Désert en Jordanie" ? 22 : _context.t0 === "Un Désert au Maroc" ? 24 : _context.t0 === "Un Désert en Namibie (Océan Atlantique)" ? 26 : _context.t0 === "Un Désert en Oman" ? 28 : _context.t0 === "Un Désert au Pérou" ? 30 : _context.t0 === "Un Désert en Arabie Saoudite" ? 32 : _context.t0 === "Un Désert en Namibie (Sud-Ouest)" ? 34 : _context.t0 === "Le Désert du Sahara (Soir)" ? 36 : _context.t0 === "Sable Blanc du Nouveau-Mexique (USA)" ? 38 : 40;
+          _context.next = _context.t0 === "Un Désert en Cisjordanie" ? 21 : _context.t0 === "Un Désert en Jordanie" ? 23 : _context.t0 === "Un Désert au Maroc" ? 25 : _context.t0 === "Un Désert en Namibie (Océan Atlantique)" ? 27 : _context.t0 === "Un Désert en Oman" ? 29 : _context.t0 === "Un Désert au Pérou" ? 31 : _context.t0 === "Un Désert en Arabie Saoudite" ? 33 : _context.t0 === "Un Désert en Namibie (Sud-Ouest)" ? 35 : _context.t0 === "Le Désert du Sahara (Soir)" ? 37 : _context.t0 === "Sable Blanc du Nouveau-Mexique (USA)" ? 39 : 41;
           break;
-        case 20:
+        case 21:
           formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-cj.jpg";
-          return _context.abrupt("break", 40);
-        case 22:
+          return _context.abrupt("break", 41);
+        case 23:
           formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-jo.jpg";
-          return _context.abrupt("break", 40);
-        case 24:
+          return _context.abrupt("break", 41);
+        case 25:
           formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-ma.jpg";
-          return _context.abrupt("break", 40);
-        case 26:
+          return _context.abrupt("break", 41);
+        case 27:
           formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-oa-na.jpg";
-          return _context.abrupt("break", 40);
-        case 28:
+          return _context.abrupt("break", 41);
+        case 29:
           formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-om.jpg";
-          return _context.abrupt("break", 40);
-        case 30:
+          return _context.abrupt("break", 41);
+        case 31:
           formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-pe.jpg";
-          return _context.abrupt("break", 40);
-        case 32:
+          return _context.abrupt("break", 41);
+        case 33:
           formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-sa.jpg";
-          return _context.abrupt("break", 40);
-        case 34:
+          return _context.abrupt("break", 41);
+        case 35:
           formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-so-na.jpg";
-          return _context.abrupt("break", 40);
-        case 36:
+          return _context.abrupt("break", 41);
+        case 37:
           formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-soir-eh.jpg";
-          return _context.abrupt("break", 40);
-        case 38:
+          return _context.abrupt("break", 41);
+        case 39:
           formPhotoImg.src = "./assets/images/form-photos/form-deserts/sable-blanc-nmex-us.jpg";
-          return _context.abrupt("break", 40);
-        case 40:
+          return _context.abrupt("break", 41);
+        case 41:
           _context.t1 = formPhoto.picture;
-          _context.next = _context.t1 === "Une Forêt en Australie" ? 43 : _context.t1 === "Une Forêt au Canada" ? 45 : _context.t1 === "Une Forêt en Finlande" ? 47 : _context.t1 === "Une Forêt en Croatie" ? 49 : _context.t1 === "Une Forêt en Inde" ? 51 : _context.t1 === "Une Forêt en Italie" ? 53 : _context.t1 === "Une Forêt au Japon" ? 55 : _context.t1 === "La Forêt des Loups" ? 57 : _context.t1 === "Une Forêt au Nouvelle-Zélande" ? 59 : _context.t1 === "Une Forêt en Washington (USA)" ? 61 : 63;
+          _context.next = _context.t1 === "Une Forêt en Australie" ? 44 : _context.t1 === "Une Forêt au Canada" ? 46 : _context.t1 === "Une Forêt en Finlande" ? 48 : _context.t1 === "Une Forêt en Croatie" ? 50 : _context.t1 === "Une Forêt en Inde" ? 52 : _context.t1 === "Une Forêt en Italie" ? 54 : _context.t1 === "Une Forêt au Japon" ? 56 : _context.t1 === "La Forêt des Loups" ? 58 : _context.t1 === "Une Forêt au Nouvelle-Zélande" ? 60 : _context.t1 === "Une Forêt en Washington (USA)" ? 62 : 64;
           break;
-        case 43:
+        case 44:
           formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-au.jpg";
-          return _context.abrupt("break", 63);
-        case 45:
+          return _context.abrupt("break", 64);
+        case 46:
           formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-ca.jpg";
-          return _context.abrupt("break", 63);
-        case 47:
+          return _context.abrupt("break", 64);
+        case 48:
           formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-fi.jpg";
-          return _context.abrupt("break", 63);
-        case 49:
+          return _context.abrupt("break", 64);
+        case 50:
           formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-hr.jpg";
-          return _context.abrupt("break", 63);
-        case 51:
+          return _context.abrupt("break", 64);
+        case 52:
           formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-in.jpg";
-          return _context.abrupt("break", 63);
-        case 53:
+          return _context.abrupt("break", 64);
+        case 54:
           formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-it.jpg";
-          return _context.abrupt("break", 63);
-        case 55:
+          return _context.abrupt("break", 64);
+        case 56:
           formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-jp.jpg";
-          return _context.abrupt("break", 63);
-        case 57:
+          return _context.abrupt("break", 64);
+        case 58:
           formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-loups.jpg";
-          return _context.abrupt("break", 63);
-        case 59:
+          return _context.abrupt("break", 64);
+        case 60:
           formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-nz.jpg";
-          return _context.abrupt("break", 63);
-        case 61:
+          return _context.abrupt("break", 64);
+        case 62:
           formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-wash-us.jpg";
-          return _context.abrupt("break", 63);
-        case 63:
+          return _context.abrupt("break", 64);
+        case 64:
           _context.t2 = formPhoto.picture;
-          _context.next = _context.t2 === "Une Plage en Australie" ? 66 : _context.t2 === "Une Plage au Brésil" ? 68 : _context.t2 === "Une Plage en Grande-Bretagne" ? 70 : _context.t2 === "Une Plage en Italie" ? 72 : _context.t2 === "Une Plage en Madagascar" ? 74 : _context.t2 === "Une Plage au Mexique" ? 76 : _context.t2 === "Une Plage en Nouvelle-Calédonie" ? 78 : _context.t2 === "Une Plage en Polynésie Française" ? 80 : _context.t2 === "Une Plage aux Sychelles" ? 82 : _context.t2 === "Une Plage en Thaïlande" ? 84 : 86;
+          _context.next = _context.t2 === "Une Plage en Australie" ? 67 : _context.t2 === "Une Plage au Brésil" ? 69 : _context.t2 === "Une Plage en Grande-Bretagne" ? 71 : _context.t2 === "Une Plage en Italie" ? 73 : _context.t2 === "Une Plage en Madagascar" ? 75 : _context.t2 === "Une Plage au Mexique" ? 77 : _context.t2 === "Une Plage en Nouvelle-Calédonie" ? 79 : _context.t2 === "Une Plage en Polynésie Française" ? 81 : _context.t2 === "Une Plage aux Sychelles" ? 83 : _context.t2 === "Une Plage en Thaïlande" ? 85 : 87;
           break;
-        case 66:
+        case 67:
           formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-au.jpg";
-          return _context.abrupt("break", 86);
-        case 68:
+          return _context.abrupt("break", 87);
+        case 69:
           formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-br.jpg";
-          return _context.abrupt("break", 86);
-        case 70:
+          return _context.abrupt("break", 87);
+        case 71:
           formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-gb.jpg";
-          return _context.abrupt("break", 86);
-        case 72:
+          return _context.abrupt("break", 87);
+        case 73:
           formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-it.jpg";
-          return _context.abrupt("break", 86);
-        case 74:
+          return _context.abrupt("break", 87);
+        case 75:
           formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-mg.jpg";
-          return _context.abrupt("break", 86);
-        case 76:
+          return _context.abrupt("break", 87);
+        case 77:
           formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-mx.jpg";
-          return _context.abrupt("break", 86);
-        case 78:
+          return _context.abrupt("break", 87);
+        case 79:
           formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-nc.jpg";
-          return _context.abrupt("break", 86);
-        case 80:
+          return _context.abrupt("break", 87);
+        case 81:
           formPhotoImgo.src = "./assets/images/form-photos/form-plages/plage-pf.jpg";
-          return _context.abrupt("break", 86);
-        case 82:
+          return _context.abrupt("break", 87);
+        case 83:
           formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-sc.jpg";
-          return _context.abrupt("break", 86);
-        case 84:
+          return _context.abrupt("break", 87);
+        case 85:
           formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-th.jpg";
-          return _context.abrupt("break", 86);
-        case 86:
+          return _context.abrupt("break", 87);
+        case 87:
           _context.t3 = formPhoto.picture;
-          _context.next = _context.t3 === "Une Ville au Chili" ? 89 : _context.t3 === "Une Ville en Chine" ? 91 : _context.t3 === "Une Ville en Colombie" ? 93 : _context.t3 === "Une Ville en France" ? 95 : _context.t3 === "Une Ville en Grande-Bretagne" ? 97 : _context.t3 === "Une Ville au Japon (Jour)" ? 99 : _context.t3 === "Une Ville en Koweït" ? 101 : _context.t3 === "Une Ville en Norvège" ? 103 : _context.t3 === "Une Ville Rural d'Allemagne" ? 105 : _context.t3 === "Une Ville d'Italie (Soir)" ? 107 : 109;
+          _context.next = _context.t3 === "Une Ville au Chili" ? 90 : _context.t3 === "Une Ville en Chine" ? 92 : _context.t3 === "Une Ville en Colombie" ? 94 : _context.t3 === "Une Ville en France" ? 96 : _context.t3 === "Une Ville en Grande-Bretagne" ? 98 : _context.t3 === "Une Ville au Japon (Jour)" ? 100 : _context.t3 === "Une Ville en Koweït" ? 102 : _context.t3 === "Une Ville en Norvège" ? 104 : _context.t3 === "Une Ville Rural d'Allemagne" ? 106 : _context.t3 === "Une Ville d'Italie (Soir)" ? 108 : 110;
           break;
-        case 89:
+        case 90:
           formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-cl.jpg";
-          return _context.abrupt("break", 109);
-        case 91:
+          return _context.abrupt("break", 110);
+        case 92:
           formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-cn.jpg";
-          return _context.abrupt("break", 109);
-        case 93:
+          return _context.abrupt("break", 110);
+        case 94:
           formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-co.jpg";
-          return _context.abrupt("break", 109);
-        case 95:
+          return _context.abrupt("break", 110);
+        case 96:
           formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-fr.jpg";
-          return _context.abrupt("break", 109);
-        case 97:
+          return _context.abrupt("break", 110);
+        case 98:
           formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-gb.jpg";
-          return _context.abrupt("break", 109);
-        case 99:
+          return _context.abrupt("break", 110);
+        case 100:
           formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-jour-jp.jpg";
-          return _context.abrupt("break", 109);
-        case 101:
+          return _context.abrupt("break", 110);
+        case 102:
           formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-kw.jpg";
-          return _context.abrupt("break", 109);
-        case 103:
+          return _context.abrupt("break", 110);
+        case 104:
           formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-no.jpg";
-          return _context.abrupt("break", 109);
-        case 105:
+          return _context.abrupt("break", 110);
+        case 106:
           formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-rural-ge.jpg";
-          return _context.abrupt("break", 109);
-        case 107:
+          return _context.abrupt("break", 110);
+        case 108:
           formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-soir-it.jpg";
-          return _context.abrupt("break", 109);
-        case 109:
+          return _context.abrupt("break", 110);
+        case 110:
           userPhotoImg = containerUser.querySelector("img");
           _context.t4 = formPhoto.photographer;
-          _context.next = _context.t4 === "Dora - L'Exploratrice" ? 113 : _context.t4 === "Tad - L'Explorateur" ? 115 : _context.t4 === "Polo - L'Explorateur" ? 117 : 119;
+          _context.next = _context.t4 === "Dora - L'Exploratrice" ? 114 : _context.t4 === "Tad - L'Explorateur" ? 116 : _context.t4 === "Polo - L'Explorateur" ? 118 : 120;
           break;
-        case 113:
+        case 114:
           userPhotoImg.src = "./assets/images/form-photos/form-villes/ville-cl.jpg";
-          return _context.abrupt("break", 119);
-        case 115:
+          return _context.abrupt("break", 120);
+        case 116:
           userPhotoImg.src = "./assets/images/form-photos/form-villes/ville-cn.jpg";
-          return _context.abrupt("break", 119);
-        case 117:
+          return _context.abrupt("break", 120);
+        case 118:
           userPhotoImg.src = "./assets/images/form-photos/form-villes/ville-co.jpg";
-          return _context.abrupt("break", 119);
-        case 119:
+          return _context.abrupt("break", 120);
+        case 120:
           _context.t5 = formPhoto.photographer;
-          _context.next = _context.t5 === "Chihiro - La Voyageuse" ? 122 : _context.t5 === "Robinson - Le Voyageur" ? 124 : _context.t5 === "Phileas - Le Voyageur" ? 126 : 128;
+          _context.next = _context.t5 === "Chihiro - La Voyageuse" ? 123 : _context.t5 === "Robinson - Le Voyageur" ? 125 : _context.t5 === "Phileas - Le Voyageur" ? 127 : 129;
           break;
-        case 122:
+        case 123:
           userPhotoImg.src = "./assets/images/form-photos/form-villes/ville-fr.jpg";
-          return _context.abrupt("break", 128);
-        case 124:
+          return _context.abrupt("break", 129);
+        case 125:
           userPhotoImg.src = "./assets/images/form-photos/form-villes/ville-gb.jpg";
-          return _context.abrupt("break", 128);
-        case 126:
+          return _context.abrupt("break", 129);
+        case 127:
           userPhotoImg.src = "./assets/images/form-photos/form-villes/ville-jour-jp.jpg";
-          return _context.abrupt("break", 128);
-        case 128:
+          return _context.abrupt("break", 129);
+        case 129:
           _context.t6 = formPhoto.photographer;
-          _context.next = _context.t6 === "Jones - L'Archéologue" ? 131 : _context.t6 === "Lara - L'Archéologue" ? 133 : _context.t6 === "Milo - L'Archéologue" ? 135 : 137;
+          _context.next = _context.t6 === "Jones - L'Archéologue" ? 132 : _context.t6 === "Lara - L'Archéologue" ? 134 : _context.t6 === "Milo - L'Archéologue" ? 136 : 138;
           break;
-        case 131:
+        case 132:
           userPhotoImg.src = "./assets/images/form-photos/form-villes/ville-kw.jpg";
-          return _context.abrupt("break", 137);
-        case 133:
+          return _context.abrupt("break", 138);
+        case 134:
           userPhotoImg.src = "./assets/images/form-photos/form-villes/ville-no.jpg";
-          return _context.abrupt("break", 137);
-        case 135:
+          return _context.abrupt("break", 138);
+        case 136:
           userPhotoImg.src = "./assets/images/form-photos/form-villes/ville-rural-ge.jpg";
-          return _context.abrupt("break", 137);
-        case 137:
+          return _context.abrupt("break", 138);
+        case 138:
           _context.t7 = formPhoto.photographer;
-          _context.next = _context.t7 === "Tom - L'Aventurier" ? 140 : _context.t7 === "Gamba - L'Aventurier" ? 142 : _context.t7 === "Sophie - L'Aventurière" ? 144 : 146;
+          _context.next = _context.t7 === "Tom - L'Aventurier" ? 141 : _context.t7 === "Gamba - L'Aventurier" ? 143 : _context.t7 === "Sophie - L'Aventurière" ? 145 : 147;
           break;
-        case 140:
+        case 141:
           userPhotoImg.src = "./assets/images/form-photos/form-villes/ville-soir-it.jpg";
-          return _context.abrupt("break", 146);
-        case 142:
+          return _context.abrupt("break", 147);
+        case 143:
           userPhotoImg.src = "./assets/images/home-photos/home-villes/ville-ap-jp.jpg";
-          return _context.abrupt("break", 146);
-        case 144:
+          return _context.abrupt("break", 147);
+        case 145:
           userPhotoImg.src = "./assets/images/home-photos/home-villes/ville-ar.jpg";
-          return _context.abrupt("break", 146);
-        case 146:
-          _context.next = 149;
+          return _context.abrupt("break", 147);
+        case 147:
+          _context.next = 150;
           break;
-        case 148:
-          window.location.assign("./index.html");
         case 149:
+          window.location.assign("./index.html");
+        case 150:
+          _context.next = 155;
+          break;
+        case 152:
+          _context.prev = 152;
+          _context.t8 = _context["catch"](0);
+          window.location.assign("./index.html");
+        case 155:
         case "end":
           return _context.stop();
       }
-    }, _callee);
+    }, _callee, null, [[0, 152]]);
   }));
   return function displayDetailFormPhoto() {
     return _ref.apply(this, arguments);
