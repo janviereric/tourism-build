@@ -7679,10 +7679,6 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.container-photo-detail {
   padding: 1rem;
   box-shadow: var(--shadow);
 }
-.container-photo-detail .container-photo-img img {
-  height: 40rem;
-  width: 60rem;
-}
 .container-photo-detail .container-user {
   display: flex;
   margin-bottom: 3rem;
@@ -7730,7 +7726,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.container-photo-detail {
   margin-right: 2rem;
   background-color: var(--danger);
   color: var(--light);
-}`, "",{"version":3,"sources":["webpack://./src/detailform/detailform.scss"],"names":[],"mappings":"AAAA;EACE,iBAAA;EACA,oBAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;AACF;AAAE;EACE,mBAAA;AAEJ;AADI;EACE,eAAA;AAGN;AAAE;EACE,mBAAA;EACA,aAAA;EACA,yBAAA;AAEJ;AADI;EAEE,aAAA;EACA,YAAA;AAEN;AACE;EACE,aAAA;EACA,mBAAA;AACJ;AAAI;EACE,YAAA;EACA,WAAA;AAEN;AADM;EACE,qBAAA;EACA,YAAA;EACA,WAAA;AAGR;AAAI;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,iBAAA;AAEN;AACE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,mBAAA;AACJ;AACE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,mBAAA;AACJ;AACE;EACE,YAAA;EACA,aAAA;EACA,yBAAA;EACA,mBAAA;AACJ;AAAI;EACE,kBAAA;EACA,gCAAA;EACA,mBAAA;AAEN;AAAI;EACE,kBAAA;EACA,+BAAA;EACA,mBAAA;AAEN","sourcesContent":[".container-photo-detail {\n  margin-top: 25rem;\n  margin-bottom: 25rem;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  .container-photo-name {\n    margin-bottom: 2rem;\n    h1 {\n      font-size: 2rem;\n    }\n  }\n  .container-photo-img {\n    margin-bottom: 5rem;\n    padding: 1rem;\n    box-shadow: var(--shadow);\n    img {\n      // temporaire :\n      height: 40rem;\n      width: 60rem;\n    }\n  }\n  .container-user {\n    display: flex;\n    margin-bottom: 3rem;\n    .container-user-img {\n      height: 5rem;\n      width: 5rem;\n      img {\n        border-radius: 2.5rem;\n        height: 5rem;\n        width: 5rem;\n      }\n    }\n    .container-user-name {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      margin-left: 2rem;\n    }\n  }\n  .container-date {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-bottom: 4rem;\n  }\n  .container-content {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    max-width: 48rem;\n    margin-bottom: 5rem;\n  }\n  .container-button {\n    width: 32rem;\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    .edit-button {\n      margin-right: 2rem;\n      background-color: var(--success);\n      color: var(--light);\n    }\n    .delete-button {\n      margin-right: 2rem;\n      background-color: var(--danger);\n      color: var(--light);\n    }\n  }\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/detailform/detailform.scss"],"names":[],"mappings":"AAAA;EACE,iBAAA;EACA,oBAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;AACF;AAAE;EACE,mBAAA;AAEJ;AADI;EACE,eAAA;AAGN;AAAE;EACE,mBAAA;EACA,aAAA;EACA,yBAAA;AAEJ;AAAE;EACE,aAAA;EACA,mBAAA;AAEJ;AADI;EACE,YAAA;EACA,WAAA;AAGN;AAFM;EACE,qBAAA;EACA,YAAA;EACA,WAAA;AAIR;AADI;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,iBAAA;AAGN;AAAE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,mBAAA;AAEJ;AAAE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,mBAAA;AAEJ;AAAE;EACE,YAAA;EACA,aAAA;EACA,yBAAA;EACA,mBAAA;AAEJ;AADI;EACE,kBAAA;EACA,gCAAA;EACA,mBAAA;AAGN;AADI;EACE,kBAAA;EACA,+BAAA;EACA,mBAAA;AAGN","sourcesContent":[".container-photo-detail {\n  margin-top: 25rem;\n  margin-bottom: 25rem;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  .container-photo-name {\n    margin-bottom: 2rem;\n    h1 {\n      font-size: 2rem;\n    }\n  }\n  .container-photo-img {\n    margin-bottom: 5rem;\n    padding: 1rem;\n    box-shadow: var(--shadow);\n  }\n  .container-user {\n    display: flex;\n    margin-bottom: 3rem;\n    .container-user-img {\n      height: 5rem;\n      width: 5rem;\n      img {\n        border-radius: 2.5rem;\n        height: 5rem;\n        width: 5rem;\n      }\n    }\n    .container-user-name {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      margin-left: 2rem;\n    }\n  }\n  .container-date {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-bottom: 4rem;\n  }\n  .container-content {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    max-width: 48rem;\n    margin-bottom: 5rem;\n  }\n  .container-button {\n    width: 32rem;\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    .edit-button {\n      margin-right: 2rem;\n      background-color: var(--success);\n      color: var(--light);\n    }\n    .delete-button {\n      margin-right: 2rem;\n      background-color: var(--danger);\n      color: var(--light);\n    }\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -8438,136 +8434,136 @@ var displayDetailFormPhoto = /*#__PURE__*/function () {
           _context.next = _context.t0 === "Un Désert en Cisjordanie" ? 21 : _context.t0 === "Un Désert en Jordanie" ? 23 : _context.t0 === "Un Désert au Maroc" ? 25 : _context.t0 === "Un Désert en Namibie (Océan Atlantique)" ? 27 : _context.t0 === "Un Désert en Oman" ? 29 : _context.t0 === "Un Désert au Pérou" ? 31 : _context.t0 === "Un Désert en Arabie Saoudite" ? 33 : _context.t0 === "Un Désert en Namibie (Sud-Ouest)" ? 35 : _context.t0 === "Le Désert du Sahara (Soir)" ? 37 : _context.t0 === "Sable Blanc du Nouveau-Mexique (USA)" ? 39 : 41;
           break;
         case 21:
-          formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-cj.jpg";
+          formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-cj.jpg";
           return _context.abrupt("break", 41);
         case 23:
-          formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-jo.jpg";
+          formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-jo.jpg";
           return _context.abrupt("break", 41);
         case 25:
-          formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-ma.jpg";
+          formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-ma.jpg";
           return _context.abrupt("break", 41);
         case 27:
-          formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-oa-na.jpg";
+          formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-oa-na.jpg";
           return _context.abrupt("break", 41);
         case 29:
-          formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-om.jpg";
+          formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-om.jpg";
           return _context.abrupt("break", 41);
         case 31:
-          formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-pe.jpg";
+          formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-pe.jpg";
           return _context.abrupt("break", 41);
         case 33:
-          formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-sa.jpg";
+          formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-sa.jpg";
           return _context.abrupt("break", 41);
         case 35:
-          formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-so-na.jpg";
+          formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-so-na.jpg";
           return _context.abrupt("break", 41);
         case 37:
-          formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-soir-eh.jpg";
+          formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-soir-eh.jpg";
           return _context.abrupt("break", 41);
         case 39:
-          formPhotoImg.src = "./assets/images/form-photos/form-deserts/sable-blanc-nmex-us.jpg";
+          formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/sable-blanc-detail-nmex-us.jpg";
           return _context.abrupt("break", 41);
         case 41:
           _context.t1 = formPhoto.picture;
           _context.next = _context.t1 === "Une Forêt en Australie" ? 44 : _context.t1 === "Une Forêt au Canada" ? 46 : _context.t1 === "Une Forêt en Finlande" ? 48 : _context.t1 === "Une Forêt en Croatie" ? 50 : _context.t1 === "Une Forêt en Inde" ? 52 : _context.t1 === "Une Forêt en Italie" ? 54 : _context.t1 === "Une Forêt au Japon" ? 56 : _context.t1 === "La Forêt des Loups" ? 58 : _context.t1 === "Une Forêt au Nouvelle-Zélande" ? 60 : _context.t1 === "Une Forêt en Washington (USA)" ? 62 : 64;
           break;
         case 44:
-          formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-au.jpg";
+          formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-au.jpg";
           return _context.abrupt("break", 64);
         case 46:
-          formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-ca.jpg";
+          formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-ca.jpg";
           return _context.abrupt("break", 64);
         case 48:
-          formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-fi.jpg";
+          formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-fi.jpg";
           return _context.abrupt("break", 64);
         case 50:
-          formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-hr.jpg";
+          formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-hr.jpg";
           return _context.abrupt("break", 64);
         case 52:
-          formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-in.jpg";
+          formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-in.jpg";
           return _context.abrupt("break", 64);
         case 54:
-          formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-it.jpg";
+          formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-it.jpg";
           return _context.abrupt("break", 64);
         case 56:
-          formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-jp.jpg";
+          formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-jp.jpg";
           return _context.abrupt("break", 64);
         case 58:
-          formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-loups.jpg";
+          formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-loups.jpg";
           return _context.abrupt("break", 64);
         case 60:
-          formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-nz.jpg";
+          formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-nz.jpg";
           return _context.abrupt("break", 64);
         case 62:
-          formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-wash-us.jpg";
+          formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-wash-us.jpg";
           return _context.abrupt("break", 64);
         case 64:
           _context.t2 = formPhoto.picture;
           _context.next = _context.t2 === "Une Plage en Australie" ? 67 : _context.t2 === "Une Plage au Brésil" ? 69 : _context.t2 === "Une Plage en Grande-Bretagne" ? 71 : _context.t2 === "Une Plage en Italie" ? 73 : _context.t2 === "Une Plage en Madagascar" ? 75 : _context.t2 === "Une Plage au Mexique" ? 77 : _context.t2 === "Une Plage en Nouvelle-Calédonie" ? 79 : _context.t2 === "Une Plage en Polynésie Française" ? 81 : _context.t2 === "Une Plage aux Sychelles" ? 83 : _context.t2 === "Une Plage en Thaïlande" ? 85 : 87;
           break;
         case 67:
-          formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-au.jpg";
+          formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-au.jpg";
           return _context.abrupt("break", 87);
         case 69:
-          formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-br.jpg";
+          formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-br.jpg";
           return _context.abrupt("break", 87);
         case 71:
-          formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-gb.jpg";
+          formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-gb.jpg";
           return _context.abrupt("break", 87);
         case 73:
-          formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-it.jpg";
+          formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-it.jpg";
           return _context.abrupt("break", 87);
         case 75:
-          formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-mg.jpg";
+          formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-mg.jpg";
           return _context.abrupt("break", 87);
         case 77:
-          formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-mx.jpg";
+          formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-mx.jpg";
           return _context.abrupt("break", 87);
         case 79:
-          formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-nc.jpg";
+          formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-nc.jpg";
           return _context.abrupt("break", 87);
         case 81:
-          formPhotoImgo.src = "./assets/images/form-photos/form-plages/plage-pf.jpg";
+          formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-pf.jpg";
           return _context.abrupt("break", 87);
         case 83:
-          formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-sc.jpg";
+          formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-sc.jpg";
           return _context.abrupt("break", 87);
         case 85:
-          formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-th.jpg";
+          formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-th.jpg";
           return _context.abrupt("break", 87);
         case 87:
           _context.t3 = formPhoto.picture;
           _context.next = _context.t3 === "Une Ville au Chili" ? 90 : _context.t3 === "Une Ville en Chine" ? 92 : _context.t3 === "Une Ville en Colombie" ? 94 : _context.t3 === "Une Ville en France" ? 96 : _context.t3 === "Une Ville en Grande-Bretagne" ? 98 : _context.t3 === "Une Ville au Japon (Jour)" ? 100 : _context.t3 === "Une Ville en Koweït" ? 102 : _context.t3 === "Une Ville en Norvège" ? 104 : _context.t3 === "Une Ville Rural d'Allemagne" ? 106 : _context.t3 === "Une Ville d'Italie (Soir)" ? 108 : 110;
           break;
         case 90:
-          formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-cl.jpg";
+          formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-cl.jpg";
           return _context.abrupt("break", 110);
         case 92:
-          formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-cn.jpg";
+          formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-cn.jpg";
           return _context.abrupt("break", 110);
         case 94:
-          formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-co.jpg";
+          formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-co.jpg";
           return _context.abrupt("break", 110);
         case 96:
-          formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-fr.jpg";
+          formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-fr.jpg";
           return _context.abrupt("break", 110);
         case 98:
-          formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-gb.jpg";
+          formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-gb.jpg";
           return _context.abrupt("break", 110);
         case 100:
-          formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-jour-jp.jpg";
+          formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-jour-jp.jpg";
           return _context.abrupt("break", 110);
         case 102:
-          formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-kw.jpg";
+          formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-kw.jpg";
           return _context.abrupt("break", 110);
         case 104:
-          formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-no.jpg";
+          formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-no.jpg";
           return _context.abrupt("break", 110);
         case 106:
-          formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-rural-ge.jpg";
+          formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-rural-ge.jpg";
           return _context.abrupt("break", 110);
         case 108:
-          formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-soir-it.jpg";
+          formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-soir-it.jpg";
           return _context.abrupt("break", 110);
         case 110:
           userPhotoImg = containerUser.querySelector("img");
