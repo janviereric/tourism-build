@@ -7468,6 +7468,16 @@ a {
   border: 0.2rem solid var(--primary);
   color: var(--primary);
 }
+.button-edit {
+  margin-right: 2rem;
+  background-color: var(--success);
+  color: var(--light);
+}
+.button-delete {
+  margin-right: 2rem;
+  background-color: var(--danger);
+  color: var(--light);
+}
 
 .text-valid {
   color: var(--success);
@@ -7634,7 +7644,7 @@ footer .j {
 footer .e {
   font-family: var(--logo);
   color: var(--danger);
-}`, "",{"version":3,"sources":["webpack://./src/assets/sass/partials/_base.scss","webpack://./src/assets/sass/styles.scss","webpack://./src/assets/sass/partials/_classes.scss","webpack://./src/assets/sass/partials/_reset.scss","webpack://./src/assets/sass/partials/_variables.scss","webpack://./src/assets/sass/layouts/_body.scss","webpack://./src/assets/sass/layouts/_header.scss","webpack://./src/assets/sass/partials/_media-queries.scss","webpack://./src/assets/sass/layouts/_footer.scss"],"names":[],"mappings":"AAAA;EACE,gBAAA;ACCF;;ADEA;EACE,iBAAA;EACA,kBAAA;EACA,yBAAA;ACCF;;ADEA;EACE,iBAAA;ACCF;;ADEA;EACE,eAAA;ACCF;;ADEA;EACE,iBAAA;ACCF;;ADEA;EACE,eAAA;ACCF;;ADEA;EACE,gBAAA;ACCF;;ADEA;EACE,eAAA;ACCF;;ADEA;EACE,kBAAA;EACA,qBAAA;ACCF;;ACpCE;EACE,oBAAA;EACA,0CAAA;ADuCJ;;ACnCA;EACE,SAAA;EACA,qBAAA;EACA,kBAAA;EACA,gBAAA;EACA,eAAA;EACA,2BAAA;ADsCF;ACrCE;EACE,yBAAA;EACA,YAAA;EACA,2BAAA;ADuCJ;ACrCE;EACE,0BAAA;EACA,mCAAA;EACA,mBAAA;ADuCJ;ACrCE;EACE,wBAAA;EACA,mCAAA;EACA,qBAAA;ADuCJ;;AClCE;EACE,qBAAA;EACA,iBAAA;ADqCJ;ACnCE;EACE,oBAAA;EACA,iBAAA;ADqCJ;ACnCE;EACE,kBAAA;EACA,iBAAA;ADqCJ;;AE/EA;EACE,SAAA;EACA,UAAA;EACA,sBAAA;AFkFF;;AGrFA;EAEE,kBAAA;EACA,oBAAA;EACA,mBAAA;EAGA,gBAAA;EACA,iBAAA;EACA,YAAA;EAGA,kBAAA;EACA,iBAAA;EACA,eAAA;EACA,kBAAA;EACA,eAAA;EAGA,iBAAA;EACA,kBAAA;EAGA,6BAAA;EACA,+BAAA;EACA,sCAAA;EAGA;wCAAA;AH8EF;;AI1GA;EACE,aAAA;AJ6GF;;AI1GA;EACE,iBAAA;EACA,aAAA;EACA,oDACE;AJ4GJ;;AKlHA;EACE,iBAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,8BAAA;EACA,mBAAA;EACA,0BAAA;EACA,eAAA;EACA,UAAA;EACA,WAAA;ALqHF;AKpHE;EACE,mBAAA;EACA,gBAAA;EACA,sBAAA;ALsHJ;AKpHE;EACE,eAAA;EACA,gBAAA;ALsHJ;AKrHI;EACE,sBAAA;ALuHN;AKnHE;EACE,kBAAA;ALqHJ;AKpHI;EAIE,aAAA;EACA,qBAAA;ALmHN;AMnJE;ED2BE;IAEI,aAAA;EL0HN;AACF;AKvHM;EACE,aAAA;EACA,kBAAA;EACA,iBAAA;ALyHR;AKxHQ;EACE,oBAAA;EACA,eAAA;EACA,kCAAA;EACA,qBAAA;EACA,aAAA;AL0HV;AKzHU;EACE,mBAAA;AL2HZ;AKxHQ;EACE,iBAAA;EACA,iBAAA;AL0HV;AKvHM;EACE,8BAAA;EACA,aAAA;EACA,qBAAA;ALyHR;AKxHQ;EACE,uBAAA;AL0HV;AKrHE;EACE,aAAA;EACA,eAAA;EACA,mBAAA;ALuHJ;AMxLE;ED8DA;IAKI,cAAA;ELyHJ;AACF;AKvHE;EACE,aAAA;EACA,kBAAA;EACA,WAAA;EACA,YAAA;EACA,eAAA;EACA,gCAAA;EACA,yBAAA;ALyHJ;AKxHI;EACE,cAAA;AL0HN;AKzHM;EACE,iBAAA;AL2HR;AKvHE;EACE,cAAA;ALyHJ;;AOhNA;EACE,iBAAA;EACA,aAAA;EACA,YAAA;EACA,6BAAA;EACA,mBAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,iBAAA;APmNF;AOlNE;EACE,YAAA;EACA,WAAA;EACA,sBAAA;APoNJ;AOlNE;EACE,wBAAA;EACA,oBAAA;APoNJ;AOjNE;EACE,wBAAA;EACA,oBAAA;APmNJ","sourcesContent":[":root {\n  font-size: 62.5%; // font-size = 10px\n}\n\nbody {\n  font-size: 1.6rem; // 1rem = 10px\n  color: var(--dark);\n  font-family: var(--basic);\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: var(--dark);\n  text-decoration: none;\n}\n",":root {\n  font-size: 62.5%;\n}\n\nbody {\n  font-size: 1.6rem;\n  color: var(--dark);\n  font-family: var(--basic);\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: var(--dark);\n  text-decoration: none;\n}\n\n.title-underline {\n  padding-bottom: 2rem;\n  border-bottom: 0.1rem solid var(--divider);\n}\n\n.button {\n  border: 0;\n  border-radius: 0.3rem;\n  padding: 1rem 2rem;\n  font-weight: 700;\n  cursor: pointer;\n  transition: box-shadow 0.2s;\n}\n.button:hover {\n  box-shadow: var(--shadow);\n  opacity: 89%;\n  transition: box-shadow 0.2s;\n}\n.button-primary {\n  background: var(--primary);\n  border: 0.2rem solid var(--primary);\n  color: var(--light);\n}\n.button-secondary {\n  background: var(--light);\n  border: 0.2rem solid var(--primary);\n  color: var(--primary);\n}\n\n.text-valid {\n  color: var(--success);\n  font-weight: bold;\n}\n.text-error {\n  color: var(--danger);\n  font-weight: bold;\n}\n.text-detail {\n  color: var(--info);\n  font-weight: bold;\n}\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n:root {\n  --primary: #2e86de;\n  --secondary: #54a0ff;\n  --tertiary: #48dbfb;\n  --light: #f5f6fa;\n  --medium: #2d98da;\n  --dark: #333;\n  --success: #06ad3e;\n  --danger: #ea2027;\n  --info: #3867d6;\n  --warning: #fbc531;\n  --hint: #95a5a6;\n  --accent: #3c40c6;\n  --divider: #bdc3c7;\n  --basic: \"Mulish\", sans-serif;\n  --default: \"Roboto\", sans-serif;\n  --logo: \"Roboto Condensed\", sans-serif;\n  --shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),\n    0 1px 3px 1px rgba(60, 64, 67, 0.15);\n}\n\nbody {\n  height: 100vh;\n}\n\n.container {\n  min-height: 100vh;\n  display: grid;\n  grid: \"header\" auto \"content\" 1fr \"footer\" auto/auto;\n}\n\nheader {\n  grid-area: header;\n  padding: 2rem;\n  display: flex;\n  flex-flow: row nowrap;\n  justify-content: space-between;\n  align-items: center;\n  background: var(--primary);\n  position: fixed;\n  z-index: 1;\n  width: 100%;\n}\nheader a {\n  color: var(--light);\n  font-weight: 700;\n  letter-spacing: 0.1rem;\n}\nheader .header-brand {\n  font-size: 3rem;\n  font-weight: 700;\n}\nheader .header-brand:hover {\n  color: var(--tertiary);\n}\nheader .header-menu {\n  position: relative;\n}\nheader .header-menu ul {\n  display: flex;\n  margin-right: -0.5rem;\n}\n@media (max-width: 480px) {\n  header .header-menu ul {\n    display: none;\n  }\n}\nheader .header-menu ul li {\n  padding: 1rem;\n  margin-right: 1rem;\n  font-size: 1.5rem;\n}\nheader .header-menu ul li:hover {\n  transition: all 0.2s;\n  cursor: pointer;\n  background-color: var(--secondary);\n  border-radius: 0.2rem;\n  padding: 1rem;\n}\nheader .header-menu ul li:hover a {\n  color: var(--light);\n}\nheader .header-menu ul li .header-brand {\n  font-size: 1.8rem;\n  padding: 0 0.1rem;\n}\nheader .header-menu ul .active {\n  background-color: var(--light);\n  padding: 1rem;\n  border-radius: 0.2rem;\n}\nheader .header-menu ul .active a {\n  color: var(--secondary);\n}\nheader .header-menu-icon {\n  display: none;\n  font-size: 3rem;\n  color: var(--light);\n}\n@media (max-width: 480px) {\n  header .header-menu-icon {\n    display: block;\n  }\n}\nheader .mobile-menu {\n  display: none;\n  position: absolute;\n  top: 5.7rem;\n  right: -2rem;\n  padding: 0.5rem;\n  background-color: var(--primary);\n  box-shadow: var(--shadow);\n}\nheader .mobile-menu ul {\n  display: block;\n}\nheader .mobile-menu ul li {\n  margin: 1rem 2rem;\n}\nheader .mobile-menu.open {\n  display: block;\n}\n\nfooter {\n  grid-area: footer;\n  padding: 2rem;\n  height: 8rem;\n  background-color: var(--dark);\n  color: var(--light);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: bold;\n}\nfooter img {\n  height: 2rem;\n  width: 2rem;\n  margin-bottom: -0.1rem;\n}\nfooter .j {\n  font-family: var(--logo);\n  color: var(--danger);\n}\nfooter .e {\n  font-family: var(--logo);\n  color: var(--danger);\n}",".title {\n  &-underline {\n    padding-bottom: 2rem;\n    border-bottom: 0.1rem solid var(--divider);\n  }\n}\n\n.button {\n  border: 0;\n  border-radius: 0.3rem;\n  padding: 1rem 2rem;\n  font-weight: 700;\n  cursor: pointer;\n  transition: box-shadow 0.2s;\n  &:hover {\n    box-shadow: var(--shadow);\n    opacity: 89%;\n    transition: box-shadow 0.2s;\n  }\n  &-primary {\n    background: var(--primary);\n    border: 0.2rem solid var(--primary);\n    color: var(--light);\n  }\n  &-secondary {\n    background: var(--light);\n    border: 0.2rem solid var(--primary);\n    color: var(--primary);\n  }\n}\n\n.text {\n  &-valid {\n    color: var(--success);\n    font-weight: bold;\n  }\n  &-error {\n    color: var(--danger);\n    font-weight: bold;\n  }\n  &-detail {\n    color: var(--info);\n    font-weight: bold;\n  }\n}\n","* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n",":root {\n  // main color\n  --primary: #2e86de;\n  --secondary: #54a0ff;\n  --tertiary: #48dbfb;\n\n  // text color\n  --light: #f5f6fa;\n  --medium: #2d98da;\n  --dark: #333;\n\n  // utils => button, border, words etc\n  --success: #06ad3e;\n  --danger: #ea2027;\n  --info: #3867d6;\n  --warning: #fbc531;\n  --hint: #95a5a6;\n\n  // utils => border, words etc\n  --accent: #3c40c6;\n  --divider: #bdc3c7;\n\n  // font-family\n  --basic: \"Mulish\", sans-serif;\n  --default: \"Roboto\", sans-serif;\n  --logo: \"Roboto Condensed\", sans-serif;\n\n  // shadow\n  --shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),\n    0 1px 3px 1px rgba(60, 64, 67, 0.15);\n}\n","body {\n  height: 100vh;\n}\n\n.container {\n  min-height: 100vh;\n  display: grid;\n  grid:\n    \"header\" auto\n    \"content\" 1fr\n    \"footer\" auto /\n    auto;\n}\n","@use \"../partials/media-queries.scss\" as *;\n\nheader {\n  grid-area: header;\n  padding: 2rem;\n  display: flex;\n  flex-flow: row nowrap;\n  justify-content: space-between;\n  align-items: center;\n  background: var(--primary);\n  position: fixed;\n  z-index: 1;\n  width: 100%;\n  a {\n    color: var(--light);\n    font-weight: 700;\n    letter-spacing: 0.1rem;\n  }\n  .header-brand {\n    font-size: 3rem;\n    font-weight: 700;\n    &:hover {\n      color: var(--tertiary);\n    }\n  }\n\n  .header-menu {\n    position: relative;\n    ul {\n      @include phone {\n        display: none;\n      }\n      display: flex;\n      margin-right: -0.5rem;\n      li {\n        padding: 1rem;\n        margin-right: 1rem;\n        font-size: 1.5rem;\n        &:hover {\n          transition: all 0.2s;\n          cursor: pointer;\n          background-color: var(--secondary);\n          border-radius: 0.2rem;\n          padding: 1rem;\n          a {\n            color: var(--light);\n          }\n        }\n        .header-brand {\n          font-size: 1.8rem;\n          padding: 0 0.1rem;\n        }\n      }\n      .active {\n        background-color: var(--light);\n        padding: 1rem;\n        border-radius: 0.2rem;\n        a {\n          color: var(--secondary);\n        }\n      }\n    }\n  }\n  .header-menu-icon {\n    display: none;\n    font-size: 3rem;\n    color: var(--light);\n    @include phone {\n      display: block;\n    }\n  }\n  .mobile-menu {\n    display: none;\n    position: absolute;\n    top: 5.7rem;\n    right: -2rem;\n    padding: 0.5rem;\n    background-color: var(--primary);\n    box-shadow: var(--shadow);\n    ul {\n      display: block;\n      li {\n        margin: 1rem 2rem;\n      }\n    }\n  }\n  .mobile-menu.open {\n    display: block;\n  }\n}\n","@mixin phone {\n  @media (max-width: 480px) {\n    @content;\n  }\n}\n\n@mixin tablet {\n  @media (min-width: 481px) and (max-width: 767px) {\n    @content;\n  }\n}\n\n@mixin laptop {\n  @media (min-width: 768px) and (max-width: 1199px) {\n    @content;\n  }\n}\n\n@mixin computer {\n  @media (min-width: 1200px) {\n    @content;\n  }\n}\n","footer {\n  grid-area: footer;\n  padding: 2rem;\n  height: 8rem;\n  background-color: var(--dark);\n  color: var(--light);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: bold;\n  img {\n    height: 2rem;\n    width: 2rem;\n    margin-bottom: -0.1rem;\n  }\n  .j {\n    font-family: var(--logo);\n    color: var(--danger);\n  }\n\n  .e {\n    font-family: var(--logo);\n    color: var(--danger);\n  }\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/assets/sass/partials/_base.scss","webpack://./src/assets/sass/styles.scss","webpack://./src/assets/sass/partials/_classes.scss","webpack://./src/assets/sass/partials/_reset.scss","webpack://./src/assets/sass/partials/_variables.scss","webpack://./src/assets/sass/layouts/_body.scss","webpack://./src/assets/sass/layouts/_header.scss","webpack://./src/assets/sass/partials/_media-queries.scss","webpack://./src/assets/sass/layouts/_footer.scss"],"names":[],"mappings":"AAAA;EACE,gBAAA;ACCF;;ADEA;EACE,iBAAA;EACA,kBAAA;EACA,yBAAA;ACCF;;ADEA;EACE,iBAAA;ACCF;;ADEA;EACE,eAAA;ACCF;;ADEA;EACE,iBAAA;ACCF;;ADEA;EACE,eAAA;ACCF;;ADEA;EACE,gBAAA;ACCF;;ADEA;EACE,eAAA;ACCF;;ADEA;EACE,kBAAA;EACA,qBAAA;ACCF;;ACpCE;EACE,oBAAA;EACA,0CAAA;ADuCJ;;ACnCA;EACE,SAAA;EACA,qBAAA;EACA,kBAAA;EACA,gBAAA;EACA,eAAA;EACA,2BAAA;ADsCF;ACrCE;EACE,yBAAA;EACA,YAAA;EACA,2BAAA;ADuCJ;ACrCE;EACE,0BAAA;EACA,mCAAA;EACA,mBAAA;ADuCJ;ACrCE;EACE,wBAAA;EACA,mCAAA;EACA,qBAAA;ADuCJ;ACrCE;EACE,kBAAA;EACA,gCAAA;EACA,mBAAA;ADuCJ;ACrCE;EACE,kBAAA;EACA,+BAAA;EACA,mBAAA;ADuCJ;;AClCE;EACE,qBAAA;EACA,iBAAA;ADqCJ;ACnCE;EACE,oBAAA;EACA,iBAAA;ADqCJ;ACnCE;EACE,kBAAA;EACA,iBAAA;ADqCJ;;AEzFA;EACE,SAAA;EACA,UAAA;EACA,sBAAA;AF4FF;;AG/FA;EAEE,kBAAA;EACA,oBAAA;EACA,mBAAA;EAGA,gBAAA;EACA,iBAAA;EACA,YAAA;EAGA,kBAAA;EACA,iBAAA;EACA,eAAA;EACA,kBAAA;EACA,eAAA;EAGA,iBAAA;EACA,kBAAA;EAGA,6BAAA;EACA,+BAAA;EACA,sCAAA;EAGA;wCAAA;AHwFF;;AIpHA;EACE,aAAA;AJuHF;;AIpHA;EACE,iBAAA;EACA,aAAA;EACA,oDACE;AJsHJ;;AK5HA;EACE,iBAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,8BAAA;EACA,mBAAA;EACA,0BAAA;EACA,eAAA;EACA,UAAA;EACA,WAAA;AL+HF;AK9HE;EACE,mBAAA;EACA,gBAAA;EACA,sBAAA;ALgIJ;AK9HE;EACE,eAAA;EACA,gBAAA;ALgIJ;AK/HI;EACE,sBAAA;ALiIN;AK7HE;EACE,kBAAA;AL+HJ;AK9HI;EAIE,aAAA;EACA,qBAAA;AL6HN;AM7JE;ED2BE;IAEI,aAAA;ELoIN;AACF;AKjIM;EACE,aAAA;EACA,kBAAA;EACA,iBAAA;ALmIR;AKlIQ;EACE,oBAAA;EACA,eAAA;EACA,kCAAA;EACA,qBAAA;EACA,aAAA;ALoIV;AKnIU;EACE,mBAAA;ALqIZ;AKlIQ;EACE,iBAAA;EACA,iBAAA;ALoIV;AKjIM;EACE,8BAAA;EACA,aAAA;EACA,qBAAA;ALmIR;AKlIQ;EACE,uBAAA;ALoIV;AK/HE;EACE,aAAA;EACA,eAAA;EACA,mBAAA;ALiIJ;AMlME;ED8DA;IAKI,cAAA;ELmIJ;AACF;AKjIE;EACE,aAAA;EACA,kBAAA;EACA,WAAA;EACA,YAAA;EACA,eAAA;EACA,gCAAA;EACA,yBAAA;ALmIJ;AKlII;EACE,cAAA;ALoIN;AKnIM;EACE,iBAAA;ALqIR;AKjIE;EACE,cAAA;ALmIJ;;AO1NA;EACE,iBAAA;EACA,aAAA;EACA,YAAA;EACA,6BAAA;EACA,mBAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,iBAAA;AP6NF;AO5NE;EACE,YAAA;EACA,WAAA;EACA,sBAAA;AP8NJ;AO5NE;EACE,wBAAA;EACA,oBAAA;AP8NJ;AO3NE;EACE,wBAAA;EACA,oBAAA;AP6NJ","sourcesContent":[":root {\n  font-size: 62.5%; // font-size = 10px\n}\n\nbody {\n  font-size: 1.6rem; // 1rem = 10px\n  color: var(--dark);\n  font-family: var(--basic);\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: var(--dark);\n  text-decoration: none;\n}\n",":root {\n  font-size: 62.5%;\n}\n\nbody {\n  font-size: 1.6rem;\n  color: var(--dark);\n  font-family: var(--basic);\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: var(--dark);\n  text-decoration: none;\n}\n\n.title-underline {\n  padding-bottom: 2rem;\n  border-bottom: 0.1rem solid var(--divider);\n}\n\n.button {\n  border: 0;\n  border-radius: 0.3rem;\n  padding: 1rem 2rem;\n  font-weight: 700;\n  cursor: pointer;\n  transition: box-shadow 0.2s;\n}\n.button:hover {\n  box-shadow: var(--shadow);\n  opacity: 89%;\n  transition: box-shadow 0.2s;\n}\n.button-primary {\n  background: var(--primary);\n  border: 0.2rem solid var(--primary);\n  color: var(--light);\n}\n.button-secondary {\n  background: var(--light);\n  border: 0.2rem solid var(--primary);\n  color: var(--primary);\n}\n.button-edit {\n  margin-right: 2rem;\n  background-color: var(--success);\n  color: var(--light);\n}\n.button-delete {\n  margin-right: 2rem;\n  background-color: var(--danger);\n  color: var(--light);\n}\n\n.text-valid {\n  color: var(--success);\n  font-weight: bold;\n}\n.text-error {\n  color: var(--danger);\n  font-weight: bold;\n}\n.text-detail {\n  color: var(--info);\n  font-weight: bold;\n}\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n:root {\n  --primary: #2e86de;\n  --secondary: #54a0ff;\n  --tertiary: #48dbfb;\n  --light: #f5f6fa;\n  --medium: #2d98da;\n  --dark: #333;\n  --success: #06ad3e;\n  --danger: #ea2027;\n  --info: #3867d6;\n  --warning: #fbc531;\n  --hint: #95a5a6;\n  --accent: #3c40c6;\n  --divider: #bdc3c7;\n  --basic: \"Mulish\", sans-serif;\n  --default: \"Roboto\", sans-serif;\n  --logo: \"Roboto Condensed\", sans-serif;\n  --shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),\n    0 1px 3px 1px rgba(60, 64, 67, 0.15);\n}\n\nbody {\n  height: 100vh;\n}\n\n.container {\n  min-height: 100vh;\n  display: grid;\n  grid: \"header\" auto \"content\" 1fr \"footer\" auto/auto;\n}\n\nheader {\n  grid-area: header;\n  padding: 2rem;\n  display: flex;\n  flex-flow: row nowrap;\n  justify-content: space-between;\n  align-items: center;\n  background: var(--primary);\n  position: fixed;\n  z-index: 1;\n  width: 100%;\n}\nheader a {\n  color: var(--light);\n  font-weight: 700;\n  letter-spacing: 0.1rem;\n}\nheader .header-brand {\n  font-size: 3rem;\n  font-weight: 700;\n}\nheader .header-brand:hover {\n  color: var(--tertiary);\n}\nheader .header-menu {\n  position: relative;\n}\nheader .header-menu ul {\n  display: flex;\n  margin-right: -0.5rem;\n}\n@media (max-width: 480px) {\n  header .header-menu ul {\n    display: none;\n  }\n}\nheader .header-menu ul li {\n  padding: 1rem;\n  margin-right: 1rem;\n  font-size: 1.5rem;\n}\nheader .header-menu ul li:hover {\n  transition: all 0.2s;\n  cursor: pointer;\n  background-color: var(--secondary);\n  border-radius: 0.2rem;\n  padding: 1rem;\n}\nheader .header-menu ul li:hover a {\n  color: var(--light);\n}\nheader .header-menu ul li .header-brand {\n  font-size: 1.8rem;\n  padding: 0 0.1rem;\n}\nheader .header-menu ul .active {\n  background-color: var(--light);\n  padding: 1rem;\n  border-radius: 0.2rem;\n}\nheader .header-menu ul .active a {\n  color: var(--secondary);\n}\nheader .header-menu-icon {\n  display: none;\n  font-size: 3rem;\n  color: var(--light);\n}\n@media (max-width: 480px) {\n  header .header-menu-icon {\n    display: block;\n  }\n}\nheader .mobile-menu {\n  display: none;\n  position: absolute;\n  top: 5.7rem;\n  right: -2rem;\n  padding: 0.5rem;\n  background-color: var(--primary);\n  box-shadow: var(--shadow);\n}\nheader .mobile-menu ul {\n  display: block;\n}\nheader .mobile-menu ul li {\n  margin: 1rem 2rem;\n}\nheader .mobile-menu.open {\n  display: block;\n}\n\nfooter {\n  grid-area: footer;\n  padding: 2rem;\n  height: 8rem;\n  background-color: var(--dark);\n  color: var(--light);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: bold;\n}\nfooter img {\n  height: 2rem;\n  width: 2rem;\n  margin-bottom: -0.1rem;\n}\nfooter .j {\n  font-family: var(--logo);\n  color: var(--danger);\n}\nfooter .e {\n  font-family: var(--logo);\n  color: var(--danger);\n}",".title {\n  &-underline {\n    padding-bottom: 2rem;\n    border-bottom: 0.1rem solid var(--divider);\n  }\n}\n\n.button {\n  border: 0;\n  border-radius: 0.3rem;\n  padding: 1rem 2rem;\n  font-weight: 700;\n  cursor: pointer;\n  transition: box-shadow 0.2s;\n  &:hover {\n    box-shadow: var(--shadow);\n    opacity: 89%;\n    transition: box-shadow 0.2s;\n  }\n  &-primary {\n    background: var(--primary);\n    border: 0.2rem solid var(--primary);\n    color: var(--light);\n  }\n  &-secondary {\n    background: var(--light);\n    border: 0.2rem solid var(--primary);\n    color: var(--primary);\n  }\n  &-edit {\n    margin-right: 2rem;\n    background-color: var(--success);\n    color: var(--light);\n  }\n  &-delete {\n    margin-right: 2rem;\n    background-color: var(--danger);\n    color: var(--light);\n  }\n}\n\n.text {\n  &-valid {\n    color: var(--success);\n    font-weight: bold;\n  }\n  &-error {\n    color: var(--danger);\n    font-weight: bold;\n  }\n  &-detail {\n    color: var(--info);\n    font-weight: bold;\n  }\n}\n","* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n",":root {\n  // main color\n  --primary: #2e86de;\n  --secondary: #54a0ff;\n  --tertiary: #48dbfb;\n\n  // text color\n  --light: #f5f6fa;\n  --medium: #2d98da;\n  --dark: #333;\n\n  // utils => button, border, words etc\n  --success: #06ad3e;\n  --danger: #ea2027;\n  --info: #3867d6;\n  --warning: #fbc531;\n  --hint: #95a5a6;\n\n  // utils => border, words etc\n  --accent: #3c40c6;\n  --divider: #bdc3c7;\n\n  // font-family\n  --basic: \"Mulish\", sans-serif;\n  --default: \"Roboto\", sans-serif;\n  --logo: \"Roboto Condensed\", sans-serif;\n\n  // shadow\n  --shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),\n    0 1px 3px 1px rgba(60, 64, 67, 0.15);\n}\n","body {\n  height: 100vh;\n}\n\n.container {\n  min-height: 100vh;\n  display: grid;\n  grid:\n    \"header\" auto\n    \"content\" 1fr\n    \"footer\" auto /\n    auto;\n}\n","@use \"../partials/media-queries.scss\" as *;\n\nheader {\n  grid-area: header;\n  padding: 2rem;\n  display: flex;\n  flex-flow: row nowrap;\n  justify-content: space-between;\n  align-items: center;\n  background: var(--primary);\n  position: fixed;\n  z-index: 1;\n  width: 100%;\n  a {\n    color: var(--light);\n    font-weight: 700;\n    letter-spacing: 0.1rem;\n  }\n  .header-brand {\n    font-size: 3rem;\n    font-weight: 700;\n    &:hover {\n      color: var(--tertiary);\n    }\n  }\n\n  .header-menu {\n    position: relative;\n    ul {\n      @include phone {\n        display: none;\n      }\n      display: flex;\n      margin-right: -0.5rem;\n      li {\n        padding: 1rem;\n        margin-right: 1rem;\n        font-size: 1.5rem;\n        &:hover {\n          transition: all 0.2s;\n          cursor: pointer;\n          background-color: var(--secondary);\n          border-radius: 0.2rem;\n          padding: 1rem;\n          a {\n            color: var(--light);\n          }\n        }\n        .header-brand {\n          font-size: 1.8rem;\n          padding: 0 0.1rem;\n        }\n      }\n      .active {\n        background-color: var(--light);\n        padding: 1rem;\n        border-radius: 0.2rem;\n        a {\n          color: var(--secondary);\n        }\n      }\n    }\n  }\n  .header-menu-icon {\n    display: none;\n    font-size: 3rem;\n    color: var(--light);\n    @include phone {\n      display: block;\n    }\n  }\n  .mobile-menu {\n    display: none;\n    position: absolute;\n    top: 5.7rem;\n    right: -2rem;\n    padding: 0.5rem;\n    background-color: var(--primary);\n    box-shadow: var(--shadow);\n    ul {\n      display: block;\n      li {\n        margin: 1rem 2rem;\n      }\n    }\n  }\n  .mobile-menu.open {\n    display: block;\n  }\n}\n","@mixin phone {\n  @media (max-width: 480px) {\n    @content;\n  }\n}\n\n@mixin tablet {\n  @media (min-width: 481px) and (max-width: 767px) {\n    @content;\n  }\n}\n\n@mixin laptop {\n  @media (min-width: 768px) and (max-width: 1199px) {\n    @content;\n  }\n}\n\n@mixin computer {\n  @media (min-width: 1200px) {\n    @content;\n  }\n}\n","footer {\n  grid-area: footer;\n  padding: 2rem;\n  height: 8rem;\n  background-color: var(--dark);\n  color: var(--light);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: bold;\n  img {\n    height: 2rem;\n    width: 2rem;\n    margin-bottom: -0.1rem;\n  }\n  .j {\n    font-family: var(--logo);\n    color: var(--danger);\n  }\n\n  .e {\n    font-family: var(--logo);\n    color: var(--danger);\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -7716,17 +7726,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.container-photo-detail {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-}
-.container-photo-detail .container-button .edit-button {
-  margin-right: 2rem;
-  background-color: var(--success);
-  color: var(--light);
-}
-.container-photo-detail .container-button .delete-button {
-  margin-right: 2rem;
-  background-color: var(--danger);
-  color: var(--light);
-}`, "",{"version":3,"sources":["webpack://./src/detailform/detailform.scss"],"names":[],"mappings":"AAAA;EACE,iBAAA;EACA,oBAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;AACF;AAAE;EACE,mBAAA;AAEJ;AADI;EACE,eAAA;AAGN;AAAE;EACE,mBAAA;EACA,aAAA;EACA,yBAAA;AAEJ;AAAE;EACE,aAAA;EACA,mBAAA;AAEJ;AADI;EACE,YAAA;EACA,WAAA;AAGN;AAFM;EACE,qBAAA;EACA,YAAA;EACA,WAAA;AAIR;AADI;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,iBAAA;AAGN;AAAE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,mBAAA;AAEJ;AAAE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,mBAAA;AAEJ;AAAE;EACE,YAAA;EACA,aAAA;EACA,yBAAA;EACA,mBAAA;AAEJ;AADI;EACE,kBAAA;EACA,gCAAA;EACA,mBAAA;AAGN;AADI;EACE,kBAAA;EACA,+BAAA;EACA,mBAAA;AAGN","sourcesContent":[".container-photo-detail {\n  margin-top: 25rem;\n  margin-bottom: 25rem;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  .container-photo-name {\n    margin-bottom: 2rem;\n    h1 {\n      font-size: 2rem;\n    }\n  }\n  .container-photo-img {\n    margin-bottom: 5rem;\n    padding: 1rem;\n    box-shadow: var(--shadow);\n  }\n  .container-user {\n    display: flex;\n    margin-bottom: 3rem;\n    .container-user-img {\n      height: 5rem;\n      width: 5rem;\n      img {\n        border-radius: 2.5rem;\n        height: 5rem;\n        width: 5rem;\n      }\n    }\n    .container-user-name {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      margin-left: 2rem;\n    }\n  }\n  .container-date {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-bottom: 4rem;\n  }\n  .container-content {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    max-width: 48rem;\n    margin-bottom: 5rem;\n  }\n  .container-button {\n    width: 32rem;\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n    .edit-button {\n      margin-right: 2rem;\n      background-color: var(--success);\n      color: var(--light);\n    }\n    .delete-button {\n      margin-right: 2rem;\n      background-color: var(--danger);\n      color: var(--light);\n    }\n  }\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/detailform/detailform.scss"],"names":[],"mappings":"AAAA;EACE,iBAAA;EACA,oBAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;AACF;AAAE;EACE,mBAAA;AAEJ;AADI;EACE,eAAA;AAGN;AAAE;EACE,mBAAA;EACA,aAAA;EACA,yBAAA;AAEJ;AAAE;EACE,aAAA;EACA,mBAAA;AAEJ;AADI;EACE,YAAA;EACA,WAAA;AAGN;AAFM;EACE,qBAAA;EACA,YAAA;EACA,WAAA;AAIR;AADI;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,iBAAA;AAGN;AAAE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,mBAAA;AAEJ;AAAE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,mBAAA;AAEJ;AAAE;EACE,YAAA;EACA,aAAA;EACA,yBAAA;EACA,mBAAA;AAEJ","sourcesContent":[".container-photo-detail {\n  margin-top: 25rem;\n  margin-bottom: 25rem;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  .container-photo-name {\n    margin-bottom: 2rem;\n    h1 {\n      font-size: 2rem;\n    }\n  }\n  .container-photo-img {\n    margin-bottom: 5rem;\n    padding: 1rem;\n    box-shadow: var(--shadow);\n  }\n  .container-user {\n    display: flex;\n    margin-bottom: 3rem;\n    .container-user-img {\n      height: 5rem;\n      width: 5rem;\n      img {\n        border-radius: 2.5rem;\n        height: 5rem;\n        width: 5rem;\n      }\n    }\n    .container-user-name {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      margin-left: 2rem;\n    }\n  }\n  .container-date {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-bottom: 4rem;\n  }\n  .container-content {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    max-width: 48rem;\n    margin-bottom: 5rem;\n  }\n  .container-button {\n    width: 32rem;\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -8394,30 +8394,30 @@ var containerDate = document.querySelector(".container-date");
 var containerContent = document.querySelector(".container-content");
 var containerButton = document.querySelector(".container-button");
 var displayDetailFormPhoto = /*#__PURE__*/function () {
-  var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
-    var params, photoId, response, formPhoto, formPhotoImg, userPhotoImg;
-    return _regeneratorRuntime().wrap(function _callee$(_context) {
-      while (1) switch (_context.prev = _context.next) {
+  var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
+    var params, photoId, response, formPhoto, formPhotoImg, userPhotoImg, buttonDelete;
+    return _regeneratorRuntime().wrap(function _callee2$(_context2) {
+      while (1) switch (_context2.prev = _context2.next) {
         case 0:
-          _context.prev = 0;
+          _context2.prev = 0;
           params = new URL(location.href);
           photoId = params.searchParams.get("id");
           if (!photoId) {
-            _context.next = 150;
+            _context2.next = 152;
             break;
           }
-          _context.next = 6;
+          _context2.next = 6;
           return fetch("https://restapi.fr/api/photos/".concat(photoId));
         case 6:
-          response = _context.sent;
+          response = _context2.sent;
           if (!(response.status < 300)) {
-            _context.next = 149;
+            _context2.next = 151;
             break;
           }
-          _context.next = 10;
+          _context2.next = 10;
           return response.json();
         case 10:
-          formPhoto = _context.sent;
+          formPhoto = _context2.sent;
           containerPhotoName.innerHTML = "<h1>".concat(formPhoto.picture, "</h1>");
           containerPhotoImg.innerHTML = "<img src=\"".concat(formPhoto.picture, "\" alt=\"").concat(formPhoto.picture, "\" />");
           containerUser.innerHTML = "\n          <div class=\"container-user-img\">\n          <img src=\"".concat(formPhoto.photographer, "\" /> \n          </div>\n          <div class=\"container-user-name\">\n              <p> ").concat(formPhoto.photographer, " </p>\n          </div>");
@@ -8428,213 +8428,244 @@ var displayDetailFormPhoto = /*#__PURE__*/function () {
             year: "numeric"
           }));
           containerContent.innerHTML = "<p>".concat(formPhoto.content, "</p>");
-          containerButton.innerHTML = "\n          <button class=\"button edit-button\">\xC9diter</button>\n          <button class=\"button delete-button\">Supprimer</button>";
+          containerButton.innerHTML = "\n          <button class=\"button button-edit\">\xC9diter</button>\n          <button class=\"button button-delete\">Supprimer</button>";
           formPhotoImg = containerPhotoImg.querySelector("img");
-          _context.t0 = formPhoto.picture;
-          _context.next = _context.t0 === "Un Désert en Cisjordanie" ? 21 : _context.t0 === "Un Désert en Jordanie" ? 23 : _context.t0 === "Un Désert au Maroc" ? 25 : _context.t0 === "Un Désert en Namibie (Océan Atlantique)" ? 27 : _context.t0 === "Un Désert en Oman" ? 29 : _context.t0 === "Un Désert au Pérou" ? 31 : _context.t0 === "Un Désert en Arabie Saoudite" ? 33 : _context.t0 === "Un Désert en Namibie (Sud-Ouest)" ? 35 : _context.t0 === "Le Désert du Sahara (Soir)" ? 37 : _context.t0 === "Sable Blanc du Nouveau-Mexique (USA)" ? 39 : 41;
+          _context2.t0 = formPhoto.picture;
+          _context2.next = _context2.t0 === "Un Désert en Cisjordanie" ? 21 : _context2.t0 === "Un Désert en Jordanie" ? 23 : _context2.t0 === "Un Désert au Maroc" ? 25 : _context2.t0 === "Un Désert en Namibie (Océan Atlantique)" ? 27 : _context2.t0 === "Un Désert en Oman" ? 29 : _context2.t0 === "Un Désert au Pérou" ? 31 : _context2.t0 === "Un Désert en Arabie Saoudite" ? 33 : _context2.t0 === "Un Désert en Namibie (Sud-Ouest)" ? 35 : _context2.t0 === "Le Désert du Sahara (Soir)" ? 37 : _context2.t0 === "Sable Blanc du Nouveau-Mexique (USA)" ? 39 : 41;
           break;
         case 21:
           formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-cj.jpg";
-          return _context.abrupt("break", 41);
+          return _context2.abrupt("break", 41);
         case 23:
           formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-jo.jpg";
-          return _context.abrupt("break", 41);
+          return _context2.abrupt("break", 41);
         case 25:
           formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-ma.jpg";
-          return _context.abrupt("break", 41);
+          return _context2.abrupt("break", 41);
         case 27:
           formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-oa-na.jpg";
-          return _context.abrupt("break", 41);
+          return _context2.abrupt("break", 41);
         case 29:
           formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-om.jpg";
-          return _context.abrupt("break", 41);
+          return _context2.abrupt("break", 41);
         case 31:
           formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-pe.jpg";
-          return _context.abrupt("break", 41);
+          return _context2.abrupt("break", 41);
         case 33:
           formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-sa.jpg";
-          return _context.abrupt("break", 41);
+          return _context2.abrupt("break", 41);
         case 35:
           formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-so-na.jpg";
-          return _context.abrupt("break", 41);
+          return _context2.abrupt("break", 41);
         case 37:
           formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-soir-eh.jpg";
-          return _context.abrupt("break", 41);
+          return _context2.abrupt("break", 41);
         case 39:
           formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/sable-blanc-detail-nmex-us.jpg";
-          return _context.abrupt("break", 41);
+          return _context2.abrupt("break", 41);
         case 41:
-          _context.t1 = formPhoto.picture;
-          _context.next = _context.t1 === "Une Forêt en Australie" ? 44 : _context.t1 === "Une Forêt au Canada" ? 46 : _context.t1 === "Une Forêt en Finlande" ? 48 : _context.t1 === "Une Forêt en Croatie" ? 50 : _context.t1 === "Une Forêt en Inde" ? 52 : _context.t1 === "Une Forêt en Italie" ? 54 : _context.t1 === "Une Forêt au Japon" ? 56 : _context.t1 === "La Forêt des Loups" ? 58 : _context.t1 === "Une Forêt au Nouvelle-Zélande" ? 60 : _context.t1 === "Une Forêt en Washington (USA)" ? 62 : 64;
+          _context2.t1 = formPhoto.picture;
+          _context2.next = _context2.t1 === "Une Forêt en Australie" ? 44 : _context2.t1 === "Une Forêt au Canada" ? 46 : _context2.t1 === "Une Forêt en Finlande" ? 48 : _context2.t1 === "Une Forêt en Croatie" ? 50 : _context2.t1 === "Une Forêt en Inde" ? 52 : _context2.t1 === "Une Forêt en Italie" ? 54 : _context2.t1 === "Une Forêt au Japon" ? 56 : _context2.t1 === "La Forêt des Loups" ? 58 : _context2.t1 === "Une Forêt au Nouvelle-Zélande" ? 60 : _context2.t1 === "Une Forêt en Washington (USA)" ? 62 : 64;
           break;
         case 44:
           formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-au.jpg";
-          return _context.abrupt("break", 64);
+          return _context2.abrupt("break", 64);
         case 46:
           formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-ca.jpg";
-          return _context.abrupt("break", 64);
+          return _context2.abrupt("break", 64);
         case 48:
           formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-fi.jpg";
-          return _context.abrupt("break", 64);
+          return _context2.abrupt("break", 64);
         case 50:
           formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-hr.jpg";
-          return _context.abrupt("break", 64);
+          return _context2.abrupt("break", 64);
         case 52:
           formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-in.jpg";
-          return _context.abrupt("break", 64);
+          return _context2.abrupt("break", 64);
         case 54:
           formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-it.jpg";
-          return _context.abrupt("break", 64);
+          return _context2.abrupt("break", 64);
         case 56:
           formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-jp.jpg";
-          return _context.abrupt("break", 64);
+          return _context2.abrupt("break", 64);
         case 58:
           formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-loups.jpg";
-          return _context.abrupt("break", 64);
+          return _context2.abrupt("break", 64);
         case 60:
           formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-nz.jpg";
-          return _context.abrupt("break", 64);
+          return _context2.abrupt("break", 64);
         case 62:
           formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-wash-us.jpg";
-          return _context.abrupt("break", 64);
+          return _context2.abrupt("break", 64);
         case 64:
-          _context.t2 = formPhoto.picture;
-          _context.next = _context.t2 === "Une Plage en Australie" ? 67 : _context.t2 === "Une Plage au Brésil" ? 69 : _context.t2 === "Une Plage en Grande-Bretagne" ? 71 : _context.t2 === "Une Plage en Italie" ? 73 : _context.t2 === "Une Plage en Madagascar" ? 75 : _context.t2 === "Une Plage au Mexique" ? 77 : _context.t2 === "Une Plage en Nouvelle-Calédonie" ? 79 : _context.t2 === "Une Plage en Polynésie Française" ? 81 : _context.t2 === "Une Plage aux Sychelles" ? 83 : _context.t2 === "Une Plage en Thaïlande" ? 85 : 87;
+          _context2.t2 = formPhoto.picture;
+          _context2.next = _context2.t2 === "Une Plage en Australie" ? 67 : _context2.t2 === "Une Plage au Brésil" ? 69 : _context2.t2 === "Une Plage en Grande-Bretagne" ? 71 : _context2.t2 === "Une Plage en Italie" ? 73 : _context2.t2 === "Une Plage en Madagascar" ? 75 : _context2.t2 === "Une Plage au Mexique" ? 77 : _context2.t2 === "Une Plage en Nouvelle-Calédonie" ? 79 : _context2.t2 === "Une Plage en Polynésie Française" ? 81 : _context2.t2 === "Une Plage aux Sychelles" ? 83 : _context2.t2 === "Une Plage en Thaïlande" ? 85 : 87;
           break;
         case 67:
           formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-au.jpg";
-          return _context.abrupt("break", 87);
+          return _context2.abrupt("break", 87);
         case 69:
           formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-br.jpg";
-          return _context.abrupt("break", 87);
+          return _context2.abrupt("break", 87);
         case 71:
           formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-gb.jpg";
-          return _context.abrupt("break", 87);
+          return _context2.abrupt("break", 87);
         case 73:
           formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-it.jpg";
-          return _context.abrupt("break", 87);
+          return _context2.abrupt("break", 87);
         case 75:
           formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-mg.jpg";
-          return _context.abrupt("break", 87);
+          return _context2.abrupt("break", 87);
         case 77:
           formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-mx.jpg";
-          return _context.abrupt("break", 87);
+          return _context2.abrupt("break", 87);
         case 79:
           formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-nc.jpg";
-          return _context.abrupt("break", 87);
+          return _context2.abrupt("break", 87);
         case 81:
           formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-pf.jpg";
-          return _context.abrupt("break", 87);
+          return _context2.abrupt("break", 87);
         case 83:
           formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-sc.jpg";
-          return _context.abrupt("break", 87);
+          return _context2.abrupt("break", 87);
         case 85:
           formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-th.jpg";
-          return _context.abrupt("break", 87);
+          return _context2.abrupt("break", 87);
         case 87:
-          _context.t3 = formPhoto.picture;
-          _context.next = _context.t3 === "Une Ville au Chili" ? 90 : _context.t3 === "Une Ville en Chine" ? 92 : _context.t3 === "Une Ville en Colombie" ? 94 : _context.t3 === "Une Ville en France" ? 96 : _context.t3 === "Une Ville en Grande-Bretagne" ? 98 : _context.t3 === "Une Ville au Japon (Jour)" ? 100 : _context.t3 === "Une Ville en Koweït" ? 102 : _context.t3 === "Une Ville en Norvège" ? 104 : _context.t3 === "Une Ville Rural d'Allemagne" ? 106 : _context.t3 === "Une Ville d'Italie (Soir)" ? 108 : 110;
+          _context2.t3 = formPhoto.picture;
+          _context2.next = _context2.t3 === "Une Ville au Chili" ? 90 : _context2.t3 === "Une Ville en Chine" ? 92 : _context2.t3 === "Une Ville en Colombie" ? 94 : _context2.t3 === "Une Ville en France" ? 96 : _context2.t3 === "Une Ville en Grande-Bretagne" ? 98 : _context2.t3 === "Une Ville au Japon (Jour)" ? 100 : _context2.t3 === "Une Ville en Koweït" ? 102 : _context2.t3 === "Une Ville en Norvège" ? 104 : _context2.t3 === "Une Ville Rural d'Allemagne" ? 106 : _context2.t3 === "Une Ville d'Italie (Soir)" ? 108 : 110;
           break;
         case 90:
           formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-cl.jpg";
-          return _context.abrupt("break", 110);
+          return _context2.abrupt("break", 110);
         case 92:
           formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-cn.jpg";
-          return _context.abrupt("break", 110);
+          return _context2.abrupt("break", 110);
         case 94:
           formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-co.jpg";
-          return _context.abrupt("break", 110);
+          return _context2.abrupt("break", 110);
         case 96:
           formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-fr.jpg";
-          return _context.abrupt("break", 110);
+          return _context2.abrupt("break", 110);
         case 98:
           formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-gb.jpg";
-          return _context.abrupt("break", 110);
+          return _context2.abrupt("break", 110);
         case 100:
           formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-jour-jp.jpg";
-          return _context.abrupt("break", 110);
+          return _context2.abrupt("break", 110);
         case 102:
           formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-kw.jpg";
-          return _context.abrupt("break", 110);
+          return _context2.abrupt("break", 110);
         case 104:
           formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-no.jpg";
-          return _context.abrupt("break", 110);
+          return _context2.abrupt("break", 110);
         case 106:
           formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-rural-ge.jpg";
-          return _context.abrupt("break", 110);
+          return _context2.abrupt("break", 110);
         case 108:
           formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-soir-it.jpg";
-          return _context.abrupt("break", 110);
+          return _context2.abrupt("break", 110);
         case 110:
           userPhotoImg = containerUser.querySelector("img");
-          _context.t4 = formPhoto.photographer;
-          _context.next = _context.t4 === "Dora - L'Exploratrice" ? 114 : _context.t4 === "Tad - L'Explorateur" ? 116 : _context.t4 === "Polo - L'Explorateur" ? 118 : 120;
+          _context2.t4 = formPhoto.photographer;
+          _context2.next = _context2.t4 === "Dora - L'Exploratrice" ? 114 : _context2.t4 === "Tad - L'Explorateur" ? 116 : _context2.t4 === "Polo - L'Explorateur" ? 118 : 120;
           break;
         case 114:
           userPhotoImg.src = "./assets/images/form-photos/form-villes/ville-cl.jpg";
-          return _context.abrupt("break", 120);
+          return _context2.abrupt("break", 120);
         case 116:
           userPhotoImg.src = "./assets/images/form-photos/form-villes/ville-cn.jpg";
-          return _context.abrupt("break", 120);
+          return _context2.abrupt("break", 120);
         case 118:
           userPhotoImg.src = "./assets/images/form-photos/form-villes/ville-co.jpg";
-          return _context.abrupt("break", 120);
+          return _context2.abrupt("break", 120);
         case 120:
-          _context.t5 = formPhoto.photographer;
-          _context.next = _context.t5 === "Chihiro - La Voyageuse" ? 123 : _context.t5 === "Robinson - Le Voyageur" ? 125 : _context.t5 === "Phileas - Le Voyageur" ? 127 : 129;
+          _context2.t5 = formPhoto.photographer;
+          _context2.next = _context2.t5 === "Chihiro - La Voyageuse" ? 123 : _context2.t5 === "Robinson - Le Voyageur" ? 125 : _context2.t5 === "Phileas - Le Voyageur" ? 127 : 129;
           break;
         case 123:
           userPhotoImg.src = "./assets/images/form-photos/form-villes/ville-fr.jpg";
-          return _context.abrupt("break", 129);
+          return _context2.abrupt("break", 129);
         case 125:
           userPhotoImg.src = "./assets/images/form-photos/form-villes/ville-gb.jpg";
-          return _context.abrupt("break", 129);
+          return _context2.abrupt("break", 129);
         case 127:
           userPhotoImg.src = "./assets/images/form-photos/form-villes/ville-jour-jp.jpg";
-          return _context.abrupt("break", 129);
+          return _context2.abrupt("break", 129);
         case 129:
-          _context.t6 = formPhoto.photographer;
-          _context.next = _context.t6 === "Jones - L'Archéologue" ? 132 : _context.t6 === "Lara - L'Archéologue" ? 134 : _context.t6 === "Milo - L'Archéologue" ? 136 : 138;
+          _context2.t6 = formPhoto.photographer;
+          _context2.next = _context2.t6 === "Jones - L'Archéologue" ? 132 : _context2.t6 === "Lara - L'Archéologue" ? 134 : _context2.t6 === "Milo - L'Archéologue" ? 136 : 138;
           break;
         case 132:
           userPhotoImg.src = "./assets/images/form-photos/form-villes/ville-kw.jpg";
-          return _context.abrupt("break", 138);
+          return _context2.abrupt("break", 138);
         case 134:
           userPhotoImg.src = "./assets/images/form-photos/form-villes/ville-no.jpg";
-          return _context.abrupt("break", 138);
+          return _context2.abrupt("break", 138);
         case 136:
           userPhotoImg.src = "./assets/images/form-photos/form-villes/ville-rural-ge.jpg";
-          return _context.abrupt("break", 138);
+          return _context2.abrupt("break", 138);
         case 138:
-          _context.t7 = formPhoto.photographer;
-          _context.next = _context.t7 === "Tom - L'Aventurier" ? 141 : _context.t7 === "Gamba - L'Aventurier" ? 143 : _context.t7 === "Sophie - L'Aventurière" ? 145 : 147;
+          _context2.t7 = formPhoto.photographer;
+          _context2.next = _context2.t7 === "Tom - L'Aventurier" ? 141 : _context2.t7 === "Gamba - L'Aventurier" ? 143 : _context2.t7 === "Sophie - L'Aventurière" ? 145 : 147;
           break;
         case 141:
           userPhotoImg.src = "./assets/images/form-photos/form-villes/ville-soir-it.jpg";
-          return _context.abrupt("break", 147);
+          return _context2.abrupt("break", 147);
         case 143:
           userPhotoImg.src = "./assets/images/home-photos/home-villes/ville-ap-jp.jpg";
-          return _context.abrupt("break", 147);
+          return _context2.abrupt("break", 147);
         case 145:
           userPhotoImg.src = "./assets/images/home-photos/home-villes/ville-ar.jpg";
-          return _context.abrupt("break", 147);
+          return _context2.abrupt("break", 147);
         case 147:
-          _context.next = 150;
+          buttonDelete = containerButton.querySelector(".button-delete");
+          buttonDelete.addEventListener("click", /*#__PURE__*/function () {
+            var _ref2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(event) {
+              var _response;
+              return _regeneratorRuntime().wrap(function _callee$(_context) {
+                while (1) switch (_context.prev = _context.next) {
+                  case 0:
+                    _context.prev = 0;
+                    _context.next = 3;
+                    return fetch("https://restapi.fr/api/photos/".concat(photoId), {
+                      method: "DELETE"
+                    });
+                  case 3:
+                    _response = _context.sent;
+                    location.assign("./index.html");
+                    _context.next = 10;
+                    break;
+                  case 7:
+                    _context.prev = 7;
+                    _context.t0 = _context["catch"](0);
+                    console.log("error : ", _context.t0);
+                  case 10:
+                  case "end":
+                    return _context.stop();
+                }
+              }, _callee, null, [[0, 7]]);
+            }));
+            return function (_x) {
+              return _ref2.apply(this, arguments);
+            };
+          }());
+          _context2.next = 152;
           break;
-        case 149:
+        case 151:
           location.assign("./index.html");
-        case 150:
-          _context.next = 155;
-          break;
         case 152:
-          _context.prev = 152;
-          _context.t8 = _context["catch"](0);
+          _context2.next = 157;
+          break;
+        case 154:
+          _context2.prev = 154;
+          _context2.t8 = _context2["catch"](0);
           location.assign("./index.html");
-        case 155:
+        case 157:
         case "end":
-          return _context.stop();
+          return _context2.stop();
       }
-    }, _callee, null, [[0, 152]]);
+    }, _callee2, null, [[0, 154]]);
   }));
   return function displayDetailFormPhoto() {
     return _ref.apply(this, arguments);
