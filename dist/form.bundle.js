@@ -6426,7 +6426,7 @@ var textInfoContent = document.querySelector("#text-info-content");
 var textInfo = document.querySelector("#text-info");
 form.addEventListener("submit", /*#__PURE__*/function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(event) {
-    var formData, photo, json, response, body;
+    var formData, photo, json, response;
     return _regeneratorRuntime().wrap(function _callee$(_context) {
       while (1) switch (_context.prev = _context.next) {
         case 0:
@@ -6434,7 +6434,7 @@ form.addEventListener("submit", /*#__PURE__*/function () {
           formData = new FormData(form);
           photo = Object.fromEntries(formData.entries());
           if (!formIsValid(photo)) {
-            _context.next = 18;
+            _context.next = 15;
             break;
           }
           _context.prev = 4;
@@ -6449,22 +6449,20 @@ form.addEventListener("submit", /*#__PURE__*/function () {
           });
         case 8:
           response = _context.sent;
-          _context.next = 11;
-          return response.json();
-        case 11:
-          body = _context.sent;
-          console.log(body);
-          _context.next = 18;
+          if (response.status < 300) {
+            location.assign("./index.html");
+          }
+          _context.next = 15;
           break;
-        case 15:
-          _context.prev = 15;
+        case 12:
+          _context.prev = 12;
           _context.t0 = _context["catch"](4);
           console.error("error : ", _context.t0);
-        case 18:
+        case 15:
         case "end":
           return _context.stop();
       }
-    }, _callee, null, [[4, 15]]);
+    }, _callee, null, [[4, 12]]);
   }));
   return function (_x) {
     return _ref.apply(this, arguments);

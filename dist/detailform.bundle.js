@@ -8622,14 +8622,14 @@ var displayDetailFormPhoto = /*#__PURE__*/function () {
           _context.next = 150;
           break;
         case 149:
-          window.location.assign("./index.html");
+          location.assign("./index.html");
         case 150:
           _context.next = 155;
           break;
         case 152:
           _context.prev = 152;
           _context.t8 = _context["catch"](0);
-          window.location.assign("./index.html");
+          location.assign("./index.html");
         case 155:
         case "end":
           return _context.stop();

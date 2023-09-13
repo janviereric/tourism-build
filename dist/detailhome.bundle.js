@@ -8819,7 +8819,7 @@ var diplayDetailHomePhoto = /*#__PURE__*/function () {
               containerContent.innerHTML = "<p>".concat(_assets_javascripts_home_photos_js__WEBPACK_IMPORTED_MODULE_22__.homePhotosArray[photoId].content, "</p>");
             }
           } catch (_unused) {
-            window.location.assign("./index.html");
+            location.assign("./index.html");
           }
         case 1:
         case "end":
