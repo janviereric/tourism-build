@@ -8555,10 +8555,10 @@ var fetchFormPhotos = /*#__PURE__*/function () {
           return response.json();
         case 6:
           formPhotos = _context2.sent;
-          createFormPhotosElement(formPhotos);
           if (!Array.isArray(formPhotos)) {
             formPhotos = [formPhotos];
           }
+          createFormPhotosElement(formPhotos);
           _context2.next = 14;
           break;
         case 11:
