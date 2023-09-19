@@ -4705,6 +4705,32 @@ $({ target: 'Object', stat: true, forced: Object.defineProperty !== defineProper
 
 /***/ }),
 
+/***/ "./node_modules/core-js/modules/es.object.from-entries.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/core-js/modules/es.object.from-entries.js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+
+var $ = __webpack_require__(/*! ../internals/export */ "./node_modules/core-js/internals/export.js");
+var iterate = __webpack_require__(/*! ../internals/iterate */ "./node_modules/core-js/internals/iterate.js");
+var createProperty = __webpack_require__(/*! ../internals/create-property */ "./node_modules/core-js/internals/create-property.js");
+
+// `Object.fromEntries` method
+// https://github.com/tc39/proposal-object-from-entries
+$({ target: 'Object', stat: true }, {
+  fromEntries: function fromEntries(iterable) {
+    var obj = {};
+    iterate(iterable, function (k, v) {
+      createProperty(obj, k, v);
+    }, { AS_ENTRIES: true });
+    return obj;
+  }
+});
+
+
+/***/ }),
+
 /***/ "./node_modules/core-js/modules/es.object.get-own-property-symbols.js":
 /*!****************************************************************************!*\
   !*** ./node_modules/core-js/modules/es.object.get-own-property-symbols.js ***!
@@ -7571,27 +7597,29 @@ header .header-menu ul {
   }
 }
 header .header-menu ul li {
-  padding: 1rem;
-  margin-right: 1rem;
+  margin-left: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header-menu ul li a {
+  padding: 1rem 2rem 1rem 2rem;
   font-size: 1.5rem;
-}
-header .header-menu ul li:hover {
-  transition: all 0.2s;
-  cursor: pointer;
-  background-color: var(--secondary);
   border-radius: 0.2rem;
-  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
 }
-header .header-menu ul li:hover a {
+header .header-menu ul li a:hover {
+  transition: all 0.2s;
+  background-color: var(--secondary);
   color: var(--light);
 }
-header .header-menu ul li .header-brand {
+header .header-menu ul li a .header-brand {
   font-size: 1.8rem;
   padding: 0 0.1rem;
 }
 header .header-menu ul .active {
   background-color: var(--light);
-  padding: 1rem;
   border-radius: 0.2rem;
 }
 header .header-menu ul .active a {
@@ -7649,7 +7677,7 @@ footer .j {
 footer .e {
   font-family: var(--logo);
   color: var(--danger);
-}`, "",{"version":3,"sources":["webpack://./src/assets/sass/partials/_base.scss","webpack://./src/assets/sass/styles.scss","webpack://./src/assets/sass/partials/_classes.scss","webpack://./src/assets/sass/partials/_reset.scss","webpack://./src/assets/sass/partials/_variables.scss","webpack://./src/assets/sass/layouts/_body.scss","webpack://./src/assets/sass/layouts/_header.scss","webpack://./src/assets/sass/partials/_media-queries.scss","webpack://./src/assets/sass/layouts/_footer.scss"],"names":[],"mappings":"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","sourcesContent":[":root {\n  font-size: 62.5%; // font-size = 10px\n}\n\nbody {\n  font-size: 1.6rem; // 1rem = 10px\n  color: var(--dark);\n  font-family: var(--basic);\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: var(--dark);\n  text-decoration: none;\n}\n",":root {\n  font-size: 62.5%;\n}\n\nbody {\n  font-size: 1.6rem;\n  color: var(--dark);\n  font-family: var(--basic);\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: var(--dark);\n  text-decoration: none;\n}\n\n.title-underline {\n  padding-bottom: 2rem;\n  border-bottom: 0.1rem solid var(--divider);\n}\n\n.button {\n  border: 0;\n  border-radius: 0.3rem;\n  padding: 1rem 2rem;\n  font-weight: 700;\n  cursor: pointer;\n  transition: box-shadow 0.2s;\n}\n.button:hover {\n  box-shadow: var(--shadow);\n  opacity: 89%;\n  transition: box-shadow 0.2s;\n}\n.button-add {\n  background: var(--primary);\n  border: 0.2rem solid var(--primary);\n  color: var(--light);\n}\n.button-cancel {\n  background: var(--light);\n  border: 0.2rem solid var(--primary);\n  color: var(--primary);\n}\n.button-edit {\n  margin-right: 2rem;\n  background-color: var(--success);\n  color: var(--light);\n}\n.button-delete {\n  margin-right: 2rem;\n  background-color: var(--danger);\n  color: var(--light);\n}\n.button-save {\n  background: var(--primary);\n  border: 0.2rem solid var(--primary);\n  color: var(--light);\n}\n\n.text-valid {\n  color: var(--success);\n  font-weight: bold;\n}\n.text-error {\n  color: var(--danger);\n  font-weight: bold;\n}\n.text-detail {\n  color: var(--info);\n  font-weight: bold;\n}\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n:root {\n  --primary: #2e86de;\n  --secondary: #54a0ff;\n  --tertiary: #48dbfb;\n  --light: #f5f6fa;\n  --medium: #2d98da;\n  --dark: #333;\n  --success: #06ad3e;\n  --danger: #ea2027;\n  --info: #3867d6;\n  --warning: #fbc531;\n  --hint: #95a5a6;\n  --accent: #3c40c6;\n  --divider: #bdc3c7;\n  --basic: \"Mulish\", sans-serif;\n  --default: \"Roboto\", sans-serif;\n  --logo: \"Roboto Condensed\", sans-serif;\n  --shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),\n    0 1px 3px 1px rgba(60, 64, 67, 0.15);\n}\n\nbody {\n  height: 100vh;\n}\n\n.container {\n  min-height: 100vh;\n  display: grid;\n  grid: \"header\" auto \"content\" 1fr \"footer\" auto/auto;\n}\n\nheader {\n  grid-area: header;\n  padding: 2rem;\n  display: flex;\n  flex-flow: row nowrap;\n  justify-content: space-between;\n  align-items: center;\n  background: var(--primary);\n  position: fixed;\n  z-index: 1;\n  width: 100%;\n}\nheader a {\n  color: var(--light);\n  font-weight: 700;\n  letter-spacing: 0.1rem;\n}\nheader .header-brand {\n  font-size: 3rem;\n  font-weight: 700;\n}\nheader .header-brand:hover {\n  color: var(--tertiary);\n}\nheader .header-menu {\n  position: relative;\n}\nheader .header-menu ul {\n  display: flex;\n  margin-right: -0.5rem;\n}\n@media (max-width: 480px) {\n  header .header-menu ul {\n    display: none;\n  }\n}\nheader .header-menu ul li {\n  padding: 1rem;\n  margin-right: 1rem;\n  font-size: 1.5rem;\n}\nheader .header-menu ul li:hover {\n  transition: all 0.2s;\n  cursor: pointer;\n  background-color: var(--secondary);\n  border-radius: 0.2rem;\n  padding: 1rem;\n}\nheader .header-menu ul li:hover a {\n  color: var(--light);\n}\nheader .header-menu ul li .header-brand {\n  font-size: 1.8rem;\n  padding: 0 0.1rem;\n}\nheader .header-menu ul .active {\n  background-color: var(--light);\n  padding: 1rem;\n  border-radius: 0.2rem;\n}\nheader .header-menu ul .active a {\n  color: var(--secondary);\n}\nheader .header-menu-icon {\n  display: none;\n  font-size: 3rem;\n  color: var(--light);\n}\n@media (max-width: 480px) {\n  header .header-menu-icon {\n    display: block;\n  }\n}\nheader .mobile-menu {\n  display: none;\n  position: absolute;\n  top: 5.7rem;\n  right: -2rem;\n  padding: 0.5rem;\n  background-color: var(--primary);\n  box-shadow: var(--shadow);\n}\nheader .mobile-menu ul {\n  display: block;\n}\nheader .mobile-menu ul li {\n  margin: 1rem 2rem;\n}\nheader .mobile-menu.open {\n  display: block;\n}\n\nfooter {\n  grid-area: footer;\n  padding: 2rem;\n  height: 8rem;\n  background-color: var(--dark);\n  color: var(--light);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: bold;\n}\nfooter img {\n  height: 2rem;\n  width: 2rem;\n  margin-bottom: -0.1rem;\n}\nfooter .j {\n  font-family: var(--logo);\n  color: var(--danger);\n}\nfooter .e {\n  font-family: var(--logo);\n  color: var(--danger);\n}",".title {\n  &-underline {\n    padding-bottom: 2rem;\n    border-bottom: 0.1rem solid var(--divider);\n  }\n}\n\n.button {\n  border: 0;\n  border-radius: 0.3rem;\n  padding: 1rem 2rem;\n  font-weight: 700;\n  cursor: pointer;\n  transition: box-shadow 0.2s;\n  &:hover {\n    box-shadow: var(--shadow);\n    opacity: 89%;\n    transition: box-shadow 0.2s;\n  }\n  &-add {\n    background: var(--primary);\n    border: 0.2rem solid var(--primary);\n    color: var(--light);\n  }\n  &-cancel {\n    background: var(--light);\n    border: 0.2rem solid var(--primary);\n    color: var(--primary);\n  }\n  &-edit {\n    margin-right: 2rem;\n    background-color: var(--success);\n    color: var(--light);\n  }\n  &-delete {\n    margin-right: 2rem;\n    background-color: var(--danger);\n    color: var(--light);\n  }\n  &-save {\n    background: var(--primary);\n    border: 0.2rem solid var(--primary);\n    color: var(--light);\n  }\n}\n\n.text {\n  &-valid {\n    color: var(--success);\n    font-weight: bold;\n  }\n  &-error {\n    color: var(--danger);\n    font-weight: bold;\n  }\n  &-detail {\n    color: var(--info);\n    font-weight: bold;\n  }\n}\n","* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n",":root {\n  // main color\n  --primary: #2e86de;\n  --secondary: #54a0ff;\n  --tertiary: #48dbfb;\n\n  // text color\n  --light: #f5f6fa;\n  --medium: #2d98da;\n  --dark: #333;\n\n  // utils => button, border, words etc\n  --success: #06ad3e;\n  --danger: #ea2027;\n  --info: #3867d6;\n  --warning: #fbc531;\n  --hint: #95a5a6;\n\n  // utils => border, words etc\n  --accent: #3c40c6;\n  --divider: #bdc3c7;\n\n  // font-family\n  --basic: \"Mulish\", sans-serif;\n  --default: \"Roboto\", sans-serif;\n  --logo: \"Roboto Condensed\", sans-serif;\n\n  // shadow\n  --shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),\n    0 1px 3px 1px rgba(60, 64, 67, 0.15);\n}\n","body {\n  height: 100vh;\n}\n\n.container {\n  min-height: 100vh;\n  display: grid;\n  grid:\n    \"header\" auto\n    \"content\" 1fr\n    \"footer\" auto /\n    auto;\n}\n","@use \"../partials/media-queries.scss\" as *;\n\nheader {\n  grid-area: header;\n  padding: 2rem;\n  display: flex;\n  flex-flow: row nowrap;\n  justify-content: space-between;\n  align-items: center;\n  background: var(--primary);\n  position: fixed;\n  z-index: 1;\n  width: 100%;\n  a {\n    color: var(--light);\n    font-weight: 700;\n    letter-spacing: 0.1rem;\n  }\n  .header-brand {\n    font-size: 3rem;\n    font-weight: 700;\n    &:hover {\n      color: var(--tertiary);\n    }\n  }\n\n  .header-menu {\n    position: relative;\n    ul {\n      @include phone {\n        display: none;\n      }\n      display: flex;\n      margin-right: -0.5rem;\n      li {\n        padding: 1rem;\n        margin-right: 1rem;\n        font-size: 1.5rem;\n        &:hover {\n          transition: all 0.2s;\n          cursor: pointer;\n          background-color: var(--secondary);\n          border-radius: 0.2rem;\n          padding: 1rem;\n          a {\n            color: var(--light);\n          }\n        }\n        .header-brand {\n          font-size: 1.8rem;\n          padding: 0 0.1rem;\n        }\n      }\n      .active {\n        background-color: var(--light);\n        padding: 1rem;\n        border-radius: 0.2rem;\n        a {\n          color: var(--secondary);\n        }\n      }\n    }\n  }\n  .header-menu-icon {\n    display: none;\n    font-size: 3rem;\n    color: var(--light);\n    @include phone {\n      display: block;\n    }\n  }\n  .mobile-menu {\n    display: none;\n    position: absolute;\n    top: 5.7rem;\n    right: -2rem;\n    padding: 0.5rem;\n    background-color: var(--primary);\n    box-shadow: var(--shadow);\n    ul {\n      display: block;\n      li {\n        margin: 1rem 2rem;\n      }\n    }\n  }\n  .mobile-menu.open {\n    display: block;\n  }\n}\n","@mixin phone {\n  @media (max-width: 480px) {\n    @content;\n  }\n}\n\n@mixin tablet {\n  @media (min-width: 481px) and (max-width: 767px) {\n    @content;\n  }\n}\n\n@mixin laptop {\n  @media (min-width: 768px) and (max-width: 1199px) {\n    @content;\n  }\n}\n\n@mixin computer {\n  @media (min-width: 1200px) {\n    @content;\n  }\n}\n","footer {\n  grid-area: footer;\n  padding: 2rem;\n  height: 8rem;\n  background-color: var(--dark);\n  color: var(--light);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: bold;\n  img {\n    height: 2rem;\n    width: 2rem;\n    margin-bottom: -0.1rem;\n  }\n  .j {\n    font-family: var(--logo);\n    color: var(--danger);\n  }\n\n  .e {\n    font-family: var(--logo);\n    color: var(--danger);\n  }\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/assets/sass/partials/_base.scss","webpack://./src/assets/sass/styles.scss","webpack://./src/assets/sass/partials/_classes.scss","webpack://./src/assets/sass/partials/_reset.scss","webpack://./src/assets/sass/partials/_variables.scss","webpack://./src/assets/sass/layouts/_body.scss","webpack://./src/assets/sass/layouts/_header.scss","webpack://./src/assets/sass/partials/_media-queries.scss","webpack://./src/assets/sass/layouts/_footer.scss"],"names":[],"mappings":"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","sourcesContent":[":root {\n  font-size: 62.5%; // font-size = 10px\n}\n\nbody {\n  font-size: 1.6rem; // 1rem = 10px\n  color: var(--dark);\n  font-family: var(--basic);\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: var(--dark);\n  text-decoration: none;\n}\n",":root {\n  font-size: 62.5%;\n}\n\nbody {\n  font-size: 1.6rem;\n  color: var(--dark);\n  font-family: var(--basic);\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: var(--dark);\n  text-decoration: none;\n}\n\n.title-underline {\n  padding-bottom: 2rem;\n  border-bottom: 0.1rem solid var(--divider);\n}\n\n.button {\n  border: 0;\n  border-radius: 0.3rem;\n  padding: 1rem 2rem;\n  font-weight: 700;\n  cursor: pointer;\n  transition: box-shadow 0.2s;\n}\n.button:hover {\n  box-shadow: var(--shadow);\n  opacity: 89%;\n  transition: box-shadow 0.2s;\n}\n.button-add {\n  background: var(--primary);\n  border: 0.2rem solid var(--primary);\n  color: var(--light);\n}\n.button-cancel {\n  background: var(--light);\n  border: 0.2rem solid var(--primary);\n  color: var(--primary);\n}\n.button-edit {\n  margin-right: 2rem;\n  background-color: var(--success);\n  color: var(--light);\n}\n.button-delete {\n  margin-right: 2rem;\n  background-color: var(--danger);\n  color: var(--light);\n}\n.button-save {\n  background: var(--primary);\n  border: 0.2rem solid var(--primary);\n  color: var(--light);\n}\n\n.text-valid {\n  color: var(--success);\n  font-weight: bold;\n}\n.text-error {\n  color: var(--danger);\n  font-weight: bold;\n}\n.text-detail {\n  color: var(--info);\n  font-weight: bold;\n}\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n:root {\n  --primary: #2e86de;\n  --secondary: #54a0ff;\n  --tertiary: #48dbfb;\n  --light: #f5f6fa;\n  --medium: #2d98da;\n  --dark: #333;\n  --success: #06ad3e;\n  --danger: #ea2027;\n  --info: #3867d6;\n  --warning: #fbc531;\n  --hint: #95a5a6;\n  --accent: #3c40c6;\n  --divider: #bdc3c7;\n  --basic: \"Mulish\", sans-serif;\n  --default: \"Roboto\", sans-serif;\n  --logo: \"Roboto Condensed\", sans-serif;\n  --shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),\n    0 1px 3px 1px rgba(60, 64, 67, 0.15);\n}\n\nbody {\n  height: 100vh;\n}\n\n.container {\n  min-height: 100vh;\n  display: grid;\n  grid: \"header\" auto \"content\" 1fr \"footer\" auto/auto;\n}\n\nheader {\n  grid-area: header;\n  padding: 2rem;\n  display: flex;\n  flex-flow: row nowrap;\n  justify-content: space-between;\n  align-items: center;\n  background: var(--primary);\n  position: fixed;\n  z-index: 1;\n  width: 100%;\n}\nheader a {\n  color: var(--light);\n  font-weight: 700;\n  letter-spacing: 0.1rem;\n}\nheader .header-brand {\n  font-size: 3rem;\n  font-weight: 700;\n}\nheader .header-brand:hover {\n  color: var(--tertiary);\n}\nheader .header-menu {\n  position: relative;\n}\nheader .header-menu ul {\n  display: flex;\n  margin-right: -0.5rem;\n}\n@media (max-width: 480px) {\n  header .header-menu ul {\n    display: none;\n  }\n}\nheader .header-menu ul li {\n  margin-left: 1rem;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\nheader .header-menu ul li a {\n  padding: 1rem 2rem 1rem 2rem;\n  font-size: 1.5rem;\n  border-radius: 0.2rem;\n  cursor: pointer;\n  transition: all 0.2s;\n}\nheader .header-menu ul li a:hover {\n  transition: all 0.2s;\n  background-color: var(--secondary);\n  color: var(--light);\n}\nheader .header-menu ul li a .header-brand {\n  font-size: 1.8rem;\n  padding: 0 0.1rem;\n}\nheader .header-menu ul .active {\n  background-color: var(--light);\n  border-radius: 0.2rem;\n}\nheader .header-menu ul .active a {\n  color: var(--secondary);\n}\nheader .header-menu-icon {\n  display: none;\n  font-size: 3rem;\n  color: var(--light);\n}\n@media (max-width: 480px) {\n  header .header-menu-icon {\n    display: block;\n  }\n}\nheader .mobile-menu {\n  display: none;\n  position: absolute;\n  top: 5.7rem;\n  right: -2rem;\n  padding: 0.5rem;\n  background-color: var(--primary);\n  box-shadow: var(--shadow);\n}\nheader .mobile-menu ul {\n  display: block;\n}\nheader .mobile-menu ul li {\n  margin: 1rem 2rem;\n}\nheader .mobile-menu.open {\n  display: block;\n}\n\nfooter {\n  grid-area: footer;\n  padding: 2rem;\n  height: 8rem;\n  background-color: var(--dark);\n  color: var(--light);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: bold;\n}\nfooter img {\n  height: 2rem;\n  width: 2rem;\n  margin-bottom: -0.1rem;\n}\nfooter .j {\n  font-family: var(--logo);\n  color: var(--danger);\n}\nfooter .e {\n  font-family: var(--logo);\n  color: var(--danger);\n}",".title {\n  &-underline {\n    padding-bottom: 2rem;\n    border-bottom: 0.1rem solid var(--divider);\n  }\n}\n\n.button {\n  border: 0;\n  border-radius: 0.3rem;\n  padding: 1rem 2rem;\n  font-weight: 700;\n  cursor: pointer;\n  transition: box-shadow 0.2s;\n  &:hover {\n    box-shadow: var(--shadow);\n    opacity: 89%;\n    transition: box-shadow 0.2s;\n  }\n  &-add {\n    background: var(--primary);\n    border: 0.2rem solid var(--primary);\n    color: var(--light);\n  }\n  &-cancel {\n    background: var(--light);\n    border: 0.2rem solid var(--primary);\n    color: var(--primary);\n  }\n  &-edit {\n    margin-right: 2rem;\n    background-color: var(--success);\n    color: var(--light);\n  }\n  &-delete {\n    margin-right: 2rem;\n    background-color: var(--danger);\n    color: var(--light);\n  }\n  &-save {\n    background: var(--primary);\n    border: 0.2rem solid var(--primary);\n    color: var(--light);\n  }\n}\n\n.text {\n  &-valid {\n    color: var(--success);\n    font-weight: bold;\n  }\n  &-error {\n    color: var(--danger);\n    font-weight: bold;\n  }\n  &-detail {\n    color: var(--info);\n    font-weight: bold;\n  }\n}\n","* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n",":root {\n  // main color\n  --primary: #2e86de;\n  --secondary: #54a0ff;\n  --tertiary: #48dbfb;\n\n  // text color\n  --light: #f5f6fa;\n  --medium: #2d98da;\n  --dark: #333;\n\n  // utils => button, border, words etc\n  --success: #06ad3e;\n  --danger: #ea2027;\n  --info: #3867d6;\n  --warning: #fbc531;\n  --hint: #95a5a6;\n\n  // utils => border, words etc\n  --accent: #3c40c6;\n  --divider: #bdc3c7;\n\n  // font-family\n  --basic: \"Mulish\", sans-serif;\n  --default: \"Roboto\", sans-serif;\n  --logo: \"Roboto Condensed\", sans-serif;\n\n  // shadow\n  --shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3),\n    0 1px 3px 1px rgba(60, 64, 67, 0.15);\n}\n","body {\n  height: 100vh;\n}\n\n.container {\n  min-height: 100vh;\n  display: grid;\n  grid:\n    \"header\" auto\n    \"content\" 1fr\n    \"footer\" auto /\n    auto;\n}\n","@use \"../partials/media-queries.scss\" as *;\n\nheader {\n  grid-area: header;\n  padding: 2rem;\n  display: flex;\n  flex-flow: row nowrap;\n  justify-content: space-between;\n  align-items: center;\n  background: var(--primary);\n  position: fixed;\n  z-index: 1;\n  width: 100%;\n  a {\n    color: var(--light);\n    font-weight: 700;\n    letter-spacing: 0.1rem;\n  }\n  .header-brand {\n    font-size: 3rem;\n    font-weight: 700;\n    &:hover {\n      color: var(--tertiary);\n    }\n  }\n\n  .header-menu {\n    position: relative;\n    ul {\n      @include phone {\n        display: none;\n      }\n      display: flex;\n      margin-right: -0.5rem;\n      li {\n        margin-left: 1rem;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        a {\n          padding: 1rem 2rem 1rem 2rem;\n          font-size: 1.5rem;\n          border-radius: 0.2rem;\n          cursor: pointer;\n          transition: all 0.2s;\n          &:hover {\n            transition: all 0.2s;\n            background-color: var(--secondary);\n            color: var(--light);\n          }\n          .header-brand {\n            font-size: 1.8rem;\n            padding: 0 0.1rem;\n          }\n        }\n      }\n      .active {\n        background-color: var(--light);\n        border-radius: 0.2rem;\n        a {\n          color: var(--secondary);\n        }\n      }\n    }\n  }\n  .header-menu-icon {\n    display: none;\n    font-size: 3rem;\n    color: var(--light);\n    @include phone {\n      display: block;\n    }\n  }\n  .mobile-menu {\n    display: none;\n    position: absolute;\n    top: 5.7rem;\n    right: -2rem;\n    padding: 0.5rem;\n    background-color: var(--primary);\n    box-shadow: var(--shadow);\n    ul {\n      display: block;\n      li {\n        margin: 1rem 2rem;\n      }\n    }\n  }\n  .mobile-menu.open {\n    display: block;\n  }\n}\n","@mixin phone {\n  @media (max-width: 480px) {\n    @content;\n  }\n}\n\n@mixin tablet {\n  @media (min-width: 481px) and (max-width: 767px) {\n    @content;\n  }\n}\n\n@mixin laptop {\n  @media (min-width: 768px) and (max-width: 1199px) {\n    @content;\n  }\n}\n\n@mixin computer {\n  @media (min-width: 1200px) {\n    @content;\n  }\n}\n","footer {\n  grid-area: footer;\n  padding: 2rem;\n  height: 8rem;\n  background-color: var(--dark);\n  color: var(--light);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: bold;\n  img {\n    height: 2rem;\n    width: 2rem;\n    margin-bottom: -0.1rem;\n  }\n  .j {\n    font-family: var(--logo);\n    color: var(--danger);\n  }\n\n  .e {\n    font-family: var(--logo);\n    color: var(--danger);\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -8423,32 +8451,34 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! core-js/modules/es.array.concat.js */ "./node_modules/core-js/modules/es.array.concat.js");
 /* harmony import */ var core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! core-js/modules/es.object.define-property.js */ "./node_modules/core-js/modules/es.object.define-property.js");
-/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! core-js/modules/es.symbol.js */ "./node_modules/core-js/modules/es.symbol.js");
-/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! core-js/modules/es.symbol.description.js */ "./node_modules/core-js/modules/es.symbol.description.js");
-/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! core-js/modules/es.symbol.iterator.js */ "./node_modules/core-js/modules/es.symbol.iterator.js");
-/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var core_js_modules_es_symbol_async_iterator_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! core-js/modules/es.symbol.async-iterator.js */ "./node_modules/core-js/modules/es.symbol.async-iterator.js");
-/* harmony import */ var core_js_modules_es_symbol_async_iterator_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_async_iterator_js__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var core_js_modules_es_symbol_to_string_tag_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! core-js/modules/es.symbol.to-string-tag.js */ "./node_modules/core-js/modules/es.symbol.to-string-tag.js");
-/* harmony import */ var core_js_modules_es_symbol_to_string_tag_js__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_to_string_tag_js__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var core_js_modules_es_json_to_string_tag_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! core-js/modules/es.json.to-string-tag.js */ "./node_modules/core-js/modules/es.json.to-string-tag.js");
-/* harmony import */ var core_js_modules_es_json_to_string_tag_js__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_json_to_string_tag_js__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var core_js_modules_es_math_to_string_tag_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! core-js/modules/es.math.to-string-tag.js */ "./node_modules/core-js/modules/es.math.to-string-tag.js");
-/* harmony import */ var core_js_modules_es_math_to_string_tag_js__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_math_to_string_tag_js__WEBPACK_IMPORTED_MODULE_15__);
-/* harmony import */ var core_js_modules_es_object_get_prototype_of_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! core-js/modules/es.object.get-prototype-of.js */ "./node_modules/core-js/modules/es.object.get-prototype-of.js");
-/* harmony import */ var core_js_modules_es_object_get_prototype_of_js__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_get_prototype_of_js__WEBPACK_IMPORTED_MODULE_16__);
-/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! core-js/modules/web.dom-collections.for-each.js */ "./node_modules/core-js/modules/web.dom-collections.for-each.js");
-/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_17__);
-/* harmony import */ var core_js_modules_es_object_set_prototype_of_js__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! core-js/modules/es.object.set-prototype-of.js */ "./node_modules/core-js/modules/es.object.set-prototype-of.js");
-/* harmony import */ var core_js_modules_es_object_set_prototype_of_js__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_set_prototype_of_js__WEBPACK_IMPORTED_MODULE_18__);
-/* harmony import */ var core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! core-js/modules/es.array.slice.js */ "./node_modules/core-js/modules/es.array.slice.js");
-/* harmony import */ var core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_19__);
-/* harmony import */ var _assets_sass_styles_scss__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../assets/sass/styles.scss */ "./src/assets/sass/styles.scss");
-/* harmony import */ var _editform_scss__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./editform.scss */ "./src/editform/editform.scss");
+/* harmony import */ var core_js_modules_es_object_from_entries_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! core-js/modules/es.object.from-entries.js */ "./node_modules/core-js/modules/es.object.from-entries.js");
+/* harmony import */ var core_js_modules_es_object_from_entries_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_from_entries_js__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! core-js/modules/es.object.define-property.js */ "./node_modules/core-js/modules/es.object.define-property.js");
+/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! core-js/modules/es.symbol.js */ "./node_modules/core-js/modules/es.symbol.js");
+/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! core-js/modules/es.symbol.description.js */ "./node_modules/core-js/modules/es.symbol.description.js");
+/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! core-js/modules/es.symbol.iterator.js */ "./node_modules/core-js/modules/es.symbol.iterator.js");
+/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var core_js_modules_es_symbol_async_iterator_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! core-js/modules/es.symbol.async-iterator.js */ "./node_modules/core-js/modules/es.symbol.async-iterator.js");
+/* harmony import */ var core_js_modules_es_symbol_async_iterator_js__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_async_iterator_js__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var core_js_modules_es_symbol_to_string_tag_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! core-js/modules/es.symbol.to-string-tag.js */ "./node_modules/core-js/modules/es.symbol.to-string-tag.js");
+/* harmony import */ var core_js_modules_es_symbol_to_string_tag_js__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_to_string_tag_js__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var core_js_modules_es_json_to_string_tag_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! core-js/modules/es.json.to-string-tag.js */ "./node_modules/core-js/modules/es.json.to-string-tag.js");
+/* harmony import */ var core_js_modules_es_json_to_string_tag_js__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_json_to_string_tag_js__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var core_js_modules_es_math_to_string_tag_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! core-js/modules/es.math.to-string-tag.js */ "./node_modules/core-js/modules/es.math.to-string-tag.js");
+/* harmony import */ var core_js_modules_es_math_to_string_tag_js__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_math_to_string_tag_js__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var core_js_modules_es_object_get_prototype_of_js__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! core-js/modules/es.object.get-prototype-of.js */ "./node_modules/core-js/modules/es.object.get-prototype-of.js");
+/* harmony import */ var core_js_modules_es_object_get_prototype_of_js__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_get_prototype_of_js__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! core-js/modules/web.dom-collections.for-each.js */ "./node_modules/core-js/modules/web.dom-collections.for-each.js");
+/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_18__);
+/* harmony import */ var core_js_modules_es_object_set_prototype_of_js__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! core-js/modules/es.object.set-prototype-of.js */ "./node_modules/core-js/modules/es.object.set-prototype-of.js");
+/* harmony import */ var core_js_modules_es_object_set_prototype_of_js__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_set_prototype_of_js__WEBPACK_IMPORTED_MODULE_19__);
+/* harmony import */ var core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! core-js/modules/es.array.slice.js */ "./node_modules/core-js/modules/es.array.slice.js");
+/* harmony import */ var core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_20__);
+/* harmony import */ var _assets_sass_styles_scss__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../assets/sass/styles.scss */ "./src/assets/sass/styles.scss");
+/* harmony import */ var _editform_scss__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./editform.scss */ "./src/editform/editform.scss");
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return exports; }; var exports = {}, Op = Object.prototype, hasOwn = Op.hasOwnProperty, defineProperty = Object.defineProperty || function (obj, key, desc) { obj[key] = desc.value; }, $Symbol = "function" == typeof Symbol ? Symbol : {}, iteratorSymbol = $Symbol.iterator || "@@iterator", asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator", toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag"; function define(obj, key, value) { return Object.defineProperty(obj, key, { value: value, enumerable: !0, configurable: !0, writable: !0 }), obj[key]; } try { define({}, ""); } catch (err) { define = function define(obj, key, value) { return obj[key] = value; }; } function wrap(innerFn, outerFn, self, tryLocsList) { var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator, generator = Object.create(protoGenerator.prototype), context = new Context(tryLocsList || []); return defineProperty(generator, "_invoke", { value: makeInvokeMethod(innerFn, self, context) }), generator; } function tryCatch(fn, obj, arg) { try { return { type: "normal", arg: fn.call(obj, arg) }; } catch (err) { return { type: "throw", arg: err }; } } exports.wrap = wrap; var ContinueSentinel = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var IteratorPrototype = {}; define(IteratorPrototype, iteratorSymbol, function () { return this; }); var getProto = Object.getPrototypeOf, NativeIteratorPrototype = getProto && getProto(getProto(values([]))); NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol) && (IteratorPrototype = NativeIteratorPrototype); var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype); function defineIteratorMethods(prototype) { ["next", "throw", "return"].forEach(function (method) { define(prototype, method, function (arg) { return this._invoke(method, arg); }); }); } function AsyncIterator(generator, PromiseImpl) { function invoke(method, arg, resolve, reject) { var record = tryCatch(generator[method], generator, arg); if ("throw" !== record.type) { var result = record.arg, value = result.value; return value && "object" == _typeof(value) && hasOwn.call(value, "__await") ? PromiseImpl.resolve(value.__await).then(function (value) { invoke("next", value, resolve, reject); }, function (err) { invoke("throw", err, resolve, reject); }) : PromiseImpl.resolve(value).then(function (unwrapped) { result.value = unwrapped, resolve(result); }, function (error) { return invoke("throw", error, resolve, reject); }); } reject(record.arg); } var previousPromise; defineProperty(this, "_invoke", { value: function value(method, arg) { function callInvokeWithMethodAndArg() { return new PromiseImpl(function (resolve, reject) { invoke(method, arg, resolve, reject); }); } return previousPromise = previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(innerFn, self, context) { var state = "suspendedStart"; return function (method, arg) { if ("executing" === state) throw new Error("Generator is already running"); if ("completed" === state) { if ("throw" === method) throw arg; return { value: void 0, done: !0 }; } for (context.method = method, context.arg = arg;;) { var delegate = context.delegate; if (delegate) { var delegateResult = maybeInvokeDelegate(delegate, context); if (delegateResult) { if (delegateResult === ContinueSentinel) continue; return delegateResult; } } if ("next" === context.method) context.sent = context._sent = context.arg;else if ("throw" === context.method) { if ("suspendedStart" === state) throw state = "completed", context.arg; context.dispatchException(context.arg); } else "return" === context.method && context.abrupt("return", context.arg); state = "executing"; var record = tryCatch(innerFn, self, context); if ("normal" === record.type) { if (state = context.done ? "completed" : "suspendedYield", record.arg === ContinueSentinel) continue; return { value: record.arg, done: context.done }; } "throw" === record.type && (state = "completed", context.method = "throw", context.arg = record.arg); } }; } function maybeInvokeDelegate(delegate, context) { var methodName = context.method, method = delegate.iterator[methodName]; if (undefined === method) return context.delegate = null, "throw" === methodName && delegate.iterator.return && (context.method = "return", context.arg = undefined, maybeInvokeDelegate(delegate, context), "throw" === context.method) || "return" !== methodName && (context.method = "throw", context.arg = new TypeError("The iterator does not provide a '" + methodName + "' method")), ContinueSentinel; var record = tryCatch(method, delegate.iterator, context.arg); if ("throw" === record.type) return context.method = "throw", context.arg = record.arg, context.delegate = null, ContinueSentinel; var info = record.arg; return info ? info.done ? (context[delegate.resultName] = info.value, context.next = delegate.nextLoc, "return" !== context.method && (context.method = "next", context.arg = undefined), context.delegate = null, ContinueSentinel) : info : (context.method = "throw", context.arg = new TypeError("iterator result is not an object"), context.delegate = null, ContinueSentinel); } function pushTryEntry(locs) { var entry = { tryLoc: locs[0] }; 1 in locs && (entry.catchLoc = locs[1]), 2 in locs && (entry.finallyLoc = locs[2], entry.afterLoc = locs[3]), this.tryEntries.push(entry); } function resetTryEntry(entry) { var record = entry.completion || {}; record.type = "normal", delete record.arg, entry.completion = record; } function Context(tryLocsList) { this.tryEntries = [{ tryLoc: "root" }], tryLocsList.forEach(pushTryEntry, this), this.reset(!0); } function values(iterable) { if (iterable || "" === iterable) { var iteratorMethod = iterable[iteratorSymbol]; if (iteratorMethod) return iteratorMethod.call(iterable); if ("function" == typeof iterable.next) return iterable; if (!isNaN(iterable.length)) { var i = -1, next = function next() { for (; ++i < iterable.length;) if (hasOwn.call(iterable, i)) return next.value = iterable[i], next.done = !1, next; return next.value = undefined, next.done = !0, next; }; return next.next = next; } } throw new TypeError(_typeof(iterable) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, defineProperty(Gp, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), defineProperty(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction"), exports.isGeneratorFunction = function (genFun) { var ctor = "function" == typeof genFun && genFun.constructor; return !!ctor && (ctor === GeneratorFunction || "GeneratorFunction" === (ctor.displayName || ctor.name)); }, exports.mark = function (genFun) { return Object.setPrototypeOf ? Object.setPrototypeOf(genFun, GeneratorFunctionPrototype) : (genFun.__proto__ = GeneratorFunctionPrototype, define(genFun, toStringTagSymbol, "GeneratorFunction")), genFun.prototype = Object.create(Gp), genFun; }, exports.awrap = function (arg) { return { __await: arg }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, asyncIteratorSymbol, function () { return this; }), exports.AsyncIterator = AsyncIterator, exports.async = function (innerFn, outerFn, self, tryLocsList, PromiseImpl) { void 0 === PromiseImpl && (PromiseImpl = Promise); var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList), PromiseImpl); return exports.isGeneratorFunction(outerFn) ? iter : iter.next().then(function (result) { return result.done ? result.value : iter.next(); }); }, defineIteratorMethods(Gp), define(Gp, toStringTagSymbol, "Generator"), define(Gp, iteratorSymbol, function () { return this; }), define(Gp, "toString", function () { return "[object Generator]"; }), exports.keys = function (val) { var object = Object(val), keys = []; for (var key in object) keys.push(key); return keys.reverse(), function next() { for (; keys.length;) { var key = keys.pop(); if (key in object) return next.value = key, next.done = !1, next; } return next.done = !0, next; }; }, exports.values = values, Context.prototype = { constructor: Context, reset: function reset(skipTempReset) { if (this.prev = 0, this.next = 0, this.sent = this._sent = undefined, this.done = !1, this.delegate = null, this.method = "next", this.arg = undefined, this.tryEntries.forEach(resetTryEntry), !skipTempReset) for (var name in this) "t" === name.charAt(0) && hasOwn.call(this, name) && !isNaN(+name.slice(1)) && (this[name] = undefined); }, stop: function stop() { this.done = !0; var rootRecord = this.tryEntries[0].completion; if ("throw" === rootRecord.type) throw rootRecord.arg; return this.rval; }, dispatchException: function dispatchException(exception) { if (this.done) throw exception; var context = this; function handle(loc, caught) { return record.type = "throw", record.arg = exception, context.next = loc, caught && (context.method = "next", context.arg = undefined), !!caught; } for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i], record = entry.completion; if ("root" === entry.tryLoc) return handle("end"); if (entry.tryLoc <= this.prev) { var hasCatch = hasOwn.call(entry, "catchLoc"), hasFinally = hasOwn.call(entry, "finallyLoc"); if (hasCatch && hasFinally) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } else if (hasCatch) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); } else { if (!hasFinally) throw new Error("try statement without catch or finally"); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } } } }, abrupt: function abrupt(type, arg) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) { var finallyEntry = entry; break; } } finallyEntry && ("break" === type || "continue" === type) && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc && (finallyEntry = null); var record = finallyEntry ? finallyEntry.completion : {}; return record.type = type, record.arg = arg, finallyEntry ? (this.method = "next", this.next = finallyEntry.finallyLoc, ContinueSentinel) : this.complete(record); }, complete: function complete(record, afterLoc) { if ("throw" === record.type) throw record.arg; return "break" === record.type || "continue" === record.type ? this.next = record.arg : "return" === record.type ? (this.rval = this.arg = record.arg, this.method = "return", this.next = "end") : "normal" === record.type && afterLoc && (this.next = afterLoc), ContinueSentinel; }, finish: function finish(finallyLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.finallyLoc === finallyLoc) return this.complete(entry.completion, entry.afterLoc), resetTryEntry(entry), ContinueSentinel; } }, catch: function _catch(tryLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc === tryLoc) { var record = entry.completion; if ("throw" === record.type) { var thrown = record.arg; resetTryEntry(entry); } return thrown; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(iterable, resultName, nextLoc) { return this.delegate = { iterator: values(iterable), resultName: resultName, nextLoc: nextLoc }, "next" === this.method && (this.arg = undefined), ContinueSentinel; } }, exports; }
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -8475,19 +8505,22 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 
 
+
 var params = new URL(location.href);
 var photoId = params.searchParams.get("id");
+var form = document.querySelector("form");
 var buttonCancel = document.querySelector(".button-cancel");
+var textInfoContent = document.querySelector("#text-info-content");
+console.log(form);
 var fillForm = function fillForm(formPhoto) {
   var picture = document.querySelector("select[name='picture']");
   var category = document.querySelector("input[value='".concat(formPhoto.category, "']"));
+  var photographer = document.querySelector("select[name='photographer']");
   var content = document.querySelector("textarea");
-  console.log(picture);
-  console.log(category);
-  console.log(content);
   picture.value = formPhoto.picture;
   category.value = formPhoto.category;
   category.setAttribute("checked", "".concat(formPhoto.category));
+  photographer.value = formPhoto.photographer;
   content.value = formPhoto.content;
 };
 var initForm = /*#__PURE__*/function () {
@@ -8497,7 +8530,7 @@ var initForm = /*#__PURE__*/function () {
       while (1) switch (_context.prev = _context.next) {
         case 0:
           if (!photoId) {
-            _context.next = 109;
+            _context.next = 108;
             break;
           }
           _context.next = 3;
@@ -8505,7 +8538,7 @@ var initForm = /*#__PURE__*/function () {
         case 3:
           response = _context.sent;
           if (!(response.status < 300)) {
-            _context.next = 109;
+            _context.next = 108;
             break;
           }
           _context.next = 7;
@@ -8513,148 +8546,147 @@ var initForm = /*#__PURE__*/function () {
         case 7:
           formPhoto = _context.sent;
           fillForm(formPhoto);
-          console.log(formPhoto);
           containerNamePhoto = document.querySelector(".container-name-photo");
           containerNamePhoto.innerHTML = "<h3>".concat(formPhoto.picture, "</h3>");
           containerDetailPhoto = document.querySelector(".container-detail-photo");
           containerDetailPhoto.innerHTML = "<img src=\"".concat(formPhoto.picture, "\" alt=\"").concat(formPhoto.picture, "\" />");
           formPhotoImg = containerDetailPhoto.querySelector("img");
           _context.t0 = formPhoto.picture;
-          _context.next = _context.t0 === "Un Désert en Cisjordanie" ? 18 : _context.t0 === "Un Désert en Jordanie" ? 20 : _context.t0 === "Un Désert au Maroc" ? 22 : _context.t0 === "Un Désert en Namibie (Océan Atlantique)" ? 24 : _context.t0 === "Un Désert en Oman" ? 26 : _context.t0 === "Un Désert au Pérou" ? 28 : _context.t0 === "Un Désert en Arabie Saoudite" ? 30 : _context.t0 === "Un Désert en Namibie (Sud-Ouest)" ? 32 : _context.t0 === "Le Désert du Sahara (Soir)" ? 34 : _context.t0 === "Sable Blanc du Nouveau-Mexique (USA)" ? 36 : 38;
+          _context.next = _context.t0 === "Un Désert en Cisjordanie" ? 17 : _context.t0 === "Un Désert en Jordanie" ? 19 : _context.t0 === "Un Désert au Maroc" ? 21 : _context.t0 === "Un Désert en Namibie (Océan Atlantique)" ? 23 : _context.t0 === "Un Désert en Oman" ? 25 : _context.t0 === "Un Désert au Pérou" ? 27 : _context.t0 === "Un Désert en Arabie Saoudite" ? 29 : _context.t0 === "Un Désert en Namibie (Sud-Ouest)" ? 31 : _context.t0 === "Le Désert du Sahara (Soir)" ? 33 : _context.t0 === "Sable Blanc du Nouveau-Mexique (USA)" ? 35 : 37;
           break;
-        case 18:
+        case 17:
           formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-cj.jpg";
-          return _context.abrupt("break", 38);
-        case 20:
+          return _context.abrupt("break", 37);
+        case 19:
           formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-jo.jpg";
-          return _context.abrupt("break", 38);
-        case 22:
+          return _context.abrupt("break", 37);
+        case 21:
           formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-ma.jpg";
-          return _context.abrupt("break", 38);
-        case 24:
+          return _context.abrupt("break", 37);
+        case 23:
           formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-oa-na.jpg";
-          return _context.abrupt("break", 38);
-        case 26:
+          return _context.abrupt("break", 37);
+        case 25:
           formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-om.jpg";
-          return _context.abrupt("break", 38);
-        case 28:
+          return _context.abrupt("break", 37);
+        case 27:
           formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-pe.jpg";
-          return _context.abrupt("break", 38);
-        case 30:
+          return _context.abrupt("break", 37);
+        case 29:
           formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-sa.jpg";
-          return _context.abrupt("break", 38);
-        case 32:
+          return _context.abrupt("break", 37);
+        case 31:
           formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-so-na.jpg";
-          return _context.abrupt("break", 38);
-        case 34:
+          return _context.abrupt("break", 37);
+        case 33:
           formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-soir-eh.jpg";
-          return _context.abrupt("break", 38);
-        case 36:
+          return _context.abrupt("break", 37);
+        case 35:
           formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/sable-blanc-detail-nmex-us.jpg";
-          return _context.abrupt("break", 38);
-        case 38:
+          return _context.abrupt("break", 37);
+        case 37:
           _context.t1 = formPhoto.picture;
-          _context.next = _context.t1 === "Une Forêt en Australie" ? 41 : _context.t1 === "Une Forêt au Canada" ? 43 : _context.t1 === "Une Forêt en Finlande" ? 45 : _context.t1 === "Une Forêt en Croatie" ? 47 : _context.t1 === "Une Forêt en Inde" ? 49 : _context.t1 === "Une Forêt en Italie" ? 51 : _context.t1 === "Une Forêt au Japon" ? 53 : _context.t1 === "La Forêt des Loups" ? 55 : _context.t1 === "Une Forêt au Nouvelle-Zélande" ? 57 : _context.t1 === "Une Forêt en Washington (USA)" ? 59 : 61;
+          _context.next = _context.t1 === "Une Forêt en Australie" ? 40 : _context.t1 === "Une Forêt au Canada" ? 42 : _context.t1 === "Une Forêt en Finlande" ? 44 : _context.t1 === "Une Forêt en Croatie" ? 46 : _context.t1 === "Une Forêt en Inde" ? 48 : _context.t1 === "Une Forêt en Italie" ? 50 : _context.t1 === "Une Forêt au Japon" ? 52 : _context.t1 === "La Forêt des Loups" ? 54 : _context.t1 === "Une Forêt au Nouvelle-Zélande" ? 56 : _context.t1 === "Une Forêt en Washington (USA)" ? 58 : 60;
           break;
-        case 41:
+        case 40:
           formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-au.jpg";
-          return _context.abrupt("break", 61);
-        case 43:
+          return _context.abrupt("break", 60);
+        case 42:
           formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-ca.jpg";
-          return _context.abrupt("break", 61);
-        case 45:
+          return _context.abrupt("break", 60);
+        case 44:
           formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-fi.jpg";
-          return _context.abrupt("break", 61);
-        case 47:
+          return _context.abrupt("break", 60);
+        case 46:
           formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-hr.jpg";
-          return _context.abrupt("break", 61);
-        case 49:
+          return _context.abrupt("break", 60);
+        case 48:
           formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-in.jpg";
-          return _context.abrupt("break", 61);
-        case 51:
+          return _context.abrupt("break", 60);
+        case 50:
           formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-it.jpg";
-          return _context.abrupt("break", 61);
-        case 53:
+          return _context.abrupt("break", 60);
+        case 52:
           formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-jp.jpg";
-          return _context.abrupt("break", 61);
-        case 55:
+          return _context.abrupt("break", 60);
+        case 54:
           formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-loups.jpg";
-          return _context.abrupt("break", 61);
-        case 57:
+          return _context.abrupt("break", 60);
+        case 56:
           formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-nz.jpg";
-          return _context.abrupt("break", 61);
-        case 59:
+          return _context.abrupt("break", 60);
+        case 58:
           formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-wash-us.jpg";
-          return _context.abrupt("break", 61);
-        case 61:
+          return _context.abrupt("break", 60);
+        case 60:
           _context.t2 = formPhoto.picture;
-          _context.next = _context.t2 === "Une Plage en Australie" ? 64 : _context.t2 === "Une Plage au Brésil" ? 66 : _context.t2 === "Une Plage en Grande-Bretagne" ? 68 : _context.t2 === "Une Plage en Italie" ? 70 : _context.t2 === "Une Plage en Madagascar" ? 72 : _context.t2 === "Une Plage au Mexique" ? 74 : _context.t2 === "Une Plage en Nouvelle-Calédonie" ? 76 : _context.t2 === "Une Plage en Polynésie Française" ? 78 : _context.t2 === "Une Plage aux Sychelles" ? 80 : _context.t2 === "Une Plage en Thaïlande" ? 82 : 84;
+          _context.next = _context.t2 === "Une Plage en Australie" ? 63 : _context.t2 === "Une Plage au Brésil" ? 65 : _context.t2 === "Une Plage en Grande-Bretagne" ? 67 : _context.t2 === "Une Plage en Italie" ? 69 : _context.t2 === "Une Plage en Madagascar" ? 71 : _context.t2 === "Une Plage au Mexique" ? 73 : _context.t2 === "Une Plage en Nouvelle-Calédonie" ? 75 : _context.t2 === "Une Plage en Polynésie Française" ? 77 : _context.t2 === "Une Plage aux Sychelles" ? 79 : _context.t2 === "Une Plage en Thaïlande" ? 81 : 83;
           break;
-        case 64:
+        case 63:
           formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-au.jpg";
-          return _context.abrupt("break", 84);
-        case 66:
+          return _context.abrupt("break", 83);
+        case 65:
           formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-br.jpg";
-          return _context.abrupt("break", 84);
-        case 68:
+          return _context.abrupt("break", 83);
+        case 67:
           formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-gb.jpg";
-          return _context.abrupt("break", 84);
-        case 70:
+          return _context.abrupt("break", 83);
+        case 69:
           formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-it.jpg";
-          return _context.abrupt("break", 84);
-        case 72:
+          return _context.abrupt("break", 83);
+        case 71:
           formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-mg.jpg";
-          return _context.abrupt("break", 84);
-        case 74:
+          return _context.abrupt("break", 83);
+        case 73:
           formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-mx.jpg";
-          return _context.abrupt("break", 84);
-        case 76:
+          return _context.abrupt("break", 83);
+        case 75:
           formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-nc.jpg";
-          return _context.abrupt("break", 84);
-        case 78:
+          return _context.abrupt("break", 83);
+        case 77:
           formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-pf.jpg";
-          return _context.abrupt("break", 84);
-        case 80:
+          return _context.abrupt("break", 83);
+        case 79:
           formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-sc.jpg";
-          return _context.abrupt("break", 84);
-        case 82:
+          return _context.abrupt("break", 83);
+        case 81:
           formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-th.jpg";
-          return _context.abrupt("break", 84);
-        case 84:
+          return _context.abrupt("break", 83);
+        case 83:
           _context.t3 = formPhoto.picture;
-          _context.next = _context.t3 === "Une Ville au Chili" ? 87 : _context.t3 === "Une Ville en Chine" ? 89 : _context.t3 === "Une Ville en Colombie" ? 91 : _context.t3 === "Une Ville en France" ? 93 : _context.t3 === "Une Ville en Grande-Bretagne" ? 95 : _context.t3 === "Une Ville au Japon (Jour)" ? 97 : _context.t3 === "Une Ville en Koweït" ? 99 : _context.t3 === "Une Ville en Norvège" ? 101 : _context.t3 === "Une Ville Rural d'Allemagne" ? 103 : _context.t3 === "Une Ville d'Italie (Soir)" ? 105 : 107;
+          _context.next = _context.t3 === "Une Ville au Chili" ? 86 : _context.t3 === "Une Ville en Chine" ? 88 : _context.t3 === "Une Ville en Colombie" ? 90 : _context.t3 === "Une Ville en France" ? 92 : _context.t3 === "Une Ville en Grande-Bretagne" ? 94 : _context.t3 === "Une Ville au Japon (Jour)" ? 96 : _context.t3 === "Une Ville en Koweït" ? 98 : _context.t3 === "Une Ville en Norvège" ? 100 : _context.t3 === "Une Ville Rural d'Allemagne" ? 102 : _context.t3 === "Une Ville d'Italie (Soir)" ? 104 : 106;
           break;
-        case 87:
+        case 86:
           formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-cl.jpg";
-          return _context.abrupt("break", 107);
-        case 89:
+          return _context.abrupt("break", 106);
+        case 88:
           formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-cn.jpg";
-          return _context.abrupt("break", 107);
-        case 91:
+          return _context.abrupt("break", 106);
+        case 90:
           formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-co.jpg";
-          return _context.abrupt("break", 107);
-        case 93:
+          return _context.abrupt("break", 106);
+        case 92:
           formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-fr.jpg";
-          return _context.abrupt("break", 107);
-        case 95:
+          return _context.abrupt("break", 106);
+        case 94:
           formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-gb.jpg";
-          return _context.abrupt("break", 107);
-        case 97:
+          return _context.abrupt("break", 106);
+        case 96:
           formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-jour-jp.jpg";
-          return _context.abrupt("break", 107);
-        case 99:
+          return _context.abrupt("break", 106);
+        case 98:
           formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-kw.jpg";
-          return _context.abrupt("break", 107);
-        case 101:
+          return _context.abrupt("break", 106);
+        case 100:
           formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-no.jpg";
-          return _context.abrupt("break", 107);
-        case 103:
+          return _context.abrupt("break", 106);
+        case 102:
           formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-rural-ge.jpg";
-          return _context.abrupt("break", 107);
-        case 105:
+          return _context.abrupt("break", 106);
+        case 104:
           formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-soir-it.jpg";
-          return _context.abrupt("break", 107);
-        case 107:
+          return _context.abrupt("break", 106);
+        case 106:
           select = document.querySelector("select");
           select.addEventListener("change", function (event) {
             var selectName = event.target.value;
@@ -8907,7 +8939,7 @@ var initForm = /*#__PURE__*/function () {
                 }
             }
           });
-        case 109:
+        case 108:
         case "end":
           return _context.stop();
       }
@@ -8917,9 +8949,71 @@ var initForm = /*#__PURE__*/function () {
     return _ref.apply(this, arguments);
   };
 }();
+form.addEventListener("submit", /*#__PURE__*/function () {
+  var _ref2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(event) {
+    var formData, photo, json, response;
+    return _regeneratorRuntime().wrap(function _callee2$(_context2) {
+      while (1) switch (_context2.prev = _context2.next) {
+        case 0:
+          event.preventDefault();
+          formData = new FormData(form);
+          photo = Object.fromEntries(formData.entries());
+          if (!formIsValid(photo)) {
+            _context2.next = 16;
+            break;
+          }
+          _context2.prev = 4;
+          if (!photoId) {
+            _context2.next = 11;
+            break;
+          }
+          json = JSON.stringify(photo);
+          _context2.next = 9;
+          return fetch("https://restapi.fr/api/photos/".concat(photoId), {
+            method: "PUT",
+            body: json,
+            headers: {
+              "Content-Type": "application/json"
+            }
+          });
+        case 9:
+          response = _context2.sent;
+          if (response.status < 300) {
+            location.assign("./index.html");
+          }
+        case 11:
+          _context2.next = 16;
+          break;
+        case 13:
+          _context2.prev = 13;
+          _context2.t0 = _context2["catch"](4);
+          console.error("error : ", _context2.t0);
+        case 16:
+        case "end":
+          return _context2.stop();
+      }
+    }, _callee2, null, [[4, 13]]);
+  }));
+  return function (_x) {
+    return _ref2.apply(this, arguments);
+  };
+}());
 buttonCancel.addEventListener("click", function (event) {
+  event.stopPropagation();
   location.assign("./detailform.html?id=".concat(photoId));
 });
+var formIsValid = function formIsValid(photo) {
+  if (!photo.content) {
+    textInfoContent.innerHTML = "Veuillez partager votre avis.";
+    setTimeout(function () {
+      textInfoContent.innerHTML = "";
+    }, 5000);
+    return false;
+  } else {
+    textInfoContent.innerHTML = "";
+    return true;
+  }
+};
 initForm();
 })();
 
