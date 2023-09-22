@@ -5751,6 +5751,22 @@ main form .form-button-container .button {
   box-shadow: var(--shadow);
 }
 
+.photographer-img-none {
+  display: none;
+}
+
+.photographer-img-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.photographer-img-center .img-profil {
+  padding: 1rem;
+  box-shadow: var(--shadow);
+}
+
 #text-info-category {
   color: var(--danger);
   font-weight: 700;
@@ -5791,7 +5807,7 @@ main form .form-button-container .button {
 
 .text-danger {
   color: var(--danger);
-}`, "",{"version":3,"sources":["webpack://./src/form/form.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;AACF;AAAE;EACE,iBAAA;EACA,oBAAA;EACA,gBAAA;EACA,WAAA;EACA,aAAA;EACA,yBAAA;EACA,qBAAA;EACA,aAAA;EACA,sBAAA;AAEJ;AADI;EACE,kBAAA;EACA,mBAAA;AAGN;AADI;EACE,mBAAA;EACA,aAAA;EACA,sBAAA;AAGN;AAFM;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AAIR;AAFM;EACE,mCAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,eAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AAFM;EACE,YAAA;EACA,iBAAA;EACA,mCAAA;EACA,eAAA;EACA,aAAA;EACA,qBAAA;EACA,yBAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AADI;EACE,mBAAA;EACA,aAAA;EACA,sBAAA;AAGN;AAFM;EACE,aAAA;EACA,mBAAA;EACA,iBAAA;EACA,6BAAA;EACA,gBAAA;EACA,mCAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,eAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AADI;EACE,aAAA;EACA,yBAAA;EACA,mBAAA;AAGN;AAFM;EACE,iBAAA;EACA,oBAAA;AAIR;;AAEA;EACE,aAAA;AACF;;AAEA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,mBAAA;AACF;AAAE;EACE,aAAA;EACA,yBAAA;AAEJ;;AAEA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AACF;;AAEA;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AACF;;AAEA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AACF;;AAEA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AACF;;AAEA;EACE,oBAAA;EACA,gBAAA;EACA,gBAAA;AACF;;AACA;EACE,oBAAA;EACA,gBAAA;EACA,iBAAA;EACA,mBAAA;AAEF;;AACA;EACE,oBAAA;AAEF","sourcesContent":["main {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  form {\n    margin-top: 20rem;\n    margin-bottom: 20rem;\n    max-width: 70rem;\n    width: 100%;\n    padding: 4rem;\n    box-shadow: var(--shadow);\n    border-radius: 0.3rem;\n    display: flex;\n    flex-direction: column;\n    h2 {\n      text-align: center;\n      margin-bottom: 5rem;\n    }\n    .form-group {\n      margin-bottom: 2rem;\n      display: flex;\n      flex-direction: column;\n      label {\n        font-size: 1.8rem;\n        color: var(--dark);\n        font-weight: 700;\n        margin-bottom: 1rem;\n      }\n      input {\n        border: 0.1rem solid var(--divider);\n        padding: 1rem;\n        outline: none;\n        border-radius: 0.3rem;\n        cursor: default;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n      select {\n        height: 4rem;\n        font-size: 1.4rem;\n        border: 0.1rem solid var(--divider);\n        padding: 0.5rem;\n        outline: none;\n        border-radius: 0.3rem;\n        font-family: var(--basic);\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n    }\n    .form-category {\n      margin-bottom: 2rem;\n      display: flex;\n      flex-direction: column;\n      .container-name-category {\n        display: flex;\n        flex-direction: row;\n        font-size: 1.4rem;\n        justify-content: space-evenly;\n        margin-top: 1rem;\n        border: 0.1rem solid var(--divider);\n        padding: 1rem;\n        outline: none;\n        border-radius: 0.3rem;\n        cursor: default;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n    }\n    .form-button-container {\n      display: flex;\n      justify-content: flex-end;\n      align-items: center;\n      .button {\n        margin-left: 1rem;\n        margin-right: 0.2rem;\n      }\n    }\n  }\n}\n\n.photo-img-none {\n  display: none;\n}\n\n.photo-img-center {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin-top: 1rem;\n  margin-bottom: 2rem;\n  .img-padding {\n    padding: 1rem;\n    box-shadow: var(--shadow);\n  }\n}\n\n#text-info-category {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 0.5rem;\n}\n\n.form-title-category {\n  font-size: 1.8rem;\n  color: var(--dark);\n  font-weight: 700;\n  margin-bottom: 1rem;\n}\n\n#text-info-picture {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 1.5rem;\n}\n\n#text-info-photographer {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 0.5rem;\n}\n\n#text-info-content {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 1rem;\n}\n#text-info {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: -2rem;\n  margin-bottom: 2rem;\n}\n\n.text-danger {\n  color: var(--danger);\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/form/form.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;AACF;AAAE;EACE,iBAAA;EACA,oBAAA;EACA,gBAAA;EACA,WAAA;EACA,aAAA;EACA,yBAAA;EACA,qBAAA;EACA,aAAA;EACA,sBAAA;AAEJ;AADI;EACE,kBAAA;EACA,mBAAA;AAGN;AADI;EACE,mBAAA;EACA,aAAA;EACA,sBAAA;AAGN;AAFM;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AAIR;AAFM;EACE,mCAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,eAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AAFM;EACE,YAAA;EACA,iBAAA;EACA,mCAAA;EACA,eAAA;EACA,aAAA;EACA,qBAAA;EACA,yBAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AADI;EACE,mBAAA;EACA,aAAA;EACA,sBAAA;AAGN;AAFM;EACE,aAAA;EACA,mBAAA;EACA,iBAAA;EACA,6BAAA;EACA,gBAAA;EACA,mCAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,eAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AADI;EACE,aAAA;EACA,yBAAA;EACA,mBAAA;AAGN;AAFM;EACE,iBAAA;EACA,oBAAA;AAIR;;AAGA;EACE,aAAA;AAAF;;AAGA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,mBAAA;AAAF;AACE;EACE,aAAA;EACA,yBAAA;AACJ;;AAGA;EACE,aAAA;AAAF;;AAGA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,mBAAA;AAAF;AACE;EACE,aAAA;EACA,yBAAA;AACJ;;AAKA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AAFF;;AAKA;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AAFF;;AAKA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AAFF;;AAKA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AAFF;;AAKA;EACE,oBAAA;EACA,gBAAA;EACA,gBAAA;AAFF;;AAIA;EACE,oBAAA;EACA,gBAAA;EACA,iBAAA;EACA,mBAAA;AADF;;AAIA;EACE,oBAAA;AADF","sourcesContent":["main {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  form {\n    margin-top: 20rem;\n    margin-bottom: 20rem;\n    max-width: 70rem;\n    width: 100%;\n    padding: 4rem;\n    box-shadow: var(--shadow);\n    border-radius: 0.3rem;\n    display: flex;\n    flex-direction: column;\n    h2 {\n      text-align: center;\n      margin-bottom: 5rem;\n    }\n    .form-group {\n      margin-bottom: 2rem;\n      display: flex;\n      flex-direction: column;\n      label {\n        font-size: 1.8rem;\n        color: var(--dark);\n        font-weight: 700;\n        margin-bottom: 1rem;\n      }\n      input {\n        border: 0.1rem solid var(--divider);\n        padding: 1rem;\n        outline: none;\n        border-radius: 0.3rem;\n        cursor: default;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n      select {\n        height: 4rem;\n        font-size: 1.4rem;\n        border: 0.1rem solid var(--divider);\n        padding: 0.5rem;\n        outline: none;\n        border-radius: 0.3rem;\n        font-family: var(--basic);\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n    }\n    .form-category {\n      margin-bottom: 2rem;\n      display: flex;\n      flex-direction: column;\n      .container-name-category {\n        display: flex;\n        flex-direction: row;\n        font-size: 1.4rem;\n        justify-content: space-evenly;\n        margin-top: 1rem;\n        border: 0.1rem solid var(--divider);\n        padding: 1rem;\n        outline: none;\n        border-radius: 0.3rem;\n        cursor: default;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n    }\n    .form-button-container {\n      display: flex;\n      justify-content: flex-end;\n      align-items: center;\n      .button {\n        margin-left: 1rem;\n        margin-right: 0.2rem;\n      }\n    }\n  }\n}\n\n// js start\n.photo-img-none {\n  display: none;\n}\n\n.photo-img-center {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin-top: 1rem;\n  margin-bottom: 2rem;\n  .img-padding {\n    padding: 1rem;\n    box-shadow: var(--shadow);\n  }\n}\n\n.photographer-img-none {\n  display: none;\n}\n\n.photographer-img-center {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin-top: 1rem;\n  margin-bottom: 2rem;\n  .img-profil {\n    padding: 1rem;\n    box-shadow: var(--shadow);\n  }\n}\n\n// js end\n\n#text-info-category {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 0.5rem;\n}\n\n.form-title-category {\n  font-size: 1.8rem;\n  color: var(--dark);\n  font-weight: 700;\n  margin-bottom: 1rem;\n}\n\n#text-info-picture {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 1.5rem;\n}\n\n#text-info-photographer {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 0.5rem;\n}\n\n#text-info-content {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 1rem;\n}\n#text-info {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: -2rem;\n  margin-bottom: 2rem;\n}\n\n.text-danger {\n  color: var(--danger);\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -6459,17 +6475,13 @@ var textInfoContent = document.querySelector("#text-info-content");
 var textInfo = document.querySelector("#text-info");
 var buttonCancel = document.querySelector(".button-cancel");
 var containerPhotoImg = document.querySelector("#container-photo-img");
-var containerUserImg = document.querySelector(".container-user-img");
-containerPhotoImg.innerHTML = "<img src=\"\" class=\"img-padding\" />";
-containerUserImg.innerHTML = "";
-console.log(containerPhotoImg);
-console.log(containerUserImg);
-var select = document.querySelector("select");
-select.addEventListener("change", function (event) {
+containerPhotoImg.innerHTML = "<img src='' class='img-padding' />";
+var selectPicture = document.querySelector("select[name='picture']");
+selectPicture.addEventListener("change", function (event) {
   var formPhotoImg = containerPhotoImg.querySelector("img");
-  var selectName = event.target.value;
-  console.log(selectName);
-  switch (selectName) {
+  var selectPictureName = event.target.value;
+  console.log(selectPictureName);
+  switch (selectPictureName) {
     case "":
       {
         containerPhotoImg.classList.add("photo-img-none");
@@ -6547,8 +6559,6 @@ select.addEventListener("change", function (event) {
         formPhotoImg.src = "./assets/images/form-photos/form-deserts/sable-blanc-nmex-us.jpg";
         break;
       }
-  }
-  switch (selectName) {
     case "Une Forêt en Australie":
       {
         containerPhotoImg.classList.remove("photo-img-none");
@@ -6619,8 +6629,6 @@ select.addEventListener("change", function (event) {
         formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-wash-us.jpg";
         break;
       }
-  }
-  switch (selectName) {
     case "Une Plage en Australie":
       {
         containerPhotoImg.classList.remove("photo-img-none");
@@ -6691,8 +6699,6 @@ select.addEventListener("change", function (event) {
         formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-th.jpg";
         break;
       }
-  }
-  switch (selectName) {
     case "Une Ville au Chili":
       {
         containerPhotoImg.classList.remove("photo-img-none");
@@ -6761,6 +6767,134 @@ select.addEventListener("change", function (event) {
         containerPhotoImg.classList.remove("photo-img-none");
         containerPhotoImg.classList.add("photo-img-center");
         formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-soir-it.jpg";
+        break;
+      }
+  }
+});
+var containerPhotographerImg = document.querySelector("#container-photographer-img");
+containerPhotographerImg.innerHTML = "<img src='' class='img-padding' />";
+var selectPhotographer = document.querySelector("select[name='photographer']");
+selectPhotographer.addEventListener("change", function (event) {
+  var formPhotographerImg = containerPhotographerImg.querySelector("img");
+  var selectPhotographerName = event.target.value;
+  switch (selectPhotographerName) {
+    case "":
+      {
+        containerPhotographerImg.classList.add("photo-img-none");
+        containerPhotographerImg.classList.remove("photo-img-center");
+        formPhotographerImg.src = "";
+        break;
+      }
+    case "Gustave - L'Aventurier":
+      {
+        containerPhotographerImg.classList.remove("photo-img-none");
+        containerPhotographerImg.classList.add("photo-img-center");
+        formPhotographerImg.src = "./assets/images/form-users/users-aventure/gustave-aventurier.jpg";
+        break;
+      }
+    case "Julie - L'Aventurière":
+      {
+        containerPhotographerImg.classList.remove("photo-img-none");
+        containerPhotographerImg.classList.add("photo-img-center");
+        formPhotographerImg.src = "./assets/images/form-users/users-aventure/julie-aventuriere.jpg";
+        break;
+      }
+    case "Henry - L'Aventurier":
+      {
+        containerPhotographerImg.classList.remove("photo-img-none");
+        containerPhotographerImg.classList.add("photo-img-center");
+        formPhotographerImg.src = "./assets/images/form-users/users-aventure/henry-aventurier.jpg";
+        break;
+      }
+    case "Zoé - L'Aventurière":
+      {
+        containerPhotographerImg.classList.remove("photo-img-none");
+        containerPhotographerImg.classList.add("photo-img-center");
+        formPhotographerImg.src = "./assets/images/form-users/users-aventure/zoe-aventuriere.jpg";
+        break;
+      }
+    case "Flora - L'Exploratrice":
+      {
+        containerPhotographerImg.classList.remove("photo-img-none");
+        containerPhotographerImg.classList.add("photo-img-center");
+        formPhotographerImg.src = "./assets/images/form-users/users-exploration/flora-exploratrice.jpg";
+        break;
+      }
+    case "Denver - L'Explorateur":
+      {
+        containerPhotographerImg.classList.remove("photo-img-none");
+        containerPhotographerImg.classList.add("photo-img-center");
+        formPhotographerImg.src = "./assets/images/form-users/users-exploration/denver-explorateur.jpg";
+        break;
+      }
+    case "Inaya - L'Exploratrice":
+      {
+        containerPhotographerImg.classList.remove("photo-img-none");
+        containerPhotographerImg.classList.add("photo-img-center");
+        formPhotographerImg.src = "./assets/images/form-users/users-exploration/inaya-exploratrice.jpg";
+        break;
+      }
+    case "Seth - L'Explorateur":
+      {
+        containerPhotographerImg.classList.remove("photo-img-none");
+        containerPhotographerImg.classList.add("photo-img-center");
+        formPhotographerImg.src = "./assets/images/form-users/users-exploration/seth-explorateur.jpg";
+        break;
+      }
+    case "Lance - Le Visiteur":
+      {
+        containerPhotographerImg.classList.remove("photo-img-none");
+        containerPhotographerImg.classList.add("photo-img-center");
+        formPhotographerImg.src = "./assets/images/form-users/users-visite/lance-visiteur.jpg";
+        break;
+      }
+    case "Nadia - La Visiteuse":
+      {
+        containerPhotographerImg.classList.remove("photo-img-none");
+        containerPhotographerImg.classList.add("photo-img-center");
+        formPhotographerImg.src = "./assets/images/form-users/users-visite/nadia-visiteuse.jpg";
+        break;
+      }
+    case "Xavier - Le Visiteur":
+      {
+        containerPhotographerImg.classList.remove("photo-img-none");
+        containerPhotographerImg.classList.add("photo-img-center");
+        formPhotographerImg.src = "./assets/images/form-users/users-visite/xavier-visiteur.jpg";
+        break;
+      }
+    case "Ornella - La Visiteuse":
+      {
+        containerPhotographerImg.classList.remove("photo-img-none");
+        containerPhotographerImg.classList.add("photo-img-center");
+        formPhotographerImg.src = "./assets/images/form-users/users-visite/ornella-visiteuse.jpg";
+        break;
+      }
+    case "Cerise - La Voyageuse":
+      {
+        containerPhotographerImg.classList.remove("photo-img-none");
+        containerPhotographerImg.classList.add("photo-img-center");
+        formPhotographerImg.src = "./assets/images/form-users/users-voyage/cerise-voyageuse.jpg";
+        break;
+      }
+    case "Philibert - Le Voyageur":
+      {
+        containerPhotographerImg.classList.remove("photo-img-none");
+        containerPhotographerImg.classList.add("photo-img-center");
+        formPhotographerImg.src = "./assets/images/form-users/users-voyage/philibert-voyageur.jpg";
+        break;
+      }
+    case "Roxane - La Voyageuse":
+      {
+        containerPhotographerImg.classList.remove("photo-img-none");
+        containerPhotographerImg.classList.add("photo-img-center");
+        formPhotographerImg.src = "./assets/images/form-users/users-voyage/roxane-voyageuse.jpg";
+        break;
+      }
+    case "Yuu - Le Voyageur":
+      {
+        containerPhotographerImg.classList.remove("photo-img-none");
+        containerPhotographerImg.classList.add("photo-img-center");
+        formPhotographerImg.src = "./assets/images/form-users/users-voyage/yuu-voyageur.jpg";
         break;
       }
   }
