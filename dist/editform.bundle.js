@@ -7729,13 +7729,17 @@ main form .container-name-photo {
   align-items: center;
 }
 main form .container-name-photo h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 1rem;
 }
-main form .container-detail-photo {
-  margin-bottom: 5rem;
+main form .container-edit-photo {
+  margin-bottom: 4rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-main form .container-detail-photo img {
+main form .container-edit-photo img {
   padding: 1rem;
   box-shadow: var(--shadow);
 }
@@ -7773,7 +7777,7 @@ main form .form-group select:focus {
   border-color: var(--primary);
 }
 main form .form-category {
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   display: flex;
   flex-direction: column;
 }
@@ -7791,6 +7795,24 @@ main form .form-category .container-name-category {
 }
 main form .form-category .container-name-category:focus {
   border-color: var(--primary);
+}
+main form .container-photographer-label-img {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+main form .container-photographer-label-img .container-photographer-laber {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+main form .container-photographer-label-img .container-photographer-img img {
+  width: 22rem;
+  height: 14rem;
+  margin-right: 8rem;
+  padding: 0.5rem;
+  box-shadow: var(--shadow);
 }
 main form textarea {
   height: 25rem;
@@ -7842,7 +7864,7 @@ main form .form-button-container .button {
 
 .text-danger {
   color: var(--danger);
-}`, "",{"version":3,"sources":["webpack://./src/editform/editform.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;AACF;AAAE;EACE,iBAAA;EACA,oBAAA;EACA,gBAAA;EACA,WAAA;EACA,aAAA;EACA,yBAAA;EACA,qBAAA;EACA,aAAA;EACA,sBAAA;AAEJ;AADI;EACE,kBAAA;EACA,mBAAA;AAGN;AADI;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;AAGN;AAFM;EACE,eAAA;EACA,mBAAA;AAIR;AADI;EACE,mBAAA;AAGN;AAFM;EACE,aAAA;EACA,yBAAA;AAIR;AADI;EACE,mBAAA;EACA,aAAA;EACA,sBAAA;AAGN;AAFM;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AAIR;AAFM;EACE,mCAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,eAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AAFM;EACE,YAAA;EACA,iBAAA;EACA,mCAAA;EACA,eAAA;EACA,aAAA;EACA,qBAAA;EACA,yBAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AADI;EACE,mBAAA;EACA,aAAA;EACA,sBAAA;AAGN;AAFM;EACE,aAAA;EACA,mBAAA;EACA,iBAAA;EACA,6BAAA;EACA,gBAAA;EACA,mCAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,eAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AADI;EACE,aAAA;EACA,aAAA;EACA,sBAAA;EACA,YAAA;AAGN;AADI;EACE,aAAA;EACA,yBAAA;EACA,mBAAA;AAGN;AAFM;EACE,iBAAA;EACA,oBAAA;AAIR;;AAEA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AACF;;AAEA;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AACF;;AAEA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AACF;;AAEA;EACE,oBAAA;EACA,gBAAA;EACA,gBAAA;AACF;;AAEA;EACE,oBAAA;EACA,gBAAA;EACA,iBAAA;EACA,mBAAA;AACF;;AAEA;EACE,oBAAA;AACF","sourcesContent":["main {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  form {\n    margin-top: 20rem;\n    margin-bottom: 20rem;\n    max-width: 70rem;\n    width: 100%;\n    padding: 4rem;\n    box-shadow: var(--shadow);\n    border-radius: 0.3rem;\n    display: flex;\n    flex-direction: column;\n    h2 {\n      text-align: center;\n      margin-bottom: 5rem;\n    }\n    .container-name-photo {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      h3 {\n        font-size: 2rem;\n        margin-bottom: 1rem;\n      }\n    }\n    .container-detail-photo {\n      margin-bottom: 5rem;\n      img {\n        padding: 1rem;\n        box-shadow: var(--shadow);\n      }\n    }\n    .form-group {\n      margin-bottom: 2rem;\n      display: flex;\n      flex-direction: column;\n      label {\n        font-size: 1.8rem;\n        color: var(--dark);\n        font-weight: 700;\n        margin-bottom: 1rem;\n      }\n      input {\n        border: 0.1rem solid var(--divider);\n        padding: 1rem;\n        outline: none;\n        border-radius: 0.3rem;\n        cursor: default;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n      select {\n        height: 4rem;\n        font-size: 1.4rem;\n        border: 0.1rem solid var(--divider);\n        padding: 0.5rem;\n        outline: none;\n        border-radius: 0.3rem;\n        font-family: var(--basic);\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n    }\n    .form-category {\n      margin-bottom: 2rem;\n      display: flex;\n      flex-direction: column;\n      .container-name-category {\n        display: flex;\n        flex-direction: row;\n        font-size: 1.4rem;\n        justify-content: space-evenly;\n        margin-top: 1rem;\n        border: 0.1rem solid var(--divider);\n        padding: 1rem;\n        outline: none;\n        border-radius: 0.3rem;\n        cursor: default;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n    }\n    textarea {\n      height: 25rem;\n      padding: 1rem;\n      letter-spacing: 0.1rem;\n      resize: none;\n    }\n    .form-button-container {\n      display: flex;\n      justify-content: flex-end;\n      align-items: center;\n      .button {\n        margin-left: 1rem;\n        margin-right: 0.2rem;\n      }\n    }\n  }\n}\n\n#text-info-category {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 0.5rem;\n}\n\n.form-title-category {\n  font-size: 1.8rem;\n  color: var(--dark);\n  font-weight: 700;\n  margin-bottom: 1rem;\n}\n\n#text-info-picture {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 1.5rem;\n}\n\n#text-info-content {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 1rem;\n}\n\n#text-info {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: -2rem;\n  margin-bottom: 2rem;\n}\n\n.text-danger {\n  color: var(--danger);\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/editform/editform.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;AACF;AAAE;EACE,iBAAA;EACA,oBAAA;EACA,gBAAA;EACA,WAAA;EACA,aAAA;EACA,yBAAA;EACA,qBAAA;EACA,aAAA;EACA,sBAAA;AAEJ;AADI;EACE,kBAAA;EACA,mBAAA;AAGN;AADI;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;AAGN;AAFM;EACE,iBAAA;EACA,mBAAA;AAIR;AADI;EACE,mBAAA;EACA,gBAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;AAGN;AAFM;EACE,aAAA;EACA,yBAAA;AAIR;AADI;EACE,mBAAA;EACA,aAAA;EACA,sBAAA;AAGN;AAFM;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AAIR;AAFM;EACE,mCAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,eAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AAFM;EACE,YAAA;EACA,iBAAA;EACA,mCAAA;EACA,eAAA;EACA,aAAA;EACA,qBAAA;EACA,yBAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AADI;EACE,mBAAA;EACA,aAAA;EACA,sBAAA;AAGN;AAFM;EACE,aAAA;EACA,mBAAA;EACA,iBAAA;EACA,6BAAA;EACA,gBAAA;EACA,mCAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,eAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AADI;EACE,aAAA;EACA,8BAAA;EACA,gBAAA;EACA,mBAAA;AAGN;AAFM;EACE,aAAA;EACA,sBAAA;EACA,6BAAA;AAIR;AADQ;EACE,YAAA;EACA,aAAA;EACA,kBAAA;EACA,eAAA;EACA,yBAAA;AAGV;AACI;EACE,aAAA;EACA,aAAA;EACA,sBAAA;EACA,YAAA;AACN;AACI;EACE,aAAA;EACA,yBAAA;EACA,mBAAA;AACN;AAAM;EACE,iBAAA;EACA,oBAAA;AAER;;AAIA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AADF;;AAIA;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AADF;;AAIA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AADF;;AAIA;EACE,oBAAA;EACA,gBAAA;EACA,gBAAA;AADF;;AAIA;EACE,oBAAA;EACA,gBAAA;EACA,iBAAA;EACA,mBAAA;AADF;;AAIA;EACE,oBAAA;AADF","sourcesContent":["main {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  form {\n    margin-top: 20rem;\n    margin-bottom: 20rem;\n    max-width: 70rem;\n    width: 100%;\n    padding: 4rem;\n    box-shadow: var(--shadow);\n    border-radius: 0.3rem;\n    display: flex;\n    flex-direction: column;\n    h2 {\n      text-align: center;\n      margin-bottom: 5rem;\n    }\n    .container-name-photo {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      h3 {\n        font-size: 1.8rem;\n        margin-bottom: 1rem;\n      }\n    }\n    .container-edit-photo {\n      margin-bottom: 4rem;\n      margin-top: 1rem;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      img {\n        padding: 1rem;\n        box-shadow: var(--shadow);\n      }\n    }\n    .form-group {\n      margin-bottom: 2rem;\n      display: flex;\n      flex-direction: column;\n      label {\n        font-size: 1.8rem;\n        color: var(--dark);\n        font-weight: 700;\n        margin-bottom: 1rem;\n      }\n      input {\n        border: 0.1rem solid var(--divider);\n        padding: 1rem;\n        outline: none;\n        border-radius: 0.3rem;\n        cursor: default;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n      select {\n        height: 4rem;\n        font-size: 1.4rem;\n        border: 0.1rem solid var(--divider);\n        padding: 0.5rem;\n        outline: none;\n        border-radius: 0.3rem;\n        font-family: var(--basic);\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n    }\n    .form-category {\n      margin-bottom: 4rem;\n      display: flex;\n      flex-direction: column;\n      .container-name-category {\n        display: flex;\n        flex-direction: row;\n        font-size: 1.4rem;\n        justify-content: space-evenly;\n        margin-top: 1rem;\n        border: 0.1rem solid var(--divider);\n        padding: 1rem;\n        outline: none;\n        border-radius: 0.3rem;\n        cursor: default;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n    }\n    .container-photographer-label-img {\n      display: flex;\n      justify-content: space-between;\n      margin-top: 1rem;\n      margin-bottom: 2rem;\n      .container-photographer-laber {\n        display: flex;\n        flex-direction: column;\n        justify-content: space-evenly;\n      }\n      .container-photographer-img {\n        img {\n          width: 22rem;\n          height: 14rem;\n          margin-right: 8rem;\n          padding: 0.5rem;\n          box-shadow: var(--shadow);\n        }\n      }\n    }\n    textarea {\n      height: 25rem;\n      padding: 1rem;\n      letter-spacing: 0.1rem;\n      resize: none;\n    }\n    .form-button-container {\n      display: flex;\n      justify-content: flex-end;\n      align-items: center;\n      .button {\n        margin-left: 1rem;\n        margin-right: 0.2rem;\n      }\n    }\n  }\n}\n\n#text-info-category {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 0.5rem;\n}\n\n.form-title-category {\n  font-size: 1.8rem;\n  color: var(--dark);\n  font-weight: 700;\n  margin-bottom: 1rem;\n}\n\n#text-info-picture {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 1.5rem;\n}\n\n#text-info-content {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 1rem;\n}\n\n#text-info {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: -2rem;\n  margin-bottom: 2rem;\n}\n\n.text-danger {\n  color: var(--danger);\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -8525,12 +8547,12 @@ var fillForm = function fillForm(formPhoto) {
 };
 var initForm = /*#__PURE__*/function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
-    var response, formPhoto, containerNamePhoto, containerDetailPhoto, formPhotoImg, select;
+    var response, formPhoto, containerNamePhoto, containerEditPhoto, formPhotoImg, selectPicture, containerPhotographerImg, formPhotographerImg, selectPhotographer;
     return _regeneratorRuntime().wrap(function _callee$(_context) {
       while (1) switch (_context.prev = _context.next) {
         case 0:
           if (!photoId) {
-            _context.next = 108;
+            _context.next = 139;
             break;
           }
           _context.next = 3;
@@ -8538,7 +8560,7 @@ var initForm = /*#__PURE__*/function () {
         case 3:
           response = _context.sent;
           if (!(response.status < 300)) {
-            _context.next = 108;
+            _context.next = 139;
             break;
           }
           _context.next = 7;
@@ -8548,398 +8570,521 @@ var initForm = /*#__PURE__*/function () {
           fillForm(formPhoto);
           containerNamePhoto = document.querySelector(".container-name-photo");
           containerNamePhoto.innerHTML = "<h3>".concat(formPhoto.picture, "</h3>");
-          containerDetailPhoto = document.querySelector(".container-detail-photo");
-          containerDetailPhoto.innerHTML = "<img src=\"".concat(formPhoto.picture, "\" alt=\"").concat(formPhoto.picture, "\" />");
-          formPhotoImg = containerDetailPhoto.querySelector("img");
+          containerEditPhoto = document.querySelector(".container-edit-photo");
+          containerEditPhoto.innerHTML = "<img src=\"".concat(formPhoto.picture, "\" alt=\"").concat(formPhoto.picture, "\" />");
+          formPhotoImg = containerEditPhoto.querySelector("img");
           _context.t0 = formPhoto.picture;
-          _context.next = _context.t0 === "Un Désert en Cisjordanie" ? 17 : _context.t0 === "Un Désert en Jordanie" ? 19 : _context.t0 === "Un Désert au Maroc" ? 21 : _context.t0 === "Un Désert en Namibie (Océan Atlantique)" ? 23 : _context.t0 === "Un Désert en Oman" ? 25 : _context.t0 === "Un Désert au Pérou" ? 27 : _context.t0 === "Un Désert en Arabie Saoudite" ? 29 : _context.t0 === "Un Désert en Namibie (Sud-Ouest)" ? 31 : _context.t0 === "Le Désert du Sahara (Soir)" ? 33 : _context.t0 === "Sable Blanc du Nouveau-Mexique (USA)" ? 35 : 37;
+          _context.next = _context.t0 === "Un Désert en Cisjordanie" ? 17 : _context.t0 === "Un Désert en Jordanie" ? 19 : _context.t0 === "Un Désert au Maroc" ? 21 : _context.t0 === "Un Désert en Namibie (Océan Atlantique)" ? 23 : _context.t0 === "Un Désert en Oman" ? 25 : _context.t0 === "Un Désert au Pérou" ? 27 : _context.t0 === "Un Désert en Arabie Saoudite" ? 29 : _context.t0 === "Un Désert en Namibie (Sud-Ouest)" ? 31 : _context.t0 === "Le Désert du Sahara (Soir)" ? 33 : _context.t0 === "Sable Blanc du Nouveau-Mexique (USA)" ? 35 : _context.t0 === "Une Forêt en Australie" ? 37 : _context.t0 === "Une Forêt au Canada" ? 39 : _context.t0 === "Une Forêt en Finlande" ? 41 : _context.t0 === "Une Forêt en Croatie" ? 43 : _context.t0 === "Une Forêt en Inde" ? 45 : _context.t0 === "Une Forêt en Italie" ? 47 : _context.t0 === "Une Forêt au Japon" ? 49 : _context.t0 === "La Forêt des Loups" ? 51 : _context.t0 === "Une Forêt au Nouvelle-Zélande" ? 53 : _context.t0 === "Une Forêt en Washington (USA)" ? 55 : _context.t0 === "Une Plage en Australie" ? 57 : _context.t0 === "Une Plage au Brésil" ? 59 : _context.t0 === "Une Plage en Grande-Bretagne" ? 61 : _context.t0 === "Une Plage en Italie" ? 63 : _context.t0 === "Une Plage en Madagascar" ? 65 : _context.t0 === "Une Plage au Mexique" ? 67 : _context.t0 === "Une Plage en Nouvelle-Calédonie" ? 69 : _context.t0 === "Une Plage en Polynésie Française" ? 71 : _context.t0 === "Une Plage aux Sychelles" ? 73 : _context.t0 === "Une Plage en Thaïlande" ? 75 : _context.t0 === "Une Ville au Chili" ? 77 : _context.t0 === "Une Ville en Chine" ? 79 : _context.t0 === "Une Ville en Colombie" ? 81 : _context.t0 === "Une Ville en France" ? 83 : _context.t0 === "Une Ville en Grande-Bretagne" ? 85 : _context.t0 === "Une Ville au Japon (Jour)" ? 87 : _context.t0 === "Une Ville en Koweït" ? 89 : _context.t0 === "Une Ville en Norvège" ? 91 : _context.t0 === "Une Ville Rural d'Allemagne" ? 93 : _context.t0 === "Une Ville d'Italie (Soir)" ? 95 : 97;
           break;
         case 17:
-          formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-cj.jpg";
-          return _context.abrupt("break", 37);
+          formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-cj.jpg";
+          return _context.abrupt("break", 97);
         case 19:
-          formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-jo.jpg";
-          return _context.abrupt("break", 37);
+          formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-jo.jpg";
+          return _context.abrupt("break", 97);
         case 21:
-          formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-ma.jpg";
-          return _context.abrupt("break", 37);
+          formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-ma.jpg";
+          return _context.abrupt("break", 97);
         case 23:
-          formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-oa-na.jpg";
-          return _context.abrupt("break", 37);
+          formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-oa-na.jpg";
+          return _context.abrupt("break", 97);
         case 25:
-          formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-om.jpg";
-          return _context.abrupt("break", 37);
+          formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-om.jpg";
+          return _context.abrupt("break", 97);
         case 27:
-          formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-pe.jpg";
-          return _context.abrupt("break", 37);
+          formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-pe.jpg";
+          return _context.abrupt("break", 97);
         case 29:
-          formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-sa.jpg";
-          return _context.abrupt("break", 37);
+          formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-sa.jpg";
+          return _context.abrupt("break", 97);
         case 31:
-          formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-so-na.jpg";
-          return _context.abrupt("break", 37);
+          formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-so-na.jpg";
+          return _context.abrupt("break", 97);
         case 33:
-          formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-soir-eh.jpg";
-          return _context.abrupt("break", 37);
+          formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-soir-eh.jpg";
+          return _context.abrupt("break", 97);
         case 35:
-          formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/sable-blanc-detail-nmex-us.jpg";
-          return _context.abrupt("break", 37);
+          formPhotoImg.src = "./assets/images/form-photos/form-deserts/sable-blanc-nmex-us.jpg";
+          return _context.abrupt("break", 97);
         case 37:
-          _context.t1 = formPhoto.picture;
-          _context.next = _context.t1 === "Une Forêt en Australie" ? 40 : _context.t1 === "Une Forêt au Canada" ? 42 : _context.t1 === "Une Forêt en Finlande" ? 44 : _context.t1 === "Une Forêt en Croatie" ? 46 : _context.t1 === "Une Forêt en Inde" ? 48 : _context.t1 === "Une Forêt en Italie" ? 50 : _context.t1 === "Une Forêt au Japon" ? 52 : _context.t1 === "La Forêt des Loups" ? 54 : _context.t1 === "Une Forêt au Nouvelle-Zélande" ? 56 : _context.t1 === "Une Forêt en Washington (USA)" ? 58 : 60;
-          break;
-        case 40:
-          formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-au.jpg";
-          return _context.abrupt("break", 60);
-        case 42:
-          formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-ca.jpg";
-          return _context.abrupt("break", 60);
-        case 44:
-          formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-fi.jpg";
-          return _context.abrupt("break", 60);
-        case 46:
-          formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-hr.jpg";
-          return _context.abrupt("break", 60);
-        case 48:
-          formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-in.jpg";
-          return _context.abrupt("break", 60);
-        case 50:
-          formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-it.jpg";
-          return _context.abrupt("break", 60);
-        case 52:
-          formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-jp.jpg";
-          return _context.abrupt("break", 60);
-        case 54:
-          formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-loups.jpg";
-          return _context.abrupt("break", 60);
-        case 56:
-          formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-nz.jpg";
-          return _context.abrupt("break", 60);
-        case 58:
-          formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-wash-us.jpg";
-          return _context.abrupt("break", 60);
-        case 60:
-          _context.t2 = formPhoto.picture;
-          _context.next = _context.t2 === "Une Plage en Australie" ? 63 : _context.t2 === "Une Plage au Brésil" ? 65 : _context.t2 === "Une Plage en Grande-Bretagne" ? 67 : _context.t2 === "Une Plage en Italie" ? 69 : _context.t2 === "Une Plage en Madagascar" ? 71 : _context.t2 === "Une Plage au Mexique" ? 73 : _context.t2 === "Une Plage en Nouvelle-Calédonie" ? 75 : _context.t2 === "Une Plage en Polynésie Française" ? 77 : _context.t2 === "Une Plage aux Sychelles" ? 79 : _context.t2 === "Une Plage en Thaïlande" ? 81 : 83;
-          break;
+          formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-au.jpg";
+          return _context.abrupt("break", 97);
+        case 39:
+          formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-ca.jpg";
+          return _context.abrupt("break", 97);
+        case 41:
+          formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-fi.jpg";
+          return _context.abrupt("break", 97);
+        case 43:
+          formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-hr.jpg";
+          return _context.abrupt("break", 97);
+        case 45:
+          formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-in.jpg";
+          return _context.abrupt("break", 97);
+        case 47:
+          formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-it.jpg";
+          return _context.abrupt("break", 97);
+        case 49:
+          formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-jp.jpg";
+          return _context.abrupt("break", 97);
+        case 51:
+          formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-loups.jpg";
+          return _context.abrupt("break", 97);
+        case 53:
+          formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-nz.jpg";
+          return _context.abrupt("break", 97);
+        case 55:
+          formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-wash-us.jpg";
+          return _context.abrupt("break", 97);
+        case 57:
+          formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-au.jpg";
+          return _context.abrupt("break", 97);
+        case 59:
+          formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-br.jpg";
+          return _context.abrupt("break", 97);
+        case 61:
+          formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-gb.jpg";
+          return _context.abrupt("break", 97);
         case 63:
-          formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-au.jpg";
-          return _context.abrupt("break", 83);
+          formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-it.jpg";
+          return _context.abrupt("break", 97);
         case 65:
-          formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-br.jpg";
-          return _context.abrupt("break", 83);
+          formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-mg.jpg";
+          return _context.abrupt("break", 97);
         case 67:
-          formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-gb.jpg";
-          return _context.abrupt("break", 83);
+          formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-mx.jpg";
+          return _context.abrupt("break", 97);
         case 69:
-          formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-it.jpg";
-          return _context.abrupt("break", 83);
+          formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-nc.jpg";
+          return _context.abrupt("break", 97);
         case 71:
-          formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-mg.jpg";
-          return _context.abrupt("break", 83);
+          formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-pf.jpg";
+          return _context.abrupt("break", 97);
         case 73:
-          formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-mx.jpg";
-          return _context.abrupt("break", 83);
+          formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-sc.jpg";
+          return _context.abrupt("break", 97);
         case 75:
-          formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-nc.jpg";
-          return _context.abrupt("break", 83);
+          formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-th.jpg";
+          return _context.abrupt("break", 97);
         case 77:
-          formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-pf.jpg";
-          return _context.abrupt("break", 83);
+          formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-cl.jpg";
+          return _context.abrupt("break", 97);
         case 79:
-          formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-sc.jpg";
-          return _context.abrupt("break", 83);
+          formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-cn.jpg";
+          return _context.abrupt("break", 97);
         case 81:
-          formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-th.jpg";
-          return _context.abrupt("break", 83);
+          formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-co.jpg";
+          return _context.abrupt("break", 97);
         case 83:
-          _context.t3 = formPhoto.picture;
-          _context.next = _context.t3 === "Une Ville au Chili" ? 86 : _context.t3 === "Une Ville en Chine" ? 88 : _context.t3 === "Une Ville en Colombie" ? 90 : _context.t3 === "Une Ville en France" ? 92 : _context.t3 === "Une Ville en Grande-Bretagne" ? 94 : _context.t3 === "Une Ville au Japon (Jour)" ? 96 : _context.t3 === "Une Ville en Koweït" ? 98 : _context.t3 === "Une Ville en Norvège" ? 100 : _context.t3 === "Une Ville Rural d'Allemagne" ? 102 : _context.t3 === "Une Ville d'Italie (Soir)" ? 104 : 106;
-          break;
-        case 86:
-          formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-cl.jpg";
-          return _context.abrupt("break", 106);
-        case 88:
-          formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-cn.jpg";
-          return _context.abrupt("break", 106);
-        case 90:
-          formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-co.jpg";
-          return _context.abrupt("break", 106);
-        case 92:
-          formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-fr.jpg";
-          return _context.abrupt("break", 106);
-        case 94:
-          formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-gb.jpg";
-          return _context.abrupt("break", 106);
-        case 96:
-          formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-jour-jp.jpg";
-          return _context.abrupt("break", 106);
-        case 98:
-          formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-kw.jpg";
-          return _context.abrupt("break", 106);
-        case 100:
-          formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-no.jpg";
-          return _context.abrupt("break", 106);
-        case 102:
-          formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-rural-ge.jpg";
-          return _context.abrupt("break", 106);
-        case 104:
-          formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-soir-it.jpg";
-          return _context.abrupt("break", 106);
-        case 106:
-          select = document.querySelector("select");
-          select.addEventListener("change", function (event) {
-            var selectName = event.target.value;
-            switch (selectName) {
+          formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-fr.jpg";
+          return _context.abrupt("break", 97);
+        case 85:
+          formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-gb.jpg";
+          return _context.abrupt("break", 97);
+        case 87:
+          formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-jour-jp.jpg";
+          return _context.abrupt("break", 97);
+        case 89:
+          formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-kw.jpg";
+          return _context.abrupt("break", 97);
+        case 91:
+          formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-no.jpg";
+          return _context.abrupt("break", 97);
+        case 93:
+          formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-rural-ge.jpg";
+          return _context.abrupt("break", 97);
+        case 95:
+          formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-soir-it.jpg";
+          return _context.abrupt("break", 97);
+        case 97:
+          selectPicture = document.querySelector("select[name='picture']");
+          selectPicture.addEventListener("change", function (event) {
+            var selectPictureName = event.target.value;
+            switch (selectPictureName) {
               case "Un Désert en Cisjordanie":
                 {
                   containerNamePhoto.innerHTML = "<h3>Un Désert en Cijordanie</h3>";
-                  formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-cj.jpg";
+                  formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-cj.jpg";
                   break;
                 }
               case "Un Désert en Jordanie":
                 {
                   containerNamePhoto.innerHTML = "<h3>Un Désert en Jordanie</h3>";
-                  formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-jo.jpg";
+                  formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-jo.jpg";
                   break;
                 }
               case "Un Désert au Maroc":
                 {
                   containerNamePhoto.innerHTML = "<h3>Un Désert au Maroc</h3>";
-                  formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-ma.jpg";
+                  formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-ma.jpg";
                   break;
                 }
               case "Un Désert en Namibie (Océan Atlantique)":
                 {
                   containerNamePhoto.innerHTML = "<h3>Un Désert en Namibie (Océan Atlantique)</h3>";
-                  formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-oa-na.jpg";
+                  formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-oa-na.jpg";
                   break;
                 }
               case "Un Désert en Oman":
                 {
                   containerNamePhoto.innerHTML = "<h3>Un Désert en Oman</h3>";
-                  formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-om.jpg";
+                  formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-om.jpg";
                   break;
                 }
               case "Un Désert au Pérou":
                 {
                   containerNamePhoto.innerHTML = "<h3>Un Désert au Pérou</h3>";
-                  formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-pe.jpg";
+                  formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-pe.jpg";
                   break;
                 }
               case "Un Désert en Arabie Saoudite":
                 {
                   containerNamePhoto.innerHTML = "<h3>Un Désert en Arabie Saoudite</h3>";
-                  formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-sa.jpg";
+                  formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-sa.jpg";
                   break;
                 }
               case "Un Désert en Namibie (Sud-Ouest)":
                 {
                   containerNamePhoto.innerHTML = "<h3>Un Désert en Namibie (Sud-Ouest)</h3>";
-                  formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-so-na.jpg";
+                  formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-so-na.jpg";
                   break;
                 }
               case "Le Désert du Sahara (Soir)":
                 {
                   containerNamePhoto.innerHTML = "<h3>Le Désert du Sahara (Soir)</h3>";
-                  formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-soir-eh.jpg";
+                  formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-soir-eh.jpg";
                   break;
                 }
               case "Sable Blanc du Nouveau-Mexique (USA)":
                 {
                   containerNamePhoto.innerHTML = "<h3>Sable Blanc du Nouveau-Mexique (USA)</h3>";
-                  formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/sable-blanc-detail-nmex-us.jpg";
+                  formPhotoImg.src = "./assets/images/form-photos/form-deserts/sable-blanc-nmex-us.jpg";
                   break;
                 }
-            }
-            switch (selectName) {
               case "Une Forêt en Australie":
                 {
                   containerNamePhoto.innerHTML = "<h3>Une Forêt en Australie</h3>";
-                  formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-au.jpg";
+                  formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-au.jpg";
                   break;
                 }
               case "Une Forêt au Canada":
                 {
                   containerNamePhoto.innerHTML = "<h3>Une Forêt au Canada</h3>";
-                  formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-ca.jpg";
+                  formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-ca.jpg";
                   break;
                 }
               case "Une Forêt en Finlande":
                 {
                   containerNamePhoto.innerHTML = "<h3>Une Forêt en Finlande</h3>";
-                  formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-fi.jpg";
+                  formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-fi.jpg";
                   break;
                 }
               case "Une Forêt en Croatie":
                 {
                   containerNamePhoto.innerHTML = "<h3>Une Forêt en Croatie</h3>";
-                  formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-hr.jpg";
+                  formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-hr.jpg";
                   break;
                 }
               case "Une Forêt en Inde":
                 {
                   containerNamePhoto.innerHTML = "<h3>Une Forêt en Inde</h3>";
-                  formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-in.jpg";
+                  formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-in.jpg";
                   break;
                 }
               case "Une Forêt en Italie":
                 {
                   containerNamePhoto.innerHTML = "<h3>Une Forêt en Italie</h3>";
-                  formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-it.jpg";
+                  formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-it.jpg";
                   break;
                 }
               case "Une Forêt au Japon":
                 {
                   containerNamePhoto.innerHTML = "<h3>Une Forêt au Japon</h3>";
-                  formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-jp.jpg";
+                  formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-jp.jpg";
                   break;
                 }
               case "La Forêt des Loups":
                 {
                   containerNamePhoto.innerHTML = "<h3>La Forêt des Loups</h3>";
-                  formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-loups.jpg";
+                  formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-loups.jpg";
                   break;
                 }
               case "Une Forêt au Nouvelle-Zélande":
                 {
                   containerNamePhoto.innerHTML = "<h3>Une Forêt au Nouvelle-Zélande</h3>";
-                  formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-nz.jpg";
+                  formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-nz.jpg";
                   break;
                 }
               case "Une Forêt en Washington (USA)":
                 {
                   containerNamePhoto.innerHTML = "<h3>Une Forêt en Washington (USA)</h3>";
-                  formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-wash-us.jpg";
+                  formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-wash-us.jpg";
                   break;
                 }
-            }
-            switch (selectName) {
               case "Une Plage en Australie":
                 {
                   containerNamePhoto.innerHTML = "<h3>Une Plage en Australie</h3>";
-                  formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-au.jpg";
+                  formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-au.jpg";
                   break;
                 }
               case "Une Plage au Brésil":
                 {
                   containerNamePhoto.innerHTML = "<h3>Une Plage au Brésil</h3>";
-                  formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-br.jpg";
+                  formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-br.jpg";
                   break;
                 }
               case "Une Plage en Grande-Bretagne":
                 {
                   containerNamePhoto.innerHTML = "<h3>Une Plage en Grande-Bretagne</h3>";
-                  formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-gb.jpg";
+                  formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-gb.jpg";
                   break;
                 }
               case "Une Plage en Italie":
                 {
                   containerNamePhoto.innerHTML = "<h3>Une Plage en Italie</h3>";
-                  formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-it.jpg";
+                  formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-it.jpg";
                   break;
                 }
               case "Une Plage en Madagascar":
                 {
                   containerNamePhoto.innerHTML = "<h3>Une Plage en Madagascar</h3>";
-                  formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-mg.jpg";
+                  formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-mg.jpg";
                   break;
                 }
               case "Une Plage au Mexique":
                 {
                   containerNamePhoto.innerHTML = "<h3>Une Plage au Mexique</h3>";
-                  formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-mx.jpg";
+                  formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-mx.jpg";
                   break;
                 }
               case "Une Plage en Nouvelle-Calédonie":
                 {
                   containerNamePhoto.innerHTML = "<h3>Une Plage en Nouvelle-Calédonie</h3>";
-                  formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-nc.jpg";
+                  formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-nc.jpg";
                   break;
                 }
               case "Une Plage en Polynésie Française":
                 {
                   containerNamePhoto.innerHTML = "<h3>Une Plage en Polynésie Française</h3>";
-                  formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-pf.jpg";
+                  formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-pf.jpg";
                   break;
                 }
               case "Une Plage aux Sychelles":
                 {
                   containerNamePhoto.innerHTML = "<h3>Une Plage aux Sychelles</h3>";
-                  formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-sc.jpg";
+                  formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-sc.jpg";
                   break;
                 }
               case "Une Plage en Thaïlande":
                 {
                   containerNamePhoto.innerHTML = "<h3>Une Plage en Thaïlande</h3>";
-                  formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-th.jpg";
+                  formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-th.jpg";
                   break;
                 }
-            }
-            switch (selectName) {
               case "Une Ville au Chili":
                 {
                   containerNamePhoto.innerHTML = "<h3>Une Ville au Chili</h3>";
-                  formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-cl.jpg";
+                  formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-cl.jpg";
                   break;
                 }
               case "Une Ville en Chine":
                 {
                   containerNamePhoto.innerHTML = "<h3>Une Ville en Chine</h3>";
-                  formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-cn.jpg";
+                  formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-cn.jpg";
                   break;
                 }
               case "Une Ville en Colombie":
                 {
                   containerNamePhoto.innerHTML = "<h3>Une Ville en Colombie</h3>";
-                  formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-co.jpg";
+                  formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-co.jpg";
                   break;
                 }
               case "Une Ville en France":
                 {
                   containerNamePhoto.innerHTML = "<h3>Une Ville en France</h3>";
-                  formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-fr.jpg";
+                  formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-fr.jpg";
                   break;
                 }
               case "Une Ville en Grande-Bretagne":
                 {
                   containerNamePhoto.innerHTML = "<h3>Une Ville en Grande-Bretagne</h3>";
-                  formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-gb.jpg";
+                  formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-gb.jpg";
                   break;
                 }
               case "Une Ville au Japon (Jour)":
                 {
                   containerNamePhoto.innerHTML = "<h3>Une Ville au Japon (Jour)</h3>";
-                  formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-jour-jp.jpg";
+                  formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-jour-jp.jpg";
                   break;
                 }
               case "Une Ville en Koweït":
                 {
                   containerNamePhoto.innerHTML = "<h3>Une Ville en Koweït</h3>";
-                  formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-kw.jpg";
+                  formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-kw.jpg";
                   break;
                 }
               case "Une Ville en Norvège":
                 {
                   containerNamePhoto.innerHTML = "<h3>Une Ville en Norvège</h3>";
-                  formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-no.jpg";
+                  formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-no.jpg";
                   break;
                 }
               case "Une Ville Rural d'Allemagne":
                 {
                   containerNamePhoto.innerHTML = "<h3>Une Ville Rural d'Allemagne</h3>";
-                  formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-rural-ge.jpg";
+                  formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-rural-ge.jpg";
                   break;
                 }
               case "Une Ville d'Italie (Soir)":
                 {
                   containerNamePhoto.innerHTML = "<h3>Une Ville d'Italie (Soir)</h3>";
-                  formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-soir-it.jpg";
+                  formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-soir-it.jpg";
                   break;
                 }
             }
           });
-        case 108:
+          containerPhotographerImg = document.querySelector(".container-photographer-img");
+          containerPhotographerImg.innerHTML = "<img src=\"".concat(formPhoto.photographer, "\" alt=\"").concat(formPhoto.photographer, "\" />");
+          formPhotographerImg = containerPhotographerImg.querySelector("img");
+          _context.t1 = formPhoto.photographer;
+          _context.next = _context.t1 === "Gustave - L'Aventurier" ? 105 : _context.t1 === "Julie - L'Aventurière" ? 107 : _context.t1 === "Henry - L'Aventurier" ? 109 : _context.t1 === "Zoé - L'Aventurière" ? 111 : _context.t1 === "Flora - L'Exploratrice" ? 113 : _context.t1 === "Denver - L'Explorateur" ? 115 : _context.t1 === "Inaya - L'Exploratrice" ? 117 : _context.t1 === "Seth - L'Explorateur" ? 119 : _context.t1 === "Lance - Le Visiteur" ? 121 : _context.t1 === "Nadia - La Visiteuse" ? 123 : _context.t1 === "Xavier - Le Visiteur" ? 125 : _context.t1 === "Ornella - La Visiteuse" ? 127 : _context.t1 === "Cerise - La Voyageuse" ? 129 : _context.t1 === "Philibert - Le Voyageur" ? 131 : _context.t1 === "Roxane - La Voyageuse" ? 133 : _context.t1 === "Yuu - Le Voyageur" ? 135 : 137;
+          break;
+        case 105:
+          formPhotographerImg.src = "./assets/images/form-users/users-aventure/gustave-aventurier.jpg";
+          return _context.abrupt("break", 137);
+        case 107:
+          formPhotographerImg.src = "./assets/images/form-users/users-aventure/julie-aventuriere.jpg";
+          return _context.abrupt("break", 137);
+        case 109:
+          formPhotographerImg.src = "./assets/images/form-users/users-aventure/henry-aventurier.jpg";
+          return _context.abrupt("break", 137);
+        case 111:
+          formPhotographerImg.src = "./assets/images/form-users/users-aventure/zoe-aventuriere.jpg";
+          return _context.abrupt("break", 137);
+        case 113:
+          formPhotographerImg.src = "./assets/images/form-users/users-exploration/flora-exploratrice.jpg";
+          return _context.abrupt("break", 137);
+        case 115:
+          formPhotographerImg.src = "./assets/images/form-users/users-exploration/denver-explorateur.jpg";
+          return _context.abrupt("break", 137);
+        case 117:
+          formPhotographerImg.src = "./assets/images/form-users/users-exploration/inaya-exploratrice.jpg";
+          return _context.abrupt("break", 137);
+        case 119:
+          formPhotographerImg.src = "./assets/images/form-users/users-exploration/seth-explorateur.jpg";
+          return _context.abrupt("break", 137);
+        case 121:
+          formPhotographerImg.src = "./assets/images/form-users/users-visite/lance-visiteur.jpg";
+          return _context.abrupt("break", 137);
+        case 123:
+          formPhotographerImg.src = "./assets/images/form-users/users-visite/nadia-visiteuse.jpg";
+          return _context.abrupt("break", 137);
+        case 125:
+          formPhotographerImg.src = "./assets/images/form-users/users-visite/xavier-visiteur.jpg";
+          return _context.abrupt("break", 137);
+        case 127:
+          formPhotographerImg.src = "./assets/images/form-users/users-visite/ornella-visiteuse.jpg";
+          return _context.abrupt("break", 137);
+        case 129:
+          formPhotographerImg.src = "./assets/images/form-users/users-voyage/cerise-voyageuse.jpg";
+          return _context.abrupt("break", 137);
+        case 131:
+          formPhotographerImg.src = "./assets/images/form-users/users-voyage/philibert-voyageur.jpg";
+          return _context.abrupt("break", 137);
+        case 133:
+          formPhotographerImg.src = "./assets/images/form-users/users-voyage/roxane-voyageuse.jpg";
+          return _context.abrupt("break", 137);
+        case 135:
+          formPhotographerImg.src = "./assets/images/form-users/users-voyage/yuu-voyageur.jpg";
+          return _context.abrupt("break", 137);
+        case 137:
+          selectPhotographer = document.querySelector("select[name='photographer']");
+          selectPhotographer.addEventListener("change", function (event) {
+            var selectPhotographerName = event.target.value;
+            switch (selectPhotographerName) {
+              case "Gustave - L'Aventurier":
+                {
+                  formPhotographerImg.src = "./assets/images/form-users/users-aventure/gustave-aventurier.jpg";
+                  break;
+                }
+              case "Julie - L'Aventurière":
+                {
+                  formPhotographerImg.src = "./assets/images/form-users/users-aventure/julie-aventuriere.jpg";
+                  break;
+                }
+              case "Henry - L'Aventurier":
+                {
+                  formPhotographerImg.src = "./assets/images/form-users/users-aventure/henry-aventurier.jpg";
+                  break;
+                }
+              case "Zoé - L'Aventurière":
+                {
+                  formPhotographerImg.src = "./assets/images/form-users/users-aventure/zoe-aventuriere.jpg";
+                  break;
+                }
+              case "Flora - L'Exploratrice":
+                {
+                  formPhotographerImg.src = "./assets/images/form-users/users-exploration/flora-exploratrice.jpg";
+                  break;
+                }
+              case "Denver - L'Explorateur":
+                {
+                  formPhotographerImg.src = "./assets/images/form-users/users-exploration/denver-explorateur.jpg";
+                  break;
+                }
+              case "Inaya - L'Exploratrice":
+                {
+                  formPhotographerImg.src = "./assets/images/form-users/users-exploration/inaya-exploratrice.jpg";
+                  break;
+                }
+              case "Seth - L'Explorateur":
+                {
+                  formPhotographerImg.src = "./assets/images/form-users/users-exploration/seth-explorateur.jpg";
+                  break;
+                }
+              case "Lance - Le Visiteur":
+                {
+                  formPhotographerImg.src = "./assets/images/form-users/users-visite/lance-visiteur.jpg";
+                  break;
+                }
+              case "Nadia - La Visiteuse":
+                {
+                  formPhotographerImg.src = "./assets/images/form-users/users-visite/nadia-visiteuse.jpg";
+                  break;
+                }
+              case "Xavier - Le Visiteur":
+                {
+                  formPhotographerImg.src = "./assets/images/form-users/users-visite/xavier-visiteur.jpg";
+                  break;
+                }
+              case "Ornella - La Visiteuse":
+                {
+                  formPhotographerImg.src = "./assets/images/form-users/users-visite/ornella-visiteuse.jpg";
+                  break;
+                }
+              case "Cerise - La Voyageuse":
+                {
+                  formPhotographerImg.src = "./assets/images/form-users/users-voyage/cerise-voyageuse.jpg";
+                  break;
+                }
+              case "Philibert - Le Voyageur":
+                {
+                  formPhotographerImg.src = "./assets/images/form-users/users-voyage/philibert-voyageur.jpg";
+                  break;
+                }
+              case "Roxane - La Voyageuse":
+                {
+                  formPhotographerImg.src = "./assets/images/form-users/users-voyage/roxane-voyageuse.jpg";
+                  break;
+                }
+              case "Yuu - Le Voyageur":
+                {
+                  formPhotographerImg.src = "./assets/images/form-users/users-voyage/yuu-voyageur.jpg";
+                  break;
+                }
+            }
+          });
+        case 139:
         case "end":
           return _context.stop();
       }
