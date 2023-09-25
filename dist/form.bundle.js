@@ -5739,31 +5739,62 @@ main form .form-button-container .button {
   display: none;
 }
 
-.photo-img-center {
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-photo-label-img {
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.container-photo-label-img .container-photo-laber {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.container-photo-label-img .photo-img-center {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
-.photo-img-center .img-padding {
-  padding: 1rem;
+.container-photo-label-img .photo-img-center .img-padding {
+  width: 22rem;
+  height: 15rem;
+  margin-left: 6rem;
+  padding: 0.5rem;
   box-shadow: var(--shadow);
 }
 
-.photographer-img-none {
-  display: none;
+.width-select-photographer {
+  width: 31rem;
 }
 
-.photographer-img-center {
+.container-photographer-label-img {
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.container-photographer-label-img .container-photographer-laber {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.container-photographer-label-img .photo-img-center {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
-.photographer-img-center .img-profil {
-  padding: 1rem;
+.container-photographer-label-img .photo-img-center .img-padding {
+  width: 22rem;
+  height: 15rem;
+  margin-left: 6rem;
+  padding: 0.5rem;
   box-shadow: var(--shadow);
 }
 
@@ -5807,7 +5838,7 @@ main form .form-button-container .button {
 
 .text-danger {
   color: var(--danger);
-}`, "",{"version":3,"sources":["webpack://./src/form/form.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;AACF;AAAE;EACE,iBAAA;EACA,oBAAA;EACA,gBAAA;EACA,WAAA;EACA,aAAA;EACA,yBAAA;EACA,qBAAA;EACA,aAAA;EACA,sBAAA;AAEJ;AADI;EACE,kBAAA;EACA,mBAAA;AAGN;AADI;EACE,mBAAA;EACA,aAAA;EACA,sBAAA;AAGN;AAFM;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AAIR;AAFM;EACE,mCAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,eAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AAFM;EACE,YAAA;EACA,iBAAA;EACA,mCAAA;EACA,eAAA;EACA,aAAA;EACA,qBAAA;EACA,yBAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AADI;EACE,mBAAA;EACA,aAAA;EACA,sBAAA;AAGN;AAFM;EACE,aAAA;EACA,mBAAA;EACA,iBAAA;EACA,6BAAA;EACA,gBAAA;EACA,mCAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,eAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AADI;EACE,aAAA;EACA,yBAAA;EACA,mBAAA;AAGN;AAFM;EACE,iBAAA;EACA,oBAAA;AAIR;;AAGA;EACE,aAAA;AAAF;;AAGA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,mBAAA;AAAF;AACE;EACE,aAAA;EACA,yBAAA;AACJ;;AAGA;EACE,aAAA;AAAF;;AAGA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,mBAAA;AAAF;AACE;EACE,aAAA;EACA,yBAAA;AACJ;;AAKA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AAFF;;AAKA;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AAFF;;AAKA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AAFF;;AAKA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AAFF;;AAKA;EACE,oBAAA;EACA,gBAAA;EACA,gBAAA;AAFF;;AAIA;EACE,oBAAA;EACA,gBAAA;EACA,iBAAA;EACA,mBAAA;AADF;;AAIA;EACE,oBAAA;AADF","sourcesContent":["main {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  form {\n    margin-top: 20rem;\n    margin-bottom: 20rem;\n    max-width: 70rem;\n    width: 100%;\n    padding: 4rem;\n    box-shadow: var(--shadow);\n    border-radius: 0.3rem;\n    display: flex;\n    flex-direction: column;\n    h2 {\n      text-align: center;\n      margin-bottom: 5rem;\n    }\n    .form-group {\n      margin-bottom: 2rem;\n      display: flex;\n      flex-direction: column;\n      label {\n        font-size: 1.8rem;\n        color: var(--dark);\n        font-weight: 700;\n        margin-bottom: 1rem;\n      }\n      input {\n        border: 0.1rem solid var(--divider);\n        padding: 1rem;\n        outline: none;\n        border-radius: 0.3rem;\n        cursor: default;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n      select {\n        height: 4rem;\n        font-size: 1.4rem;\n        border: 0.1rem solid var(--divider);\n        padding: 0.5rem;\n        outline: none;\n        border-radius: 0.3rem;\n        font-family: var(--basic);\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n    }\n    .form-category {\n      margin-bottom: 2rem;\n      display: flex;\n      flex-direction: column;\n      .container-name-category {\n        display: flex;\n        flex-direction: row;\n        font-size: 1.4rem;\n        justify-content: space-evenly;\n        margin-top: 1rem;\n        border: 0.1rem solid var(--divider);\n        padding: 1rem;\n        outline: none;\n        border-radius: 0.3rem;\n        cursor: default;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n    }\n    .form-button-container {\n      display: flex;\n      justify-content: flex-end;\n      align-items: center;\n      .button {\n        margin-left: 1rem;\n        margin-right: 0.2rem;\n      }\n    }\n  }\n}\n\n// js start\n.photo-img-none {\n  display: none;\n}\n\n.photo-img-center {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin-top: 1rem;\n  margin-bottom: 2rem;\n  .img-padding {\n    padding: 1rem;\n    box-shadow: var(--shadow);\n  }\n}\n\n.photographer-img-none {\n  display: none;\n}\n\n.photographer-img-center {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin-top: 1rem;\n  margin-bottom: 2rem;\n  .img-profil {\n    padding: 1rem;\n    box-shadow: var(--shadow);\n  }\n}\n\n// js end\n\n#text-info-category {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 0.5rem;\n}\n\n.form-title-category {\n  font-size: 1.8rem;\n  color: var(--dark);\n  font-weight: 700;\n  margin-bottom: 1rem;\n}\n\n#text-info-picture {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 1.5rem;\n}\n\n#text-info-photographer {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 0.5rem;\n}\n\n#text-info-content {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 1rem;\n}\n#text-info {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: -2rem;\n  margin-bottom: 2rem;\n}\n\n.text-danger {\n  color: var(--danger);\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/form/form.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;AACF;AAAE;EACE,iBAAA;EACA,oBAAA;EACA,gBAAA;EACA,WAAA;EACA,aAAA;EACA,yBAAA;EACA,qBAAA;EACA,aAAA;EACA,sBAAA;AAEJ;AADI;EACE,kBAAA;EACA,mBAAA;AAGN;AADI;EACE,mBAAA;EACA,aAAA;EACA,sBAAA;AAGN;AAFM;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AAIR;AAFM;EACE,mCAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,eAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AAFM;EACE,YAAA;EACA,iBAAA;EACA,mCAAA;EACA,eAAA;EACA,aAAA;EACA,qBAAA;EACA,yBAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AADI;EACE,mBAAA;EACA,aAAA;EACA,sBAAA;AAGN;AAFM;EACE,aAAA;EACA,mBAAA;EACA,iBAAA;EACA,6BAAA;EACA,gBAAA;EACA,mCAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,eAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AADI;EACE,aAAA;EACA,yBAAA;EACA,mBAAA;AAGN;AAFM;EACE,iBAAA;EACA,oBAAA;AAIR;;AAGA;EACE,aAAA;AAAF;;AAGA;EACE,aAAA;EACA,sBAAA;AAAF;;AAGA;EACE,aAAA;EACA,gBAAA;EACA,mBAAA;AAAF;AACE;EACE,aAAA;EACA,sBAAA;EACA,6BAAA;AACJ;AACE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,mBAAA;AACJ;AAAI;EACE,YAAA;EACA,aAAA;EACA,iBAAA;EACA,eAAA;EACA,yBAAA;AAEN;;AAGA;EACE,YAAA;AAAF;;AAGA;EACE,aAAA;EACA,gBAAA;EACA,mBAAA;AAAF;AACE;EACE,aAAA;EACA,sBAAA;EACA,6BAAA;AACJ;AACE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,mBAAA;AACJ;AAAI;EACE,YAAA;EACA,aAAA;EACA,iBAAA;EACA,eAAA;EACA,yBAAA;AAEN;;AAiBA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AAdF;;AAiBA;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AAdF;;AAiBA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AAdF;;AAiBA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AAdF;;AAiBA;EACE,oBAAA;EACA,gBAAA;EACA,gBAAA;AAdF;;AAgBA;EACE,oBAAA;EACA,gBAAA;EACA,iBAAA;EACA,mBAAA;AAbF;;AAgBA;EACE,oBAAA;AAbF","sourcesContent":["main {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  form {\n    margin-top: 20rem;\n    margin-bottom: 20rem;\n    max-width: 70rem;\n    width: 100%;\n    padding: 4rem;\n    box-shadow: var(--shadow);\n    border-radius: 0.3rem;\n    display: flex;\n    flex-direction: column;\n    h2 {\n      text-align: center;\n      margin-bottom: 5rem;\n    }\n    .form-group {\n      margin-bottom: 2rem;\n      display: flex;\n      flex-direction: column;\n      label {\n        font-size: 1.8rem;\n        color: var(--dark);\n        font-weight: 700;\n        margin-bottom: 1rem;\n      }\n      input {\n        border: 0.1rem solid var(--divider);\n        padding: 1rem;\n        outline: none;\n        border-radius: 0.3rem;\n        cursor: default;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n      select {\n        height: 4rem;\n        font-size: 1.4rem;\n        border: 0.1rem solid var(--divider);\n        padding: 0.5rem;\n        outline: none;\n        border-radius: 0.3rem;\n        font-family: var(--basic);\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n    }\n    .form-category {\n      margin-bottom: 2rem;\n      display: flex;\n      flex-direction: column;\n      .container-name-category {\n        display: flex;\n        flex-direction: row;\n        font-size: 1.4rem;\n        justify-content: space-evenly;\n        margin-top: 1rem;\n        border: 0.1rem solid var(--divider);\n        padding: 1rem;\n        outline: none;\n        border-radius: 0.3rem;\n        cursor: default;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n    }\n    .form-button-container {\n      display: flex;\n      justify-content: flex-end;\n      align-items: center;\n      .button {\n        margin-left: 1rem;\n        margin-right: 0.2rem;\n      }\n    }\n  }\n}\n\n// js start\n.photo-img-none {\n  display: none;\n}\n\n.flex-column {\n  display: flex;\n  flex-direction: column;\n}\n\n.container-photo-label-img {\n  display: flex;\n  margin-top: 1rem;\n  margin-bottom: 2rem;\n  .container-photo-laber {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-evenly;\n  }\n  .photo-img-center {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-top: 1rem;\n    margin-bottom: 2rem;\n    .img-padding {\n      width: 22rem;\n      height: 15rem;\n      margin-left: 6rem;\n      padding: 0.5rem;\n      box-shadow: var(--shadow);\n    }\n  }\n}\n\n.width-select-photographer {\n  width: 31rem;\n}\n\n.container-photographer-label-img {\n  display: flex;\n  margin-top: 1rem;\n  margin-bottom: 2rem;\n  .container-photographer-laber {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-evenly;\n  }\n  .photo-img-center {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-top: 1rem;\n    margin-bottom: 2rem;\n    .img-padding {\n      width: 22rem;\n      height: 15rem;\n      margin-left: 6rem;\n      padding: 0.5rem;\n      box-shadow: var(--shadow);\n    }\n  }\n}\n\n// .photographer-img-center {\n//   display: flex;\n//   justify-content: center;\n//   align-items: center;\n//   margin-top: 1rem;\n//   margin-bottom: 2rem;\n//   .img-profil {\n//     padding: 1rem;\n//     box-shadow: var(--shadow);\n//   }\n// }\n\n// js end\n\n#text-info-category {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 0.5rem;\n}\n\n.form-title-category {\n  font-size: 1.8rem;\n  color: var(--dark);\n  font-weight: 700;\n  margin-bottom: 1rem;\n}\n\n#text-info-picture {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 1.5rem;\n}\n\n#text-info-photographer {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 0.5rem;\n}\n\n#text-info-content {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 1rem;\n}\n#text-info {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: -2rem;\n  margin-bottom: 2rem;\n}\n\n.text-danger {\n  color: var(--danger);\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -6475,15 +6506,26 @@ var textInfoContent = document.querySelector("#text-info-content");
 var textInfo = document.querySelector("#text-info");
 var buttonCancel = document.querySelector(".button-cancel");
 var containerPhotoImg = document.querySelector("#container-photo-img");
+var containerPhotoLabelImg = document.querySelector("#container-photo-label-img");
+var containerPhotoLabel = document.querySelector("#container-photo-label");
 containerPhotoImg.innerHTML = "<img src='' class='img-padding' />";
+containerPhotoLabelImg.classList.remove("container-photo-label-img");
+containerPhotoLabel.classList.add("flex-column");
+containerPhotoLabel.classList.remove("container-photo-laber");
 var selectPicture = document.querySelector("select[name='picture']");
 selectPicture.addEventListener("change", function (event) {
+  containerPhotoLabelImg.classList.add("container-photo-label-img");
+  containerPhotoLabel.classList.remove("flex-column");
+  containerPhotoLabel.classList.add("container-photo-laber");
   var formPhotoImg = containerPhotoImg.querySelector("img");
   var selectPictureName = event.target.value;
   console.log(selectPictureName);
   switch (selectPictureName) {
     case "":
       {
+        containerPhotoLabelImg.classList.remove("container-photo-label-img");
+        containerPhotoLabel.classList.add("flex-column");
+        containerPhotoLabel.classList.remove("container-photo-laber");
         containerPhotoImg.classList.add("photo-img-none");
         containerPhotoImg.classList.remove("photo-img-center");
         formPhotoImg.src = "";
@@ -6772,14 +6814,27 @@ selectPicture.addEventListener("change", function (event) {
   }
 });
 var containerPhotographerImg = document.querySelector("#container-photographer-img");
+var containerPhotographerLabelImg = document.querySelector("#container-photographer-label-img");
+var containerPhotographerLabel = document.querySelector("#container-photographer-laber");
 containerPhotographerImg.innerHTML = "<img src='' class='img-padding' />";
+containerPhotographerLabelImg.classList.remove("container-photographer-label-img");
+containerPhotographerLabel.classList.add("flex-column");
+containerPhotographerLabel.classList.remove("container-photographer-laber");
 var selectPhotographer = document.querySelector("select[name='photographer']");
 selectPhotographer.addEventListener("change", function (event) {
+  containerPhotographerLabelImg.classList.add("container-photographer-label-img");
+  containerPhotographerLabel.classList.remove("flex-column");
+  containerPhotographerLabel.classList.add("container-photographer-laber");
+  selectPhotographer.classList.add("width-select-photographer");
   var formPhotographerImg = containerPhotographerImg.querySelector("img");
   var selectPhotographerName = event.target.value;
   switch (selectPhotographerName) {
     case "":
       {
+        containerPhotographerLabelImg.classList.remove("container-photographer-label-img");
+        containerPhotographerLabel.classList.add("flex-column");
+        containerPhotographerLabel.classList.remove("container-photographer-laber");
+        selectPhotographer.classList.remove("width-select-photographer");
         containerPhotographerImg.classList.add("photo-img-none");
         containerPhotographerImg.classList.remove("photo-img-center");
         formPhotographerImg.src = "";
