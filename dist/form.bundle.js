@@ -5748,23 +5748,19 @@ main form .form-button-container .button {
   display: flex;
   margin-top: 1rem;
   margin-bottom: 2rem;
+  justify-content: space-between;
 }
 .container-photo-label-img .container-photo-laber {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
-.container-photo-label-img .photo-img-center {
+.container-photo-label-img .container-form-photo-img {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
   margin-bottom: 2rem;
-}
-.container-photo-label-img .photo-img-center .img-padding {
-  width: 22rem;
-  height: 15rem;
-  margin-left: 6rem;
   padding: 0.5rem;
   box-shadow: var(--shadow);
 }
@@ -5838,7 +5834,7 @@ main form .form-button-container .button {
 
 .text-danger {
   color: var(--danger);
-}`, "",{"version":3,"sources":["webpack://./src/form/form.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;AACF;AAAE;EACE,iBAAA;EACA,oBAAA;EACA,gBAAA;EACA,WAAA;EACA,aAAA;EACA,yBAAA;EACA,qBAAA;EACA,aAAA;EACA,sBAAA;AAEJ;AADI;EACE,kBAAA;EACA,mBAAA;AAGN;AADI;EACE,mBAAA;EACA,aAAA;EACA,sBAAA;AAGN;AAFM;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AAIR;AAFM;EACE,mCAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,eAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AAFM;EACE,YAAA;EACA,iBAAA;EACA,mCAAA;EACA,eAAA;EACA,aAAA;EACA,qBAAA;EACA,yBAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AADI;EACE,mBAAA;EACA,aAAA;EACA,sBAAA;AAGN;AAFM;EACE,aAAA;EACA,mBAAA;EACA,iBAAA;EACA,6BAAA;EACA,gBAAA;EACA,mCAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,eAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AADI;EACE,aAAA;EACA,yBAAA;EACA,mBAAA;AAGN;AAFM;EACE,iBAAA;EACA,oBAAA;AAIR;;AAGA;EACE,aAAA;AAAF;;AAGA;EACE,aAAA;EACA,sBAAA;AAAF;;AAGA;EACE,aAAA;EACA,gBAAA;EACA,mBAAA;AAAF;AACE;EACE,aAAA;EACA,sBAAA;EACA,6BAAA;AACJ;AACE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,mBAAA;AACJ;AAAI;EACE,YAAA;EACA,aAAA;EACA,iBAAA;EACA,eAAA;EACA,yBAAA;AAEN;;AAGA;EACE,YAAA;AAAF;;AAGA;EACE,aAAA;EACA,gBAAA;EACA,mBAAA;AAAF;AACE;EACE,aAAA;EACA,sBAAA;EACA,6BAAA;AACJ;AACE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,mBAAA;AACJ;AAAI;EACE,YAAA;EACA,aAAA;EACA,iBAAA;EACA,eAAA;EACA,yBAAA;AAEN;;AAiBA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AAdF;;AAiBA;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AAdF;;AAiBA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AAdF;;AAiBA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AAdF;;AAiBA;EACE,oBAAA;EACA,gBAAA;EACA,gBAAA;AAdF;;AAgBA;EACE,oBAAA;EACA,gBAAA;EACA,iBAAA;EACA,mBAAA;AAbF;;AAgBA;EACE,oBAAA;AAbF","sourcesContent":["main {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  form {\n    margin-top: 20rem;\n    margin-bottom: 20rem;\n    max-width: 70rem;\n    width: 100%;\n    padding: 4rem;\n    box-shadow: var(--shadow);\n    border-radius: 0.3rem;\n    display: flex;\n    flex-direction: column;\n    h2 {\n      text-align: center;\n      margin-bottom: 5rem;\n    }\n    .form-group {\n      margin-bottom: 2rem;\n      display: flex;\n      flex-direction: column;\n      label {\n        font-size: 1.8rem;\n        color: var(--dark);\n        font-weight: 700;\n        margin-bottom: 1rem;\n      }\n      input {\n        border: 0.1rem solid var(--divider);\n        padding: 1rem;\n        outline: none;\n        border-radius: 0.3rem;\n        cursor: default;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n      select {\n        height: 4rem;\n        font-size: 1.4rem;\n        border: 0.1rem solid var(--divider);\n        padding: 0.5rem;\n        outline: none;\n        border-radius: 0.3rem;\n        font-family: var(--basic);\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n    }\n    .form-category {\n      margin-bottom: 2rem;\n      display: flex;\n      flex-direction: column;\n      .container-name-category {\n        display: flex;\n        flex-direction: row;\n        font-size: 1.4rem;\n        justify-content: space-evenly;\n        margin-top: 1rem;\n        border: 0.1rem solid var(--divider);\n        padding: 1rem;\n        outline: none;\n        border-radius: 0.3rem;\n        cursor: default;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n    }\n    .form-button-container {\n      display: flex;\n      justify-content: flex-end;\n      align-items: center;\n      .button {\n        margin-left: 1rem;\n        margin-right: 0.2rem;\n      }\n    }\n  }\n}\n\n// js start\n.photo-img-none {\n  display: none;\n}\n\n.flex-column {\n  display: flex;\n  flex-direction: column;\n}\n\n.container-photo-label-img {\n  display: flex;\n  margin-top: 1rem;\n  margin-bottom: 2rem;\n  .container-photo-laber {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-evenly;\n  }\n  .photo-img-center {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-top: 1rem;\n    margin-bottom: 2rem;\n    .img-padding {\n      width: 22rem;\n      height: 15rem;\n      margin-left: 6rem;\n      padding: 0.5rem;\n      box-shadow: var(--shadow);\n    }\n  }\n}\n\n.width-select-photographer {\n  width: 31rem;\n}\n\n.container-photographer-label-img {\n  display: flex;\n  margin-top: 1rem;\n  margin-bottom: 2rem;\n  .container-photographer-laber {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-evenly;\n  }\n  .photo-img-center {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-top: 1rem;\n    margin-bottom: 2rem;\n    .img-padding {\n      width: 22rem;\n      height: 15rem;\n      margin-left: 6rem;\n      padding: 0.5rem;\n      box-shadow: var(--shadow);\n    }\n  }\n}\n\n// .photographer-img-center {\n//   display: flex;\n//   justify-content: center;\n//   align-items: center;\n//   margin-top: 1rem;\n//   margin-bottom: 2rem;\n//   .img-profil {\n//     padding: 1rem;\n//     box-shadow: var(--shadow);\n//   }\n// }\n\n// js end\n\n#text-info-category {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 0.5rem;\n}\n\n.form-title-category {\n  font-size: 1.8rem;\n  color: var(--dark);\n  font-weight: 700;\n  margin-bottom: 1rem;\n}\n\n#text-info-picture {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 1.5rem;\n}\n\n#text-info-photographer {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 0.5rem;\n}\n\n#text-info-content {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 1rem;\n}\n#text-info {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: -2rem;\n  margin-bottom: 2rem;\n}\n\n.text-danger {\n  color: var(--danger);\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/form/form.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;AACF;AAAE;EACE,iBAAA;EACA,oBAAA;EACA,gBAAA;EACA,WAAA;EACA,aAAA;EACA,yBAAA;EACA,qBAAA;EACA,aAAA;EACA,sBAAA;AAEJ;AADI;EACE,kBAAA;EACA,mBAAA;AAGN;AADI;EACE,mBAAA;EACA,aAAA;EACA,sBAAA;AAGN;AAFM;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AAIR;AAFM;EACE,mCAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,eAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AAFM;EACE,YAAA;EACA,iBAAA;EACA,mCAAA;EACA,eAAA;EACA,aAAA;EACA,qBAAA;EACA,yBAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AADI;EACE,mBAAA;EACA,aAAA;EACA,sBAAA;AAGN;AAFM;EACE,aAAA;EACA,mBAAA;EACA,iBAAA;EACA,6BAAA;EACA,gBAAA;EACA,mCAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,eAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AADI;EACE,aAAA;EACA,yBAAA;EACA,mBAAA;AAGN;AAFM;EACE,iBAAA;EACA,oBAAA;AAIR;;AAGA;EACE,aAAA;AAAF;;AAGA;EACE,aAAA;EACA,sBAAA;AAAF;;AAGA;EACE,aAAA;EACA,gBAAA;EACA,mBAAA;EACA,8BAAA;AAAF;AACE;EACE,aAAA;EACA,sBAAA;EACA,6BAAA;AACJ;AACE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,mBAAA;EACA,eAAA;EACA,yBAAA;AACJ;;AAGA;EACE,YAAA;AAAF;;AAGA;EACE,aAAA;EACA,gBAAA;EACA,mBAAA;AAAF;AACE;EACE,aAAA;EACA,sBAAA;EACA,6BAAA;AACJ;AACE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,mBAAA;AACJ;AAAI;EACE,YAAA;EACA,aAAA;EACA,iBAAA;EACA,eAAA;EACA,yBAAA;AAEN;;AAKA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AAFF;;AAKA;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AAFF;;AAKA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AAFF;;AAKA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AAFF;;AAKA;EACE,oBAAA;EACA,gBAAA;EACA,gBAAA;AAFF;;AAIA;EACE,oBAAA;EACA,gBAAA;EACA,iBAAA;EACA,mBAAA;AADF;;AAIA;EACE,oBAAA;AADF","sourcesContent":["main {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  form {\n    margin-top: 20rem;\n    margin-bottom: 20rem;\n    max-width: 70rem;\n    width: 100%;\n    padding: 4rem;\n    box-shadow: var(--shadow);\n    border-radius: 0.3rem;\n    display: flex;\n    flex-direction: column;\n    h2 {\n      text-align: center;\n      margin-bottom: 5rem;\n    }\n    .form-group {\n      margin-bottom: 2rem;\n      display: flex;\n      flex-direction: column;\n      label {\n        font-size: 1.8rem;\n        color: var(--dark);\n        font-weight: 700;\n        margin-bottom: 1rem;\n      }\n      input {\n        border: 0.1rem solid var(--divider);\n        padding: 1rem;\n        outline: none;\n        border-radius: 0.3rem;\n        cursor: default;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n      select {\n        height: 4rem;\n        font-size: 1.4rem;\n        border: 0.1rem solid var(--divider);\n        padding: 0.5rem;\n        outline: none;\n        border-radius: 0.3rem;\n        font-family: var(--basic);\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n    }\n    .form-category {\n      margin-bottom: 2rem;\n      display: flex;\n      flex-direction: column;\n      .container-name-category {\n        display: flex;\n        flex-direction: row;\n        font-size: 1.4rem;\n        justify-content: space-evenly;\n        margin-top: 1rem;\n        border: 0.1rem solid var(--divider);\n        padding: 1rem;\n        outline: none;\n        border-radius: 0.3rem;\n        cursor: default;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n    }\n    .form-button-container {\n      display: flex;\n      justify-content: flex-end;\n      align-items: center;\n      .button {\n        margin-left: 1rem;\n        margin-right: 0.2rem;\n      }\n    }\n  }\n}\n\n// js start\n.photo-img-none {\n  display: none;\n}\n\n.flex-column {\n  display: flex;\n  flex-direction: column;\n}\n\n.container-photo-label-img {\n  display: flex;\n  margin-top: 1rem;\n  margin-bottom: 2rem;\n  justify-content: space-between;\n  .container-photo-laber {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-evenly;\n  }\n  .container-form-photo-img {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-top: 1rem;\n    margin-bottom: 2rem;\n    padding: 0.5rem;\n    box-shadow: var(--shadow);\n  }\n}\n\n.width-select-photographer {\n  width: 31rem;\n}\n\n.container-photographer-label-img {\n  display: flex;\n  margin-top: 1rem;\n  margin-bottom: 2rem;\n  .container-photographer-laber {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-evenly;\n  }\n  .photo-img-center {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-top: 1rem;\n    margin-bottom: 2rem;\n    .img-padding {\n      width: 22rem;\n      height: 15rem;\n      margin-left: 6rem;\n      padding: 0.5rem;\n      box-shadow: var(--shadow);\n    }\n  }\n}\n\n// js end\n\n#text-info-category {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 0.5rem;\n}\n\n.form-title-category {\n  font-size: 1.8rem;\n  color: var(--dark);\n  font-weight: 700;\n  margin-bottom: 1rem;\n}\n\n#text-info-picture {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 1.5rem;\n}\n\n#text-info-photographer {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 0.5rem;\n}\n\n#text-info-content {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 1rem;\n}\n#text-info {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: -2rem;\n  margin-bottom: 2rem;\n}\n\n.text-danger {\n  color: var(--danger);\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -6527,288 +6523,288 @@ selectPicture.addEventListener("change", function (event) {
         containerPhotoLabel.classList.add("flex-column");
         containerPhotoLabel.classList.remove("container-photo-laber");
         containerPhotoImg.classList.add("photo-img-none");
-        containerPhotoImg.classList.remove("photo-img-center");
+        containerPhotoImg.classList.remove("container-form-photo-img");
         formPhotoImg.src = "";
         break;
       }
     case "Un Désert en Cisjordanie":
       {
         containerPhotoImg.classList.remove("photo-img-none");
-        containerPhotoImg.classList.add("photo-img-center");
-        formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-cj.jpg";
+        containerPhotoImg.classList.add("container-form-photo-img");
+        formPhotoImg.src = "./assets/images/form-small/form-deserts-small/desert-small-cj.jpg";
         break;
       }
     case "Un Désert en Jordanie":
       {
         containerPhotoImg.classList.remove("photo-img-none");
-        containerPhotoImg.classList.add("photo-img-center");
-        formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-jo.jpg";
+        containerPhotoImg.classList.add("container-form-photo-img");
+        formPhotoImg.src = "./assets/images/form-small/form-deserts-small/desert-small-jo.jpg";
         break;
       }
     case "Un Désert au Maroc":
       {
         containerPhotoImg.classList.remove("photo-img-none");
-        containerPhotoImg.classList.add("photo-img-center");
-        formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-ma.jpg";
+        containerPhotoImg.classList.add("container-form-photo-img");
+        formPhotoImg.src = "./assets/images/form-small/form-deserts-small/desert-small-ma.jpg";
         break;
       }
     case "Un Désert en Namibie (Océan Atlantique)":
       {
         containerPhotoImg.classList.remove("photo-img-none");
-        containerPhotoImg.classList.add("photo-img-center");
-        formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-oa-na.jpg";
+        containerPhotoImg.classList.add("container-form-photo-img");
+        formPhotoImg.src = "./assets/images/form-small/form-deserts-small/desert-small-oa-na.jpg";
         break;
       }
     case "Un Désert en Oman":
       {
         containerPhotoImg.classList.remove("photo-img-none");
-        containerPhotoImg.classList.add("photo-img-center");
-        formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-om.jpg";
+        containerPhotoImg.classList.add("container-form-photo-img");
+        formPhotoImg.src = "./assets/images/form-small/form-deserts-small/desert-small-om.jpg";
         break;
       }
     case "Un Désert au Pérou":
       {
         containerPhotoImg.classList.remove("photo-img-none");
-        containerPhotoImg.classList.add("photo-img-center");
-        formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-pe.jpg";
+        containerPhotoImg.classList.add("container-form-photo-img");
+        formPhotoImg.src = "./assets/images/form-small/form-deserts-small/desert-small-pe.jpg";
         break;
       }
     case "Un Désert en Arabie Saoudite":
       {
         containerPhotoImg.classList.remove("photo-img-none");
-        containerPhotoImg.classList.add("photo-img-center");
-        formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-sa.jpg";
+        containerPhotoImg.classList.add("container-form-photo-img");
+        formPhotoImg.src = "./assets/images/form-small/form-deserts-small/desert-small-sa.jpg";
         break;
       }
     case "Un Désert en Namibie (Sud-Ouest)":
       {
         containerPhotoImg.classList.remove("photo-img-none");
-        containerPhotoImg.classList.add("photo-img-center");
-        formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-so-na.jpg";
+        containerPhotoImg.classList.add("container-form-photo-img");
+        formPhotoImg.src = "./assets/images/form-small/form-deserts-small/desert-small-so-na.jpg";
         break;
       }
     case "Le Désert du Sahara (Soir)":
       {
         containerPhotoImg.classList.remove("photo-img-none");
-        containerPhotoImg.classList.add("photo-img-center");
-        formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-soir-eh.jpg";
+        containerPhotoImg.classList.add("container-form-photo-img");
+        formPhotoImg.src = "./assets/images/form-small/form-deserts-small/desert-small-soir-eh.jpg";
         break;
       }
     case "Sable Blanc du Nouveau-Mexique (USA)":
       {
         containerPhotoImg.classList.remove("photo-img-none");
-        containerPhotoImg.classList.add("photo-img-center");
-        formPhotoImg.src = "./assets/images/form-photos/form-deserts/sable-blanc-nmex-us.jpg";
+        containerPhotoImg.classList.add("container-form-photo-img");
+        formPhotoImg.src = "./assets/images/form-small/form-deserts-small/sable-blanc-small-nmex-us.jpg";
         break;
       }
     case "Une Forêt en Australie":
       {
         containerPhotoImg.classList.remove("photo-img-none");
-        containerPhotoImg.classList.add("photo-img-center");
-        formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-au.jpg";
+        containerPhotoImg.classList.add("container-form-photo-img");
+        formPhotoImg.src = "./assets/images/form-small/form-forets-small/foret-small-au.jpg";
         break;
       }
     case "Une Forêt au Canada":
       {
         containerPhotoImg.classList.remove("photo-img-none");
-        containerPhotoImg.classList.add("photo-img-center");
-        formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-ca.jpg";
+        containerPhotoImg.classList.add("container-form-photo-img");
+        formPhotoImg.src = "./assets/images/form-small/form-forets-small/foret-small-ca.jpg";
         break;
       }
     case "Une Forêt en Finlande":
       {
         containerPhotoImg.classList.remove("photo-img-none");
-        containerPhotoImg.classList.add("photo-img-center");
-        formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-fi.jpg";
+        containerPhotoImg.classList.add("container-form-photo-img");
+        formPhotoImg.src = "./assets/images/form-small/form-forets-small/foret-small-fi.jpg";
         break;
       }
     case "Une Forêt en Croatie":
       {
         containerPhotoImg.classList.remove("photo-img-none");
-        containerPhotoImg.classList.add("photo-img-center");
-        formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-hr.jpg";
+        containerPhotoImg.classList.add("container-form-photo-img");
+        formPhotoImg.src = "./assets/images/form-small/form-forets-small/foret-small-hr.jpg";
         break;
       }
     case "Une Forêt en Inde":
       {
         containerPhotoImg.classList.remove("photo-img-none");
-        containerPhotoImg.classList.add("photo-img-center");
-        formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-in.jpg";
+        containerPhotoImg.classList.add("container-form-photo-img");
+        formPhotoImg.src = "./assets/images/form-small/form-forets-small/foret-small-in.jpg";
         break;
       }
     case "Une Forêt en Italie":
       {
         containerPhotoImg.classList.remove("photo-img-none");
-        containerPhotoImg.classList.add("photo-img-center");
-        formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-it.jpg";
+        containerPhotoImg.classList.add("container-form-photo-img");
+        formPhotoImg.src = "./assets/images/form-small/form-forets-small/foret-small-it.jpg";
         break;
       }
     case "Une Forêt au Japon":
       {
         containerPhotoImg.classList.remove("photo-img-none");
-        containerPhotoImg.classList.add("photo-img-center");
-        formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-jp.jpg";
+        containerPhotoImg.classList.add("container-form-photo-img");
+        formPhotoImg.src = "./assets/images/form-small/form-forets-small/foret-small-jp.jpg";
         break;
       }
     case "La Forêt des Loups":
       {
         containerPhotoImg.classList.remove("photo-img-none");
-        containerPhotoImg.classList.add("photo-img-center");
-        formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-loups.jpg";
+        containerPhotoImg.classList.add("container-form-photo-img");
+        formPhotoImg.src = "./assets/images/form-small/form-forets-small/foret-small-loups.jpg";
         break;
       }
     case "Une Forêt au Nouvelle-Zélande":
       {
         containerPhotoImg.classList.remove("photo-img-none");
-        containerPhotoImg.classList.add("photo-img-center");
-        formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-nz.jpg";
+        containerPhotoImg.classList.add("container-form-photo-img");
+        formPhotoImg.src = "./assets/images/form-small/form-forets-small/foret-small-nz.jpg";
         break;
       }
     case "Une Forêt en Washington (USA)":
       {
         containerPhotoImg.classList.remove("photo-img-none");
-        containerPhotoImg.classList.add("photo-img-center");
-        formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-wash-us.jpg";
+        containerPhotoImg.classList.add("container-form-photo-img");
+        formPhotoImg.src = "./assets/images/form-small/form-forets-small/foret-small-wash-us.jpg";
         break;
       }
     case "Une Plage en Australie":
       {
         containerPhotoImg.classList.remove("photo-img-none");
-        containerPhotoImg.classList.add("photo-img-center");
-        formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-au.jpg";
+        containerPhotoImg.classList.add("container-form-photo-img");
+        formPhotoImg.src = "./assets/images/form-small/form-plages-small/plage-small-au.jpg";
         break;
       }
     case "Une Plage au Brésil":
       {
         containerPhotoImg.classList.remove("photo-img-none");
-        containerPhotoImg.classList.add("photo-img-center");
-        formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-br.jpg";
+        containerPhotoImg.classList.add("container-form-photo-img");
+        formPhotoImg.src = "./assets/images/form-small/form-plages-small/plage-small-br.jpg";
         break;
       }
     case "Une Plage en Grande-Bretagne":
       {
         containerPhotoImg.classList.remove("photo-img-none");
-        containerPhotoImg.classList.add("photo-img-center");
-        formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-gb.jpg";
+        containerPhotoImg.classList.add("container-form-photo-img");
+        formPhotoImg.src = "./assets/images/form-small/form-plages-small/plage-small-gb.jpg";
         break;
       }
     case "Une Plage en Italie":
       {
         containerPhotoImg.classList.remove("photo-img-none");
-        containerPhotoImg.classList.add("photo-img-center");
-        formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-it.jpg";
+        containerPhotoImg.classList.add("container-form-photo-img");
+        formPhotoImg.src = "./assets/images/form-small/form-plages-small/plage-small-it.jpg";
         break;
       }
     case "Une Plage en Madagascar":
       {
         containerPhotoImg.classList.remove("photo-img-none");
-        containerPhotoImg.classList.add("photo-img-center");
-        formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-mg.jpg";
+        containerPhotoImg.classList.add("container-form-photo-img");
+        formPhotoImg.src = "./assets/images/form-small/form-plages-small/plage-small-mg.jpg";
         break;
       }
     case "Une Plage au Mexique":
       {
         containerPhotoImg.classList.remove("photo-img-none");
-        containerPhotoImg.classList.add("photo-img-center");
-        formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-mx.jpg";
+        containerPhotoImg.classList.add("container-form-photo-img");
+        formPhotoImg.src = "./assets/images/form-small/form-plages-small/plage-small-mx.jpg";
         break;
       }
     case "Une Plage en Nouvelle-Calédonie":
       {
         containerPhotoImg.classList.remove("photo-img-none");
-        containerPhotoImg.classList.add("photo-img-center");
-        formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-nc.jpg";
+        containerPhotoImg.classList.add("container-form-photo-img");
+        formPhotoImg.src = "./assets/images/form-small/form-plages-small/plage-small-nc.jpg";
         break;
       }
     case "Une Plage en Polynésie Française":
       {
         containerPhotoImg.classList.remove("photo-img-none");
-        containerPhotoImg.classList.add("photo-img-center");
-        formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-pf.jpg";
+        containerPhotoImg.classList.add("container-form-photo-img");
+        formPhotoImg.src = "./assets/images/form-small/form-plages-small/plage-small-pf.jpg";
         break;
       }
     case "Une Plage aux Sychelles":
       {
         containerPhotoImg.classList.remove("photo-img-none");
-        containerPhotoImg.classList.add("photo-img-center");
-        formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-sc.jpg";
+        containerPhotoImg.classList.add("container-form-photo-img");
+        formPhotoImg.src = "./assets/images/form-small/form-plages-small/plage-small-sc.jpg";
         break;
       }
     case "Une Plage en Thaïlande":
       {
         containerPhotoImg.classList.remove("photo-img-none");
-        containerPhotoImg.classList.add("photo-img-center");
-        formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-th.jpg";
+        containerPhotoImg.classList.add("container-form-photo-img");
+        formPhotoImg.src = "./assets/images/form-small/form-plages-small/plage-small-th.jpg";
         break;
       }
     case "Une Ville au Chili":
       {
         containerPhotoImg.classList.remove("photo-img-none");
-        containerPhotoImg.classList.add("photo-img-center");
-        formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-cl.jpg";
+        containerPhotoImg.classList.add("container-form-photo-img");
+        formPhotoImg.src = "./assets/images/form-small/form-villes-small/ville-small-cl.jpg";
         break;
       }
     case "Une Ville en Chine":
       {
         containerPhotoImg.classList.remove("photo-img-none");
-        containerPhotoImg.classList.add("photo-img-center");
-        formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-cn.jpg";
+        containerPhotoImg.classList.add("container-form-photo-img");
+        formPhotoImg.src = "./assets/images/form-small/form-villes-small/ville-small-cn.jpg";
         break;
       }
     case "Une Ville en Colombie":
       {
         containerPhotoImg.classList.remove("photo-img-none");
-        containerPhotoImg.classList.add("photo-img-center");
-        formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-co.jpg";
+        containerPhotoImg.classList.add("container-form-photo-img");
+        formPhotoImg.src = "./assets/images/form-small/form-villes-small/ville-small-co.jpg";
         break;
       }
     case "Une Ville en France":
       {
         containerPhotoImg.classList.remove("photo-img-none");
-        containerPhotoImg.classList.add("photo-img-center");
-        formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-fr.jpg";
+        containerPhotoImg.classList.add("container-form-photo-img");
+        formPhotoImg.src = "./assets/images/form-small/form-villes-small/ville-small-fr.jpg";
         break;
       }
     case "Une Ville en Grande-Bretagne":
       {
         containerPhotoImg.classList.remove("photo-img-none");
-        containerPhotoImg.classList.add("photo-img-center");
-        formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-gb.jpg";
+        containerPhotoImg.classList.add("container-form-photo-img");
+        formPhotoImg.src = "./assets/images/form-small/form-villes-small/ville-small-gb.jpg";
         break;
       }
     case "Une Ville au Japon (Jour)":
       {
         containerPhotoImg.classList.remove("photo-img-none");
-        containerPhotoImg.classList.add("photo-img-center");
-        formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-jour-jp.jpg";
+        containerPhotoImg.classList.add("container-form-photo-img");
+        formPhotoImg.src = "./assets/images/form-small/form-villes-small/ville-small-jour-jp.jpg";
         break;
       }
     case "Une Ville en Koweït":
       {
         containerPhotoImg.classList.remove("photo-img-none");
-        containerPhotoImg.classList.add("photo-img-center");
-        formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-kw.jpg";
+        containerPhotoImg.classList.add("container-form-photo-img");
+        formPhotoImg.src = "./assets/images/form-small/form-villes-small/ville-small-kw.jpg";
         break;
       }
     case "Une Ville en Norvège":
       {
         containerPhotoImg.classList.remove("photo-img-none");
-        containerPhotoImg.classList.add("photo-img-center");
-        formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-no.jpg";
+        containerPhotoImg.classList.add("container-form-photo-img");
+        formPhotoImg.src = "./assets/images/form-small/form-villes-small/ville-small-no.jpg";
         break;
       }
     case "Une Ville Rural d'Allemagne":
       {
         containerPhotoImg.classList.remove("photo-img-none");
-        containerPhotoImg.classList.add("photo-img-center");
-        formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-rural-ge.jpg";
+        containerPhotoImg.classList.add("container-form-photo-img");
+        formPhotoImg.src = "./assets/images/form-small/form-villes-small/ville-small-rural-ge.jpg";
         break;
       }
     case "Une Ville d'Italie (Soir)":
       {
         containerPhotoImg.classList.remove("photo-img-none");
-        containerPhotoImg.classList.add("photo-img-center");
-        formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-soir-it.jpg";
+        containerPhotoImg.classList.add("container-form-photo-img");
+        formPhotoImg.src = "./assets/images/form-small/form-villes-small/ville-small-soir-it.jpg";
         break;
       }
   }
