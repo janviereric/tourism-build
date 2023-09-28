@@ -5746,8 +5746,6 @@ main form .form-button-container .button {
 
 .container-photo-label-img {
   display: flex;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
   justify-content: space-between;
 }
 .container-photo-label-img .container-photo-laber {
@@ -5766,30 +5764,24 @@ main form .form-button-container .button {
 }
 
 .width-select-photographer {
-  width: 31rem;
+  width: 31.5rem;
 }
 
 .container-photographer-label-img {
   display: flex;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
+  justify-content: space-between;
 }
 .container-photographer-label-img .container-photographer-laber {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
 }
-.container-photographer-label-img .photo-img-center {
+.container-photographer-label-img .container-form-user-img {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
   margin-bottom: 2rem;
-}
-.container-photographer-label-img .photo-img-center .img-padding {
-  width: 22rem;
-  height: 15rem;
-  margin-left: 6rem;
   padding: 0.5rem;
   box-shadow: var(--shadow);
 }
@@ -5834,7 +5826,7 @@ main form .form-button-container .button {
 
 .text-danger {
   color: var(--danger);
-}`, "",{"version":3,"sources":["webpack://./src/form/form.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;AACF;AAAE;EACE,iBAAA;EACA,oBAAA;EACA,gBAAA;EACA,WAAA;EACA,aAAA;EACA,yBAAA;EACA,qBAAA;EACA,aAAA;EACA,sBAAA;AAEJ;AADI;EACE,kBAAA;EACA,mBAAA;AAGN;AADI;EACE,mBAAA;EACA,aAAA;EACA,sBAAA;AAGN;AAFM;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AAIR;AAFM;EACE,mCAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,eAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AAFM;EACE,YAAA;EACA,iBAAA;EACA,mCAAA;EACA,eAAA;EACA,aAAA;EACA,qBAAA;EACA,yBAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AADI;EACE,mBAAA;EACA,aAAA;EACA,sBAAA;AAGN;AAFM;EACE,aAAA;EACA,mBAAA;EACA,iBAAA;EACA,6BAAA;EACA,gBAAA;EACA,mCAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,eAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AADI;EACE,aAAA;EACA,yBAAA;EACA,mBAAA;AAGN;AAFM;EACE,iBAAA;EACA,oBAAA;AAIR;;AAGA;EACE,aAAA;AAAF;;AAGA;EACE,aAAA;EACA,sBAAA;AAAF;;AAGA;EACE,aAAA;EACA,gBAAA;EACA,mBAAA;EACA,8BAAA;AAAF;AACE;EACE,aAAA;EACA,sBAAA;EACA,6BAAA;AACJ;AACE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,mBAAA;EACA,eAAA;EACA,yBAAA;AACJ;;AAGA;EACE,YAAA;AAAF;;AAGA;EACE,aAAA;EACA,gBAAA;EACA,mBAAA;AAAF;AACE;EACE,aAAA;EACA,sBAAA;EACA,6BAAA;AACJ;AACE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,mBAAA;AACJ;AAAI;EACE,YAAA;EACA,aAAA;EACA,iBAAA;EACA,eAAA;EACA,yBAAA;AAEN;;AAKA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AAFF;;AAKA;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AAFF;;AAKA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AAFF;;AAKA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AAFF;;AAKA;EACE,oBAAA;EACA,gBAAA;EACA,gBAAA;AAFF;;AAIA;EACE,oBAAA;EACA,gBAAA;EACA,iBAAA;EACA,mBAAA;AADF;;AAIA;EACE,oBAAA;AADF","sourcesContent":["main {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  form {\n    margin-top: 20rem;\n    margin-bottom: 20rem;\n    max-width: 70rem;\n    width: 100%;\n    padding: 4rem;\n    box-shadow: var(--shadow);\n    border-radius: 0.3rem;\n    display: flex;\n    flex-direction: column;\n    h2 {\n      text-align: center;\n      margin-bottom: 5rem;\n    }\n    .form-group {\n      margin-bottom: 2rem;\n      display: flex;\n      flex-direction: column;\n      label {\n        font-size: 1.8rem;\n        color: var(--dark);\n        font-weight: 700;\n        margin-bottom: 1rem;\n      }\n      input {\n        border: 0.1rem solid var(--divider);\n        padding: 1rem;\n        outline: none;\n        border-radius: 0.3rem;\n        cursor: default;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n      select {\n        height: 4rem;\n        font-size: 1.4rem;\n        border: 0.1rem solid var(--divider);\n        padding: 0.5rem;\n        outline: none;\n        border-radius: 0.3rem;\n        font-family: var(--basic);\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n    }\n    .form-category {\n      margin-bottom: 2rem;\n      display: flex;\n      flex-direction: column;\n      .container-name-category {\n        display: flex;\n        flex-direction: row;\n        font-size: 1.4rem;\n        justify-content: space-evenly;\n        margin-top: 1rem;\n        border: 0.1rem solid var(--divider);\n        padding: 1rem;\n        outline: none;\n        border-radius: 0.3rem;\n        cursor: default;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n    }\n    .form-button-container {\n      display: flex;\n      justify-content: flex-end;\n      align-items: center;\n      .button {\n        margin-left: 1rem;\n        margin-right: 0.2rem;\n      }\n    }\n  }\n}\n\n// js start\n.photo-img-none {\n  display: none;\n}\n\n.flex-column {\n  display: flex;\n  flex-direction: column;\n}\n\n.container-photo-label-img {\n  display: flex;\n  margin-top: 1rem;\n  margin-bottom: 2rem;\n  justify-content: space-between;\n  .container-photo-laber {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-evenly;\n  }\n  .container-form-photo-img {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-top: 1rem;\n    margin-bottom: 2rem;\n    padding: 0.5rem;\n    box-shadow: var(--shadow);\n  }\n}\n\n.width-select-photographer {\n  width: 31rem;\n}\n\n.container-photographer-label-img {\n  display: flex;\n  margin-top: 1rem;\n  margin-bottom: 2rem;\n  .container-photographer-laber {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-evenly;\n  }\n  .photo-img-center {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-top: 1rem;\n    margin-bottom: 2rem;\n    .img-padding {\n      width: 22rem;\n      height: 15rem;\n      margin-left: 6rem;\n      padding: 0.5rem;\n      box-shadow: var(--shadow);\n    }\n  }\n}\n\n// js end\n\n#text-info-category {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 0.5rem;\n}\n\n.form-title-category {\n  font-size: 1.8rem;\n  color: var(--dark);\n  font-weight: 700;\n  margin-bottom: 1rem;\n}\n\n#text-info-picture {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 1.5rem;\n}\n\n#text-info-photographer {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 0.5rem;\n}\n\n#text-info-content {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 1rem;\n}\n#text-info {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: -2rem;\n  margin-bottom: 2rem;\n}\n\n.text-danger {\n  color: var(--danger);\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/form/form.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;AACF;AAAE;EACE,iBAAA;EACA,oBAAA;EACA,gBAAA;EACA,WAAA;EACA,aAAA;EACA,yBAAA;EACA,qBAAA;EACA,aAAA;EACA,sBAAA;AAEJ;AADI;EACE,kBAAA;EACA,mBAAA;AAGN;AADI;EACE,mBAAA;EACA,aAAA;EACA,sBAAA;AAGN;AAFM;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AAIR;AAFM;EACE,mCAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,eAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AAFM;EACE,YAAA;EACA,iBAAA;EACA,mCAAA;EACA,eAAA;EACA,aAAA;EACA,qBAAA;EACA,yBAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AADI;EACE,mBAAA;EACA,aAAA;EACA,sBAAA;AAGN;AAFM;EACE,aAAA;EACA,mBAAA;EACA,iBAAA;EACA,6BAAA;EACA,gBAAA;EACA,mCAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,eAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AADI;EACE,aAAA;EACA,yBAAA;EACA,mBAAA;AAGN;AAFM;EACE,iBAAA;EACA,oBAAA;AAIR;;AAGA;EACE,aAAA;AAAF;;AAGA;EACE,aAAA;EACA,sBAAA;AAAF;;AAGA;EACE,aAAA;EACA,8BAAA;AAAF;AACE;EACE,aAAA;EACA,sBAAA;EACA,6BAAA;AACJ;AACE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,mBAAA;EACA,eAAA;EACA,yBAAA;AACJ;;AAGA;EACE,cAAA;AAAF;;AAGA;EACE,aAAA;EACA,8BAAA;AAAF;AACE;EACE,aAAA;EACA,sBAAA;EACA,6BAAA;AACJ;AACE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,mBAAA;EACA,eAAA;EACA,yBAAA;AACJ;;AAKA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AAFF;;AAKA;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AAFF;;AAKA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AAFF;;AAKA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AAFF;;AAKA;EACE,oBAAA;EACA,gBAAA;EACA,gBAAA;AAFF;;AAIA;EACE,oBAAA;EACA,gBAAA;EACA,iBAAA;EACA,mBAAA;AADF;;AAIA;EACE,oBAAA;AADF","sourcesContent":["main {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  form {\n    margin-top: 20rem;\n    margin-bottom: 20rem;\n    max-width: 70rem;\n    width: 100%;\n    padding: 4rem;\n    box-shadow: var(--shadow);\n    border-radius: 0.3rem;\n    display: flex;\n    flex-direction: column;\n    h2 {\n      text-align: center;\n      margin-bottom: 5rem;\n    }\n    .form-group {\n      margin-bottom: 2rem;\n      display: flex;\n      flex-direction: column;\n      label {\n        font-size: 1.8rem;\n        color: var(--dark);\n        font-weight: 700;\n        margin-bottom: 1rem;\n      }\n      input {\n        border: 0.1rem solid var(--divider);\n        padding: 1rem;\n        outline: none;\n        border-radius: 0.3rem;\n        cursor: default;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n      select {\n        height: 4rem;\n        font-size: 1.4rem;\n        border: 0.1rem solid var(--divider);\n        padding: 0.5rem;\n        outline: none;\n        border-radius: 0.3rem;\n        font-family: var(--basic);\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n    }\n    .form-category {\n      margin-bottom: 2rem;\n      display: flex;\n      flex-direction: column;\n      .container-name-category {\n        display: flex;\n        flex-direction: row;\n        font-size: 1.4rem;\n        justify-content: space-evenly;\n        margin-top: 1rem;\n        border: 0.1rem solid var(--divider);\n        padding: 1rem;\n        outline: none;\n        border-radius: 0.3rem;\n        cursor: default;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n    }\n    .form-button-container {\n      display: flex;\n      justify-content: flex-end;\n      align-items: center;\n      .button {\n        margin-left: 1rem;\n        margin-right: 0.2rem;\n      }\n    }\n  }\n}\n\n// js start\n.photo-img-none {\n  display: none;\n}\n\n.flex-column {\n  display: flex;\n  flex-direction: column;\n}\n\n.container-photo-label-img {\n  display: flex;\n  justify-content: space-between;\n  .container-photo-laber {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-evenly;\n  }\n  .container-form-photo-img {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-top: 1rem;\n    margin-bottom: 2rem;\n    padding: 0.5rem;\n    box-shadow: var(--shadow);\n  }\n}\n\n.width-select-photographer {\n  width: 31.5rem;\n}\n\n.container-photographer-label-img {\n  display: flex;\n  justify-content: space-between;\n  .container-photographer-laber {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-evenly;\n  }\n  .container-form-user-img {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-top: 1rem;\n    margin-bottom: 2rem;\n    padding: 0.5rem;\n    box-shadow: var(--shadow);\n  }\n}\n\n// js end\n\n#text-info-category {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 0.5rem;\n}\n\n.form-title-category {\n  font-size: 1.8rem;\n  color: var(--dark);\n  font-weight: 700;\n  margin-bottom: 1rem;\n}\n\n#text-info-picture {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 1.5rem;\n}\n\n#text-info-photographer {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 0.5rem;\n}\n\n#text-info-content {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 1rem;\n}\n#text-info {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: -2rem;\n  margin-bottom: 2rem;\n}\n\n.text-danger {\n  color: var(--danger);\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -6832,120 +6824,120 @@ selectPhotographer.addEventListener("change", function (event) {
         containerPhotographerLabel.classList.remove("container-photographer-laber");
         selectPhotographer.classList.remove("width-select-photographer");
         containerPhotographerImg.classList.add("photo-img-none");
-        containerPhotographerImg.classList.remove("photo-img-center");
+        containerPhotographerImg.classList.remove("container-form-user-img");
         formPhotographerImg.src = "";
         break;
       }
     case "Gustave - L'Aventurier":
       {
         containerPhotographerImg.classList.remove("photo-img-none");
-        containerPhotographerImg.classList.add("photo-img-center");
-        formPhotographerImg.src = "./assets/images/form-users/users-aventure/gustave-aventurier.jpg";
+        containerPhotographerImg.classList.add("container-form-user-img");
+        formPhotographerImg.src = "./assets/images/form-users-small/form-users-aventure-small/gustave-aventurier-small.jpg";
         break;
       }
     case "Julie - L'Aventurière":
       {
         containerPhotographerImg.classList.remove("photo-img-none");
-        containerPhotographerImg.classList.add("photo-img-center");
-        formPhotographerImg.src = "./assets/images/form-users/users-aventure/julie-aventuriere.jpg";
+        containerPhotographerImg.classList.add("container-form-user-img");
+        formPhotographerImg.src = "./assets/images/form-users-small/form-users-aventure-small/julie-aventuriere-small.jpg";
         break;
       }
     case "Henry - L'Aventurier":
       {
         containerPhotographerImg.classList.remove("photo-img-none");
-        containerPhotographerImg.classList.add("photo-img-center");
-        formPhotographerImg.src = "./assets/images/form-users/users-aventure/henry-aventurier.jpg";
+        containerPhotographerImg.classList.add("container-form-user-img");
+        formPhotographerImg.src = "./assets/images/form-users-small/form-users-aventure-small/henry-aventurier-small.jpg";
         break;
       }
     case "Zoé - L'Aventurière":
       {
         containerPhotographerImg.classList.remove("photo-img-none");
-        containerPhotographerImg.classList.add("photo-img-center");
-        formPhotographerImg.src = "./assets/images/form-users/users-aventure/zoe-aventuriere.jpg";
+        containerPhotographerImg.classList.add("container-form-user-img");
+        formPhotographerImg.src = "./assets/images/form-users-small/form-users-aventure-small/zoe-aventuriere-small.jpg";
         break;
       }
     case "Flora - L'Exploratrice":
       {
         containerPhotographerImg.classList.remove("photo-img-none");
-        containerPhotographerImg.classList.add("photo-img-center");
-        formPhotographerImg.src = "./assets/images/form-users/users-exploration/flora-exploratrice.jpg";
+        containerPhotographerImg.classList.add("container-form-user-img");
+        formPhotographerImg.src = "./assets/images/form-users-small/form-users-exploration-small/flora-exploratrice-small.jpg";
         break;
       }
     case "Denver - L'Explorateur":
       {
         containerPhotographerImg.classList.remove("photo-img-none");
-        containerPhotographerImg.classList.add("photo-img-center");
-        formPhotographerImg.src = "./assets/images/form-users/users-exploration/denver-explorateur.jpg";
+        containerPhotographerImg.classList.add("container-form-user-img");
+        formPhotographerImg.src = "./assets/images/form-users-small/form-users-exploration-small/denver-explorateur-small.jpg";
         break;
       }
     case "Inaya - L'Exploratrice":
       {
         containerPhotographerImg.classList.remove("photo-img-none");
-        containerPhotographerImg.classList.add("photo-img-center");
-        formPhotographerImg.src = "./assets/images/form-users/users-exploration/inaya-exploratrice.jpg";
+        containerPhotographerImg.classList.add("container-form-user-img");
+        formPhotographerImg.src = "./assets/images/form-users-small/form-users-exploration-small/inaya-exploratrice-small.jpg";
         break;
       }
     case "Seth - L'Explorateur":
       {
         containerPhotographerImg.classList.remove("photo-img-none");
-        containerPhotographerImg.classList.add("photo-img-center");
-        formPhotographerImg.src = "./assets/images/form-users/users-exploration/seth-explorateur.jpg";
+        containerPhotographerImg.classList.add("container-form-user-img");
+        formPhotographerImg.src = "./assets/images/form-users-small/form-users-exploration-small/seth-explorateur-small.jpg";
         break;
       }
     case "Lance - Le Visiteur":
       {
         containerPhotographerImg.classList.remove("photo-img-none");
-        containerPhotographerImg.classList.add("photo-img-center");
-        formPhotographerImg.src = "./assets/images/form-users/users-visite/lance-visiteur.jpg";
+        containerPhotographerImg.classList.add("container-form-user-img");
+        formPhotographerImg.src = "./assets/images/form-users-form/form-users-visite-small/lance-visiteur-small.jpg";
         break;
       }
     case "Nadia - La Visiteuse":
       {
         containerPhotographerImg.classList.remove("photo-img-none");
-        containerPhotographerImg.classList.add("photo-img-center");
-        formPhotographerImg.src = "./assets/images/form-users/users-visite/nadia-visiteuse.jpg";
+        containerPhotographerImg.classList.add("container-form-user-img");
+        formPhotographerImg.src = "./assets/images/form-users-form/form-users-visite-small/nadia-visiteuse-small.jpg";
         break;
       }
     case "Xavier - Le Visiteur":
       {
         containerPhotographerImg.classList.remove("photo-img-none");
-        containerPhotographerImg.classList.add("photo-img-center");
-        formPhotographerImg.src = "./assets/images/form-users/users-visite/xavier-visiteur.jpg";
+        containerPhotographerImg.classList.add("container-form-user-img");
+        formPhotographerImg.src = "./assets/images/form-users-form/form-users-visite-small/xavier-visiteur-small.jpg";
         break;
       }
     case "Ornella - La Visiteuse":
       {
         containerPhotographerImg.classList.remove("photo-img-none");
-        containerPhotographerImg.classList.add("photo-img-center");
-        formPhotographerImg.src = "./assets/images/form-users/users-visite/ornella-visiteuse.jpg";
+        containerPhotographerImg.classList.add("container-form-user-img");
+        formPhotographerImg.src = "./assets/images/form-users-form/form-users-visite-small/ornella-visiteuse-small.jpg";
         break;
       }
     case "Cerise - La Voyageuse":
       {
         containerPhotographerImg.classList.remove("photo-img-none");
-        containerPhotographerImg.classList.add("photo-img-center");
-        formPhotographerImg.src = "./assets/images/form-users/users-voyage/cerise-voyageuse.jpg";
+        containerPhotographerImg.classList.add("container-form-user-img");
+        formPhotographerImg.src = "./assets/images/form-users-small/form-users-voyage-small/cerise-voyageuse-small.jpg";
         break;
       }
     case "Philibert - Le Voyageur":
       {
         containerPhotographerImg.classList.remove("photo-img-none");
-        containerPhotographerImg.classList.add("photo-img-center");
-        formPhotographerImg.src = "./assets/images/form-users/users-voyage/philibert-voyageur.jpg";
+        containerPhotographerImg.classList.add("container-form-user-img");
+        formPhotographerImg.src = "./assets/images/form-users-small/form-users-voyage-small/philibert-voyageur-small.jpg";
         break;
       }
     case "Roxane - La Voyageuse":
       {
         containerPhotographerImg.classList.remove("photo-img-none");
-        containerPhotographerImg.classList.add("photo-img-center");
-        formPhotographerImg.src = "./assets/images/form-users/users-voyage/roxane-voyageuse.jpg";
+        containerPhotographerImg.classList.add("container-form-user-img");
+        formPhotographerImg.src = "./assets/images/form-users-small/form-users-voyage-small/roxane-voyageuse-small.jpg";
         break;
       }
     case "Yuu - Le Voyageur":
       {
         containerPhotographerImg.classList.remove("photo-img-none");
-        containerPhotographerImg.classList.add("photo-img-center");
-        formPhotographerImg.src = "./assets/images/form-users/users-voyage/yuu-voyageur.jpg";
+        containerPhotographerImg.classList.add("container-form-user-img");
+        formPhotographerImg.src = "./assets/images/form-users-small/form-users-voyage-small/yuu-voyageur-small.jpg";
         break;
       }
   }
