@@ -4705,32 +4705,6 @@ $({ target: 'Object', stat: true, forced: Object.defineProperty !== defineProper
 
 /***/ }),
 
-/***/ "./node_modules/core-js/modules/es.object.from-entries.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/core-js/modules/es.object.from-entries.js ***!
-  \****************************************************************/
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
-
-
-var $ = __webpack_require__(/*! ../internals/export */ "./node_modules/core-js/internals/export.js");
-var iterate = __webpack_require__(/*! ../internals/iterate */ "./node_modules/core-js/internals/iterate.js");
-var createProperty = __webpack_require__(/*! ../internals/create-property */ "./node_modules/core-js/internals/create-property.js");
-
-// `Object.fromEntries` method
-// https://github.com/tc39/proposal-object-from-entries
-$({ target: 'Object', stat: true }, {
-  fromEntries: function fromEntries(iterable) {
-    var obj = {};
-    iterate(iterable, function (k, v) {
-      createProperty(obj, k, v);
-    }, { AS_ENTRIES: true });
-    return obj;
-  }
-});
-
-
-/***/ }),
-
 /***/ "./node_modules/core-js/modules/es.object.get-own-property-symbols.js":
 /*!****************************************************************************!*\
   !*** ./node_modules/core-js/modules/es.object.get-own-property-symbols.js ***!
@@ -7509,6 +7483,11 @@ a {
   border: 0.2rem solid var(--primary);
   color: var(--light);
 }
+.button-back {
+  background: var(--primary);
+  border: 0.2rem solid var(--primary);
+  color: var(--light);
+}
 
 .text-valid {
   color: var(--success);
@@ -7678,17 +7657,17 @@ footer .j {
 footer .e {
   font-family: var(--logo);
   color: var(--danger);
-}`, "",{"version":3,"sources":["webpack://./src/assets/sass/partials/_base.scss","webpack://./src/assets/sass/styles.scss","webpack://./src/assets/sass/partials/_classes.scss","webpack://./src/assets/sass/partials/_reset.scss","webpack://./src/assets/sass/partials/_variables.scss","webpack://./src/assets/sass/layouts/_body.scss","webpack://./src/assets/sass/layouts/_header.scss","webpack://./src/assets/sass/partials/_media-queries.scss","webpack://./src/assets/sass/layouts/_footer.scss"],"names":[],"mappings":"AAAA;EACE,gBAAA;ACCF;;ADEA;EACE,iBAAA;EACA,kBAAA;EACA,yBAAA;ACCF;;ADEA;EACE,iBAAA;ACCF;;ADEA;EACE,eAAA;ACCF;;ADEA;EACE,iBAAA;ACCF;;ADEA;EACE,eAAA;ACCF;;ADEA;EACE,gBAAA;ACCF;;ADEA;EACE,eAAA;ACCF;;ADEA;EACE,kBAAA;EACA,qBAAA;ACCF;;ACpCE;EACE,oBAAA;EACA,0CAAA;ADuCJ;;ACnCA;EACE,SAAA;EACA,qBAAA;EACA,kBAAA;EACA,gBAAA;EACA,eAAA;EACA,2BAAA;ADsCF;ACrCE;EACE,yBAAA;EACA,YAAA;EACA,2BAAA;ADuCJ;ACrCE;EACE,0BAAA;EACA,mCAAA;EACA,mBAAA;ADuCJ;ACrCE;EACE,wBAAA;EACA,mCAAA;EACA,qBAAA;ADuCJ;ACrCE;EACE,kBAAA;EACA,gCAAA;EACA,mBAAA;ADuCJ;ACrCE;EACE,kBAAA;EACA,+BAAA;EACA,mBAAA;ADuCJ;ACrCE;EACE,0BAAA;EACA,mCAAA;EACA,mBAAA;ADuCJ;;AClCE;EACE,qBAAA;EACA,iBAAA;ADqCJ;ACnCE;EACE,oBAAA;EACA,iBAAA;ADqCJ;ACnCE;EACE,kBAAA;EACA,iBAAA;ADqCJ;;AE9FA;EACE,SAAA;EACA,UAAA;EACA,sBAAA;AFiGF;;AGpGA;EAEE,kBAAA;EACA,oBAAA;EACA,mBAAA;EAGA,gBAAA;EACA,iBAAA;EACA,YAAA;EAGA,kBAAA;EACA,iBAAA;EACA,eAAA;EACA,kBAAA;EACA,eAAA;EAGA,iBAAA;EACA,kBAAA;EAGA,6BAAA;EACA,+BAAA;EACA,sCAAA;EACA,oCAAA;EAGA;iDAAA;AH6FF;;AI1HA;EACE,aAAA;AJ6HF;;AI1HA;EACE,iBAAA;EACA,aAAA;EACA,oDACE;AJ4HJ;;AKlIA;EACE,iBAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,8BAAA;EACA,mBAAA;EACA,0BAAA;EACA,eAAA;EACA,UAAA;EACA,WAAA;ALqIF;AKpIE;EACE,mBAAA;EACA,gBAAA;EACA,sBAAA;ALsIJ;AKpIE;EACE,eAAA;EACA,gBAAA;ALsIJ;AKrII;EACE,sBAAA;ALuIN;AKnIE;EACE,kBAAA;ALqIJ;AKpII;EAIE,aAAA;EACA,qBAAA;ALmIN;AMnKE;ED2BE;IAEI,aAAA;EL0IN;AACF;AKvIM;EACE,iBAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;ALyIR;AKxIQ;EACE,4BAAA;EACA,iBAAA;EACA,qBAAA;EACA,eAAA;EACA,oBAAA;AL0IV;AKzIU;EACE,oBAAA;EACA,kCAAA;EACA,mBAAA;AL2IZ;AKzIU;EACE,iBAAA;EACA,iBAAA;AL2IZ;AKvIM;EACE,8BAAA;EACA,qBAAA;ALyIR;AKxIQ;EACE,uBAAA;AL0IV;AKrIE;EACE,aAAA;EACA,eAAA;EACA,mBAAA;ALuIJ;AM1ME;EDgEA;IAKI,cAAA;ELyIJ;AACF;AKvIE;EACE,aAAA;EACA,kBAAA;EACA,WAAA;EACA,YAAA;EACA,eAAA;EACA,gCAAA;EACA,yBAAA;ALyIJ;AKxII;EACE,cAAA;AL0IN;AKzIM;EACE,iBAAA;AL2IR;AKvIE;EACE,cAAA;ALyIJ;;AOlOA;EACE,iBAAA;EACA,aAAA;EACA,YAAA;EACA,6BAAA;EACA,mBAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,iBAAA;APqOF;AOpOE;EACE,YAAA;EACA,WAAA;EACA,sBAAA;APsOJ;AOpOE;EACE,wBAAA;EACA,oBAAA;APsOJ;AOnOE;EACE,wBAAA;EACA,oBAAA;APqOJ","sourcesContent":[":root {\n  font-size: 62.5%; // font-size = 10px\n}\n\nbody {\n  font-size: 1.6rem; // 1rem = 10px\n  color: var(--dark);\n  font-family: var(--basic);\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: var(--dark);\n  text-decoration: none;\n}\n",":root {\n  font-size: 62.5%;\n}\n\nbody {\n  font-size: 1.6rem;\n  color: var(--dark);\n  font-family: var(--basic);\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: var(--dark);\n  text-decoration: none;\n}\n\n.title-underline {\n  padding-bottom: 2rem;\n  border-bottom: 0.1rem solid var(--divider);\n}\n\n.button {\n  border: 0;\n  border-radius: 0.3rem;\n  padding: 1rem 2rem;\n  font-weight: 700;\n  cursor: pointer;\n  transition: box-shadow 0.2s;\n}\n.button:hover {\n  box-shadow: var(--shadow);\n  opacity: 89%;\n  transition: box-shadow 0.2s;\n}\n.button-add {\n  background: var(--primary);\n  border: 0.2rem solid var(--primary);\n  color: var(--light);\n}\n.button-cancel {\n  background: var(--light);\n  border: 0.2rem solid var(--primary);\n  color: var(--primary);\n}\n.button-edit {\n  margin-right: 2rem;\n  background-color: var(--success);\n  color: var(--light);\n}\n.button-delete {\n  margin-right: 2rem;\n  background-color: var(--danger);\n  color: var(--light);\n}\n.button-save {\n  background: var(--primary);\n  border: 0.2rem solid var(--primary);\n  color: var(--light);\n}\n\n.text-valid {\n  color: var(--success);\n  font-weight: bold;\n}\n.text-error {\n  color: var(--danger);\n  font-weight: bold;\n}\n.text-detail {\n  color: var(--info);\n  font-weight: bold;\n}\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n:root {\n  --primary: #2e86de;\n  --secondary: #54a0ff;\n  --tertiary: #48dbfb;\n  --light: #f5f6fa;\n  --medium: #2d98da;\n  --dark: #333;\n  --success: #06ad3e;\n  --danger: #ea2027;\n  --info: #3867d6;\n  --warning: #fbc531;\n  --hint: #95a5a6;\n  --accent: #3c40c6;\n  --divider: #bdc3c7;\n  --basic: \"Mulish\", sans-serif;\n  --default: \"Roboto\", sans-serif;\n  --logo: \"Roboto Condensed\", sans-serif;\n  --form: Arial, Helvetica, sans-serif;\n  --shadow: 0 0.1rem 0.2rem 0 rgba(60, 64, 67, 0.3),\n    0 0.1rem 0.3rem 0.1rem rgba(60, 64, 67, 0.15);\n}\n\nbody {\n  height: 100vh;\n}\n\n.container {\n  min-height: 100vh;\n  display: grid;\n  grid: \"header\" auto \"content\" 1fr \"footer\" auto/auto;\n}\n\nheader {\n  grid-area: header;\n  padding: 2rem;\n  display: flex;\n  flex-flow: row nowrap;\n  justify-content: space-between;\n  align-items: center;\n  background: var(--primary);\n  position: fixed;\n  z-index: 1;\n  width: 100%;\n}\nheader a {\n  color: var(--light);\n  font-weight: 700;\n  letter-spacing: 0.1rem;\n}\nheader .header-brand {\n  font-size: 3rem;\n  font-weight: 700;\n}\nheader .header-brand:hover {\n  color: var(--tertiary);\n}\nheader .header-menu {\n  position: relative;\n}\nheader .header-menu ul {\n  display: flex;\n  margin-right: -0.5rem;\n}\n@media (max-width: 480px) {\n  header .header-menu ul {\n    display: none;\n  }\n}\nheader .header-menu ul li {\n  margin-left: 1rem;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\nheader .header-menu ul li a {\n  padding: 1rem 2rem 1rem 2rem;\n  font-size: 1.5rem;\n  border-radius: 0.2rem;\n  cursor: pointer;\n  transition: all 0.2s;\n}\nheader .header-menu ul li a:hover {\n  transition: all 0.2s;\n  background-color: var(--secondary);\n  color: var(--light);\n}\nheader .header-menu ul li a .header-brand {\n  font-size: 1.8rem;\n  padding: 0 0.1rem;\n}\nheader .header-menu ul .active {\n  background-color: var(--light);\n  border-radius: 0.2rem;\n}\nheader .header-menu ul .active a {\n  color: var(--secondary);\n}\nheader .header-menu-icon {\n  display: none;\n  font-size: 3rem;\n  color: var(--light);\n}\n@media (max-width: 480px) {\n  header .header-menu-icon {\n    display: block;\n  }\n}\nheader .mobile-menu {\n  display: none;\n  position: absolute;\n  top: 5.7rem;\n  right: -2rem;\n  padding: 0.5rem;\n  background-color: var(--primary);\n  box-shadow: var(--shadow);\n}\nheader .mobile-menu ul {\n  display: block;\n}\nheader .mobile-menu ul li {\n  margin: 1rem 2rem;\n}\nheader .mobile-menu.open {\n  display: block;\n}\n\nfooter {\n  grid-area: footer;\n  padding: 2rem;\n  height: 8rem;\n  background-color: var(--dark);\n  color: var(--light);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: bold;\n}\nfooter img {\n  height: 2rem;\n  width: 2rem;\n  margin-bottom: -0.1rem;\n}\nfooter .j {\n  font-family: var(--logo);\n  color: var(--danger);\n}\nfooter .e {\n  font-family: var(--logo);\n  color: var(--danger);\n}",".title {\n  &-underline {\n    padding-bottom: 2rem;\n    border-bottom: 0.1rem solid var(--divider);\n  }\n}\n\n.button {\n  border: 0;\n  border-radius: 0.3rem;\n  padding: 1rem 2rem;\n  font-weight: 700;\n  cursor: pointer;\n  transition: box-shadow 0.2s;\n  &:hover {\n    box-shadow: var(--shadow);\n    opacity: 89%;\n    transition: box-shadow 0.2s;\n  }\n  &-add {\n    background: var(--primary);\n    border: 0.2rem solid var(--primary);\n    color: var(--light);\n  }\n  &-cancel {\n    background: var(--light);\n    border: 0.2rem solid var(--primary);\n    color: var(--primary);\n  }\n  &-edit {\n    margin-right: 2rem;\n    background-color: var(--success);\n    color: var(--light);\n  }\n  &-delete {\n    margin-right: 2rem;\n    background-color: var(--danger);\n    color: var(--light);\n  }\n  &-save {\n    background: var(--primary);\n    border: 0.2rem solid var(--primary);\n    color: var(--light);\n  }\n}\n\n.text {\n  &-valid {\n    color: var(--success);\n    font-weight: bold;\n  }\n  &-error {\n    color: var(--danger);\n    font-weight: bold;\n  }\n  &-detail {\n    color: var(--info);\n    font-weight: bold;\n  }\n}\n","* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n",":root {\n  // main color\n  --primary: #2e86de;\n  --secondary: #54a0ff;\n  --tertiary: #48dbfb;\n\n  // text color\n  --light: #f5f6fa;\n  --medium: #2d98da;\n  --dark: #333;\n\n  // utils => button, border, words etc\n  --success: #06ad3e;\n  --danger: #ea2027;\n  --info: #3867d6;\n  --warning: #fbc531;\n  --hint: #95a5a6;\n\n  // utils => border, words etc\n  --accent: #3c40c6;\n  --divider: #bdc3c7;\n\n  // font-family\n  --basic: \"Mulish\", sans-serif;\n  --default: \"Roboto\", sans-serif;\n  --logo: \"Roboto Condensed\", sans-serif;\n  --form: Arial, Helvetica, sans-serif;\n\n  // shadow\n  --shadow: 0 0.1rem 0.2rem 0 rgba(60, 64, 67, 0.3),\n    0 0.1rem 0.3rem 0.1rem rgba(60, 64, 67, 0.15);\n}\n","body {\n  height: 100vh;\n}\n\n.container {\n  min-height: 100vh;\n  display: grid;\n  grid:\n    \"header\" auto\n    \"content\" 1fr\n    \"footer\" auto /\n    auto;\n}\n","@use \"../partials/media-queries.scss\" as *;\n\nheader {\n  grid-area: header;\n  padding: 2rem;\n  display: flex;\n  flex-flow: row nowrap;\n  justify-content: space-between;\n  align-items: center;\n  background: var(--primary);\n  position: fixed;\n  z-index: 1;\n  width: 100%;\n  a {\n    color: var(--light);\n    font-weight: 700;\n    letter-spacing: 0.1rem;\n  }\n  .header-brand {\n    font-size: 3rem;\n    font-weight: 700;\n    &:hover {\n      color: var(--tertiary);\n    }\n  }\n\n  .header-menu {\n    position: relative;\n    ul {\n      @include phone {\n        display: none;\n      }\n      display: flex;\n      margin-right: -0.5rem;\n      li {\n        margin-left: 1rem;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        a {\n          padding: 1rem 2rem 1rem 2rem;\n          font-size: 1.5rem;\n          border-radius: 0.2rem;\n          cursor: pointer;\n          transition: all 0.2s;\n          &:hover {\n            transition: all 0.2s;\n            background-color: var(--secondary);\n            color: var(--light);\n          }\n          .header-brand {\n            font-size: 1.8rem;\n            padding: 0 0.1rem;\n          }\n        }\n      }\n      .active {\n        background-color: var(--light);\n        border-radius: 0.2rem;\n        a {\n          color: var(--secondary);\n        }\n      }\n    }\n  }\n  .header-menu-icon {\n    display: none;\n    font-size: 3rem;\n    color: var(--light);\n    @include phone {\n      display: block;\n    }\n  }\n  .mobile-menu {\n    display: none;\n    position: absolute;\n    top: 5.7rem;\n    right: -2rem;\n    padding: 0.5rem;\n    background-color: var(--primary);\n    box-shadow: var(--shadow);\n    ul {\n      display: block;\n      li {\n        margin: 1rem 2rem;\n      }\n    }\n  }\n  .mobile-menu.open {\n    display: block;\n  }\n}\n","@mixin phone {\n  @media (max-width: 480px) {\n    @content;\n  }\n}\n\n@mixin tablet {\n  @media (min-width: 481px) and (max-width: 767px) {\n    @content;\n  }\n}\n\n@mixin laptop {\n  @media (min-width: 768px) and (max-width: 1199px) {\n    @content;\n  }\n}\n\n@mixin computer {\n  @media (min-width: 1200px) {\n    @content;\n  }\n}\n","footer {\n  grid-area: footer;\n  padding: 2rem;\n  height: 8rem;\n  background-color: var(--dark);\n  color: var(--light);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: bold;\n  img {\n    height: 2rem;\n    width: 2rem;\n    margin-bottom: -0.1rem;\n  }\n  .j {\n    font-family: var(--logo);\n    color: var(--danger);\n  }\n\n  .e {\n    font-family: var(--logo);\n    color: var(--danger);\n  }\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/assets/sass/partials/_base.scss","webpack://./src/assets/sass/styles.scss","webpack://./src/assets/sass/partials/_classes.scss","webpack://./src/assets/sass/partials/_reset.scss","webpack://./src/assets/sass/partials/_variables.scss","webpack://./src/assets/sass/layouts/_body.scss","webpack://./src/assets/sass/layouts/_header.scss","webpack://./src/assets/sass/partials/_media-queries.scss","webpack://./src/assets/sass/layouts/_footer.scss"],"names":[],"mappings":"AAAA;EACE,gBAAA;ACCF;;ADEA;EACE,iBAAA;EACA,kBAAA;EACA,yBAAA;ACCF;;ADEA;EACE,iBAAA;ACCF;;ADEA;EACE,eAAA;ACCF;;ADEA;EACE,iBAAA;ACCF;;ADEA;EACE,eAAA;ACCF;;ADEA;EACE,gBAAA;ACCF;;ADEA;EACE,eAAA;ACCF;;ADEA;EACE,kBAAA;EACA,qBAAA;ACCF;;ACpCE;EACE,oBAAA;EACA,0CAAA;ADuCJ;;ACnCA;EACE,SAAA;EACA,qBAAA;EACA,kBAAA;EACA,gBAAA;EACA,eAAA;EACA,2BAAA;ADsCF;ACrCE;EACE,yBAAA;EACA,YAAA;EACA,2BAAA;ADuCJ;ACrCE;EACE,0BAAA;EACA,mCAAA;EACA,mBAAA;ADuCJ;ACrCE;EACE,wBAAA;EACA,mCAAA;EACA,qBAAA;ADuCJ;ACrCE;EACE,kBAAA;EACA,gCAAA;EACA,mBAAA;ADuCJ;ACrCE;EACE,kBAAA;EACA,+BAAA;EACA,mBAAA;ADuCJ;ACrCE;EACE,0BAAA;EACA,mCAAA;EACA,mBAAA;ADuCJ;ACrCE;EACE,0BAAA;EACA,mCAAA;EACA,mBAAA;ADuCJ;;AClCE;EACE,qBAAA;EACA,iBAAA;ADqCJ;ACnCE;EACE,oBAAA;EACA,iBAAA;ADqCJ;ACnCE;EACE,kBAAA;EACA,iBAAA;ADqCJ;;AEnGA;EACE,SAAA;EACA,UAAA;EACA,sBAAA;AFsGF;;AGzGA;EAEE,kBAAA;EACA,oBAAA;EACA,mBAAA;EAGA,gBAAA;EACA,iBAAA;EACA,YAAA;EAGA,kBAAA;EACA,iBAAA;EACA,eAAA;EACA,kBAAA;EACA,eAAA;EAGA,iBAAA;EACA,kBAAA;EAGA,6BAAA;EACA,+BAAA;EACA,sCAAA;EACA,oCAAA;EAGA;iDAAA;AHkGF;;AI/HA;EACE,aAAA;AJkIF;;AI/HA;EACE,iBAAA;EACA,aAAA;EACA,oDACE;AJiIJ;;AKvIA;EACE,iBAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,8BAAA;EACA,mBAAA;EACA,0BAAA;EACA,eAAA;EACA,UAAA;EACA,WAAA;AL0IF;AKzIE;EACE,mBAAA;EACA,gBAAA;EACA,sBAAA;AL2IJ;AKzIE;EACE,eAAA;EACA,gBAAA;AL2IJ;AK1II;EACE,sBAAA;AL4IN;AKxIE;EACE,kBAAA;AL0IJ;AKzII;EAIE,aAAA;EACA,qBAAA;ALwIN;AMxKE;ED2BE;IAEI,aAAA;EL+IN;AACF;AK5IM;EACE,iBAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;AL8IR;AK7IQ;EACE,4BAAA;EACA,iBAAA;EACA,qBAAA;EACA,eAAA;EACA,oBAAA;AL+IV;AK9IU;EACE,oBAAA;EACA,kCAAA;EACA,mBAAA;ALgJZ;AK9IU;EACE,iBAAA;EACA,iBAAA;ALgJZ;AK5IM;EACE,8BAAA;EACA,qBAAA;AL8IR;AK7IQ;EACE,uBAAA;AL+IV;AK1IE;EACE,aAAA;EACA,eAAA;EACA,mBAAA;AL4IJ;AM/ME;EDgEA;IAKI,cAAA;EL8IJ;AACF;AK5IE;EACE,aAAA;EACA,kBAAA;EACA,WAAA;EACA,YAAA;EACA,eAAA;EACA,gCAAA;EACA,yBAAA;AL8IJ;AK7II;EACE,cAAA;AL+IN;AK9IM;EACE,iBAAA;ALgJR;AK5IE;EACE,cAAA;AL8IJ;;AOvOA;EACE,iBAAA;EACA,aAAA;EACA,YAAA;EACA,6BAAA;EACA,mBAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,iBAAA;AP0OF;AOzOE;EACE,YAAA;EACA,WAAA;EACA,sBAAA;AP2OJ;AOzOE;EACE,wBAAA;EACA,oBAAA;AP2OJ;AOxOE;EACE,wBAAA;EACA,oBAAA;AP0OJ","sourcesContent":[":root {\n  font-size: 62.5%; // font-size = 10px\n}\n\nbody {\n  font-size: 1.6rem; // 1rem = 10px\n  color: var(--dark);\n  font-family: var(--basic);\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: var(--dark);\n  text-decoration: none;\n}\n",":root {\n  font-size: 62.5%;\n}\n\nbody {\n  font-size: 1.6rem;\n  color: var(--dark);\n  font-family: var(--basic);\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: var(--dark);\n  text-decoration: none;\n}\n\n.title-underline {\n  padding-bottom: 2rem;\n  border-bottom: 0.1rem solid var(--divider);\n}\n\n.button {\n  border: 0;\n  border-radius: 0.3rem;\n  padding: 1rem 2rem;\n  font-weight: 700;\n  cursor: pointer;\n  transition: box-shadow 0.2s;\n}\n.button:hover {\n  box-shadow: var(--shadow);\n  opacity: 89%;\n  transition: box-shadow 0.2s;\n}\n.button-add {\n  background: var(--primary);\n  border: 0.2rem solid var(--primary);\n  color: var(--light);\n}\n.button-cancel {\n  background: var(--light);\n  border: 0.2rem solid var(--primary);\n  color: var(--primary);\n}\n.button-edit {\n  margin-right: 2rem;\n  background-color: var(--success);\n  color: var(--light);\n}\n.button-delete {\n  margin-right: 2rem;\n  background-color: var(--danger);\n  color: var(--light);\n}\n.button-save {\n  background: var(--primary);\n  border: 0.2rem solid var(--primary);\n  color: var(--light);\n}\n.button-back {\n  background: var(--primary);\n  border: 0.2rem solid var(--primary);\n  color: var(--light);\n}\n\n.text-valid {\n  color: var(--success);\n  font-weight: bold;\n}\n.text-error {\n  color: var(--danger);\n  font-weight: bold;\n}\n.text-detail {\n  color: var(--info);\n  font-weight: bold;\n}\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n:root {\n  --primary: #2e86de;\n  --secondary: #54a0ff;\n  --tertiary: #48dbfb;\n  --light: #f5f6fa;\n  --medium: #2d98da;\n  --dark: #333;\n  --success: #06ad3e;\n  --danger: #ea2027;\n  --info: #3867d6;\n  --warning: #fbc531;\n  --hint: #95a5a6;\n  --accent: #3c40c6;\n  --divider: #bdc3c7;\n  --basic: \"Mulish\", sans-serif;\n  --default: \"Roboto\", sans-serif;\n  --logo: \"Roboto Condensed\", sans-serif;\n  --form: Arial, Helvetica, sans-serif;\n  --shadow: 0 0.1rem 0.2rem 0 rgba(60, 64, 67, 0.3),\n    0 0.1rem 0.3rem 0.1rem rgba(60, 64, 67, 0.15);\n}\n\nbody {\n  height: 100vh;\n}\n\n.container {\n  min-height: 100vh;\n  display: grid;\n  grid: \"header\" auto \"content\" 1fr \"footer\" auto/auto;\n}\n\nheader {\n  grid-area: header;\n  padding: 2rem;\n  display: flex;\n  flex-flow: row nowrap;\n  justify-content: space-between;\n  align-items: center;\n  background: var(--primary);\n  position: fixed;\n  z-index: 1;\n  width: 100%;\n}\nheader a {\n  color: var(--light);\n  font-weight: 700;\n  letter-spacing: 0.1rem;\n}\nheader .header-brand {\n  font-size: 3rem;\n  font-weight: 700;\n}\nheader .header-brand:hover {\n  color: var(--tertiary);\n}\nheader .header-menu {\n  position: relative;\n}\nheader .header-menu ul {\n  display: flex;\n  margin-right: -0.5rem;\n}\n@media (max-width: 480px) {\n  header .header-menu ul {\n    display: none;\n  }\n}\nheader .header-menu ul li {\n  margin-left: 1rem;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\nheader .header-menu ul li a {\n  padding: 1rem 2rem 1rem 2rem;\n  font-size: 1.5rem;\n  border-radius: 0.2rem;\n  cursor: pointer;\n  transition: all 0.2s;\n}\nheader .header-menu ul li a:hover {\n  transition: all 0.2s;\n  background-color: var(--secondary);\n  color: var(--light);\n}\nheader .header-menu ul li a .header-brand {\n  font-size: 1.8rem;\n  padding: 0 0.1rem;\n}\nheader .header-menu ul .active {\n  background-color: var(--light);\n  border-radius: 0.2rem;\n}\nheader .header-menu ul .active a {\n  color: var(--secondary);\n}\nheader .header-menu-icon {\n  display: none;\n  font-size: 3rem;\n  color: var(--light);\n}\n@media (max-width: 480px) {\n  header .header-menu-icon {\n    display: block;\n  }\n}\nheader .mobile-menu {\n  display: none;\n  position: absolute;\n  top: 5.7rem;\n  right: -2rem;\n  padding: 0.5rem;\n  background-color: var(--primary);\n  box-shadow: var(--shadow);\n}\nheader .mobile-menu ul {\n  display: block;\n}\nheader .mobile-menu ul li {\n  margin: 1rem 2rem;\n}\nheader .mobile-menu.open {\n  display: block;\n}\n\nfooter {\n  grid-area: footer;\n  padding: 2rem;\n  height: 8rem;\n  background-color: var(--dark);\n  color: var(--light);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: bold;\n}\nfooter img {\n  height: 2rem;\n  width: 2rem;\n  margin-bottom: -0.1rem;\n}\nfooter .j {\n  font-family: var(--logo);\n  color: var(--danger);\n}\nfooter .e {\n  font-family: var(--logo);\n  color: var(--danger);\n}",".title {\n  &-underline {\n    padding-bottom: 2rem;\n    border-bottom: 0.1rem solid var(--divider);\n  }\n}\n\n.button {\n  border: 0;\n  border-radius: 0.3rem;\n  padding: 1rem 2rem;\n  font-weight: 700;\n  cursor: pointer;\n  transition: box-shadow 0.2s;\n  &:hover {\n    box-shadow: var(--shadow);\n    opacity: 89%;\n    transition: box-shadow 0.2s;\n  }\n  &-add {\n    background: var(--primary);\n    border: 0.2rem solid var(--primary);\n    color: var(--light);\n  }\n  &-cancel {\n    background: var(--light);\n    border: 0.2rem solid var(--primary);\n    color: var(--primary);\n  }\n  &-edit {\n    margin-right: 2rem;\n    background-color: var(--success);\n    color: var(--light);\n  }\n  &-delete {\n    margin-right: 2rem;\n    background-color: var(--danger);\n    color: var(--light);\n  }\n  &-save {\n    background: var(--primary);\n    border: 0.2rem solid var(--primary);\n    color: var(--light);\n  }\n  &-back {\n    background: var(--primary);\n    border: 0.2rem solid var(--primary);\n    color: var(--light);\n  }\n}\n\n.text {\n  &-valid {\n    color: var(--success);\n    font-weight: bold;\n  }\n  &-error {\n    color: var(--danger);\n    font-weight: bold;\n  }\n  &-detail {\n    color: var(--info);\n    font-weight: bold;\n  }\n}\n","* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n",":root {\n  // main color\n  --primary: #2e86de;\n  --secondary: #54a0ff;\n  --tertiary: #48dbfb;\n\n  // text color\n  --light: #f5f6fa;\n  --medium: #2d98da;\n  --dark: #333;\n\n  // utils => button, border, words etc\n  --success: #06ad3e;\n  --danger: #ea2027;\n  --info: #3867d6;\n  --warning: #fbc531;\n  --hint: #95a5a6;\n\n  // utils => border, words etc\n  --accent: #3c40c6;\n  --divider: #bdc3c7;\n\n  // font-family\n  --basic: \"Mulish\", sans-serif;\n  --default: \"Roboto\", sans-serif;\n  --logo: \"Roboto Condensed\", sans-serif;\n  --form: Arial, Helvetica, sans-serif;\n\n  // shadow\n  --shadow: 0 0.1rem 0.2rem 0 rgba(60, 64, 67, 0.3),\n    0 0.1rem 0.3rem 0.1rem rgba(60, 64, 67, 0.15);\n}\n","body {\n  height: 100vh;\n}\n\n.container {\n  min-height: 100vh;\n  display: grid;\n  grid:\n    \"header\" auto\n    \"content\" 1fr\n    \"footer\" auto /\n    auto;\n}\n","@use \"../partials/media-queries.scss\" as *;\n\nheader {\n  grid-area: header;\n  padding: 2rem;\n  display: flex;\n  flex-flow: row nowrap;\n  justify-content: space-between;\n  align-items: center;\n  background: var(--primary);\n  position: fixed;\n  z-index: 1;\n  width: 100%;\n  a {\n    color: var(--light);\n    font-weight: 700;\n    letter-spacing: 0.1rem;\n  }\n  .header-brand {\n    font-size: 3rem;\n    font-weight: 700;\n    &:hover {\n      color: var(--tertiary);\n    }\n  }\n\n  .header-menu {\n    position: relative;\n    ul {\n      @include phone {\n        display: none;\n      }\n      display: flex;\n      margin-right: -0.5rem;\n      li {\n        margin-left: 1rem;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        a {\n          padding: 1rem 2rem 1rem 2rem;\n          font-size: 1.5rem;\n          border-radius: 0.2rem;\n          cursor: pointer;\n          transition: all 0.2s;\n          &:hover {\n            transition: all 0.2s;\n            background-color: var(--secondary);\n            color: var(--light);\n          }\n          .header-brand {\n            font-size: 1.8rem;\n            padding: 0 0.1rem;\n          }\n        }\n      }\n      .active {\n        background-color: var(--light);\n        border-radius: 0.2rem;\n        a {\n          color: var(--secondary);\n        }\n      }\n    }\n  }\n  .header-menu-icon {\n    display: none;\n    font-size: 3rem;\n    color: var(--light);\n    @include phone {\n      display: block;\n    }\n  }\n  .mobile-menu {\n    display: none;\n    position: absolute;\n    top: 5.7rem;\n    right: -2rem;\n    padding: 0.5rem;\n    background-color: var(--primary);\n    box-shadow: var(--shadow);\n    ul {\n      display: block;\n      li {\n        margin: 1rem 2rem;\n      }\n    }\n  }\n  .mobile-menu.open {\n    display: block;\n  }\n}\n","@mixin phone {\n  @media (max-width: 480px) {\n    @content;\n  }\n}\n\n@mixin tablet {\n  @media (min-width: 481px) and (max-width: 767px) {\n    @content;\n  }\n}\n\n@mixin laptop {\n  @media (min-width: 768px) and (max-width: 1199px) {\n    @content;\n  }\n}\n\n@mixin computer {\n  @media (min-width: 1200px) {\n    @content;\n  }\n}\n","footer {\n  grid-area: footer;\n  padding: 2rem;\n  height: 8rem;\n  background-color: var(--dark);\n  color: var(--light);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: bold;\n  img {\n    height: 2rem;\n    width: 2rem;\n    margin-bottom: -0.1rem;\n  }\n  .j {\n    font-family: var(--logo);\n    color: var(--danger);\n  }\n\n  .e {\n    font-family: var(--logo);\n    color: var(--danger);\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/editform/editform.scss":
-/*!*****************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/editform/editform.scss ***!
-  \*****************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/formdetail/formdetail.scss":
+/*!*********************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/formdetail/formdetail.scss ***!
+  \*********************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -7704,195 +7683,77 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `main {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-main form {
-  margin-top: 20rem;
-  margin-bottom: 20rem;
-  max-width: 70rem;
-  width: 100%;
-  padding: 4rem;
-  box-shadow: var(--shadow);
-  border-radius: 0.3rem;
+___CSS_LOADER_EXPORT___.push([module.id, `.container-photo-detail {
+  margin-top: 25rem;
+  margin-bottom: 25rem;
   display: flex;
   flex-direction: column;
-}
-main form h2 {
-  display: flex;
   justify-content: center;
   align-items: center;
+}
+.container-photo-detail .container-photo-name {
   margin-bottom: 2rem;
 }
-main form #container-name-photo {
+.container-photo-detail .container-photo-name h1 {
+  font-size: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.container-photo-detail .container-photo-img {
+  margin-bottom: 5rem;
+  padding: 0.5rem;
+  box-shadow: var(--shadow);
+}
+.container-photo-detail .container-photo-img img {
+  margin-bottom: -0.4rem;
+}
+.container-photo-detail .container-user {
+  display: flex;
+  margin-bottom: 3rem;
+}
+.container-photo-detail .container-user .container-user-img {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 2.5rem;
+  height: 5.2rem;
+  width: 5.2rem;
+  box-shadow: var(--shadow);
 }
-main form #container-name-photo h3 {
-  font-size: 1.6rem;
-  margin-left: 1rem;
+.container-photo-detail .container-user .container-user-img img {
+  border-radius: 2.5rem;
+  height: 5rem;
+  width: 5rem;
 }
-main form #container-photo-img {
+.container-photo-detail .container-user .container-user-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2rem;
+}
+.container-photo-detail .container-date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 4rem;
-  margin-top: 1rem;
+}
+.container-photo-detail .container-content {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 48rem;
+  margin-bottom: 5rem;
 }
-main form #container-photo-img img {
-  margin-bottom: 3rem;
-  padding: 0.5rem;
-  box-shadow: var(--shadow);
-}
-main form .form-group {
-  margin-bottom: 2rem;
-  display: flex;
-  flex-direction: column;
-}
-main form .form-group label {
-  font-size: 1.8rem;
-  color: var(--dark);
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-main form .form-group input {
-  border: 0.1rem solid var(--divider);
-  padding: 1rem;
-  outline: none;
-  border-radius: 0.3rem;
-  cursor: default;
-}
-main form .form-group input:focus {
-  border-color: var(--primary);
-}
-main form .form-group select {
-  height: 4rem;
-  font-size: 1.4rem;
-  border: 0.1rem solid var(--divider);
-  padding: 0.5rem;
-  outline: none;
-  border-radius: 0.3rem;
-  font-family: var(--basic);
-}
-main form .form-group select:focus {
-  border-color: var(--primary);
-}
-main form #container-edit-photo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-main form #container-edit-photo img {
-  padding: 0.5rem;
-  margin-left: 6rem;
-  margin-bottom: 6rem;
-  box-shadow: var(--shadow);
-}
-main form .form-category {
-  margin-bottom: 3rem;
-  display: flex;
-  flex-direction: column;
-}
-main form .form-category .container-name-category {
-  display: flex;
-  flex-direction: row;
-  font-size: 1.4rem;
-  justify-content: space-evenly;
-  margin-top: 1rem;
-  border: 0.1rem solid var(--divider);
-  padding: 1rem;
-  outline: none;
-  border-radius: 0.3rem;
-  cursor: default;
-}
-main form .form-category .container-name-category:focus {
-  border-color: var(--primary);
-}
-main form .container-photographer {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-}
-main form .container-photographer .container-photographer-label {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-main form .container-photographer .container-photographer-label label {
-  width: 31rem;
-}
-main form textarea {
-  height: 15rem;
-  padding: 1rem;
-  letter-spacing: 0.1rem;
-  resize: none;
+.container-photo-detail .container-content p {
+  padding: 2rem;
   font-family: var(--form);
 }
-main form .form-button-container {
+.container-photo-detail .container-button {
+  width: 32rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-}
-main form .form-button-container .button {
-  margin-left: 1rem;
-  margin-right: 0.2rem;
-}
-
-#container-photographer-img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 5rem;
-  box-shadow: var(--shadow);
-  height: 14.5rem;
-  width: 14.5rem;
-  border-radius: 10rem;
-}
-#container-photographer-img img {
-  height: 14rem;
-  width: 14rem;
-  border-radius: 10rem;
-}
-
-.form-title-category {
-  font-size: 1.8rem;
-  color: var(--dark);
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-#text-info-picture {
-  color: var(--danger);
-  font-weight: 700;
-  margin-top: 1.5rem;
-}
-
-#text-info-photographer {
-  color: var(--danger);
-  font-weight: 700;
-  margin-top: 0.5rem;
-}
-
-#text-info-content {
-  color: var(--danger);
-  font-weight: 700;
-  margin-top: 1rem;
-}
-
-#text-info {
-  color: var(--danger);
-  font-weight: 700;
-  margin-top: -2rem;
-  margin-bottom: 2rem;
-}
-
-.text-danger {
-  color: var(--danger);
-}`, "",{"version":3,"sources":["webpack://./src/editform/editform.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;AACF;AAAE;EACE,iBAAA;EACA,oBAAA;EACA,gBAAA;EACA,WAAA;EACA,aAAA;EACA,yBAAA;EACA,qBAAA;EACA,aAAA;EACA,sBAAA;AAEJ;AADI;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,mBAAA;AAGN;AADI;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;AAGN;AAFM;EACE,iBAAA;EACA,iBAAA;AAIR;AADI;EACE,mBAAA;EACA,gBAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;AAGN;AAFM;EACE,mBAAA;EACA,eAAA;EACA,yBAAA;AAIR;AADI;EACE,mBAAA;EACA,aAAA;EACA,sBAAA;AAGN;AAFM;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AAIR;AAFM;EACE,mCAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,eAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AAFM;EACE,YAAA;EACA,iBAAA;EACA,mCAAA;EACA,eAAA;EACA,aAAA;EACA,qBAAA;EACA,yBAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AADI;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;AAGN;AAFM;EACE,eAAA;EACA,iBAAA;EACA,mBAAA;EACA,yBAAA;AAIR;AADI;EACE,mBAAA;EACA,aAAA;EACA,sBAAA;AAGN;AAFM;EACE,aAAA;EACA,mBAAA;EACA,iBAAA;EACA,6BAAA;EACA,gBAAA;EACA,mCAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,eAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AAAI;EACE,aAAA;EACA,8BAAA;EACA,gBAAA;EACA,mBAAA;AAEN;AADM;EACE,aAAA;EACA,sBAAA;EACA,6BAAA;AAGR;AAFQ;EACE,YAAA;AAIV;AACI;EACE,aAAA;EACA,aAAA;EACA,sBAAA;EACA,YAAA;EACA,wBAAA;AACN;AACI;EACE,aAAA;EACA,yBAAA;EACA,mBAAA;AACN;AAAM;EACE,iBAAA;EACA,oBAAA;AAER;;AAKA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,kBAAA;EACA,yBAAA;EACA,eAAA;EACA,cAAA;EACA,oBAAA;AAFF;AAGE;EACE,aAAA;EACA,YAAA;EACA,oBAAA;AADJ;;AAMA;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AAHF;;AAMA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AAHF;;AAMA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AAHF;;AAMA;EACE,oBAAA;EACA,gBAAA;EACA,gBAAA;AAHF;;AAMA;EACE,oBAAA;EACA,gBAAA;EACA,iBAAA;EACA,mBAAA;AAHF;;AAMA;EACE,oBAAA;AAHF","sourcesContent":["main {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  form {\n    margin-top: 20rem;\n    margin-bottom: 20rem;\n    max-width: 70rem;\n    width: 100%;\n    padding: 4rem;\n    box-shadow: var(--shadow);\n    border-radius: 0.3rem;\n    display: flex;\n    flex-direction: column;\n    h2 {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      margin-bottom: 2rem;\n    }\n    #container-name-photo {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      h3 {\n        font-size: 1.6rem;\n        margin-left: 1rem;\n      }\n    }\n    #container-photo-img {\n      margin-bottom: 4rem;\n      margin-top: 1rem;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      img {\n        margin-bottom: 3rem;\n        padding: 0.5rem;\n        box-shadow: var(--shadow);\n      }\n    }\n    .form-group {\n      margin-bottom: 2rem;\n      display: flex;\n      flex-direction: column;\n      label {\n        font-size: 1.8rem;\n        color: var(--dark);\n        font-weight: 700;\n        margin-bottom: 1rem;\n      }\n      input {\n        border: 0.1rem solid var(--divider);\n        padding: 1rem;\n        outline: none;\n        border-radius: 0.3rem;\n        cursor: default;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n      select {\n        height: 4rem;\n        font-size: 1.4rem;\n        border: 0.1rem solid var(--divider);\n        padding: 0.5rem;\n        outline: none;\n        border-radius: 0.3rem;\n        font-family: var(--basic);\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n    }\n    #container-edit-photo {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      img {\n        padding: 0.5rem;\n        margin-left: 6rem;\n        margin-bottom: 6rem;\n        box-shadow: var(--shadow);\n      }\n    }\n    .form-category {\n      margin-bottom: 3rem;\n      display: flex;\n      flex-direction: column;\n      .container-name-category {\n        display: flex;\n        flex-direction: row;\n        font-size: 1.4rem;\n        justify-content: space-evenly;\n        margin-top: 1rem;\n        border: 0.1rem solid var(--divider);\n        padding: 1rem;\n        outline: none;\n        border-radius: 0.3rem;\n        cursor: default;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n    }\n\n    .container-photographer {\n      display: flex;\n      justify-content: space-between;\n      margin-top: 1rem;\n      margin-bottom: 2rem;\n      .container-photographer-label {\n        display: flex;\n        flex-direction: column;\n        justify-content: space-evenly;\n        label {\n          width: 31rem;\n        }\n      }\n    }\n\n    textarea {\n      height: 15rem;\n      padding: 1rem;\n      letter-spacing: 0.1rem;\n      resize: none;\n      font-family: var(--form);\n    }\n    .form-button-container {\n      display: flex;\n      justify-content: flex-end;\n      align-items: center;\n      .button {\n        margin-left: 1rem;\n        margin-right: 0.2rem;\n      }\n    }\n  }\n}\n\n// js start\n#container-photographer-img {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin-right: 5rem;\n  box-shadow: var(--shadow);\n  height: 14.5rem;\n  width: 14.5rem;\n  border-radius: 10rem;\n  img {\n    height: 14rem;\n    width: 14rem;\n    border-radius: 10rem;\n  }\n}\n// js end\n\n.form-title-category {\n  font-size: 1.8rem;\n  color: var(--dark);\n  font-weight: 700;\n  margin-bottom: 1rem;\n}\n\n#text-info-picture {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 1.5rem;\n}\n\n#text-info-photographer {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 0.5rem;\n}\n\n#text-info-content {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 1rem;\n}\n\n#text-info {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: -2rem;\n  margin-bottom: 2rem;\n}\n\n.text-danger {\n  color: var(--danger);\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/formdetail/formdetail.scss"],"names":[],"mappings":"AAAA;EACE,iBAAA;EACA,oBAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;AACF;AAAE;EACE,mBAAA;AAEJ;AADI;EACE,eAAA;EACA,iBAAA;EACA,kBAAA;AAGN;AAAE;EACE,mBAAA;EACA,eAAA;EACA,yBAAA;AAEJ;AADI;EACE,sBAAA;AAGN;AAAE;EACE,aAAA;EACA,mBAAA;AAEJ;AADI;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,qBAAA;EACA,cAAA;EACA,aAAA;EACA,yBAAA;AAGN;AAFM;EACE,qBAAA;EACA,YAAA;EACA,WAAA;AAIR;AADI;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,iBAAA;AAGN;AAAE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,mBAAA;AAEJ;AAAE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,mBAAA;AAEJ;AADI;EACE,aAAA;EACA,wBAAA;AAGN;AAAE;EACE,YAAA;EACA,aAAA;EACA,yBAAA;EACA,mBAAA;AAEJ","sourcesContent":[".container-photo-detail {\n  margin-top: 25rem;\n  margin-bottom: 25rem;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  .container-photo-name {\n    margin-bottom: 2rem;\n    h1 {\n      font-size: 2rem;\n      margin-left: 2rem;\n      margin-right: 2rem;\n    }\n  }\n  .container-photo-img {\n    margin-bottom: 5rem;\n    padding: 0.5rem;\n    box-shadow: var(--shadow);\n    img {\n      margin-bottom: -0.4rem;\n    }\n  }\n  .container-user {\n    display: flex;\n    margin-bottom: 3rem;\n    .container-user-img {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      border-radius: 2.5rem;\n      height: 5.2rem;\n      width: 5.2rem;\n      box-shadow: var(--shadow);\n      img {\n        border-radius: 2.5rem;\n        height: 5rem;\n        width: 5rem;\n      }\n    }\n    .container-user-name {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      margin-left: 2rem;\n    }\n  }\n  .container-date {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-bottom: 4rem;\n  }\n  .container-content {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    max-width: 48rem;\n    margin-bottom: 5rem;\n    p {\n      padding: 2rem;\n      font-family: var(--form);\n    }\n  }\n  .container-button {\n    width: 32rem;\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -8072,10 +7933,10 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 /***/ }),
 
-/***/ "./src/editform/editform.scss":
-/*!************************************!*\
-  !*** ./src/editform/editform.scss ***!
-  \************************************/
+/***/ "./src/formdetail/formdetail.scss":
+/*!****************************************!*\
+  !*** ./src/formdetail/formdetail.scss ***!
+  \****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
@@ -8094,7 +7955,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_editform_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./editform.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/editform/editform.scss");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_formdetail_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./formdetail.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/formdetail/formdetail.scss");
 
       
       
@@ -8116,12 +7977,12 @@ options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWi
 options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
 options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
 
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_editform_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_formdetail_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
 
 
 
 
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_editform_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_editform_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_editform_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_formdetail_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_formdetail_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_formdetail_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),
@@ -8481,9 +8342,9 @@ module.exports = styleTagTransform;
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-/*!**********************************!*\
-  !*** ./src/editform/editform.js ***!
-  \**********************************/
+/*!**************************************!*\
+  !*** ./src/formdetail/formdetail.js ***!
+  \**************************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.array.iterator.js */ "./node_modules/core-js/modules/es.array.iterator.js");
 /* harmony import */ var core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_iterator_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -8501,784 +8362,361 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! core-js/modules/es.array.concat.js */ "./node_modules/core-js/modules/es.array.concat.js");
 /* harmony import */ var core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var core_js_modules_es_object_from_entries_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! core-js/modules/es.object.from-entries.js */ "./node_modules/core-js/modules/es.object.from-entries.js");
-/* harmony import */ var core_js_modules_es_object_from_entries_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_from_entries_js__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! core-js/modules/es.object.define-property.js */ "./node_modules/core-js/modules/es.object.define-property.js");
-/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! core-js/modules/es.symbol.js */ "./node_modules/core-js/modules/es.symbol.js");
-/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! core-js/modules/es.symbol.description.js */ "./node_modules/core-js/modules/es.symbol.description.js");
-/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! core-js/modules/es.symbol.iterator.js */ "./node_modules/core-js/modules/es.symbol.iterator.js");
-/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var core_js_modules_es_symbol_async_iterator_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! core-js/modules/es.symbol.async-iterator.js */ "./node_modules/core-js/modules/es.symbol.async-iterator.js");
-/* harmony import */ var core_js_modules_es_symbol_async_iterator_js__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_async_iterator_js__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var core_js_modules_es_symbol_to_string_tag_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! core-js/modules/es.symbol.to-string-tag.js */ "./node_modules/core-js/modules/es.symbol.to-string-tag.js");
-/* harmony import */ var core_js_modules_es_symbol_to_string_tag_js__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_to_string_tag_js__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var core_js_modules_es_json_to_string_tag_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! core-js/modules/es.json.to-string-tag.js */ "./node_modules/core-js/modules/es.json.to-string-tag.js");
-/* harmony import */ var core_js_modules_es_json_to_string_tag_js__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_json_to_string_tag_js__WEBPACK_IMPORTED_MODULE_15__);
-/* harmony import */ var core_js_modules_es_math_to_string_tag_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! core-js/modules/es.math.to-string-tag.js */ "./node_modules/core-js/modules/es.math.to-string-tag.js");
-/* harmony import */ var core_js_modules_es_math_to_string_tag_js__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_math_to_string_tag_js__WEBPACK_IMPORTED_MODULE_16__);
-/* harmony import */ var core_js_modules_es_object_get_prototype_of_js__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! core-js/modules/es.object.get-prototype-of.js */ "./node_modules/core-js/modules/es.object.get-prototype-of.js");
-/* harmony import */ var core_js_modules_es_object_get_prototype_of_js__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_get_prototype_of_js__WEBPACK_IMPORTED_MODULE_17__);
-/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! core-js/modules/web.dom-collections.for-each.js */ "./node_modules/core-js/modules/web.dom-collections.for-each.js");
-/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_18__);
-/* harmony import */ var core_js_modules_es_object_set_prototype_of_js__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! core-js/modules/es.object.set-prototype-of.js */ "./node_modules/core-js/modules/es.object.set-prototype-of.js");
-/* harmony import */ var core_js_modules_es_object_set_prototype_of_js__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_set_prototype_of_js__WEBPACK_IMPORTED_MODULE_19__);
-/* harmony import */ var core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! core-js/modules/es.array.slice.js */ "./node_modules/core-js/modules/es.array.slice.js");
-/* harmony import */ var core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_20___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_20__);
-/* harmony import */ var _assets_sass_styles_scss__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../assets/sass/styles.scss */ "./src/assets/sass/styles.scss");
-/* harmony import */ var _editform_scss__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./editform.scss */ "./src/editform/editform.scss");
+/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! core-js/modules/es.object.define-property.js */ "./node_modules/core-js/modules/es.object.define-property.js");
+/* harmony import */ var core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_define_property_js__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! core-js/modules/es.symbol.js */ "./node_modules/core-js/modules/es.symbol.js");
+/* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! core-js/modules/es.symbol.description.js */ "./node_modules/core-js/modules/es.symbol.description.js");
+/* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! core-js/modules/es.symbol.iterator.js */ "./node_modules/core-js/modules/es.symbol.iterator.js");
+/* harmony import */ var core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_iterator_js__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var core_js_modules_es_symbol_async_iterator_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! core-js/modules/es.symbol.async-iterator.js */ "./node_modules/core-js/modules/es.symbol.async-iterator.js");
+/* harmony import */ var core_js_modules_es_symbol_async_iterator_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_async_iterator_js__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var core_js_modules_es_symbol_to_string_tag_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! core-js/modules/es.symbol.to-string-tag.js */ "./node_modules/core-js/modules/es.symbol.to-string-tag.js");
+/* harmony import */ var core_js_modules_es_symbol_to_string_tag_js__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_to_string_tag_js__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var core_js_modules_es_json_to_string_tag_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! core-js/modules/es.json.to-string-tag.js */ "./node_modules/core-js/modules/es.json.to-string-tag.js");
+/* harmony import */ var core_js_modules_es_json_to_string_tag_js__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_json_to_string_tag_js__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var core_js_modules_es_math_to_string_tag_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! core-js/modules/es.math.to-string-tag.js */ "./node_modules/core-js/modules/es.math.to-string-tag.js");
+/* harmony import */ var core_js_modules_es_math_to_string_tag_js__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_math_to_string_tag_js__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var core_js_modules_es_object_get_prototype_of_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! core-js/modules/es.object.get-prototype-of.js */ "./node_modules/core-js/modules/es.object.get-prototype-of.js");
+/* harmony import */ var core_js_modules_es_object_get_prototype_of_js__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_get_prototype_of_js__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! core-js/modules/web.dom-collections.for-each.js */ "./node_modules/core-js/modules/web.dom-collections.for-each.js");
+/* harmony import */ var core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_web_dom_collections_for_each_js__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var core_js_modules_es_object_set_prototype_of_js__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! core-js/modules/es.object.set-prototype-of.js */ "./node_modules/core-js/modules/es.object.set-prototype-of.js");
+/* harmony import */ var core_js_modules_es_object_set_prototype_of_js__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_set_prototype_of_js__WEBPACK_IMPORTED_MODULE_18__);
+/* harmony import */ var core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! core-js/modules/es.array.slice.js */ "./node_modules/core-js/modules/es.array.slice.js");
+/* harmony import */ var core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_19__);
+/* harmony import */ var _assets_sass_styles_scss__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../assets/sass/styles.scss */ "./src/assets/sass/styles.scss");
+/* harmony import */ var _formdetail_scss__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./formdetail.scss */ "./src/formdetail/formdetail.scss");
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return exports; }; var exports = {}, Op = Object.prototype, hasOwn = Op.hasOwnProperty, defineProperty = Object.defineProperty || function (obj, key, desc) { obj[key] = desc.value; }, $Symbol = "function" == typeof Symbol ? Symbol : {}, iteratorSymbol = $Symbol.iterator || "@@iterator", asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator", toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag"; function define(obj, key, value) { return Object.defineProperty(obj, key, { value: value, enumerable: !0, configurable: !0, writable: !0 }), obj[key]; } try { define({}, ""); } catch (err) { define = function define(obj, key, value) { return obj[key] = value; }; } function wrap(innerFn, outerFn, self, tryLocsList) { var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator, generator = Object.create(protoGenerator.prototype), context = new Context(tryLocsList || []); return defineProperty(generator, "_invoke", { value: makeInvokeMethod(innerFn, self, context) }), generator; } function tryCatch(fn, obj, arg) { try { return { type: "normal", arg: fn.call(obj, arg) }; } catch (err) { return { type: "throw", arg: err }; } } exports.wrap = wrap; var ContinueSentinel = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var IteratorPrototype = {}; define(IteratorPrototype, iteratorSymbol, function () { return this; }); var getProto = Object.getPrototypeOf, NativeIteratorPrototype = getProto && getProto(getProto(values([]))); NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol) && (IteratorPrototype = NativeIteratorPrototype); var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype); function defineIteratorMethods(prototype) { ["next", "throw", "return"].forEach(function (method) { define(prototype, method, function (arg) { return this._invoke(method, arg); }); }); } function AsyncIterator(generator, PromiseImpl) { function invoke(method, arg, resolve, reject) { var record = tryCatch(generator[method], generator, arg); if ("throw" !== record.type) { var result = record.arg, value = result.value; return value && "object" == _typeof(value) && hasOwn.call(value, "__await") ? PromiseImpl.resolve(value.__await).then(function (value) { invoke("next", value, resolve, reject); }, function (err) { invoke("throw", err, resolve, reject); }) : PromiseImpl.resolve(value).then(function (unwrapped) { result.value = unwrapped, resolve(result); }, function (error) { return invoke("throw", error, resolve, reject); }); } reject(record.arg); } var previousPromise; defineProperty(this, "_invoke", { value: function value(method, arg) { function callInvokeWithMethodAndArg() { return new PromiseImpl(function (resolve, reject) { invoke(method, arg, resolve, reject); }); } return previousPromise = previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(innerFn, self, context) { var state = "suspendedStart"; return function (method, arg) { if ("executing" === state) throw new Error("Generator is already running"); if ("completed" === state) { if ("throw" === method) throw arg; return { value: void 0, done: !0 }; } for (context.method = method, context.arg = arg;;) { var delegate = context.delegate; if (delegate) { var delegateResult = maybeInvokeDelegate(delegate, context); if (delegateResult) { if (delegateResult === ContinueSentinel) continue; return delegateResult; } } if ("next" === context.method) context.sent = context._sent = context.arg;else if ("throw" === context.method) { if ("suspendedStart" === state) throw state = "completed", context.arg; context.dispatchException(context.arg); } else "return" === context.method && context.abrupt("return", context.arg); state = "executing"; var record = tryCatch(innerFn, self, context); if ("normal" === record.type) { if (state = context.done ? "completed" : "suspendedYield", record.arg === ContinueSentinel) continue; return { value: record.arg, done: context.done }; } "throw" === record.type && (state = "completed", context.method = "throw", context.arg = record.arg); } }; } function maybeInvokeDelegate(delegate, context) { var methodName = context.method, method = delegate.iterator[methodName]; if (undefined === method) return context.delegate = null, "throw" === methodName && delegate.iterator.return && (context.method = "return", context.arg = undefined, maybeInvokeDelegate(delegate, context), "throw" === context.method) || "return" !== methodName && (context.method = "throw", context.arg = new TypeError("The iterator does not provide a '" + methodName + "' method")), ContinueSentinel; var record = tryCatch(method, delegate.iterator, context.arg); if ("throw" === record.type) return context.method = "throw", context.arg = record.arg, context.delegate = null, ContinueSentinel; var info = record.arg; return info ? info.done ? (context[delegate.resultName] = info.value, context.next = delegate.nextLoc, "return" !== context.method && (context.method = "next", context.arg = undefined), context.delegate = null, ContinueSentinel) : info : (context.method = "throw", context.arg = new TypeError("iterator result is not an object"), context.delegate = null, ContinueSentinel); } function pushTryEntry(locs) { var entry = { tryLoc: locs[0] }; 1 in locs && (entry.catchLoc = locs[1]), 2 in locs && (entry.finallyLoc = locs[2], entry.afterLoc = locs[3]), this.tryEntries.push(entry); } function resetTryEntry(entry) { var record = entry.completion || {}; record.type = "normal", delete record.arg, entry.completion = record; } function Context(tryLocsList) { this.tryEntries = [{ tryLoc: "root" }], tryLocsList.forEach(pushTryEntry, this), this.reset(!0); } function values(iterable) { if (iterable || "" === iterable) { var iteratorMethod = iterable[iteratorSymbol]; if (iteratorMethod) return iteratorMethod.call(iterable); if ("function" == typeof iterable.next) return iterable; if (!isNaN(iterable.length)) { var i = -1, next = function next() { for (; ++i < iterable.length;) if (hasOwn.call(iterable, i)) return next.value = iterable[i], next.done = !1, next; return next.value = undefined, next.done = !0, next; }; return next.next = next; } } throw new TypeError(_typeof(iterable) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, defineProperty(Gp, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), defineProperty(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction"), exports.isGeneratorFunction = function (genFun) { var ctor = "function" == typeof genFun && genFun.constructor; return !!ctor && (ctor === GeneratorFunction || "GeneratorFunction" === (ctor.displayName || ctor.name)); }, exports.mark = function (genFun) { return Object.setPrototypeOf ? Object.setPrototypeOf(genFun, GeneratorFunctionPrototype) : (genFun.__proto__ = GeneratorFunctionPrototype, define(genFun, toStringTagSymbol, "GeneratorFunction")), genFun.prototype = Object.create(Gp), genFun; }, exports.awrap = function (arg) { return { __await: arg }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, asyncIteratorSymbol, function () { return this; }), exports.AsyncIterator = AsyncIterator, exports.async = function (innerFn, outerFn, self, tryLocsList, PromiseImpl) { void 0 === PromiseImpl && (PromiseImpl = Promise); var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList), PromiseImpl); return exports.isGeneratorFunction(outerFn) ? iter : iter.next().then(function (result) { return result.done ? result.value : iter.next(); }); }, defineIteratorMethods(Gp), define(Gp, toStringTagSymbol, "Generator"), define(Gp, iteratorSymbol, function () { return this; }), define(Gp, "toString", function () { return "[object Generator]"; }), exports.keys = function (val) { var object = Object(val), keys = []; for (var key in object) keys.push(key); return keys.reverse(), function next() { for (; keys.length;) { var key = keys.pop(); if (key in object) return next.value = key, next.done = !1, next; } return next.done = !0, next; }; }, exports.values = values, Context.prototype = { constructor: Context, reset: function reset(skipTempReset) { if (this.prev = 0, this.next = 0, this.sent = this._sent = undefined, this.done = !1, this.delegate = null, this.method = "next", this.arg = undefined, this.tryEntries.forEach(resetTryEntry), !skipTempReset) for (var name in this) "t" === name.charAt(0) && hasOwn.call(this, name) && !isNaN(+name.slice(1)) && (this[name] = undefined); }, stop: function stop() { this.done = !0; var rootRecord = this.tryEntries[0].completion; if ("throw" === rootRecord.type) throw rootRecord.arg; return this.rval; }, dispatchException: function dispatchException(exception) { if (this.done) throw exception; var context = this; function handle(loc, caught) { return record.type = "throw", record.arg = exception, context.next = loc, caught && (context.method = "next", context.arg = undefined), !!caught; } for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i], record = entry.completion; if ("root" === entry.tryLoc) return handle("end"); if (entry.tryLoc <= this.prev) { var hasCatch = hasOwn.call(entry, "catchLoc"), hasFinally = hasOwn.call(entry, "finallyLoc"); if (hasCatch && hasFinally) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } else if (hasCatch) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); } else { if (!hasFinally) throw new Error("try statement without catch or finally"); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } } } }, abrupt: function abrupt(type, arg) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) { var finallyEntry = entry; break; } } finallyEntry && ("break" === type || "continue" === type) && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc && (finallyEntry = null); var record = finallyEntry ? finallyEntry.completion : {}; return record.type = type, record.arg = arg, finallyEntry ? (this.method = "next", this.next = finallyEntry.finallyLoc, ContinueSentinel) : this.complete(record); }, complete: function complete(record, afterLoc) { if ("throw" === record.type) throw record.arg; return "break" === record.type || "continue" === record.type ? this.next = record.arg : "return" === record.type ? (this.rval = this.arg = record.arg, this.method = "return", this.next = "end") : "normal" === record.type && afterLoc && (this.next = afterLoc), ContinueSentinel; }, finish: function finish(finallyLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.finallyLoc === finallyLoc) return this.complete(entry.completion, entry.afterLoc), resetTryEntry(entry), ContinueSentinel; } }, catch: function _catch(tryLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc === tryLoc) { var record = entry.completion; if ("throw" === record.type) { var thrown = record.arg; resetTryEntry(entry); } return thrown; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(iterable, resultName, nextLoc) { return this.delegate = { iterator: values(iterable), resultName: resultName, nextLoc: nextLoc }, "next" === this.method && (this.arg = undefined), ContinueSentinel; } }, exports; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-var params = new URL(location.href);
-var photoId = params.searchParams.get("id");
-var form = document.querySelector("form");
-var buttonCancel = document.querySelector(".button-cancel");
-var textPictureColor = document.querySelector("#text-picture-color");
-var textPictureStar = document.querySelector("#text-picture-star");
-var textContentColor = document.querySelector("#text-content-color");
-var textContentStar = document.querySelector("#text-content-star");
-var fillForm = function fillForm(formPhoto) {
-  var picture = document.querySelector("select[name='picture']");
-  var category = document.querySelector("input[value='".concat(formPhoto.category, "']"));
-  var photographer = document.querySelector("select[name='photographer']");
-  var content = document.querySelector("textarea");
-  var selectOptionPicture = picture.querySelector("optgroup > option[value = \"".concat(formPhoto.picture, "\"]"));
-  var selectOptionPhotographer = photographer.querySelector("optgroup > option[value = \"".concat(formPhoto.photographer, "\"]"));
-  selectOptionPicture.setAttribute("selected", "".concat(formPhoto.photo));
-  category.value = formPhoto.category;
-  category.setAttribute("checked", "".concat(formPhoto.category));
-  selectOptionPhotographer.setAttribute("selected", "".concat(formPhoto.photographer));
-  content.value = formPhoto.content;
-};
-var initForm = /*#__PURE__*/function () {
-  var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
-    var response, formPhoto, containerNamePhoto, containerPhotoImg, formPhotoImg, selectPicture, containerPhotographerImg, formPhotographerImg, selectPhotographer;
-    return _regeneratorRuntime().wrap(function _callee$(_context) {
-      while (1) switch (_context.prev = _context.next) {
-        case 0:
-          if (!photoId) {
-            _context.next = 139;
-            break;
-          }
-          _context.next = 3;
-          return fetch("https://restapi.fr/api/photos/".concat(photoId));
-        case 3:
-          response = _context.sent;
-          if (!(response.status < 300)) {
-            _context.next = 139;
-            break;
-          }
-          _context.next = 7;
-          return response.json();
-        case 7:
-          formPhoto = _context.sent;
-          fillForm(formPhoto);
-          containerNamePhoto = document.querySelector("#container-name-photo");
-          containerNamePhoto.innerHTML = "<h3>".concat(formPhoto.picture, "</h3>");
-          containerPhotoImg = document.querySelector("#container-photo-img");
-          containerPhotoImg.innerHTML = "<img src=\"".concat(formPhoto.picture, "\" alt=\"").concat(formPhoto.picture, "\" />");
-          formPhotoImg = containerPhotoImg.querySelector("img");
-          _context.t0 = formPhoto.picture;
-          _context.next = _context.t0 === "Un Désert en Cisjordanie" ? 17 : _context.t0 === "Un Désert en Jordanie" ? 19 : _context.t0 === "Un Désert au Maroc" ? 21 : _context.t0 === "Un Désert en Namibie (Océan Atlantique)" ? 23 : _context.t0 === "Un Désert en Oman" ? 25 : _context.t0 === "Un Désert au Pérou" ? 27 : _context.t0 === "Un Désert en Arabie Saoudite" ? 29 : _context.t0 === "Un Désert en Namibie (Sud-Ouest)" ? 31 : _context.t0 === "Le Désert du Sahara (Soir)" ? 33 : _context.t0 === "Sable Blanc du Nouveau-Mexique (USA)" ? 35 : _context.t0 === "Une Forêt en Australie" ? 37 : _context.t0 === "Une Forêt au Canada" ? 39 : _context.t0 === "Une Forêt en Finlande" ? 41 : _context.t0 === "Une Forêt en Croatie" ? 43 : _context.t0 === "Une Forêt en Inde" ? 45 : _context.t0 === "Une Forêt en Italie" ? 47 : _context.t0 === "Une Forêt au Japon" ? 49 : _context.t0 === "La Forêt des Loups" ? 51 : _context.t0 === "Une Forêt au Nouvelle-Zélande" ? 53 : _context.t0 === "Une Forêt en Washington (USA)" ? 55 : _context.t0 === "Une Plage en Australie" ? 57 : _context.t0 === "Une Plage au Brésil" ? 59 : _context.t0 === "Une Plage en Grande-Bretagne" ? 61 : _context.t0 === "Une Plage en Italie" ? 63 : _context.t0 === "Une Plage en Madagascar" ? 65 : _context.t0 === "Une Plage au Mexique" ? 67 : _context.t0 === "Une Plage en Nouvelle-Calédonie" ? 69 : _context.t0 === "Une Plage en Polynésie Française" ? 71 : _context.t0 === "Une Plage aux Sychelles" ? 73 : _context.t0 === "Une Plage en Thaïlande" ? 75 : _context.t0 === "Une Ville au Chili" ? 77 : _context.t0 === "Une Ville en Chine" ? 79 : _context.t0 === "Une Ville en Colombie" ? 81 : _context.t0 === "Une Ville en France" ? 83 : _context.t0 === "Une Ville en Grande-Bretagne" ? 85 : _context.t0 === "Une Ville au Japon (Jour)" ? 87 : _context.t0 === "Une Ville en Koweït" ? 89 : _context.t0 === "Une Ville en Norvège" ? 91 : _context.t0 === "Une Ville Rural d'Allemagne" ? 93 : _context.t0 === "Une Ville d'Italie (Soir)" ? 95 : 97;
-          break;
-        case 17:
-          formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-cj.jpg";
-          return _context.abrupt("break", 97);
-        case 19:
-          formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-jo.jpg";
-          return _context.abrupt("break", 97);
-        case 21:
-          formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-ma.jpg";
-          return _context.abrupt("break", 97);
-        case 23:
-          formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-oa-na.jpg";
-          return _context.abrupt("break", 97);
-        case 25:
-          formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-om.jpg";
-          return _context.abrupt("break", 97);
-        case 27:
-          formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-pe.jpg";
-          return _context.abrupt("break", 97);
-        case 29:
-          formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-sa.jpg";
-          return _context.abrupt("break", 97);
-        case 31:
-          formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-so-na.jpg";
-          return _context.abrupt("break", 97);
-        case 33:
-          formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-soir-eh.jpg";
-          return _context.abrupt("break", 97);
-        case 35:
-          formPhotoImg.src = "./assets/images/form-photos/form-deserts/sable-blanc-nmex-us.jpg";
-          return _context.abrupt("break", 97);
-        case 37:
-          formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-au.jpg";
-          return _context.abrupt("break", 97);
-        case 39:
-          formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-ca.jpg";
-          return _context.abrupt("break", 97);
-        case 41:
-          formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-fi.jpg";
-          return _context.abrupt("break", 97);
-        case 43:
-          formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-hr.jpg";
-          return _context.abrupt("break", 97);
-        case 45:
-          formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-in.jpg";
-          return _context.abrupt("break", 97);
-        case 47:
-          formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-it.jpg";
-          return _context.abrupt("break", 97);
-        case 49:
-          formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-jp.jpg";
-          return _context.abrupt("break", 97);
-        case 51:
-          formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-loups.jpg";
-          return _context.abrupt("break", 97);
-        case 53:
-          formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-nz.jpg";
-          return _context.abrupt("break", 97);
-        case 55:
-          formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-wash-us.jpg";
-          return _context.abrupt("break", 97);
-        case 57:
-          formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-au.jpg";
-          return _context.abrupt("break", 97);
-        case 59:
-          formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-br.jpg";
-          return _context.abrupt("break", 97);
-        case 61:
-          formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-gb.jpg";
-          return _context.abrupt("break", 97);
-        case 63:
-          formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-it.jpg";
-          return _context.abrupt("break", 97);
-        case 65:
-          formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-mg.jpg";
-          return _context.abrupt("break", 97);
-        case 67:
-          formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-mx.jpg";
-          return _context.abrupt("break", 97);
-        case 69:
-          formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-nc.jpg";
-          return _context.abrupt("break", 97);
-        case 71:
-          formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-pf.jpg";
-          return _context.abrupt("break", 97);
-        case 73:
-          formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-sc.jpg";
-          return _context.abrupt("break", 97);
-        case 75:
-          formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-th.jpg";
-          return _context.abrupt("break", 97);
-        case 77:
-          formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-cl.jpg";
-          return _context.abrupt("break", 97);
-        case 79:
-          formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-cn.jpg";
-          return _context.abrupt("break", 97);
-        case 81:
-          formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-co.jpg";
-          return _context.abrupt("break", 97);
-        case 83:
-          formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-fr.jpg";
-          return _context.abrupt("break", 97);
-        case 85:
-          formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-gb.jpg";
-          return _context.abrupt("break", 97);
-        case 87:
-          formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-jour-jp.jpg";
-          return _context.abrupt("break", 97);
-        case 89:
-          formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-kw.jpg";
-          return _context.abrupt("break", 97);
-        case 91:
-          formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-no.jpg";
-          return _context.abrupt("break", 97);
-        case 93:
-          formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-rural-ge.jpg";
-          return _context.abrupt("break", 97);
-        case 95:
-          formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-soir-it.jpg";
-          return _context.abrupt("break", 97);
-        case 97:
-          selectPicture = document.querySelector("select[name='picture']");
-          selectPicture.addEventListener("change", function (event) {
-            var selectPictureName = event.target.value;
-            switch (selectPictureName) {
-              case "Un Désert en Cisjordanie":
-                {
-                  containerNamePhoto.innerHTML = "<h3>".concat(selectPictureName, "</h3>");
-                  formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-cj.jpg";
-                  formPhotoImg.alt = selectPictureName;
-                  break;
-                }
-              case "Un Désert en Jordanie":
-                {
-                  containerNamePhoto.innerHTML = "<h3>".concat(selectPictureName, "</h3>");
-                  formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-jo.jpg";
-                  formPhotoImg.alt = selectPictureName;
-                  break;
-                }
-              case "Un Désert au Maroc":
-                {
-                  containerNamePhoto.innerHTML = "<h3>".concat(selectPictureName, "</h3>");
-                  formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-ma.jpg";
-                  formPhotoImg.alt = selectPictureName;
-                  break;
-                }
-              case "Un Désert en Namibie (Océan Atlantique)":
-                {
-                  containerNamePhoto.innerHTML = "<h3>".concat(selectPictureName, "</h3>");
-                  formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-oa-na.jpg";
-                  formPhotoImg.alt = selectPictureName;
-                  break;
-                }
-              case "Un Désert en Oman":
-                {
-                  containerNamePhoto.innerHTML = "<h3>".concat(selectPictureName, "</h3>");
-                  formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-om.jpg";
-                  formPhotoImg.alt = selectPictureName;
-                  break;
-                }
-              case "Un Désert au Pérou":
-                {
-                  containerNamePhoto.innerHTML = "<h3>".concat(selectPictureName, "</h3>");
-                  formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-pe.jpg";
-                  formPhotoImg.alt = selectPictureName;
-                  break;
-                }
-              case "Un Désert en Arabie Saoudite":
-                {
-                  containerNamePhoto.innerHTML = "<h3>".concat(selectPictureName, "</h3>");
-                  formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-sa.jpg";
-                  formPhotoImg.alt = selectPictureName;
-                  break;
-                }
-              case "Un Désert en Namibie (Sud-Ouest)":
-                {
-                  containerNamePhoto.innerHTML = "<h3>".concat(selectPictureName, "</h3>");
-                  formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-so-na.jpg";
-                  formPhotoImg.alt = selectPictureName;
-                  break;
-                }
-              case "Le Désert du Sahara (Soir)":
-                {
-                  containerNamePhoto.innerHTML = "<h3>".concat(selectPictureName, "</h3>");
-                  formPhotoImg.src = "./assets/images/form-photos/form-deserts/desert-soir-eh.jpg";
-                  formPhotoImg.alt = selectPictureName;
-                  break;
-                }
-              case "Sable Blanc du Nouveau-Mexique (USA)":
-                {
-                  containerNamePhoto.innerHTML = "<h3>".concat(selectPictureName, "</h3>");
-                  formPhotoImg.src = "./assets/images/form-photos/form-deserts/sable-blanc-nmex-us.jpg";
-                  formPhotoImg.alt = selectPictureName;
-                  break;
-                }
-              case "Une Forêt en Australie":
-                {
-                  containerNamePhoto.innerHTML = "<h3>".concat(selectPictureName, "</h3>");
-                  formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-au.jpg";
-                  formPhotoImg.alt = selectPictureName;
-                  break;
-                }
-              case "Une Forêt au Canada":
-                {
-                  containerNamePhoto.innerHTML = "<h3>".concat(selectPictureName, "</h3>");
-                  formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-ca.jpg";
-                  formPhotoImg.alt = selectPictureName;
-                  break;
-                }
-              case "Une Forêt en Finlande":
-                {
-                  containerNamePhoto.innerHTML = "<h3>".concat(selectPictureName, "</h3>");
-                  formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-fi.jpg";
-                  formPhotoImg.alt = selectPictureName;
-                  break;
-                }
-              case "Une Forêt en Croatie":
-                {
-                  containerNamePhoto.innerHTML = "<h3>".concat(selectPictureName, "</h3>");
-                  formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-hr.jpg";
-                  formPhotoImg.alt = selectPictureName;
-                  break;
-                }
-              case "Une Forêt en Inde":
-                {
-                  containerNamePhoto.innerHTML = "<h3>".concat(selectPictureName, "</h3>");
-                  formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-in.jpg";
-                  formPhotoImg.alt = selectPictureName;
-                  break;
-                }
-              case "Une Forêt en Italie":
-                {
-                  containerNamePhoto.innerHTML = "<h3>".concat(selectPictureName, "</h3>");
-                  formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-it.jpg";
-                  formPhotoImg.alt = selectPictureName;
-                  break;
-                }
-              case "Une Forêt au Japon":
-                {
-                  containerNamePhoto.innerHTML = "<h3>".concat(selectPictureName, "</h3>");
-                  formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-jp.jpg";
-                  formPhotoImg.alt = selectPictureName;
-                  break;
-                }
-              case "La Forêt des Loups":
-                {
-                  containerNamePhoto.innerHTML = "<h3>".concat(selectPictureName, "</h3>");
-                  formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-loups.jpg";
-                  formPhotoImg.alt = selectPictureName;
-                  break;
-                }
-              case "Une Forêt au Nouvelle-Zélande":
-                {
-                  containerNamePhoto.innerHTML = "<h3>".concat(selectPictureName, "</h3>");
-                  formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-nz.jpg";
-                  formPhotoImg.alt = selectPictureName;
-                  break;
-                }
-              case "Une Forêt en Washington (USA)":
-                {
-                  containerNamePhoto.innerHTML = "<h3>".concat(selectPictureName, "</h3>");
-                  formPhotoImg.src = "./assets/images/form-photos/form-forets/foret-wash-us.jpg";
-                  formPhotoImg.alt = selectPictureName;
-                  break;
-                }
-              case "Une Plage en Australie":
-                {
-                  containerNamePhoto.innerHTML = "<h3>".concat(selectPictureName, "</h3>");
-                  formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-au.jpg";
-                  formPhotoImg.alt = selectPictureName;
-                  break;
-                }
-              case "Une Plage au Brésil":
-                {
-                  containerNamePhoto.innerHTML = "<h3>".concat(selectPictureName, "</h3>");
-                  formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-br.jpg";
-                  formPhotoImg.alt = selectPictureName;
-                  break;
-                }
-              case "Une Plage en Grande-Bretagne":
-                {
-                  containerNamePhoto.innerHTML = "<h3>".concat(selectPictureName, "</h3>");
-                  formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-gb.jpg";
-                  formPhotoImg.alt = selectPictureName;
-                  break;
-                }
-              case "Une Plage en Italie":
-                {
-                  containerNamePhoto.innerHTML = "<h3>".concat(selectPictureName, "</h3>");
-                  formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-it.jpg";
-                  formPhotoImg.alt = selectPictureName;
-                  break;
-                }
-              case "Une Plage en Madagascar":
-                {
-                  containerNamePhoto.innerHTML = "<h3>".concat(selectPictureName, "</h3>");
-                  formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-mg.jpg";
-                  formPhotoImg.alt = selectPictureName;
-                  break;
-                }
-              case "Une Plage au Mexique":
-                {
-                  containerNamePhoto.innerHTML = "<h3>".concat(selectPictureName, "</h3>");
-                  formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-mx.jpg";
-                  formPhotoImg.alt = selectPictureName;
-                  break;
-                }
-              case "Une Plage en Nouvelle-Calédonie":
-                {
-                  containerNamePhoto.innerHTML = "<h3>".concat(selectPictureName, "</h3>");
-                  formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-nc.jpg";
-                  formPhotoImg.alt = selectPictureName;
-                  break;
-                }
-              case "Une Plage en Polynésie Française":
-                {
-                  containerNamePhoto.innerHTML = "<h3>".concat(selectPictureName, "</h3>");
-                  formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-pf.jpg";
-                  formPhotoImg.alt = selectPictureName;
-                  break;
-                }
-              case "Une Plage aux Sychelles":
-                {
-                  containerNamePhoto.innerHTML = "<h3>".concat(selectPictureName, "</h3>");
-                  formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-sc.jpg";
-                  formPhotoImg.alt = selectPictureName;
-                  break;
-                }
-              case "Une Plage en Thaïlande":
-                {
-                  containerNamePhoto.innerHTML = "<h3>".concat(selectPictureName, "</h3>");
-                  formPhotoImg.src = "./assets/images/form-photos/form-plages/plage-th.jpg";
-                  formPhotoImg.alt = selectPictureName;
-                  break;
-                }
-              case "Une Ville au Chili":
-                {
-                  containerNamePhoto.innerHTML = "<h3>".concat(selectPictureName, "</h3>");
-                  formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-cl.jpg";
-                  formPhotoImg.alt = selectPictureName;
-                  break;
-                }
-              case "Une Ville en Chine":
-                {
-                  containerNamePhoto.innerHTML = "<h3>".concat(selectPictureName, "</h3>");
-                  formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-cn.jpg";
-                  formPhotoImg.alt = selectPictureName;
-                  break;
-                }
-              case "Une Ville en Colombie":
-                {
-                  containerNamePhoto.innerHTML = "<h3>".concat(selectPictureName, "</h3>");
-                  formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-co.jpg";
-                  formPhotoImg.alt = selectPictureName;
-                  break;
-                }
-              case "Une Ville en France":
-                {
-                  containerNamePhoto.innerHTML = "<h3>".concat(selectPictureName, "</h3>");
-                  formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-fr.jpg";
-                  formPhotoImg.alt = selectPictureName;
-                  break;
-                }
-              case "Une Ville en Grande-Bretagne":
-                {
-                  containerNamePhoto.innerHTML = "<h3>".concat(selectPictureName, "</h3>");
-                  formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-gb.jpg";
-                  formPhotoImg.alt = selectPictureName;
-                  break;
-                }
-              case "Une Ville au Japon (Jour)":
-                {
-                  containerNamePhoto.innerHTML = "<h3>".concat(selectPictureName, "</h3>");
-                  formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-jour-jp.jpg";
-                  formPhotoImg.alt = selectPictureName;
-                  break;
-                }
-              case "Une Ville en Koweït":
-                {
-                  containerNamePhoto.innerHTML = "<h3>".concat(selectPictureName, "</h3>");
-                  formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-kw.jpg";
-                  formPhotoImg.alt = selectPictureName;
-                  break;
-                }
-              case "Une Ville en Norvège":
-                {
-                  containerNamePhoto.innerHTML = "<h3>".concat(selectPictureName, "</h3>");
-                  formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-no.jpg";
-                  formPhotoImg.alt = selectPictureName;
-                  break;
-                }
-              case "Une Ville Rural d'Allemagne":
-                {
-                  containerNamePhoto.innerHTML = "<h3>".concat(selectPictureName, "</h3>");
-                  formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-rural-ge.jpg";
-                  formPhotoImg.alt = selectPictureName;
-                  break;
-                }
-              case "Une Ville d'Italie (Soir)":
-                {
-                  containerNamePhoto.innerHTML = "<h3>".concat(selectPictureName, "</h3>");
-                  formPhotoImg.src = "./assets/images/form-photos/form-villes/ville-soir-it.jpg";
-                  formPhotoImg.alt = selectPictureName;
-                  break;
-                }
-            }
-          });
-          containerPhotographerImg = document.querySelector("#container-photographer-img");
-          containerPhotographerImg.innerHTML = "<img src=\"".concat(formPhoto.photographer, "\" alt=\"").concat(formPhoto.photographer, "\"  />");
-          formPhotographerImg = containerPhotographerImg.querySelector("img");
-          _context.t1 = formPhoto.photographer;
-          _context.next = _context.t1 === "Gustave - L'Aventurier" ? 105 : _context.t1 === "Julie - L'Aventurière" ? 107 : _context.t1 === "Henry - L'Aventurier" ? 109 : _context.t1 === "Zoé - L'Aventurière" ? 111 : _context.t1 === "Flora - L'Exploratrice" ? 113 : _context.t1 === "Denver - L'Explorateur" ? 115 : _context.t1 === "Inaya - L'Exploratrice" ? 117 : _context.t1 === "Seth - L'Explorateur" ? 119 : _context.t1 === "Lance - Le Visiteur" ? 121 : _context.t1 === "Nadia - La Visiteuse" ? 123 : _context.t1 === "Xavier - Le Visiteur" ? 125 : _context.t1 === "Ornella - La Visiteuse" ? 127 : _context.t1 === "Cerise - La Voyageuse" ? 129 : _context.t1 === "Philibert - Le Voyageur" ? 131 : _context.t1 === "Roxane - La Voyageuse" ? 133 : _context.t1 === "Yuu - Le Voyageur" ? 135 : 137;
-          break;
-        case 105:
-          formPhotographerImg.src = "./assets/images/form-users-small/form-users-aventure-small/gustave-aventurier-small.jpg";
-          return _context.abrupt("break", 137);
-        case 107:
-          formPhotographerImg.src = "./assets/images/form-users-small/form-users-aventure-small/julie-aventuriere-small.jpg";
-          return _context.abrupt("break", 137);
-        case 109:
-          formPhotographerImg.src = "./assets/images/form-users-small/form-users-aventure-small/henry-aventurier-small.jpg";
-          return _context.abrupt("break", 137);
-        case 111:
-          formPhotographerImg.src = "./assets/images/form-users-small/form-users-aventure-small/zoe-aventuriere-small.jpg";
-          return _context.abrupt("break", 137);
-        case 113:
-          formPhotographerImg.src = "./assets/images/form-users-small/form-users-exploration-small/flora-exploratrice-small.jpg";
-          return _context.abrupt("break", 137);
-        case 115:
-          formPhotographerImg.src = "./assets/images/form-users-small/form-users-exploration-small/denver-explorateur-small.jpg";
-          return _context.abrupt("break", 137);
-        case 117:
-          formPhotographerImg.src = "./assets/images/form-users-small/form-users-exploration-small/inaya-exploratrice-small.jpg";
-          return _context.abrupt("break", 137);
-        case 119:
-          formPhotographerImg.src = "./assets/images/form-users-small/form-users-exploration-small/seth-explorateur-small.jpg";
-          return _context.abrupt("break", 137);
-        case 121:
-          formPhotographerImg.src = "./assets/images/form-users-small/form-users-visite-small/lance-visiteur-small.jpg";
-          return _context.abrupt("break", 137);
-        case 123:
-          formPhotographerImg.src = "./assets/images/form-users-small/form-users-visite-small/nadia-visiteuse-small.jpg";
-          return _context.abrupt("break", 137);
-        case 125:
-          formPhotographerImg.src = "./assets/images/form-users-small/form-users-visite-small/xavier-visiteur-small.jpg";
-          return _context.abrupt("break", 137);
-        case 127:
-          formPhotographerImg.src = "./assets/images/form-users-small/form-users-visite-small/ornella-visiteuse-small.jpg";
-          return _context.abrupt("break", 137);
-        case 129:
-          formPhotographerImg.src = "./assets/images/form-users-small/form-users-voyage-small/cerise-voyageuse-small.jpg";
-          return _context.abrupt("break", 137);
-        case 131:
-          formPhotographerImg.src = "./assets/images/form-users-small/form-users-voyage-small/philibert-voyageur-small.jpg";
-          return _context.abrupt("break", 137);
-        case 133:
-          formPhotographerImg.src = "./assets/images/form-users-small/form-users-voyage-small/roxane-voyageuse-small.jpg";
-          return _context.abrupt("break", 137);
-        case 135:
-          formPhotographerImg.src = "./assets/images/form-users-small/form-users-voyage-small/yuu-voyageur-small.jpg";
-          return _context.abrupt("break", 137);
-        case 137:
-          selectPhotographer = document.querySelector("select[name='photographer']");
-          selectPhotographer.addEventListener("change", function (event) {
-            var selectPhotographerName = event.target.value;
-            switch (selectPhotographerName) {
-              case "Gustave - L'Aventurier":
-                {
-                  formPhotographerImg.src = "./assets/images/form-users-small/form-users-aventure-small/gustave-aventurier-small.jpg";
-                  formPhotographerImg.alt = selectPhotographerName;
-                  break;
-                }
-              case "Julie - L'Aventurière":
-                {
-                  formPhotographerImg.src = "./assets/images/form-users-small/form-users-aventure-small/julie-aventuriere-small.jpg";
-                  formPhotographerImg.alt = selectPhotographerName;
-                  break;
-                }
-              case "Henry - L'Aventurier":
-                {
-                  formPhotographerImg.src = "./assets/images/form-users-small/form-users-aventure-small/henry-aventurier-small.jpg";
-                  formPhotographerImg.alt = selectPhotographerName;
-                  break;
-                }
-              case "Zoé - L'Aventurière":
-                {
-                  formPhotographerImg.src = "./assets/images/form-users-small/form-users-aventure-small/zoe-aventuriere-small.jpg";
-                  formPhotographerImg.alt = selectPhotographerName;
-                  break;
-                }
-              case "Flora - L'Exploratrice":
-                {
-                  formPhotographerImg.src = "./assets/images/form-users-small/form-users-exploration-small/flora-exploratrice-small.jpg";
-                  formPhotographerImg.alt = selectPhotographerName;
-                  break;
-                }
-              case "Denver - L'Explorateur":
-                {
-                  formPhotographerImg.src = "./assets/images/form-users-small/form-users-exploration-small/denver-explorateur-small.jpg";
-                  formPhotographerImg.alt = selectPhotographerName;
-                  break;
-                }
-              case "Inaya - L'Exploratrice":
-                {
-                  formPhotographerImg.src = "./assets/images/form-users-small/form-users-exploration-small/inaya-exploratrice-small.jpg";
-                  formPhotographerImg.alt = selectPhotographerName;
-                  break;
-                }
-              case "Seth - L'Explorateur":
-                {
-                  formPhotographerImg.src = "./assets/images/form-users-small/form-users-exploration-small/seth-explorateur-small.jpg";
-                  formPhotographerImg.alt = selectPhotographerName;
-                  break;
-                }
-              case "Lance - Le Visiteur":
-                {
-                  formPhotographerImg.src = "./assets/images/form-users-small/form-users-visite-small/lance-visiteur-small.jpg";
-                  formPhotographerImg.alt = selectPhotographerName;
-                  break;
-                }
-              case "Nadia - La Visiteuse":
-                {
-                  formPhotographerImg.src = "./assets/images/form-users-small/form-users-visite-small/nadia-visiteuse-small.jpg";
-                  formPhotographerImg.alt = selectPhotographerName;
-                  break;
-                }
-              case "Xavier - Le Visiteur":
-                {
-                  formPhotographerImg.src = "./assets/images/form-users-small/form-users-visite-small/xavier-visiteur-small.jpg";
-                  formPhotographerImg.alt = selectPhotographerName;
-                  break;
-                }
-              case "Ornella - La Visiteuse":
-                {
-                  formPhotographerImg.src = "./assets/images/form-users-small/form-users-visite-small/ornella-visiteuse-small.jpg";
-                  formPhotographerImg.alt = selectPhotographerName;
-                  break;
-                }
-              case "Cerise - La Voyageuse":
-                {
-                  formPhotographerImg.src = "./assets/images/form-users-small/form-users-voyage-small/cerise-voyageuse-small.jpg";
-                  formPhotographerImg.alt = selectPhotographerName;
-                  break;
-                }
-              case "Philibert - Le Voyageur":
-                {
-                  formPhotographerImg.src = "./assets/images/form-users-small/form-users-voyage-small/philibert-voyageur-small.jpg";
-                  formPhotographerImg.alt = selectPhotographerName;
-                  break;
-                }
-              case "Roxane - La Voyageuse":
-                {
-                  formPhotographerImg.src = "./assets/images/form-users-small/form-users-voyage-small/roxane-voyageuse-small.jpg";
-                  formPhotographerImg.alt = selectPhotographerName;
-                  break;
-                }
-              case "Yuu - Le Voyageur":
-                {
-                  formPhotographerImg.src = "./assets/images/form-users-small/form-users-voyage-small/yuu-voyageur-small.jpg";
-                  formPhotographerImg.alt = selectPhotographerName;
-                  break;
-                }
-            }
-          });
-        case 139:
-        case "end":
-          return _context.stop();
-      }
-    }, _callee);
-  }));
-  return function initForm() {
-    return _ref.apply(this, arguments);
-  };
-}();
-form.addEventListener("submit", /*#__PURE__*/function () {
-  var _ref2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(event) {
-    var formData, photo, json, response;
+var containerPhotoName = document.querySelector(".container-photo-name");
+var containerPhotoImg = document.querySelector(".container-photo-img");
+var containerUser = document.querySelector(".container-user");
+var containerDate = document.querySelector(".container-date");
+var containerContent = document.querySelector(".container-content");
+var containerButton = document.querySelector(".container-button");
+var displayFormPhotoDetail = /*#__PURE__*/function () {
+  var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
+    var params, photoId, response, formPhoto, formPhotoImg, userPhotoImg, buttonEdit, buttonDelete;
     return _regeneratorRuntime().wrap(function _callee2$(_context2) {
       while (1) switch (_context2.prev = _context2.next) {
         case 0:
-          event.preventDefault();
-          formData = new FormData(form);
-          photo = Object.fromEntries(formData.entries());
-          if (!formIsValid(photo)) {
-            _context2.next = 16;
-            break;
-          }
-          _context2.prev = 4;
+          _context2.prev = 0;
+          params = new URL(location.href);
+          photoId = params.searchParams.get("id");
           if (!photoId) {
-            _context2.next = 11;
+            _context2.next = 144;
             break;
           }
-          json = JSON.stringify(photo);
-          _context2.next = 9;
-          return fetch("https://restapi.fr/api/photos/".concat(photoId), {
-            method: "PUT",
-            body: json,
-            headers: {
-              "Content-Type": "application/json"
-            }
-          });
-        case 9:
+          _context2.next = 6;
+          return fetch("https://restapi.fr/api/photos/".concat(photoId));
+        case 6:
           response = _context2.sent;
-          if (response.status < 300) {
-            location.assign("./index.html");
+          if (!(response.status < 300)) {
+            _context2.next = 143;
+            break;
           }
-        case 11:
-          _context2.next = 16;
+          _context2.next = 10;
+          return response.json();
+        case 10:
+          formPhoto = _context2.sent;
+          containerPhotoName.innerHTML = "<h1>".concat(formPhoto.picture, "</h1>");
+          containerPhotoImg.innerHTML = "<img src=\"".concat(formPhoto.picture, "\" alt=\"").concat(formPhoto.picture, "\" />");
+          containerUser.innerHTML = "\n          <div class=\"container-user-img\">\n          <img id=\"user-img\" src=\"".concat(formPhoto.photographer, "\" /> \n          </div>\n          <div class=\"container-user-name\">\n              <p id=\"user-name\"> ").concat(formPhoto.photographer, " </p>\n          </div>");
+          containerDate.innerHTML = "Post\xE9 le ".concat(new Date(formPhoto.createdAt).toLocaleDateString("fr-FR", {
+            weekday: "long",
+            day: "2-digit",
+            month: "long",
+            year: "numeric"
+          }));
+          containerContent.innerHTML = "<p>".concat(formPhoto.content, "</p>");
+          containerButton.innerHTML = "\n          <button class=\"button button-edit\">\xC9diter</button>\n          <button class=\"button button-delete\">Supprimer</button>";
+          formPhotoImg = containerPhotoImg.querySelector("img");
+          _context2.t0 = formPhoto.picture;
+          _context2.next = _context2.t0 === "Un Désert en Cisjordanie" ? 21 : _context2.t0 === "Un Désert en Jordanie" ? 23 : _context2.t0 === "Un Désert au Maroc" ? 25 : _context2.t0 === "Un Désert en Namibie (Océan Atlantique)" ? 27 : _context2.t0 === "Un Désert en Oman" ? 29 : _context2.t0 === "Un Désert au Pérou" ? 31 : _context2.t0 === "Un Désert en Arabie Saoudite" ? 33 : _context2.t0 === "Un Désert en Namibie (Sud-Ouest)" ? 35 : _context2.t0 === "Le Désert du Sahara (Soir)" ? 37 : _context2.t0 === "Sable Blanc du Nouveau-Mexique (USA)" ? 39 : _context2.t0 === "Une Forêt en Australie" ? 41 : _context2.t0 === "Une Forêt au Canada" ? 43 : _context2.t0 === "Une Forêt en Finlande" ? 45 : _context2.t0 === "Une Forêt en Croatie" ? 47 : _context2.t0 === "Une Forêt en Inde" ? 49 : _context2.t0 === "Une Forêt en Italie" ? 51 : _context2.t0 === "Une Forêt au Japon" ? 53 : _context2.t0 === "La Forêt des Loups" ? 55 : _context2.t0 === "Une Forêt au Nouvelle-Zélande" ? 57 : _context2.t0 === "Une Forêt en Washington (USA)" ? 59 : _context2.t0 === "Une Plage en Australie" ? 61 : _context2.t0 === "Une Plage au Brésil" ? 63 : _context2.t0 === "Une Plage en Grande-Bretagne" ? 65 : _context2.t0 === "Une Plage en Italie" ? 67 : _context2.t0 === "Une Plage en Madagascar" ? 69 : _context2.t0 === "Une Plage au Mexique" ? 71 : _context2.t0 === "Une Plage en Nouvelle-Calédonie" ? 73 : _context2.t0 === "Une Plage en Polynésie Française" ? 75 : _context2.t0 === "Une Plage aux Sychelles" ? 77 : _context2.t0 === "Une Plage en Thaïlande" ? 79 : _context2.t0 === "Une Ville au Chili" ? 81 : _context2.t0 === "Une Ville en Chine" ? 83 : _context2.t0 === "Une Ville en Colombie" ? 85 : _context2.t0 === "Une Ville en France" ? 87 : _context2.t0 === "Une Ville en Grande-Bretagne" ? 89 : _context2.t0 === "Une Ville au Japon (Jour)" ? 91 : _context2.t0 === "Une Ville en Koweït" ? 93 : _context2.t0 === "Une Ville en Norvège" ? 95 : _context2.t0 === "Une Ville Rural d'Allemagne" ? 97 : _context2.t0 === "Une Ville d'Italie (Soir)" ? 99 : 101;
           break;
-        case 13:
-          _context2.prev = 13;
-          _context2.t0 = _context2["catch"](4);
-          console.error("error : ", _context2.t0);
-        case 16:
+        case 21:
+          formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-cj.jpg";
+          return _context2.abrupt("break", 101);
+        case 23:
+          formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-jo.jpg";
+          return _context2.abrupt("break", 101);
+        case 25:
+          formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-ma.jpg";
+          return _context2.abrupt("break", 101);
+        case 27:
+          formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-oa-na.jpg";
+          return _context2.abrupt("break", 101);
+        case 29:
+          formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-om.jpg";
+          return _context2.abrupt("break", 101);
+        case 31:
+          formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-pe.jpg";
+          return _context2.abrupt("break", 101);
+        case 33:
+          formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-sa.jpg";
+          return _context2.abrupt("break", 101);
+        case 35:
+          formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-so-na.jpg";
+          return _context2.abrupt("break", 101);
+        case 37:
+          formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-soir-eh.jpg";
+          return _context2.abrupt("break", 101);
+        case 39:
+          formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/sable-blanc-detail-nmex-us.jpg";
+          return _context2.abrupt("break", 101);
+        case 41:
+          formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-au.jpg";
+          return _context2.abrupt("break", 101);
+        case 43:
+          formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-ca.jpg";
+          return _context2.abrupt("break", 101);
+        case 45:
+          formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-fi.jpg";
+          return _context2.abrupt("break", 101);
+        case 47:
+          formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-hr.jpg";
+          return _context2.abrupt("break", 101);
+        case 49:
+          formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-in.jpg";
+          return _context2.abrupt("break", 101);
+        case 51:
+          formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-it.jpg";
+          return _context2.abrupt("break", 101);
+        case 53:
+          formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-jp.jpg";
+          return _context2.abrupt("break", 101);
+        case 55:
+          formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-loups.jpg";
+          return _context2.abrupt("break", 101);
+        case 57:
+          formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-nz.jpg";
+          return _context2.abrupt("break", 101);
+        case 59:
+          formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-wash-us.jpg";
+          return _context2.abrupt("break", 101);
+        case 61:
+          formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-au.jpg";
+          return _context2.abrupt("break", 101);
+        case 63:
+          formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-br.jpg";
+          return _context2.abrupt("break", 101);
+        case 65:
+          formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-gb.jpg";
+          return _context2.abrupt("break", 101);
+        case 67:
+          formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-it.jpg";
+          return _context2.abrupt("break", 101);
+        case 69:
+          formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-mg.jpg";
+          return _context2.abrupt("break", 101);
+        case 71:
+          formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-mx.jpg";
+          return _context2.abrupt("break", 101);
+        case 73:
+          formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-nc.jpg";
+          return _context2.abrupt("break", 101);
+        case 75:
+          formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-pf.jpg";
+          return _context2.abrupt("break", 101);
+        case 77:
+          formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-sc.jpg";
+          return _context2.abrupt("break", 101);
+        case 79:
+          formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-th.jpg";
+          return _context2.abrupt("break", 101);
+        case 81:
+          formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-cl.jpg";
+          return _context2.abrupt("break", 101);
+        case 83:
+          formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-cn.jpg";
+          return _context2.abrupt("break", 101);
+        case 85:
+          formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-co.jpg";
+          return _context2.abrupt("break", 101);
+        case 87:
+          formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-fr.jpg";
+          return _context2.abrupt("break", 101);
+        case 89:
+          formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-gb.jpg";
+          return _context2.abrupt("break", 101);
+        case 91:
+          formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-jour-jp.jpg";
+          return _context2.abrupt("break", 101);
+        case 93:
+          formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-kw.jpg";
+          return _context2.abrupt("break", 101);
+        case 95:
+          formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-no.jpg";
+          return _context2.abrupt("break", 101);
+        case 97:
+          formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-rural-ge.jpg";
+          return _context2.abrupt("break", 101);
+        case 99:
+          formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-soir-it.jpg";
+          return _context2.abrupt("break", 101);
+        case 101:
+          userPhotoImg = containerUser.querySelector("img");
+          _context2.t1 = formPhoto.photographer;
+          _context2.next = _context2.t1 === "Gustave - L'Aventurier" ? 105 : _context2.t1 === "Julie - L'Aventurière" ? 107 : _context2.t1 === "Henry - L'Aventurier" ? 109 : _context2.t1 === "Zoé - L'Aventurière" ? 111 : _context2.t1 === "Flora - L'Exploratrice" ? 113 : _context2.t1 === "Denver - L'Explorateur" ? 115 : _context2.t1 === "Inaya - L'Exploratrice" ? 117 : _context2.t1 === "Seth - L'Explorateur" ? 119 : _context2.t1 === "Lance - Le Visiteur" ? 121 : _context2.t1 === "Nadia - La Visiteuse" ? 123 : _context2.t1 === "Xavier - Le Visiteur" ? 125 : _context2.t1 === "Ornella - La Visiteuse" ? 127 : _context2.t1 === "Cerise - La Voyageuse" ? 129 : _context2.t1 === "Philibert - Le Voyageur" ? 131 : _context2.t1 === "Roxane - La Voyageuse" ? 133 : _context2.t1 === "Yuu - Le Voyageur" ? 135 : 137;
+          break;
+        case 105:
+          userPhotoImg.src = "./assets/images/form-users/users-aventure/gustave-aventurier.jpg";
+          return _context2.abrupt("break", 137);
+        case 107:
+          userPhotoImg.src = "./assets/images/form-users/users-aventure/julie-aventuriere.jpg";
+          return _context2.abrupt("break", 137);
+        case 109:
+          userPhotoImg.src = "./assets/images/form-users/users-aventure/henry-aventurier.jpg";
+          return _context2.abrupt("break", 137);
+        case 111:
+          userPhotoImg.src = "./assets/images/form-users/users-aventure/zoe-aventuriere.jpg";
+          return _context2.abrupt("break", 137);
+        case 113:
+          userPhotoImg.src = "./assets/images/form-users/users-exploration/flora-exploratrice.jpg";
+          return _context2.abrupt("break", 137);
+        case 115:
+          userPhotoImg.src = "./assets/images/form-users/users-exploration/denver-explorateur.jpg";
+          return _context2.abrupt("break", 137);
+        case 117:
+          userPhotoImg.src = "./assets/images/form-users/users-exploration/inaya-exploratrice.jpg";
+          return _context2.abrupt("break", 137);
+        case 119:
+          userPhotoImg.src = "./assets/images/form-users/users-exploration/seth-explorateur.jpg";
+          return _context2.abrupt("break", 137);
+        case 121:
+          userPhotoImg.src = "./assets/images/form-users/users-visite/lance-visiteur.jpg";
+          return _context2.abrupt("break", 137);
+        case 123:
+          userPhotoImg.src = "./assets/images/form-users/users-visite/nadia-visiteuse.jpg";
+          return _context2.abrupt("break", 137);
+        case 125:
+          userPhotoImg.src = "./assets/images/form-users/users-visite/xavier-visiteur.jpg";
+          return _context2.abrupt("break", 137);
+        case 127:
+          userPhotoImg.src = "./assets/images/form-users/users-visite/ornella-visiteuse.jpg";
+          return _context2.abrupt("break", 137);
+        case 129:
+          userPhotoImg.src = "./assets/images/form-users/users-voyage/cerise-voyageuse.jpg";
+          return _context2.abrupt("break", 137);
+        case 131:
+          userPhotoImg.src = "./assets/images/form-users/users-voyage/philibert-voyageur.jpg";
+          return _context2.abrupt("break", 137);
+        case 133:
+          userPhotoImg.src = "./assets/images/form-users/users-voyage/roxane-voyageuse.jpg";
+          return _context2.abrupt("break", 137);
+        case 135:
+          userPhotoImg.src = "./assets/images/form-users/users-voyage/yuu-voyageur.jpg";
+          return _context2.abrupt("break", 137);
+        case 137:
+          // const buttonUserImg = containerUser.querySelector("#user-img");
+          // buttonUserImg.setAttribute(
+          //   "data-username",
+          //   `${formPhoto.photographer}`
+          // );
+          // buttonUserImg.addEventListener("click", (event) => {
+          //   event.stopPropagation();
+          //   const target = event.target;
+          //   const formUserName = target.dataset.username;
+          //   location.assign(`./userdetail.html?name=${formUserName}`);
+          // });
+          // const buttonUserName = containerUser.querySelector("#user-name");
+          // buttonUserName.setAttribute(
+          //   "data-username",
+          //   `${formPhoto.photographer}`
+          // );
+          // buttonUserName.addEventListener("click", (event) => {
+          //   event.stopPropagation();
+          //   const target = event.target;
+          //   const formUserName = target.dataset.username;
+          //   location.assign(`./userdetail.html?name=${formUserName}`);
+          // });
+          buttonEdit = containerButton.querySelector(".button-edit");
+          buttonEdit.addEventListener("click", function (event) {
+            event.stopPropagation();
+            location.assign("./formedit.html?id=".concat(photoId));
+          });
+          buttonDelete = containerButton.querySelector(".button-delete");
+          buttonDelete.addEventListener("click", /*#__PURE__*/function () {
+            var _ref2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(event) {
+              var _response;
+              return _regeneratorRuntime().wrap(function _callee$(_context) {
+                while (1) switch (_context.prev = _context.next) {
+                  case 0:
+                    event.stopPropagation();
+                    _context.prev = 1;
+                    _context.next = 4;
+                    return fetch("https://restapi.fr/api/photos/".concat(photoId), {
+                      method: "DELETE"
+                    });
+                  case 4:
+                    _response = _context.sent;
+                    location.assign("./index.html");
+                    _context.next = 11;
+                    break;
+                  case 8:
+                    _context.prev = 8;
+                    _context.t0 = _context["catch"](1);
+                    console.log("error : ", _context.t0);
+                  case 11:
+                  case "end":
+                    return _context.stop();
+                }
+              }, _callee, null, [[1, 8]]);
+            }));
+            return function (_x) {
+              return _ref2.apply(this, arguments);
+            };
+          }());
+          _context2.next = 144;
+          break;
+        case 143:
+          location.assign("./index.html");
+        case 144:
+          _context2.next = 149;
+          break;
+        case 146:
+          _context2.prev = 146;
+          _context2.t2 = _context2["catch"](0);
+          location.assign("./index.html");
+        case 149:
         case "end":
           return _context2.stop();
       }
-    }, _callee2, null, [[4, 13]]);
+    }, _callee2, null, [[0, 146]]);
   }));
-  return function (_x) {
-    return _ref2.apply(this, arguments);
+  return function displayFormPhotoDetail() {
+    return _ref.apply(this, arguments);
   };
-}());
-buttonCancel.addEventListener("click", function (event) {
-  event.stopPropagation();
-  location.assign("./detailform.html?id=".concat(photoId));
-});
-var formIsValid = function formIsValid(photo) {
-  var textInfoPicture = document.querySelector("#text-info-picture");
-  var textInfoContent = document.querySelector("#text-info-content");
-  var textInfo = document.querySelector("#text-info");
-  if (!photo.picture || !photo.content) {
-    if (!photo.picture && photo.content) {
-      textInfoPicture.innerHTML = "Veuillez selectionner une autre photo.";
-      setTimeout(function () {
-        textInfoPicture.innerHTML = "";
-      }, 2000);
-    }
-    if (!photo.content && photo.picture) {
-      textInfoContent.innerHTML = "Veuillez partager votre avis.";
-      setTimeout(function () {
-        textInfoContent.innerHTML = "";
-      }, 2000);
-    }
-    if (!photo.picture && !photo.content) {
-      textInfo.innerHTML = "* Vous devez renseigner ces champs.";
-      textPictureColor.classList.add("text-danger");
-      textContentColor.classList.add("text-danger");
-      textPictureStar.innerHTML = "*";
-      textPictureStar.classList.add("text-danger");
-      textContentStar.innerHTML = "*";
-      textContentStar.classList.add("text-danger");
-      setTimeout(function () {
-        textInfo.innerHTML = "";
-        textPictureColor.classList.remove("text-danger");
-        textContentColor.classList.remove("text-danger");
-        textPictureStar.innerHTML = "";
-        textPictureStar.classList.remove("text-danger");
-        textContentStar.innerHTML = "";
-        textContentStar.classList.remove("text-danger");
-      }, 2000);
-    }
-    return false;
-  } else {
-    textInfo.innerHTML = "";
-    return true;
-  }
-};
-initForm();
+}();
+displayFormPhotoDetail();
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=editform.bundle.js.map
+//# sourceMappingURL=formdetail.bundle.js.map
