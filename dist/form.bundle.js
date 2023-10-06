@@ -7067,7 +7067,6 @@ var formIsValid = function formIsValid(photo) {
   var textInfoPhotographer = document.querySelector("#text-info-photographer");
   if (!photo.picture || !photo.category || !photo.photographer || !photo.content) {
     if (!photo.picture && (photo.category || photo.photographer || photo.content)) {
-      console.log(photo.picture);
       textInfoPicture.innerHTML = "Veuillez selectionner une photo.";
       setTimeout(function () {
         textInfoPicture.innerHTML = "";
