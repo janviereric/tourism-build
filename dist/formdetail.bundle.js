@@ -7730,7 +7730,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.container-photo-detail {
 }
 .container-photo-detail .container-user .container-user-img img {
   border-radius: 2.5rem;
-  height: 5.1rem;
+  height: 5rem;
   width: 5rem;
 }
 .container-photo-detail .container-user .container-user-name {
@@ -7738,10 +7738,10 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.container-photo-detail {
   justify-content: center;
   align-items: center;
   margin-left: 2rem;
-  cursor: pointer;
   transition: all 0.2s;
 }
 .container-photo-detail .container-user .container-user-name p:hover {
+  cursor: pointer;
   color: var(--secondary);
   transition: all 0.2s;
 }
@@ -7767,7 +7767,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.container-photo-detail {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-}`, "",{"version":3,"sources":["webpack://./src/formdetail/formdetail.scss"],"names":[],"mappings":"AAAA;EACE,iBAAA;EACA,oBAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;AACF;AAAE;EACE,mBAAA;AAEJ;AADI;EACE,eAAA;EACA,iBAAA;EACA,kBAAA;AAGN;AAAE;EACE,mBAAA;EACA,eAAA;EACA,yBAAA;AAEJ;AADI;EACE,sBAAA;AAGN;AAAE;EACE,aAAA;EACA,mBAAA;AAEJ;AADI;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,qBAAA;EACA,cAAA;EACA,aAAA;EACA,yBAAA;EACA,eAAA;EACA,oBAAA;AAGN;AAFM;EACE,cAAA;EACA,aAAA;EACA,iCAAA;EACA,oBAAA;AAIR;AAFM;EACE,qBAAA;EACA,cAAA;EACA,WAAA;AAIR;AADI;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,iBAAA;EACA,eAAA;EACA,oBAAA;AAGN;AAFM;EACE,uBAAA;EACA,oBAAA;AAIR;AACE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,mBAAA;AACJ;AACE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,mBAAA;AACJ;AAAI;EACE,aAAA;EACA,wBAAA;AAEN;AACE;EACE,YAAA;EACA,aAAA;EACA,yBAAA;EACA,mBAAA;AACJ","sourcesContent":[".container-photo-detail {\n  margin-top: 25rem;\n  margin-bottom: 25rem;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  .container-photo-name {\n    margin-bottom: 2rem;\n    h1 {\n      font-size: 2rem;\n      margin-left: 2rem;\n      margin-right: 2rem;\n    }\n  }\n  .container-photo-img {\n    margin-bottom: 5rem;\n    padding: 0.5rem;\n    box-shadow: var(--shadow);\n    img {\n      margin-bottom: -0.4rem;\n    }\n  }\n  .container-user {\n    display: flex;\n    margin-bottom: 3rem;\n    .container-user-img {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      border-radius: 2.5rem;\n      height: 5.2rem;\n      width: 5.2rem;\n      box-shadow: var(--shadow);\n      cursor: pointer;\n      transition: all 0.2s;\n      &:hover {\n        height: 5.2rem;\n        width: 5.2rem;\n        background-color: var(--tertiary);\n        transition: all 0.2s;\n      }\n      img {\n        border-radius: 2.5rem;\n        height: 5.1rem;\n        width: 5rem;\n      }\n    }\n    .container-user-name {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      margin-left: 2rem;\n      cursor: pointer;\n      transition: all 0.2s;\n      p:hover {\n        color: var(--secondary);\n        transition: all 0.2s;\n      }\n    }\n  }\n\n  .container-date {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-bottom: 4rem;\n  }\n  .container-content {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    max-width: 48rem;\n    margin-bottom: 5rem;\n    p {\n      padding: 2rem;\n      font-family: var(--form);\n    }\n  }\n  .container-button {\n    width: 32rem;\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n  }\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/formdetail/formdetail.scss"],"names":[],"mappings":"AAAA;EACE,iBAAA;EACA,oBAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;AACF;AAAE;EACE,mBAAA;AAEJ;AADI;EACE,eAAA;EACA,iBAAA;EACA,kBAAA;AAGN;AAAE;EACE,mBAAA;EACA,eAAA;EACA,yBAAA;AAEJ;AADI;EACE,sBAAA;AAGN;AAAE;EACE,aAAA;EACA,mBAAA;AAEJ;AADI;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,qBAAA;EACA,cAAA;EACA,aAAA;EACA,yBAAA;EACA,eAAA;EACA,oBAAA;AAGN;AAFM;EACE,cAAA;EACA,aAAA;EACA,iCAAA;EACA,oBAAA;AAIR;AAFM;EACE,qBAAA;EACA,YAAA;EACA,WAAA;AAIR;AADI;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,iBAAA;EACA,oBAAA;AAGN;AAFM;EACE,eAAA;EACA,uBAAA;EACA,oBAAA;AAIR;AACE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,mBAAA;AACJ;AACE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,gBAAA;EACA,mBAAA;AACJ;AAAI;EACE,aAAA;EACA,wBAAA;AAEN;AACE;EACE,YAAA;EACA,aAAA;EACA,yBAAA;EACA,mBAAA;AACJ","sourcesContent":[".container-photo-detail {\n  margin-top: 25rem;\n  margin-bottom: 25rem;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n  .container-photo-name {\n    margin-bottom: 2rem;\n    h1 {\n      font-size: 2rem;\n      margin-left: 2rem;\n      margin-right: 2rem;\n    }\n  }\n  .container-photo-img {\n    margin-bottom: 5rem;\n    padding: 0.5rem;\n    box-shadow: var(--shadow);\n    img {\n      margin-bottom: -0.4rem;\n    }\n  }\n  .container-user {\n    display: flex;\n    margin-bottom: 3rem;\n    .container-user-img {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      border-radius: 2.5rem;\n      height: 5.2rem;\n      width: 5.2rem;\n      box-shadow: var(--shadow);\n      cursor: pointer;\n      transition: all 0.2s;\n      &:hover {\n        height: 5.2rem;\n        width: 5.2rem;\n        background-color: var(--tertiary);\n        transition: all 0.2s;\n      }\n      img {\n        border-radius: 2.5rem;\n        height: 5rem;\n        width: 5rem;\n      }\n    }\n    .container-user-name {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      margin-left: 2rem;\n      transition: all 0.2s;\n      p:hover {\n        cursor: pointer;\n        color: var(--secondary);\n        transition: all 0.2s;\n      }\n    }\n  }\n\n  .container-date {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-bottom: 4rem;\n  }\n  .container-content {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    max-width: 48rem;\n    margin-bottom: 5rem;\n    p {\n      padding: 2rem;\n      font-family: var(--form);\n    }\n  }\n  .container-button {\n    width: 32rem;\n    display: flex;\n    justify-content: flex-end;\n    align-items: center;\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -8600,52 +8600,52 @@ var displayFormPhotoDetail = /*#__PURE__*/function () {
           _context2.next = _context2.t1 === "Gustave - L'Aventurier" ? 105 : _context2.t1 === "Julie - L'Aventurière" ? 107 : _context2.t1 === "Henry - L'Aventurier" ? 109 : _context2.t1 === "Zoé - L'Aventurière" ? 111 : _context2.t1 === "Flora - L'Exploratrice" ? 113 : _context2.t1 === "Denver - L'Explorateur" ? 115 : _context2.t1 === "Inaya - L'Exploratrice" ? 117 : _context2.t1 === "Seth - L'Explorateur" ? 119 : _context2.t1 === "Lance - Le Visiteur" ? 121 : _context2.t1 === "Nadia - La Visiteuse" ? 123 : _context2.t1 === "Xavier - Le Visiteur" ? 125 : _context2.t1 === "Ornella - La Visiteuse" ? 127 : _context2.t1 === "Cerise - La Voyageuse" ? 129 : _context2.t1 === "Philibert - Le Voyageur" ? 131 : _context2.t1 === "Roxane - La Voyageuse" ? 133 : _context2.t1 === "Yuu - Le Voyageur" ? 135 : 137;
           break;
         case 105:
-          userPhotoImg.src = "./assets/images/form-users/users-aventure/gustave-aventurier.jpg";
+          userPhotoImg.src = "./assets/images/users/users-aventure/gustave-aventurier.jpg";
           return _context2.abrupt("break", 137);
         case 107:
-          userPhotoImg.src = "./assets/images/form-users/users-aventure/julie-aventuriere.jpg";
+          userPhotoImg.src = "./assets/images/users/users-aventure/julie-aventuriere.jpg";
           return _context2.abrupt("break", 137);
         case 109:
-          userPhotoImg.src = "./assets/images/form-users/users-aventure/henry-aventurier.jpg";
+          userPhotoImg.src = "./assets/images/users/users-aventure/henry-aventurier.jpg";
           return _context2.abrupt("break", 137);
         case 111:
-          userPhotoImg.src = "./assets/images/form-users/users-aventure/zoe-aventuriere.jpg";
+          userPhotoImg.src = "./assets/images/users/users-aventure/zoe-aventuriere.jpg";
           return _context2.abrupt("break", 137);
         case 113:
-          userPhotoImg.src = "./assets/images/form-users/users-exploration/flora-exploratrice.jpg";
+          userPhotoImg.src = "./assets/images/users/users-exploration/flora-exploratrice.jpg";
           return _context2.abrupt("break", 137);
         case 115:
-          userPhotoImg.src = "./assets/images/form-users/users-exploration/denver-explorateur.jpg";
+          userPhotoImg.src = "./assets/images/users/users-exploration/denver-explorateur.jpg";
           return _context2.abrupt("break", 137);
         case 117:
-          userPhotoImg.src = "./assets/images/form-users/users-exploration/inaya-exploratrice.jpg";
+          userPhotoImg.src = "./assets/images/users/users-exploration/inaya-exploratrice.jpg";
           return _context2.abrupt("break", 137);
         case 119:
-          userPhotoImg.src = "./assets/images/form-users/users-exploration/seth-explorateur.jpg";
+          userPhotoImg.src = "./assets/images/users/users-exploration/seth-explorateur.jpg";
           return _context2.abrupt("break", 137);
         case 121:
-          userPhotoImg.src = "./assets/images/form-users/users-visite/lance-visiteur.jpg";
+          userPhotoImg.src = "./assets/images/users/users-visite/lance-visiteur.jpg";
           return _context2.abrupt("break", 137);
         case 123:
-          userPhotoImg.src = "./assets/images/form-users/users-visite/nadia-visiteuse.jpg";
+          userPhotoImg.src = "./assets/images/users/users-visite/nadia-visiteuse.jpg";
           return _context2.abrupt("break", 137);
         case 125:
-          userPhotoImg.src = "./assets/images/form-users/users-visite/xavier-visiteur.jpg";
+          userPhotoImg.src = "./assets/images/users/users-visite/xavier-visiteur.jpg";
           return _context2.abrupt("break", 137);
         case 127:
-          userPhotoImg.src = "./assets/images/form-users/users-visite/ornella-visiteuse.jpg";
+          userPhotoImg.src = "./assets/images/users/users-visite/ornella-visiteuse.jpg";
           return _context2.abrupt("break", 137);
         case 129:
-          userPhotoImg.src = "./assets/images/form-users/users-voyage/cerise-voyageuse.jpg";
+          userPhotoImg.src = "./assets/images/users/users-voyage/cerise-voyageuse.jpg";
           return _context2.abrupt("break", 137);
         case 131:
-          userPhotoImg.src = "./assets/images/form-users/users-voyage/philibert-voyageur.jpg";
+          userPhotoImg.src = "./assets/images/users/users-voyage/philibert-voyageur.jpg";
           return _context2.abrupt("break", 137);
         case 133:
-          userPhotoImg.src = "./assets/images/form-users/users-voyage/roxane-voyageuse.jpg";
+          userPhotoImg.src = "./assets/images/users/users-voyage/roxane-voyageuse.jpg";
           return _context2.abrupt("break", 137);
         case 135:
-          userPhotoImg.src = "./assets/images/form-users/users-voyage/yuu-voyageur.jpg";
+          userPhotoImg.src = "./assets/images/users/users-voyage/yuu-voyageur.jpg";
           return _context2.abrupt("break", 137);
         case 137:
           buttonUserImg = containerUser.querySelector("#user-img");
