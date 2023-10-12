@@ -5796,16 +5796,38 @@ main form .form-button-container .button {
   border-radius: 10rem;
 }
 
-.container-content-note {
+.content-note-none {
+  display: none;
+}
+
+#container-description-note {
   margin-top: 1rem;
 }
-.container-content-note .content-note {
+#container-description-note #shallow-content-value {
+  border: 0.1rem solid var(--dark);
+  border-radius: 0.25rem;
+  height: 15rem;
+  width: 100%;
+  padding: 1rem;
+  letter-spacing: 0.1rem;
+}
+#container-description-note #shallow-content-value p {
+  font-family: var(--form);
+  font-size: 1.3rem;
+}
+#container-description-note #shallow-content-value p span {
+  font-style: italic;
+  font-size: 1.3rem;
+  color: var(--primary);
+}
+#container-description-note .content-note {
   height: 15rem;
   width: 100%;
   padding: 1rem;
   letter-spacing: 0.1rem;
   resize: none;
   font-family: var(--form);
+  font-weight: 100;
 }
 
 #text-info-category {
@@ -5848,7 +5870,7 @@ main form .form-button-container .button {
 
 .text-danger {
   color: var(--danger);
-}`, "",{"version":3,"sources":["webpack://./src/form/form.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;AACF;AAAE;EACE,iBAAA;EACA,oBAAA;EACA,gBAAA;EACA,WAAA;EACA,aAAA;EACA,yBAAA;EACA,qBAAA;EACA,aAAA;EACA,sBAAA;AAEJ;AADI;EACE,kBAAA;EACA,mBAAA;AAGN;AADI;EACE,mBAAA;EACA,aAAA;EACA,sBAAA;AAGN;AAFM;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AAIR;AAFM;EACE,mCAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,eAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AAFM;EACE,YAAA;EACA,iBAAA;EACA,mCAAA;EACA,eAAA;EACA,aAAA;EACA,qBAAA;EACA,yBAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AADI;EACE,mBAAA;EACA,aAAA;EACA,sBAAA;AAGN;AAFM;EACE,aAAA;EACA,mBAAA;EACA,iBAAA;EACA,6BAAA;EACA,gBAAA;EACA,mCAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,eAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AADI;EACE,aAAA;EACA,yBAAA;EACA,mBAAA;AAGN;AAFM;EACE,iBAAA;EACA,oBAAA;AAIR;;AAGA;EACE,aAAA;AAAF;;AAGA;EACE,aAAA;EACA,sBAAA;AAAF;;AAGA;EACE,aAAA;EACA,8BAAA;AAAF;AACE;EACE,aAAA;EACA,sBAAA;EACA,6BAAA;AACJ;AACE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,eAAA;EACA,yBAAA;AACJ;;AAGA;EACE,cAAA;AAAF;;AAGA;EACE,aAAA;EACA,8BAAA;AAAF;AACE;EACE,aAAA;EACA,sBAAA;EACA,6BAAA;AACJ;AACE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,kBAAA;EACA,yBAAA;EACA,eAAA;EACA,cAAA;EACA,oBAAA;AACJ;AAAI;EACE,aAAA;EACA,YAAA;EACA,oBAAA;AAEN;;AAGA;EACE,gBAAA;AAAF;AACE;EACE,aAAA;EACA,WAAA;EACA,aAAA;EACA,sBAAA;EACA,YAAA;EACA,wBAAA;AACJ;;AAKA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AAFF;;AAKA;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AAFF;;AAKA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AAFF;;AAKA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AAFF;;AAKA;EACE,oBAAA;EACA,gBAAA;EACA,gBAAA;AAFF;;AAIA;EACE,oBAAA;EACA,gBAAA;EACA,iBAAA;EACA,mBAAA;AADF;;AAIA;EACE,oBAAA;AADF","sourcesContent":["main {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  form {\n    margin-top: 20rem;\n    margin-bottom: 20rem;\n    max-width: 70rem;\n    width: 100%;\n    padding: 4rem;\n    box-shadow: var(--shadow);\n    border-radius: 0.3rem;\n    display: flex;\n    flex-direction: column;\n    h2 {\n      text-align: center;\n      margin-bottom: 5rem;\n    }\n    .form-group {\n      margin-bottom: 2rem;\n      display: flex;\n      flex-direction: column;\n      label {\n        font-size: 1.8rem;\n        color: var(--dark);\n        font-weight: 700;\n        margin-bottom: 1rem;\n      }\n      input {\n        border: 0.1rem solid var(--divider);\n        padding: 1rem;\n        outline: none;\n        border-radius: 0.3rem;\n        cursor: default;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n      select {\n        height: 4rem;\n        font-size: 1.4rem;\n        border: 0.1rem solid var(--divider);\n        padding: 0.5rem;\n        outline: none;\n        border-radius: 0.3rem;\n        font-family: var(--basic);\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n    }\n    .form-category {\n      margin-bottom: 2rem;\n      display: flex;\n      flex-direction: column;\n      .container-name-category {\n        display: flex;\n        flex-direction: row;\n        font-size: 1.4rem;\n        justify-content: space-evenly;\n        margin-top: 1rem;\n        border: 0.1rem solid var(--divider);\n        padding: 1rem;\n        outline: none;\n        border-radius: 0.3rem;\n        cursor: default;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n    }\n    .form-button-container {\n      display: flex;\n      justify-content: flex-end;\n      align-items: center;\n      .button {\n        margin-left: 1rem;\n        margin-right: 0.2rem;\n      }\n    }\n  }\n}\n\n// js start\n.photo-img-none {\n  display: none;\n}\n\n.flex-column {\n  display: flex;\n  flex-direction: column;\n}\n\n.container-photo-label-img {\n  display: flex;\n  justify-content: space-between;\n  .container-photo-laber {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-evenly;\n  }\n  .container-form-photo-img {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    padding: 0.5rem;\n    box-shadow: var(--shadow);\n  }\n}\n\n.width-select-photographer {\n  width: 31.5rem;\n}\n\n.container-photographer-label-img {\n  display: flex;\n  justify-content: space-between;\n  .container-photographer-laber {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-evenly;\n  }\n  .container-user-img {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-right: 5rem;\n    box-shadow: var(--shadow);\n    height: 14.5rem;\n    width: 14.5rem;\n    border-radius: 10rem;\n    img {\n      height: 14rem;\n      width: 14rem;\n      border-radius: 10rem;\n    }\n  }\n}\n\n.container-content-note {\n  margin-top: 1rem;\n  .content-note {\n    height: 15rem;\n    width: 100%;\n    padding: 1rem;\n    letter-spacing: 0.1rem;\n    resize: none;\n    font-family: var(--form);\n  }\n}\n\n// js end\n\n#text-info-category {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 0.5rem;\n}\n\n.form-title-category {\n  font-size: 1.8rem;\n  color: var(--dark);\n  font-weight: 700;\n  margin-bottom: 1rem;\n}\n\n#text-info-picture {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 1.5rem;\n}\n\n#text-info-photographer {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 0.5rem;\n}\n\n#text-info-content {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 1rem;\n}\n#text-info {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: -2rem;\n  margin-bottom: 2rem;\n}\n\n.text-danger {\n  color: var(--danger);\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/form/form.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;AACF;AAAE;EACE,iBAAA;EACA,oBAAA;EACA,gBAAA;EACA,WAAA;EACA,aAAA;EACA,yBAAA;EACA,qBAAA;EACA,aAAA;EACA,sBAAA;AAEJ;AADI;EACE,kBAAA;EACA,mBAAA;AAGN;AADI;EACE,mBAAA;EACA,aAAA;EACA,sBAAA;AAGN;AAFM;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AAIR;AAFM;EACE,mCAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,eAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AAFM;EACE,YAAA;EACA,iBAAA;EACA,mCAAA;EACA,eAAA;EACA,aAAA;EACA,qBAAA;EACA,yBAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AADI;EACE,mBAAA;EACA,aAAA;EACA,sBAAA;AAGN;AAFM;EACE,aAAA;EACA,mBAAA;EACA,iBAAA;EACA,6BAAA;EACA,gBAAA;EACA,mCAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,eAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AADI;EACE,aAAA;EACA,yBAAA;EACA,mBAAA;AAGN;AAFM;EACE,iBAAA;EACA,oBAAA;AAIR;;AAGA;EACE,aAAA;AAAF;;AAGA;EACE,aAAA;EACA,sBAAA;AAAF;;AAGA;EACE,aAAA;EACA,8BAAA;AAAF;AACE;EACE,aAAA;EACA,sBAAA;EACA,6BAAA;AACJ;AACE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,eAAA;EACA,yBAAA;AACJ;;AAGA;EACE,cAAA;AAAF;;AAGA;EACE,aAAA;EACA,8BAAA;AAAF;AACE;EACE,aAAA;EACA,sBAAA;EACA,6BAAA;AACJ;AACE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,kBAAA;EACA,yBAAA;EACA,eAAA;EACA,cAAA;EACA,oBAAA;AACJ;AAAI;EACE,aAAA;EACA,YAAA;EACA,oBAAA;AAEN;;AAGA;EACE,aAAA;AAAF;;AAGA;EACE,gBAAA;AAAF;AACE;EACE,gCAAA;EACA,sBAAA;EACA,aAAA;EACA,WAAA;EACA,aAAA;EACA,sBAAA;AACJ;AAAI;EACE,wBAAA;EACA,iBAAA;AAEN;AADM;EACE,kBAAA;EACA,iBAAA;EACA,qBAAA;AAGR;AACE;EACE,aAAA;EACA,WAAA;EACA,aAAA;EACA,sBAAA;EACA,YAAA;EACA,wBAAA;EACA,gBAAA;AACJ;;AAKA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AAFF;;AAKA;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AAFF;;AAKA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AAFF;;AAKA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AAFF;;AAKA;EACE,oBAAA;EACA,gBAAA;EACA,gBAAA;AAFF;;AAIA;EACE,oBAAA;EACA,gBAAA;EACA,iBAAA;EACA,mBAAA;AADF;;AAIA;EACE,oBAAA;AADF","sourcesContent":["main {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  form {\n    margin-top: 20rem;\n    margin-bottom: 20rem;\n    max-width: 70rem;\n    width: 100%;\n    padding: 4rem;\n    box-shadow: var(--shadow);\n    border-radius: 0.3rem;\n    display: flex;\n    flex-direction: column;\n    h2 {\n      text-align: center;\n      margin-bottom: 5rem;\n    }\n    .form-group {\n      margin-bottom: 2rem;\n      display: flex;\n      flex-direction: column;\n      label {\n        font-size: 1.8rem;\n        color: var(--dark);\n        font-weight: 700;\n        margin-bottom: 1rem;\n      }\n      input {\n        border: 0.1rem solid var(--divider);\n        padding: 1rem;\n        outline: none;\n        border-radius: 0.3rem;\n        cursor: default;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n      select {\n        height: 4rem;\n        font-size: 1.4rem;\n        border: 0.1rem solid var(--divider);\n        padding: 0.5rem;\n        outline: none;\n        border-radius: 0.3rem;\n        font-family: var(--basic);\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n    }\n    .form-category {\n      margin-bottom: 2rem;\n      display: flex;\n      flex-direction: column;\n      .container-name-category {\n        display: flex;\n        flex-direction: row;\n        font-size: 1.4rem;\n        justify-content: space-evenly;\n        margin-top: 1rem;\n        border: 0.1rem solid var(--divider);\n        padding: 1rem;\n        outline: none;\n        border-radius: 0.3rem;\n        cursor: default;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n    }\n    .form-button-container {\n      display: flex;\n      justify-content: flex-end;\n      align-items: center;\n      .button {\n        margin-left: 1rem;\n        margin-right: 0.2rem;\n      }\n    }\n  }\n}\n\n// js start\n.photo-img-none {\n  display: none;\n}\n\n.flex-column {\n  display: flex;\n  flex-direction: column;\n}\n\n.container-photo-label-img {\n  display: flex;\n  justify-content: space-between;\n  .container-photo-laber {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-evenly;\n  }\n  .container-form-photo-img {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    padding: 0.5rem;\n    box-shadow: var(--shadow);\n  }\n}\n\n.width-select-photographer {\n  width: 31.5rem;\n}\n\n.container-photographer-label-img {\n  display: flex;\n  justify-content: space-between;\n  .container-photographer-laber {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-evenly;\n  }\n  .container-user-img {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-right: 5rem;\n    box-shadow: var(--shadow);\n    height: 14.5rem;\n    width: 14.5rem;\n    border-radius: 10rem;\n    img {\n      height: 14rem;\n      width: 14rem;\n      border-radius: 10rem;\n    }\n  }\n}\n\n.content-note-none {\n  display: none;\n}\n\n#container-description-note {\n  margin-top: 1rem;\n  #shallow-content-value {\n    border: 0.1rem solid var(--dark);\n    border-radius: 0.25rem;\n    height: 15rem;\n    width: 100%;\n    padding: 1rem;\n    letter-spacing: 0.1rem;\n    p {\n      font-family: var(--form);\n      font-size: 1.3rem;\n      span {\n        font-style: italic;\n        font-size: 1.3rem;\n        color: var(--primary);\n      }\n    }\n  }\n  .content-note {\n    height: 15rem;\n    width: 100%;\n    padding: 1rem;\n    letter-spacing: 0.1rem;\n    resize: none;\n    font-family: var(--form);\n    font-weight: 100;\n  }\n}\n\n// js end\n\n#text-info-category {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 0.5rem;\n}\n\n.form-title-category {\n  font-size: 1.8rem;\n  color: var(--dark);\n  font-weight: 700;\n  margin-bottom: 1rem;\n}\n\n#text-info-picture {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 1.5rem;\n}\n\n#text-info-photographer {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 0.5rem;\n}\n\n#text-info-content {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 1rem;\n}\n#text-info {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: -2rem;\n  margin-bottom: 2rem;\n}\n\n.text-danger {\n  color: var(--danger);\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -6853,7 +6875,7 @@ selectPhotographer.addEventListener("change", function (event) {
       {
         containerPhotographerImg.classList.remove("photo-img-none");
         containerPhotographerImg.classList.add("container-user-img");
-        formPhotographerImg.src = "./assets/images/users-small/form-users-aventure-small/gustave-aventurier-small.jpg";
+        formPhotographerImg.src = "./assets/images/users-small/users-aventure-small/gustave-aventurier-small.jpg";
         break;
       }
     case "Julie - L'Aventurière":
@@ -6964,14 +6986,24 @@ selectPhotographer.addEventListener("change", function (event) {
   }
 });
 var selectContent = document.querySelector("select[name='content']");
+var containerDescriptionNote = document.querySelector("#container-description-note");
+containerDescriptionNote.innerHTML = "<textarea class='content-note'></textarea>";
+var textArea = containerDescriptionNote.querySelector("textarea");
+textArea.classList.add("content-note-none");
 selectContent.addEventListener("change", function (event) {
   var contentValue = event.target.value;
   var contentNote = selectContent.options[selectContent.selectedIndex].text;
-  var containerDescriptionNote = document.querySelector("#container-description-note");
   if (contentValue) {
-    containerDescriptionNote.classList.add("container-content-note");
-    containerDescriptionNote.innerHTML = "<textarea class=\"content-note\">".concat(contentValue, "</textarea>");
-    var textArea = containerDescriptionNote.querySelector("textarea");
+    containerDescriptionNote.innerHTML = "<div id=\"shallow-content-value\"><p> ".concat(contentValue, " <span>(Modifier le contenu textuel comme vous voulez)</span></p></div>");
+    var shallowContentValue = containerDescriptionNote.querySelector("#shallow-content-value");
+    shallowContentValue.addEventListener("click", function (event) {
+      event.stopPropagation();
+      shallowContentValue.classList.add("content-note-none");
+      containerDescriptionNote.innerHTML = "<textarea class='content-note'>".concat(contentValue, "</textarea>");
+      var textArea = containerDescriptionNote.querySelector("textarea");
+      textArea.focus();
+      textArea.setSelectionRange(textArea.value.length, textArea.value.length);
+    });
     var valueTextArea = textArea.value;
     textArea.addEventListener("input", function (event) {
       switch (contentNote) {
