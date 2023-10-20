@@ -7012,8 +7012,12 @@ selectContent.addEventListener("change", function (event) {
         case "Description Mauvais \u2605\u2606\u2606\u2606\u2606":
           {
             var newValueContentNote = document.querySelector(".content-mauvais");
+            console.log(newValueContentNote);
             valueTextArea = event.target.value;
+            console.log(valueTextArea);
             newValueContentNote.setAttribute("value", "".concat(valueTextArea));
+            console.log(newValueContentNote);
+            console.log(newValueContentNote.value);
             break;
           }
         case "Description M\xE9diocre \u2605\u2605\u2606\u2606\u2606":

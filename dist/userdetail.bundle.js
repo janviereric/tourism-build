@@ -5936,7 +5936,11 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `#container-user-detail {
+___CSS_LOADER_EXPORT___.push([module.id, `.header-nav {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+
+#container-user-detail {
   margin-top: 25rem;
   margin-bottom: 25rem;
   display: flex;
@@ -5963,7 +5967,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `#container-user-detail {
 #container-user-profile {
   font-family: var(--form);
   margin-bottom: 3rem;
-}`, "",{"version":3,"sources":["webpack://./src/userdetail/userdetail.scss"],"names":[],"mappings":"AAAA;EACE,iBAAA;EACA,oBAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;AACF;;AAEA;EACE,mBAAA;AACF;;AAEA;EACE,mBAAA;EACA,eAAA;EACA,yBAAA;AACF;AAAE;EACE,aAAA;EACA,YAAA;EACA,sBAAA;AAEJ;;AAEA;EACE,wBAAA;EACA,mBAAA;AACF","sourcesContent":["#container-user-detail {\n  margin-top: 25rem;\n  margin-bottom: 25rem;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n\n#container-user-name {\n  margin-bottom: 1rem;\n}\n\n#container-user-img {\n  margin-bottom: 3rem;\n  padding: 0.5rem;\n  box-shadow: var(--shadow);\n  img {\n    height: 20rem;\n    width: 20rem;\n    margin-bottom: -0.4rem;\n  }\n}\n\n#container-user-profile {\n  font-family: var(--form);\n  margin-bottom: 3rem;\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/userdetail/userdetail.scss"],"names":[],"mappings":"AAAA;EACE,gCAAA;AACF;;AAEA;EACE,iBAAA;EACA,oBAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;AACF;;AAEA;EACE,mBAAA;AACF;;AAEA;EACE,mBAAA;EACA,eAAA;EACA,yBAAA;AACF;AAAE;EACE,aAAA;EACA,YAAA;EACA,sBAAA;AAEJ;;AAEA;EACE,wBAAA;EACA,mBAAA;AACF","sourcesContent":[".header-nav {\n  padding: 0.5rem 1rem 0.5rem 1rem;\n}\n\n#container-user-detail {\n  margin-top: 25rem;\n  margin-bottom: 25rem;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n\n#container-user-name {\n  margin-bottom: 1rem;\n}\n\n#container-user-img {\n  margin-bottom: 3rem;\n  padding: 0.5rem;\n  box-shadow: var(--shadow);\n  img {\n    height: 20rem;\n    width: 20rem;\n    margin-bottom: -0.4rem;\n  }\n}\n\n#container-user-profile {\n  font-family: var(--form);\n  margin-bottom: 3rem;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

@@ -6878,7 +6878,11 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, `.separator {
+___CSS_LOADER_EXPORT___.push([module.id, `.header-nav {
+  padding: 0rem;
+}
+
+.separator {
   margin-bottom: 1rem;
   border: 0.01rem solid var(--hint);
 }
@@ -6970,7 +6974,7 @@ main {
   transition: all 0.2s;
   opacity: 100%;
   box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
-}`, "",{"version":3,"sources":["webpack://./src/index.scss"],"names":[],"mappings":"AAAA;EACE,mBAAA;EACA,iCAAA;AACF;;AAEA;EACE,yBAAA;AACF;AACI;EACE,aAAA;EACA,6BAAA;AACN;;AAIA;EACE,mBAAA;EACA,iBAAA;EACA,iBAAA;EACA,yBAAA;EACA,gCAAA;EACA,eAAA;EACA,oBAAA;AADF;AAEE;EACE,oBAAA;EACA,kCAAA;EACA,mBAAA;AAAJ;;AAIA;EACE,8BAAA;EACA,qBAAA;EACA,qBAAA;AADF;;AAIA;EACE,WAAA;AADF;;AAIA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;AADF;;AAIA;EACE,aAAA;EACA,iBAAA;EACA,oBAAA;EACA,iBAAA;EACA,aAAA;EACA,mBAAA;EACA,6BAAA;EACA,mBAAA;AADF;;AAIA;;EAEE,YAAA;EACA,eAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,yBAAA;EACA,yBAAA;EACA,eAAA;EACA,oBAAA;EACA,kBAAA;AADF;AAEE;;EACE,kBAAA;EACA,WAAA;AACJ;AACE;;EACE,mBAAA;EACA,gBAAA;EACA,iBAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,YAAA;EACA,kBAAA;EACA,UAAA;EACA,cAAA;EACA,UAAA;AAEJ;AAAE;;EACE,oBAAA;EACA,aAAA;EACA,0DAAA;AAGJ","sourcesContent":[".separator {\n  margin-bottom: 1rem;\n  border: 0.01rem solid var(--hint);\n}\n\n.container-bottom-menu {\n  padding: 0 1rem 1rem 1rem;\n  .container-categories-menu {\n    ul {\n      display: flex;\n      justify-content: space-around;\n    }\n  }\n}\n\nli {\n  color: var(--light);\n  font-size: 1.2rem;\n  font-weight: bold;\n  font-family: var(--basic);\n  padding: 0.5rem 1rem 0.5rem 1rem;\n  cursor: pointer;\n  transition: all 0.2s;\n  &:hover {\n    transition: all 0.2s;\n    background-color: var(--secondary);\n    color: var(--light);\n  }\n}\n\n.target-filter {\n  background-color: var(--light);\n  border-radius: 0.2rem;\n  color: var(--primary);\n}\n\nheader .mobile-menu {\n  top: 9.1rem;\n}\n\nmain {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n#photos-container {\n  padding: 2rem;\n  margin-top: 10rem;\n  margin-bottom: 20rem;\n  max-width: 140rem;\n  display: flex;\n  flex-flow: row wrap;\n  justify-content: space-evenly;\n  align-items: center;\n}\n\n.home-photo-container,\n.form-photo-container {\n  margin: 1rem;\n  padding: 0.5rem;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: flex-end;\n  box-shadow: var(--shadow);\n  cursor: pointer;\n  transition: all 0.2s;\n  position: relative;\n  img {\n    position: relative;\n    width: 100%;\n  }\n  h2 {\n    color: var(--light);\n    font-weight: 700;\n    font-size: 1.5rem;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 4rem;\n    position: absolute;\n    opacity: 0;\n    bottom: 0.5rem;\n    width: 97%;\n  }\n  &:hover h2 {\n    transition: all 0.2s;\n    opacity: 100%;\n    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;\n  }\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/index.scss"],"names":[],"mappings":"AAAA;EACE,aAAA;AACF;;AAEA;EACE,mBAAA;EACA,iCAAA;AACF;;AAEA;EACE,yBAAA;AACF;AACI;EACE,aAAA;EACA,6BAAA;AACN;;AAIA;EACE,mBAAA;EACA,iBAAA;EACA,iBAAA;EACA,yBAAA;EACA,gCAAA;EACA,eAAA;EACA,oBAAA;AADF;AAEE;EACE,oBAAA;EACA,kCAAA;EACA,mBAAA;AAAJ;;AAIA;EACE,8BAAA;EACA,qBAAA;EACA,qBAAA;AADF;;AAIA;EACE,WAAA;AADF;;AAIA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;AADF;;AAIA;EACE,aAAA;EACA,iBAAA;EACA,oBAAA;EACA,iBAAA;EACA,aAAA;EACA,mBAAA;EACA,6BAAA;EACA,mBAAA;AADF;;AAIA;;EAEE,YAAA;EACA,eAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,yBAAA;EACA,yBAAA;EACA,eAAA;EACA,oBAAA;EACA,kBAAA;AADF;AAEE;;EACE,kBAAA;EACA,WAAA;AACJ;AACE;;EACE,mBAAA;EACA,gBAAA;EACA,iBAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,YAAA;EACA,kBAAA;EACA,UAAA;EACA,cAAA;EACA,UAAA;AAEJ;AAAE;;EACE,oBAAA;EACA,aAAA;EACA,0DAAA;AAGJ","sourcesContent":[".header-nav {\n  padding: 0rem;\n}\n\n.separator {\n  margin-bottom: 1rem;\n  border: 0.01rem solid var(--hint);\n}\n\n.container-bottom-menu {\n  padding: 0 1rem 1rem 1rem;\n  .container-categories-menu {\n    ul {\n      display: flex;\n      justify-content: space-around;\n    }\n  }\n}\n\nli {\n  color: var(--light);\n  font-size: 1.2rem;\n  font-weight: bold;\n  font-family: var(--basic);\n  padding: 0.5rem 1rem 0.5rem 1rem;\n  cursor: pointer;\n  transition: all 0.2s;\n  &:hover {\n    transition: all 0.2s;\n    background-color: var(--secondary);\n    color: var(--light);\n  }\n}\n\n.target-filter {\n  background-color: var(--light);\n  border-radius: 0.2rem;\n  color: var(--primary);\n}\n\nheader .mobile-menu {\n  top: 9.1rem;\n}\n\nmain {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n\n#photos-container {\n  padding: 2rem;\n  margin-top: 10rem;\n  margin-bottom: 20rem;\n  max-width: 140rem;\n  display: flex;\n  flex-flow: row wrap;\n  justify-content: space-evenly;\n  align-items: center;\n}\n\n.home-photo-container,\n.form-photo-container {\n  margin: 1rem;\n  padding: 0.5rem;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: flex-end;\n  box-shadow: var(--shadow);\n  cursor: pointer;\n  transition: all 0.2s;\n  position: relative;\n  img {\n    position: relative;\n    width: 100%;\n  }\n  h2 {\n    color: var(--light);\n    font-weight: 700;\n    font-size: 1.5rem;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 4rem;\n    position: absolute;\n    opacity: 0;\n    bottom: 0.5rem;\n    width: 97%;\n  }\n  &:hover h2 {\n    transition: all 0.2s;\n    opacity: 100%;\n    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -8754,13 +8758,13 @@ var createMenuCategories = function createMenuCategories() {
     return acc;
   }, {});
   if (!categoriesForm.Guide) {
-    guideMenu.innerHTML = "Guide (".concat(categoriesHome.Guide, " )");
+    guideMenu.innerHTML = "Guide (".concat(categoriesHome.Guide, ")");
   } else {
     categoriesAll = categoriesHome.Guide + categoriesForm.Guide;
-    guideMenu.innerText = "Guide (".concat(categoriesAll, " )");
+    guideMenu.innerHTML = "Guide (".concat(categoriesAll, ")");
   }
   if (!categoriesForm.Quête) {
-    queteMenu.innerHTML = "Qu\xEAte (".concat(categoriesHome.Quête, " )");
+    queteMenu.innerHTML = "Qu\xEAte (".concat(categoriesHome.Quête, ")");
   } else {
     categoriesAll = categoriesHome.Quête + categoriesForm.Quête;
     queteMenu.innerText = "Qu\xEAte (".concat(categoriesAll, ")");
