@@ -8182,9 +8182,14 @@ a {
   border: 0.2rem solid var(--primary);
   color: var(--light);
 }
+.button-detail {
+  background: var(--success);
+  border: 0.2rem solid var(--success);
+  color: var(--light);
+}
 .button-back {
-  background: var(--primary);
-  border: 0.2rem solid var(--primary);
+  background: var(--danger);
+  border: 0.2rem solid var(--danger);
   color: var(--light);
 }
 
@@ -8354,7 +8359,7 @@ footer .j {
 footer .e {
   font-family: var(--logo);
   color: var(--danger);
-}`, "",{"version":3,"sources":["webpack://./src/assets/sass/partials/_base.scss","webpack://./src/assets/sass/styles.scss","webpack://./src/assets/sass/partials/_classes.scss","webpack://./src/assets/sass/partials/_reset.scss","webpack://./src/assets/sass/partials/_variables.scss","webpack://./src/assets/sass/layouts/_body.scss","webpack://./src/assets/sass/layouts/_header.scss","webpack://./src/assets/sass/partials/_media-queries.scss","webpack://./src/assets/sass/layouts/_footer.scss"],"names":[],"mappings":"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","sourcesContent":[":root {\n  font-size: 62.5%; // font-size = 10px\n}\n\nbody {\n  font-size: 1.6rem; // 1rem = 10px\n  color: var(--dark);\n  font-family: var(--basic);\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: var(--dark);\n  text-decoration: none;\n}\n",":root {\n  font-size: 62.5%;\n}\n\nbody {\n  font-size: 1.6rem;\n  color: var(--dark);\n  font-family: var(--basic);\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: var(--dark);\n  text-decoration: none;\n}\n\n.title-underline {\n  padding-bottom: 2rem;\n  border-bottom: 0.1rem solid var(--divider);\n}\n\n.button {\n  border: 0;\n  border-radius: 0.3rem;\n  padding: 1rem 2rem;\n  font-weight: 700;\n  cursor: pointer;\n  transition: box-shadow 0.2s;\n}\n.button:hover {\n  box-shadow: var(--shadow);\n  opacity: 89%;\n  transition: box-shadow 0.2s;\n}\n.button-add {\n  background: var(--primary);\n  border: 0.2rem solid var(--primary);\n  color: var(--light);\n}\n.button-cancel {\n  background: var(--light);\n  border: 0.2rem solid var(--primary);\n  color: var(--primary);\n}\n.button-edit {\n  margin-right: 2rem;\n  background-color: var(--success);\n  color: var(--light);\n}\n.button-delete {\n  margin-right: 2rem;\n  background-color: var(--danger);\n  color: var(--light);\n}\n.button-save {\n  background: var(--primary);\n  border: 0.2rem solid var(--primary);\n  color: var(--light);\n}\n.button-back {\n  background: var(--primary);\n  border: 0.2rem solid var(--primary);\n  color: var(--light);\n}\n\n.text-valid {\n  color: var(--success);\n  font-weight: bold;\n}\n.text-error {\n  color: var(--danger);\n  font-weight: bold;\n}\n.text-detail {\n  color: var(--info);\n  font-weight: bold;\n}\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n:root {\n  --primary: #2e86de;\n  --secondary: #54a0ff;\n  --tertiary: #48dbfb;\n  --light: #f5f6fa;\n  --medium: #2d98da;\n  --dark: #333;\n  --success: #06ad3e;\n  --danger: #ea2027;\n  --info: #3867d6;\n  --warning: #fbc531;\n  --hint: #95a5a6;\n  --accent: #3c40c6;\n  --divider: #bdc3c7;\n  --basic: \"Mulish\", sans-serif;\n  --default: \"Roboto\", sans-serif;\n  --logo: \"Roboto Condensed\", sans-serif;\n  --form: Arial, Helvetica, sans-serif;\n  --shadow: 0 0.1rem 0.2rem 0 rgba(60, 64, 67, 0.3),\n    0 0.1rem 0.3rem 0.1rem rgba(60, 64, 67, 0.15);\n}\n\nbody {\n  height: 100vh;\n}\n\n.container {\n  min-height: 100vh;\n  display: grid;\n  grid: \"header\" auto \"content\" 1fr \"footer\" auto/auto;\n}\n\nheader {\n  grid-area: header;\n  align-items: center;\n  background: var(--primary);\n  position: fixed;\n  z-index: 1;\n  width: 100%;\n}\nheader .container-top-menu {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  padding: 1rem;\n}\nheader .container-top-menu a {\n  color: var(--light);\n  font-weight: 700;\n  letter-spacing: 0.1rem;\n}\nheader .container-top-menu .header-brand {\n  font-weight: 700;\n}\nheader .container-top-menu .header-brand:hover {\n  color: var(--tertiary);\n}\nheader .header-menu {\n  position: relative;\n}\nheader .header-menu ul {\n  display: flex;\n  margin-right: -0.5rem;\n}\n@media (max-width: 480px) {\n  header .header-menu ul {\n    display: none;\n  }\n}\nheader .header-menu ul li {\n  margin-left: 1rem;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  cursor: pointer;\n  transition: all 0.2s;\n}\nheader .header-menu ul li:hover {\n  transition: all 0.2s;\n  background-color: var(--secondary);\n}\nheader .header-menu ul li:hover a {\n  color: var(--light);\n}\nheader .header-menu ul li a {\n  font-size: 1.2rem;\n  border-radius: 0.2rem;\n}\nheader .header-menu ul .active {\n  background-color: var(--light);\n  border-radius: 0.2rem;\n}\nheader .header-menu ul .active a {\n  color: var(--secondary);\n}\nheader .header-menu-icon {\n  display: none;\n  font-size: 2rem;\n  color: var(--light);\n}\n@media (max-width: 480px) {\n  header .header-menu-icon {\n    display: block;\n  }\n}\nheader .mobile-menu {\n  display: none;\n  position: absolute;\n  top: 3.5rem;\n  right: -2rem;\n  padding: 0.5rem;\n  background-color: var(--primary);\n  box-shadow: var(--shadow);\n}\nheader .mobile-menu ul {\n  display: block;\n}\nheader .mobile-menu ul li {\n  margin: 1rem 2rem;\n}\nheader .mobile-menu.open {\n  display: block;\n}\n\nfooter {\n  grid-area: footer;\n  padding: 2rem;\n  height: 8rem;\n  background-color: var(--dark);\n  color: var(--light);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: bold;\n}\nfooter img {\n  height: 2rem;\n  width: 2rem;\n  margin-bottom: -0.1rem;\n}\nfooter .j {\n  font-family: var(--logo);\n  color: var(--danger);\n}\nfooter .e {\n  font-family: var(--logo);\n  color: var(--danger);\n}",".title {\n  &-underline {\n    padding-bottom: 2rem;\n    border-bottom: 0.1rem solid var(--divider);\n  }\n}\n\n.button {\n  border: 0;\n  border-radius: 0.3rem;\n  padding: 1rem 2rem;\n  font-weight: 700;\n  cursor: pointer;\n  transition: box-shadow 0.2s;\n  &:hover {\n    box-shadow: var(--shadow);\n    opacity: 89%;\n    transition: box-shadow 0.2s;\n  }\n  &-add {\n    background: var(--primary);\n    border: 0.2rem solid var(--primary);\n    color: var(--light);\n  }\n  &-cancel {\n    background: var(--light);\n    border: 0.2rem solid var(--primary);\n    color: var(--primary);\n  }\n  &-edit {\n    margin-right: 2rem;\n    background-color: var(--success);\n    color: var(--light);\n  }\n  &-delete {\n    margin-right: 2rem;\n    background-color: var(--danger);\n    color: var(--light);\n  }\n  &-save {\n    background: var(--primary);\n    border: 0.2rem solid var(--primary);\n    color: var(--light);\n  }\n  &-back {\n    background: var(--primary);\n    border: 0.2rem solid var(--primary);\n    color: var(--light);\n  }\n}\n\n.text {\n  &-valid {\n    color: var(--success);\n    font-weight: bold;\n  }\n  &-error {\n    color: var(--danger);\n    font-weight: bold;\n  }\n  &-detail {\n    color: var(--info);\n    font-weight: bold;\n  }\n}\n","* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n",":root {\n  // main color\n  --primary: #2e86de;\n  --secondary: #54a0ff;\n  --tertiary: #48dbfb;\n\n  // text color\n  --light: #f5f6fa;\n  --medium: #2d98da;\n  --dark: #333;\n\n  // utils => button, border, words etc\n  --success: #06ad3e;\n  --danger: #ea2027;\n  --info: #3867d6;\n  --warning: #fbc531;\n  --hint: #95a5a6;\n\n  // utils => border, words etc\n  --accent: #3c40c6;\n  --divider: #bdc3c7;\n\n  // font-family\n  --basic: \"Mulish\", sans-serif;\n  --default: \"Roboto\", sans-serif;\n  --logo: \"Roboto Condensed\", sans-serif;\n  --form: Arial, Helvetica, sans-serif;\n\n  // shadow\n  --shadow: 0 0.1rem 0.2rem 0 rgba(60, 64, 67, 0.3),\n    0 0.1rem 0.3rem 0.1rem rgba(60, 64, 67, 0.15);\n}\n","body {\n  height: 100vh;\n}\n\n.container {\n  min-height: 100vh;\n  display: grid;\n  grid:\n    \"header\" auto\n    \"content\" 1fr\n    \"footer\" auto /\n    auto;\n}\n","@use \"../partials/media-queries.scss\" as *;\n\nheader {\n  grid-area: header;\n  align-items: center;\n  background: var(--primary);\n  position: fixed;\n  z-index: 1;\n  width: 100%;\n  .container-top-menu {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    padding: 1rem;\n    a {\n      color: var(--light);\n      font-weight: 700;\n      letter-spacing: 0.1rem;\n    }\n    .header-brand {\n      font-weight: 700;\n      &:hover {\n        color: var(--tertiary);\n      }\n    }\n  }\n\n  .header-menu {\n    position: relative;\n    ul {\n      @include phone {\n        display: none;\n      }\n      display: flex;\n      margin-right: -0.5rem;\n      li {\n        margin-left: 1rem;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        cursor: pointer;\n        transition: all 0.2s;\n        &:hover {\n          transition: all 0.2s;\n          background-color: var(--secondary);\n          a {\n            color: var(--light);\n          }\n        }\n        a {\n          font-size: 1.2rem;\n          border-radius: 0.2rem;\n        }\n      }\n      .active {\n        background-color: var(--light);\n        border-radius: 0.2rem;\n        a {\n          color: var(--secondary);\n        }\n      }\n    }\n  }\n\n  .header-menu-icon {\n    display: none;\n    font-size: 2rem;\n    color: var(--light);\n    @include phone {\n      display: block;\n    }\n  }\n\n  .mobile-menu {\n    display: none;\n    position: absolute;\n    top: 3.5rem;\n    right: -2rem;\n    padding: 0.5rem;\n    background-color: var(--primary);\n    box-shadow: var(--shadow);\n    ul {\n      display: block;\n      li {\n        margin: 1rem 2rem;\n      }\n    }\n  }\n  .mobile-menu.open {\n    display: block;\n  }\n}\n","@mixin phone {\n  @media (max-width: 480px) {\n    @content;\n  }\n}\n\n@mixin tablet {\n  @media (min-width: 481px) and (max-width: 767px) {\n    @content;\n  }\n}\n\n@mixin laptop {\n  @media (min-width: 768px) and (max-width: 1199px) {\n    @content;\n  }\n}\n\n@mixin computer {\n  @media (min-width: 1200px) {\n    @content;\n  }\n}\n","footer {\n  grid-area: footer;\n  padding: 2rem;\n  height: 8rem;\n  background-color: var(--dark);\n  color: var(--light);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: bold;\n  img {\n    height: 2rem;\n    width: 2rem;\n    margin-bottom: -0.1rem;\n  }\n  .j {\n    font-family: var(--logo);\n    color: var(--danger);\n  }\n\n  .e {\n    font-family: var(--logo);\n    color: var(--danger);\n  }\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/assets/sass/partials/_base.scss","webpack://./src/assets/sass/styles.scss","webpack://./src/assets/sass/partials/_classes.scss","webpack://./src/assets/sass/partials/_reset.scss","webpack://./src/assets/sass/partials/_variables.scss","webpack://./src/assets/sass/layouts/_body.scss","webpack://./src/assets/sass/layouts/_header.scss","webpack://./src/assets/sass/partials/_media-queries.scss","webpack://./src/assets/sass/layouts/_footer.scss"],"names":[],"mappings":"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","sourcesContent":[":root {\n  font-size: 62.5%; // font-size = 10px\n}\n\nbody {\n  font-size: 1.6rem; // 1rem = 10px\n  color: var(--dark);\n  font-family: var(--basic);\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: var(--dark);\n  text-decoration: none;\n}\n",":root {\n  font-size: 62.5%;\n}\n\nbody {\n  font-size: 1.6rem;\n  color: var(--dark);\n  font-family: var(--basic);\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: var(--dark);\n  text-decoration: none;\n}\n\n.title-underline {\n  padding-bottom: 2rem;\n  border-bottom: 0.1rem solid var(--divider);\n}\n\n.button {\n  border: 0;\n  border-radius: 0.3rem;\n  padding: 1rem 2rem;\n  font-weight: 700;\n  cursor: pointer;\n  transition: box-shadow 0.2s;\n}\n.button:hover {\n  box-shadow: var(--shadow);\n  opacity: 89%;\n  transition: box-shadow 0.2s;\n}\n.button-add {\n  background: var(--primary);\n  border: 0.2rem solid var(--primary);\n  color: var(--light);\n}\n.button-cancel {\n  background: var(--light);\n  border: 0.2rem solid var(--primary);\n  color: var(--primary);\n}\n.button-edit {\n  margin-right: 2rem;\n  background-color: var(--success);\n  color: var(--light);\n}\n.button-delete {\n  margin-right: 2rem;\n  background-color: var(--danger);\n  color: var(--light);\n}\n.button-save {\n  background: var(--primary);\n  border: 0.2rem solid var(--primary);\n  color: var(--light);\n}\n.button-detail {\n  background: var(--success);\n  border: 0.2rem solid var(--success);\n  color: var(--light);\n}\n.button-back {\n  background: var(--danger);\n  border: 0.2rem solid var(--danger);\n  color: var(--light);\n}\n\n.text-valid {\n  color: var(--success);\n  font-weight: bold;\n}\n.text-error {\n  color: var(--danger);\n  font-weight: bold;\n}\n.text-detail {\n  color: var(--info);\n  font-weight: bold;\n}\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n:root {\n  --primary: #2e86de;\n  --secondary: #54a0ff;\n  --tertiary: #48dbfb;\n  --light: #f5f6fa;\n  --medium: #2d98da;\n  --dark: #333;\n  --success: #06ad3e;\n  --danger: #ea2027;\n  --info: #3867d6;\n  --warning: #fbc531;\n  --hint: #95a5a6;\n  --accent: #3c40c6;\n  --divider: #bdc3c7;\n  --basic: \"Mulish\", sans-serif;\n  --default: \"Roboto\", sans-serif;\n  --logo: \"Roboto Condensed\", sans-serif;\n  --form: Arial, Helvetica, sans-serif;\n  --shadow: 0 0.1rem 0.2rem 0 rgba(60, 64, 67, 0.3),\n    0 0.1rem 0.3rem 0.1rem rgba(60, 64, 67, 0.15);\n}\n\nbody {\n  height: 100vh;\n}\n\n.container {\n  min-height: 100vh;\n  display: grid;\n  grid: \"header\" auto \"content\" 1fr \"footer\" auto/auto;\n}\n\nheader {\n  grid-area: header;\n  align-items: center;\n  background: var(--primary);\n  position: fixed;\n  z-index: 1;\n  width: 100%;\n}\nheader .container-top-menu {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  padding: 1rem;\n}\nheader .container-top-menu a {\n  color: var(--light);\n  font-weight: 700;\n  letter-spacing: 0.1rem;\n}\nheader .container-top-menu .header-brand {\n  font-weight: 700;\n}\nheader .container-top-menu .header-brand:hover {\n  color: var(--tertiary);\n}\nheader .header-menu {\n  position: relative;\n}\nheader .header-menu ul {\n  display: flex;\n  margin-right: -0.5rem;\n}\n@media (max-width: 480px) {\n  header .header-menu ul {\n    display: none;\n  }\n}\nheader .header-menu ul li {\n  margin-left: 1rem;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  cursor: pointer;\n  transition: all 0.2s;\n}\nheader .header-menu ul li:hover {\n  transition: all 0.2s;\n  background-color: var(--secondary);\n}\nheader .header-menu ul li:hover a {\n  color: var(--light);\n}\nheader .header-menu ul li a {\n  font-size: 1.2rem;\n  border-radius: 0.2rem;\n}\nheader .header-menu ul .active {\n  background-color: var(--light);\n  border-radius: 0.2rem;\n}\nheader .header-menu ul .active a {\n  color: var(--secondary);\n}\nheader .header-menu-icon {\n  display: none;\n  font-size: 2rem;\n  color: var(--light);\n}\n@media (max-width: 480px) {\n  header .header-menu-icon {\n    display: block;\n  }\n}\nheader .mobile-menu {\n  display: none;\n  position: absolute;\n  top: 3.5rem;\n  right: -2rem;\n  padding: 0.5rem;\n  background-color: var(--primary);\n  box-shadow: var(--shadow);\n}\nheader .mobile-menu ul {\n  display: block;\n}\nheader .mobile-menu ul li {\n  margin: 1rem 2rem;\n}\nheader .mobile-menu.open {\n  display: block;\n}\n\nfooter {\n  grid-area: footer;\n  padding: 2rem;\n  height: 8rem;\n  background-color: var(--dark);\n  color: var(--light);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: bold;\n}\nfooter img {\n  height: 2rem;\n  width: 2rem;\n  margin-bottom: -0.1rem;\n}\nfooter .j {\n  font-family: var(--logo);\n  color: var(--danger);\n}\nfooter .e {\n  font-family: var(--logo);\n  color: var(--danger);\n}",".title {\n  &-underline {\n    padding-bottom: 2rem;\n    border-bottom: 0.1rem solid var(--divider);\n  }\n}\n\n.button {\n  border: 0;\n  border-radius: 0.3rem;\n  padding: 1rem 2rem;\n  font-weight: 700;\n  cursor: pointer;\n  transition: box-shadow 0.2s;\n  &:hover {\n    box-shadow: var(--shadow);\n    opacity: 89%;\n    transition: box-shadow 0.2s;\n  }\n  &-add {\n    background: var(--primary);\n    border: 0.2rem solid var(--primary);\n    color: var(--light);\n  }\n  &-cancel {\n    background: var(--light);\n    border: 0.2rem solid var(--primary);\n    color: var(--primary);\n  }\n  &-edit {\n    margin-right: 2rem;\n    background-color: var(--success);\n    color: var(--light);\n  }\n  &-delete {\n    margin-right: 2rem;\n    background-color: var(--danger);\n    color: var(--light);\n  }\n  &-save {\n    background: var(--primary);\n    border: 0.2rem solid var(--primary);\n    color: var(--light);\n  }\n  &-detail {\n    background: var(--success);\n    border: 0.2rem solid var(--success);\n    color: var(--light);\n  }\n  &-back {\n    background: var(--danger);\n    border: 0.2rem solid var(--danger);\n    color: var(--light);\n  }\n}\n\n.text {\n  &-valid {\n    color: var(--success);\n    font-weight: bold;\n  }\n  &-error {\n    color: var(--danger);\n    font-weight: bold;\n  }\n  &-detail {\n    color: var(--info);\n    font-weight: bold;\n  }\n}\n","* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n",":root {\n  // main color\n  --primary: #2e86de;\n  --secondary: #54a0ff;\n  --tertiary: #48dbfb;\n\n  // text color\n  --light: #f5f6fa;\n  --medium: #2d98da;\n  --dark: #333;\n\n  // utils => button, border, words etc\n  --success: #06ad3e;\n  --danger: #ea2027;\n  --info: #3867d6;\n  --warning: #fbc531;\n  --hint: #95a5a6;\n\n  // utils => border, words etc\n  --accent: #3c40c6;\n  --divider: #bdc3c7;\n\n  // font-family\n  --basic: \"Mulish\", sans-serif;\n  --default: \"Roboto\", sans-serif;\n  --logo: \"Roboto Condensed\", sans-serif;\n  --form: Arial, Helvetica, sans-serif;\n\n  // shadow\n  --shadow: 0 0.1rem 0.2rem 0 rgba(60, 64, 67, 0.3),\n    0 0.1rem 0.3rem 0.1rem rgba(60, 64, 67, 0.15);\n}\n","body {\n  height: 100vh;\n}\n\n.container {\n  min-height: 100vh;\n  display: grid;\n  grid:\n    \"header\" auto\n    \"content\" 1fr\n    \"footer\" auto /\n    auto;\n}\n","@use \"../partials/media-queries.scss\" as *;\n\nheader {\n  grid-area: header;\n  align-items: center;\n  background: var(--primary);\n  position: fixed;\n  z-index: 1;\n  width: 100%;\n  .container-top-menu {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    padding: 1rem;\n    a {\n      color: var(--light);\n      font-weight: 700;\n      letter-spacing: 0.1rem;\n    }\n    .header-brand {\n      font-weight: 700;\n      &:hover {\n        color: var(--tertiary);\n      }\n    }\n  }\n\n  .header-menu {\n    position: relative;\n    ul {\n      @include phone {\n        display: none;\n      }\n      display: flex;\n      margin-right: -0.5rem;\n      li {\n        margin-left: 1rem;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        cursor: pointer;\n        transition: all 0.2s;\n        &:hover {\n          transition: all 0.2s;\n          background-color: var(--secondary);\n          a {\n            color: var(--light);\n          }\n        }\n        a {\n          font-size: 1.2rem;\n          border-radius: 0.2rem;\n        }\n      }\n      .active {\n        background-color: var(--light);\n        border-radius: 0.2rem;\n        a {\n          color: var(--secondary);\n        }\n      }\n    }\n  }\n\n  .header-menu-icon {\n    display: none;\n    font-size: 2rem;\n    color: var(--light);\n    @include phone {\n      display: block;\n    }\n  }\n\n  .mobile-menu {\n    display: none;\n    position: absolute;\n    top: 3.5rem;\n    right: -2rem;\n    padding: 0.5rem;\n    background-color: var(--primary);\n    box-shadow: var(--shadow);\n    ul {\n      display: block;\n      li {\n        margin: 1rem 2rem;\n      }\n    }\n  }\n  .mobile-menu.open {\n    display: block;\n  }\n}\n","@mixin phone {\n  @media (max-width: 480px) {\n    @content;\n  }\n}\n\n@mixin tablet {\n  @media (min-width: 481px) and (max-width: 767px) {\n    @content;\n  }\n}\n\n@mixin laptop {\n  @media (min-width: 768px) and (max-width: 1199px) {\n    @content;\n  }\n}\n\n@mixin computer {\n  @media (min-width: 1200px) {\n    @content;\n  }\n}\n","footer {\n  grid-area: footer;\n  padding: 2rem;\n  height: 8rem;\n  background-color: var(--dark);\n  color: var(--light);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: bold;\n  img {\n    height: 2rem;\n    width: 2rem;\n    margin-bottom: -0.1rem;\n  }\n  .j {\n    font-family: var(--logo);\n    color: var(--danger);\n  }\n\n  .e {\n    font-family: var(--logo);\n    color: var(--danger);\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -8434,6 +8439,12 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.header-nav {
   margin-left: 1rem;
   margin-right: 1rem;
   box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+#container-gallery fieldset ul li:hover {
+  transition: all 0.2s;
+  border: 0.1rem solid var(--hint);
 }
 
 .mode-grid {
@@ -8444,7 +8455,48 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.header-nav {
 .mode-flex {
   display: flex;
   justify-content: center;
-}`, "",{"version":3,"sources":["webpack://./src/userdetail/userdetail.scss"],"names":[],"mappings":"AAAA;EACE,gCAAA;AACF;;AAEA;EACE,iBAAA;EACA,oBAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;AACF;;AAEA;EACE,mBAAA;AACF;;AAEA;EACE,mBAAA;EACA,eAAA;EACA,yBAAA;AACF;AAAE;EACE,aAAA;EACA,YAAA;EACA,sBAAA;AAEJ;;AAEA;EACE,wBAAA;EACA,mBAAA;AACF;;AAEA;EACE,mBAAA;AACF;AAAE;EACE,gCAAA;AAEJ;AADI;EACE,iBAAA;EACA,kBAAA;EACA,kBAAA;EACA,mBAAA;EACA,mBAAA;AAGN;AAAM;EACE,YAAA;EACA,YAAA;EACA,+BAAA;EACA,mBAAA;EACA,iBAAA;EACA,kBAAA;EACA,yBAAA;AAER;;AAKA;EACE,aAAA;EACA,sCAAA;AAFF;;AAKA;EACE,aAAA;EACA,uBAAA;AAFF","sourcesContent":[".header-nav {\n  padding: 0.5rem 1rem 0.5rem 1rem;\n}\n\n#container-user-detail {\n  margin-top: 25rem;\n  margin-bottom: 25rem;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n\n#container-user-name {\n  margin-bottom: 1rem;\n}\n\n#container-user-img {\n  margin-bottom: 3rem;\n  padding: 0.5rem;\n  box-shadow: var(--shadow);\n  img {\n    height: 20rem;\n    width: 20rem;\n    margin-bottom: -0.4rem;\n  }\n}\n\n#container-user-profile {\n  font-family: var(--form);\n  margin-bottom: 3rem;\n}\n\n#container-gallery {\n  margin-bottom: 3rem;\n  fieldset {\n    border: 0.1rem solid var(--dark);\n    legend {\n      margin-left: auto;\n      margin-right: auto;\n      padding-left: 1rem;\n      padding-right: 1rem;\n      margin-bottom: 3rem;\n    }\n    ul {\n      li {\n        height: 9rem;\n        width: 10rem;\n        padding: 0.5rem 0.5rem 0 0.5rem;\n        margin-bottom: 3rem;\n        margin-left: 1rem;\n        margin-right: 1rem;\n        box-shadow: var(--shadow);\n      }\n    }\n  }\n}\n\n// JS Start//\n.mode-grid {\n  display: grid;\n  grid-template-columns: 1fr 1fr 1fr 1fr;\n}\n\n.mode-flex {\n  display: flex;\n  justify-content: center;\n}\n// JS End//\n"],"sourceRoot":""}]);
+}
+
+.noshow-detail {
+  display: none;
+}
+
+.fieldset-detail {
+  border: 0.1rem solid var(--dark);
+  padding: 5rem;
+  padding-bottom: 11rem;
+}
+.fieldset-detail legend {
+  font-size: 2.3rem;
+  font-weight: bolder;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-bottom: 5rem;
+}
+
+.gallery-detail {
+  box-shadow: var(--shadow);
+  padding: 1rem;
+  padding-bottom: 4rem;
+}
+.gallery-detail p {
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: var(--primary);
+}
+.gallery-detail .container-button {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 6rem;
+}
+
+.remove-scrolling {
+  height: 100%;
+  overflow: hidden;
+}`, "",{"version":3,"sources":["webpack://./src/userdetail/userdetail.scss"],"names":[],"mappings":"AAAA;EACE,gCAAA;AACF;;AAEA;EACE,iBAAA;EACA,oBAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;AACF;;AAEA;EACE,mBAAA;AACF;;AAEA;EACE,mBAAA;EACA,eAAA;EACA,yBAAA;AACF;AAAE;EACE,aAAA;EACA,YAAA;EACA,sBAAA;AAEJ;;AAEA;EACE,wBAAA;EACA,mBAAA;AACF;;AAEA;EACE,mBAAA;AACF;AAAE;EACE,gCAAA;AAEJ;AADI;EACE,iBAAA;EACA,kBAAA;EACA,kBAAA;EACA,mBAAA;EACA,mBAAA;AAGN;AAAM;EACE,YAAA;EACA,YAAA;EACA,+BAAA;EACA,mBAAA;EACA,iBAAA;EACA,kBAAA;EACA,yBAAA;EACA,eAAA;EACA,oBAAA;AAER;AADQ;EACE,oBAAA;EACA,gCAAA;AAGV;;AAKA;EACE,aAAA;EACA,sCAAA;AAFF;;AAKA;EACE,aAAA;EACA,uBAAA;AAFF;;AAKA;EACE,aAAA;AAFF;;AAKA;EACE,gCAAA;EACA,aAAA;EACA,qBAAA;AAFF;AAGE;EACE,iBAAA;EACA,mBAAA;EACA,iBAAA;EACA,kBAAA;EACA,kBAAA;EACA,mBAAA;EACA,mBAAA;AADJ;;AAKA;EACE,yBAAA;EACA,aAAA;EACA,oBAAA;AAFF;AAGE;EACE,kBAAA;EACA,gBAAA;EACA,iBAAA;EACA,qBAAA;AADJ;AAGE;EACE,aAAA;EACA,6BAAA;EACA,iBAAA;AADJ;;AAKA;EACE,YAAA;EACA,gBAAA;AAFF","sourcesContent":[".header-nav {\n  padding: 0.5rem 1rem 0.5rem 1rem;\n}\n\n#container-user-detail {\n  margin-top: 25rem;\n  margin-bottom: 25rem;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n\n#container-user-name {\n  margin-bottom: 1rem;\n}\n\n#container-user-img {\n  margin-bottom: 3rem;\n  padding: 0.5rem;\n  box-shadow: var(--shadow);\n  img {\n    height: 20rem;\n    width: 20rem;\n    margin-bottom: -0.4rem;\n  }\n}\n\n#container-user-profile {\n  font-family: var(--form);\n  margin-bottom: 3rem;\n}\n\n#container-gallery {\n  margin-bottom: 3rem;\n  fieldset {\n    border: 0.1rem solid var(--dark);\n    legend {\n      margin-left: auto;\n      margin-right: auto;\n      padding-left: 1rem;\n      padding-right: 1rem;\n      margin-bottom: 3rem;\n    }\n    ul {\n      li {\n        height: 9rem;\n        width: 10rem;\n        padding: 0.5rem 0.5rem 0 0.5rem;\n        margin-bottom: 3rem;\n        margin-left: 1rem;\n        margin-right: 1rem;\n        box-shadow: var(--shadow);\n        cursor: pointer;\n        transition: all 0.2s;\n        &:hover {\n          transition: all 0.2s;\n          border: 0.1rem solid var(--hint);\n        }\n      }\n    }\n  }\n}\n\n// JS Start//\n.mode-grid {\n  display: grid;\n  grid-template-columns: 1fr 1fr 1fr 1fr;\n}\n\n.mode-flex {\n  display: flex;\n  justify-content: center;\n}\n\n.noshow-detail {\n  display: none;\n}\n\n.fieldset-detail {\n  border: 0.1rem solid var(--dark);\n  padding: 5rem;\n  padding-bottom: 11rem;\n  legend {\n    font-size: 2.3rem;\n    font-weight: bolder;\n    margin-left: auto;\n    margin-right: auto;\n    padding-left: 3rem;\n    padding-right: 3rem;\n    margin-bottom: 5rem;\n  }\n}\n\n.gallery-detail {\n  box-shadow: var(--shadow);\n  padding: 1rem;\n  padding-bottom: 4rem;\n  p {\n    text-align: center;\n    margin-top: 1rem;\n    font-weight: bold;\n    color: var(--primary);\n  }\n  .container-button {\n    display: flex;\n    justify-content: space-evenly;\n    padding-top: 6rem;\n  }\n}\n\n.remove-scrolling {\n  height: 100%;\n  overflow: hidden;\n}\n// JS End//\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -9055,14 +9107,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_es_string_search_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_search_js__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! core-js/modules/es.array.concat.js */ "./node_modules/core-js/modules/es.array.concat.js");
 /* harmony import */ var core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var core_js_modules_es_array_map_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! core-js/modules/es.array.map.js */ "./node_modules/core-js/modules/es.array.map.js");
-/* harmony import */ var core_js_modules_es_array_map_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_map_js__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var core_js_modules_es_array_filter_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! core-js/modules/es.array.filter.js */ "./node_modules/core-js/modules/es.array.filter.js");
-/* harmony import */ var core_js_modules_es_array_filter_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_filter_js__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! core-js/modules/es.promise.js */ "./node_modules/core-js/modules/es.promise.js");
-/* harmony import */ var core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! core-js/modules/es.array.slice.js */ "./node_modules/core-js/modules/es.array.slice.js");
-/* harmony import */ var core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! core-js/modules/es.array.slice.js */ "./node_modules/core-js/modules/es.array.slice.js");
+/* harmony import */ var core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var core_js_modules_es_array_map_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! core-js/modules/es.array.map.js */ "./node_modules/core-js/modules/es.array.map.js");
+/* harmony import */ var core_js_modules_es_array_map_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_map_js__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var core_js_modules_es_array_filter_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! core-js/modules/es.array.filter.js */ "./node_modules/core-js/modules/es.array.filter.js");
+/* harmony import */ var core_js_modules_es_array_filter_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_filter_js__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! core-js/modules/es.promise.js */ "./node_modules/core-js/modules/es.promise.js");
+/* harmony import */ var core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_12__);
 /* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! core-js/modules/es.symbol.js */ "./node_modules/core-js/modules/es.symbol.js");
 /* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_13__);
 /* harmony import */ var core_js_modules_es_symbol_description_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! core-js/modules/es.symbol.description.js */ "./node_modules/core-js/modules/es.symbol.description.js");
@@ -9131,15 +9183,18 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 
 
 
+var body = document.querySelector("body");
 var containerUserImg = document.querySelector("#container-user-img");
 var containerUserName = document.querySelector("#container-user-name");
 var containerUserProfile = document.querySelector("#container-user-profile");
 var containerGallery = document.querySelector("#container-gallery");
-var containerButton = document.querySelector("#container-button");
+var containerGalleryDetail = document.querySelector("#container-gallery-detail");
 var params = new URL(location.href);
 var userName = params.search;
 var galleryPhotos;
 containerGallery.innerHTML = "\n<fieldset>\n  <legend></legend>\n  <ul></ul>\n</fieldset>\n";
+containerGalleryDetail.classList.add("noshow-detail");
+containerGalleryDetail.innerHTML = "\n<fieldset class=\"fieldset-detail\" >\n  <legend></legend>\n  <div class=\"gallery-detail\"></div>\n</fieldset>\n";
 switch (userName) {
   case "?name=Gustave%20-%20L%27Aventurier":
     {
@@ -9270,13 +9325,348 @@ switch (userName) {
       break;
     }
 }
+var legend = containerGallery.querySelector("legend");
+var legendDetail = containerGalleryDetail.querySelector("legend");
+switch (userName) {
+  case "Gustave - L'Aventurier":
+    {
+      legend.innerHTML = "Galerie de ".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[0].photographer.slice(0, 7));
+      legendDetail.innerHTML = "Galerie de ".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[0].photographer.slice(0, 7));
+      break;
+    }
+  case "Julie - L'Aventurière":
+    {
+      legend.innerHTML = "Galerie de ".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[1].photographer.slice(0, 5));
+      legendDetail.innerHTML = "Galerie de ".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[1].photographer.slice(0, 5));
+      break;
+    }
+  case "Henry - L'Aventurier":
+    {
+      legend.innerHTML = "Galerie d'".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[2].photographer.slice(0, 5));
+      legendDetail.innerHTML = "Galerie d'".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[2].photographer.slice(0, 5));
+      break;
+    }
+  case "Zoé - L'Aventurière":
+    {
+      legend.innerHTML = "Galerie de ".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[3].photographer.slice(0, 3));
+      legendDetail.innerHTML = "Galerie de ".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[3].photographer.slice(0, 3));
+      break;
+    }
+  case "Flora - L'Exploratrice":
+    {
+      legend.innerHTML = "Galerie de ".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[4].photographer.slice(0, 5));
+      legendDetail.innerHTML = "Galerie de ".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[4].photographer.slice(0, 5));
+      break;
+    }
+  case "Denver - L'Explorateur":
+    {
+      legend.innerHTML = "Galerie de ".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[5].photographer.slice(0, 6));
+      legendDetail.innerHTML = "Galerie de ".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[5].photographer.slice(0, 6));
+      break;
+    }
+  case "Inaya - L'Exploratrice":
+    {
+      legend.innerHTML = "Galerie d'".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[6].photographer.slice(0, 5));
+      legendDetail.innerHTML = "Galerie d'".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[6].photographer.slice(0, 5));
+      break;
+    }
+  case "Seth - L'Explorateur":
+    {
+      legend.innerHTML = "Galerie de ".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[7].photographer.slice(0, 4));
+      legendDetail.innerHTML = "Galerie de ".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[7].photographer.slice(0, 4));
+      break;
+    }
+  case "Lance - Le Visiteur":
+    {
+      legend.innerHTML = "Galerie de ".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[8].photographer.slice(0, 5));
+      legendDetail.innerHTML = "Galerie de ".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[8].photographer.slice(0, 5));
+      break;
+    }
+  case "Nadia - La Visiteuse":
+    {
+      legend.innerHTML = "Galerie de ".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[9].photographer.slice(0, 5));
+      legendDetail.innerHTML = "Galerie de ".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[9].photographer.slice(0, 5));
+      break;
+    }
+  case "Xavier - Le Visiteur":
+    {
+      legend.innerHTML = "Galerie de ".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[10].photographer.slice(0, 6));
+      legendDetail.innerHTML = "Galerie de ".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[10].photographer.slice(0, 6));
+      break;
+    }
+  case "Ornella - La Visiteuse":
+    {
+      legend.innerHTML = "Galerie d'".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[11].photographer.slice(0, 7));
+      legendDetail.innerHTML = "Galerie d'".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[11].photographer.slice(0, 7));
+      break;
+    }
+  case "Cerise - La Voyageuse":
+    {
+      legend.innerHTML = "Galerie de ".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[12].photographer.slice(0, 6));
+      legendDetail.innerHTML = "Galerie de ".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[12].photographer.slice(0, 6));
+      break;
+    }
+  case "Philibert - Le Voyageur":
+    {
+      legend.innerHTML = "Galerie de ".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[13].photographer.slice(0, 9));
+      legendDetail.innerHTML = "Galerie de ".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[13].photographer.slice(0, 9));
+      break;
+    }
+  case "Roxane - La Voyageuse":
+    {
+      legend.innerHTML = "Galerie de ".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[14].photographer.slice(0, 6));
+      legendDetail.innerHTML = "Galerie de ".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[14].photographer.slice(0, 6));
+      break;
+    }
+  case "Yuu - Le Voyageur":
+    {
+      legend.innerHTML = "Galerie de ".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[15].photographer.slice(0, 3));
+      legendDetail.innerHTML = "Galerie de ".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[15].photographer.slice(0, 3));
+      break;
+    }
+}
 var createGalleryPhotos = function createGalleryPhotos() {
-  var galleryPhotosElement = galleryPhotos.filter(function (photo) {
-    return photo.photographer === "".concat(userName);
+  var galleryPhotosElement = galleryPhotos.filter(function (galleryPhoto) {
+    return galleryPhoto.photographer === "".concat(userName);
   }).map(function (galleryPhoto) {
     var galleryPhotoElement = document.createElement("li");
     galleryPhotoElement.innerHTML = "<img />";
     var formPhotoImg = galleryPhotoElement.querySelector("img");
+    formPhotoImg.setAttribute("data-id", "".concat(galleryPhoto._id));
+    galleryPhotoElement.addEventListener("click", function (event) {
+      var target = event.target;
+      var formPhotoId = target.dataset.id;
+      containerGalleryDetail.classList.remove("noshow-detail");
+      containerUserImg.classList.add("noshow-detail");
+      containerUserName.classList.add("noshow-detail");
+      containerUserProfile.classList.add("noshow-detail");
+      containerGallery.classList.add("noshow-detail");
+      var galleryDetail = containerGalleryDetail.querySelector("div");
+      galleryDetail.innerHTML = "\n        <img src=\"".concat(galleryPhoto.picture, "\" />\n        <p> ").concat(galleryPhoto.picture.italics(), " </p>\n        <div class=\"container-button\">\n          <button class=\"button button-detail\">D\xE9tail</button>\n          <button class=\"button button-back\">Retour</button>\n        </div>\n        ");
+      body.classList.add("remove-scrolling");
+      var buttonDetail = galleryDetail.querySelector(".button-detail");
+      var buttonBack = galleryDetail.querySelector(".button-back");
+      buttonDetail.addEventListener("click", function (event) {
+        event.stopPropagation();
+        if (formPhotoId) {
+          location.assign("./formdetail.html?id=".concat(formPhotoId));
+        } else {
+          location.assign("./userdetail.html?name=".concat(userName));
+        }
+      });
+      buttonBack.addEventListener("click", function (event) {
+        event.stopPropagation();
+        containerGalleryDetail.classList.add("noshow-detail");
+        containerUserImg.classList.remove("noshow-detail");
+        containerUserName.classList.remove("noshow-detail");
+        containerUserProfile.classList.remove("noshow-detail");
+        containerGallery.classList.remove("noshow-detail");
+        body.classList.remove("remove-scrolling");
+      });
+      var formPhotoImgDetail = galleryDetail.querySelector("img");
+      switch (galleryPhoto.picture) {
+        case "Un Désert en Cisjordanie":
+          {
+            formPhotoImgDetail.src = "./assets/images/form-photos/form-deserts/desert-cj.jpg";
+            break;
+          }
+        case "Un Désert en Jordanie":
+          {
+            formPhotoImgDetail.src = "./assets/images/form-photos/form-deserts/desert-jo.jpg";
+            break;
+          }
+        case "Un Désert au Maroc":
+          {
+            formPhotoImgDetail.src = "./assets/images/form-photos/form-deserts/desert-ma.jpg";
+            break;
+          }
+        case "Un Désert en Namibie (Océan Atlantique)":
+          {
+            formPhotoImgDetail.src = "./assets/images/form-photos/form-deserts/desert-oa-na.jpg";
+            break;
+          }
+        case "Un Désert en Oman":
+          {
+            formPhotoImgDetail.src = "./assets/images/form-photos/form-deserts/desert-om.jpg";
+            break;
+          }
+        case "Un Désert au Pérou":
+          {
+            formPhotoImgDetail.src = "./assets/images/form-photos/form-deserts/desert-pe.jpg";
+            break;
+          }
+        case "Un Désert en Arabie Saoudite":
+          {
+            formPhotoImgDetail.src = "./assets/images/form-photos/form-deserts/desert-sa.jpg";
+            break;
+          }
+        case "Un Désert en Namibie (Sud-Ouest)":
+          {
+            formPhotoImgDetail.src = "./assets/images/form-photos/form-deserts/desert-so-na.jpg";
+            break;
+          }
+        case "Le Désert du Sahara (Soir)":
+          {
+            formPhotoImgDetail.src = "./assets/images/form-photos/form-deserts/desert-soir-eh.jpg";
+            break;
+          }
+        case "Sable Blanc du Nouveau-Mexique (USA)":
+          {
+            formPhotoImgDetail.src = "./assets/images/form-photos/form-deserts/sable-blanc-nmex-us.jpg";
+            break;
+          }
+        case "Une Forêt en Australie":
+          {
+            formPhotoImgDetail.src = "./assets/images/form-photos/form-forets/foret-au.jpg";
+            break;
+          }
+        case "Une Forêt au Canada":
+          {
+            formPhotoImgDetail.src = "./assets/images/form-photos/form-forets/foret-ca.jpg";
+            break;
+          }
+        case "Une Forêt en Finlande":
+          {
+            formPhotoImgDetail.src = "./assets/images/form-photos/form-forets/foret-fi.jpg";
+            break;
+          }
+        case "Une Forêt en Croatie":
+          {
+            formPhotoImgDetail.src = "./assets/images/form-photos/form-forets/foret-hr.jpg";
+            break;
+          }
+        case "Une Forêt en Inde":
+          {
+            formPhotoImgDetail.src = "./assets/images/form-photos/form-forets/foret-in.jpg";
+            break;
+          }
+        case "Une Forêt en Italie":
+          {
+            formPhotoImgDetail.src = "./assets/images/form-photos/form-forets/foret-it.jpg";
+            break;
+          }
+        case "Une Forêt au Japon":
+          {
+            formPhotoImgDetail.src = "./assets/images/form-photos/form-forets/foret-jp.jpg";
+            break;
+          }
+        case "La Forêt des Loups":
+          {
+            formPhotoImgDetail.src = "./assets/images/form-photos/form-forets/foret-loups.jpg";
+            break;
+          }
+        case "Une Forêt au Nouvelle-Zélande":
+          {
+            formPhotoImgDetail.src = "./assets/images/form-photos/form-forets/foret-nz.jpg";
+            break;
+          }
+        case "Une Forêt en Washington (USA)":
+          {
+            formPhotoImgDetail.src = "./assets/images/form-photos/form-forets/foret-wash-us.jpg";
+            break;
+          }
+        case "Une Plage en Australie":
+          {
+            formPhotoImgDetail.src = "./assets/images/form-photos/form-plages/plage-au.jpg";
+            break;
+          }
+        case "Une Plage au Brésil":
+          {
+            formPhotoImgDetail.src = "./assets/images/form-photos/form-plages/plage-br.jpg";
+            break;
+          }
+        case "Une Plage en Grande-Bretagne":
+          {
+            formPhotoImgDetail.src = "./assets/images/form-photos/form-plages/plage-gb.jpg";
+            break;
+          }
+        case "Une Plage en Italie":
+          {
+            formPhotoImgDetail.src = "./assets/images/form-photos/form-plages/plage-it.jpg";
+            break;
+          }
+        case "Une Plage en Madagascar":
+          {
+            formPhotoImgDetail.src = "./assets/images/form-photos/form-plages/plage-mg.jpg";
+            break;
+          }
+        case "Une Plage au Mexique":
+          {
+            formPhotoImgDetail.src = "./assets/images/form-photos/form-plages/plage-mx.jpg";
+            break;
+          }
+        case "Une Plage en Nouvelle-Calédonie":
+          {
+            formPhotoImgDetail.src = "./assets/images/form-photos/form-plages/plage-nc.jpg";
+            break;
+          }
+        case "Une Plage en Polynésie Française":
+          {
+            formPhotoImgDetail.src = "./assets/images/form-photos/form-plages/plage-pf.jpg";
+            break;
+          }
+        case "Une Plage aux Sychelles":
+          {
+            formPhotoImgDetail.src = "./assets/images/form-photos/form-plages/plage-sc.jpg";
+            break;
+          }
+        case "Une Plage en Thaïlande":
+          {
+            formPhotoImgDetail.src = "./assets/images/form-photos/form-plages/plage-th.jpg";
+            break;
+          }
+        case "Une Ville au Chili":
+          {
+            formPhotoImgDetail.src = "./assets/images/form-photos/form-villes/ville-cl.jpg";
+            break;
+          }
+        case "Une Ville en Chine":
+          {
+            formPhotoImgDetail.src = "./assets/images/form-photos/form-villes/ville-cn.jpg";
+            break;
+          }
+        case "Une Ville en Colombie":
+          {
+            formPhotoImgDetail.src = "./assets/images/form-photos/form-villes/ville-co.jpg";
+            break;
+          }
+        case "Une Ville en France":
+          {
+            formPhotoImgDetail.src = "./assets/images/form-photos/form-villes/ville-fr.jpg";
+            break;
+          }
+        case "Une Ville en Grande-Bretagne":
+          {
+            formPhotoImgDetail.src = "./assets/images/form-photos/form-villes/ville-gb.jpg";
+            break;
+          }
+        case "Une Ville au Japon (Jour)":
+          {
+            formPhotoImgDetail.src = "./assets/images/form-photos/form-villes/ville-jour-jp.jpg";
+            break;
+          }
+        case "Une Ville en Koweït":
+          {
+            formPhotoImgDetail.src = "./assets/images/form-photos/form-villes/ville-kw.jpg";
+            break;
+          }
+        case "Une Ville en Norvège":
+          {
+            formPhotoImgDetail.src = "./assets/images/form-photos/form-villes/ville-no.jpg";
+            break;
+          }
+        case "Une Ville Rural d'Allemagne":
+          {
+            formPhotoImgDetail.src = "./assets/images/form-photos/form-villes/ville-rural-ge.jpg";
+            break;
+          }
+        case "Une Ville d'Italie (Soir)":
+          {
+            formPhotoImgDetail.src = "./assets/images/form-photos/form-villes/ville-soir-it.jpg";
+            break;
+          }
+      }
+    });
     switch (galleryPhoto.picture) {
       case "Un Désert en Cisjordanie":
         {
@@ -9526,95 +9916,6 @@ var fetchGallery = /*#__PURE__*/function () {
   };
 }();
 fetchGallery();
-var legend = containerGallery.querySelector("legend");
-switch (userName) {
-  case "Gustave - L'Aventurier":
-    {
-      legend.innerHTML = "Galerie de ".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[0].photographer.slice(0, 7));
-      break;
-    }
-  case "Julie - L'Aventurière":
-    {
-      legend.innerHTML = "Galerie de ".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[1].photographer.slice(0, 5));
-      break;
-    }
-  case "Henry - L'Aventurier":
-    {
-      legend.innerHTML = "Galerie d'".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[2].photographer.slice(0, 5));
-      break;
-    }
-  case "Zoé - L'Aventurière":
-    {
-      legend.innerHTML = "Galerie de ".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[3].photographer.slice(0, 3));
-      break;
-    }
-  case "Flora - L'Exploratrice":
-    {
-      legend.innerHTML = "Galerie de ".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[4].photographer.slice(0, 5));
-      break;
-    }
-  case "Denver - L'Explorateur":
-    {
-      legend.innerHTML = "Galerie de ".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[5].photographer.slice(0, 6));
-      break;
-    }
-  case "Inaya - L'Exploratrice":
-    {
-      legend.innerHTML = "Galerie d'".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[6].photographer.slice(0, 5));
-      break;
-    }
-  case "Seth - L'Explorateur":
-    {
-      legend.innerHTML = "Galerie de ".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[7].photographer.slice(0, 4));
-      break;
-    }
-  case "Lance - Le Visiteur":
-    {
-      legend.innerHTML = "Galerie de ".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[8].photographer.slice(0, 5));
-      break;
-    }
-  case "Nadia - La Visiteuse":
-    {
-      legend.innerHTML = "Galerie de ".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[9].photographer.slice(0, 5));
-      break;
-    }
-  case "Xavier - Le Visiteur":
-    {
-      legend.innerHTML = "Galerie de ".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[10].photographer.slice(0, 6));
-      break;
-    }
-  case "Ornella - La Visiteuse":
-    {
-      legend.innerHTML = "Galerie d'".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[11].photographer.slice(0, 7));
-      break;
-    }
-  case "Cerise - La Voyageuse":
-    {
-      legend.innerHTML = "Galerie de ".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[12].photographer.slice(0, 6));
-      break;
-    }
-  case "Philibert - Le Voyageur":
-    {
-      legend.innerHTML = "Galerie de ".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[13].photographer.slice(0, 9));
-      break;
-    }
-  case "Roxane - La Voyageuse":
-    {
-      legend.innerHTML = "Galerie de ".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[14].photographer.slice(0, 6));
-      break;
-    }
-  case "Yuu - Le Voyageur":
-    {
-      legend.innerHTML = "Galerie de ".concat(_assets_javascripts_users_js__WEBPACK_IMPORTED_MODULE_28__.usersArray[15].photographer.slice(0, 3));
-      break;
-    }
-}
-containerButton.innerHTML = "\n          <button class=\"button button-back\">Retour</button>";
-var buttonBack = containerButton.querySelector("button");
-buttonBack.addEventListener("click", function (event) {
-  event.stopPropagation();
-  history.back();
-});
 })();
 
 /******/ })()
