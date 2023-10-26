@@ -8494,6 +8494,12 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.header-nav {
   margin-left: 1rem;
   margin-right: 1rem;
   box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+#container-gallery fieldset ul li:hover {
+  transition: all 0.2s;
+  border: 0.1rem solid var(--hint);
 }
 
 .mode-grid {
@@ -8504,7 +8510,48 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.header-nav {
 .mode-flex {
   display: flex;
   justify-content: center;
-}`, "",{"version":3,"sources":["webpack://./src/admindetail/admindetail.scss"],"names":[],"mappings":"AAAA;EACE,gCAAA;AACF;;AAEA;EACE,iBAAA;EACA,oBAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;AACF;;AAEA;EACE,mBAAA;AACF;;AAEA;EACE,mBAAA;EACA,eAAA;EACA,yBAAA;AACF;AAAE;EACE,aAAA;EACA,YAAA;EACA,sBAAA;AAEJ;;AAEA;EACE,wBAAA;EACA,mBAAA;AACF;;AAEA;EACE,mBAAA;AACF;AAAE;EACE,gCAAA;AAEJ;AADI;EACE,iBAAA;EACA,kBAAA;EACA,kBAAA;EACA,mBAAA;EACA,mBAAA;AAGN;AAAM;EACE,YAAA;EACA,YAAA;EACA,+BAAA;EACA,mBAAA;EACA,iBAAA;EACA,kBAAA;EACA,yBAAA;AAER;;AAKA;EACE,aAAA;EACA,sCAAA;AAFF;;AAKA;EACE,aAAA;EACA,uBAAA;AAFF","sourcesContent":[".header-nav {\n  padding: 0.5rem 1rem 0.5rem 1rem;\n}\n\n#container-admin-detail {\n  margin-top: 25rem;\n  margin-bottom: 25rem;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n\n#container-admin-name {\n  margin-bottom: 1rem;\n}\n\n#container-admin-img {\n  margin-bottom: 3rem;\n  padding: 0.5rem;\n  box-shadow: var(--shadow);\n  img {\n    height: 20rem;\n    width: 20rem;\n    margin-bottom: -0.4rem;\n  }\n}\n\n#container-admin-profile {\n  font-family: var(--form);\n  margin-bottom: 3rem;\n}\n\n#container-gallery {\n  margin-bottom: 3rem;\n  fieldset {\n    border: 0.1rem solid var(--dark);\n    legend {\n      margin-left: auto;\n      margin-right: auto;\n      padding-left: 1rem;\n      padding-right: 1rem;\n      margin-bottom: 3rem;\n    }\n    ul {\n      li {\n        height: 9rem;\n        width: 10rem;\n        padding: 0.5rem 0.5rem 0 0.5rem;\n        margin-bottom: 3rem;\n        margin-left: 1rem;\n        margin-right: 1rem;\n        box-shadow: var(--shadow);\n      }\n    }\n  }\n}\n\n// JS Start//\n.mode-grid {\n  display: grid;\n  grid-template-columns: 1fr 1fr 1fr 1fr;\n}\n\n.mode-flex {\n  display: flex;\n  justify-content: center;\n}\n// JS End//\n"],"sourceRoot":""}]);
+}
+
+.noshow-detail {
+  display: none;
+}
+
+.fieldset-detail {
+  border: 0.1rem solid var(--dark);
+  padding: 5rem;
+  padding-bottom: 11rem;
+}
+.fieldset-detail legend {
+  font-size: 2.3rem;
+  font-weight: bolder;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-bottom: 5rem;
+}
+
+.gallery-detail {
+  box-shadow: var(--shadow);
+  padding: 1rem;
+  padding-bottom: 4rem;
+}
+.gallery-detail p {
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: var(--primary);
+}
+.gallery-detail .container-button {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 6rem;
+}
+
+.remove-scrolling {
+  height: 100%;
+  overflow: hidden;
+}`, "",{"version":3,"sources":["webpack://./src/admindetail/admindetail.scss"],"names":[],"mappings":"AAAA;EACE,gCAAA;AACF;;AAEA;EACE,iBAAA;EACA,oBAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;AACF;;AAEA;EACE,mBAAA;AACF;;AAEA;EACE,mBAAA;EACA,eAAA;EACA,yBAAA;AACF;AAAE;EACE,aAAA;EACA,YAAA;EACA,sBAAA;AAEJ;;AAEA;EACE,wBAAA;EACA,mBAAA;AACF;;AAEA;EACE,mBAAA;AACF;AAAE;EACE,gCAAA;AAEJ;AADI;EACE,iBAAA;EACA,kBAAA;EACA,kBAAA;EACA,mBAAA;EACA,mBAAA;AAGN;AAAM;EACE,YAAA;EACA,YAAA;EACA,+BAAA;EACA,mBAAA;EACA,iBAAA;EACA,kBAAA;EACA,yBAAA;EACA,eAAA;EACA,oBAAA;AAER;AADQ;EACE,oBAAA;EACA,gCAAA;AAGV;;AAKA;EACE,aAAA;EACA,sCAAA;AAFF;;AAKA;EACE,aAAA;EACA,uBAAA;AAFF;;AAKA;EACE,aAAA;AAFF;;AAKA;EACE,gCAAA;EACA,aAAA;EACA,qBAAA;AAFF;AAGE;EACE,iBAAA;EACA,mBAAA;EACA,iBAAA;EACA,kBAAA;EACA,kBAAA;EACA,mBAAA;EACA,mBAAA;AADJ;;AAKA;EACE,yBAAA;EACA,aAAA;EACA,oBAAA;AAFF;AAGE;EACE,kBAAA;EACA,gBAAA;EACA,iBAAA;EACA,qBAAA;AADJ;AAGE;EACE,aAAA;EACA,6BAAA;EACA,iBAAA;AADJ;;AAKA;EACE,YAAA;EACA,gBAAA;AAFF","sourcesContent":[".header-nav {\n  padding: 0.5rem 1rem 0.5rem 1rem;\n}\n\n#container-admin-detail {\n  margin-top: 25rem;\n  margin-bottom: 25rem;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n\n#container-admin-name {\n  margin-bottom: 1rem;\n}\n\n#container-admin-img {\n  margin-bottom: 3rem;\n  padding: 0.5rem;\n  box-shadow: var(--shadow);\n  img {\n    height: 20rem;\n    width: 20rem;\n    margin-bottom: -0.4rem;\n  }\n}\n\n#container-admin-profile {\n  font-family: var(--form);\n  margin-bottom: 3rem;\n}\n\n#container-gallery {\n  margin-bottom: 3rem;\n  fieldset {\n    border: 0.1rem solid var(--dark);\n    legend {\n      margin-left: auto;\n      margin-right: auto;\n      padding-left: 1rem;\n      padding-right: 1rem;\n      margin-bottom: 3rem;\n    }\n    ul {\n      li {\n        height: 9rem;\n        width: 10rem;\n        padding: 0.5rem 0.5rem 0 0.5rem;\n        margin-bottom: 3rem;\n        margin-left: 1rem;\n        margin-right: 1rem;\n        box-shadow: var(--shadow);\n        cursor: pointer;\n        transition: all 0.2s;\n        &:hover {\n          transition: all 0.2s;\n          border: 0.1rem solid var(--hint);\n        }\n      }\n    }\n  }\n}\n\n// JS Start//\n.mode-grid {\n  display: grid;\n  grid-template-columns: 1fr 1fr 1fr 1fr;\n}\n\n.mode-flex {\n  display: flex;\n  justify-content: center;\n}\n\n.noshow-detail {\n  display: none;\n}\n\n.fieldset-detail {\n  border: 0.1rem solid var(--dark);\n  padding: 5rem;\n  padding-bottom: 11rem;\n  legend {\n    font-size: 2.3rem;\n    font-weight: bolder;\n    margin-left: auto;\n    margin-right: auto;\n    padding-left: 3rem;\n    padding-right: 3rem;\n    margin-bottom: 5rem;\n  }\n}\n\n.gallery-detail {\n  box-shadow: var(--shadow);\n  padding: 1rem;\n  padding-bottom: 4rem;\n  p {\n    text-align: center;\n    margin-top: 1rem;\n    font-weight: bold;\n    color: var(--primary);\n  }\n  .container-button {\n    display: flex;\n    justify-content: space-evenly;\n    padding-top: 6rem;\n  }\n}\n\n.remove-scrolling {\n  height: 100%;\n  overflow: hidden;\n}\n// JS End//\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -9400,12 +9447,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_es_string_search_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_string_search_js__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! core-js/modules/es.array.concat.js */ "./node_modules/core-js/modules/es.array.concat.js");
 /* harmony import */ var core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_concat_js__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var core_js_modules_es_array_map_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! core-js/modules/es.array.map.js */ "./node_modules/core-js/modules/es.array.map.js");
-/* harmony import */ var core_js_modules_es_array_map_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_map_js__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var core_js_modules_es_array_filter_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! core-js/modules/es.array.filter.js */ "./node_modules/core-js/modules/es.array.filter.js");
-/* harmony import */ var core_js_modules_es_array_filter_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_filter_js__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! core-js/modules/es.array.slice.js */ "./node_modules/core-js/modules/es.array.slice.js");
-/* harmony import */ var core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! core-js/modules/es.array.slice.js */ "./node_modules/core-js/modules/es.array.slice.js");
+/* harmony import */ var core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var core_js_modules_es_array_map_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! core-js/modules/es.array.map.js */ "./node_modules/core-js/modules/es.array.map.js");
+/* harmony import */ var core_js_modules_es_array_map_js__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_map_js__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var core_js_modules_es_array_filter_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! core-js/modules/es.array.filter.js */ "./node_modules/core-js/modules/es.array.filter.js");
+/* harmony import */ var core_js_modules_es_array_filter_js__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_filter_js__WEBPACK_IMPORTED_MODULE_11__);
 /* harmony import */ var core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! core-js/modules/es.promise.js */ "./node_modules/core-js/modules/es.promise.js");
 /* harmony import */ var core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_12__);
 /* harmony import */ var core_js_modules_es_symbol_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! core-js/modules/es.symbol.js */ "./node_modules/core-js/modules/es.symbol.js");
@@ -9478,14 +9525,17 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 
 
+var body = document.querySelector("body");
 var containerAdminImg = document.querySelector("#container-admin-img");
 var containerAdminName = document.querySelector("#container-admin-name");
 var containerAdminProfile = document.querySelector("#container-admin-profile");
 var containerGallery = document.querySelector("#container-gallery");
-var containerButton = document.querySelector("#container-button");
+var containerGalleryDetail = document.querySelector("#container-gallery-detail");
 var params = new URL(location.href);
 var adminName = params.search;
 containerGallery.innerHTML = "\n<fieldset>\n  <legend></legend>\n  <ul></ul>\n</fieldset>\n";
+containerGalleryDetail.classList.add("noshow-detail");
+containerGalleryDetail.innerHTML = "\n<fieldset class=\"fieldset-detail\" >\n  <legend></legend>\n  <div class=\"gallery-detail\"></div>\n</fieldset>\n";
 switch (adminName) {
   case "?name=Alice%20-%20L%27Administratrice":
     {
@@ -9517,6 +9567,34 @@ switch (adminName) {
       containerAdminName.innerHTML = "<p>".concat(_assets_javascripts_admins_js__WEBPACK_IMPORTED_MODULE_28__.adminsArray[3].photographer, "</p>");
       containerAdminImg.innerHTML = "<img src=\"".concat(_assets_javascripts_admins_js__WEBPACK_IMPORTED_MODULE_28__.adminsArray[3].imgDetailSrc, "\" alt=\"").concat(_assets_javascripts_admins_js__WEBPACK_IMPORTED_MODULE_28__.adminsArray[3].imgDetailSrc, "\"/>");
       containerAdminProfile.innerHTML = "<p>".concat(_assets_javascripts_admins_js__WEBPACK_IMPORTED_MODULE_28__.adminsArray[3].profile, "</p>");
+      break;
+    }
+}
+var legend = containerGallery.querySelector("legend");
+var legendDetail = containerGalleryDetail.querySelector("legend");
+switch (adminName) {
+  case "Alice - L'Administratrice":
+    {
+      legend.innerHTML = "Galerie d'".concat(_assets_javascripts_admins_js__WEBPACK_IMPORTED_MODULE_28__.adminsArray[0].photographer.slice(0, 5));
+      legendDetail.innerHTML = "Galerie d'".concat(_assets_javascripts_admins_js__WEBPACK_IMPORTED_MODULE_28__.adminsArray[0].photographer.slice(0, 5));
+      break;
+    }
+  case "Ernest - L'Administrateur":
+    {
+      legend.innerHTML = "Galerie d'".concat(_assets_javascripts_admins_js__WEBPACK_IMPORTED_MODULE_28__.adminsArray[1].photographer.slice(0, 6));
+      legendDetail.innerHTML = "Galerie d'".concat(_assets_javascripts_admins_js__WEBPACK_IMPORTED_MODULE_28__.adminsArray[1].photographer.slice(0, 6));
+      break;
+    }
+  case "Mia - L'Administratrice":
+    {
+      legend.innerHTML = "Galerie de ".concat(_assets_javascripts_admins_js__WEBPACK_IMPORTED_MODULE_28__.adminsArray[2].photographer.slice(0, 3));
+      legendDetail.innerHTML = "Galerie de ".concat(_assets_javascripts_admins_js__WEBPACK_IMPORTED_MODULE_28__.adminsArray[2].photographer.slice(0, 3));
+      break;
+    }
+  case "Ben - L'Administrateur":
+    {
+      legend.innerHTML = "Galerie de ".concat(_assets_javascripts_admins_js__WEBPACK_IMPORTED_MODULE_28__.adminsArray[3].photographer.slice(0, 3));
+      legendDetail.innerHTML = "Galerie de ".concat(_assets_javascripts_admins_js__WEBPACK_IMPORTED_MODULE_28__.adminsArray[3].photographer.slice(0, 3));
       break;
     }
 }
@@ -9555,38 +9633,44 @@ var displayGalleryPhotos = /*#__PURE__*/function () {
 var createGalleryPhotosElement = function createGalleryPhotosElement(galleryPhoto) {
   var galleryPhotoElement = document.createElement("li");
   galleryPhotoElement.innerHTML = "\n  <img src=\"".concat(galleryPhoto.photoSrc, "\" alt=\"").concat(galleryPhoto.picture, "\" />\n  ");
+  var galleryPhotoImg = galleryPhotoElement.querySelector("img");
+  galleryPhotoImg.setAttribute("data-id", "".concat(galleryPhoto._id));
+  galleryPhotoElement.addEventListener("click", function (event) {
+    var target = event.target;
+    var homePhotoId = target.dataset.id;
+    containerGalleryDetail.classList.remove("noshow-detail");
+    containerAdminImg.classList.add("noshow-detail");
+    containerAdminName.classList.add("noshow-detail");
+    containerAdminProfile.classList.add("noshow-detail");
+    containerGallery.classList.add("noshow-detail");
+    var galleryDetail = containerGalleryDetail.querySelector("div");
+    galleryDetail.innerHTML = "\n        <img src=\"".concat(galleryPhoto.picture, "\" />\n        <p> ").concat(galleryPhoto.picture.italics(), " </p>\n        <div class=\"container-button\">\n          <button class=\"button button-detail\">D\xE9tail</button>\n          <button class=\"button button-back\">Retour</button>\n        </div>\n        ");
+    body.classList.add("remove-scrolling");
+    var buttonDetail = galleryDetail.querySelector(".button-detail");
+    var buttonBack = galleryDetail.querySelector(".button-back");
+    buttonDetail.addEventListener("click", function (event) {
+      event.stopPropagation();
+      if (homePhotoId) {
+        location.assign("./homedetail.html?id=".concat(homePhotoId));
+      } else {
+        location.assign("./admindetail.html?name=".concat(adminName));
+      }
+    });
+    buttonBack.addEventListener("click", function (event) {
+      event.stopPropagation();
+      containerGalleryDetail.classList.add("noshow-detail");
+      containerAdminImg.classList.remove("noshow-detail");
+      containerAdminName.classList.remove("noshow-detail");
+      containerAdminProfile.classList.remove("noshow-detail");
+      containerGallery.classList.remove("noshow-detail");
+      body.classList.remove("remove-scrolling");
+    });
+    var galleryPhotoImgDetail = galleryDetail.querySelector("img");
+    galleryPhotoImgDetail.setAttribute("src", "".concat(galleryPhoto.photoSrc));
+  });
   return galleryPhotoElement;
 };
 displayGalleryPhotos();
-var legend = containerGallery.querySelector("legend");
-switch (adminName) {
-  case "Alice - L'Administratrice":
-    {
-      legend.innerHTML = "Galerie d'".concat(_assets_javascripts_admins_js__WEBPACK_IMPORTED_MODULE_28__.adminsArray[0].photographer.slice(0, 5));
-      break;
-    }
-  case "Ernest - L'Administrateur":
-    {
-      legend.innerHTML = "Galerie d'".concat(_assets_javascripts_admins_js__WEBPACK_IMPORTED_MODULE_28__.adminsArray[1].photographer.slice(0, 6));
-      break;
-    }
-  case "Mia - L'Administratrice":
-    {
-      legend.innerHTML = "Galerie de ".concat(_assets_javascripts_admins_js__WEBPACK_IMPORTED_MODULE_28__.adminsArray[2].photographer.slice(0, 3));
-      break;
-    }
-  case "Ben - L'Administrateur":
-    {
-      legend.innerHTML = "Galerie de ".concat(_assets_javascripts_admins_js__WEBPACK_IMPORTED_MODULE_28__.adminsArray[3].photographer.slice(0, 3));
-      break;
-    }
-}
-containerButton.innerHTML = "\n          <button class=\"button button-back\">Retour</button>";
-var buttonBack = containerButton.querySelector("button");
-buttonBack.addEventListener("click", function (event) {
-  event.stopPropagation();
-  history.back();
-});
 })();
 
 /******/ })()
