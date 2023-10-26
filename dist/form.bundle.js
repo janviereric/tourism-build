@@ -5488,6 +5488,10 @@ a {
   box-sizing: border-box;
 }
 
+.off {
+  display: none;
+}
+
 :root {
   --primary: #2e86de;
   --secondary: #54a0ff;
@@ -5635,7 +5639,7 @@ footer .j {
 footer .e {
   font-family: var(--logo);
   color: var(--danger);
-}`, "",{"version":3,"sources":["webpack://./src/assets/sass/partials/_base.scss","webpack://./src/assets/sass/styles.scss","webpack://./src/assets/sass/partials/_classes.scss","webpack://./src/assets/sass/partials/_reset.scss","webpack://./src/assets/sass/partials/_variables.scss","webpack://./src/assets/sass/layouts/_body.scss","webpack://./src/assets/sass/layouts/_header.scss","webpack://./src/assets/sass/partials/_media-queries.scss","webpack://./src/assets/sass/layouts/_footer.scss"],"names":[],"mappings":"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","sourcesContent":[":root {\n  font-size: 62.5%; // font-size = 10px\n}\n\nbody {\n  font-size: 1.6rem; // 1rem = 10px\n  color: var(--dark);\n  font-family: var(--basic);\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: var(--dark);\n  text-decoration: none;\n}\n",":root {\n  font-size: 62.5%;\n}\n\nbody {\n  font-size: 1.6rem;\n  color: var(--dark);\n  font-family: var(--basic);\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: var(--dark);\n  text-decoration: none;\n}\n\n.title-underline {\n  padding-bottom: 2rem;\n  border-bottom: 0.1rem solid var(--divider);\n}\n\n.button {\n  border: 0;\n  border-radius: 0.3rem;\n  padding: 1rem 2rem;\n  font-weight: 700;\n  cursor: pointer;\n  transition: box-shadow 0.2s;\n}\n.button:hover {\n  box-shadow: var(--shadow);\n  opacity: 89%;\n  transition: box-shadow 0.2s;\n}\n.button-add {\n  background: var(--primary);\n  border: 0.2rem solid var(--primary);\n  color: var(--light);\n}\n.button-cancel {\n  background: var(--light);\n  border: 0.2rem solid var(--primary);\n  color: var(--primary);\n}\n.button-edit {\n  margin-right: 2rem;\n  background-color: var(--success);\n  color: var(--light);\n}\n.button-delete {\n  margin-right: 2rem;\n  background-color: var(--danger);\n  color: var(--light);\n}\n.button-save {\n  background: var(--primary);\n  border: 0.2rem solid var(--primary);\n  color: var(--light);\n}\n.button-detail {\n  background: var(--success);\n  border: 0.2rem solid var(--success);\n  color: var(--light);\n}\n.button-back {\n  background: var(--danger);\n  border: 0.2rem solid var(--danger);\n  color: var(--light);\n}\n\n.text-valid {\n  color: var(--success);\n  font-weight: bold;\n}\n.text-error {\n  color: var(--danger);\n  font-weight: bold;\n}\n.text-detail {\n  color: var(--info);\n  font-weight: bold;\n}\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n:root {\n  --primary: #2e86de;\n  --secondary: #54a0ff;\n  --tertiary: #48dbfb;\n  --light: #f5f6fa;\n  --medium: #2d98da;\n  --dark: #333;\n  --success: #06ad3e;\n  --danger: #ea2027;\n  --info: #3867d6;\n  --warning: #fbc531;\n  --hint: #95a5a6;\n  --accent: #3c40c6;\n  --divider: #bdc3c7;\n  --basic: \"Mulish\", sans-serif;\n  --default: \"Roboto\", sans-serif;\n  --logo: \"Roboto Condensed\", sans-serif;\n  --form: Arial, Helvetica, sans-serif;\n  --shadow: 0 0.1rem 0.2rem 0 rgba(60, 64, 67, 0.3),\n    0 0.1rem 0.3rem 0.1rem rgba(60, 64, 67, 0.15);\n}\n\nbody {\n  height: 100vh;\n}\n\n.container {\n  min-height: 100vh;\n  display: grid;\n  grid: \"header\" auto \"content\" 1fr \"footer\" auto/auto;\n}\n\nheader {\n  grid-area: header;\n  align-items: center;\n  background: var(--primary);\n  position: fixed;\n  z-index: 1;\n  width: 100%;\n}\nheader .container-top-menu {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  padding: 1rem;\n}\nheader .container-top-menu a {\n  color: var(--light);\n  font-weight: 700;\n  letter-spacing: 0.1rem;\n}\nheader .container-top-menu .header-brand {\n  font-weight: 700;\n}\nheader .container-top-menu .header-brand:hover {\n  color: var(--tertiary);\n}\nheader .header-menu {\n  position: relative;\n}\nheader .header-menu ul {\n  display: flex;\n  margin-right: -0.5rem;\n}\n@media (max-width: 480px) {\n  header .header-menu ul {\n    display: none;\n  }\n}\nheader .header-menu ul li {\n  margin-left: 1rem;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  cursor: pointer;\n  transition: all 0.2s;\n}\nheader .header-menu ul li:hover {\n  transition: all 0.2s;\n  background-color: var(--secondary);\n}\nheader .header-menu ul li:hover a {\n  color: var(--light);\n}\nheader .header-menu ul li a {\n  font-size: 1.2rem;\n  border-radius: 0.2rem;\n}\nheader .header-menu ul .active {\n  background-color: var(--light);\n  border-radius: 0.2rem;\n}\nheader .header-menu ul .active a {\n  color: var(--secondary);\n}\nheader .header-menu-icon {\n  display: none;\n  font-size: 2rem;\n  color: var(--light);\n}\n@media (max-width: 480px) {\n  header .header-menu-icon {\n    display: block;\n  }\n}\nheader .mobile-menu {\n  display: none;\n  position: absolute;\n  top: 3.5rem;\n  right: -2rem;\n  padding: 0.5rem;\n  background-color: var(--primary);\n  box-shadow: var(--shadow);\n}\nheader .mobile-menu ul {\n  display: block;\n}\nheader .mobile-menu ul li {\n  margin: 1rem 2rem;\n}\nheader .mobile-menu.open {\n  display: block;\n}\n\nfooter {\n  grid-area: footer;\n  padding: 2rem;\n  height: 8rem;\n  background-color: var(--dark);\n  color: var(--light);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: bold;\n}\nfooter img {\n  height: 2rem;\n  width: 2rem;\n  margin-bottom: -0.1rem;\n}\nfooter .j {\n  font-family: var(--logo);\n  color: var(--danger);\n}\nfooter .e {\n  font-family: var(--logo);\n  color: var(--danger);\n}",".title {\n  &-underline {\n    padding-bottom: 2rem;\n    border-bottom: 0.1rem solid var(--divider);\n  }\n}\n\n.button {\n  border: 0;\n  border-radius: 0.3rem;\n  padding: 1rem 2rem;\n  font-weight: 700;\n  cursor: pointer;\n  transition: box-shadow 0.2s;\n  &:hover {\n    box-shadow: var(--shadow);\n    opacity: 89%;\n    transition: box-shadow 0.2s;\n  }\n  &-add {\n    background: var(--primary);\n    border: 0.2rem solid var(--primary);\n    color: var(--light);\n  }\n  &-cancel {\n    background: var(--light);\n    border: 0.2rem solid var(--primary);\n    color: var(--primary);\n  }\n  &-edit {\n    margin-right: 2rem;\n    background-color: var(--success);\n    color: var(--light);\n  }\n  &-delete {\n    margin-right: 2rem;\n    background-color: var(--danger);\n    color: var(--light);\n  }\n  &-save {\n    background: var(--primary);\n    border: 0.2rem solid var(--primary);\n    color: var(--light);\n  }\n  &-detail {\n    background: var(--success);\n    border: 0.2rem solid var(--success);\n    color: var(--light);\n  }\n  &-back {\n    background: var(--danger);\n    border: 0.2rem solid var(--danger);\n    color: var(--light);\n  }\n}\n\n.text {\n  &-valid {\n    color: var(--success);\n    font-weight: bold;\n  }\n  &-error {\n    color: var(--danger);\n    font-weight: bold;\n  }\n  &-detail {\n    color: var(--info);\n    font-weight: bold;\n  }\n}\n","* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n",":root {\n  // main color\n  --primary: #2e86de;\n  --secondary: #54a0ff;\n  --tertiary: #48dbfb;\n\n  // text color\n  --light: #f5f6fa;\n  --medium: #2d98da;\n  --dark: #333;\n\n  // utils => button, border, words etc\n  --success: #06ad3e;\n  --danger: #ea2027;\n  --info: #3867d6;\n  --warning: #fbc531;\n  --hint: #95a5a6;\n\n  // utils => border, words etc\n  --accent: #3c40c6;\n  --divider: #bdc3c7;\n\n  // font-family\n  --basic: \"Mulish\", sans-serif;\n  --default: \"Roboto\", sans-serif;\n  --logo: \"Roboto Condensed\", sans-serif;\n  --form: Arial, Helvetica, sans-serif;\n\n  // shadow\n  --shadow: 0 0.1rem 0.2rem 0 rgba(60, 64, 67, 0.3),\n    0 0.1rem 0.3rem 0.1rem rgba(60, 64, 67, 0.15);\n}\n","body {\n  height: 100vh;\n}\n\n.container {\n  min-height: 100vh;\n  display: grid;\n  grid:\n    \"header\" auto\n    \"content\" 1fr\n    \"footer\" auto /\n    auto;\n}\n","@use \"../partials/media-queries.scss\" as *;\n\nheader {\n  grid-area: header;\n  align-items: center;\n  background: var(--primary);\n  position: fixed;\n  z-index: 1;\n  width: 100%;\n  .container-top-menu {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    padding: 1rem;\n    a {\n      color: var(--light);\n      font-weight: 700;\n      letter-spacing: 0.1rem;\n    }\n    .header-brand {\n      font-weight: 700;\n      &:hover {\n        color: var(--tertiary);\n      }\n    }\n  }\n\n  .header-menu {\n    position: relative;\n    ul {\n      @include phone {\n        display: none;\n      }\n      display: flex;\n      margin-right: -0.5rem;\n      li {\n        margin-left: 1rem;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        cursor: pointer;\n        transition: all 0.2s;\n        &:hover {\n          transition: all 0.2s;\n          background-color: var(--secondary);\n          a {\n            color: var(--light);\n          }\n        }\n        a {\n          font-size: 1.2rem;\n          border-radius: 0.2rem;\n        }\n      }\n      .active {\n        background-color: var(--light);\n        border-radius: 0.2rem;\n        a {\n          color: var(--secondary);\n        }\n      }\n    }\n  }\n\n  .header-menu-icon {\n    display: none;\n    font-size: 2rem;\n    color: var(--light);\n    @include phone {\n      display: block;\n    }\n  }\n\n  .mobile-menu {\n    display: none;\n    position: absolute;\n    top: 3.5rem;\n    right: -2rem;\n    padding: 0.5rem;\n    background-color: var(--primary);\n    box-shadow: var(--shadow);\n    ul {\n      display: block;\n      li {\n        margin: 1rem 2rem;\n      }\n    }\n  }\n  .mobile-menu.open {\n    display: block;\n  }\n}\n","@mixin phone {\n  @media (max-width: 480px) {\n    @content;\n  }\n}\n\n@mixin tablet {\n  @media (min-width: 481px) and (max-width: 767px) {\n    @content;\n  }\n}\n\n@mixin laptop {\n  @media (min-width: 768px) and (max-width: 1199px) {\n    @content;\n  }\n}\n\n@mixin computer {\n  @media (min-width: 1200px) {\n    @content;\n  }\n}\n","footer {\n  grid-area: footer;\n  padding: 2rem;\n  height: 8rem;\n  background-color: var(--dark);\n  color: var(--light);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: bold;\n  img {\n    height: 2rem;\n    width: 2rem;\n    margin-bottom: -0.1rem;\n  }\n  .j {\n    font-family: var(--logo);\n    color: var(--danger);\n  }\n\n  .e {\n    font-family: var(--logo);\n    color: var(--danger);\n  }\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/assets/sass/partials/_base.scss","webpack://./src/assets/sass/styles.scss","webpack://./src/assets/sass/partials/_classes.scss","webpack://./src/assets/sass/partials/_reset.scss","webpack://./src/assets/sass/partials/_utils.scss","webpack://./src/assets/sass/partials/_variables.scss","webpack://./src/assets/sass/layouts/_body.scss","webpack://./src/assets/sass/layouts/_header.scss","webpack://./src/assets/sass/partials/_media-queries.scss","webpack://./src/assets/sass/layouts/_footer.scss"],"names":[],"mappings":"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","sourcesContent":[":root {\n  font-size: 62.5%; // font-size = 10px\n}\n\nbody {\n  font-size: 1.6rem; // 1rem = 10px\n  color: var(--dark);\n  font-family: var(--basic);\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: var(--dark);\n  text-decoration: none;\n}\n",":root {\n  font-size: 62.5%;\n}\n\nbody {\n  font-size: 1.6rem;\n  color: var(--dark);\n  font-family: var(--basic);\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: var(--dark);\n  text-decoration: none;\n}\n\n.title-underline {\n  padding-bottom: 2rem;\n  border-bottom: 0.1rem solid var(--divider);\n}\n\n.button {\n  border: 0;\n  border-radius: 0.3rem;\n  padding: 1rem 2rem;\n  font-weight: 700;\n  cursor: pointer;\n  transition: box-shadow 0.2s;\n}\n.button:hover {\n  box-shadow: var(--shadow);\n  opacity: 89%;\n  transition: box-shadow 0.2s;\n}\n.button-add {\n  background: var(--primary);\n  border: 0.2rem solid var(--primary);\n  color: var(--light);\n}\n.button-cancel {\n  background: var(--light);\n  border: 0.2rem solid var(--primary);\n  color: var(--primary);\n}\n.button-edit {\n  margin-right: 2rem;\n  background-color: var(--success);\n  color: var(--light);\n}\n.button-delete {\n  margin-right: 2rem;\n  background-color: var(--danger);\n  color: var(--light);\n}\n.button-save {\n  background: var(--primary);\n  border: 0.2rem solid var(--primary);\n  color: var(--light);\n}\n.button-detail {\n  background: var(--success);\n  border: 0.2rem solid var(--success);\n  color: var(--light);\n}\n.button-back {\n  background: var(--danger);\n  border: 0.2rem solid var(--danger);\n  color: var(--light);\n}\n\n.text-valid {\n  color: var(--success);\n  font-weight: bold;\n}\n.text-error {\n  color: var(--danger);\n  font-weight: bold;\n}\n.text-detail {\n  color: var(--info);\n  font-weight: bold;\n}\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n.off {\n  display: none;\n}\n\n:root {\n  --primary: #2e86de;\n  --secondary: #54a0ff;\n  --tertiary: #48dbfb;\n  --light: #f5f6fa;\n  --medium: #2d98da;\n  --dark: #333;\n  --success: #06ad3e;\n  --danger: #ea2027;\n  --info: #3867d6;\n  --warning: #fbc531;\n  --hint: #95a5a6;\n  --accent: #3c40c6;\n  --divider: #bdc3c7;\n  --basic: \"Mulish\", sans-serif;\n  --default: \"Roboto\", sans-serif;\n  --logo: \"Roboto Condensed\", sans-serif;\n  --form: Arial, Helvetica, sans-serif;\n  --shadow: 0 0.1rem 0.2rem 0 rgba(60, 64, 67, 0.3),\n    0 0.1rem 0.3rem 0.1rem rgba(60, 64, 67, 0.15);\n}\n\nbody {\n  height: 100vh;\n}\n\n.container {\n  min-height: 100vh;\n  display: grid;\n  grid: \"header\" auto \"content\" 1fr \"footer\" auto/auto;\n}\n\nheader {\n  grid-area: header;\n  align-items: center;\n  background: var(--primary);\n  position: fixed;\n  z-index: 1;\n  width: 100%;\n}\nheader .container-top-menu {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  padding: 1rem;\n}\nheader .container-top-menu a {\n  color: var(--light);\n  font-weight: 700;\n  letter-spacing: 0.1rem;\n}\nheader .container-top-menu .header-brand {\n  font-weight: 700;\n}\nheader .container-top-menu .header-brand:hover {\n  color: var(--tertiary);\n}\nheader .header-menu {\n  position: relative;\n}\nheader .header-menu ul {\n  display: flex;\n  margin-right: -0.5rem;\n}\n@media (max-width: 480px) {\n  header .header-menu ul {\n    display: none;\n  }\n}\nheader .header-menu ul li {\n  margin-left: 1rem;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  cursor: pointer;\n  transition: all 0.2s;\n}\nheader .header-menu ul li:hover {\n  transition: all 0.2s;\n  background-color: var(--secondary);\n}\nheader .header-menu ul li:hover a {\n  color: var(--light);\n}\nheader .header-menu ul li a {\n  font-size: 1.2rem;\n  border-radius: 0.2rem;\n}\nheader .header-menu ul .active {\n  background-color: var(--light);\n  border-radius: 0.2rem;\n}\nheader .header-menu ul .active a {\n  color: var(--secondary);\n}\nheader .header-menu-icon {\n  display: none;\n  font-size: 2rem;\n  color: var(--light);\n}\n@media (max-width: 480px) {\n  header .header-menu-icon {\n    display: block;\n  }\n}\nheader .mobile-menu {\n  display: none;\n  position: absolute;\n  top: 3.5rem;\n  right: -2rem;\n  padding: 0.5rem;\n  background-color: var(--primary);\n  box-shadow: var(--shadow);\n}\nheader .mobile-menu ul {\n  display: block;\n}\nheader .mobile-menu ul li {\n  margin: 1rem 2rem;\n}\nheader .mobile-menu.open {\n  display: block;\n}\n\nfooter {\n  grid-area: footer;\n  padding: 2rem;\n  height: 8rem;\n  background-color: var(--dark);\n  color: var(--light);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: bold;\n}\nfooter img {\n  height: 2rem;\n  width: 2rem;\n  margin-bottom: -0.1rem;\n}\nfooter .j {\n  font-family: var(--logo);\n  color: var(--danger);\n}\nfooter .e {\n  font-family: var(--logo);\n  color: var(--danger);\n}",".title {\n  &-underline {\n    padding-bottom: 2rem;\n    border-bottom: 0.1rem solid var(--divider);\n  }\n}\n\n.button {\n  border: 0;\n  border-radius: 0.3rem;\n  padding: 1rem 2rem;\n  font-weight: 700;\n  cursor: pointer;\n  transition: box-shadow 0.2s;\n  &:hover {\n    box-shadow: var(--shadow);\n    opacity: 89%;\n    transition: box-shadow 0.2s;\n  }\n  &-add {\n    background: var(--primary);\n    border: 0.2rem solid var(--primary);\n    color: var(--light);\n  }\n  &-cancel {\n    background: var(--light);\n    border: 0.2rem solid var(--primary);\n    color: var(--primary);\n  }\n  &-edit {\n    margin-right: 2rem;\n    background-color: var(--success);\n    color: var(--light);\n  }\n  &-delete {\n    margin-right: 2rem;\n    background-color: var(--danger);\n    color: var(--light);\n  }\n  &-save {\n    background: var(--primary);\n    border: 0.2rem solid var(--primary);\n    color: var(--light);\n  }\n  &-detail {\n    background: var(--success);\n    border: 0.2rem solid var(--success);\n    color: var(--light);\n  }\n  &-back {\n    background: var(--danger);\n    border: 0.2rem solid var(--danger);\n    color: var(--light);\n  }\n}\n\n.text {\n  &-valid {\n    color: var(--success);\n    font-weight: bold;\n  }\n  &-error {\n    color: var(--danger);\n    font-weight: bold;\n  }\n  &-detail {\n    color: var(--info);\n    font-weight: bold;\n  }\n}\n","* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n",".off {\n  display: none;\n}\n",":root {\n  // main color\n  --primary: #2e86de;\n  --secondary: #54a0ff;\n  --tertiary: #48dbfb;\n\n  // text color\n  --light: #f5f6fa;\n  --medium: #2d98da;\n  --dark: #333;\n\n  // utils => button, border, words etc\n  --success: #06ad3e;\n  --danger: #ea2027;\n  --info: #3867d6;\n  --warning: #fbc531;\n  --hint: #95a5a6;\n\n  // utils => border, words etc\n  --accent: #3c40c6;\n  --divider: #bdc3c7;\n\n  // font-family\n  --basic: \"Mulish\", sans-serif;\n  --default: \"Roboto\", sans-serif;\n  --logo: \"Roboto Condensed\", sans-serif;\n  --form: Arial, Helvetica, sans-serif;\n\n  // shadow\n  --shadow: 0 0.1rem 0.2rem 0 rgba(60, 64, 67, 0.3),\n    0 0.1rem 0.3rem 0.1rem rgba(60, 64, 67, 0.15);\n}\n","body {\n  height: 100vh;\n}\n\n.container {\n  min-height: 100vh;\n  display: grid;\n  grid:\n    \"header\" auto\n    \"content\" 1fr\n    \"footer\" auto /\n    auto;\n}\n","@use \"../partials/media-queries.scss\" as *;\n\nheader {\n  grid-area: header;\n  align-items: center;\n  background: var(--primary);\n  position: fixed;\n  z-index: 1;\n  width: 100%;\n  .container-top-menu {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    padding: 1rem;\n    a {\n      color: var(--light);\n      font-weight: 700;\n      letter-spacing: 0.1rem;\n    }\n    .header-brand {\n      font-weight: 700;\n      &:hover {\n        color: var(--tertiary);\n      }\n    }\n  }\n\n  .header-menu {\n    position: relative;\n    ul {\n      @include phone {\n        display: none;\n      }\n      display: flex;\n      margin-right: -0.5rem;\n      li {\n        margin-left: 1rem;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        cursor: pointer;\n        transition: all 0.2s;\n        &:hover {\n          transition: all 0.2s;\n          background-color: var(--secondary);\n          a {\n            color: var(--light);\n          }\n        }\n        a {\n          font-size: 1.2rem;\n          border-radius: 0.2rem;\n        }\n      }\n      .active {\n        background-color: var(--light);\n        border-radius: 0.2rem;\n        a {\n          color: var(--secondary);\n        }\n      }\n    }\n  }\n\n  .header-menu-icon {\n    display: none;\n    font-size: 2rem;\n    color: var(--light);\n    @include phone {\n      display: block;\n    }\n  }\n\n  .mobile-menu {\n    display: none;\n    position: absolute;\n    top: 3.5rem;\n    right: -2rem;\n    padding: 0.5rem;\n    background-color: var(--primary);\n    box-shadow: var(--shadow);\n    ul {\n      display: block;\n      li {\n        margin: 1rem 2rem;\n      }\n    }\n  }\n  .mobile-menu.open {\n    display: block;\n  }\n}\n","@mixin phone {\n  @media (max-width: 480px) {\n    @content;\n  }\n}\n\n@mixin tablet {\n  @media (min-width: 481px) and (max-width: 767px) {\n    @content;\n  }\n}\n\n@mixin laptop {\n  @media (min-width: 768px) and (max-width: 1199px) {\n    @content;\n  }\n}\n\n@mixin computer {\n  @media (min-width: 1200px) {\n    @content;\n  }\n}\n","footer {\n  grid-area: footer;\n  padding: 2rem;\n  height: 8rem;\n  background-color: var(--dark);\n  color: var(--light);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: bold;\n  img {\n    height: 2rem;\n    width: 2rem;\n    margin-bottom: -0.1rem;\n  }\n  .j {\n    font-family: var(--logo);\n    color: var(--danger);\n  }\n\n  .e {\n    font-family: var(--logo);\n    color: var(--danger);\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -5748,10 +5752,6 @@ main form .form-button-container .button {
   margin-right: 0.2rem;
 }
 
-.photo-img-none {
-  display: none;
-}
-
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -5801,10 +5801,6 @@ main form .form-button-container .button {
   height: 14rem;
   width: 14rem;
   border-radius: 10rem;
-}
-
-.content-note-none {
-  display: none;
 }
 
 #container-description-note {
@@ -5877,7 +5873,7 @@ main form .form-button-container .button {
 
 .text-danger {
   color: var(--danger);
-}`, "",{"version":3,"sources":["webpack://./src/form/form.scss"],"names":[],"mappings":"AAAA;EACE,gCAAA;AACF;;AAEA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;AACF;AAAE;EACE,iBAAA;EACA,oBAAA;EACA,gBAAA;EACA,WAAA;EACA,aAAA;EACA,yBAAA;EACA,qBAAA;EACA,aAAA;EACA,sBAAA;AAEJ;AADI;EACE,kBAAA;EACA,mBAAA;AAGN;AADI;EACE,mBAAA;EACA,aAAA;EACA,sBAAA;AAGN;AAFM;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AAIR;AAFM;EACE,mCAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,eAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AAFM;EACE,YAAA;EACA,iBAAA;EACA,mCAAA;EACA,eAAA;EACA,aAAA;EACA,qBAAA;EACA,yBAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AADI;EACE,mBAAA;EACA,aAAA;EACA,sBAAA;AAGN;AAFM;EACE,aAAA;EACA,mBAAA;EACA,iBAAA;EACA,6BAAA;EACA,gBAAA;EACA,mCAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,eAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AADI;EACE,aAAA;EACA,yBAAA;EACA,mBAAA;AAGN;AAFM;EACE,iBAAA;EACA,oBAAA;AAIR;;AAGA;EACE,aAAA;AAAF;;AAGA;EACE,aAAA;EACA,sBAAA;AAAF;;AAGA;EACE,aAAA;EACA,8BAAA;AAAF;AACE;EACE,aAAA;EACA,sBAAA;EACA,6BAAA;AACJ;AACE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,eAAA;EACA,yBAAA;AACJ;;AAGA;EACE,cAAA;AAAF;;AAGA;EACE,aAAA;EACA,8BAAA;AAAF;AACE;EACE,aAAA;EACA,sBAAA;EACA,6BAAA;AACJ;AACE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,kBAAA;EACA,yBAAA;EACA,eAAA;EACA,cAAA;EACA,oBAAA;AACJ;AAAI;EACE,aAAA;EACA,YAAA;EACA,oBAAA;AAEN;;AAGA;EACE,aAAA;AAAF;;AAGA;EACE,gBAAA;AAAF;AACE;EACE,gCAAA;EACA,sBAAA;EACA,aAAA;EACA,WAAA;EACA,aAAA;EACA,sBAAA;AACJ;AAAI;EACE,wBAAA;EACA,iBAAA;AAEN;AADM;EACE,kBAAA;EACA,iBAAA;EACA,qBAAA;AAGR;AACE;EACE,aAAA;EACA,WAAA;EACA,aAAA;EACA,sBAAA;EACA,YAAA;EACA,wBAAA;EACA,gBAAA;AACJ;;AAKA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AAFF;;AAKA;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AAFF;;AAKA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AAFF;;AAKA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AAFF;;AAKA;EACE,oBAAA;EACA,gBAAA;EACA,gBAAA;AAFF;;AAIA;EACE,oBAAA;EACA,gBAAA;EACA,iBAAA;EACA,mBAAA;AADF;;AAIA;EACE,oBAAA;AADF","sourcesContent":[".header-nav {\n  padding: 0.5rem 1rem 0.5rem 1rem;\n}\n\nmain {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  form {\n    margin-top: 20rem;\n    margin-bottom: 20rem;\n    max-width: 70rem;\n    width: 100%;\n    padding: 4rem;\n    box-shadow: var(--shadow);\n    border-radius: 0.3rem;\n    display: flex;\n    flex-direction: column;\n    h2 {\n      text-align: center;\n      margin-bottom: 5rem;\n    }\n    .form-group {\n      margin-bottom: 2rem;\n      display: flex;\n      flex-direction: column;\n      label {\n        font-size: 1.8rem;\n        color: var(--dark);\n        font-weight: 700;\n        margin-bottom: 1rem;\n      }\n      input {\n        border: 0.1rem solid var(--divider);\n        padding: 1rem;\n        outline: none;\n        border-radius: 0.3rem;\n        cursor: default;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n      select {\n        height: 4rem;\n        font-size: 1.4rem;\n        border: 0.1rem solid var(--divider);\n        padding: 0.5rem;\n        outline: none;\n        border-radius: 0.3rem;\n        font-family: var(--basic);\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n    }\n    .form-category {\n      margin-bottom: 2rem;\n      display: flex;\n      flex-direction: column;\n      .container-name-category {\n        display: flex;\n        flex-direction: row;\n        font-size: 1.4rem;\n        justify-content: space-evenly;\n        margin-top: 1rem;\n        border: 0.1rem solid var(--divider);\n        padding: 1rem;\n        outline: none;\n        border-radius: 0.3rem;\n        cursor: default;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n    }\n    .form-button-container {\n      display: flex;\n      justify-content: flex-end;\n      align-items: center;\n      .button {\n        margin-left: 1rem;\n        margin-right: 0.2rem;\n      }\n    }\n  }\n}\n\n// js start\n.photo-img-none {\n  display: none;\n}\n\n.flex-column {\n  display: flex;\n  flex-direction: column;\n}\n\n.container-photo-label-img {\n  display: flex;\n  justify-content: space-between;\n  .container-photo-laber {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-evenly;\n  }\n  .container-form-photo-img {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    padding: 0.5rem;\n    box-shadow: var(--shadow);\n  }\n}\n\n.width-select-photographer {\n  width: 31.5rem;\n}\n\n.container-photographer-label-img {\n  display: flex;\n  justify-content: space-between;\n  .container-photographer-laber {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-evenly;\n  }\n  .container-user-img {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-right: 5rem;\n    box-shadow: var(--shadow);\n    height: 14.5rem;\n    width: 14.5rem;\n    border-radius: 10rem;\n    img {\n      height: 14rem;\n      width: 14rem;\n      border-radius: 10rem;\n    }\n  }\n}\n\n.content-note-none {\n  display: none;\n}\n\n#container-description-note {\n  margin-top: 1rem;\n  #shallow-content-value {\n    border: 0.1rem solid var(--dark);\n    border-radius: 0.25rem;\n    height: 15rem;\n    width: 100%;\n    padding: 1rem;\n    letter-spacing: 0.1rem;\n    p {\n      font-family: var(--form);\n      font-size: 1.3rem;\n      span {\n        font-style: italic;\n        font-size: 1.3rem;\n        color: var(--primary);\n      }\n    }\n  }\n  .content-note {\n    height: 15rem;\n    width: 100%;\n    padding: 1rem;\n    letter-spacing: 0.1rem;\n    resize: none;\n    font-family: var(--form);\n    font-weight: 100;\n  }\n}\n\n// js end\n\n#text-info-category {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 0.5rem;\n}\n\n.form-title-category {\n  font-size: 1.8rem;\n  color: var(--dark);\n  font-weight: 700;\n  margin-bottom: 1rem;\n}\n\n#text-info-picture {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 1.5rem;\n}\n\n#text-info-photographer {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 0.5rem;\n}\n\n#text-info-content {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 1rem;\n}\n#text-info {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: -2rem;\n  margin-bottom: 2rem;\n}\n\n.text-danger {\n  color: var(--danger);\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/form/form.scss"],"names":[],"mappings":"AAAA;EACE,gCAAA;AACF;;AAEA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;AACF;AAAE;EACE,iBAAA;EACA,oBAAA;EACA,gBAAA;EACA,WAAA;EACA,aAAA;EACA,yBAAA;EACA,qBAAA;EACA,aAAA;EACA,sBAAA;AAEJ;AADI;EACE,kBAAA;EACA,mBAAA;AAGN;AADI;EACE,mBAAA;EACA,aAAA;EACA,sBAAA;AAGN;AAFM;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AAIR;AAFM;EACE,mCAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,eAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AAFM;EACE,YAAA;EACA,iBAAA;EACA,mCAAA;EACA,eAAA;EACA,aAAA;EACA,qBAAA;EACA,yBAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AADI;EACE,mBAAA;EACA,aAAA;EACA,sBAAA;AAGN;AAFM;EACE,aAAA;EACA,mBAAA;EACA,iBAAA;EACA,6BAAA;EACA,gBAAA;EACA,mCAAA;EACA,aAAA;EACA,aAAA;EACA,qBAAA;EACA,eAAA;AAIR;AAHQ;EACE,4BAAA;AAKV;AADI;EACE,aAAA;EACA,yBAAA;EACA,mBAAA;AAGN;AAFM;EACE,iBAAA;EACA,oBAAA;AAIR;;AAGA;EACE,aAAA;EACA,sBAAA;AAAF;;AAGA;EACE,aAAA;EACA,8BAAA;AAAF;AACE;EACE,aAAA;EACA,sBAAA;EACA,6BAAA;AACJ;AACE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,eAAA;EACA,yBAAA;AACJ;;AAGA;EACE,cAAA;AAAF;;AAGA;EACE,aAAA;EACA,8BAAA;AAAF;AACE;EACE,aAAA;EACA,sBAAA;EACA,6BAAA;AACJ;AACE;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,kBAAA;EACA,yBAAA;EACA,eAAA;EACA,cAAA;EACA,oBAAA;AACJ;AAAI;EACE,aAAA;EACA,YAAA;EACA,oBAAA;AAEN;;AAGA;EACE,gBAAA;AAAF;AACE;EACE,gCAAA;EACA,sBAAA;EACA,aAAA;EACA,WAAA;EACA,aAAA;EACA,sBAAA;AACJ;AAAI;EACE,wBAAA;EACA,iBAAA;AAEN;AADM;EACE,kBAAA;EACA,iBAAA;EACA,qBAAA;AAGR;AACE;EACE,aAAA;EACA,WAAA;EACA,aAAA;EACA,sBAAA;EACA,YAAA;EACA,wBAAA;EACA,gBAAA;AACJ;;AAKA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AAFF;;AAKA;EACE,iBAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AAFF;;AAKA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AAFF;;AAKA;EACE,oBAAA;EACA,gBAAA;EACA,kBAAA;AAFF;;AAKA;EACE,oBAAA;EACA,gBAAA;EACA,gBAAA;AAFF;;AAIA;EACE,oBAAA;EACA,gBAAA;EACA,iBAAA;EACA,mBAAA;AADF;;AAIA;EACE,oBAAA;AADF","sourcesContent":[".header-nav {\n  padding: 0.5rem 1rem 0.5rem 1rem;\n}\n\nmain {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  form {\n    margin-top: 20rem;\n    margin-bottom: 20rem;\n    max-width: 70rem;\n    width: 100%;\n    padding: 4rem;\n    box-shadow: var(--shadow);\n    border-radius: 0.3rem;\n    display: flex;\n    flex-direction: column;\n    h2 {\n      text-align: center;\n      margin-bottom: 5rem;\n    }\n    .form-group {\n      margin-bottom: 2rem;\n      display: flex;\n      flex-direction: column;\n      label {\n        font-size: 1.8rem;\n        color: var(--dark);\n        font-weight: 700;\n        margin-bottom: 1rem;\n      }\n      input {\n        border: 0.1rem solid var(--divider);\n        padding: 1rem;\n        outline: none;\n        border-radius: 0.3rem;\n        cursor: default;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n      select {\n        height: 4rem;\n        font-size: 1.4rem;\n        border: 0.1rem solid var(--divider);\n        padding: 0.5rem;\n        outline: none;\n        border-radius: 0.3rem;\n        font-family: var(--basic);\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n    }\n    .form-category {\n      margin-bottom: 2rem;\n      display: flex;\n      flex-direction: column;\n      .container-name-category {\n        display: flex;\n        flex-direction: row;\n        font-size: 1.4rem;\n        justify-content: space-evenly;\n        margin-top: 1rem;\n        border: 0.1rem solid var(--divider);\n        padding: 1rem;\n        outline: none;\n        border-radius: 0.3rem;\n        cursor: default;\n        &:focus {\n          border-color: var(--primary);\n        }\n      }\n    }\n    .form-button-container {\n      display: flex;\n      justify-content: flex-end;\n      align-items: center;\n      .button {\n        margin-left: 1rem;\n        margin-right: 0.2rem;\n      }\n    }\n  }\n}\n\n// js start\n.flex-column {\n  display: flex;\n  flex-direction: column;\n}\n\n.container-photo-label-img {\n  display: flex;\n  justify-content: space-between;\n  .container-photo-laber {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-evenly;\n  }\n  .container-form-photo-img {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    padding: 0.5rem;\n    box-shadow: var(--shadow);\n  }\n}\n\n.width-select-photographer {\n  width: 31.5rem;\n}\n\n.container-photographer-label-img {\n  display: flex;\n  justify-content: space-between;\n  .container-photographer-laber {\n    display: flex;\n    flex-direction: column;\n    justify-content: space-evenly;\n  }\n  .container-user-img {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-right: 5rem;\n    box-shadow: var(--shadow);\n    height: 14.5rem;\n    width: 14.5rem;\n    border-radius: 10rem;\n    img {\n      height: 14rem;\n      width: 14rem;\n      border-radius: 10rem;\n    }\n  }\n}\n\n#container-description-note {\n  margin-top: 1rem;\n  #shallow-content-value {\n    border: 0.1rem solid var(--dark);\n    border-radius: 0.25rem;\n    height: 15rem;\n    width: 100%;\n    padding: 1rem;\n    letter-spacing: 0.1rem;\n    p {\n      font-family: var(--form);\n      font-size: 1.3rem;\n      span {\n        font-style: italic;\n        font-size: 1.3rem;\n        color: var(--primary);\n      }\n    }\n  }\n  .content-note {\n    height: 15rem;\n    width: 100%;\n    padding: 1rem;\n    letter-spacing: 0.1rem;\n    resize: none;\n    font-family: var(--form);\n    font-weight: 100;\n  }\n}\n\n// js end\n\n#text-info-category {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 0.5rem;\n}\n\n.form-title-category {\n  font-size: 1.8rem;\n  color: var(--dark);\n  font-weight: 700;\n  margin-bottom: 1rem;\n}\n\n#text-info-picture {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 1.5rem;\n}\n\n#text-info-photographer {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 0.5rem;\n}\n\n#text-info-content {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: 1rem;\n}\n#text-info {\n  color: var(--danger);\n  font-weight: 700;\n  margin-top: -2rem;\n  margin-bottom: 2rem;\n}\n\n.text-danger {\n  color: var(--danger);\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -6564,287 +6560,287 @@ selectPicture.addEventListener("change", function (event) {
         containerPhotoLabelImg.classList.remove("container-photo-label-img");
         containerPhotoLabel.classList.add("flex-column");
         containerPhotoLabel.classList.remove("container-photo-laber");
-        containerPhotoImg.classList.add("photo-img-none");
+        containerPhotoImg.classList.add("off");
         containerPhotoImg.classList.remove("container-form-photo-img");
         formPhotoImg.src = "";
         break;
       }
     case "Un Désert en Cisjordanie":
       {
-        containerPhotoImg.classList.remove("photo-img-none");
+        containerPhotoImg.classList.remove("off");
         containerPhotoImg.classList.add("container-form-photo-img");
         formPhotoImg.src = "./assets/images/form-small/form-deserts-small/desert-small-cj.jpg";
         break;
       }
     case "Un Désert en Jordanie":
       {
-        containerPhotoImg.classList.remove("photo-img-none");
+        containerPhotoImg.classList.remove("off");
         containerPhotoImg.classList.add("container-form-photo-img");
         formPhotoImg.src = "./assets/images/form-small/form-deserts-small/desert-small-jo.jpg";
         break;
       }
     case "Un Désert au Maroc":
       {
-        containerPhotoImg.classList.remove("photo-img-none");
+        containerPhotoImg.classList.remove("off");
         containerPhotoImg.classList.add("container-form-photo-img");
         formPhotoImg.src = "./assets/images/form-small/form-deserts-small/desert-small-ma.jpg";
         break;
       }
     case "Un Désert en Namibie (Océan Atlantique)":
       {
-        containerPhotoImg.classList.remove("photo-img-none");
+        containerPhotoImg.classList.remove("off");
         containerPhotoImg.classList.add("container-form-photo-img");
         formPhotoImg.src = "./assets/images/form-small/form-deserts-small/desert-small-oa-na.jpg";
         break;
       }
     case "Un Désert en Oman":
       {
-        containerPhotoImg.classList.remove("photo-img-none");
+        containerPhotoImg.classList.remove("off");
         containerPhotoImg.classList.add("container-form-photo-img");
         formPhotoImg.src = "./assets/images/form-small/form-deserts-small/desert-small-om.jpg";
         break;
       }
     case "Un Désert au Pérou":
       {
-        containerPhotoImg.classList.remove("photo-img-none");
+        containerPhotoImg.classList.remove("off");
         containerPhotoImg.classList.add("container-form-photo-img");
         formPhotoImg.src = "./assets/images/form-small/form-deserts-small/desert-small-pe.jpg";
         break;
       }
     case "Un Désert en Arabie Saoudite":
       {
-        containerPhotoImg.classList.remove("photo-img-none");
+        containerPhotoImg.classList.remove("off");
         containerPhotoImg.classList.add("container-form-photo-img");
         formPhotoImg.src = "./assets/images/form-small/form-deserts-small/desert-small-sa.jpg";
         break;
       }
     case "Un Désert en Namibie (Sud-Ouest)":
       {
-        containerPhotoImg.classList.remove("photo-img-none");
+        containerPhotoImg.classList.remove("off");
         containerPhotoImg.classList.add("container-form-photo-img");
         formPhotoImg.src = "./assets/images/form-small/form-deserts-small/desert-small-so-na.jpg";
         break;
       }
     case "Le Désert du Sahara (Soir)":
       {
-        containerPhotoImg.classList.remove("photo-img-none");
+        containerPhotoImg.classList.remove("off");
         containerPhotoImg.classList.add("container-form-photo-img");
         formPhotoImg.src = "./assets/images/form-small/form-deserts-small/desert-small-soir-eh.jpg";
         break;
       }
     case "Sable Blanc du Nouveau-Mexique (USA)":
       {
-        containerPhotoImg.classList.remove("photo-img-none");
+        containerPhotoImg.classList.remove("off");
         containerPhotoImg.classList.add("container-form-photo-img");
         formPhotoImg.src = "./assets/images/form-small/form-deserts-small/sable-blanc-small-nmex-us.jpg";
         break;
       }
     case "Une Forêt en Australie":
       {
-        containerPhotoImg.classList.remove("photo-img-none");
+        containerPhotoImg.classList.remove("off");
         containerPhotoImg.classList.add("container-form-photo-img");
         formPhotoImg.src = "./assets/images/form-small/form-forets-small/foret-small-au.jpg";
         break;
       }
     case "Une Forêt au Canada":
       {
-        containerPhotoImg.classList.remove("photo-img-none");
+        containerPhotoImg.classList.remove("off");
         containerPhotoImg.classList.add("container-form-photo-img");
         formPhotoImg.src = "./assets/images/form-small/form-forets-small/foret-small-ca.jpg";
         break;
       }
     case "Une Forêt en Finlande":
       {
-        containerPhotoImg.classList.remove("photo-img-none");
+        containerPhotoImg.classList.remove("off");
         containerPhotoImg.classList.add("container-form-photo-img");
         formPhotoImg.src = "./assets/images/form-small/form-forets-small/foret-small-fi.jpg";
         break;
       }
     case "Une Forêt en Croatie":
       {
-        containerPhotoImg.classList.remove("photo-img-none");
+        containerPhotoImg.classList.remove("off");
         containerPhotoImg.classList.add("container-form-photo-img");
         formPhotoImg.src = "./assets/images/form-small/form-forets-small/foret-small-hr.jpg";
         break;
       }
     case "Une Forêt en Inde":
       {
-        containerPhotoImg.classList.remove("photo-img-none");
+        containerPhotoImg.classList.remove("off");
         containerPhotoImg.classList.add("container-form-photo-img");
         formPhotoImg.src = "./assets/images/form-small/form-forets-small/foret-small-in.jpg";
         break;
       }
     case "Une Forêt en Italie":
       {
-        containerPhotoImg.classList.remove("photo-img-none");
+        containerPhotoImg.classList.remove("off");
         containerPhotoImg.classList.add("container-form-photo-img");
         formPhotoImg.src = "./assets/images/form-small/form-forets-small/foret-small-it.jpg";
         break;
       }
     case "Une Forêt au Japon":
       {
-        containerPhotoImg.classList.remove("photo-img-none");
+        containerPhotoImg.classList.remove("off");
         containerPhotoImg.classList.add("container-form-photo-img");
         formPhotoImg.src = "./assets/images/form-small/form-forets-small/foret-small-jp.jpg";
         break;
       }
     case "La Forêt des Loups":
       {
-        containerPhotoImg.classList.remove("photo-img-none");
+        containerPhotoImg.classList.remove("off");
         containerPhotoImg.classList.add("container-form-photo-img");
         formPhotoImg.src = "./assets/images/form-small/form-forets-small/foret-small-loups.jpg";
         break;
       }
     case "Une Forêt au Nouvelle-Zélande":
       {
-        containerPhotoImg.classList.remove("photo-img-none");
+        containerPhotoImg.classList.remove("off");
         containerPhotoImg.classList.add("container-form-photo-img");
         formPhotoImg.src = "./assets/images/form-small/form-forets-small/foret-small-nz.jpg";
         break;
       }
     case "Une Forêt en Washington (USA)":
       {
-        containerPhotoImg.classList.remove("photo-img-none");
+        containerPhotoImg.classList.remove("off");
         containerPhotoImg.classList.add("container-form-photo-img");
         formPhotoImg.src = "./assets/images/form-small/form-forets-small/foret-small-wash-us.jpg";
         break;
       }
     case "Une Plage en Australie":
       {
-        containerPhotoImg.classList.remove("photo-img-none");
+        containerPhotoImg.classList.remove("off");
         containerPhotoImg.classList.add("container-form-photo-img");
         formPhotoImg.src = "./assets/images/form-small/form-plages-small/plage-small-au.jpg";
         break;
       }
     case "Une Plage au Brésil":
       {
-        containerPhotoImg.classList.remove("photo-img-none");
+        containerPhotoImg.classList.remove("off");
         containerPhotoImg.classList.add("container-form-photo-img");
         formPhotoImg.src = "./assets/images/form-small/form-plages-small/plage-small-br.jpg";
         break;
       }
     case "Une Plage en Grande-Bretagne":
       {
-        containerPhotoImg.classList.remove("photo-img-none");
+        containerPhotoImg.classList.remove("off");
         containerPhotoImg.classList.add("container-form-photo-img");
         formPhotoImg.src = "./assets/images/form-small/form-plages-small/plage-small-gb.jpg";
         break;
       }
     case "Une Plage en Italie":
       {
-        containerPhotoImg.classList.remove("photo-img-none");
+        containerPhotoImg.classList.remove("off");
         containerPhotoImg.classList.add("container-form-photo-img");
         formPhotoImg.src = "./assets/images/form-small/form-plages-small/plage-small-it.jpg";
         break;
       }
     case "Une Plage en Madagascar":
       {
-        containerPhotoImg.classList.remove("photo-img-none");
+        containerPhotoImg.classList.remove("off");
         containerPhotoImg.classList.add("container-form-photo-img");
         formPhotoImg.src = "./assets/images/form-small/form-plages-small/plage-small-mg.jpg";
         break;
       }
     case "Une Plage au Mexique":
       {
-        containerPhotoImg.classList.remove("photo-img-none");
+        containerPhotoImg.classList.remove("off");
         containerPhotoImg.classList.add("container-form-photo-img");
         formPhotoImg.src = "./assets/images/form-small/form-plages-small/plage-small-mx.jpg";
         break;
       }
     case "Une Plage en Nouvelle-Calédonie":
       {
-        containerPhotoImg.classList.remove("photo-img-none");
+        containerPhotoImg.classList.remove("off");
         containerPhotoImg.classList.add("container-form-photo-img");
         formPhotoImg.src = "./assets/images/form-small/form-plages-small/plage-small-nc.jpg";
         break;
       }
     case "Une Plage en Polynésie Française":
       {
-        containerPhotoImg.classList.remove("photo-img-none");
+        containerPhotoImg.classList.remove("off");
         containerPhotoImg.classList.add("container-form-photo-img");
         formPhotoImg.src = "./assets/images/form-small/form-plages-small/plage-small-pf.jpg";
         break;
       }
     case "Une Plage aux Sychelles":
       {
-        containerPhotoImg.classList.remove("photo-img-none");
+        containerPhotoImg.classList.remove("off");
         containerPhotoImg.classList.add("container-form-photo-img");
         formPhotoImg.src = "./assets/images/form-small/form-plages-small/plage-small-sc.jpg";
         break;
       }
     case "Une Plage en Thaïlande":
       {
-        containerPhotoImg.classList.remove("photo-img-none");
+        containerPhotoImg.classList.remove("off");
         containerPhotoImg.classList.add("container-form-photo-img");
         formPhotoImg.src = "./assets/images/form-small/form-plages-small/plage-small-th.jpg";
         break;
       }
     case "Une Ville au Chili":
       {
-        containerPhotoImg.classList.remove("photo-img-none");
+        containerPhotoImg.classList.remove("off");
         containerPhotoImg.classList.add("container-form-photo-img");
         formPhotoImg.src = "./assets/images/form-small/form-villes-small/ville-small-cl.jpg";
         break;
       }
     case "Une Ville en Chine":
       {
-        containerPhotoImg.classList.remove("photo-img-none");
+        containerPhotoImg.classList.remove("off");
         containerPhotoImg.classList.add("container-form-photo-img");
         formPhotoImg.src = "./assets/images/form-small/form-villes-small/ville-small-cn.jpg";
         break;
       }
     case "Une Ville en Colombie":
       {
-        containerPhotoImg.classList.remove("photo-img-none");
+        containerPhotoImg.classList.remove("off");
         containerPhotoImg.classList.add("container-form-photo-img");
         formPhotoImg.src = "./assets/images/form-small/form-villes-small/ville-small-co.jpg";
         break;
       }
     case "Une Ville en France":
       {
-        containerPhotoImg.classList.remove("photo-img-none");
+        containerPhotoImg.classList.remove("off");
         containerPhotoImg.classList.add("container-form-photo-img");
         formPhotoImg.src = "./assets/images/form-small/form-villes-small/ville-small-fr.jpg";
         break;
       }
     case "Une Ville en Grande-Bretagne":
       {
-        containerPhotoImg.classList.remove("photo-img-none");
+        containerPhotoImg.classList.remove("off");
         containerPhotoImg.classList.add("container-form-photo-img");
         formPhotoImg.src = "./assets/images/form-small/form-villes-small/ville-small-gb.jpg";
         break;
       }
     case "Une Ville au Japon (Jour)":
       {
-        containerPhotoImg.classList.remove("photo-img-none");
+        containerPhotoImg.classList.remove("off");
         containerPhotoImg.classList.add("container-form-photo-img");
         formPhotoImg.src = "./assets/images/form-small/form-villes-small/ville-small-jour-jp.jpg";
         break;
       }
     case "Une Ville en Koweït":
       {
-        containerPhotoImg.classList.remove("photo-img-none");
+        containerPhotoImg.classList.remove("off");
         containerPhotoImg.classList.add("container-form-photo-img");
         formPhotoImg.src = "./assets/images/form-small/form-villes-small/ville-small-kw.jpg";
         break;
       }
     case "Une Ville en Norvège":
       {
-        containerPhotoImg.classList.remove("photo-img-none");
+        containerPhotoImg.classList.remove("off");
         containerPhotoImg.classList.add("container-form-photo-img");
         formPhotoImg.src = "./assets/images/form-small/form-villes-small/ville-small-no.jpg";
         break;
       }
     case "Une Ville Rural d'Allemagne":
       {
-        containerPhotoImg.classList.remove("photo-img-none");
+        containerPhotoImg.classList.remove("off");
         containerPhotoImg.classList.add("container-form-photo-img");
         formPhotoImg.src = "./assets/images/form-small/form-villes-small/ville-small-rural-ge.jpg";
         break;
       }
     case "Une Ville d'Italie (Soir)":
       {
-        containerPhotoImg.classList.remove("photo-img-none");
+        containerPhotoImg.classList.remove("off");
         containerPhotoImg.classList.add("container-form-photo-img");
         formPhotoImg.src = "./assets/images/form-small/form-villes-small/ville-small-soir-it.jpg";
         break;
@@ -6873,119 +6869,119 @@ selectPhotographer.addEventListener("change", function (event) {
         containerPhotographerLabel.classList.add("flex-column");
         containerPhotographerLabel.classList.remove("container-photographer-laber");
         selectPhotographer.classList.remove("width-select-photographer");
-        containerPhotographerImg.classList.add("photo-img-none");
+        containerPhotographerImg.classList.add("off");
         containerPhotographerImg.classList.remove("container-user-img");
         formPhotographerImg.src = "";
         break;
       }
     case "Gustave - L'Aventurier":
       {
-        containerPhotographerImg.classList.remove("photo-img-none");
+        containerPhotographerImg.classList.remove("off");
         containerPhotographerImg.classList.add("container-user-img");
         formPhotographerImg.src = "./assets/images/users-small/users-aventure-small/gustave-aventurier-small.jpg";
         break;
       }
     case "Julie - L'Aventurière":
       {
-        containerPhotographerImg.classList.remove("photo-img-none");
+        containerPhotographerImg.classList.remove("off");
         containerPhotographerImg.classList.add("container-user-img");
         formPhotographerImg.src = "./assets/images/users-small/users-aventure-small/julie-aventuriere-small.jpg";
         break;
       }
     case "Henry - L'Aventurier":
       {
-        containerPhotographerImg.classList.remove("photo-img-none");
+        containerPhotographerImg.classList.remove("off");
         containerPhotographerImg.classList.add("container-user-img");
         formPhotographerImg.src = "./assets/images/users-small/users-aventure-small/henry-aventurier-small.jpg";
         break;
       }
     case "Zoé - L'Aventurière":
       {
-        containerPhotographerImg.classList.remove("photo-img-none");
+        containerPhotographerImg.classList.remove("off");
         containerPhotographerImg.classList.add("container-form-user-img");
         formPhotographerImg.src = "./assets/images/users-small/users-aventure-small/zoe-aventuriere-small.jpg";
         break;
       }
     case "Flora - L'Exploratrice":
       {
-        containerPhotographerImg.classList.remove("photo-img-none");
+        containerPhotographerImg.classList.remove("off");
         containerPhotographerImg.classList.add("container-user-img");
         formPhotographerImg.src = "./assets/images/users-small/users-exploration-small/flora-exploratrice-small.jpg";
         break;
       }
     case "Denver - L'Explorateur":
       {
-        containerPhotographerImg.classList.remove("photo-img-none");
+        containerPhotographerImg.classList.remove("off");
         containerPhotographerImg.classList.add("container-user-img");
         formPhotographerImg.src = "./assets/images/users-small/users-exploration-small/denver-explorateur-small.jpg";
         break;
       }
     case "Inaya - L'Exploratrice":
       {
-        containerPhotographerImg.classList.remove("photo-img-none");
+        containerPhotographerImg.classList.remove("off");
         containerPhotographerImg.classList.add("container-user-img");
         formPhotographerImg.src = "./assets/images/users-small/users-exploration-small/inaya-exploratrice-small.jpg";
         break;
       }
     case "Seth - L'Explorateur":
       {
-        containerPhotographerImg.classList.remove("photo-img-none");
+        containerPhotographerImg.classList.remove("off");
         containerPhotographerImg.classList.add("container-user-img");
         formPhotographerImg.src = "./assets/images/users-small/users-exploration-small/seth-explorateur-small.jpg";
         break;
       }
     case "Lance - Le Visiteur":
       {
-        containerPhotographerImg.classList.remove("photo-img-none");
+        containerPhotographerImg.classList.remove("off");
         containerPhotographerImg.classList.add("container-user-img");
         formPhotographerImg.src = "./assets/images/users-small/users-visite-small/lance-visiteur-small.jpg";
         break;
       }
     case "Nadia - La Visiteuse":
       {
-        containerPhotographerImg.classList.remove("photo-img-none");
+        containerPhotographerImg.classList.remove("off");
         containerPhotographerImg.classList.add("container-user-img");
         formPhotographerImg.src = "./assets/images/users-small/users-visite-small/nadia-visiteuse-small.jpg";
         break;
       }
     case "Xavier - Le Visiteur":
       {
-        containerPhotographerImg.classList.remove("photo-img-none");
+        containerPhotographerImg.classList.remove("off");
         containerPhotographerImg.classList.add("container-user-img");
         formPhotographerImg.src = "./assets/images/users-small/users-visite-small/xavier-visiteur-small.jpg";
         break;
       }
     case "Ornella - La Visiteuse":
       {
-        containerPhotographerImg.classList.remove("photo-img-none");
+        containerPhotographerImg.classList.remove("off");
         containerPhotographerImg.classList.add("container-user-img");
         formPhotographerImg.src = "./assets/images/users-small/users-visite-small/ornella-visiteuse-small.jpg";
         break;
       }
     case "Cerise - La Voyageuse":
       {
-        containerPhotographerImg.classList.remove("photo-img-none");
+        containerPhotographerImg.classList.remove("off");
         containerPhotographerImg.classList.add("container-user-img");
         formPhotographerImg.src = "./assets/images/users-small/users-voyage-small/cerise-voyageuse-small.jpg";
         break;
       }
     case "Philibert - Le Voyageur":
       {
-        containerPhotographerImg.classList.remove("photo-img-none");
+        containerPhotographerImg.classList.remove("off");
         containerPhotographerImg.classList.add("container-user-img");
         formPhotographerImg.src = "./assets/images/users-small/users-voyage-small/philibert-voyageur-small.jpg";
         break;
       }
     case "Roxane - La Voyageuse":
       {
-        containerPhotographerImg.classList.remove("photo-img-none");
+        containerPhotographerImg.classList.remove("off");
         containerPhotographerImg.classList.add("container-user-img");
         formPhotographerImg.src = "./assets/images/users-small/users-voyage-small/roxane-voyageuse-small.jpg";
         break;
       }
     case "Yuu - Le Voyageur":
       {
-        containerPhotographerImg.classList.remove("photo-img-none");
+        containerPhotographerImg.classList.remove("off");
         containerPhotographerImg.classList.add("container-user-img");
         formPhotographerImg.src = "./assets/images/users-small/users-voyage-small/yuu-voyageur-small.jpg";
         break;
@@ -6996,7 +6992,7 @@ var selectContent = document.querySelector("select[name='content']");
 var containerDescriptionNote = document.querySelector("#container-description-note");
 containerDescriptionNote.innerHTML = "<textarea class='content-note'></textarea>";
 var textArea = containerDescriptionNote.querySelector("textarea");
-textArea.classList.add("content-note-none");
+textArea.classList.add("off");
 selectContent.addEventListener("change", function (event) {
   var contentValue = event.target.value;
   var contentNote = selectContent.options[selectContent.selectedIndex].text;
@@ -7005,7 +7001,7 @@ selectContent.addEventListener("change", function (event) {
     var shallowContentValue = containerDescriptionNote.querySelector("#shallow-content-value");
     shallowContentValue.addEventListener("click", function (event) {
       event.stopPropagation();
-      shallowContentValue.classList.add("content-note-none");
+      shallowContentValue.classList.add("off");
       containerDescriptionNote.innerHTML = "<textarea class='content-note'>".concat(contentValue, "</textarea>");
       var textArea = containerDescriptionNote.querySelector("textarea");
       textArea.focus();
