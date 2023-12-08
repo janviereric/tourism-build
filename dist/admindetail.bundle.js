@@ -17,29 +17,25 @@ var adminsArray = [{
   imgSrc: "./assets/images/admins/alice-administratrice.jpg",
   imgDetailSrc: "./assets/images/admins/alice-administratrice.jpg",
   photographer: "Alice - L'Administratrice",
-  type: "Administratrice",
-  profile: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  profile: "est une aventurière, elle aime aller d'endroit en endroit pour appronfondir ses connaissances. Elle ne recule devient rien, elle n'a pas peur d'être seule, son profil lui a permis d'évoluer rapidement en tant que photographe."
 }, {
   _id: 1,
   imgSrc: "./assets/images/admins/ernest-administrateur.jpg",
   imgDetailSrc: "./assets/images/admins/ernest-administrateur.jpg",
   photographer: "Ernest - L'Administrateur",
-  type: "Administrateur",
-  profile: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  profile: "est un explorateur qui passe une majeur partie de son temps libre à chercher des zones inconnue même s'il risque sa vie. Son métier de militaire lui a permis d'acquérir un savoir non négligeable pour la nature et les animaux sauvages."
 }, {
   _id: 2,
   imgSrc: "./assets/images/admins/mia-administratrice.jpg",
   imgDetailSrc: "./assets/images/admins/mia-administratrice.jpg",
   photographer: "Mia - L'Administratrice",
-  type: "Administratrice",
-  profile: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  profile: "est une visiteuse attiré par les plages, ses origines asiatique lui en permis d'avoir un côté artistique dès sa jeuneuse qu'elle n'hésite pas à en faire usage pour ses prises de vue et ainsi avoir des photos avec sa propre signature."
 }, {
   _id: 3,
   imgSrc: "./assets/images/admins/ben-administrateur.jpg",
   imgDetailSrc: "./assets/images/admins/ben-administrateur.jpg",
   photographer: "Ben - L'Administrateur",
-  type: "Administrateur",
-  profile: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  profile: "est un voyageur, il a voyagé dans plusieurs pays en quête des plus belles villes du monde. Il a ainsi vite progressé ce qui lui a permis d'être administrateur. Malgré tout cela il considère qu'il a beaucoup à apprendre."
 }];
 
 /***/ }),
@@ -63,7 +59,7 @@ var homePhotosArray = [{
   photographer: "Alice - L'Administratrice",
   photographerImg: "./assets/images/admins/alice-administratrice.jpg",
   createdAt: "le mardi 01 août 2023",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+  content: "Cette photo montre un désert en Émirats Arabes Unis. Le désert semble être vaste. Au loin on peut voir une montagne."
 }, {
   _id: 1,
   photoSrc: "./assets/images/home-photos/home-forets/foret-automne.jpg",
@@ -73,7 +69,7 @@ var homePhotosArray = [{
   photographer: "Ernest - L'Administrateur",
   photographerImg: "./assets/images/admins/ernest-administrateur.jpg",
   createdAt: "le mercredi 02 août 2023",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+  content: "Cette photo est une forêt en automne. Les pétales de fleurs au sol mélangé avec la couleur rougeatre des feuillages des arbres donne l'impression de voir une oeuvre d'art."
 }, {
   _id: 2,
   photoSrc: "./assets/images/home-photos/home-plages/plage-ag.jpg",
@@ -83,7 +79,7 @@ var homePhotosArray = [{
   photographer: "Mia - L'Administratrice",
   photographerImg: "./assets/images/admins/mia-administratrice.jpg",
   createdAt: "le jeudi 03 août 2023",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+  content: "Cette photo montre une plage en Antigua. L'eau semble être propre et agréable pour se baigner. Le lieu semble être calme."
 }, {
   _id: 3,
   photoSrc: "./assets/images/home-photos/home-villes/ville-ap-jp.jpg",
@@ -93,7 +89,7 @@ var homePhotosArray = [{
   photographer: "Ben - L'Administrateur",
   photographerImg: "./assets/images/admins/ben-administrateur.jpg",
   createdAt: "le vendredi 04 août 2023",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+  content: "Cette photo montre une ville du Japon. La ville semble être bien entretenu. Il y a la présence de personnes. On dirait qu'il y a des restaurants aux alentours."
 }, {
   _id: 4,
   photoSrc: "./assets/images/home-photos/home-deserts/desert-ap-eh.jpg",
@@ -103,7 +99,7 @@ var homePhotosArray = [{
   photographer: "Alice - L'Administratrice",
   photographerImg: "./assets/images/admins/alice-administratrice.jpg",
   createdAt: "le lundi 07 août 2023",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+  content: "Cette photo montre le désert du Sahara. Le désert semble être vaste. Il y a plusieurs cassis ou dos d'âne de sable."
 }, {
   _id: 5,
   photoSrc: "./assets/images/home-photos/home-forets/foret-calif-us.jpg",
@@ -113,7 +109,7 @@ var homePhotosArray = [{
   photographer: "Ernest - L'Administrateur",
   photographerImg: "./assets/images/admins/ernest-administrateur.jpg",
   createdAt: "le mardi 08 août 2023",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+  content: "Cette photo est une vue d'ensemble dans une forêt aux États-Unis. L'eau semble être potable. Les arbres sont de très grande taille."
 }, {
   _id: 6,
   photoSrc: "./assets/images/home-photos/home-plages/plage-aw.jpg",
@@ -123,7 +119,7 @@ var homePhotosArray = [{
   photographer: "Mia - L'Administratrice",
   photographerImg: "./assets/images/admins/mia-administratrice.jpg",
   createdAt: "le mercredi 09 août 2023",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+  content: "Cette plage situé en Aruba semble être bien entretenu. Il y a présence de plusieurs personnes. Il semble y avoir de l'animation. L'eau semble être propre."
 }, {
   _id: 7,
   photoSrc: "./assets/images/home-photos/home-villes/ville-ar.jpg",
@@ -133,7 +129,7 @@ var homePhotosArray = [{
   photographer: "Ben - L'Administrateur",
   photographerImg: "./assets/images/admins/ben-administrateur.jpg",
   createdAt: "le jeudi 10 août 2023",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+  content: "Cette photo montre une ville en Argentine. Il y a beaucoup de batiments. On remarque deux tours au loin. La ville semble être très grande."
 }, {
   _id: 8,
   photoSrc: "./assets/images/home-photos/home-deserts/desert-ariz-us.jpg",
@@ -143,7 +139,7 @@ var homePhotosArray = [{
   photographer: "Alice - L'Administratrice",
   photographerImg: "./assets/images/admins/alice-administratrice.jpg",
   createdAt: "le vendredi 11 août 2023",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+  content: "Cette photo montre un désert dans l'état Arizona aux États-Unis. Il y a une grosse pierre entouré d'eau. Le désert semble être vaste. "
 }, {
   _id: 9,
   photoSrc: "./assets/images/home-photos/home-forets/foret-de.jpg",
@@ -153,7 +149,7 @@ var homePhotosArray = [{
   photographer: "Ernest - L'Administrateur",
   photographerImg: "./assets/images/admins/ernest-administrateur.jpg",
   createdAt: "le lundi 14 août 2023",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+  content: "Cette photo montre une forêt en Allemagne. Il y a plusieurs feuillage. Cette partie de la forêt est sombre. Il y a le rayon du soleil dans la partie gauche de la photo."
 }, {
   _id: 10,
   photoSrc: "./assets/images/home-photos/home-plages/plage-bs.jpg",
@@ -163,7 +159,7 @@ var homePhotosArray = [{
   photographer: "Mia - L'Administratrice",
   photographerImg: "./assets/images/admins/mia-administratrice.jpg",
   createdAt: "le mardi 15 août 2023",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+  content: "Cette photo montre une plage aux Bahamas. L'eau semble être jolie."
 }, {
   _id: 11,
   photoSrc: "./assets/images/home-photos/home-villes/ville-calif-us.jpg",
@@ -173,7 +169,7 @@ var homePhotosArray = [{
   photographer: "Ben - L'Administrateur",
   photographerImg: "./assets/images/admins/ben-administrateur.jpg",
   createdAt: "le mercredi 16 août 2023",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+  content: "Cette photo montre une ville en Californie aux États-Unis. Il y a plusieurs arbres et maisons. L'ensemble des toits des maisons varie d'une couleur à une autre."
 }, {
   _id: 12,
   photoSrc: "./assets/images/home-photos/home-deserts/desert-au.jpg",
@@ -183,7 +179,7 @@ var homePhotosArray = [{
   photographer: "Alice - L'Administratrice",
   photographerImg: "./assets/images/admins/alice-administratrice.jpg",
   createdAt: "le jeudi 17 août 2023",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+  content: "Cette photo montre un désert en Australie. On voit quelque feuillage au sol. Ce désert semble être vaste."
 }, {
   _id: 13,
   photoSrc: "./assets/images/home-photos/home-forets/foret-ee.jpg",
@@ -193,7 +189,7 @@ var homePhotosArray = [{
   photographer: "Ernest - L'Administrateur",
   photographerImg: "./assets/images/admins/ernest-administrateur.jpg",
   createdAt: "le vendredi 18 août 2023",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+  content: "Cette photo montre une forêt en Estonie. Les arbres de cette forêt sont immenses à un tel point qu'il est difficile de voir leur sommet. Cette forêt semble être  bien entretenu."
 }, {
   _id: 14,
   photoSrc: "./assets/images/home-photos/home-plages/plage-es.jpg",
@@ -203,7 +199,7 @@ var homePhotosArray = [{
   photographer: "Mia - L'Administratrice",
   photographerImg: "./assets/images/admins/mia-administratrice.jpg",
   createdAt: "le lundi 21 août 2023",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+  content: "Cette photo montre une plage en Espagne. Il y a plusieurs rocher. Au loin, on peut apercevoir les lumières de la ville."
 }, {
   _id: 15,
   photoSrc: "./assets/images/home-photos/home-villes/ville-es.jpg",
@@ -213,7 +209,7 @@ var homePhotosArray = [{
   photographer: "Ben - L'Administrateur",
   photographerImg: "./assets/images/admins/ben-administrateur.jpg",
   createdAt: "le mardi 22 août 2023",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+  content: "Cette photo montre une ville en Espagne. On remarque qu'il y a plusieurs maisons et plusieurs bâtiments. Au loin on remarque un grand édifice."
 }, {
   _id: 16,
   photoSrc: "./assets/images/home-photos/home-deserts/desert-calif-us.jpg",
@@ -223,7 +219,7 @@ var homePhotosArray = [{
   photographer: "Alice - L'Administratrice",
   photographerImg: "./assets/images/admins/alice-administratrice.jpg",
   createdAt: "le mercredi 23 août 2023",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+  content: "Cette photo montre un désert en Californie des États-Unis. On dirait que cette photo est une prise en biai."
 }, {
   _id: 17,
   photoSrc: "./assets/images/home-photos/home-forets/foret-ete.jpg",
@@ -233,7 +229,7 @@ var homePhotosArray = [{
   photographer: "Ernest - L'Administrateur",
   photographerImg: "./assets/images/admins/ernest-administrateur.jpg",
   createdAt: "le jeudi 24 août 2023",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+  content: "Cette photo montre une forêt en été. Cette partie de la forêt semble être idéale pour la promenade. Ce pont semble être pratique pour ceux qui aiment faire de la randonnée."
 }, {
   _id: 18,
   photoSrc: "./assets/images/home-photos/home-plages/plage-fj.jpg",
@@ -243,7 +239,7 @@ var homePhotosArray = [{
   photographer: "Mia - L'Administratrice",
   photographerImg: "./assets/images/admins/mia-administratrice.jpg",
   createdAt: "le vendredi 25 août 2023",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+  content: "Cette photo montre une plage situé aux Îles de Fidji. Cette plage semble être jolie. L'eau semble être propre. Il semble qu'il y ait des activités aux alentours."
 }, {
   _id: 19,
   photoSrc: "./assets/images/home-photos/home-villes/ville-province-it.jpg",
@@ -253,7 +249,7 @@ var homePhotosArray = [{
   photographer: "Ben - L'Administrateur",
   photographerImg: "./assets/images/admins/ben-administrateur.jpg",
   createdAt: "le lundi 28 août 2023",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+  content: "Cette photo montre une ville en Province de l'Italie. L'eau de la mer semble être très jolie. Il y a un bâteau , il y a également plusieurs bâtiments de diverse couleur. Au loin on remarque la compagne."
 }, {
   _id: 20,
   photoSrc: "./assets/images/home-photos/home-deserts/desert-cl.jpg",
@@ -263,7 +259,7 @@ var homePhotosArray = [{
   photographer: "Alice - L'Administratrice",
   photographerImg: "./assets/images/admins/alice-administratrice.jpg",
   createdAt: "le mardi 29 août 2023",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+  content: "Cette photo montre un désert au Chili. Le sol semble être sec et dur. Le désert semble être vast. Au loin on peut voir des montagnes."
 }, {
   _id: 21,
   photoSrc: "./assets/images/home-photos/home-forets/foret-gb.jpg",
@@ -273,7 +269,7 @@ var homePhotosArray = [{
   photographer: "Ernest - L'Administrateur",
   photographerImg: "./assets/images/admins/ernest-administrateur.jpg",
   createdAt: "le mercredi 30 août 2023",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+  content: "Cette photo montre une forêt en Grande-Bretagne. Cette forêt semble donner la possibilité de faire du velo ou de marcher. Il y a plusieurs arbres."
 }, {
   _id: 22,
   photoSrc: "./assets/images/home-photos/home-plages/plage-gr.jpg",
@@ -283,7 +279,7 @@ var homePhotosArray = [{
   photographer: "Mia - L'Administratrice",
   photographerImg: "./assets/images/admins/mia-administratrice.jpg",
   createdAt: "le jeudi 31 août 2023",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+  content: "Cette photo montre une plage en Grèce. L'eau de la mer semble être belle et propre. Cette plage est bien entretenu. Il y a des collines aux environs."
 }, {
   _id: 23,
   photoSrc: "./assets/images/home-photos/home-villes/ville-se.jpg",
@@ -293,7 +289,7 @@ var homePhotosArray = [{
   photographer: "Ben - L'Administrateur",
   photographerImg: "./assets/images/admins/ben-administrateur.jpg",
   createdAt: "le vendredi 01 septembre 2023",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+  content: "Cette photo montre une rue d'une ville en Suède. Il y a quelque pavillons. La rue semble faire plusieurs kilomètres. La rue semble être calme. Il y a la présence de nuages et d'arbres."
 }, {
   _id: 24,
   photoSrc: "./assets/images/home-photos/home-deserts/desert-es.jpg",
@@ -303,7 +299,7 @@ var homePhotosArray = [{
   photographer: "Alice - L'Administratrice",
   photographerImg: "./assets/images/admins/alice-administratrice.jpg",
   createdAt: "le lundi 04 septembre 2023",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+  content: "Cette photo montre un désert en Espagne. Le désert semble être vaste. Il y a des trous qui ressemble à des empreintes d'animaux."
 }, {
   _id: 25,
   photoSrc: "./assets/images/home-photos/home-forets/foret-hiver.jpg",
@@ -313,7 +309,7 @@ var homePhotosArray = [{
   photographer: "Ernest - L'Administrateur",
   photographerImg: "./assets/images/admins/ernest-administrateur.jpg",
   createdAt: "le mardi 05 septembre 2023",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+  content: "Cette photo montre une forêt en période hivernale. La forêt semble être vaste. Les arbres sont grands. On arrive distinguer un chemin."
 }, {
   _id: 26,
   photoSrc: "./assets/images/home-photos/home-plages/plage-il.jpg",
@@ -323,7 +319,7 @@ var homePhotosArray = [{
   photographer: "Mia - L'Administratrice",
   photographerImg: "./assets/images/admins/mia-administratrice.jpg",
   createdAt: "le mercredi 06 septembre 2023",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+  content: "Cette photo montre une plage situé en Israël. Il semble y avoir des restaurants, des activités, des jeux, des bus touristique, autour de la plage."
 }, {
   _id: 27,
   photoSrc: "./assets/images/home-photos/home-villes/ville-soir-jp.jpg",
@@ -333,7 +329,7 @@ var homePhotosArray = [{
   photographer: "Ben - L'Administrateur",
   photographerImg: "./assets/images/admins/ben-administrateur.jpg",
   createdAt: "le jeudi 07 septembre 2023",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+  content: "Cette photo montre une ville au Japon pendant le soir. Il y a plusieurs immeubles et plusieurs bâtiments. On remarque une tour rouge. La ville semble être une grande ville."
 }, {
   _id: 28,
   photoSrc: "./assets/images/home-photos/home-deserts/desert-il.jpg",
@@ -343,7 +339,7 @@ var homePhotosArray = [{
   photographer: "Alice - L'Administratrice",
   photographerImg: "./assets/images/admins/alice-administratrice.jpg",
   createdAt: "le vendredi 08 septembre 2023",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+  content: "Cette photo montre un désert en Israël. On remarque qu'il y a plusieurs chameaux et plusieurs chemins. On remarque aussi qu'il a des montagnes au loin. Le désert semble être immense. "
 }, {
   _id: 29,
   photoSrc: "./assets/images/home-photos/home-forets/foret-id.jpg",
@@ -353,7 +349,7 @@ var homePhotosArray = [{
   photographer: "Ernest - L'Administrateur",
   photographerImg: "./assets/images/admins/ernest-administrateur.jpg",
   createdAt: "le lundi 11 septembre 2023",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+  content: "Cette photo montre une forêt en Inde. Le sol semble être doux et agréable pour la marche à pieds. Il y a plusieurs arbres et feuillages."
 }, {
   _id: 30,
   photoSrc: "./assets/images/home-photos/home-plages/plage-mv.jpg",
@@ -363,7 +359,7 @@ var homePhotosArray = [{
   photographer: "Mia - L'Administratrice",
   photographerImg: "./assets/images/admins/mia-administratrice.jpg",
   createdAt: "le mardi 12 septembre 2023",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+  content: "Cette photo montre une plage situé aux Maldives. Il y a avec un cocotier. L'eau de la mer est claire et transparente à partir d'une certaine distance puis elle est foncée au loin."
 }, {
   _id: 31,
   photoSrc: "./assets/images/home-photos/home-villes/ville-tr.jpg",
@@ -373,7 +369,7 @@ var homePhotosArray = [{
   photographer: "Ben - L'Administrateur",
   photographerImg: "./assets/images/admins/ben-administrateur.jpg",
   createdAt: "le mercredi 13 septembre 2023",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+  content: "Cette photo montre une ville en Turquie. Il y a plusieurs immeubles de différentes couleurs. On distinque au loin quelque chose qui ressemble le haut d'un château."
 }, {
   _id: 32,
   photoSrc: "./assets/images/home-photos/home-deserts/desert-matin-eh.jpg",
@@ -383,7 +379,7 @@ var homePhotosArray = [{
   photographer: "Alice - L'Administratrice",
   photographerImg: "./assets/images/admins/alice-administratrice.jpg",
   createdAt: "le jeudi 14 septembre 2023",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+  content: "Cette photo montre le désert de Sahara dans la matinéé. Le sable semble être jolie et agréable. Il semblerait qu'on peut marcher les pieds nus."
 }, {
   _id: 33,
   photoSrc: "./assets/images/home-photos/home-forets/foret-printemps.jpg",
@@ -393,7 +389,7 @@ var homePhotosArray = [{
   photographer: "Ernest - L'Administrateur",
   photographerImg: "./assets/images/admins/ernest-administrateur.jpg",
   createdAt: "le vendredi 15 septembre 2023",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+  content: "Cette photo montre une forêt en printemps. Le chemin est ensoleilé. Cette photo donne l'air qu'on peut faire une promenade ou une randonné familiale."
 }, {
   _id: 34,
   photoSrc: "./assets/images/home-photos/home-plages/plage-ru.jpg",
@@ -403,17 +399,17 @@ var homePhotosArray = [{
   photographer: "Mia - L'Administratrice",
   photographerImg: "./assets/images/admins/mia-administratrice.jpg",
   createdAt: "le lundi 18 septembre 2023",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+  content: "Cette photo montre une plage en Russie. L'eau de la mer est bleu foncée. On voit aussi un bateau bleu clair au bord de la mer. Le couleur du sable est clair."
 }, {
   _id: 35,
   photoSrc: "./assets/images/home-photos/home-villes/ville-urbain-ge.jpg",
   detailSrc: "./assets/images/home-detail/home-villes-detail/ville-detail-urbain-ge.jpg",
-  picture: "Une Ville Urbain en Allemagne",
+  picture: "Une Ville Urbaine en Allemagne",
   category: "Partage",
   photographer: "Ben - L'Administrateur",
   photographerImg: "./assets/images/admins/ben-administrateur.jpg",
   createdAt: "le mardi 19 septembre 2023",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+  content: "Cette photo montre une photo dans une ville urbaine en Allemagne. Il y a plusieurs building et quelque édifice. On voit aussi des personnes ainsi qu'une place centrale."
 }, {
   _id: 36,
   photoSrc: "./assets/images/home-photos/home-deserts/desert-nev-us.jpg",
@@ -423,7 +419,7 @@ var homePhotosArray = [{
   photographer: "Alice - L'Administratrice",
   photographerImg: "./assets/images/admins/alice-administratrice.jpg",
   createdAt: "le mercredi 20 septembre 2023",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+  content: "Cette photo montre un désert en Neveda des États-Unis. Ce désert semble être pierreux et caillouteux. Il y a des montagnes et un peu de végétation."
 }, {
   _id: 37,
   photoSrc: "./assets/images/home-photos/home-forets/foret-se.jpg",
@@ -433,7 +429,7 @@ var homePhotosArray = [{
   photographer: "Ernest - L'Administrateur",
   photographerImg: "./assets/images/admins/ernest-administrateur.jpg",
   createdAt: "le jeudi 21 septembre 2023",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+  content: "Cette photo montre une forêt en Suède. Il y a des arbres et quelque cassis ou dos d'âne."
 }, {
   _id: 38,
   photoSrc: "./assets/images/home-photos/home-plages/plage-us.jpg",
@@ -443,7 +439,7 @@ var homePhotosArray = [{
   photographer: "Mia - L'Administratrice",
   photographerImg: "./assets/images/admins/mia-administratrice.jpg",
   createdAt: "le vendredi 22 septembre 2023",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+  content: "Cette photo montre une plage aux États-Unis. L'eau de la mer semble être jolie. Il semble y avoir fréquemment des vagues. Cette plage semble être bien entretenu. "
 }, {
   _id: 39,
   photoSrc: "./assets/images/home-photos/home-villes/ville-za.jpg",
@@ -453,7 +449,7 @@ var homePhotosArray = [{
   photographer: "Ben - L'Administrateur",
   photographerImg: "./assets/images/admins/ben-administrateur.jpg",
   createdAt: "le lundi 25 septembre 2023",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+  content: "Cette photo montre une ville en Nouvelle-Zélande. Il y a quelque bâtiments du côté droit. Il y a une grande édifice du côté gauche. Il y a de la circulation avec des voitures et un bus."
 }, {
   _id: 40,
   photoSrc: "./assets/images/home-photos/home-deserts/desert-nmex-us.jpg",
@@ -463,7 +459,7 @@ var homePhotosArray = [{
   photographer: "Alice - L'Administratrice",
   photographerImg: "./assets/images/admins/alice-administratrice.jpg",
   createdAt: "le mardi 26 septembre 2023",
-  content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Aenean euismod elementum nisi quis eleifend quam. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris. Vitae tortor condimentum lacinia quis vel. Ultricies mi quis hendrerit dolor magna eget est. Eu tincidunt tortor aliquam nulla facilisi. Turpis egestas maecenas pharetra convallis. Neque viverra justo nec ultrices. Pharetra massa massa ultricies mi quis. Sed augue lacus viverra vitae congue eu. Nulla facilisi cras fermentum odio eu. Quis varius quam quisque id diam vel. Volutpat commodo sed egestas egestas fringilla. Erat nam at lectus urna duis convallis convallis tellus id."
+  content: "Cette photo montre un desert du Nouveau-Mexique aux États-Unis. Ce désert ressemble à un chateau de sable. Il y a quelques végétations."
 }];
 
 /***/ }),
@@ -8470,7 +8466,13 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.header-nav {
 
 #container-admin-profile {
   font-family: var(--form);
-  margin-bottom: 3rem;
+  width: 40rem;
+  margin-top: 2rem;
+  margin-bottom: 8rem;
+}
+#container-admin-profile p span {
+  color: var(--primary);
+  font-weight: bold;
 }
 
 #container-gallery {
@@ -8487,15 +8489,17 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.header-nav {
   margin-bottom: 3rem;
 }
 #container-gallery fieldset ul li {
-  height: 9rem;
   width: 10rem;
-  padding: 0.5rem 0.5rem 0 0.5rem;
+  padding: 0.2rem;
   margin-bottom: 3rem;
   margin-left: 1rem;
   margin-right: 1rem;
   box-shadow: var(--shadow);
-  cursor: pointer;
+  cursor: zoom-in;
   transition: all 0.2s;
+}
+#container-gallery fieldset ul li img {
+  margin-bottom: -0.4rem;
 }
 #container-gallery fieldset ul li:hover {
   transition: all 0.2s;
@@ -8526,28 +8530,29 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.header-nav {
   padding-right: 3rem;
   margin-bottom: 5rem;
 }
-
-.gallery-detail {
-  box-shadow: var(--shadow);
-  padding: 1rem;
-  padding-bottom: 4rem;
-}
-.gallery-detail p {
+.fieldset-detail .gallery-detail-name {
   text-align: center;
-  margin-top: 1rem;
+  margin-bottom: 1rem;
   font-weight: bold;
   color: var(--primary);
 }
-.gallery-detail .container-button {
+.fieldset-detail .gallery-detail {
+  box-shadow: var(--shadow);
+  padding: 0.5rem;
+}
+.fieldset-detail .gallery-detail img {
+  margin-bottom: -0.4rem;
+}
+.fieldset-detail .container-button {
   display: flex;
   justify-content: space-evenly;
-  padding-top: 6rem;
+  padding-top: 7rem;
 }
 
 .remove-scrolling {
   height: 100%;
   overflow: hidden;
-}`, "",{"version":3,"sources":["webpack://./src/admindetail/admindetail.scss"],"names":[],"mappings":"AAAA;EACE,gCAAA;AACF;;AAEA;EACE,iBAAA;EACA,oBAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;AACF;;AAEA;EACE,mBAAA;AACF;;AAEA;EACE,mBAAA;EACA,eAAA;EACA,yBAAA;AACF;AAAE;EACE,aAAA;EACA,YAAA;EACA,sBAAA;AAEJ;;AAEA;EACE,wBAAA;EACA,mBAAA;AACF;;AAEA;EACE,mBAAA;AACF;AAAE;EACE,gCAAA;AAEJ;AADI;EACE,iBAAA;EACA,kBAAA;EACA,kBAAA;EACA,mBAAA;EACA,mBAAA;AAGN;AAAM;EACE,YAAA;EACA,YAAA;EACA,+BAAA;EACA,mBAAA;EACA,iBAAA;EACA,kBAAA;EACA,yBAAA;EACA,eAAA;EACA,oBAAA;AAER;AADQ;EACE,oBAAA;EACA,gCAAA;AAGV;;AAKA;EACE,aAAA;EACA,sCAAA;AAFF;;AAKA;EACE,aAAA;EACA,uBAAA;AAFF;;AAKA;EACE,gCAAA;EACA,aAAA;EACA,qBAAA;AAFF;AAGE;EACE,iBAAA;EACA,mBAAA;EACA,iBAAA;EACA,kBAAA;EACA,kBAAA;EACA,mBAAA;EACA,mBAAA;AADJ;;AAKA;EACE,yBAAA;EACA,aAAA;EACA,oBAAA;AAFF;AAGE;EACE,kBAAA;EACA,gBAAA;EACA,iBAAA;EACA,qBAAA;AADJ;AAGE;EACE,aAAA;EACA,6BAAA;EACA,iBAAA;AADJ;;AAKA;EACE,YAAA;EACA,gBAAA;AAFF","sourcesContent":[".header-nav {\n  padding: 0.5rem 1rem 0.5rem 1rem;\n}\n\n#container-admin-detail {\n  margin-top: 25rem;\n  margin-bottom: 25rem;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n\n#container-admin-name {\n  margin-bottom: 1rem;\n}\n\n#container-admin-img {\n  margin-bottom: 3rem;\n  padding: 0.5rem;\n  box-shadow: var(--shadow);\n  img {\n    height: 20rem;\n    width: 20rem;\n    margin-bottom: -0.4rem;\n  }\n}\n\n#container-admin-profile {\n  font-family: var(--form);\n  margin-bottom: 3rem;\n}\n\n#container-gallery {\n  margin-bottom: 3rem;\n  fieldset {\n    border: 0.1rem solid var(--dark);\n    legend {\n      margin-left: auto;\n      margin-right: auto;\n      padding-left: 1rem;\n      padding-right: 1rem;\n      margin-bottom: 3rem;\n    }\n    ul {\n      li {\n        height: 9rem;\n        width: 10rem;\n        padding: 0.5rem 0.5rem 0 0.5rem;\n        margin-bottom: 3rem;\n        margin-left: 1rem;\n        margin-right: 1rem;\n        box-shadow: var(--shadow);\n        cursor: pointer;\n        transition: all 0.2s;\n        &:hover {\n          transition: all 0.2s;\n          border: 0.1rem solid var(--hint);\n        }\n      }\n    }\n  }\n}\n\n// JS Start//\n.mode-grid {\n  display: grid;\n  grid-template-columns: 1fr 1fr 1fr 1fr;\n}\n\n.mode-flex {\n  display: flex;\n  justify-content: center;\n}\n\n.fieldset-detail {\n  border: 0.1rem solid var(--dark);\n  padding: 5rem;\n  padding-bottom: 11rem;\n  legend {\n    font-size: 2.3rem;\n    font-weight: bolder;\n    margin-left: auto;\n    margin-right: auto;\n    padding-left: 3rem;\n    padding-right: 3rem;\n    margin-bottom: 5rem;\n  }\n}\n\n.gallery-detail {\n  box-shadow: var(--shadow);\n  padding: 1rem;\n  padding-bottom: 4rem;\n  p {\n    text-align: center;\n    margin-top: 1rem;\n    font-weight: bold;\n    color: var(--primary);\n  }\n  .container-button {\n    display: flex;\n    justify-content: space-evenly;\n    padding-top: 6rem;\n  }\n}\n\n.remove-scrolling {\n  height: 100%;\n  overflow: hidden;\n}\n// JS End//\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/admindetail/admindetail.scss"],"names":[],"mappings":"AAAA;EACE,gCAAA;AACF;;AAEA;EACE,iBAAA;EACA,oBAAA;EACA,aAAA;EACA,sBAAA;EACA,uBAAA;EACA,mBAAA;AACF;;AAEA;EACE,mBAAA;AACF;;AAEA;EACE,mBAAA;EACA,eAAA;EACA,yBAAA;AACF;AAAE;EACE,aAAA;EACA,YAAA;EACA,sBAAA;AAEJ;;AAEA;EACE,wBAAA;EACA,YAAA;EACA,gBAAA;EACA,mBAAA;AACF;AAAE;EACE,qBAAA;EACA,iBAAA;AAEJ;;AAEA;EACE,mBAAA;AACF;AAAE;EACE,gCAAA;AAEJ;AADI;EACE,iBAAA;EACA,kBAAA;EACA,kBAAA;EACA,mBAAA;EACA,mBAAA;AAGN;AAAM;EACE,YAAA;EACA,eAAA;EACA,mBAAA;EACA,iBAAA;EACA,kBAAA;EACA,yBAAA;EACA,eAAA;EACA,oBAAA;AAER;AADQ;EACE,sBAAA;AAGV;AADQ;EACE,oBAAA;EACA,gCAAA;AAGV;;AAKA;EACE,aAAA;EACA,sCAAA;AAFF;;AAKA;EACE,aAAA;EACA,uBAAA;AAFF;;AAKA;EACE,gCAAA;EACA,aAAA;EACA,qBAAA;AAFF;AAGE;EACE,iBAAA;EACA,mBAAA;EACA,iBAAA;EACA,kBAAA;EACA,kBAAA;EACA,mBAAA;EACA,mBAAA;AADJ;AAGE;EACE,kBAAA;EACA,mBAAA;EACA,iBAAA;EACA,qBAAA;AADJ;AAGE;EACE,yBAAA;EACA,eAAA;AADJ;AAEI;EACE,sBAAA;AAAN;AAGE;EACE,aAAA;EACA,6BAAA;EACA,iBAAA;AADJ;;AAKA;EACE,YAAA;EACA,gBAAA;AAFF","sourcesContent":[".header-nav {\n  padding: 0.5rem 1rem 0.5rem 1rem;\n}\n\n#container-admin-detail {\n  margin-top: 25rem;\n  margin-bottom: 25rem;\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  align-items: center;\n}\n\n#container-admin-name {\n  margin-bottom: 1rem;\n}\n\n#container-admin-img {\n  margin-bottom: 3rem;\n  padding: 0.5rem;\n  box-shadow: var(--shadow);\n  img {\n    height: 20rem;\n    width: 20rem;\n    margin-bottom: -0.4rem;\n  }\n}\n\n#container-admin-profile {\n  font-family: var(--form);\n  width: 40rem;\n  margin-top: 2rem;\n  margin-bottom: 8rem;\n  p span {\n    color: var(--primary);\n    font-weight: bold;\n  }\n}\n\n#container-gallery {\n  margin-bottom: 3rem;\n  fieldset {\n    border: 0.1rem solid var(--dark);\n    legend {\n      margin-left: auto;\n      margin-right: auto;\n      padding-left: 1rem;\n      padding-right: 1rem;\n      margin-bottom: 3rem;\n    }\n    ul {\n      li {\n        width: 10rem;\n        padding: 0.2rem;\n        margin-bottom: 3rem;\n        margin-left: 1rem;\n        margin-right: 1rem;\n        box-shadow: var(--shadow);\n        cursor: zoom-in;\n        transition: all 0.2s;\n        img {\n          margin-bottom: -0.4rem;\n        }\n        &:hover {\n          transition: all 0.2s;\n          border: 0.1rem solid var(--hint);\n        }\n      }\n    }\n  }\n}\n\n// js start //\n.mode-grid {\n  display: grid;\n  grid-template-columns: 1fr 1fr 1fr 1fr;\n}\n\n.mode-flex {\n  display: flex;\n  justify-content: center;\n}\n\n.fieldset-detail {\n  border: 0.1rem solid var(--dark);\n  padding: 5rem;\n  padding-bottom: 11rem;\n  legend {\n    font-size: 2.3rem;\n    font-weight: bolder;\n    margin-left: auto;\n    margin-right: auto;\n    padding-left: 3rem;\n    padding-right: 3rem;\n    margin-bottom: 5rem;\n  }\n  .gallery-detail-name {\n    text-align: center;\n    margin-bottom: 1rem;\n    font-weight: bold;\n    color: var(--primary);\n  }\n  .gallery-detail {\n    box-shadow: var(--shadow);\n    padding: 0.5rem;\n    img {\n      margin-bottom: -0.4rem;\n    }\n  }\n  .container-button {\n    display: flex;\n    justify-content: space-evenly;\n    padding-top: 7rem;\n  }\n}\n\n.remove-scrolling {\n  height: 100%;\n  overflow: hidden;\n}\n// js end //\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -8665,6 +8670,16 @@ a {
   border: 0.2rem solid var(--danger);
   color: var(--light);
 }
+.button-yes {
+  background: var(--danger);
+  border: 0.2rem solid var(--danger);
+  color: var(--light);
+}
+.button-no {
+  background: var(--success);
+  border: 0.2rem solid var(--success);
+  color: var(--light);
+}
 
 .text-valid {
   color: var(--success);
@@ -8677,6 +8692,41 @@ a {
 .text-detail {
   color: var(--info);
   font-weight: bold;
+}
+.text-bold {
+  color: var(--dark);
+  font-weight: bold;
+}
+
+.calc {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calc .modal {
+  background: white;
+  min-width: 30rem;
+  border-radius: 3px;
+  padding: 5rem;
+  box-shadow: var(--box-shadow);
+  text-align: center;
+}
+.calc .modal p {
+  margin: 1rem 0 3rem 0;
+}
+.calc .modal .button {
+  margin-left: 1rem;
+}
+
+.remove-scrolling {
+  height: 100%;
+  overflow: hidden;
 }
 
 * {
@@ -8836,7 +8886,7 @@ footer .j {
 footer .e {
   font-family: var(--logo);
   color: var(--danger);
-}`, "",{"version":3,"sources":["webpack://./src/assets/sass/partials/_base.scss","webpack://./src/assets/sass/styles.scss","webpack://./src/assets/sass/partials/_classes.scss","webpack://./src/assets/sass/partials/_reset.scss","webpack://./src/assets/sass/partials/_utils.scss","webpack://./src/assets/sass/partials/_variables.scss","webpack://./src/assets/sass/layouts/_body.scss","webpack://./src/assets/sass/layouts/_header.scss","webpack://./src/assets/sass/partials/_media-queries.scss","webpack://./src/assets/sass/layouts/_footer.scss"],"names":[],"mappings":"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","sourcesContent":[":root {\n  font-size: 62.5%; // font-size = 10px\n}\n\nbody {\n  font-size: 1.6rem; // 1rem = 10px\n  color: var(--dark);\n  font-family: var(--basic);\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: var(--dark);\n  text-decoration: none;\n}\n",":root {\n  font-size: 62.5%;\n}\n\nbody {\n  font-size: 1.6rem;\n  color: var(--dark);\n  font-family: var(--basic);\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: var(--dark);\n  text-decoration: none;\n}\n\n.title-underline {\n  padding-bottom: 2rem;\n  border-bottom: 0.1rem solid var(--divider);\n}\n\n.button {\n  border: 0;\n  border-radius: 0.3rem;\n  padding: 1rem 2rem;\n  font-weight: 700;\n  cursor: pointer;\n  transition: box-shadow 0.2s;\n}\n.button:hover {\n  box-shadow: var(--shadow);\n  opacity: 89%;\n  transition: box-shadow 0.2s;\n}\n.button-add {\n  background: var(--primary);\n  border: 0.2rem solid var(--primary);\n  color: var(--light);\n}\n.button-cancel {\n  background: var(--light);\n  border: 0.2rem solid var(--primary);\n  color: var(--primary);\n}\n.button-edit {\n  margin-right: 2rem;\n  background-color: var(--success);\n  color: var(--light);\n}\n.button-delete {\n  margin-right: 2rem;\n  background-color: var(--danger);\n  color: var(--light);\n}\n.button-save {\n  background: var(--primary);\n  border: 0.2rem solid var(--primary);\n  color: var(--light);\n}\n.button-detail {\n  background: var(--success);\n  border: 0.2rem solid var(--success);\n  color: var(--light);\n}\n.button-back {\n  background: var(--danger);\n  border: 0.2rem solid var(--danger);\n  color: var(--light);\n}\n\n.text-valid {\n  color: var(--success);\n  font-weight: bold;\n}\n.text-error {\n  color: var(--danger);\n  font-weight: bold;\n}\n.text-detail {\n  color: var(--info);\n  font-weight: bold;\n}\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n.off {\n  display: none;\n}\n\n:root {\n  --primary: #2e86de;\n  --secondary: #54a0ff;\n  --tertiary: #48dbfb;\n  --light: #f5f6fa;\n  --medium: #2d98da;\n  --dark: #333;\n  --success: #06ad3e;\n  --danger: #ea2027;\n  --info: #3867d6;\n  --warning: #fbc531;\n  --hint: #95a5a6;\n  --accent: #3c40c6;\n  --divider: #bdc3c7;\n  --basic: \"Mulish\", sans-serif;\n  --default: \"Roboto\", sans-serif;\n  --logo: \"Roboto Condensed\", sans-serif;\n  --form: Arial, Helvetica, sans-serif;\n  --shadow: 0 0.1rem 0.2rem 0 rgba(60, 64, 67, 0.3),\n    0 0.1rem 0.3rem 0.1rem rgba(60, 64, 67, 0.15);\n}\n\nbody {\n  height: 100vh;\n}\n\n.container {\n  min-height: 100vh;\n  display: grid;\n  grid: \"header\" auto \"content\" 1fr \"footer\" auto/auto;\n}\n\nheader {\n  grid-area: header;\n  align-items: center;\n  background: var(--primary);\n  position: fixed;\n  z-index: 1;\n  width: 100%;\n}\nheader .container-top-menu {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  padding: 1rem;\n}\nheader .container-top-menu a {\n  color: var(--light);\n  font-weight: 700;\n  letter-spacing: 0.1rem;\n}\nheader .container-top-menu .header-brand {\n  font-weight: 700;\n}\nheader .container-top-menu .header-brand:hover {\n  color: var(--tertiary);\n}\nheader .header-menu {\n  position: relative;\n}\nheader .header-menu ul {\n  display: flex;\n  margin-right: -0.5rem;\n}\n@media (max-width: 480px) {\n  header .header-menu ul {\n    display: none;\n  }\n}\nheader .header-menu ul li {\n  margin-left: 1rem;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  cursor: pointer;\n  transition: all 0.2s;\n}\nheader .header-menu ul li:hover {\n  transition: all 0.2s;\n  background-color: var(--secondary);\n}\nheader .header-menu ul li:hover a {\n  color: var(--light);\n}\nheader .header-menu ul li a {\n  font-size: 1.2rem;\n  border-radius: 0.2rem;\n}\nheader .header-menu ul .active {\n  background-color: var(--light);\n  border-radius: 0.2rem;\n}\nheader .header-menu ul .active a {\n  color: var(--secondary);\n}\nheader .header-menu-icon {\n  display: none;\n  font-size: 2rem;\n  color: var(--light);\n}\n@media (max-width: 480px) {\n  header .header-menu-icon {\n    display: block;\n  }\n}\nheader .mobile-menu {\n  display: none;\n  position: absolute;\n  top: 3.5rem;\n  right: -2rem;\n  padding: 0.5rem;\n  background-color: var(--primary);\n  box-shadow: var(--shadow);\n}\nheader .mobile-menu ul {\n  display: block;\n}\nheader .mobile-menu ul li {\n  margin: 1rem 2rem;\n}\nheader .mobile-menu.open {\n  display: block;\n}\n\nfooter {\n  grid-area: footer;\n  padding: 2rem;\n  height: 8rem;\n  background-color: var(--dark);\n  color: var(--light);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: bold;\n}\nfooter img {\n  height: 2rem;\n  width: 2rem;\n  margin-bottom: -0.1rem;\n}\nfooter .j {\n  font-family: var(--logo);\n  color: var(--danger);\n}\nfooter .e {\n  font-family: var(--logo);\n  color: var(--danger);\n}",".title {\n  &-underline {\n    padding-bottom: 2rem;\n    border-bottom: 0.1rem solid var(--divider);\n  }\n}\n\n.button {\n  border: 0;\n  border-radius: 0.3rem;\n  padding: 1rem 2rem;\n  font-weight: 700;\n  cursor: pointer;\n  transition: box-shadow 0.2s;\n  &:hover {\n    box-shadow: var(--shadow);\n    opacity: 89%;\n    transition: box-shadow 0.2s;\n  }\n  &-add {\n    background: var(--primary);\n    border: 0.2rem solid var(--primary);\n    color: var(--light);\n  }\n  &-cancel {\n    background: var(--light);\n    border: 0.2rem solid var(--primary);\n    color: var(--primary);\n  }\n  &-edit {\n    margin-right: 2rem;\n    background-color: var(--success);\n    color: var(--light);\n  }\n  &-delete {\n    margin-right: 2rem;\n    background-color: var(--danger);\n    color: var(--light);\n  }\n  &-save {\n    background: var(--primary);\n    border: 0.2rem solid var(--primary);\n    color: var(--light);\n  }\n  &-detail {\n    background: var(--success);\n    border: 0.2rem solid var(--success);\n    color: var(--light);\n  }\n  &-back {\n    background: var(--danger);\n    border: 0.2rem solid var(--danger);\n    color: var(--light);\n  }\n}\n\n.text {\n  &-valid {\n    color: var(--success);\n    font-weight: bold;\n  }\n  &-error {\n    color: var(--danger);\n    font-weight: bold;\n  }\n  &-detail {\n    color: var(--info);\n    font-weight: bold;\n  }\n}\n","* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n",".off {\n  display: none;\n}\n",":root {\n  // main color\n  --primary: #2e86de;\n  --secondary: #54a0ff;\n  --tertiary: #48dbfb;\n\n  // text color\n  --light: #f5f6fa;\n  --medium: #2d98da;\n  --dark: #333;\n\n  // utils => button, border, words etc\n  --success: #06ad3e;\n  --danger: #ea2027;\n  --info: #3867d6;\n  --warning: #fbc531;\n  --hint: #95a5a6;\n\n  // utils => border, words etc\n  --accent: #3c40c6;\n  --divider: #bdc3c7;\n\n  // font-family\n  --basic: \"Mulish\", sans-serif;\n  --default: \"Roboto\", sans-serif;\n  --logo: \"Roboto Condensed\", sans-serif;\n  --form: Arial, Helvetica, sans-serif;\n\n  // shadow\n  --shadow: 0 0.1rem 0.2rem 0 rgba(60, 64, 67, 0.3),\n    0 0.1rem 0.3rem 0.1rem rgba(60, 64, 67, 0.15);\n}\n","body {\n  height: 100vh;\n}\n\n.container {\n  min-height: 100vh;\n  display: grid;\n  grid:\n    \"header\" auto\n    \"content\" 1fr\n    \"footer\" auto /\n    auto;\n}\n","@use \"../partials/media-queries.scss\" as *;\n\nheader {\n  grid-area: header;\n  align-items: center;\n  background: var(--primary);\n  position: fixed;\n  z-index: 1;\n  width: 100%;\n  .container-top-menu {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    padding: 1rem;\n    a {\n      color: var(--light);\n      font-weight: 700;\n      letter-spacing: 0.1rem;\n    }\n    .header-brand {\n      font-weight: 700;\n      &:hover {\n        color: var(--tertiary);\n      }\n    }\n  }\n\n  .header-menu {\n    position: relative;\n    ul {\n      @include phone {\n        display: none;\n      }\n      display: flex;\n      margin-right: -0.5rem;\n      li {\n        margin-left: 1rem;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        cursor: pointer;\n        transition: all 0.2s;\n        &:hover {\n          transition: all 0.2s;\n          background-color: var(--secondary);\n          a {\n            color: var(--light);\n          }\n        }\n        a {\n          font-size: 1.2rem;\n          border-radius: 0.2rem;\n        }\n      }\n      .active {\n        background-color: var(--light);\n        border-radius: 0.2rem;\n        a {\n          color: var(--secondary);\n        }\n      }\n    }\n  }\n\n  .header-menu-icon {\n    display: none;\n    font-size: 2rem;\n    color: var(--light);\n    @include phone {\n      display: block;\n    }\n  }\n\n  .mobile-menu {\n    display: none;\n    position: absolute;\n    top: 3.5rem;\n    right: -2rem;\n    padding: 0.5rem;\n    background-color: var(--primary);\n    box-shadow: var(--shadow);\n    ul {\n      display: block;\n      li {\n        margin: 1rem 2rem;\n      }\n    }\n  }\n  .mobile-menu.open {\n    display: block;\n  }\n}\n","@mixin phone {\n  @media (max-width: 480px) {\n    @content;\n  }\n}\n\n@mixin tablet {\n  @media (min-width: 481px) and (max-width: 767px) {\n    @content;\n  }\n}\n\n@mixin laptop {\n  @media (min-width: 768px) and (max-width: 1199px) {\n    @content;\n  }\n}\n\n@mixin computer {\n  @media (min-width: 1200px) {\n    @content;\n  }\n}\n","footer {\n  grid-area: footer;\n  padding: 2rem;\n  height: 8rem;\n  background-color: var(--dark);\n  color: var(--light);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: bold;\n  img {\n    height: 2rem;\n    width: 2rem;\n    margin-bottom: -0.1rem;\n  }\n  .j {\n    font-family: var(--logo);\n    color: var(--danger);\n  }\n\n  .e {\n    font-family: var(--logo);\n    color: var(--danger);\n  }\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/assets/sass/partials/_base.scss","webpack://./src/assets/sass/styles.scss","webpack://./src/assets/sass/partials/_classes.scss","webpack://./src/assets/sass/partials/_reset.scss","webpack://./src/assets/sass/partials/_utils.scss","webpack://./src/assets/sass/partials/_variables.scss","webpack://./src/assets/sass/layouts/_body.scss","webpack://./src/assets/sass/layouts/_header.scss","webpack://./src/assets/sass/partials/_media-queries.scss","webpack://./src/assets/sass/layouts/_footer.scss"],"names":[],"mappings":"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","sourcesContent":[":root {\n  font-size: 62.5%; // font-size = 10px\n}\n\nbody {\n  font-size: 1.6rem; // 1rem = 10px\n  color: var(--dark);\n  font-family: var(--basic);\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: var(--dark);\n  text-decoration: none;\n}\n",":root {\n  font-size: 62.5%;\n}\n\nbody {\n  font-size: 1.6rem;\n  color: var(--dark);\n  font-family: var(--basic);\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: var(--dark);\n  text-decoration: none;\n}\n\n.title-underline {\n  padding-bottom: 2rem;\n  border-bottom: 0.1rem solid var(--divider);\n}\n\n.button {\n  border: 0;\n  border-radius: 0.3rem;\n  padding: 1rem 2rem;\n  font-weight: 700;\n  cursor: pointer;\n  transition: box-shadow 0.2s;\n}\n.button:hover {\n  box-shadow: var(--shadow);\n  opacity: 89%;\n  transition: box-shadow 0.2s;\n}\n.button-add {\n  background: var(--primary);\n  border: 0.2rem solid var(--primary);\n  color: var(--light);\n}\n.button-cancel {\n  background: var(--light);\n  border: 0.2rem solid var(--primary);\n  color: var(--primary);\n}\n.button-edit {\n  margin-right: 2rem;\n  background-color: var(--success);\n  color: var(--light);\n}\n.button-delete {\n  margin-right: 2rem;\n  background-color: var(--danger);\n  color: var(--light);\n}\n.button-save {\n  background: var(--primary);\n  border: 0.2rem solid var(--primary);\n  color: var(--light);\n}\n.button-detail {\n  background: var(--success);\n  border: 0.2rem solid var(--success);\n  color: var(--light);\n}\n.button-back {\n  background: var(--danger);\n  border: 0.2rem solid var(--danger);\n  color: var(--light);\n}\n.button-yes {\n  background: var(--danger);\n  border: 0.2rem solid var(--danger);\n  color: var(--light);\n}\n.button-no {\n  background: var(--success);\n  border: 0.2rem solid var(--success);\n  color: var(--light);\n}\n\n.text-valid {\n  color: var(--success);\n  font-weight: bold;\n}\n.text-error {\n  color: var(--danger);\n  font-weight: bold;\n}\n.text-detail {\n  color: var(--info);\n  font-weight: bold;\n}\n.text-bold {\n  color: var(--dark);\n  font-weight: bold;\n}\n\n.calc {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100vh;\n  background: rgba(0, 0, 0, 0.5);\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.calc .modal {\n  background: white;\n  min-width: 30rem;\n  border-radius: 3px;\n  padding: 5rem;\n  box-shadow: var(--box-shadow);\n  text-align: center;\n}\n.calc .modal p {\n  margin: 1rem 0 3rem 0;\n}\n.calc .modal .button {\n  margin-left: 1rem;\n}\n\n.remove-scrolling {\n  height: 100%;\n  overflow: hidden;\n}\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n.off {\n  display: none;\n}\n\n:root {\n  --primary: #2e86de;\n  --secondary: #54a0ff;\n  --tertiary: #48dbfb;\n  --light: #f5f6fa;\n  --medium: #2d98da;\n  --dark: #333;\n  --success: #06ad3e;\n  --danger: #ea2027;\n  --info: #3867d6;\n  --warning: #fbc531;\n  --hint: #95a5a6;\n  --accent: #3c40c6;\n  --divider: #bdc3c7;\n  --basic: \"Mulish\", sans-serif;\n  --default: \"Roboto\", sans-serif;\n  --logo: \"Roboto Condensed\", sans-serif;\n  --form: Arial, Helvetica, sans-serif;\n  --shadow: 0 0.1rem 0.2rem 0 rgba(60, 64, 67, 0.3),\n    0 0.1rem 0.3rem 0.1rem rgba(60, 64, 67, 0.15);\n}\n\nbody {\n  height: 100vh;\n}\n\n.container {\n  min-height: 100vh;\n  display: grid;\n  grid: \"header\" auto \"content\" 1fr \"footer\" auto/auto;\n}\n\nheader {\n  grid-area: header;\n  align-items: center;\n  background: var(--primary);\n  position: fixed;\n  z-index: 1;\n  width: 100%;\n}\nheader .container-top-menu {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  padding: 1rem;\n}\nheader .container-top-menu a {\n  color: var(--light);\n  font-weight: 700;\n  letter-spacing: 0.1rem;\n}\nheader .container-top-menu .header-brand {\n  font-weight: 700;\n}\nheader .container-top-menu .header-brand:hover {\n  color: var(--tertiary);\n}\nheader .header-menu {\n  position: relative;\n}\nheader .header-menu ul {\n  display: flex;\n  margin-right: -0.5rem;\n}\n@media (max-width: 480px) {\n  header .header-menu ul {\n    display: none;\n  }\n}\nheader .header-menu ul li {\n  margin-left: 1rem;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  cursor: pointer;\n  transition: all 0.2s;\n}\nheader .header-menu ul li:hover {\n  transition: all 0.2s;\n  background-color: var(--secondary);\n}\nheader .header-menu ul li:hover a {\n  color: var(--light);\n}\nheader .header-menu ul li a {\n  font-size: 1.2rem;\n  border-radius: 0.2rem;\n}\nheader .header-menu ul .active {\n  background-color: var(--light);\n  border-radius: 0.2rem;\n}\nheader .header-menu ul .active a {\n  color: var(--secondary);\n}\nheader .header-menu-icon {\n  display: none;\n  font-size: 2rem;\n  color: var(--light);\n}\n@media (max-width: 480px) {\n  header .header-menu-icon {\n    display: block;\n  }\n}\nheader .mobile-menu {\n  display: none;\n  position: absolute;\n  top: 3.5rem;\n  right: -2rem;\n  padding: 0.5rem;\n  background-color: var(--primary);\n  box-shadow: var(--shadow);\n}\nheader .mobile-menu ul {\n  display: block;\n}\nheader .mobile-menu ul li {\n  margin: 1rem 2rem;\n}\nheader .mobile-menu.open {\n  display: block;\n}\n\nfooter {\n  grid-area: footer;\n  padding: 2rem;\n  height: 8rem;\n  background-color: var(--dark);\n  color: var(--light);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: bold;\n}\nfooter img {\n  height: 2rem;\n  width: 2rem;\n  margin-bottom: -0.1rem;\n}\nfooter .j {\n  font-family: var(--logo);\n  color: var(--danger);\n}\nfooter .e {\n  font-family: var(--logo);\n  color: var(--danger);\n}",".title {\n  &-underline {\n    padding-bottom: 2rem;\n    border-bottom: 0.1rem solid var(--divider);\n  }\n}\n\n.button {\n  border: 0;\n  border-radius: 0.3rem;\n  padding: 1rem 2rem;\n  font-weight: 700;\n  cursor: pointer;\n  transition: box-shadow 0.2s;\n  &:hover {\n    box-shadow: var(--shadow);\n    opacity: 89%;\n    transition: box-shadow 0.2s;\n  }\n  &-add {\n    background: var(--primary);\n    border: 0.2rem solid var(--primary);\n    color: var(--light);\n  }\n  &-cancel {\n    background: var(--light);\n    border: 0.2rem solid var(--primary);\n    color: var(--primary);\n  }\n  &-edit {\n    margin-right: 2rem;\n    background-color: var(--success);\n    color: var(--light);\n  }\n  &-delete {\n    margin-right: 2rem;\n    background-color: var(--danger);\n    color: var(--light);\n  }\n  &-save {\n    background: var(--primary);\n    border: 0.2rem solid var(--primary);\n    color: var(--light);\n  }\n  &-detail {\n    background: var(--success);\n    border: 0.2rem solid var(--success);\n    color: var(--light);\n  }\n  &-back {\n    background: var(--danger);\n    border: 0.2rem solid var(--danger);\n    color: var(--light);\n  }\n  &-yes {\n    background: var(--danger);\n    border: 0.2rem solid var(--danger);\n    color: var(--light);\n  }\n  &-no {\n    background: var(--success);\n    border: 0.2rem solid var(--success);\n    color: var(--light);\n  }\n}\n\n.text {\n  &-valid {\n    color: var(--success);\n    font-weight: bold;\n  }\n  &-error {\n    color: var(--danger);\n    font-weight: bold;\n  }\n  &-detail {\n    color: var(--info);\n    font-weight: bold;\n  }\n  &-bold {\n    color: var(--dark);\n    font-weight: bold;\n  }\n}\n\n.calc {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100vh;\n  background: rgba(0, 0, 0, 0.5);\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  .modal {\n    background: white;\n    min-width: 30rem;\n    border-radius: 3px;\n    padding: 5rem;\n    box-shadow: var(--box-shadow);\n    text-align: center;\n    p {\n      margin: 1rem 0 3rem 0;\n    }\n    .button {\n      margin-left: 1rem;\n    }\n  }\n}\n\n.remove-scrolling {\n  height: 100%;\n  overflow: hidden;\n}\n","* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n",".off {\n  display: none;\n}\n",":root {\n  // main color\n  --primary: #2e86de;\n  --secondary: #54a0ff;\n  --tertiary: #48dbfb;\n\n  // text color\n  --light: #f5f6fa;\n  --medium: #2d98da;\n  --dark: #333;\n\n  // utils => button, border, words etc\n  --success: #06ad3e;\n  --danger: #ea2027;\n  --info: #3867d6;\n  --warning: #fbc531;\n  --hint: #95a5a6;\n\n  // utils => border, words etc\n  --accent: #3c40c6;\n  --divider: #bdc3c7;\n\n  // font-family\n  --basic: \"Mulish\", sans-serif;\n  --default: \"Roboto\", sans-serif;\n  --logo: \"Roboto Condensed\", sans-serif;\n  --form: Arial, Helvetica, sans-serif;\n\n  // shadow\n  --shadow: 0 0.1rem 0.2rem 0 rgba(60, 64, 67, 0.3),\n    0 0.1rem 0.3rem 0.1rem rgba(60, 64, 67, 0.15);\n}\n","body {\n  height: 100vh;\n}\n\n.container {\n  min-height: 100vh;\n  display: grid;\n  grid:\n    \"header\" auto\n    \"content\" 1fr\n    \"footer\" auto /\n    auto;\n}\n","@use \"../partials/media-queries.scss\" as *;\n\nheader {\n  grid-area: header;\n  align-items: center;\n  background: var(--primary);\n  position: fixed;\n  z-index: 1;\n  width: 100%;\n  .container-top-menu {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    padding: 1rem;\n    a {\n      color: var(--light);\n      font-weight: 700;\n      letter-spacing: 0.1rem;\n    }\n    .header-brand {\n      font-weight: 700;\n      &:hover {\n        color: var(--tertiary);\n      }\n    }\n  }\n\n  .header-menu {\n    position: relative;\n    ul {\n      @include phone {\n        display: none;\n      }\n      display: flex;\n      margin-right: -0.5rem;\n      li {\n        margin-left: 1rem;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        cursor: pointer;\n        transition: all 0.2s;\n        &:hover {\n          transition: all 0.2s;\n          background-color: var(--secondary);\n          a {\n            color: var(--light);\n          }\n        }\n        a {\n          font-size: 1.2rem;\n          border-radius: 0.2rem;\n        }\n      }\n      .active {\n        background-color: var(--light);\n        border-radius: 0.2rem;\n        a {\n          color: var(--secondary);\n        }\n      }\n    }\n  }\n\n  .header-menu-icon {\n    display: none;\n    font-size: 2rem;\n    color: var(--light);\n    @include phone {\n      display: block;\n    }\n  }\n\n  .mobile-menu {\n    display: none;\n    position: absolute;\n    top: 3.5rem;\n    right: -2rem;\n    padding: 0.5rem;\n    background-color: var(--primary);\n    box-shadow: var(--shadow);\n    ul {\n      display: block;\n      li {\n        margin: 1rem 2rem;\n      }\n    }\n  }\n  .mobile-menu.open {\n    display: block;\n  }\n}\n","@mixin phone {\n  @media (max-width: 480px) {\n    @content;\n  }\n}\n\n@mixin tablet {\n  @media (min-width: 481px) and (max-width: 767px) {\n    @content;\n  }\n}\n\n@mixin laptop {\n  @media (min-width: 768px) and (max-width: 1199px) {\n    @content;\n  }\n}\n\n@mixin computer {\n  @media (min-width: 1200px) {\n    @content;\n  }\n}\n","footer {\n  grid-area: footer;\n  padding: 2rem;\n  height: 8rem;\n  background-color: var(--dark);\n  color: var(--light);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: bold;\n  img {\n    height: 2rem;\n    width: 2rem;\n    margin-bottom: -0.1rem;\n  }\n  .j {\n    font-family: var(--logo);\n    color: var(--danger);\n  }\n\n  .e {\n    font-family: var(--logo);\n    color: var(--danger);\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -9535,14 +9585,18 @@ var params = new URL(location.href);
 var adminName = params.search;
 containerGallery.innerHTML = "\n<fieldset>\n  <legend></legend>\n  <ul></ul>\n</fieldset>\n";
 containerGalleryDetail.classList.add("off");
-containerGalleryDetail.innerHTML = "\n<fieldset class=\"fieldset-detail\" >\n  <legend></legend>\n  <div class=\"gallery-detail\"></div>\n</fieldset>\n";
+containerGalleryDetail.innerHTML = "\n<fieldset class=\"fieldset-detail\" >\n  <legend></legend>\n  <p class=\"gallery-detail-name\"></p>\n  <div class=\"gallery-detail\"></div>\n  <div class=\"container-button\">\n  <button class=\"button button-detail\">D\xE9tail</button>\n  <button class=\"button button-back\">Retour</button>\n</div>\n</fieldset>\n";
+var galleryDetailName = containerGalleryDetail.querySelector(".gallery-detail-name");
+var galleryDetail = containerGalleryDetail.querySelector(".gallery-detail");
+var buttonDetail = containerGalleryDetail.querySelector(".button-detail");
+var buttonBack = containerGalleryDetail.querySelector(".button-back");
 switch (adminName) {
   case "?name=Alice%20-%20L%27Administratrice":
     {
       adminName = "Alice - L'Administratrice";
       containerAdminName.innerHTML = "<p>".concat(_assets_javascripts_admins_js__WEBPACK_IMPORTED_MODULE_28__.adminsArray[0].photographer, "</p>");
       containerAdminImg.innerHTML = "<img src=\"".concat(_assets_javascripts_admins_js__WEBPACK_IMPORTED_MODULE_28__.adminsArray[0].imgDetailSrc, "\" alt=\"").concat(_assets_javascripts_admins_js__WEBPACK_IMPORTED_MODULE_28__.adminsArray[0].imgDetailSrc, "\"/>");
-      containerAdminProfile.innerHTML = "<p>".concat(_assets_javascripts_admins_js__WEBPACK_IMPORTED_MODULE_28__.adminsArray[0].profile, "</p>");
+      containerAdminProfile.innerHTML = "<p><span> ".concat(_assets_javascripts_admins_js__WEBPACK_IMPORTED_MODULE_28__.adminsArray[0].photographer.slice(0, 5), "</span> ").concat(_assets_javascripts_admins_js__WEBPACK_IMPORTED_MODULE_28__.adminsArray[0].profile, "</p>");
       break;
     }
   case "?name=Ernest%20-%20L%27Administrateur":
@@ -9550,7 +9604,7 @@ switch (adminName) {
       adminName = "Ernest - L'Administrateur";
       containerAdminName.innerHTML = "<p>".concat(_assets_javascripts_admins_js__WEBPACK_IMPORTED_MODULE_28__.adminsArray[1].photographer, "</p>");
       containerAdminImg.innerHTML = "<img src=\"".concat(_assets_javascripts_admins_js__WEBPACK_IMPORTED_MODULE_28__.adminsArray[1].imgDetailSrc, "\" alt=\"").concat(_assets_javascripts_admins_js__WEBPACK_IMPORTED_MODULE_28__.adminsArray[1].imgDetailSrc, "\"/>");
-      containerAdminProfile.innerHTML = "<p>".concat(_assets_javascripts_admins_js__WEBPACK_IMPORTED_MODULE_28__.adminsArray[1].profile, "</p>");
+      containerAdminProfile.innerHTML = "<p><span>".concat(_assets_javascripts_admins_js__WEBPACK_IMPORTED_MODULE_28__.adminsArray[1].photographer.slice(0, 6), "</span> ").concat(_assets_javascripts_admins_js__WEBPACK_IMPORTED_MODULE_28__.adminsArray[1].profile, "</p>");
       break;
     }
   case "?name=Mia%20-%20L%27Administratrice":
@@ -9558,7 +9612,7 @@ switch (adminName) {
       adminName = "Mia - L'Administratrice";
       containerAdminName.innerHTML = "<p>".concat(_assets_javascripts_admins_js__WEBPACK_IMPORTED_MODULE_28__.adminsArray[2].photographer, "</p>");
       containerAdminImg.innerHTML = "<img src=\"".concat(_assets_javascripts_admins_js__WEBPACK_IMPORTED_MODULE_28__.adminsArray[2].imgDetailSrc, "\" alt=\"").concat(_assets_javascripts_admins_js__WEBPACK_IMPORTED_MODULE_28__.adminsArray[2].imgDetailSrc, "\"/>");
-      containerAdminProfile.innerHTML = "<p>".concat(_assets_javascripts_admins_js__WEBPACK_IMPORTED_MODULE_28__.adminsArray[2].profile, "</p>");
+      containerAdminProfile.innerHTML = "<p><span>".concat(_assets_javascripts_admins_js__WEBPACK_IMPORTED_MODULE_28__.adminsArray[2].photographer.slice(0, 3), "</span> ").concat(_assets_javascripts_admins_js__WEBPACK_IMPORTED_MODULE_28__.adminsArray[2].profile, "</p>");
       break;
     }
   case "?name=Ben%20-%20L%27Administrateur":
@@ -9566,7 +9620,7 @@ switch (adminName) {
       adminName = "Ben - L'Administrateur";
       containerAdminName.innerHTML = "<p>".concat(_assets_javascripts_admins_js__WEBPACK_IMPORTED_MODULE_28__.adminsArray[3].photographer, "</p>");
       containerAdminImg.innerHTML = "<img src=\"".concat(_assets_javascripts_admins_js__WEBPACK_IMPORTED_MODULE_28__.adminsArray[3].imgDetailSrc, "\" alt=\"").concat(_assets_javascripts_admins_js__WEBPACK_IMPORTED_MODULE_28__.adminsArray[3].imgDetailSrc, "\"/>");
-      containerAdminProfile.innerHTML = "<p>".concat(_assets_javascripts_admins_js__WEBPACK_IMPORTED_MODULE_28__.adminsArray[3].profile, "</p>");
+      containerAdminProfile.innerHTML = "<p><span>".concat(_assets_javascripts_admins_js__WEBPACK_IMPORTED_MODULE_28__.adminsArray[3].photographer.slice(0, 3), "</span> ").concat(_assets_javascripts_admins_js__WEBPACK_IMPORTED_MODULE_28__.adminsArray[3].profile, "</p>");
       break;
     }
 }
@@ -9643,11 +9697,9 @@ var createGalleryPhotosElement = function createGalleryPhotosElement(galleryPhot
     containerAdminName.classList.add("off");
     containerAdminProfile.classList.add("off");
     containerGallery.classList.add("off");
-    var galleryDetail = containerGalleryDetail.querySelector("div");
-    galleryDetail.innerHTML = "\n        <img src=\"".concat(galleryPhoto.picture, "\" />\n        <p> ").concat(galleryPhoto.picture.italics(), " </p>\n        <div class=\"container-button\">\n          <button class=\"button button-detail\">D\xE9tail</button>\n          <button class=\"button button-back\">Retour</button>\n        </div>\n        ");
+    galleryDetailName.innerHTML = "".concat(galleryPhoto.picture.italics());
+    galleryDetail.innerHTML = "<img src=\"".concat(galleryPhoto.picture, "\" />");
     body.classList.add("remove-scrolling");
-    var buttonDetail = galleryDetail.querySelector(".button-detail");
-    var buttonBack = galleryDetail.querySelector(".button-back");
     buttonDetail.addEventListener("click", function (event) {
       event.stopPropagation();
       if (homePhotoId) {
@@ -9661,7 +9713,7 @@ var createGalleryPhotosElement = function createGalleryPhotosElement(galleryPhot
       containerGalleryDetail.classList.add("off");
       containerAdminImg.classList.remove("off");
       containerAdminName.classList.remove("off");
-      containerAdminProfile.classList.remove("noff");
+      containerAdminProfile.classList.remove("off");
       containerGallery.classList.remove("off");
       body.classList.remove("remove-scrolling");
     });

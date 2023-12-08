@@ -2,6 +2,672 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/assets/javascripts/admins.js":
+/*!******************************************!*\
+  !*** ./src/assets/javascripts/admins.js ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   adminsArray: () => (/* binding */ adminsArray)
+/* harmony export */ });
+var adminsArray = [{
+  _id: 0,
+  imgSrc: "./assets/images/admins/alice-administratrice.jpg",
+  imgDetailSrc: "./assets/images/admins/alice-administratrice.jpg",
+  photographer: "Alice - L'Administratrice",
+  profile: "est une aventurière, elle aime aller d'endroit en endroit pour appronfondir ses connaissances. Elle ne recule devient rien, elle n'a pas peur d'être seule, son profil lui a permis d'évoluer rapidement en tant que photographe."
+}, {
+  _id: 1,
+  imgSrc: "./assets/images/admins/ernest-administrateur.jpg",
+  imgDetailSrc: "./assets/images/admins/ernest-administrateur.jpg",
+  photographer: "Ernest - L'Administrateur",
+  profile: "est un explorateur qui passe une majeur partie de son temps libre à chercher des zones inconnue même s'il risque sa vie. Son métier de militaire lui a permis d'acquérir un savoir non négligeable pour la nature et les animaux sauvages."
+}, {
+  _id: 2,
+  imgSrc: "./assets/images/admins/mia-administratrice.jpg",
+  imgDetailSrc: "./assets/images/admins/mia-administratrice.jpg",
+  photographer: "Mia - L'Administratrice",
+  profile: "est une visiteuse attiré par les plages, ses origines asiatique lui en permis d'avoir un côté artistique dès sa jeuneuse qu'elle n'hésite pas à en faire usage pour ses prises de vue et ainsi avoir des photos avec sa propre signature."
+}, {
+  _id: 3,
+  imgSrc: "./assets/images/admins/ben-administrateur.jpg",
+  imgDetailSrc: "./assets/images/admins/ben-administrateur.jpg",
+  photographer: "Ben - L'Administrateur",
+  profile: "est un voyageur, il a voyagé dans plusieurs pays en quête des plus belles villes du monde. Il a ainsi vite progressé ce qui lui a permis d'être administrateur. Malgré tout cela il considère qu'il a beaucoup à apprendre."
+}];
+
+/***/ }),
+
+/***/ "./src/assets/javascripts/home-photos.js":
+/*!***********************************************!*\
+  !*** ./src/assets/javascripts/home-photos.js ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   homePhotosArray: () => (/* binding */ homePhotosArray)
+/* harmony export */ });
+var homePhotosArray = [{
+  _id: 0,
+  photoSrc: "./assets/images/home-photos/home-deserts/desert-ae.jpg",
+  detailSrc: "./assets/images/home-detail/home-deserts-detail/desert-detail-ae.jpg",
+  picture: "Un Désert en Émirats Arabes Unis",
+  category: "Guide",
+  photographer: "Alice - L'Administratrice",
+  photographerImg: "./assets/images/admins/alice-administratrice.jpg",
+  createdAt: "le mardi 01 août 2023",
+  content: "Cette photo montre un désert en Émirats Arabes Unis. Le désert semble être vaste. Au loin on peut voir une montagne."
+}, {
+  _id: 1,
+  photoSrc: "./assets/images/home-photos/home-forets/foret-automne.jpg",
+  detailSrc: "./assets/images/home-detail/home-forets-detail/foret-detail-automne.jpg",
+  picture: "Une Forêt (Automne)",
+  category: "Quête",
+  photographer: "Ernest - L'Administrateur",
+  photographerImg: "./assets/images/admins/ernest-administrateur.jpg",
+  createdAt: "le mercredi 02 août 2023",
+  content: "Cette photo est une forêt en automne. Les pétales de fleurs au sol mélangé avec la couleur rougeatre des feuillages des arbres donne l'impression de voir une oeuvre d'art."
+}, {
+  _id: 2,
+  photoSrc: "./assets/images/home-photos/home-plages/plage-ag.jpg",
+  detailSrc: "./assets/images/home-detail/home-plages-detail/plage-detail-ag.jpg",
+  picture: "Une Plage en Antigua",
+  category: "Collection",
+  photographer: "Mia - L'Administratrice",
+  photographerImg: "./assets/images/admins/mia-administratrice.jpg",
+  createdAt: "le jeudi 03 août 2023",
+  content: "Cette photo montre une plage en Antigua. L'eau semble être propre et agréable pour se baigner. Le lieu semble être calme."
+}, {
+  _id: 3,
+  photoSrc: "./assets/images/home-photos/home-villes/ville-ap-jp.jpg",
+  detailSrc: "./assets/images/home-detail/home-villes-detail/ville-detail-ap-jp.jpg",
+  picture: "Une Ville au Japon (Après-Midi)",
+  category: "Partage",
+  photographer: "Ben - L'Administrateur",
+  photographerImg: "./assets/images/admins/ben-administrateur.jpg",
+  createdAt: "le vendredi 04 août 2023",
+  content: "Cette photo montre une ville du Japon. La ville semble être bien entretenu. Il y a la présence de personnes. On dirait qu'il y a des restaurants aux alentours."
+}, {
+  _id: 4,
+  photoSrc: "./assets/images/home-photos/home-deserts/desert-ap-eh.jpg",
+  detailSrc: "./assets/images/home-detail/home-deserts-detail/desert-detail-ap-eh.jpg",
+  picture: "Le Désert du Sahara (Après-Midi)",
+  category: "Quête",
+  photographer: "Alice - L'Administratrice",
+  photographerImg: "./assets/images/admins/alice-administratrice.jpg",
+  createdAt: "le lundi 07 août 2023",
+  content: "Cette photo montre le désert du Sahara. Le désert semble être vaste. Il y a plusieurs cassis ou dos d'âne de sable."
+}, {
+  _id: 5,
+  photoSrc: "./assets/images/home-photos/home-forets/foret-calif-us.jpg",
+  detailSrc: "./assets/images/home-detail/home-forets-detail/foret-detail-calif-us.jpg",
+  picture: "Une Forêt en Californie (USA)",
+  category: "Collection",
+  photographer: "Ernest - L'Administrateur",
+  photographerImg: "./assets/images/admins/ernest-administrateur.jpg",
+  createdAt: "le mardi 08 août 2023",
+  content: "Cette photo est une vue d'ensemble dans une forêt aux États-Unis. L'eau semble être potable. Les arbres sont de très grande taille."
+}, {
+  _id: 6,
+  photoSrc: "./assets/images/home-photos/home-plages/plage-aw.jpg",
+  detailSrc: "./assets/images/home-detail/home-plages-detail/plage-detail-aw.jpg",
+  picture: "Une Plage en Aruba",
+  category: "Partage",
+  photographer: "Mia - L'Administratrice",
+  photographerImg: "./assets/images/admins/mia-administratrice.jpg",
+  createdAt: "le mercredi 09 août 2023",
+  content: "Cette plage situé en Aruba semble être bien entretenu. Il y a présence de plusieurs personnes. Il semble y avoir de l'animation. L'eau semble être propre."
+}, {
+  _id: 7,
+  photoSrc: "./assets/images/home-photos/home-villes/ville-ar.jpg",
+  detailSrc: "./assets/images/home-detail/home-villes-detail/ville-detail-ar.jpg",
+  picture: "Une Ville en Argentine",
+  category: "Guide",
+  photographer: "Ben - L'Administrateur",
+  photographerImg: "./assets/images/admins/ben-administrateur.jpg",
+  createdAt: "le jeudi 10 août 2023",
+  content: "Cette photo montre une ville en Argentine. Il y a beaucoup de batiments. On remarque deux tours au loin. La ville semble être très grande."
+}, {
+  _id: 8,
+  photoSrc: "./assets/images/home-photos/home-deserts/desert-ariz-us.jpg",
+  detailSrc: "./assets/images/home-detail/home-deserts-detail/desert-detail-ariz-us.jpg",
+  picture: "Un Désert en Arizona (USA)",
+  category: "Collection",
+  photographer: "Alice - L'Administratrice",
+  photographerImg: "./assets/images/admins/alice-administratrice.jpg",
+  createdAt: "le vendredi 11 août 2023",
+  content: "Cette photo montre un désert dans l'état Arizona aux États-Unis. Il y a une grosse pierre entouré d'eau. Le désert semble être vaste. "
+}, {
+  _id: 9,
+  photoSrc: "./assets/images/home-photos/home-forets/foret-de.jpg",
+  detailSrc: "./assets/images/home-detail/home-forets-detail/foret-detail-de.jpg",
+  picture: "Une Forêts en Allemagne",
+  category: "Partage",
+  photographer: "Ernest - L'Administrateur",
+  photographerImg: "./assets/images/admins/ernest-administrateur.jpg",
+  createdAt: "le lundi 14 août 2023",
+  content: "Cette photo montre une forêt en Allemagne. Il y a plusieurs feuillage. Cette partie de la forêt est sombre. Il y a le rayon du soleil dans la partie gauche de la photo."
+}, {
+  _id: 10,
+  photoSrc: "./assets/images/home-photos/home-plages/plage-bs.jpg",
+  detailSrc: "./assets/images/home-detail/home-plages-detail/plage-detail-bs.jpg",
+  picture: "Une Plage aux Bahamas",
+  category: "Guide",
+  photographer: "Mia - L'Administratrice",
+  photographerImg: "./assets/images/admins/mia-administratrice.jpg",
+  createdAt: "le mardi 15 août 2023",
+  content: "Cette photo montre une plage aux Bahamas. L'eau semble être jolie."
+}, {
+  _id: 11,
+  photoSrc: "./assets/images/home-photos/home-villes/ville-calif-us.jpg",
+  detailSrc: "./assets/images/home-detail/home-villes-detail/ville-detail-calif-us.jpg",
+  picture: "Une Ville en Californie (USA)",
+  category: "Quête",
+  photographer: "Ben - L'Administrateur",
+  photographerImg: "./assets/images/admins/ben-administrateur.jpg",
+  createdAt: "le mercredi 16 août 2023",
+  content: "Cette photo montre une ville en Californie aux États-Unis. Il y a plusieurs arbres et maisons. L'ensemble des toits des maisons varie d'une couleur à une autre."
+}, {
+  _id: 12,
+  photoSrc: "./assets/images/home-photos/home-deserts/desert-au.jpg",
+  detailSrc: "./assets/images/home-detail/home-deserts-detail/desert-detail-au.jpg",
+  picture: "Un Désert en Australie",
+  category: "Partage",
+  photographer: "Alice - L'Administratrice",
+  photographerImg: "./assets/images/admins/alice-administratrice.jpg",
+  createdAt: "le jeudi 17 août 2023",
+  content: "Cette photo montre un désert en Australie. On voit quelque feuillage au sol. Ce désert semble être vaste."
+}, {
+  _id: 13,
+  photoSrc: "./assets/images/home-photos/home-forets/foret-ee.jpg",
+  detailSrc: "./assets/images/home-detail/home-forets-detail/foret-detail-ee.jpg",
+  picture: "Une Forêt en Estonie",
+  category: "Guide",
+  photographer: "Ernest - L'Administrateur",
+  photographerImg: "./assets/images/admins/ernest-administrateur.jpg",
+  createdAt: "le vendredi 18 août 2023",
+  content: "Cette photo montre une forêt en Estonie. Les arbres de cette forêt sont immenses à un tel point qu'il est difficile de voir leur sommet. Cette forêt semble être  bien entretenu."
+}, {
+  _id: 14,
+  photoSrc: "./assets/images/home-photos/home-plages/plage-es.jpg",
+  detailSrc: "./assets/images/home-detail/home-plages-detail/plage-detail-es.jpg",
+  picture: "Une Plage en Espagne",
+  category: "Quête",
+  photographer: "Mia - L'Administratrice",
+  photographerImg: "./assets/images/admins/mia-administratrice.jpg",
+  createdAt: "le lundi 21 août 2023",
+  content: "Cette photo montre une plage en Espagne. Il y a plusieurs rocher. Au loin, on peut apercevoir les lumières de la ville."
+}, {
+  _id: 15,
+  photoSrc: "./assets/images/home-photos/home-villes/ville-es.jpg",
+  detailSrc: "./assets/images/home-detail/home-villes-detail/ville-detail-es.jpg",
+  picture: "Une Ville en Espagne",
+  category: "Collection",
+  photographer: "Ben - L'Administrateur",
+  photographerImg: "./assets/images/admins/ben-administrateur.jpg",
+  createdAt: "le mardi 22 août 2023",
+  content: "Cette photo montre une ville en Espagne. On remarque qu'il y a plusieurs maisons et plusieurs bâtiments. Au loin on remarque un grand édifice."
+}, {
+  _id: 16,
+  photoSrc: "./assets/images/home-photos/home-deserts/desert-calif-us.jpg",
+  detailSrc: "./assets/images/home-detail/home-deserts-detail/desert-detail-calif-us.jpg",
+  picture: "Un Désert en Californie (USA)",
+  category: "Guide",
+  photographer: "Alice - L'Administratrice",
+  photographerImg: "./assets/images/admins/alice-administratrice.jpg",
+  createdAt: "le mercredi 23 août 2023",
+  content: "Cette photo montre un désert en Californie des États-Unis. On dirait que cette photo est une prise en biai."
+}, {
+  _id: 17,
+  photoSrc: "./assets/images/home-photos/home-forets/foret-ete.jpg",
+  detailSrc: "./assets/images/home-detail/home-forets-detail/foret-detail-ete.jpg",
+  picture: "Une Forêt (Été)",
+  category: "Quête",
+  photographer: "Ernest - L'Administrateur",
+  photographerImg: "./assets/images/admins/ernest-administrateur.jpg",
+  createdAt: "le jeudi 24 août 2023",
+  content: "Cette photo montre une forêt en été. Cette partie de la forêt semble être idéale pour la promenade. Ce pont semble être pratique pour ceux qui aiment faire de la randonnée."
+}, {
+  _id: 18,
+  photoSrc: "./assets/images/home-photos/home-plages/plage-fj.jpg",
+  detailSrc: "./assets/images/home-detail/home-plages-detail/plage-detail-fj.jpg",
+  picture: "Une Plage aux Îles Fidji",
+  category: "Collection",
+  photographer: "Mia - L'Administratrice",
+  photographerImg: "./assets/images/admins/mia-administratrice.jpg",
+  createdAt: "le vendredi 25 août 2023",
+  content: "Cette photo montre une plage situé aux Îles de Fidji. Cette plage semble être jolie. L'eau semble être propre. Il semble qu'il y ait des activités aux alentours."
+}, {
+  _id: 19,
+  photoSrc: "./assets/images/home-photos/home-villes/ville-province-it.jpg",
+  detailSrc: "./assets/images/home-detail/home-villes-detail/ville-detail-province-it.jpg",
+  picture: "Une Ville en Province (Italie)",
+  category: "Partage",
+  photographer: "Ben - L'Administrateur",
+  photographerImg: "./assets/images/admins/ben-administrateur.jpg",
+  createdAt: "le lundi 28 août 2023",
+  content: "Cette photo montre une ville en Province de l'Italie. L'eau de la mer semble être très jolie. Il y a un bâteau , il y a également plusieurs bâtiments de diverse couleur. Au loin on remarque la compagne."
+}, {
+  _id: 20,
+  photoSrc: "./assets/images/home-photos/home-deserts/desert-cl.jpg",
+  detailSrc: "./assets/images/home-detail/home-deserts-detail/desert-detail-cl.jpg",
+  picture: "Un Désert au Chili ",
+  category: "Quête",
+  photographer: "Alice - L'Administratrice",
+  photographerImg: "./assets/images/admins/alice-administratrice.jpg",
+  createdAt: "le mardi 29 août 2023",
+  content: "Cette photo montre un désert au Chili. Le sol semble être sec et dur. Le désert semble être vast. Au loin on peut voir des montagnes."
+}, {
+  _id: 21,
+  photoSrc: "./assets/images/home-photos/home-forets/foret-gb.jpg",
+  detailSrc: "./assets/images/home-detail/home-forets-detail/foret-detail-gb.jpg",
+  picture: "Une Forêt en Grande-Bretagne",
+  category: "Collection",
+  photographer: "Ernest - L'Administrateur",
+  photographerImg: "./assets/images/admins/ernest-administrateur.jpg",
+  createdAt: "le mercredi 30 août 2023",
+  content: "Cette photo montre une forêt en Grande-Bretagne. Cette forêt semble donner la possibilité de faire du velo ou de marcher. Il y a plusieurs arbres."
+}, {
+  _id: 22,
+  photoSrc: "./assets/images/home-photos/home-plages/plage-gr.jpg",
+  detailSrc: "./assets/images/home-detail/home-plages-detail/plage-detail-gr.jpg",
+  picture: "Une Plage en Grèce",
+  category: "Partage",
+  photographer: "Mia - L'Administratrice",
+  photographerImg: "./assets/images/admins/mia-administratrice.jpg",
+  createdAt: "le jeudi 31 août 2023",
+  content: "Cette photo montre une plage en Grèce. L'eau de la mer semble être belle et propre. Cette plage est bien entretenu. Il y a des collines aux environs."
+}, {
+  _id: 23,
+  photoSrc: "./assets/images/home-photos/home-villes/ville-se.jpg",
+  detailSrc: "./assets/images/home-detail/home-villes-detail/ville-detail-se.jpg",
+  picture: "Une Ville en Suède",
+  category: "Guide",
+  photographer: "Ben - L'Administrateur",
+  photographerImg: "./assets/images/admins/ben-administrateur.jpg",
+  createdAt: "le vendredi 01 septembre 2023",
+  content: "Cette photo montre une rue d'une ville en Suède. Il y a quelque pavillons. La rue semble faire plusieurs kilomètres. La rue semble être calme. Il y a la présence de nuages et d'arbres."
+}, {
+  _id: 24,
+  photoSrc: "./assets/images/home-photos/home-deserts/desert-es.jpg",
+  detailSrc: "./assets/images/home-detail/home-deserts-detail/desert-detail-es.jpg",
+  picture: "Un Désert en Espagne",
+  category: "Collection",
+  photographer: "Alice - L'Administratrice",
+  photographerImg: "./assets/images/admins/alice-administratrice.jpg",
+  createdAt: "le lundi 04 septembre 2023",
+  content: "Cette photo montre un désert en Espagne. Le désert semble être vaste. Il y a des trous qui ressemble à des empreintes d'animaux."
+}, {
+  _id: 25,
+  photoSrc: "./assets/images/home-photos/home-forets/foret-hiver.jpg",
+  detailSrc: "./assets/images/home-detail/home-forets-detail/foret-detail-hiver.jpg",
+  picture: "Une Forêt (Hiver)",
+  category: "Partage",
+  photographer: "Ernest - L'Administrateur",
+  photographerImg: "./assets/images/admins/ernest-administrateur.jpg",
+  createdAt: "le mardi 05 septembre 2023",
+  content: "Cette photo montre une forêt en période hivernale. La forêt semble être vaste. Les arbres sont grands. On arrive distinguer un chemin."
+}, {
+  _id: 26,
+  photoSrc: "./assets/images/home-photos/home-plages/plage-il.jpg",
+  detailSrc: "./assets/images/home-detail/home-plages-detail/plage-detail-il.jpg",
+  picture: "Une Plage en Israël",
+  category: "Guide",
+  photographer: "Mia - L'Administratrice",
+  photographerImg: "./assets/images/admins/mia-administratrice.jpg",
+  createdAt: "le mercredi 06 septembre 2023",
+  content: "Cette photo montre une plage situé en Israël. Il semble y avoir des restaurants, des activités, des jeux, des bus touristique, autour de la plage."
+}, {
+  _id: 27,
+  photoSrc: "./assets/images/home-photos/home-villes/ville-soir-jp.jpg",
+  detailSrc: "./assets/images/home-detail/home-villes-detail/ville-detail-soir-jp.jpg",
+  picture: "Une Ville au Japon (Soir)",
+  category: "Quête",
+  photographer: "Ben - L'Administrateur",
+  photographerImg: "./assets/images/admins/ben-administrateur.jpg",
+  createdAt: "le jeudi 07 septembre 2023",
+  content: "Cette photo montre une ville au Japon pendant le soir. Il y a plusieurs immeubles et plusieurs bâtiments. On remarque une tour rouge. La ville semble être une grande ville."
+}, {
+  _id: 28,
+  photoSrc: "./assets/images/home-photos/home-deserts/desert-il.jpg",
+  detailSrc: "./assets/images/home-detail/home-deserts-detail/desert-detail-il.jpg",
+  picture: "Un Désert en Israël",
+  category: "Partage",
+  photographer: "Alice - L'Administratrice",
+  photographerImg: "./assets/images/admins/alice-administratrice.jpg",
+  createdAt: "le vendredi 08 septembre 2023",
+  content: "Cette photo montre un désert en Israël. On remarque qu'il y a plusieurs chameaux et plusieurs chemins. On remarque aussi qu'il a des montagnes au loin. Le désert semble être immense. "
+}, {
+  _id: 29,
+  photoSrc: "./assets/images/home-photos/home-forets/foret-id.jpg",
+  detailSrc: "./assets/images/home-detail/home-forets-detail/foret-detail-id.jpg",
+  picture: "Une Forêt en Inde",
+  category: "Guide",
+  photographer: "Ernest - L'Administrateur",
+  photographerImg: "./assets/images/admins/ernest-administrateur.jpg",
+  createdAt: "le lundi 11 septembre 2023",
+  content: "Cette photo montre une forêt en Inde. Le sol semble être doux et agréable pour la marche à pieds. Il y a plusieurs arbres et feuillages."
+}, {
+  _id: 30,
+  photoSrc: "./assets/images/home-photos/home-plages/plage-mv.jpg",
+  detailSrc: "./assets/images/home-detail/home-plages-detail/plage-detail-mv.jpg",
+  picture: "Une Plage aux Maldives",
+  category: "Quête",
+  photographer: "Mia - L'Administratrice",
+  photographerImg: "./assets/images/admins/mia-administratrice.jpg",
+  createdAt: "le mardi 12 septembre 2023",
+  content: "Cette photo montre une plage situé aux Maldives. Il y a avec un cocotier. L'eau de la mer est claire et transparente à partir d'une certaine distance puis elle est foncée au loin."
+}, {
+  _id: 31,
+  photoSrc: "./assets/images/home-photos/home-villes/ville-tr.jpg",
+  detailSrc: "./assets/images/home-detail/home-villes-detail/ville-detail-tr.jpg",
+  picture: "Une Ville en Turquie",
+  category: "Collection",
+  photographer: "Ben - L'Administrateur",
+  photographerImg: "./assets/images/admins/ben-administrateur.jpg",
+  createdAt: "le mercredi 13 septembre 2023",
+  content: "Cette photo montre une ville en Turquie. Il y a plusieurs immeubles de différentes couleurs. On distinque au loin quelque chose qui ressemble le haut d'un château."
+}, {
+  _id: 32,
+  photoSrc: "./assets/images/home-photos/home-deserts/desert-matin-eh.jpg",
+  detailSrc: "./assets/images/home-detail/home-deserts-detail/desert-detail-matin-eh.jpg",
+  picture: "Le Désert du Sahara (Matin)",
+  category: "Guide",
+  photographer: "Alice - L'Administratrice",
+  photographerImg: "./assets/images/admins/alice-administratrice.jpg",
+  createdAt: "le jeudi 14 septembre 2023",
+  content: "Cette photo montre le désert de Sahara dans la matinéé. Le sable semble être jolie et agréable. Il semblerait qu'on peut marcher les pieds nus."
+}, {
+  _id: 33,
+  photoSrc: "./assets/images/home-photos/home-forets/foret-printemps.jpg",
+  detailSrc: "./assets/images/home-detail/home-forets-detail/foret-detail-printemps.jpg",
+  picture: "Une Forêt (Printemps)",
+  category: "Quête",
+  photographer: "Ernest - L'Administrateur",
+  photographerImg: "./assets/images/admins/ernest-administrateur.jpg",
+  createdAt: "le vendredi 15 septembre 2023",
+  content: "Cette photo montre une forêt en printemps. Le chemin est ensoleilé. Cette photo donne l'air qu'on peut faire une promenade ou une randonné familiale."
+}, {
+  _id: 34,
+  photoSrc: "./assets/images/home-photos/home-plages/plage-ru.jpg",
+  detailSrc: "./assets/images/home-detail/home-plages-detail/plage-detail-ru.jpg",
+  picture: "Une Plage en Russie",
+  category: "Collection",
+  photographer: "Mia - L'Administratrice",
+  photographerImg: "./assets/images/admins/mia-administratrice.jpg",
+  createdAt: "le lundi 18 septembre 2023",
+  content: "Cette photo montre une plage en Russie. L'eau de la mer est bleu foncée. On voit aussi un bateau bleu clair au bord de la mer. Le couleur du sable est clair."
+}, {
+  _id: 35,
+  photoSrc: "./assets/images/home-photos/home-villes/ville-urbain-ge.jpg",
+  detailSrc: "./assets/images/home-detail/home-villes-detail/ville-detail-urbain-ge.jpg",
+  picture: "Une Ville Urbaine en Allemagne",
+  category: "Partage",
+  photographer: "Ben - L'Administrateur",
+  photographerImg: "./assets/images/admins/ben-administrateur.jpg",
+  createdAt: "le mardi 19 septembre 2023",
+  content: "Cette photo montre une photo dans une ville urbaine en Allemagne. Il y a plusieurs building et quelque édifice. On voit aussi des personnes ainsi qu'une place centrale."
+}, {
+  _id: 36,
+  photoSrc: "./assets/images/home-photos/home-deserts/desert-nev-us.jpg",
+  detailSrc: "./assets/images/home-detail/home-deserts-detail/desert-detail-nev-us.jpg",
+  picture: "Un Désert en Neveda (USA)",
+  category: "Quête",
+  photographer: "Alice - L'Administratrice",
+  photographerImg: "./assets/images/admins/alice-administratrice.jpg",
+  createdAt: "le mercredi 20 septembre 2023",
+  content: "Cette photo montre un désert en Neveda des États-Unis. Ce désert semble être pierreux et caillouteux. Il y a des montagnes et un peu de végétation."
+}, {
+  _id: 37,
+  photoSrc: "./assets/images/home-photos/home-forets/foret-se.jpg",
+  detailSrc: "./assets/images/home-detail/home-forets-detail/foret-detail-se.jpg",
+  picture: "Une Forêt en Suède",
+  category: "Collection",
+  photographer: "Ernest - L'Administrateur",
+  photographerImg: "./assets/images/admins/ernest-administrateur.jpg",
+  createdAt: "le jeudi 21 septembre 2023",
+  content: "Cette photo montre une forêt en Suède. Il y a des arbres et quelque cassis ou dos d'âne."
+}, {
+  _id: 38,
+  photoSrc: "./assets/images/home-photos/home-plages/plage-us.jpg",
+  detailSrc: "./assets/images/home-detail/home-plages-detail/plage-detail-us.jpg",
+  picture: "Une Plage aux États-Unis",
+  category: "Partage",
+  photographer: "Mia - L'Administratrice",
+  photographerImg: "./assets/images/admins/mia-administratrice.jpg",
+  createdAt: "le vendredi 22 septembre 2023",
+  content: "Cette photo montre une plage aux États-Unis. L'eau de la mer semble être jolie. Il semble y avoir fréquemment des vagues. Cette plage semble être bien entretenu. "
+}, {
+  _id: 39,
+  photoSrc: "./assets/images/home-photos/home-villes/ville-za.jpg",
+  detailSrc: "./assets/images/home-detail/home-villes-detail/ville-detail-za.jpg",
+  picture: "Une Ville en Nouvelle-Zélande",
+  category: "Guide",
+  photographer: "Ben - L'Administrateur",
+  photographerImg: "./assets/images/admins/ben-administrateur.jpg",
+  createdAt: "le lundi 25 septembre 2023",
+  content: "Cette photo montre une ville en Nouvelle-Zélande. Il y a quelque bâtiments du côté droit. Il y a une grande édifice du côté gauche. Il y a de la circulation avec des voitures et un bus."
+}, {
+  _id: 40,
+  photoSrc: "./assets/images/home-photos/home-deserts/desert-nmex-us.jpg",
+  detailSrc: "./assets/images/home-detail/home-deserts-detail/desert-detail-nmex-us.jpg",
+  picture: "Un Désert au Nouveau-Mexique (USA)",
+  category: "Collection",
+  photographer: "Alice - L'Administratrice",
+  photographerImg: "./assets/images/admins/alice-administratrice.jpg",
+  createdAt: "le mardi 26 septembre 2023",
+  content: "Cette photo montre un desert du Nouveau-Mexique aux États-Unis. Ce désert ressemble à un chateau de sable. Il y a quelques végétations."
+}];
+
+/***/ }),
+
+/***/ "./src/assets/javascripts/link.js":
+/*!****************************************!*\
+  !*** ./src/assets/javascripts/link.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   adminsArray: () => (/* reexport safe */ _admins_js__WEBPACK_IMPORTED_MODULE_0__.adminsArray),
+/* harmony export */   homePhotosArray: () => (/* reexport safe */ _home_photos_js__WEBPACK_IMPORTED_MODULE_1__.homePhotosArray),
+/* harmony export */   openModal: () => (/* reexport safe */ _modal_js__WEBPACK_IMPORTED_MODULE_3__.openModal),
+/* harmony export */   usersArray: () => (/* reexport safe */ _users_js__WEBPACK_IMPORTED_MODULE_2__.usersArray)
+/* harmony export */ });
+/* harmony import */ var _admins_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./admins.js */ "./src/assets/javascripts/admins.js");
+/* harmony import */ var _home_photos_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home-photos.js */ "./src/assets/javascripts/home-photos.js");
+/* harmony import */ var _users_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./users.js */ "./src/assets/javascripts/users.js");
+/* harmony import */ var _modal_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modal.js */ "./src/assets/javascripts/modal.js");
+// folder javascripts start
+
+
+
+
+// folder javascripts end
+
+/***/ }),
+
+/***/ "./src/assets/javascripts/modal.js":
+/*!*****************************************!*\
+  !*** ./src/assets/javascripts/modal.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   openModal: () => (/* binding */ openModal)
+/* harmony export */ });
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/modules/es.object.to-string.js */ "./node_modules/core-js/modules/es.object.to-string.js");
+/* harmony import */ var core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_object_to_string_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! core-js/modules/es.promise.js */ "./node_modules/core-js/modules/es.promise.js");
+/* harmony import */ var core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_promise_js__WEBPACK_IMPORTED_MODULE_1__);
+
+
+var body = document.querySelector("body");
+var calc;
+var modal;
+var buttonNo;
+var buttonYes;
+var createCalc = function createCalc() {
+  calc = document.createElement("div");
+  calc.classList.add("calc");
+};
+var createModal = function createModal(question) {
+  body.classList.add("remove-scrolling");
+  modal = document.createElement("div");
+  modal.classList.add("modal");
+  modal.innerHTML = "\n      <p>".concat(question, "</p>\n    ");
+  buttonNo = document.createElement("button");
+  buttonNo.innerText = "Non";
+  buttonNo.classList.add("button", "button-no");
+  buttonYes = document.createElement("button");
+  buttonYes.classList.add("button", "button-yes");
+  buttonYes.innerText = "Oui";
+  modal.addEventListener("click", function (event) {
+    event.stopPropagation();
+  });
+  modal.append(buttonNo, buttonYes);
+};
+function openModal(question) {
+  createCalc();
+  createModal(question);
+  calc.append(modal);
+  body.append(calc);
+  return new Promise(function (resolve, reject) {
+    calc.addEventListener("click", function () {
+      resolve(false);
+      calc.remove();
+      body.classList.remove("remove-scrolling");
+    });
+    buttonNo.addEventListener("click", function (event) {
+      event.stopPropagation();
+      resolve(false);
+      calc.remove();
+      body.classList.remove("remove-scrolling");
+    });
+    buttonYes.addEventListener("click", function (event) {
+      event.stopPropagation();
+      resolve(true);
+      calc.remove();
+    });
+  });
+}
+
+/***/ }),
+
+/***/ "./src/assets/javascripts/users.js":
+/*!*****************************************!*\
+  !*** ./src/assets/javascripts/users.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   usersArray: () => (/* binding */ usersArray)
+/* harmony export */ });
+var usersArray = [{
+  _id: 0,
+  imgSrc: "./assets/images/users-small/users-aventure-small/gustave-aventurier-small.jpg",
+  imgDetailSrc: "./assets/images/users/users-aventure/gustave-aventurier.jpg",
+  photographer: "Gustave - L'Aventurier",
+  profile: "est un aventurier qui aime aller un peu partout. Il est équipé d'une torche qui lui permet de prendre des photos exceptionnelles dans des endroits sombres."
+}, {
+  _id: 1,
+  imgSrc: "./assets/images/-users-small/users-aventure-small/julie-aventuriere-small",
+  imgDetailSrc: "./assets/images/users/users-aventure/julie-aventuriere.jpg",
+  photographer: "Julie - L'Aventurière",
+  profile: "est une aventurière qui s'est entraîné dur pour surmonter toutes sortes d'obstacle. Ses attitudes d'athlétique l'aide à atteindre des lieux difficilement accessible."
+}, {
+  _id: 2,
+  imgSrc: "./assets/images/users-small/users-aventure-small/henry-aventurier-small.jpg",
+  imgDetailSrc: "./assets/images/users/users-aventure/henry-aventurier.jpg",
+  photographer: "Henry - L'Aventurier",
+  profile: "est un aventurier qui préfère le jour. Il ne se complique pas, lorsqu'il part dans un endroit il en profite pour prendre des photos en cours de route."
+}, {
+  _id: 3,
+  imgSrc: "./assets/images/users-small/users-aventure-small/zoe-aventuriere-small.jpg",
+  imgDetailSrc: "./assets/images/users/users-aventure/zoe-aventuriere.jpg",
+  photographer: "Zoé - L'Aventurière",
+  profile: "est un aventurière qui aime prendre des photos sur vue d'ensemble, pour cela elle n'hésite pas à monter sur des collines pour des prises de vues paronamique."
+}, {
+  _id: 4,
+  imgSrc: "./assets/images/users-small/users-exploration-small/flora-exploratrice-small",
+  imgDetailSrc: "./assets/images/users/users-exploration/flora-exploratrice.jpg",
+  photographer: "Flora - L'Exploratrice",
+  profile: "est une exploratrice qui aime la nature. Elle suit les chemins qui ont des fleurs car selon elle là où il y a des fleurs il y a quelque choses de bon à prendre en photo."
+}, {
+  _id: 5,
+  imgSrc: "./assets/images/users-small/users-exploration-small/denver-explorateur-small.jpg",
+  imgDetailSrc: "./assets/images/users/users-exploration/denver-explorateur.jpg",
+  photographer: "Denver - L'Explorateur",
+  profile: "est un explorateur qui adore les endroits rocheux. Comme il a peur des ours avant d'explorer un lieu il vérifie toujours si il n'y a pas des traces d'ours."
+}, {
+  _id: 6,
+  imgSrc: "./assets/images/users-small/users-exploration-small/inaya-exploratrice-small.jpg",
+  imgDetailSrc: "./assets/images/users/users-exploration/inaya-exploratrice.jpg",
+  photographer: "Inaya - L'Exploratrice",
+  profile: "est un exploratrice qui a un photoscope qui l'a permet de prendre des photos de qualité à très longue distant. Plus tard elle souhaite devenir photographe professionnel."
+}, {
+  _id: 7,
+  imgSrc: "./assets/images/users-small/users-exploration-small/seth-explorateur-small.jpg",
+  imgDetailSrc: "./assets/images/users/users-exploration/seth-explorateur.jpg",
+  photographer: "Seth - L'Explorateur",
+  profile: "est un explorateur de jeune âge. Il a acquis beaucoup d'expérience à l'aide de son entourage. Aujourd'hui il est capable de prendre des photos pour des couvertures de magazine."
+}, {
+  _id: 8,
+  imgSrc: "./assets/images/users-small/users-visite-small/lance-visiteur-small",
+  imgDetailSrc: "./assets/images/users/users-visite/lance-visiteur.jpg",
+  photographer: "Lance - Le Visiteur",
+  profile: "est un visiteur qui aime les endroits où il y a du monde en activité. Par exemple, il prend plaisir à prendre des surfeurs en photos en plein action."
+}, {
+  _id: 9,
+  imgSrc: "./assets/images/users-small/users-visite-small/nadia-visiteuse-small.jpg",
+  imgDetailSrc: "./assets/images/users/users-visite/nadia-visiteuse.jpg",
+  photographer: "Nadia - La Visiteuse",
+  profile: "est une visiteuse qui aime les chemins desertique car elle y trouve de l'inspiration. Elle est une photographe organisé dans ses tâches."
+}, {
+  _id: 10,
+  imgSrc: "./assets/images/users-small/users-visite-small/xavier-visiteur-small.jpg",
+  imgDetailSrc: "./assets/images/users/users-visite/xavier-visiteur.jpg",
+  photographer: "Xavier - Le Visiteur",
+  profile: "est un visiteur qui aime la simplicité. Il sait s'adapter à chaque situation. Il aime églament prendre avec lui le stricte miminum pour être éfficace."
+}, {
+  _id: 11,
+  imgSrc: "./assets/images/users-small/users-visite-small/ornella-visiteuse-small.jpg",
+  imgDetailSrc: "./assets/images/users/users-visite/ornella-visiteuse.jpg",
+  photographer: "Ornella - La Visiteuse",
+  profile: "est une visiteuse qui est plutôt urbaine. Avant de prendre une photo, elle regarde toujours tout les détails aux aléantours car elle vise la perfection."
+}, {
+  _id: 12,
+  imgSrc: "./assets/images/users-small/users-voyage-small/cerise-voyageuse-small.jpg",
+  imgDetailSrc: "./assets/images/users/users-voyage/cerise-voyageuse.jpg",
+  photographer: "Cerise - La Voyageuse",
+  profile: "est une voyageuse qui se déplace toujours accompagnée de son animal de compagnie Fraise. Ensemble elles forment un bon duo."
+}, {
+  _id: 13,
+  imgSrc: "./assets/images/users-small/users-voyage-small/philibert-voyageur-small.jpg",
+  imgDetailSrc: "./assets/images/users/users-voyage/philibert-voyageur.jpg",
+  photographer: "Philibert - Le Voyageur",
+  profile: "est un voyageur qui adore les lieux humide. Il a aussi du plaisir à prendre des photos dans la brume. Ses photos ont attirés l'attention de plusieurs magazines."
+}, {
+  _id: 14,
+  imgSrc: "./assets/images/users-small/users-voyage-small/roxane-voyageuse-small.jpg",
+  imgDetailSrc: "./assets/images/users/users-voyage/roxane-voyageuse.jpg",
+  photographer: "Roxane - La Voyageuse",
+  profile: "est une voyageuse qui a un âge avancé. La présence de son mari George l'aide à garder la bonne humeur et la motivation quoiqu'il arrive."
+}, {
+  _id: 15,
+  imgSrc: "./assets/images/users-small/users-voyage-small/yuu-voyageur-small.jpg",
+  imgDetailSrc: "./assets/images/users/users-voyage/yuu-voyageur.jpg",
+  photographer: "Yuu - Le Voyageur",
+  profile: "est un voyageur qui a fait fortune en utilisant son talent de photographe. Aujourd'hui il a fondé son agence dont le but d'aider d'autres à réussir. "
+}];
+
+/***/ }),
+
 /***/ "./node_modules/core-js/internals/a-callable.js":
 /*!******************************************************!*\
   !*** ./node_modules/core-js/internals/a-callable.js ***!
@@ -7493,6 +8159,16 @@ a {
   border: 0.2rem solid var(--danger);
   color: var(--light);
 }
+.button-yes {
+  background: var(--danger);
+  border: 0.2rem solid var(--danger);
+  color: var(--light);
+}
+.button-no {
+  background: var(--success);
+  border: 0.2rem solid var(--success);
+  color: var(--light);
+}
 
 .text-valid {
   color: var(--success);
@@ -7505,6 +8181,41 @@ a {
 .text-detail {
   color: var(--info);
   font-weight: bold;
+}
+.text-bold {
+  color: var(--dark);
+  font-weight: bold;
+}
+
+.calc {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calc .modal {
+  background: white;
+  min-width: 30rem;
+  border-radius: 3px;
+  padding: 5rem;
+  box-shadow: var(--box-shadow);
+  text-align: center;
+}
+.calc .modal p {
+  margin: 1rem 0 3rem 0;
+}
+.calc .modal .button {
+  margin-left: 1rem;
+}
+
+.remove-scrolling {
+  height: 100%;
+  overflow: hidden;
 }
 
 * {
@@ -7664,7 +8375,7 @@ footer .j {
 footer .e {
   font-family: var(--logo);
   color: var(--danger);
-}`, "",{"version":3,"sources":["webpack://./src/assets/sass/partials/_base.scss","webpack://./src/assets/sass/styles.scss","webpack://./src/assets/sass/partials/_classes.scss","webpack://./src/assets/sass/partials/_reset.scss","webpack://./src/assets/sass/partials/_utils.scss","webpack://./src/assets/sass/partials/_variables.scss","webpack://./src/assets/sass/layouts/_body.scss","webpack://./src/assets/sass/layouts/_header.scss","webpack://./src/assets/sass/partials/_media-queries.scss","webpack://./src/assets/sass/layouts/_footer.scss"],"names":[],"mappings":"AAAA;EACE,gBAAA;ACCF;;ADEA;EACE,iBAAA;EACA,kBAAA;EACA,yBAAA;ACCF;;ADEA;EACE,iBAAA;ACCF;;ADEA;EACE,eAAA;ACCF;;ADEA;EACE,iBAAA;ACCF;;ADEA;EACE,eAAA;ACCF;;ADEA;EACE,gBAAA;ACCF;;ADEA;EACE,eAAA;ACCF;;ADEA;EACE,kBAAA;EACA,qBAAA;ACCF;;ACpCE;EACE,oBAAA;EACA,0CAAA;ADuCJ;;ACnCA;EACE,SAAA;EACA,qBAAA;EACA,kBAAA;EACA,gBAAA;EACA,eAAA;EACA,2BAAA;ADsCF;ACrCE;EACE,yBAAA;EACA,YAAA;EACA,2BAAA;ADuCJ;ACrCE;EACE,0BAAA;EACA,mCAAA;EACA,mBAAA;ADuCJ;ACrCE;EACE,wBAAA;EACA,mCAAA;EACA,qBAAA;ADuCJ;ACrCE;EACE,kBAAA;EACA,gCAAA;EACA,mBAAA;ADuCJ;ACrCE;EACE,kBAAA;EACA,+BAAA;EACA,mBAAA;ADuCJ;ACrCE;EACE,0BAAA;EACA,mCAAA;EACA,mBAAA;ADuCJ;ACrCE;EACE,0BAAA;EACA,mCAAA;EACA,mBAAA;ADuCJ;ACrCE;EACE,yBAAA;EACA,kCAAA;EACA,mBAAA;ADuCJ;;AClCE;EACE,qBAAA;EACA,iBAAA;ADqCJ;ACnCE;EACE,oBAAA;EACA,iBAAA;ADqCJ;ACnCE;EACE,kBAAA;EACA,iBAAA;ADqCJ;;AExGA;EACE,SAAA;EACA,UAAA;EACA,sBAAA;AF2GF;;AG9GA;EACE,aAAA;AHiHF;;AIlHA;EAEE,kBAAA;EACA,oBAAA;EACA,mBAAA;EAGA,gBAAA;EACA,iBAAA;EACA,YAAA;EAGA,kBAAA;EACA,iBAAA;EACA,eAAA;EACA,kBAAA;EACA,eAAA;EAGA,iBAAA;EACA,kBAAA;EAGA,6BAAA;EACA,+BAAA;EACA,sCAAA;EACA,oCAAA;EAGA;iDAAA;AJ2GF;;AKxIA;EACE,aAAA;AL2IF;;AKxIA;EACE,iBAAA;EACA,aAAA;EACA,oDACE;AL0IJ;;AMhJA;EACE,iBAAA;EACA,mBAAA;EACA,0BAAA;EACA,eAAA;EACA,UAAA;EACA,WAAA;ANmJF;AMlJE;EACE,aAAA;EACA,mBAAA;EACA,8BAAA;EACA,aAAA;ANoJJ;AMnJI;EACE,mBAAA;EACA,gBAAA;EACA,sBAAA;ANqJN;AMnJI;EACE,gBAAA;ANqJN;AMpJM;EACE,sBAAA;ANsJR;AMjJE;EACE,kBAAA;ANmJJ;AMlJI;EAIE,aAAA;EACA,qBAAA;ANiJN;AOlLE;ED4BE;IAEI,aAAA;ENwJN;AACF;AMrJM;EACE,iBAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,eAAA;EACA,oBAAA;ANuJR;AMtJQ;EACE,oBAAA;EACA,kCAAA;ANwJV;AMvJU;EACE,mBAAA;ANyJZ;AMtJQ;EACE,iBAAA;EACA,qBAAA;ANwJV;AMrJM;EACE,8BAAA;EACA,qBAAA;ANuJR;AMtJQ;EACE,uBAAA;ANwJV;AMlJE;EACE,aAAA;EACA,eAAA;EACA,mBAAA;ANoJJ;AOtNE;ED+DA;IAKI,cAAA;ENsJJ;AACF;AMnJE;EACE,aAAA;EACA,kBAAA;EACA,WAAA;EACA,YAAA;EACA,eAAA;EACA,gCAAA;EACA,yBAAA;ANqJJ;AMpJI;EACE,cAAA;ANsJN;AMrJM;EACE,iBAAA;ANuJR;AMnJE;EACE,cAAA;ANqJJ;;AQ9OA;EACE,iBAAA;EACA,aAAA;EACA,YAAA;EACA,6BAAA;EACA,mBAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,iBAAA;ARiPF;AQhPE;EACE,YAAA;EACA,WAAA;EACA,sBAAA;ARkPJ;AQhPE;EACE,wBAAA;EACA,oBAAA;ARkPJ;AQ/OE;EACE,wBAAA;EACA,oBAAA;ARiPJ","sourcesContent":[":root {\n  font-size: 62.5%; // font-size = 10px\n}\n\nbody {\n  font-size: 1.6rem; // 1rem = 10px\n  color: var(--dark);\n  font-family: var(--basic);\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: var(--dark);\n  text-decoration: none;\n}\n",":root {\n  font-size: 62.5%;\n}\n\nbody {\n  font-size: 1.6rem;\n  color: var(--dark);\n  font-family: var(--basic);\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: var(--dark);\n  text-decoration: none;\n}\n\n.title-underline {\n  padding-bottom: 2rem;\n  border-bottom: 0.1rem solid var(--divider);\n}\n\n.button {\n  border: 0;\n  border-radius: 0.3rem;\n  padding: 1rem 2rem;\n  font-weight: 700;\n  cursor: pointer;\n  transition: box-shadow 0.2s;\n}\n.button:hover {\n  box-shadow: var(--shadow);\n  opacity: 89%;\n  transition: box-shadow 0.2s;\n}\n.button-add {\n  background: var(--primary);\n  border: 0.2rem solid var(--primary);\n  color: var(--light);\n}\n.button-cancel {\n  background: var(--light);\n  border: 0.2rem solid var(--primary);\n  color: var(--primary);\n}\n.button-edit {\n  margin-right: 2rem;\n  background-color: var(--success);\n  color: var(--light);\n}\n.button-delete {\n  margin-right: 2rem;\n  background-color: var(--danger);\n  color: var(--light);\n}\n.button-save {\n  background: var(--primary);\n  border: 0.2rem solid var(--primary);\n  color: var(--light);\n}\n.button-detail {\n  background: var(--success);\n  border: 0.2rem solid var(--success);\n  color: var(--light);\n}\n.button-back {\n  background: var(--danger);\n  border: 0.2rem solid var(--danger);\n  color: var(--light);\n}\n\n.text-valid {\n  color: var(--success);\n  font-weight: bold;\n}\n.text-error {\n  color: var(--danger);\n  font-weight: bold;\n}\n.text-detail {\n  color: var(--info);\n  font-weight: bold;\n}\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n.off {\n  display: none;\n}\n\n:root {\n  --primary: #2e86de;\n  --secondary: #54a0ff;\n  --tertiary: #48dbfb;\n  --light: #f5f6fa;\n  --medium: #2d98da;\n  --dark: #333;\n  --success: #06ad3e;\n  --danger: #ea2027;\n  --info: #3867d6;\n  --warning: #fbc531;\n  --hint: #95a5a6;\n  --accent: #3c40c6;\n  --divider: #bdc3c7;\n  --basic: \"Mulish\", sans-serif;\n  --default: \"Roboto\", sans-serif;\n  --logo: \"Roboto Condensed\", sans-serif;\n  --form: Arial, Helvetica, sans-serif;\n  --shadow: 0 0.1rem 0.2rem 0 rgba(60, 64, 67, 0.3),\n    0 0.1rem 0.3rem 0.1rem rgba(60, 64, 67, 0.15);\n}\n\nbody {\n  height: 100vh;\n}\n\n.container {\n  min-height: 100vh;\n  display: grid;\n  grid: \"header\" auto \"content\" 1fr \"footer\" auto/auto;\n}\n\nheader {\n  grid-area: header;\n  align-items: center;\n  background: var(--primary);\n  position: fixed;\n  z-index: 1;\n  width: 100%;\n}\nheader .container-top-menu {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  padding: 1rem;\n}\nheader .container-top-menu a {\n  color: var(--light);\n  font-weight: 700;\n  letter-spacing: 0.1rem;\n}\nheader .container-top-menu .header-brand {\n  font-weight: 700;\n}\nheader .container-top-menu .header-brand:hover {\n  color: var(--tertiary);\n}\nheader .header-menu {\n  position: relative;\n}\nheader .header-menu ul {\n  display: flex;\n  margin-right: -0.5rem;\n}\n@media (max-width: 480px) {\n  header .header-menu ul {\n    display: none;\n  }\n}\nheader .header-menu ul li {\n  margin-left: 1rem;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  cursor: pointer;\n  transition: all 0.2s;\n}\nheader .header-menu ul li:hover {\n  transition: all 0.2s;\n  background-color: var(--secondary);\n}\nheader .header-menu ul li:hover a {\n  color: var(--light);\n}\nheader .header-menu ul li a {\n  font-size: 1.2rem;\n  border-radius: 0.2rem;\n}\nheader .header-menu ul .active {\n  background-color: var(--light);\n  border-radius: 0.2rem;\n}\nheader .header-menu ul .active a {\n  color: var(--secondary);\n}\nheader .header-menu-icon {\n  display: none;\n  font-size: 2rem;\n  color: var(--light);\n}\n@media (max-width: 480px) {\n  header .header-menu-icon {\n    display: block;\n  }\n}\nheader .mobile-menu {\n  display: none;\n  position: absolute;\n  top: 3.5rem;\n  right: -2rem;\n  padding: 0.5rem;\n  background-color: var(--primary);\n  box-shadow: var(--shadow);\n}\nheader .mobile-menu ul {\n  display: block;\n}\nheader .mobile-menu ul li {\n  margin: 1rem 2rem;\n}\nheader .mobile-menu.open {\n  display: block;\n}\n\nfooter {\n  grid-area: footer;\n  padding: 2rem;\n  height: 8rem;\n  background-color: var(--dark);\n  color: var(--light);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: bold;\n}\nfooter img {\n  height: 2rem;\n  width: 2rem;\n  margin-bottom: -0.1rem;\n}\nfooter .j {\n  font-family: var(--logo);\n  color: var(--danger);\n}\nfooter .e {\n  font-family: var(--logo);\n  color: var(--danger);\n}",".title {\n  &-underline {\n    padding-bottom: 2rem;\n    border-bottom: 0.1rem solid var(--divider);\n  }\n}\n\n.button {\n  border: 0;\n  border-radius: 0.3rem;\n  padding: 1rem 2rem;\n  font-weight: 700;\n  cursor: pointer;\n  transition: box-shadow 0.2s;\n  &:hover {\n    box-shadow: var(--shadow);\n    opacity: 89%;\n    transition: box-shadow 0.2s;\n  }\n  &-add {\n    background: var(--primary);\n    border: 0.2rem solid var(--primary);\n    color: var(--light);\n  }\n  &-cancel {\n    background: var(--light);\n    border: 0.2rem solid var(--primary);\n    color: var(--primary);\n  }\n  &-edit {\n    margin-right: 2rem;\n    background-color: var(--success);\n    color: var(--light);\n  }\n  &-delete {\n    margin-right: 2rem;\n    background-color: var(--danger);\n    color: var(--light);\n  }\n  &-save {\n    background: var(--primary);\n    border: 0.2rem solid var(--primary);\n    color: var(--light);\n  }\n  &-detail {\n    background: var(--success);\n    border: 0.2rem solid var(--success);\n    color: var(--light);\n  }\n  &-back {\n    background: var(--danger);\n    border: 0.2rem solid var(--danger);\n    color: var(--light);\n  }\n}\n\n.text {\n  &-valid {\n    color: var(--success);\n    font-weight: bold;\n  }\n  &-error {\n    color: var(--danger);\n    font-weight: bold;\n  }\n  &-detail {\n    color: var(--info);\n    font-weight: bold;\n  }\n}\n","* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n",".off {\n  display: none;\n}\n",":root {\n  // main color\n  --primary: #2e86de;\n  --secondary: #54a0ff;\n  --tertiary: #48dbfb;\n\n  // text color\n  --light: #f5f6fa;\n  --medium: #2d98da;\n  --dark: #333;\n\n  // utils => button, border, words etc\n  --success: #06ad3e;\n  --danger: #ea2027;\n  --info: #3867d6;\n  --warning: #fbc531;\n  --hint: #95a5a6;\n\n  // utils => border, words etc\n  --accent: #3c40c6;\n  --divider: #bdc3c7;\n\n  // font-family\n  --basic: \"Mulish\", sans-serif;\n  --default: \"Roboto\", sans-serif;\n  --logo: \"Roboto Condensed\", sans-serif;\n  --form: Arial, Helvetica, sans-serif;\n\n  // shadow\n  --shadow: 0 0.1rem 0.2rem 0 rgba(60, 64, 67, 0.3),\n    0 0.1rem 0.3rem 0.1rem rgba(60, 64, 67, 0.15);\n}\n","body {\n  height: 100vh;\n}\n\n.container {\n  min-height: 100vh;\n  display: grid;\n  grid:\n    \"header\" auto\n    \"content\" 1fr\n    \"footer\" auto /\n    auto;\n}\n","@use \"../partials/media-queries.scss\" as *;\n\nheader {\n  grid-area: header;\n  align-items: center;\n  background: var(--primary);\n  position: fixed;\n  z-index: 1;\n  width: 100%;\n  .container-top-menu {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    padding: 1rem;\n    a {\n      color: var(--light);\n      font-weight: 700;\n      letter-spacing: 0.1rem;\n    }\n    .header-brand {\n      font-weight: 700;\n      &:hover {\n        color: var(--tertiary);\n      }\n    }\n  }\n\n  .header-menu {\n    position: relative;\n    ul {\n      @include phone {\n        display: none;\n      }\n      display: flex;\n      margin-right: -0.5rem;\n      li {\n        margin-left: 1rem;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        cursor: pointer;\n        transition: all 0.2s;\n        &:hover {\n          transition: all 0.2s;\n          background-color: var(--secondary);\n          a {\n            color: var(--light);\n          }\n        }\n        a {\n          font-size: 1.2rem;\n          border-radius: 0.2rem;\n        }\n      }\n      .active {\n        background-color: var(--light);\n        border-radius: 0.2rem;\n        a {\n          color: var(--secondary);\n        }\n      }\n    }\n  }\n\n  .header-menu-icon {\n    display: none;\n    font-size: 2rem;\n    color: var(--light);\n    @include phone {\n      display: block;\n    }\n  }\n\n  .mobile-menu {\n    display: none;\n    position: absolute;\n    top: 3.5rem;\n    right: -2rem;\n    padding: 0.5rem;\n    background-color: var(--primary);\n    box-shadow: var(--shadow);\n    ul {\n      display: block;\n      li {\n        margin: 1rem 2rem;\n      }\n    }\n  }\n  .mobile-menu.open {\n    display: block;\n  }\n}\n","@mixin phone {\n  @media (max-width: 480px) {\n    @content;\n  }\n}\n\n@mixin tablet {\n  @media (min-width: 481px) and (max-width: 767px) {\n    @content;\n  }\n}\n\n@mixin laptop {\n  @media (min-width: 768px) and (max-width: 1199px) {\n    @content;\n  }\n}\n\n@mixin computer {\n  @media (min-width: 1200px) {\n    @content;\n  }\n}\n","footer {\n  grid-area: footer;\n  padding: 2rem;\n  height: 8rem;\n  background-color: var(--dark);\n  color: var(--light);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: bold;\n  img {\n    height: 2rem;\n    width: 2rem;\n    margin-bottom: -0.1rem;\n  }\n  .j {\n    font-family: var(--logo);\n    color: var(--danger);\n  }\n\n  .e {\n    font-family: var(--logo);\n    color: var(--danger);\n  }\n}\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/assets/sass/partials/_base.scss","webpack://./src/assets/sass/styles.scss","webpack://./src/assets/sass/partials/_classes.scss","webpack://./src/assets/sass/partials/_reset.scss","webpack://./src/assets/sass/partials/_utils.scss","webpack://./src/assets/sass/partials/_variables.scss","webpack://./src/assets/sass/layouts/_body.scss","webpack://./src/assets/sass/layouts/_header.scss","webpack://./src/assets/sass/partials/_media-queries.scss","webpack://./src/assets/sass/layouts/_footer.scss"],"names":[],"mappings":"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","sourcesContent":[":root {\n  font-size: 62.5%; // font-size = 10px\n}\n\nbody {\n  font-size: 1.6rem; // 1rem = 10px\n  color: var(--dark);\n  font-family: var(--basic);\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: var(--dark);\n  text-decoration: none;\n}\n",":root {\n  font-size: 62.5%;\n}\n\nbody {\n  font-size: 1.6rem;\n  color: var(--dark);\n  font-family: var(--basic);\n}\n\nh1 {\n  font-size: 3.5rem;\n}\n\nh2 {\n  font-size: 3rem;\n}\n\nh3 {\n  font-size: 2.5rem;\n}\n\nh4 {\n  font-size: 2rem;\n}\n\nul {\n  list-style: none;\n}\n\nimg {\n  max-width: 100%;\n}\n\na {\n  color: var(--dark);\n  text-decoration: none;\n}\n\n.title-underline {\n  padding-bottom: 2rem;\n  border-bottom: 0.1rem solid var(--divider);\n}\n\n.button {\n  border: 0;\n  border-radius: 0.3rem;\n  padding: 1rem 2rem;\n  font-weight: 700;\n  cursor: pointer;\n  transition: box-shadow 0.2s;\n}\n.button:hover {\n  box-shadow: var(--shadow);\n  opacity: 89%;\n  transition: box-shadow 0.2s;\n}\n.button-add {\n  background: var(--primary);\n  border: 0.2rem solid var(--primary);\n  color: var(--light);\n}\n.button-cancel {\n  background: var(--light);\n  border: 0.2rem solid var(--primary);\n  color: var(--primary);\n}\n.button-edit {\n  margin-right: 2rem;\n  background-color: var(--success);\n  color: var(--light);\n}\n.button-delete {\n  margin-right: 2rem;\n  background-color: var(--danger);\n  color: var(--light);\n}\n.button-save {\n  background: var(--primary);\n  border: 0.2rem solid var(--primary);\n  color: var(--light);\n}\n.button-detail {\n  background: var(--success);\n  border: 0.2rem solid var(--success);\n  color: var(--light);\n}\n.button-back {\n  background: var(--danger);\n  border: 0.2rem solid var(--danger);\n  color: var(--light);\n}\n.button-yes {\n  background: var(--danger);\n  border: 0.2rem solid var(--danger);\n  color: var(--light);\n}\n.button-no {\n  background: var(--success);\n  border: 0.2rem solid var(--success);\n  color: var(--light);\n}\n\n.text-valid {\n  color: var(--success);\n  font-weight: bold;\n}\n.text-error {\n  color: var(--danger);\n  font-weight: bold;\n}\n.text-detail {\n  color: var(--info);\n  font-weight: bold;\n}\n.text-bold {\n  color: var(--dark);\n  font-weight: bold;\n}\n\n.calc {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100vh;\n  background: rgba(0, 0, 0, 0.5);\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.calc .modal {\n  background: white;\n  min-width: 30rem;\n  border-radius: 3px;\n  padding: 5rem;\n  box-shadow: var(--box-shadow);\n  text-align: center;\n}\n.calc .modal p {\n  margin: 1rem 0 3rem 0;\n}\n.calc .modal .button {\n  margin-left: 1rem;\n}\n\n.remove-scrolling {\n  height: 100%;\n  overflow: hidden;\n}\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n.off {\n  display: none;\n}\n\n:root {\n  --primary: #2e86de;\n  --secondary: #54a0ff;\n  --tertiary: #48dbfb;\n  --light: #f5f6fa;\n  --medium: #2d98da;\n  --dark: #333;\n  --success: #06ad3e;\n  --danger: #ea2027;\n  --info: #3867d6;\n  --warning: #fbc531;\n  --hint: #95a5a6;\n  --accent: #3c40c6;\n  --divider: #bdc3c7;\n  --basic: \"Mulish\", sans-serif;\n  --default: \"Roboto\", sans-serif;\n  --logo: \"Roboto Condensed\", sans-serif;\n  --form: Arial, Helvetica, sans-serif;\n  --shadow: 0 0.1rem 0.2rem 0 rgba(60, 64, 67, 0.3),\n    0 0.1rem 0.3rem 0.1rem rgba(60, 64, 67, 0.15);\n}\n\nbody {\n  height: 100vh;\n}\n\n.container {\n  min-height: 100vh;\n  display: grid;\n  grid: \"header\" auto \"content\" 1fr \"footer\" auto/auto;\n}\n\nheader {\n  grid-area: header;\n  align-items: center;\n  background: var(--primary);\n  position: fixed;\n  z-index: 1;\n  width: 100%;\n}\nheader .container-top-menu {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  padding: 1rem;\n}\nheader .container-top-menu a {\n  color: var(--light);\n  font-weight: 700;\n  letter-spacing: 0.1rem;\n}\nheader .container-top-menu .header-brand {\n  font-weight: 700;\n}\nheader .container-top-menu .header-brand:hover {\n  color: var(--tertiary);\n}\nheader .header-menu {\n  position: relative;\n}\nheader .header-menu ul {\n  display: flex;\n  margin-right: -0.5rem;\n}\n@media (max-width: 480px) {\n  header .header-menu ul {\n    display: none;\n  }\n}\nheader .header-menu ul li {\n  margin-left: 1rem;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  cursor: pointer;\n  transition: all 0.2s;\n}\nheader .header-menu ul li:hover {\n  transition: all 0.2s;\n  background-color: var(--secondary);\n}\nheader .header-menu ul li:hover a {\n  color: var(--light);\n}\nheader .header-menu ul li a {\n  font-size: 1.2rem;\n  border-radius: 0.2rem;\n}\nheader .header-menu ul .active {\n  background-color: var(--light);\n  border-radius: 0.2rem;\n}\nheader .header-menu ul .active a {\n  color: var(--secondary);\n}\nheader .header-menu-icon {\n  display: none;\n  font-size: 2rem;\n  color: var(--light);\n}\n@media (max-width: 480px) {\n  header .header-menu-icon {\n    display: block;\n  }\n}\nheader .mobile-menu {\n  display: none;\n  position: absolute;\n  top: 3.5rem;\n  right: -2rem;\n  padding: 0.5rem;\n  background-color: var(--primary);\n  box-shadow: var(--shadow);\n}\nheader .mobile-menu ul {\n  display: block;\n}\nheader .mobile-menu ul li {\n  margin: 1rem 2rem;\n}\nheader .mobile-menu.open {\n  display: block;\n}\n\nfooter {\n  grid-area: footer;\n  padding: 2rem;\n  height: 8rem;\n  background-color: var(--dark);\n  color: var(--light);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: bold;\n}\nfooter img {\n  height: 2rem;\n  width: 2rem;\n  margin-bottom: -0.1rem;\n}\nfooter .j {\n  font-family: var(--logo);\n  color: var(--danger);\n}\nfooter .e {\n  font-family: var(--logo);\n  color: var(--danger);\n}",".title {\n  &-underline {\n    padding-bottom: 2rem;\n    border-bottom: 0.1rem solid var(--divider);\n  }\n}\n\n.button {\n  border: 0;\n  border-radius: 0.3rem;\n  padding: 1rem 2rem;\n  font-weight: 700;\n  cursor: pointer;\n  transition: box-shadow 0.2s;\n  &:hover {\n    box-shadow: var(--shadow);\n    opacity: 89%;\n    transition: box-shadow 0.2s;\n  }\n  &-add {\n    background: var(--primary);\n    border: 0.2rem solid var(--primary);\n    color: var(--light);\n  }\n  &-cancel {\n    background: var(--light);\n    border: 0.2rem solid var(--primary);\n    color: var(--primary);\n  }\n  &-edit {\n    margin-right: 2rem;\n    background-color: var(--success);\n    color: var(--light);\n  }\n  &-delete {\n    margin-right: 2rem;\n    background-color: var(--danger);\n    color: var(--light);\n  }\n  &-save {\n    background: var(--primary);\n    border: 0.2rem solid var(--primary);\n    color: var(--light);\n  }\n  &-detail {\n    background: var(--success);\n    border: 0.2rem solid var(--success);\n    color: var(--light);\n  }\n  &-back {\n    background: var(--danger);\n    border: 0.2rem solid var(--danger);\n    color: var(--light);\n  }\n  &-yes {\n    background: var(--danger);\n    border: 0.2rem solid var(--danger);\n    color: var(--light);\n  }\n  &-no {\n    background: var(--success);\n    border: 0.2rem solid var(--success);\n    color: var(--light);\n  }\n}\n\n.text {\n  &-valid {\n    color: var(--success);\n    font-weight: bold;\n  }\n  &-error {\n    color: var(--danger);\n    font-weight: bold;\n  }\n  &-detail {\n    color: var(--info);\n    font-weight: bold;\n  }\n  &-bold {\n    color: var(--dark);\n    font-weight: bold;\n  }\n}\n\n.calc {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100vh;\n  background: rgba(0, 0, 0, 0.5);\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  .modal {\n    background: white;\n    min-width: 30rem;\n    border-radius: 3px;\n    padding: 5rem;\n    box-shadow: var(--box-shadow);\n    text-align: center;\n    p {\n      margin: 1rem 0 3rem 0;\n    }\n    .button {\n      margin-left: 1rem;\n    }\n  }\n}\n\n.remove-scrolling {\n  height: 100%;\n  overflow: hidden;\n}\n","* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n",".off {\n  display: none;\n}\n",":root {\n  // main color\n  --primary: #2e86de;\n  --secondary: #54a0ff;\n  --tertiary: #48dbfb;\n\n  // text color\n  --light: #f5f6fa;\n  --medium: #2d98da;\n  --dark: #333;\n\n  // utils => button, border, words etc\n  --success: #06ad3e;\n  --danger: #ea2027;\n  --info: #3867d6;\n  --warning: #fbc531;\n  --hint: #95a5a6;\n\n  // utils => border, words etc\n  --accent: #3c40c6;\n  --divider: #bdc3c7;\n\n  // font-family\n  --basic: \"Mulish\", sans-serif;\n  --default: \"Roboto\", sans-serif;\n  --logo: \"Roboto Condensed\", sans-serif;\n  --form: Arial, Helvetica, sans-serif;\n\n  // shadow\n  --shadow: 0 0.1rem 0.2rem 0 rgba(60, 64, 67, 0.3),\n    0 0.1rem 0.3rem 0.1rem rgba(60, 64, 67, 0.15);\n}\n","body {\n  height: 100vh;\n}\n\n.container {\n  min-height: 100vh;\n  display: grid;\n  grid:\n    \"header\" auto\n    \"content\" 1fr\n    \"footer\" auto /\n    auto;\n}\n","@use \"../partials/media-queries.scss\" as *;\n\nheader {\n  grid-area: header;\n  align-items: center;\n  background: var(--primary);\n  position: fixed;\n  z-index: 1;\n  width: 100%;\n  .container-top-menu {\n    display: flex;\n    flex-direction: row;\n    justify-content: space-between;\n    padding: 1rem;\n    a {\n      color: var(--light);\n      font-weight: 700;\n      letter-spacing: 0.1rem;\n    }\n    .header-brand {\n      font-weight: 700;\n      &:hover {\n        color: var(--tertiary);\n      }\n    }\n  }\n\n  .header-menu {\n    position: relative;\n    ul {\n      @include phone {\n        display: none;\n      }\n      display: flex;\n      margin-right: -0.5rem;\n      li {\n        margin-left: 1rem;\n        display: flex;\n        justify-content: center;\n        align-items: center;\n        cursor: pointer;\n        transition: all 0.2s;\n        &:hover {\n          transition: all 0.2s;\n          background-color: var(--secondary);\n          a {\n            color: var(--light);\n          }\n        }\n        a {\n          font-size: 1.2rem;\n          border-radius: 0.2rem;\n        }\n      }\n      .active {\n        background-color: var(--light);\n        border-radius: 0.2rem;\n        a {\n          color: var(--secondary);\n        }\n      }\n    }\n  }\n\n  .header-menu-icon {\n    display: none;\n    font-size: 2rem;\n    color: var(--light);\n    @include phone {\n      display: block;\n    }\n  }\n\n  .mobile-menu {\n    display: none;\n    position: absolute;\n    top: 3.5rem;\n    right: -2rem;\n    padding: 0.5rem;\n    background-color: var(--primary);\n    box-shadow: var(--shadow);\n    ul {\n      display: block;\n      li {\n        margin: 1rem 2rem;\n      }\n    }\n  }\n  .mobile-menu.open {\n    display: block;\n  }\n}\n","@mixin phone {\n  @media (max-width: 480px) {\n    @content;\n  }\n}\n\n@mixin tablet {\n  @media (min-width: 481px) and (max-width: 767px) {\n    @content;\n  }\n}\n\n@mixin laptop {\n  @media (min-width: 768px) and (max-width: 1199px) {\n    @content;\n  }\n}\n\n@mixin computer {\n  @media (min-width: 1200px) {\n    @content;\n  }\n}\n","footer {\n  grid-area: footer;\n  padding: 2rem;\n  height: 8rem;\n  background-color: var(--dark);\n  color: var(--light);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-weight: bold;\n  img {\n    height: 2rem;\n    width: 2rem;\n    margin-bottom: -0.1rem;\n  }\n  .j {\n    font-family: var(--logo);\n    color: var(--danger);\n  }\n\n  .e {\n    font-family: var(--logo);\n    color: var(--danger);\n  }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -8414,30 +9125,32 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_19___default = /*#__PURE__*/__webpack_require__.n(core_js_modules_es_array_slice_js__WEBPACK_IMPORTED_MODULE_19__);
 /* harmony import */ var _assets_sass_styles_scss__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../assets/sass/styles.scss */ "./src/assets/sass/styles.scss");
 /* harmony import */ var _formdetail_scss__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./formdetail.scss */ "./src/formdetail/formdetail.scss");
+/* harmony import */ var _assets_javascripts_link_js__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ../assets/javascripts/link.js */ "./src/assets/javascripts/link.js");
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return exports; }; var exports = {}, Op = Object.prototype, hasOwn = Op.hasOwnProperty, defineProperty = Object.defineProperty || function (obj, key, desc) { obj[key] = desc.value; }, $Symbol = "function" == typeof Symbol ? Symbol : {}, iteratorSymbol = $Symbol.iterator || "@@iterator", asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator", toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag"; function define(obj, key, value) { return Object.defineProperty(obj, key, { value: value, enumerable: !0, configurable: !0, writable: !0 }), obj[key]; } try { define({}, ""); } catch (err) { define = function define(obj, key, value) { return obj[key] = value; }; } function wrap(innerFn, outerFn, self, tryLocsList) { var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator, generator = Object.create(protoGenerator.prototype), context = new Context(tryLocsList || []); return defineProperty(generator, "_invoke", { value: makeInvokeMethod(innerFn, self, context) }), generator; } function tryCatch(fn, obj, arg) { try { return { type: "normal", arg: fn.call(obj, arg) }; } catch (err) { return { type: "throw", arg: err }; } } exports.wrap = wrap; var ContinueSentinel = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var IteratorPrototype = {}; define(IteratorPrototype, iteratorSymbol, function () { return this; }); var getProto = Object.getPrototypeOf, NativeIteratorPrototype = getProto && getProto(getProto(values([]))); NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol) && (IteratorPrototype = NativeIteratorPrototype); var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype); function defineIteratorMethods(prototype) { ["next", "throw", "return"].forEach(function (method) { define(prototype, method, function (arg) { return this._invoke(method, arg); }); }); } function AsyncIterator(generator, PromiseImpl) { function invoke(method, arg, resolve, reject) { var record = tryCatch(generator[method], generator, arg); if ("throw" !== record.type) { var result = record.arg, value = result.value; return value && "object" == _typeof(value) && hasOwn.call(value, "__await") ? PromiseImpl.resolve(value.__await).then(function (value) { invoke("next", value, resolve, reject); }, function (err) { invoke("throw", err, resolve, reject); }) : PromiseImpl.resolve(value).then(function (unwrapped) { result.value = unwrapped, resolve(result); }, function (error) { return invoke("throw", error, resolve, reject); }); } reject(record.arg); } var previousPromise; defineProperty(this, "_invoke", { value: function value(method, arg) { function callInvokeWithMethodAndArg() { return new PromiseImpl(function (resolve, reject) { invoke(method, arg, resolve, reject); }); } return previousPromise = previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(innerFn, self, context) { var state = "suspendedStart"; return function (method, arg) { if ("executing" === state) throw new Error("Generator is already running"); if ("completed" === state) { if ("throw" === method) throw arg; return { value: void 0, done: !0 }; } for (context.method = method, context.arg = arg;;) { var delegate = context.delegate; if (delegate) { var delegateResult = maybeInvokeDelegate(delegate, context); if (delegateResult) { if (delegateResult === ContinueSentinel) continue; return delegateResult; } } if ("next" === context.method) context.sent = context._sent = context.arg;else if ("throw" === context.method) { if ("suspendedStart" === state) throw state = "completed", context.arg; context.dispatchException(context.arg); } else "return" === context.method && context.abrupt("return", context.arg); state = "executing"; var record = tryCatch(innerFn, self, context); if ("normal" === record.type) { if (state = context.done ? "completed" : "suspendedYield", record.arg === ContinueSentinel) continue; return { value: record.arg, done: context.done }; } "throw" === record.type && (state = "completed", context.method = "throw", context.arg = record.arg); } }; } function maybeInvokeDelegate(delegate, context) { var methodName = context.method, method = delegate.iterator[methodName]; if (undefined === method) return context.delegate = null, "throw" === methodName && delegate.iterator.return && (context.method = "return", context.arg = undefined, maybeInvokeDelegate(delegate, context), "throw" === context.method) || "return" !== methodName && (context.method = "throw", context.arg = new TypeError("The iterator does not provide a '" + methodName + "' method")), ContinueSentinel; var record = tryCatch(method, delegate.iterator, context.arg); if ("throw" === record.type) return context.method = "throw", context.arg = record.arg, context.delegate = null, ContinueSentinel; var info = record.arg; return info ? info.done ? (context[delegate.resultName] = info.value, context.next = delegate.nextLoc, "return" !== context.method && (context.method = "next", context.arg = undefined), context.delegate = null, ContinueSentinel) : info : (context.method = "throw", context.arg = new TypeError("iterator result is not an object"), context.delegate = null, ContinueSentinel); } function pushTryEntry(locs) { var entry = { tryLoc: locs[0] }; 1 in locs && (entry.catchLoc = locs[1]), 2 in locs && (entry.finallyLoc = locs[2], entry.afterLoc = locs[3]), this.tryEntries.push(entry); } function resetTryEntry(entry) { var record = entry.completion || {}; record.type = "normal", delete record.arg, entry.completion = record; } function Context(tryLocsList) { this.tryEntries = [{ tryLoc: "root" }], tryLocsList.forEach(pushTryEntry, this), this.reset(!0); } function values(iterable) { if (iterable || "" === iterable) { var iteratorMethod = iterable[iteratorSymbol]; if (iteratorMethod) return iteratorMethod.call(iterable); if ("function" == typeof iterable.next) return iterable; if (!isNaN(iterable.length)) { var i = -1, next = function next() { for (; ++i < iterable.length;) if (hasOwn.call(iterable, i)) return next.value = iterable[i], next.done = !1, next; return next.value = undefined, next.done = !0, next; }; return next.next = next; } } throw new TypeError(_typeof(iterable) + " is not iterable"); } return GeneratorFunction.prototype = GeneratorFunctionPrototype, defineProperty(Gp, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), defineProperty(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction"), exports.isGeneratorFunction = function (genFun) { var ctor = "function" == typeof genFun && genFun.constructor; return !!ctor && (ctor === GeneratorFunction || "GeneratorFunction" === (ctor.displayName || ctor.name)); }, exports.mark = function (genFun) { return Object.setPrototypeOf ? Object.setPrototypeOf(genFun, GeneratorFunctionPrototype) : (genFun.__proto__ = GeneratorFunctionPrototype, define(genFun, toStringTagSymbol, "GeneratorFunction")), genFun.prototype = Object.create(Gp), genFun; }, exports.awrap = function (arg) { return { __await: arg }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, asyncIteratorSymbol, function () { return this; }), exports.AsyncIterator = AsyncIterator, exports.async = function (innerFn, outerFn, self, tryLocsList, PromiseImpl) { void 0 === PromiseImpl && (PromiseImpl = Promise); var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList), PromiseImpl); return exports.isGeneratorFunction(outerFn) ? iter : iter.next().then(function (result) { return result.done ? result.value : iter.next(); }); }, defineIteratorMethods(Gp), define(Gp, toStringTagSymbol, "Generator"), define(Gp, iteratorSymbol, function () { return this; }), define(Gp, "toString", function () { return "[object Generator]"; }), exports.keys = function (val) { var object = Object(val), keys = []; for (var key in object) keys.push(key); return keys.reverse(), function next() { for (; keys.length;) { var key = keys.pop(); if (key in object) return next.value = key, next.done = !1, next; } return next.done = !0, next; }; }, exports.values = values, Context.prototype = { constructor: Context, reset: function reset(skipTempReset) { if (this.prev = 0, this.next = 0, this.sent = this._sent = undefined, this.done = !1, this.delegate = null, this.method = "next", this.arg = undefined, this.tryEntries.forEach(resetTryEntry), !skipTempReset) for (var name in this) "t" === name.charAt(0) && hasOwn.call(this, name) && !isNaN(+name.slice(1)) && (this[name] = undefined); }, stop: function stop() { this.done = !0; var rootRecord = this.tryEntries[0].completion; if ("throw" === rootRecord.type) throw rootRecord.arg; return this.rval; }, dispatchException: function dispatchException(exception) { if (this.done) throw exception; var context = this; function handle(loc, caught) { return record.type = "throw", record.arg = exception, context.next = loc, caught && (context.method = "next", context.arg = undefined), !!caught; } for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i], record = entry.completion; if ("root" === entry.tryLoc) return handle("end"); if (entry.tryLoc <= this.prev) { var hasCatch = hasOwn.call(entry, "catchLoc"), hasFinally = hasOwn.call(entry, "finallyLoc"); if (hasCatch && hasFinally) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } else if (hasCatch) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); } else { if (!hasFinally) throw new Error("try statement without catch or finally"); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } } } }, abrupt: function abrupt(type, arg) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) { var finallyEntry = entry; break; } } finallyEntry && ("break" === type || "continue" === type) && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc && (finallyEntry = null); var record = finallyEntry ? finallyEntry.completion : {}; return record.type = type, record.arg = arg, finallyEntry ? (this.method = "next", this.next = finallyEntry.finallyLoc, ContinueSentinel) : this.complete(record); }, complete: function complete(record, afterLoc) { if ("throw" === record.type) throw record.arg; return "break" === record.type || "continue" === record.type ? this.next = record.arg : "return" === record.type ? (this.rval = this.arg = record.arg, this.method = "return", this.next = "end") : "normal" === record.type && afterLoc && (this.next = afterLoc), ContinueSentinel; }, finish: function finish(finallyLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.finallyLoc === finallyLoc) return this.complete(entry.completion, entry.afterLoc), resetTryEntry(entry), ContinueSentinel; } }, catch: function _catch(tryLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc === tryLoc) { var record = entry.completion; if ("throw" === record.type) { var thrown = record.arg; resetTryEntry(entry); } return thrown; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(iterable, resultName, nextLoc) { return this.delegate = { iterator: values(iterable), resultName: resultName, nextLoc: nextLoc }, "next" === this.method && (this.arg = undefined), ContinueSentinel; } }, exports; }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 var containerPhotoName = document.querySelector(".container-photo-name");
@@ -8446,30 +9159,30 @@ var containerUser = document.querySelector(".container-user");
 var containerDate = document.querySelector(".container-date");
 var containerContent = document.querySelector(".container-content");
 var containerButton = document.querySelector(".container-button");
+var params = new URL(location.href);
+var photoId = params.searchParams.get("id");
 var displayFormPhotoDetail = /*#__PURE__*/function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
-    var params, photoId, response, formPhoto, formPhotoImg, userPhotoImg, buttonUserImg, buttonUserName, buttonEdit, buttonDelete;
+    var response, formPhoto, formPhotoImg, userPhotoImg, buttonUserImg, buttonUserName, buttonEdit, buttonDelete;
     return _regeneratorRuntime().wrap(function _callee2$(_context2) {
       while (1) switch (_context2.prev = _context2.next) {
         case 0:
           _context2.prev = 0;
-          params = new URL(location.href);
-          photoId = params.searchParams.get("id");
           if (!photoId) {
-            _context2.next = 150;
+            _context2.next = 148;
             break;
           }
-          _context2.next = 6;
+          _context2.next = 4;
           return fetch("https://restapi.fr/api/photos/".concat(photoId));
-        case 6:
+        case 4:
           response = _context2.sent;
           if (!(response.status < 300)) {
-            _context2.next = 149;
+            _context2.next = 147;
             break;
           }
-          _context2.next = 10;
+          _context2.next = 8;
           return response.json();
-        case 10:
+        case 8:
           formPhoto = _context2.sent;
           containerPhotoName.innerHTML = "<h1>".concat(formPhoto.picture, "</h1>");
           containerPhotoImg.innerHTML = "<img src=\"".concat(formPhoto.picture, "\" alt=\"").concat(formPhoto.picture, "\" />");
@@ -8484,182 +9197,182 @@ var displayFormPhotoDetail = /*#__PURE__*/function () {
           containerButton.innerHTML = "\n          <button class=\"button button-edit\">\xC9diter</button>\n          <button class=\"button button-delete\">Supprimer</button>";
           formPhotoImg = containerPhotoImg.querySelector("img");
           _context2.t0 = formPhoto.picture;
-          _context2.next = _context2.t0 === "Un Désert en Cisjordanie" ? 21 : _context2.t0 === "Un Désert en Jordanie" ? 23 : _context2.t0 === "Un Désert au Maroc" ? 25 : _context2.t0 === "Un Désert en Namibie (Océan Atlantique)" ? 27 : _context2.t0 === "Un Désert en Oman" ? 29 : _context2.t0 === "Un Désert au Pérou" ? 31 : _context2.t0 === "Un Désert en Arabie Saoudite" ? 33 : _context2.t0 === "Un Désert en Namibie (Sud-Ouest)" ? 35 : _context2.t0 === "Le Désert du Sahara (Soir)" ? 37 : _context2.t0 === "Sable Blanc du Nouveau-Mexique (USA)" ? 39 : _context2.t0 === "Une Forêt en Australie" ? 41 : _context2.t0 === "Une Forêt au Canada" ? 43 : _context2.t0 === "Une Forêt en Finlande" ? 45 : _context2.t0 === "Une Forêt en Croatie" ? 47 : _context2.t0 === "Une Forêt en Inde" ? 49 : _context2.t0 === "Une Forêt en Italie" ? 51 : _context2.t0 === "Une Forêt au Japon" ? 53 : _context2.t0 === "La Forêt des Loups" ? 55 : _context2.t0 === "Une Forêt au Nouvelle-Zélande" ? 57 : _context2.t0 === "Une Forêt en Washington (USA)" ? 59 : _context2.t0 === "Une Plage en Australie" ? 61 : _context2.t0 === "Une Plage au Brésil" ? 63 : _context2.t0 === "Une Plage en Grande-Bretagne" ? 65 : _context2.t0 === "Une Plage en Italie" ? 67 : _context2.t0 === "Une Plage en Madagascar" ? 69 : _context2.t0 === "Une Plage au Mexique" ? 71 : _context2.t0 === "Une Plage en Nouvelle-Calédonie" ? 73 : _context2.t0 === "Une Plage en Polynésie Française" ? 75 : _context2.t0 === "Une Plage aux Sychelles" ? 77 : _context2.t0 === "Une Plage en Thaïlande" ? 79 : _context2.t0 === "Une Ville au Chili" ? 81 : _context2.t0 === "Une Ville en Chine" ? 83 : _context2.t0 === "Une Ville en Colombie" ? 85 : _context2.t0 === "Une Ville en France" ? 87 : _context2.t0 === "Une Ville en Grande-Bretagne" ? 89 : _context2.t0 === "Une Ville au Japon (Jour)" ? 91 : _context2.t0 === "Une Ville en Koweït" ? 93 : _context2.t0 === "Une Ville en Norvège" ? 95 : _context2.t0 === "Une Ville Rural d'Allemagne" ? 97 : _context2.t0 === "Une Ville d'Italie (Soir)" ? 99 : 101;
+          _context2.next = _context2.t0 === "Un Désert en Cisjordanie" ? 19 : _context2.t0 === "Un Désert en Jordanie" ? 21 : _context2.t0 === "Un Désert au Maroc" ? 23 : _context2.t0 === "Un Désert en Namibie (Océan Atlantique)" ? 25 : _context2.t0 === "Un Désert en Oman" ? 27 : _context2.t0 === "Un Désert au Pérou" ? 29 : _context2.t0 === "Un Désert en Arabie Saoudite" ? 31 : _context2.t0 === "Un Désert en Namibie (Sud-Ouest)" ? 33 : _context2.t0 === "Le Désert du Sahara (Soir)" ? 35 : _context2.t0 === "Sable Blanc du Nouveau-Mexique (USA)" ? 37 : _context2.t0 === "Une Forêt en Australie" ? 39 : _context2.t0 === "Une Forêt au Canada" ? 41 : _context2.t0 === "Une Forêt en Finlande" ? 43 : _context2.t0 === "Une Forêt en Croatie" ? 45 : _context2.t0 === "Une Forêt en Inde" ? 47 : _context2.t0 === "Une Forêt en Italie" ? 49 : _context2.t0 === "Une Forêt au Japon" ? 51 : _context2.t0 === "La Forêt des Loups" ? 53 : _context2.t0 === "Une Forêt au Nouvelle-Zélande" ? 55 : _context2.t0 === "Une Forêt en Washington (USA)" ? 57 : _context2.t0 === "Une Plage en Australie" ? 59 : _context2.t0 === "Une Plage au Brésil" ? 61 : _context2.t0 === "Une Plage en Grande-Bretagne" ? 63 : _context2.t0 === "Une Plage en Italie" ? 65 : _context2.t0 === "Une Plage en Madagascar" ? 67 : _context2.t0 === "Une Plage au Mexique" ? 69 : _context2.t0 === "Une Plage en Nouvelle-Calédonie" ? 71 : _context2.t0 === "Une Plage en Polynésie Française" ? 73 : _context2.t0 === "Une Plage aux Sychelles" ? 75 : _context2.t0 === "Une Plage en Thaïlande" ? 77 : _context2.t0 === "Une Ville au Chili" ? 79 : _context2.t0 === "Une Ville en Chine" ? 81 : _context2.t0 === "Une Ville en Colombie" ? 83 : _context2.t0 === "Une Ville en France" ? 85 : _context2.t0 === "Une Ville en Grande-Bretagne" ? 87 : _context2.t0 === "Une Ville au Japon (Jour)" ? 89 : _context2.t0 === "Une Ville en Koweït" ? 91 : _context2.t0 === "Une Ville en Norvège" ? 93 : _context2.t0 === "Une Ville Rural d'Allemagne" ? 95 : _context2.t0 === "Une Ville d'Italie (Soir)" ? 97 : 99;
           break;
-        case 21:
+        case 19:
           formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-cj.jpg";
-          return _context2.abrupt("break", 101);
-        case 23:
+          return _context2.abrupt("break", 99);
+        case 21:
           formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-jo.jpg";
-          return _context2.abrupt("break", 101);
-        case 25:
+          return _context2.abrupt("break", 99);
+        case 23:
           formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-ma.jpg";
-          return _context2.abrupt("break", 101);
-        case 27:
+          return _context2.abrupt("break", 99);
+        case 25:
           formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-oa-na.jpg";
-          return _context2.abrupt("break", 101);
-        case 29:
+          return _context2.abrupt("break", 99);
+        case 27:
           formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-om.jpg";
-          return _context2.abrupt("break", 101);
-        case 31:
+          return _context2.abrupt("break", 99);
+        case 29:
           formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-pe.jpg";
-          return _context2.abrupt("break", 101);
-        case 33:
+          return _context2.abrupt("break", 99);
+        case 31:
           formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-sa.jpg";
-          return _context2.abrupt("break", 101);
-        case 35:
+          return _context2.abrupt("break", 99);
+        case 33:
           formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-so-na.jpg";
-          return _context2.abrupt("break", 101);
-        case 37:
+          return _context2.abrupt("break", 99);
+        case 35:
           formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/desert-detail-soir-eh.jpg";
-          return _context2.abrupt("break", 101);
-        case 39:
+          return _context2.abrupt("break", 99);
+        case 37:
           formPhotoImg.src = "./assets/images/form-detail/form-deserts-detail/sable-blanc-detail-nmex-us.jpg";
-          return _context2.abrupt("break", 101);
-        case 41:
+          return _context2.abrupt("break", 99);
+        case 39:
           formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-au.jpg";
-          return _context2.abrupt("break", 101);
-        case 43:
+          return _context2.abrupt("break", 99);
+        case 41:
           formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-ca.jpg";
-          return _context2.abrupt("break", 101);
-        case 45:
+          return _context2.abrupt("break", 99);
+        case 43:
           formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-fi.jpg";
-          return _context2.abrupt("break", 101);
-        case 47:
+          return _context2.abrupt("break", 99);
+        case 45:
           formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-hr.jpg";
-          return _context2.abrupt("break", 101);
-        case 49:
+          return _context2.abrupt("break", 99);
+        case 47:
           formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-in.jpg";
-          return _context2.abrupt("break", 101);
-        case 51:
+          return _context2.abrupt("break", 99);
+        case 49:
           formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-it.jpg";
-          return _context2.abrupt("break", 101);
-        case 53:
+          return _context2.abrupt("break", 99);
+        case 51:
           formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-jp.jpg";
-          return _context2.abrupt("break", 101);
-        case 55:
+          return _context2.abrupt("break", 99);
+        case 53:
           formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-loups.jpg";
-          return _context2.abrupt("break", 101);
-        case 57:
+          return _context2.abrupt("break", 99);
+        case 55:
           formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-nz.jpg";
-          return _context2.abrupt("break", 101);
-        case 59:
+          return _context2.abrupt("break", 99);
+        case 57:
           formPhotoImg.src = "./assets/images/form-detail/form-forets-detail/foret-detail-wash-us.jpg";
-          return _context2.abrupt("break", 101);
-        case 61:
+          return _context2.abrupt("break", 99);
+        case 59:
           formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-au.jpg";
-          return _context2.abrupt("break", 101);
-        case 63:
+          return _context2.abrupt("break", 99);
+        case 61:
           formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-br.jpg";
-          return _context2.abrupt("break", 101);
-        case 65:
+          return _context2.abrupt("break", 99);
+        case 63:
           formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-gb.jpg";
-          return _context2.abrupt("break", 101);
-        case 67:
+          return _context2.abrupt("break", 99);
+        case 65:
           formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-it.jpg";
-          return _context2.abrupt("break", 101);
-        case 69:
+          return _context2.abrupt("break", 99);
+        case 67:
           formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-mg.jpg";
-          return _context2.abrupt("break", 101);
-        case 71:
+          return _context2.abrupt("break", 99);
+        case 69:
           formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-mx.jpg";
-          return _context2.abrupt("break", 101);
-        case 73:
+          return _context2.abrupt("break", 99);
+        case 71:
           formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-nc.jpg";
-          return _context2.abrupt("break", 101);
-        case 75:
+          return _context2.abrupt("break", 99);
+        case 73:
           formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-pf.jpg";
-          return _context2.abrupt("break", 101);
-        case 77:
+          return _context2.abrupt("break", 99);
+        case 75:
           formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-sc.jpg";
-          return _context2.abrupt("break", 101);
-        case 79:
+          return _context2.abrupt("break", 99);
+        case 77:
           formPhotoImg.src = "./assets/images/form-detail/form-plages-detail/plage-detail-th.jpg";
-          return _context2.abrupt("break", 101);
-        case 81:
+          return _context2.abrupt("break", 99);
+        case 79:
           formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-cl.jpg";
-          return _context2.abrupt("break", 101);
-        case 83:
+          return _context2.abrupt("break", 99);
+        case 81:
           formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-cn.jpg";
-          return _context2.abrupt("break", 101);
-        case 85:
+          return _context2.abrupt("break", 99);
+        case 83:
           formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-co.jpg";
-          return _context2.abrupt("break", 101);
-        case 87:
+          return _context2.abrupt("break", 99);
+        case 85:
           formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-fr.jpg";
-          return _context2.abrupt("break", 101);
-        case 89:
+          return _context2.abrupt("break", 99);
+        case 87:
           formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-gb.jpg";
-          return _context2.abrupt("break", 101);
-        case 91:
+          return _context2.abrupt("break", 99);
+        case 89:
           formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-jour-jp.jpg";
-          return _context2.abrupt("break", 101);
-        case 93:
+          return _context2.abrupt("break", 99);
+        case 91:
           formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-kw.jpg";
-          return _context2.abrupt("break", 101);
-        case 95:
+          return _context2.abrupt("break", 99);
+        case 93:
           formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-no.jpg";
-          return _context2.abrupt("break", 101);
-        case 97:
+          return _context2.abrupt("break", 99);
+        case 95:
           formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-rural-ge.jpg";
-          return _context2.abrupt("break", 101);
-        case 99:
+          return _context2.abrupt("break", 99);
+        case 97:
           formPhotoImg.src = "./assets/images/form-detail/form-villes-detail/ville-detail-soir-it.jpg";
-          return _context2.abrupt("break", 101);
-        case 101:
+          return _context2.abrupt("break", 99);
+        case 99:
           userPhotoImg = containerUser.querySelector("img");
           _context2.t1 = formPhoto.photographer;
-          _context2.next = _context2.t1 === "Gustave - L'Aventurier" ? 105 : _context2.t1 === "Julie - L'Aventurière" ? 107 : _context2.t1 === "Henry - L'Aventurier" ? 109 : _context2.t1 === "Zoé - L'Aventurière" ? 111 : _context2.t1 === "Flora - L'Exploratrice" ? 113 : _context2.t1 === "Denver - L'Explorateur" ? 115 : _context2.t1 === "Inaya - L'Exploratrice" ? 117 : _context2.t1 === "Seth - L'Explorateur" ? 119 : _context2.t1 === "Lance - Le Visiteur" ? 121 : _context2.t1 === "Nadia - La Visiteuse" ? 123 : _context2.t1 === "Xavier - Le Visiteur" ? 125 : _context2.t1 === "Ornella - La Visiteuse" ? 127 : _context2.t1 === "Cerise - La Voyageuse" ? 129 : _context2.t1 === "Philibert - Le Voyageur" ? 131 : _context2.t1 === "Roxane - La Voyageuse" ? 133 : _context2.t1 === "Yuu - Le Voyageur" ? 135 : 137;
+          _context2.next = _context2.t1 === "Gustave - L'Aventurier" ? 103 : _context2.t1 === "Julie - L'Aventurière" ? 105 : _context2.t1 === "Henry - L'Aventurier" ? 107 : _context2.t1 === "Zoé - L'Aventurière" ? 109 : _context2.t1 === "Flora - L'Exploratrice" ? 111 : _context2.t1 === "Denver - L'Explorateur" ? 113 : _context2.t1 === "Inaya - L'Exploratrice" ? 115 : _context2.t1 === "Seth - L'Explorateur" ? 117 : _context2.t1 === "Lance - Le Visiteur" ? 119 : _context2.t1 === "Nadia - La Visiteuse" ? 121 : _context2.t1 === "Xavier - Le Visiteur" ? 123 : _context2.t1 === "Ornella - La Visiteuse" ? 125 : _context2.t1 === "Cerise - La Voyageuse" ? 127 : _context2.t1 === "Philibert - Le Voyageur" ? 129 : _context2.t1 === "Roxane - La Voyageuse" ? 131 : _context2.t1 === "Yuu - Le Voyageur" ? 133 : 135;
           break;
-        case 105:
+        case 103:
           userPhotoImg.src = "./assets/images/users/users-aventure/gustave-aventurier.jpg";
-          return _context2.abrupt("break", 137);
-        case 107:
+          return _context2.abrupt("break", 135);
+        case 105:
           userPhotoImg.src = "./assets/images/users/users-aventure/julie-aventuriere.jpg";
-          return _context2.abrupt("break", 137);
-        case 109:
+          return _context2.abrupt("break", 135);
+        case 107:
           userPhotoImg.src = "./assets/images/users/users-aventure/henry-aventurier.jpg";
-          return _context2.abrupt("break", 137);
-        case 111:
+          return _context2.abrupt("break", 135);
+        case 109:
           userPhotoImg.src = "./assets/images/users/users-aventure/zoe-aventuriere.jpg";
-          return _context2.abrupt("break", 137);
-        case 113:
+          return _context2.abrupt("break", 135);
+        case 111:
           userPhotoImg.src = "./assets/images/users/users-exploration/flora-exploratrice.jpg";
-          return _context2.abrupt("break", 137);
-        case 115:
+          return _context2.abrupt("break", 135);
+        case 113:
           userPhotoImg.src = "./assets/images/users/users-exploration/denver-explorateur.jpg";
-          return _context2.abrupt("break", 137);
-        case 117:
+          return _context2.abrupt("break", 135);
+        case 115:
           userPhotoImg.src = "./assets/images/users/users-exploration/inaya-exploratrice.jpg";
-          return _context2.abrupt("break", 137);
-        case 119:
+          return _context2.abrupt("break", 135);
+        case 117:
           userPhotoImg.src = "./assets/images/users/users-exploration/seth-explorateur.jpg";
-          return _context2.abrupt("break", 137);
-        case 121:
+          return _context2.abrupt("break", 135);
+        case 119:
           userPhotoImg.src = "./assets/images/users/users-visite/lance-visiteur.jpg";
-          return _context2.abrupt("break", 137);
-        case 123:
+          return _context2.abrupt("break", 135);
+        case 121:
           userPhotoImg.src = "./assets/images/users/users-visite/nadia-visiteuse.jpg";
-          return _context2.abrupt("break", 137);
-        case 125:
+          return _context2.abrupt("break", 135);
+        case 123:
           userPhotoImg.src = "./assets/images/users/users-visite/xavier-visiteur.jpg";
-          return _context2.abrupt("break", 137);
-        case 127:
+          return _context2.abrupt("break", 135);
+        case 125:
           userPhotoImg.src = "./assets/images/users/users-visite/ornella-visiteuse.jpg";
-          return _context2.abrupt("break", 137);
-        case 129:
+          return _context2.abrupt("break", 135);
+        case 127:
           userPhotoImg.src = "./assets/images/users/users-voyage/cerise-voyageuse.jpg";
-          return _context2.abrupt("break", 137);
-        case 131:
+          return _context2.abrupt("break", 135);
+        case 129:
           userPhotoImg.src = "./assets/images/users/users-voyage/philibert-voyageur.jpg";
-          return _context2.abrupt("break", 137);
-        case 133:
+          return _context2.abrupt("break", 135);
+        case 131:
           userPhotoImg.src = "./assets/images/users/users-voyage/roxane-voyageuse.jpg";
-          return _context2.abrupt("break", 137);
-        case 135:
+          return _context2.abrupt("break", 135);
+        case 133:
           userPhotoImg.src = "./assets/images/users/users-voyage/yuu-voyageur.jpg";
-          return _context2.abrupt("break", 137);
-        case 137:
+          return _context2.abrupt("break", 135);
+        case 135:
           buttonUserImg = containerUser.querySelector("#user-img");
           buttonUserImg.setAttribute("data-username", "".concat(formPhoto.photographer));
           buttonUserImg.addEventListener("click", function (event) {
@@ -8684,51 +9397,59 @@ var displayFormPhotoDetail = /*#__PURE__*/function () {
           buttonDelete = containerButton.querySelector(".button-delete");
           buttonDelete.addEventListener("click", /*#__PURE__*/function () {
             var _ref2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(event) {
-              var _response;
+              var result, _response;
               return _regeneratorRuntime().wrap(function _callee$(_context) {
                 while (1) switch (_context.prev = _context.next) {
                   case 0:
                     event.stopPropagation();
-                    _context.prev = 1;
-                    _context.next = 4;
+                    _context.next = 3;
+                    return (0,_assets_javascripts_link_js__WEBPACK_IMPORTED_MODULE_22__.openModal)("\xCAtes vous s\xFBr de vouloir <span class=\"text-error\">supprimer</span> la <span class=\"text-bold\">Photo</span> ?");
+                  case 3:
+                    result = _context.sent;
+                    if (!(result === true)) {
+                      _context.next = 15;
+                      break;
+                    }
+                    _context.prev = 5;
+                    _context.next = 8;
                     return fetch("https://restapi.fr/api/photos/".concat(photoId), {
                       method: "DELETE"
                     });
-                  case 4:
+                  case 8:
                     _response = _context.sent;
                     location.assign("./index.html");
-                    _context.next = 11;
+                    _context.next = 15;
                     break;
-                  case 8:
-                    _context.prev = 8;
-                    _context.t0 = _context["catch"](1);
+                  case 12:
+                    _context.prev = 12;
+                    _context.t0 = _context["catch"](5);
                     console.error("error : ", _context.t0);
-                  case 11:
+                  case 15:
                   case "end":
                     return _context.stop();
                 }
-              }, _callee, null, [[1, 8]]);
+              }, _callee, null, [[5, 12]]);
             }));
             return function (_x) {
               return _ref2.apply(this, arguments);
             };
           }());
-          _context2.next = 150;
+          _context2.next = 148;
           break;
-        case 149:
+        case 147:
           location.assign("./index.html");
-        case 150:
-          _context2.next = 155;
+        case 148:
+          _context2.next = 153;
           break;
-        case 152:
-          _context2.prev = 152;
+        case 150:
+          _context2.prev = 150;
           _context2.t2 = _context2["catch"](0);
           location.assign("./index.html");
-        case 155:
+        case 153:
         case "end":
           return _context2.stop();
       }
-    }, _callee2, null, [[0, 152]]);
+    }, _callee2, null, [[0, 150]]);
   }));
   return function displayFormPhotoDetail() {
     return _ref.apply(this, arguments);
